@@ -1,0 +1,11 @@
+{
+  "namespace": "default",
+  "minReplicas": "2",
+  "maxReplicas": "3",
+  "ingresses": [
+    "https://fp-dokgen.nais.adeo.no"
+  ],
+    "env": {
+      "LOADBALANCER_FQDN": "app.adeo.no"
+    }
+}

@@ -1,0 +1,55 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "felles",
+    "revurdering",
+    "førstegangsBehandling",
+    "medhold",
+    "innvilgetbeløp",
+    "klageFristUker",
+    "død",
+    "søkersNavn",
+    "fbEllerMedhold",
+    "kontaktTelefonnummer",
+    "endretSats"
+  ],
+  "properties": {
+    "felles": {
+      "type": "object"
+    },
+    "revurdering": {
+      "type": "boolean"
+    },
+    "førstegangsBehandling": {
+      "type": "boolean"
+    },
+    "medhold": {
+      "type": "boolean"
+    },
+    "innvilgetbeløp": {
+      "type": "number"
+    },
+    "klageFristUker": {
+      "type": "number"
+    },
+    "død": {
+      "type": "boolean"
+    },
+    "søkersNavn": {
+      "type": "string"
+    },
+    "fbEllerMedhold": {
+      "type": "boolean"
+    },
+    "kontaktTelefonnummer": {
+      "type": "string"
+    },
+    "endretSats": {
+      "type": "string"
+    }
+  }
+}
