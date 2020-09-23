@@ -12,7 +12,6 @@
     "innvilgetBeløp",
     "klagefristUker",
     "død",
-    "søkersNavn",
     "fbEllerMedhold",
     "kontaktTelefonnummer",
     "endretSats"
@@ -38,9 +37,6 @@
     },
     "død": {
       "type": "boolean"
-    },
-    "søkersNavn": {
-      "type": "string"
     },
     "fbEllerMedhold": {
       "type": "boolean"
