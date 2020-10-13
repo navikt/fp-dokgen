@@ -1,9 +1,10 @@
 package no.nav.foreldrepenger.dokgen.test.templates;
 
-import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
 
 public class EngangsstønadInnvilgelseTest {
 
@@ -32,21 +33,19 @@ public class EngangsstønadInnvilgelseTest {
     @Test
     public void skal_generere_brev_for_død_på_bokmål() throws Exception {
         // Act
-        String expectedFilname = TEMPLATE_NAME + "-død";
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nb", "testDød");
 
         // Assert
-        assertThat(resultat).isEqualTo(templateTestService.getExpectedResult(TEMPLATE_NAME, expectedFilname + "_nb.txt"));
+        assertThat(resultat).isEqualTo(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-død_nb.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_medhold_på_bokmål() throws Exception {
         // Act
-        String expectedFilname = TEMPLATE_NAME + "-medhold";
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nb", "testMedhold");
 
         // Assert
-        assertThat(resultat).isEqualTo(templateTestService.getExpectedResult(TEMPLATE_NAME, expectedFilname + "_nb.txt"));
+        assertThat(resultat).isEqualTo(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-medhold_nb.txt"));
     }
 
 }
