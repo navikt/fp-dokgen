@@ -1,20 +1,46 @@
 {{> header }}
 
+
+
 {{#if død}}
-    ##  NAV har behandla søknaden om eingongsstonad
+#  NAV har behandla søknaden om eingongsstønad
+{{>brukerdetaljer}}
+
+Vi sender dette brevet for å informere om at vi har innvilga søknaden om eingongsstønad til {{felles.søkerNavn}}. Det blir utbetalt {{innvilgetBeløp}} kroner innan ei veke. Stønaden er skattefri.
+
+Vedtaket er gjort etter folketrygdlova § 14-17 og forvaltingslova § 35.
+
+Dersom du har spørsmål om vedtaket eller ønskjer å klage, må du gjerne kontakte oss på telefon {{kontaktTelefonnummer}}. Fristen for å klage er seks veker frå den datoen dødsbuet fekk brevet.
+
+{{> hilsen_nn }}
 {{else}}
-    ##  NAV har innvilga søknaden din om eingongsstonad
+#  NAV har innvilga søknaden din om eingongsstønad
+{{>brukerdetaljer}}
+{{#if førstegangsbehandling}}
+
+Du har rett til eingongsstønad og får utbetalt {{innvilgetBeløp}} kroner innan ei veke.
+{{else if medhold}}
+
+Etter at du klaga, har vi vurdert saka di på nytt. Vi har kome fram til at du har rett til eingongsstønad. Du får utbetalt {{innvilgetBeløp}} kroner innan ei veke.
+{{else if endretSats}}
+
+Vi har behandla saka di på nytt fordi beløpet på eingongsstønaden har auka. Vi vil betale ut det resterande beløpet på {{innvilgetBeløp}} kroner innan ei veke.
+{{else if revurdering}}
+
+Vi har behandla saka di på nytt, og du har rett til eingongsstønad. Vi har endret vedtaket du fekk tidligare. Du får utbetalt {{innvilgetBeløp}} kroner innan ei veke.
 {{/if}}
 
-Du har rett har rett til engangsstønad og får utbetalt {{innvilgetBeløp}} kroner innen en uke.
+Stønaden er skattefri, og du kan sjekke utbetalinga di på [nav.no/dittnav](https://nav.no/dittnav).
 
-Stønaden er skattefri, og du kan sjekke utbetalingen din på nav.no/dittnav.
 
-#Vedtaket er gjort etter folketrygdloven § 14-17.
+{{#if fbEllerMedhold}}Vedtaket er gjort etter folketrygdlova § 14-17.{{else}}Vedtaket er gjort etter folketrygdlova § 14-17 og forvaltingslova § 35.
+{{/if}}
 
-#Du har rett til å klage
-Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på nav.no/klage.
 
-På [nav.no](https://nav.no) kan du lese mer om denne ordningen. Der vil du også finne eksempler på hvordan kompensasjonen blir beregnet.
 
-{{> footer }}
+##### Du har rett til å klage
+Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon [nav.no/klage](https://nav.no/klage).
+
+{{> footer_nn }}
+{{/if}}
+

@@ -1,0 +1,15 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. april 2020"
+  },
+  "revurdering": true,
+  "førstegangsbehandling": false,
+  "medhold": true,
+  "innvilgetBeløp": 85000,
+  "klagefristUker": 6,
+  "død": false,
+  "søkersNavn":"Dolly Duck",
+  "fbEllerMedhold": true
+}
