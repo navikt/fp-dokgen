@@ -9,10 +9,13 @@ Dato: 4. april 2020
 
 
 #  NAV har innvilget søknaden din om engangsstønad
+<p style="color:gray">
 Navn: Dolly Duck
 <br/>
 Fødselsnummer: 300220 12345
 <br/>
+</p>
+
 
 
 
