@@ -85,7 +85,7 @@ jobs:
               labels: ['deployment']
             }).then(response => {
               response.data.forEach(issue => {
-                if (issue.number != steps.createdeployissue.outputs.number) {
+                if (issue.number != ${{ steps.createdeployissue.outputs.number }}) {
                   github.issues.update({
                     owner: context.repo.owner,
                     repo: context.repo.repo,
