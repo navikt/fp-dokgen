@@ -35,9 +35,7 @@ Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og
 
 
 ##### Har du spørsmål?
-Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
-
-Du kan også kontakte oss på telefon 55 55 55 55
+Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie). Du kan også kontakte oss på telefon 55 55 33 33
 
 
 
@@ -46,9 +44,9 @@ Med vennlig hilsen
 <br/>
 NAV Familie -og Pensjonsytelser
 <br/>
+Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
 <br/>
-
-
+**Dette er en kopi, orginal er sendt til verge**.
 
 
 
