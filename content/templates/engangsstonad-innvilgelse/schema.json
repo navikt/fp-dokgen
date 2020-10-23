@@ -13,8 +13,7 @@
     "klagefristUker",
     "død",
     "fbEllerMedhold",
-    "kontaktTelefonnummer",
-    "endretSats"
+    "erEndretSats"
   ],
   "properties": {
     "felles": {
@@ -41,11 +40,8 @@
     "fbEllerMedhold": {
       "type": "boolean"
     },
-    "kontaktTelefonnummer": {
-      "type": "string"
-    },
-    "endretSats": {
-      "type": ["number", "null"]
+    "erEndretSats": {
+      "type": "boolean"
     }
   }
 }

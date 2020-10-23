@@ -2,7 +2,10 @@
   "felles": {
     "søkerNavn": "Dolly Duck",
     "søkerPersonnummer": "300220 12345",
-    "brevDato": "4. april 2020"
+    "brevDato": "4. april 2020",
+    "erAutomatiskBehandlet": true,
+    "erKopi" : true,
+    "harVerge" : true
   },
   "revurdering": false,
   "førstegangsbehandling": true,
@@ -13,5 +16,5 @@
   "søkersNavn":"Dolly Duck",
   "fbEllerMedhold": true,
   "kontaktTelefonnummer": "22 22 22 22",
-  "endretSats": 0
+  "endretSats": false
 }
