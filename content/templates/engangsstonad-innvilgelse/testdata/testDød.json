@@ -2,16 +2,17 @@
   "felles": {
     "søkerNavn": "Dolly Duck",
     "søkerPersonnummer": "300220 12345",
-    "brevDato": "4. april 2020"
+    "brevDato": "4. april 2020",
+    "saksnummer" : "123456789"
   },
   "revurdering": true,
   "førstegangsbehandling": false,
   "medhold": false,
-  "innvilgetBeløp": 85000,
+  "innvilgetBeløp": "85 000",
   "klagefristUker": 0,
   "død": true,
   "søkersNavn":"Dolly Duck",
   "fbEllerMedhold": false,
   "kontaktTelefonnummer": "22 22 22 22",
-  "endretSats": false
+  "erEndretSats": false
 }

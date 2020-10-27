@@ -5,16 +5,17 @@
     "brevDato": "4. april 2020",
     "erAutomatiskBehandlet": true,
     "erKopi" : true,
-    "harVerge" : true
+    "harVerge" : true,
+    "saksnummer" : "123456789"
   },
   "revurdering": false,
   "førstegangsbehandling": true,
   "medhold": false,
-  "innvilgetBeløp": 85000,
+  "innvilgetBeløp": "85 000",
   "klagefristUker": 6,
   "død": false,
   "søkersNavn":"Dolly Duck",
   "fbEllerMedhold": true,
   "kontaktTelefonnummer": "22 22 22 22",
-  "endretSats": false
+  "erEndretSats": false
 }

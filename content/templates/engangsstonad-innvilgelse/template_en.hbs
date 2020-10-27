@@ -1,0 +1,48 @@
+{{> header_en }}
+
+
+
+{{#if død}}
+#  NAV has processed the application for a lump-sum grant
+{{>brukerdetaljer_en }}
+
+This letter is to inform you that we have approved {{felles.søkerNavn}}’s application for a lump-sum grant. We will issue a payment of NOK {{innvilgetBeløp}} within one week. The lump-sum grant is not liable to tax.
+
+The decision has been made pursuant to section 14-17 of the National Insurance Act and section 35 of the Public Administration Act.
+
+If you have any questions about the decision or wish to lodge an appeal, please call us on 55 55 33 33.
+
+The deadline for appeals is six weeks from the date the estate received this letter.
+
+{{> hilsen_nb }}
+{{else}}
+#  NAV has granted your application for a lump-sum grant
+{{>brukerdetaljer_en }}
+{{#if førstegangsbehandling}}
+
+You are entitled to a lump-sum grant and will receive NOK {{innvilgetBeløp}} within one week.
+{{else if medhold}}
+
+After your appeal, we have reassessed your case. We have concluded that you are entitled to a lump-sum grant. You will receive a payment of NOK {{innvilgetBeløp}} within one week.
+{{else if erEndretSats}}
+
+We have reprocessed your case in view of the increase in the lump-sum grant. We will pay the outstanding amount of {{innvilgetBeløp}} kroner within one week.
+{{else if revurdering}}
+
+We have reprocessed your case, and you are entitled to a lump-sum grant. We have therefore changed the decision. You will receive NOK {{innvilgetBeløp}} within one week.
+{{/if}}
+
+The lump-sum grant is not liable to tax, and you can check your payment at [nav.no/dittnav](https://nav.no/dittnav).
+
+
+{{#if fbEllerMedhold}}The decision has been made pursuant to section 14-17 of the National Insurance Act.{{else}}The decision has been made pursuant to section 14-17 of the National Insurance Act and section 35 of the Public Administration Act.
+{{/if}}
+
+
+
+##### You have the right to appeal
+You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
+
+{{> footer_en }}
+{{/if}}
+
