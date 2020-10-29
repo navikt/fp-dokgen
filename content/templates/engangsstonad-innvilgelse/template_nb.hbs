@@ -4,7 +4,7 @@
 
 {{#if død}}
 #  NAV har behandlet søknaden om engangsstønad
-{{>brukerdetaljer}}
+{{> brukerdetaljer }}
 
 Vi sender dette brevet for å informere om at vi har innvilget søknaden om engangsstønad til {{felles.søkerNavn}}. Det blir utbetalt {{innvilgetBeløp}} kroner innen en uke. Stønaden er skattefri.
 
@@ -15,14 +15,14 @@ Hvis du har spørsmål om vedtaket eller Ønsker å klage, må du gjerne kontakt
 {{> hilsen_nb }}
 {{else}}
 #  NAV har innvilget søknaden din om engangsstønad
-{{>brukerdetaljer}}
+{{> brukerdetaljer }}
 {{#if førstegangsbehandling}}
 
-Du har rett har rett til engangsstønad og får utbetalt {{innvilgetBeløp}} kroner innen en uke.
+Du har rett til engangsstønad og får utbetalt {{innvilgetBeløp}} kroner innen en uke.
 {{else if medhold}}
 
 Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at du har rett til engangsstønad. Du får utbetalt {{innvilgetBeløp}} kroner innen en uke.
-{{else if endretSats}}
+{{else if erEndretSats}}
 
 Vi har behandlet saken din på nytt fordi beløpet på engangsstønad har økt. Vi vil utbetale det resterende beløpet på {{innvilgetBeløp}} kroner innen en uke.
 {{else if revurdering}}

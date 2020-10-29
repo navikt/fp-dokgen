@@ -21,7 +21,7 @@ Fødselsnummer: 300220 12345
 
 
 
-Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at du har rett til engangsstønad. Du får utbetalt 85 000 kroner innen en uke.
+Vi har behandlet saken din på nytt fordi beløpet på engangsstønad har økt. Vi vil utbetale det resterende beløpet på 1 580 kroner innen en uke.
 
 
 Stønaden er skattefri, og du kan sjekke utbetalingen din på [nav.no/dittnav](https://nav.no/dittnav).
@@ -54,6 +54,7 @@ NAV Familie -og Pensjonsytelser
 
 
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
+<br/>**Dette er en kopi, orginal er sendt til verge**.
 
 
 

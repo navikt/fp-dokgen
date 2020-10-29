@@ -10,6 +10,8 @@ Dato: 4. april 2020
 
 #  NAV har behandlet søknaden om engangsstønad
 <p style="color:gray">
+NAV´s saksnummer: 123456789
+<br/>
 Navn: Dolly Duck
 <br/>
 Fødselsnummer: 300220 12345
@@ -18,7 +20,7 @@ Fødselsnummer: 300220 12345
 
 
 
-Vi sender dette brevet for å informere om at vi har innvilget søknaden om engangsstønad til Dolly Duck. Det blir utbetalt 85000 kroner innen en uke. Stønaden er skattefri.
+Vi sender dette brevet for å informere om at vi har innvilget søknaden om engangsstønad til Dolly Duck. Det blir utbetalt 85 000 kroner innen en uke. Stønaden er skattefri.
 
 Vedtaket er gjort etter folketrygdloven § 14-17 og forvaltningsloven § 35.
 
@@ -30,7 +32,8 @@ Med vennlig hilsen
 NAV Familie -og Pensjonsytelser
 <br/>
 
-<br/>
+
+
 
 
 
