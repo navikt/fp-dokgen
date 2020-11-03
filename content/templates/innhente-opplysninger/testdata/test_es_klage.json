@@ -1,0 +1,20 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "fritekst" : "FRITEKST",
+    "brevDato": "4. april 2020",
+    "erKopi" : false,
+    "harVerge" : false,
+    "saksnummer" : "123456789",
+    "ytelseType" : "ES"
+  },
+  "førstegangsbehandling": false,
+  "revurdering": false,
+  "endringssøknad": false,
+  "død": false,
+  "klage": true,
+  "søknadDato": "1. april 2020",
+  "fristDato": "24. mai 2020",
+  "dokumentListe": ["Attest", "Bekreftelse"]
+}

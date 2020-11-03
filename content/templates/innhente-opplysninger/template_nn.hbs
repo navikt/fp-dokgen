@@ -1,0 +1,51 @@
+{{> header }}
+
+
+
+#  Vi trenger fleire opplysningar
+{{> brukerdetaljer_nn }}
+
+{{#if endringssøknad}}
+    {{#eq felles.ytelseType "FP" }}
+Vi fekk søknaden din om å endre foreldrepengeperioden {{søknadDato}}, men manglar opplysningar for å kunne behandle den.
+    {{else}}{{#eq felles.ytelseType "SVP" }}
+Vi fekk søknaden din om å endre svangerskapsperioden {{søknadDato}}, men manglar opplysningar for å kunne behandle den.
+{{/eq}}{{/eq}}
+
+{{else}}{{#if førstegangsbehandling}}
+    {{#if død}}
+Vi fekk søknad om {{> ytelse_navn_nn}} frå {{felles.søkerNavn}} {{søknadDato}}, men manglar opplysningar for å kunne behandle den.
+    {{else}}
+Vi fekk søknaden din om {{> ytelse_navn_nn}} {{søknadDato}}, men manglar opplysningar for å kunne behandle den.
+    {{/if}}
+{{else if revurdering}}
+Vi har fått nye opplysningar i saka om {{> ytelse_navn_nn}}, men manglar dokumentasjon for å kunne behandle den på nytt.
+{{else if klage}}
+    {{#if død}}
+Vi fekk klage på {{> ytelse_navn_nn}} frå {{felles.søkerNavn}} {{søknadDato}}, men manglar opplysningar for å kunne behandle den.
+    {{else}}
+Vi fekk klagen din på {{> ytelse_navn_nn}} {{søknadDato}}, men manglar opplysningar for å kunne behandle den.
+    {{/if}}
+{{/if}}{{/if}}
+
+#### Du må sende oss
+
+<ul>{{#each dokumentListe}}
+<li>{{ this }}</li>
+{{/each}}</ul>
+
+{{#if klage}}
+Du sender dokumentasjonen til oss på nav.no/klage. Vel NAV-eining: NAV Klageinstans Midt-Noreg.
+{{/if}}
+
+#### Søknaden kan bli avslått
+{{#if førstegangsbehandling}}
+Dersom vi ikkje får opplysningane innan {{fristDato}}, kan søknaden bli avslått.
+{{else}}
+Dersom du ikkje sender oss dette innan {{fristDato}}, behandlar vi saka di med dei opplysningane vi har.
+{{/if}}
+Dette går fram av folketrygdlova § 21-3.
+
+
+{{> footer_nn }}
+
