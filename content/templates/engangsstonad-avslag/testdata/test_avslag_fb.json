@@ -1,0 +1,17 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. april 2020",
+    "saksnummer" : "123456789",
+    "mottakerNavn": "Finn Verge",
+    "fritekst": "Du har ikke gitt dokumentasjon om hvorfor du søkte for sent"
+  },
+  "avslagÅrsak": "SØKT_FOR_SENT",
+  "førstegangsbehandling": true,
+  "antallBarn": 1,
+  "relasjonsRolle": "MORA",
+  "gjelderFødsel": false,
+  "vilkårTyper": ["FP_VK_3"],
+  "klagefristUker": 6
+}

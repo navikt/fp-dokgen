@@ -10,7 +10,7 @@ Date: 4. april 2020
 
 #  NAV has granted your application for a lump-sum grant
 <p style="color:gray">
-Nav´s case number: 123456789
+Nav's case number: 123456789
 <br/>
 Name: Dolly Duck
 <br/>
@@ -19,8 +19,6 @@ National identity number: 300220 12345
 
 <br/>
 </p>
-
-
 
 
 You are entitled to a lump-sum grant and will receive NOK 85 000 within one week.

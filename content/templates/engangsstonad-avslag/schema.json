@@ -1,0 +1,49 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "felles",
+    "avslagÅrsak",
+    "førstegangsbehandling",
+    "antallBarn",
+    "relasjonsRolle",
+    "gjelderFødsel",
+    "vilkårTyper",
+    "klagefristUker"
+  ],
+  "properties": {
+    "felles": {
+      "type": "object"
+    },
+    "avslagÅrsak": {
+      "type": "string"
+    },
+    "førstegangsbehandling": {
+      "type": "boolean"
+    },
+    "antallBarn": {
+      "type": "number"
+    },
+    "relasjonsRolle": {
+      "type": "string"
+    },
+    "gjelderFødsel": {
+      "type": "boolean"
+    },
+    "vilkårTyper": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "klagefristUker": {
+      "type": "number"
+    },
+    "avslagMedlemskap": {
+      "type": "string"
+    }
+  }
+}
