@@ -10,11 +10,13 @@ Dato: 4. april 2020
 
 #  NAV har innvilga søknaden din om eingongsstønad
 <p style="color:gray">
-NAV´s saksnummer: 123456789
+Saksnummer i NAV: 123456789
 <br/>
 Navn: Dolly Duck
 <br/>
 Fødselsnummer: 300220 12345
+<br/>
+
 <br/>
 </p>
 
@@ -41,7 +43,6 @@ På [nav.no/dittnav](https://nav.no/dittnav) kan du sjå dokumenta i saka di.
 
 
 
-
 ##### Har du spørsmål?
 Du finn nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 
@@ -51,10 +52,7 @@ Du finn nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 Med vennleg helsing
 <br/>
 NAV Familie -og Pensjonsytelser
-<br/>
-
-
-Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
+<br/><br/>Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
 <br/>**Dette er en kopi, orginal er sendt til verge**.
 
 

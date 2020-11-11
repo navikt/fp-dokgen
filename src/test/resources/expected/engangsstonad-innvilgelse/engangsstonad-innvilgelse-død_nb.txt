@@ -10,11 +10,13 @@ Dato: 4. april 2020
 
 #  NAV har behandlet søknaden om engangsstønad
 <p style="color:gray">
-NAV´s saksnummer: 123456789
+Saksnummer i NAV: 123456789
 <br/>
 Navn: Dolly Duck
 <br/>
 Fødselsnummer: 300220 12345
+<br/>
+
 <br/>
 </p>
 
@@ -24,15 +26,12 @@ Vi sender dette brevet for å informere om at vi har innvilget søknaden om enga
 
 Vedtaket er gjort etter folketrygdloven § 14-17 og forvaltningsloven § 35.
 
-Hvis du har spørsmål om vedtaket eller Ønsker å klage, må du gjerne kontakte oss på telefon 55 55 33 33. Klagefristen er seks uker fra den datoen dødsboet fikk brevet.
+Hvis du har spørsmål om vedtaket eller ønsker å klage, må du gjerne kontakte oss på telefon 55 55 33 33. Klagefristen er seks uker fra den datoen dødsboet fikk brevet.
 
 <br/>
 Med vennlig hilsen
 <br/>
 NAV Familie -og Pensjonsytelser
-<br/>
-
-
 
 
 
