@@ -16,6 +16,8 @@ Name: Dolly Duck
 <br/>
 National identity number: 300220 12345
 <br/>
+
+<br/>
 </p>
 
 
@@ -41,7 +43,6 @@ Go to [nav.no/dittnav](https://nav.no/dittnav) to see the documents in your case
 
 
 
-
 ##### Do you have questions?
 You will find useful information at [nav.no/familie](https://nav.no/familie).
 
@@ -51,11 +52,8 @@ You will find useful information at [nav.no/familie](https://nav.no/familie).
 Yours sincerely
 <br/>
 NAV Familie -og Pensjonsytelser
-<br/>
-
-
-This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
-<br/>**This is a copy, the orginal has been sendt to the guardian**.
+<br/><br/>This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
+<br/>>**This is a copy, the orginal has been sendt to the guardian**.
 
 
 
