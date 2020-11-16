@@ -28,24 +28,26 @@ Vi fikk klagen din på {{> ytelse_navn_nb}} {{søknadDato}}, men mangler opplysn
     {{/if}}
 {{/if}}{{/if}}
 
-#### Du må sende oss
-
+**Du må sende oss**
+<br/>
 <ul>{{#each dokumentListe}}
 <li>{{ this }}</li>
 {{/each}}</ul>
-
+<br/>
 {{#if klage}}
 Du sender dokumentasjonen til oss på nav.no/klage. Velg NAV-enhet: NAV Klageinstans Midt-Norge.
 {{/if}}
-
-#### Søknaden kan bli avslått
+<br/>
+**Søknaden kan bli avslått**
+<br/>
 {{#if førstegangsbehandling}}
 Hvis vi ikke får opplysningene innen {{fristDato}}, kan søknaden bli avslått.
 {{else}}
 Hvis du ikke sender oss dette innen {{fristDato}}, behandler vi saken med de opplysningene vi har.
 {{/if}}
 Dette går fram av folketrygdloven § 21-3.
-
-
+<br/>
+<br/>
+<br/>
 {{> footer_nb }}
 
