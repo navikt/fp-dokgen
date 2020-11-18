@@ -1,9 +1,10 @@
 package no.nav.foreldrepenger.dokgen.test.templates;
 
-import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
-import org.junit.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
+
+import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
 
 public class EngangsstønadInnvilgelseTest {
 
