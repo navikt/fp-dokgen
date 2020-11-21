@@ -5,10 +5,8 @@ Dato: 4. april 2020
 <br>
 <br>
 
+# NAV har avslått søknaden din om engangsstønad
 
-
-
-#  NAV har innvilget søknaden din om engangsstønad
 <p style="color:gray">
 Saksnummer i NAV: 123456789
 <br/>
@@ -16,21 +14,49 @@ Navn: Dolly Duck
 <br/>
 Fødselsnummer: 300220 12345
 <br/>
-
+Verge/Fullmektig: Finn Verge
 <br/>
 </p>
 
 
-Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at du har rett til engangsstønad. Du får utbetalt 85 000 kroner innen en uke.
 
 
-Stønaden er skattefri, og du kan sjekke utbetalingen din på [nav.no/dittnav](https://nav.no/dittnav).
 
 
-Vedtaket er gjort etter folketrygdloven § 14-17.
+
+
+
+
+
+
+Du har ikke rett til engangsstønad fordi du søkte for sent. Du må søke innen seks måneder etter omsorgsovertakelsen.
+Du har ikke gitt dokumentasjon om hvorfor du søkte for sent<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Vedtaket er gjort etter folketrygdloven § 22-13.
+
+
+
+
 <br/>
-<br/>
-<br/>
+
 **Du har rett til å klage**<br/>
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>
@@ -50,7 +76,4 @@ Med vennlig hilsen
 <br/>
 NAV Familie -og Pensjonsytelser
 <br/>
-<br/>Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
-
-
 

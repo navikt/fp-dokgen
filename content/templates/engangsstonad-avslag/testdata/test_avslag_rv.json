@@ -1,0 +1,16 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. april 2020",
+    "saksnummer" : "123456789"
+  },
+  "avslagÅrsak": "MOR_IKKE_DØD_VED_FØDSEL_OMSORG",
+  "førstegangsbehandling": false,
+  "antallBarn": 0,
+  "relasjonsRolle": "FARA",
+  "gjelderFødsel": true,
+  "vilkårTyper": ["FP_VK_3"],
+  "klagefristUker": 6,
+  "avslagMedlemskap": "IKKE_MEDL_ETTER_FØDSEL"
+}
