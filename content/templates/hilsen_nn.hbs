@@ -3,6 +3,13 @@ Med vennleg helsing
 <br/>
 NAV Familie -og Pensjonsytelser
 <br/>
-{{#if felles.erAutomatiskBehandlet}}<br/>Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.{{/if}}
-{{#if felles.harVerge}}{{#if felles.erKopi}}<br/>**Dette er en kopi, orginal er sendt til verge**.{{else}}<br/>**Kopi av dette brevet er sendt søker til orientering**.{{/if}}
+{{#if felles.erAutomatiskBehandlet}}<br/>Vedtaket har blitt automatisk saksbehandla av fagsystemet vårt. Det er derfor ingen saksbehandlar som har underskrive vedtaksbrevet.{{/if}}
+{{#if felles.harVerge}}
+{{#if felles.erKopi}}
+
+**Dette er en kopi, orginal er sendt til verge**.
+{{else}}
+
+**Kopi av dette brevet er sendt søker til orientering**.
+{{/if}}
 {{/if}}

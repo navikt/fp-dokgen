@@ -4,9 +4,9 @@ Dato: 4. april 2020
 <br>
 <br>
 <br>
-
-
-
+<br/>
+<br/>
+<br/>
 
 #  NAV har innvilget søknaden din om engangsstønad
 <p style="color:gray">
@@ -21,16 +21,14 @@ Fødselsnummer: 300220 12345
 </p>
 
 
-Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at du har rett til engangsstønad. Du får utbetalt 85 000 kroner innen en uke.
+Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at du har rett til engangsstønad. Du får utbetalt 85 000 kroner innen en uke.<br/>
 
+Stønaden er skattefri, og du kan sjekke utbetalingen din på [nav.no/dittnav](https://nav.no/dittnav).<br/>
 
-Stønaden er skattefri, og du kan sjekke utbetalingen din på [nav.no/dittnav](https://nav.no/dittnav).
+Vedtaket er gjort etter folketrygdloven § 14-17.<br/>
 
-
-Vedtaket er gjort etter folketrygdloven § 14-17.
 <br/>
-<br/>
-<br/>
+
 **Du har rett til å klage**<br/>
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>
