@@ -4,9 +4,9 @@ Dato: 4. april 2020
 <br>
 <br>
 <br>
-
-
-
+<br/>
+<br/>
+<br/>
 
 #  NAV har innvilget søknaden din om engangsstønad
 <p style="color:gray">
@@ -21,16 +21,14 @@ Fødselsnummer: 300220 12345
 </p>
 
 
-Vi har behandlet saken din på nytt fordi beløpet på engangsstønad har økt. Vi vil utbetale det resterende beløpet på 1 580 kroner innen en uke.
+Vi har behandlet saken din på nytt fordi beløpet på engangsstønad har økt. Vi vil utbetale det resterende beløpet på 1 580 kroner innen en uke.<br/>
 
+Stønaden er skattefri, og du kan sjekke utbetalingen din på [nav.no/dittnav](https://nav.no/dittnav).<br/>
 
-Stønaden er skattefri, og du kan sjekke utbetalingen din på [nav.no/dittnav](https://nav.no/dittnav).
+Vedtaket er gjort etter folketrygdloven § 14-17.<br/>
 
-
-Vedtaket er gjort etter folketrygdloven § 14-17.
 <br/>
-<br/>
-<br/>
+
 **Du har rett til å klage**<br/>
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>
@@ -51,7 +49,11 @@ Med vennlig hilsen
 NAV Familie -og Pensjonsytelser
 <br/>
 <br/>Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
-<br/>**Dette er en kopi, orginal er sendt til verge**.
+
+
+
+**Dette er en kopi, orginal er sendt til verge**.
+
 
 
 
