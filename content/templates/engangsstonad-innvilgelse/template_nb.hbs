@@ -1,20 +1,18 @@
 {{> header }}
-<br/>
-<br/>
-<br/>
 {{#if død}}
+<br/>
+<br/>
+
 #  NAV har behandlet søknaden om engangsstønad
 {{> brukerdetaljer_nb }}
 Vi sender dette brevet for å informere om at vi har innvilget søknaden om engangsstønad til {{felles.søkerNavn}}. Det blir utbetalt {{innvilgetBeløp}} kroner innen en uke. Stønaden er skattefri.<br/>
 <br/>Vedtaket er gjort etter folketrygdloven § 14-17.<br/>
 <br/>Hvis du har spørsmål om vedtaket eller ønsker å klage, må du gjerne kontakte oss på telefon 55 55 33 33. Klagefristen er seks uker fra den datoen dødsboet fikk brevet.<br/>
-<br/>
-<br/>
 {{> hilsen_nb }}
 {{else}}
+
 #  NAV har innvilget søknaden din om engangsstønad
 {{> brukerdetaljer_nb }}
-
 {{#if førstegangsbehandling}}Du har rett til engangsstønad og får utbetalt {{innvilgetBeløp}} kroner innen en uke.<br/>
 {{else if medhold}}
 Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at du har rett til engangsstønad. Du får utbetalt {{innvilgetBeløp}} kroner innen en uke.<br/>
@@ -38,4 +36,3 @@ Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du
 <br/>
 {{> footer_nb }}
 {{/if}}
-

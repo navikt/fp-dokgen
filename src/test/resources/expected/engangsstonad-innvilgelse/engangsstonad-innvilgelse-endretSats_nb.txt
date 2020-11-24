@@ -4,9 +4,7 @@ Dato: 4. april 2020
 <br>
 <br>
 <br>
-<br/>
-<br/>
-<br/>
+
 
 #  NAV har innvilget søknaden din om engangsstønad
 <p style="color:gray">
@@ -17,9 +15,7 @@ Navn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 
-<br/>
 </p>
-
 
 Vi har behandlet saken din på nytt fordi beløpet på engangsstønad har økt. Vi vil utbetale det resterende beløpet på 1 580 kroner innen en uke.<br/>
 
@@ -46,14 +42,13 @@ Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie -og Pensjonsytelser
-<br/>
-<br/>Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
+NAV Familie -og Pensjonsytelser<br/><br/>
+
+
+Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
 
 
 
 **Dette er en kopi, orginal er sendt til verge**.
-
-
 
 

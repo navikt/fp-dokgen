@@ -16,7 +16,6 @@ Navn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 
-<br/>
 </p>
 
 
@@ -58,8 +57,7 @@ Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie -og Pensjonsytelser
-<br/>
+NAV Familie -og Pensjonsytelser<br/><br/>
 
 
 

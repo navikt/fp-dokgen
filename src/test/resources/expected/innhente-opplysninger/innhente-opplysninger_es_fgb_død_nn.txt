@@ -16,10 +16,7 @@ Namn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 
-<br/>
 </p>
-
-
 
 
 
@@ -39,7 +36,6 @@ Vi fekk søknad om eingongsstønad frå Dolly Duck 1. april 2020, men manglar op
 
 **Søknaden kan bli avslått**
 <br/>
-
 Dersom vi ikkje får opplysningane innan 24. mai 2020, kan søknaden bli avslått.
 
 Dette går fram av folketrygdlova § 21-3.
@@ -56,11 +52,9 @@ Du finn nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 <br/>
 <br/>
-<br/>
 Med vennleg helsing
 <br/>
-NAV Familie -og Pensjonsytelser
-<br/>
+NAV Familie -og Pensjonsytelser<br/><br/>
 
 
 

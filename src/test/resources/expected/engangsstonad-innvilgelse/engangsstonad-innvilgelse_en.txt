@@ -6,8 +6,6 @@ Date: 4. april 2020
 <br>
 
 
-
-
 #  NAV has granted your application for a lump-sum grant
 <p style="color:gray">
 Nav's case number: 123456789
@@ -17,17 +15,14 @@ Name: Dolly Duck
 National identity number: 300220 12345
 <br/>
 
-<br/>
 </p>
 
+You are entitled to a lump-sum grant and will receive NOK 85 000 within one week.<br/>
 
-You are entitled to a lump-sum grant and will receive NOK 85 000 within one week.
+The lump-sum grant is not liable to tax, and you can check your payment at [nav.no/dittnav](https://nav.no/dittnav).<br/>
 
-The lump-sum grant is not liable to tax, and you can check your payment at [nav.no/dittnav](https://nav.no/dittnav).
+The decision has been made pursuant to section 14-17 of the National Insurance Act.<br/>
 
-The decision has been made pursuant to section 14-17 of the National Insurance Act.
-<br/>
-<br/>
 <br/>
 
 **You have the right to appeal**<br/>
@@ -47,14 +42,13 @@ You will find useful information at [nav.no/familie](https://nav.no/familie).
 <br/>
 Yours sincerely,
 <br/>
-NAV Familie -og Pensjonsytelser
-<br/>
-<br/>This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
+NAV Familie -og Pensjonsytelser<br/><br/>
+
+
+This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
 
 
 
 **This is a copy, the orginal has been sendt to the guardian**.
-
-
 
 
