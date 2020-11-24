@@ -71,11 +71,11 @@ jobs:
           title: Bygg av ${{ env.TAG }}
           labels: deployment
           body: |
-            Kommenter med <b>/promote ${{ env.TAG }} env namespace</b>, hvor <b>env</b> er et gyldig clusternavn og <b>namespace</b> et eksisterende namespace i det clusteret.
+            Kommenter med <b>/promote env</b>, hvor <b>env</b> er et gyldig clusternavn.
             <table>
-            <tr><th>Cluster</th><th>Namespace</th></tr>
-            <tr><td>dev-fss</td><td>teamforeldrepenger</td></tr>
-            <tr><td>prod-fss</td><td>teamforeldrepenger</td></tr>
+            <tr><th>Cluster</th></tr>
+            <tr><td>dev-fss</td></tr>
+            <tr><td>prod-fss</td></tr>
             </table>
 
       - name: Trigg deploy til dev-fss

@@ -1,0 +1,17 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "fritekst" : "FRITEKST LINJE 1\nFRITEKST LINJE 2",
+    "brevDato": "4. april 2020",
+    "erKopi" : false,
+    "harVerge" : false,
+    "saksnummer" : "123456789",
+    "ytelseType" : "ES"
+  },
+  "terminDato": "23. mai 2020",
+  "fristDato": "24. mai 2020",
+  "antallBarn": 1,
+  "advarselKode": "ANNET",
+  "flereOpplysninger": false
+}

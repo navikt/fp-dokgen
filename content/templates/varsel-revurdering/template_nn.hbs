@@ -1,0 +1,91 @@
+{{> header }}
+
+
+{{#eq felles.ytelseType "ES" }}#  NAV vurderer retten din til eingongsstønad på nytt
+{{else}}{{#eq felles.ytelseType "FP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søkje om å endre foreldrepengeperioden din{{else}}# NAV vurderer retten din til foreldrepengar på nytt{{/eq}}
+{{else}}{{#eq felles.ytelseType "SVP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søkje om å endre svangerskapspengeperioden din{{else}}# NAV vurderer retten din til svangerskapspengar på nytt{{/eq}}{{/eq}}{{/eq}}{{/eq}}
+{{> brukerdetaljer_nn }}
+
+{{#eq advarselKode "BARNIKKEREG" }}
+Du hadde termin {{terminDato}}, men {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}} er ikkje {{#eq antallBarn 1}}registrert{{else}}registrerte{{/eq}} i folkeregisteret. Du må derfor sende oss fødselsattesten innan {{fristDato}}.
+
+Er {{#eq antallBarn 1}}barnet født{{else}}barna fødde{{/eq}} i utlandet, må du opplyse om kor lenge du har vore i utlandet, og om du har planlagt å reise tilbake til Noreg.
+
+Du har også rett til å uttale deg om saka innan fristen.
+
+{{else}}{{#eq advarselKode "ANNET" }}
+Vi har fått nye opplysningar som kan ha betydning for retten din til {{> ytelse_navn_nn}}.
+
+<p style="white-space: pre">{{felles.fritekst}}</p>{{/eq}}{{/eq}}
+
+{{#neq felles.ytelseType "ES" }}
+{{#eq advarselKode "JOBBFULLTID" }}
+Vi har fått opplysningar om at du jobbar samtidig som du får {{> ytelse_navn_nn}}. Derfor vurderer vi å stanse {{> ytelse_navn_f_nn}} dine.
+
+Du kan ikkje jobbe heiltid og samtidig få {{> ytelse_navn_nn}}. For at du ikkje skal miste {{> ytelse_navn_f_nn}}, må du søkje om utsetjing. Arbeider du deltid, må du søkje om å kombinere {{> ytelse_navn_f_nn}} med arbeid.
+{{/eq}}
+{{#eq advarselKode "IKKEOPPTJENT" }}
+Vi har fått opplysningar om at inntekta di var lågare enn eit halvt grunnbeløp i året før skatt. Derfor vurderer vi å stanse {{> ytelse_navn_f_nn}} dine.
+{{/eq}}
+{{#eq advarselKode "UTVANDRET" }}
+Vi har fått opplysningar om at du har flytta frå Noreg. Derfor vurderer vi å stanse {{> ytelse_navn_f_nn}} dine.
+{{/eq}}
+{{#eq advarselKode "JOBBUTLAND" }}
+Vi har fått opplysningar om at du jobbar i eit anna land. Derfor vurderer vi å stanse {{> ytelse_navn_f_nn}} dine.
+{{/eq}}
+{{#eq advarselKode "IKKEOPPHOLD" }}
+Vi har fått opplysningar om at du ikkje har lovleg opphald i Noreg. Derfor vurderer vi å stanse {{> ytelse_navn_f_nn}} dine.
+{{/eq}}{{/neq}}
+
+{{#eq felles.ytelseType "FP" }}
+{{#eq advarselKode "JOBB6MND" }}
+Vi har fått nye opplysningar som viser at du ikkje har jobba seks månader før du fekk foreldrepengar. Derfor vurderer vi å stanse foreldrepengene dine.
+{{/eq}}
+{{#eq advarselKode "AKTIVITET" }}
+Vi har fått opplysningar om at mor til {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} ikkje lenger jobbar. Derfor vurderer vi å stanse foreldrepengene dine.
+
+Du kan ha rett til foreldrepengar dersom mor:
+<ul>
+    <li>begynner å jobbe igjen</li>
+    <li>studer på heiltid</li>
+    <li>tek del i kvalifiseringsprogrammet</li>
+    <li>tek del i introduksjonsprogrammet</li>
+    <li>er innlagd i helseinstitusjon</li>
+    <li>er heilt avhengig av hjelp til å ta seg av {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}</li>
+</ul>
+{{/eq}}{{/eq}}
+
+{{#eq felles.ytelseType "SVP" }}
+{{#eq advarselKode "JOBB6MND" }}
+Vi har fått nye opplysningar som viser at du ikkje har jobba fire veker før du fekk svangerskapspengar. Derfor vurderer vi å stanse svangerskapspengane dine.
+{{/eq}}
+{{#eq advarselKode "JOBBFULLTID" }}
+Ønskjer du å søkje om å endre svangerskapspengeperioden eller å uttale deg, må du gjere dette innan {{fristDato}}.
+
+Du kan søkje om å endre perioden din på [nav.no](https://nav.no/). Ønskjer du å uttale deg kan du gjere det ved å logge deg inn på [nav.no/dittnav](https://nav.no/dittnav) og velje «Send beskjed til NAV».
+{{/eq}}{{/eq}}
+
+{{#if flereOpplysninger}}
+Har du fleire opplysningar eller ønskjer du å uttale deg, må du gjere dette innan {{fristDato}}.
+
+Du sender uttalen din ved å logge deg inn på [nav.no/dittnav](https://nav.no/dittnav) og velje «Send beskjed til NAV». Opplysningar sender du inn på [nav.no/ettersendelser](https://nav.no/ettersendelser).
+{{/if}}
+{{#eq advarselKode "JOBBFULLTID" }}{{#eq felles.ytelseType "FP" }}
+Ønskjer du å søkje om å endre foreldrepengeperioden eller å uttale deg, må du gjere dette innan {{fristDato}}.
+
+Du kan søkje om å endre perioden din på [nav.no](https://nav.no/). Ønskjer du å uttale deg kan du gjere det ved å logge deg inn på [nav.no/dittnav](https://nav.no/dittnav) og velje «Send beskjed til NAV».
+{{/eq}}{{/eq}}
+
+Opplysningsplikta går fram av folketrygdlova §§ 21-3 og 21-4.
+<br/>
+<br/>
+
+**Vedtaket ditt om {{> ytelse_navn_nn}} kan bli gjort om**
+<br/>
+Vi vil vurdere saka di på nytt når fristen er gått ut. Dersom du ikkje har hatt rett til {{> ytelse_navn_nn}}, kan du bli nøydd til å betale tilbake pengane.
+
+Du sender dokumentasjonen til oss på [nav.no/ettersendelser](https://nav.no/ettersendelser).
+<br/>
+<br/>
+{{> footer_nn }}
+

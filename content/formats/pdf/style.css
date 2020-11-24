@@ -85,13 +85,7 @@ tr {
     font-size: 14px;
 }
 
-/*
-td {
-    border: 1px solid black;
-}
-*/
-
- table {
+table {
     width: 100%;
 }
 
@@ -110,4 +104,8 @@ td {
 
 .new_page {
     page-break-before: always;
+}
+
+li {
+    font-size: 14px;
 }
