@@ -14,8 +14,7 @@ Navn: Dolly Duck
 <br/>
 Fødselsnummer: 300220 12345
 <br/>
-Verge/Fullmektig: Finn Verge
-<br/>
+Verge/Fullmektig: Finn Verge<br/>
 </p>
 
 
@@ -30,7 +29,7 @@ Verge/Fullmektig: Finn Verge
 
 
 Du har ikke rett til engangsstønad fordi du søkte for sent. Du må søke innen seks måneder etter omsorgsovertakelsen.
-Du har ikke gitt dokumentasjon om hvorfor du søkte for sent<br/>
+<br/><br/>Du har ikke gitt dokumentasjon om hvorfor du søkte for sent<br/>
 
 
 
@@ -74,6 +73,5 @@ Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie -og Pensjonsytelser
-<br/>
+NAV Familie -og Pensjonsytelser<br/><br/>
 
