@@ -23,6 +23,9 @@ jobs:
           echo  $GITHUB_TOKEN | docker login --username "x-access-token" --password-stdin https://docker.pkg.github.com
           chmod +x *.sh && ./up.sh
 
+      - name: Kjører gjennom testene
+        run: mvn test
+
       - name: Hent tag
         run: echo "TAG=$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
 
