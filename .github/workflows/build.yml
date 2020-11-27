@@ -35,13 +35,6 @@ jobs:
           echo  $GITHUB_TOKEN | docker login --username "x-access-token" --password-stdin https://docker.pkg.github.com
           chmod +x *.sh && ./up.sh
 
-      - uses: actions/setup-java@v1
-        with:
-          java-version: 1.11
-
-      - name: Kjører enhetstestene
-        run: mvn test --settings .github/.m2/settings.xml
-
       - name: Hent tag
         run: echo "TAG=$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
 
@@ -61,10 +54,10 @@ jobs:
         with:
           java-version: 1.11
 
-      - name: Deploy fp-dokgen artifact
+      - name: Bygger, tester og deployer fp-dokgen artifact
         run: |
           ./collect-contracts.sh
-          mvn deploy -e --settings ./.m2/settings.xml --file pom.xml -Dchangelist= -Dsha1=-$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)
+          mvn deploy -e --quiet --settings .github/.m2/settings.xml --file pom.xml -Dchangelist= -Dsha1=-$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)
         env:
           GITHUB_USERNAME: x-access-token
           GITHUB_PASSWORD: ${{ secrets.GH_ACCESS_TOKEN }}
