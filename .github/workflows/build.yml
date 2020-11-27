@@ -40,7 +40,7 @@ jobs:
           java-version: 1.11
 
       - name: Kjører enhetstestene
-        run: mvn test
+        run: mvn test --settings .github/.m2/settings.xml
 
       - name: Hent tag
         run: echo "TAG=$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
