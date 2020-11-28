@@ -6,15 +6,21 @@
 
 #  NAV har behandla søknaden om eingongsstønad
 {{>brukerdetaljer_nn}}
+
 Vi sender dette brevet for å informere om at vi har innvilga søknaden om eingongsstønad til {{felles.søkerNavn}}. Det blir utbetalt {{innvilgetBeløp}} kroner innan ei veke. Stønaden er skattefri.<br/>
 <br/>Vedtaket er gjort etter folketrygdlova § 14-17.<br/>
-<br/>Dersom du har spørsmål om vedtaket eller ønskjer å klage, må du gjerne kontakte oss på telefon 55 55 33 33. Fristen for å klage er seks veker frå den datoen dødsbuet fekk brevet.<br/><br/><br/>
+<br/>Dersom du har spørsmål om vedtaket eller ønskjer å klage, må du gjerne kontakte oss på telefon 55 55 33 33. Fristen for å klage er seks veker frå den datoen dødsbuet fekk brevet.<br/>
+<br/>
+<br/>
+<br/>
+
 {{> hilsen_nn }}
 {{else}}
 
 #  NAV har innvilga søknaden din om eingongsstønad
 {{>brukerdetaljer_nn}}
-{{#if førstegangsbehandling}}Du har rett til eingongsstønad og får utbetalt {{innvilgetBeløp}} kroner innan ei veke.<br/>
+{{#if førstegangsbehandling}}
+Du har rett til eingongsstønad og får utbetalt {{innvilgetBeløp}} kroner innan ei veke.<br/>
 {{else if medhold}}
 Etter at du klaga, har vi vurdert saka di på nytt. Vi har kome fram til at du har rett til eingongsstønad. Du får utbetalt {{innvilgetBeløp}} kroner innan ei veke.<br/>
 {{else if erEndretSats}}

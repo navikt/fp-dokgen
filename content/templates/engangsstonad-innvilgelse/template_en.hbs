@@ -5,17 +5,23 @@
 
 #  NAV has processed the application for a lump-sum grant
 {{> brukerdetaljer_en }}
+
 This letter is to inform you that we have approved {{felles.søkerNavn}}’s application for a lump-sum grant. We will issue a payment of NOK {{innvilgetBeløp}} within one week. The lump-sum grant is not liable to tax.<br/>
 <br/>The decision has been made pursuant to section 14-17 of the National Insurance Act.<br/>
 <br/>If you have any questions about the decision or wish to lodge an appeal, please call us on 55 55 33 33.<br/>
-The deadline for appeals is six weeks from the date the estate received this letter.<br/><br/><br/>
+The deadline for appeals is six weeks from the date the estate received this letter.<br/>
+<br/>
+<br/>
+<br/>
+
 {{> hilsen_en }}
 {{else}}
 
 #  NAV has granted your application for a lump-sum grant
 {{> brukerdetaljer_en }}
 
-{{#if førstegangsbehandling}}You are entitled to a lump-sum grant and will receive NOK {{innvilgetBeløp}} within one week.<br/>
+{{#if førstegangsbehandling}}
+You are entitled to a lump-sum grant and will receive NOK {{innvilgetBeløp}} within one week.<br/>
 {{else if medhold}}
 After your appeal, we have reassessed your case. We have concluded that you are entitled to a lump-sum grant. You will receive a payment of NOK {{innvilgetBeløp}} within one week.<br/>
 {{else if erEndretSats}}
