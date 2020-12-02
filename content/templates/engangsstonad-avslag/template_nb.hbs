@@ -7,7 +7,7 @@
 {{>brukerdetaljer_nb}}
 {{#if avslagMedlemskap}}
     {{#eq avslagMedlemskap "IKKE_MEDL_FØR_STP"}}
-Du har ikke rett til engangsstønad fordi du ikke er medlem i folketrygden
+Du har ikke rett til engangsstønad fordi du ikke er medlem i folketrygden.
     {{/eq}}
     {{#eq avslagMedlemskap "IKKE_MEDL_ETTER_FØDSEL"}}
 Du har ikke rett til engangsstønad fordi du ikke var medlem i folketrygden på det tidspunktet {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}} ble født.
@@ -29,7 +29,7 @@ Du har ikke oppholdstillatelse i Norge.
 Hvis du har søkt asyl i Norge, er medlemskapet i folketrygden begrenset, slik at det ikke gir deg rett til engangsstønad.
     {{/case}}
     {{#case "SØKER_HAR_IKKE_OPPHOLDSRETT"}}
-Vi har ikke opplysninger om at du jobber eller har familie som forsørger deg i Norge. Det er derfor ikke dokumentert at du har rett til opphold etter EØS-avtalen
+Vi har ikke opplysninger om at du jobber eller har familie som forsørger deg i Norge. Det er derfor ikke dokumentert at du har rett til opphold etter EØS-avtalen.
     {{/case}}
     {{#case "SØKER_ER_IKKE_BOSATT"}}
 Du regnes ikke som medlem fordi du oppholder deg mer i utlandet enn i Norge.
@@ -51,7 +51,7 @@ Du har allerede fått utbetalt foreldrepenger. Derfor er søknaden din avslått.
     {{/case}}
     {{#case "SØKT_FOR_SENT"}}
 Du har ikke rett til engangsstønad fordi du søkte for sent. Du må søke innen seks måneder etter {{#if gjelderFødsel}}fødselen{{else}}omsorgsovertakelsen{{/if}}.
-{{#if felles.fritekst}}<br/><br/>{{felles.fritekst}}<br/>{{/if}}
+{{#if felles.fritekst}}<br/><br/><p style="white-space: pre">{{felles.fritekst}}</p><br/>{{/if}}
     {{/case}}
     {{#case "OMSORGSOVERTAKELSE_ETTER_56_UKER"}}
 Du har ikke rett til engangsstønad fordi du ikke overtok omsorgen for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} innen 56 uker etter {{#if gjelderFødsel}}fødselen{{else }}adopsjonen{{/if}}.
