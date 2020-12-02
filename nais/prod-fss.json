@@ -1,5 +1,5 @@
 {
-  "namespace": "default",
+  "namespace": "teamforeldrepenger",
   "minReplicas": "2",
   "maxReplicas": "3",
   "ingresses": [
