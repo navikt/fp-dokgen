@@ -1,121 +1,121 @@
 {{> header }}
 {{#if førstegangsbehandling}}
-# NAV har avslått søknaden din om engangsstønad
+# NAV har avslått søknaden din om eingongsstønad
 {{else}}
-# NAV har gjort om på vedtaket ditt om engangsstønad
+# NAV har gjort om vedtaket ditt om eingongsstønad
 {{/if}}
-{{>brukerdetaljer_nb}}
+{{>brukerdetaljer_nn}}
 {{#if avslagMedlemskap}}
     {{#eq avslagMedlemskap "IKKE_MEDL_FØR_STP"}}
-Du har ikke rett til engangsstønad fordi du ikke er medlem i folketrygden
+Du har ikkje rett til eingongsstønad fordi du ikkje er medlem i folketrygda.
     {{/eq}}
     {{#eq avslagMedlemskap "IKKE_MEDL_ETTER_FØDSEL"}}
-Du har ikke rett til engangsstønad fordi du ikke var medlem i folketrygden på det tidspunktet {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}} ble født.
+Du har ikkje rett til eingongsstønad fordi du ikkje var medlem i folketrygda på det tidspunktet då {{#eq antallBarn 1}}barnet ditt {{else}}barna dine {{/eq}}blei {{#eq antallBarn 1}}fødd{{else}}fødde{{/eq}}.
     {{/eq}}
     {{#eq avslagMedlemskap  "IKKE_MEDL_ETTER_OVERTAGELSE"}}
-Du har ikke rett til engangsstønad fordi du ikke var medlem i folketrygden på det tidspunktet du overtok omsorgen for {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}}.
+Du har ikkje rett til eingongsstønad fordi du ikkje var medlem i folketrygda på det tidspunktet då du tok over omsorga for {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}}.
     {{/eq}}
 {{/if}}
 {{~#switch avslagÅrsak}}
     {{#case "SØKER_ER_UTVANDRET"}}
-Ifølge folkeregisteret har du flyttet fra Norge.
+Ifølgje folkeregisteret har du flytta frå Noreg.
     {{/case}}
     {{#case "SØKER_ER_IKKE_MEDLEM"}}
-Du er omfattet av trygdeordningen i et annet land.
+Du er omfatta av trygdeordninga i eit anna land.
     {{/case}}
     {{#case "SØKER_HAR_IKKE_LOVLIG_OPPHOLD"}}
-Du har ikke oppholdstillatelse i Norge.
+Du har ikkje opphaldsløyve i Noreg.
 
-Hvis du har søkt asyl i Norge, er medlemskapet i folketrygden begrenset, slik at det ikke gir deg rett til engangsstønad.
+Dersom du har søkt asyl i Noreg, er medlemskapen din i folketrygda avgrensa, slik at det ikkje gir deg rett til eingongsstønad.
     {{/case}}
     {{#case "SØKER_HAR_IKKE_OPPHOLDSRETT"}}
-Vi har ikke opplysninger om at du jobber eller har familie som forsørger deg i Norge. Det er derfor ikke dokumentert at du har rett til opphold etter EØS-avtalen
+Vi har ikkje opplysningar om at du arbeider eller har familie som forsørgjer deg i Noreg. Det er derfor ikkje dokumentert at du har rett til opphald etter EØS-avtalen.
     {{/case}}
     {{#case "SØKER_ER_IKKE_BOSATT"}}
-Du regnes ikke som medlem fordi du oppholder deg mer i utlandet enn i Norge.
+Du blir ikkje rekna som medlem fordi du bur meir i utlandet enn i Noreg.
     {{/case}}
     {{#case "IKKE_ALENEOMSORG"}}
-Du har ikke rett til engangsstønad fordi du ikke har aleneomsorgen for {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}}.
+Du har ikkje rett til eingongsstønad fordi du ikkje har åleineomsorga for {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}}.
     {{/case}}
     {{#case "FAR_HAR_IKKE_OMSORG_FOR_BARNET"}}
-Du har ikke rett til engangsstønad fordi du ikke har omsorgen for {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}}.
+Du har ikkje rett til eingongsstønad fordi du ikkje har omsorga for {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}}.
     {{/case}}
     {{#case "ENGANGSSTØNAD_ALLEREDE_UTBETALT_TIL_MOR"}}
-Mor har allerede fått utbetalt engangsstønaden. Derfor er søknaden din avslått.
+Mor har allereie fått utbetalt eingongsstønad. Derfor er søknaden din avslått.
     {{/case}}
     {{#case "ALLEREDE_UTBETALT_ENGANGSSTØNAD"}}
-Du har allerede fått utbetalt engangsstønaden. Derfor er søknaden din avslått.
+Du har allereie fått utbetalt eingongsstønad. Derfor er søknaden din avslått.
     {{/case}}
     {{#case "ALLEREDE_UTBETALT_FORELDREPENGER"}}
-Du har allerede fått utbetalt foreldrepenger. Derfor er søknaden din avslått.
+Du har allereie fått utbetalt foreldrepengar. Derfor er søknaden din avslått.
     {{/case}}
     {{#case "SØKT_FOR_SENT"}}
-Du har ikke rett til engangsstønad fordi du søkte for sent. Du må søke innen seks måneder etter {{#if gjelderFødsel}}fødselen{{else}}omsorgsovertakelsen{{/if}}.
-{{#if felles.fritekst}}<br/><br/>{{felles.fritekst}}<br/>{{/if}}
+Du har ikkje rett til eingongsstønad fordi du søkte for seint. Du må søkje innan seks månader etter {{#if gjelderFødsel}}fødselen{{else}}omsorgsovertakinga{{/if}}.
+{{#if felles.fritekst}}<br/><br/><p style="white-space: pre">{{felles.fritekst}}</p><br/>{{/if}}
     {{/case}}
     {{#case "OMSORGSOVERTAKELSE_ETTER_56_UKER"}}
-Du har ikke rett til engangsstønad fordi du ikke overtok omsorgen for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} innen 56 uker etter {{#if gjelderFødsel}}fødselen{{else }}adopsjonen{{/if}}.
+Du har ikkje rett til eingongsstønad fordi du ikkje tok over omsorga for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} innen 56 veker etter {{#if gjelderFødsel}}fødselen{{else }}adopsjonen{{/if}}.
     {{/case}}
     {{#case "SØKT_FOR_TIDLIG"}}
-Du har ikke rett til engangsstønad fordi du har søkt for tidlig. Du kan søke når du er i svangerskapsuke 22.
+Du har ikkje rett til eingongsstønad fordi du har søkt for tidleg. Du kan tidlegast søkje når du er i svangerskapsveke 22.
     {{/case}}
     {{#case "EKTEFELLES_SAMBOERS_BARN"}}
-Du har ikke rett til engangsstønad fordi du har adoptert {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} til ektefellen eller samboeren din.
+Du har ikkje rett til eingongsstønad fordi du har adoptert {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} til ektefellen eller sambuaren din.
     {{/case}}
     {{#case  "BARN_IKKE_RIKTIG_ALDER"}}
-Du har ikke rett til engangsstønad fordi {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}} var fylt 15 år da du overtok omsorgen.
+Du har ikkje rett til eingongsstønad fordi {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}} hadde fylt 15 år då du tok over omsorga.
     {{/case}}
     {{#case "IKKE_BARNETS_FAR" }}
-Du har ikke rett til engangsstønad fordi du ikke er registrert som {{#eq relasjonsRolle "FARA"}}far{{else}}medmor{{/eq}} til {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
+Du har ikkje rett til eingongsstønad fordi du ikkje er registrert som {{#eq relasjonsRolle "FARA"}}far{{else}}medmor{{/eq}} til {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
     {{/case}}
     {{#case "SØKER_HAR_HATT_VANLIG_SAMVÆR_MED_BARNET"}}
-Du har ikke rett til engangsstønad fordi du har hatt samvær med {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} minst en dag i uken og annenhver helg.
+Du har ikkje rett til eingongsstønad fordi du har hatt samvær med {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} minst éin dag i veka og annankvar helg.
     {{/case}}
     {{#case "SØKER_HAR_IKKE_FORELDREANSVAR"}}
-Du har ikke rett til engangsstønad fordi du ikke har foreldreansvaret for {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}}.
+Du har ikkje rett til eingongsstønad fordi du ikkje har foreldreansvar for {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}}.
     {{/case}}
     {{#case "IKKE_FORELDREANSVAR_ALENE_ETTER_BARNELOVA"}}
-Du har ikke rett til engangsstønad fordi du ikke har foreldreansvaret alene for {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}}.
+Du har ikkje rett til eingongsstønad fordi du ikkje åleine har foreldreansvar for {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}}.
     {{/case}}
     {{#case "MOR_IKKE_DØD_VED_FØDSEL_OMSORG"}}
-Du har ikke rett til engangsstønad og vi har derfor avslått søknaden din.
+Du har ikkje rett til eingongsstønad, og vi har derfor avslått søknaden din.
 
-Du har kun rett til engangsstønad som {{#eq relasjonsRolle "FARA"}}far{{else}}medmor{{/eq}} hvis du overtar omsorgen for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} når mor dør i forbindelse med {{#if gjelderFødsel}}fødselen{{else }}omsorgsovertakelsen{{/if}}.
+Du har berre rett til eingongsstønad som {{#eq relasjonsRolle "FARA"}}far{{else}}medmor{{/eq}} dersom du tek over omsorga for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} når mor døyr i samband med {{#if gjelderFødsel}}fødselen{{else }}omsorgsovertakinga{{/if}}.
     {{/case}}
     {{#case "FØDSELSDATO_IKKE_OPPGITT_ELLER_REGISTRERT"}}
-Du har ikke rett til engangsstønad fordi vi ikke har opplysninger om at {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{else}}barna{{/eq}} er født.
+Du har ikkje rett til eingongsstønad fordi vi ikkje har opplysningar om at {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{else}}barna{{/eq}} er {{#eq antallBarn 1}}født{{else}}fødde{{/eq}}.
     {{/case}}
     {{#case "MANGLENDE_DOKUMENTASJON"}}
-Vi har avslått søknaden din fordi vi ikke har mottatt dokumentasjonen vi har bedt om.
+Vi har avslått søknaden din fordi vi ikkje har fått dokumentasjonen vi har bede om.
 
-Hvis du sender oss dokumentasjonen innen fire uker, behandler vi saken din på nytt. Du trenger ikke sende ny søknad.
+Dersom du sender oss dokumentasjonen innan fire veker, behandlar vi saka di på nytt. Du treng ikkje sende ny søknad.
     {{/case}}
 {{/switch}}
 {{#each vilkårTyper}}
     {{#eq this "FPVK1_4"}}
-Vedtaket er gjort etter folketrygdloven § 14-17.
+Vedtaket er gjort etter folketrygdlova § 14-17.
     {{/eq}}
     {{#eq this "FPVK2_FB"}}
-Vedtaket er gjort etter folketrygdloven §§ 14-2 og 14-17.
+Vedtaket er gjort etter folketrygdlova §§ 14-2 og 14-17.
     {{/eq}}
     {{#eq this "FPVK2_RV"}}
-Vedtaket er gjort etter folketrygdloven §§ 14-2, 14-17 og forvaltningsloven § 35.
+Vedtaket er gjort etter folketrygdlova §§ 14-2, 14-17 og forvaltningslova § 35.
     {{/eq}}
     {{#eq this "FP_VK_3"}}
-Vedtaket er gjort etter folketrygdloven § 22-13.
+Vedtaket er gjort etter folketrygdlova § 22-13.
     {{/eq}}
     {{#eq this "FPVK1_4_5_8_RV"}}
-Vedtaket er gjort etter folketrygdloven § 14-17 og forvaltningsloven § 35.
+Vedtaket er gjort etter folketrygdlova § 14-17 og forvaltningslova § 35.
     {{/eq}}
     {{#eq this "FP_VK_34"}}
-Vedtaket er gjort etter folketrygdloven §§ 21-3.
+Vedtaket er gjort etter folketrygdlova §§ 21-3.
     {{/eq}}
 {{/each}}
 <br/>
 
 **Du har rett til å klage**<br/>
-Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>
 <br/>
-{{> footer_nb }}
+{{> footer_nn }}
