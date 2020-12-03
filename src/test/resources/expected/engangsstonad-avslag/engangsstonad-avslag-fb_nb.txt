@@ -29,7 +29,7 @@ Verge/Fullmektig: Finn Verge<br/>
 
 
 Du har ikke rett til engangsstønad fordi du søkte for sent. Du må søke innen seks måneder etter omsorgsovertakelsen.
-<br/><br/>Du har ikke gitt dokumentasjon om hvorfor du søkte for sent<br/>
+<br/><br/><p style="white-space: pre">Du har ikke gitt dokumentasjon om hvorfor du søkte for sent</p><br/>
 
 
 
