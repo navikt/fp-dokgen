@@ -1,0 +1,14 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. april 2020",
+    "saksnummer" : "123456789",
+    "ytelseType" : "SVP"
+  },
+  "vanligBehandling": false,
+  "klage": true,
+  "anke": false,
+  "innsyn": false,
+  "opphavType": "KLAGE"
+}

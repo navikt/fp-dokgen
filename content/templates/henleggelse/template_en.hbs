@@ -1,0 +1,42 @@
+{{> header }}
+{{#if vanligBehandling}}
+
+# NAV has closed your case on {{>ytelse_navn_nb}}
+    {{> brukerdetaljer_en }}
+
+We have been notified that you withdraw the application for {{>ytelse_navn_en}}. Your case will therefore be closed.<br/><br/>
+{{else if klage}}
+    {{#eq opphavType "FAMPEN"}}
+
+# NAV has closed your complaint on {{>ytelse_navn_en}}
+        {{> brukerdetaljer_en }}
+    {{/eq}}
+    {{#eq opphavType "KLAGE"}}
+
+# NAV Klageinstans has closed your complaint on {{>ytelse_navn_en}}
+        {{> brukerdetaljer_en }}
+    {{/eq}}
+
+We have been notified that you withdraw your complaint on {{>ytelse_navn_en}}. Your case will therefore be closed.<br/><br/>
+{{else if anke}}
+
+# NAV Klageinstans has closed your appeal on {{>ytelse_navn_en}}
+    {{> brukerdetaljer_en }}
+
+We have been notified that you withdraw your appeal on {{>ytelse_navn_en}}. Your appeal will therefore be closed.<br/><br/>
+{{else if innsyn}}
+
+# NAV has closed your request of access to the case of {{>ytelse_navn_en}}
+    {{> brukerdetaljer_en }}
+
+We have been notified that you withdraw your request of access of your case. NAV will therefore end further processing of your inquiry.<br/><br/>
+{{/if}}
+
+**Do you have questions?**<br/>
+You will find useful information at [nav.no/familie](https://nav.no/familie).
+<br/>
+<br/>
+<br/>
+{{> hilsen_en }}
+
+

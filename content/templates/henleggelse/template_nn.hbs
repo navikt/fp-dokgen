@@ -1,0 +1,42 @@
+{{> header }}
+{{#if vanligBehandling}}
+
+# NAV har avslutta saka di om {{>ytelse_navn_nn}}
+    {{> brukerdetaljer_nn }}
+
+Vi har fått beskjed om at du trekkjer søknaden om {{>ytelse_navn_nn}}, og avsluttar derfor saka di.<br/><br/>
+{{else if klage}}
+    {{#eq opphavType "FAMPEN"}}
+
+# NAV har avslutta klagesaka di på {{>ytelse_navn_nn}}
+        {{> brukerdetaljer_nn }}
+    {{/eq}}
+    {{#eq opphavType "KLAGE"}}
+
+# NAV Klageinstans har avslutta klagesaka di på {{>ytelse_navn_nn}}
+        {{> brukerdetaljer_nn }}
+    {{/eq}}
+
+Vi har fått beskjed om at du trekkjer klagen på {{>ytelse_navn_nn}}, og avslutter derfor klagesaka di.<br/><br/>
+{{else if anke}}
+
+# NAV Klageinstans har avslutta ankesaka di på {{>ytelse_navn_nn}}
+    {{> brukerdetaljer_nn }}
+
+Vi har fått beskjed om at du trekkjer anken på {{>ytelse_navn_nn}}, og avslutter derfor ankesaka di.<br/><br/>
+{{else if innsyn}}
+
+# NAV har avslutta førespurnaden din om innsyn i saka om {{>ytelse_navn_nn}}
+    {{> brukerdetaljer_nn }}
+
+Vi har fått beskjed om at du trekker spørsmålet om innsyn i saka, og avsluttar derfor behandlinga av førespurnaden din.<br/><br/>
+{{/if}}
+
+**Har du spørsmål?**<br/>
+Du finn nyttig informasjon på [nav.no/familie](https://nav.no/familie).
+<br/>
+<br/>
+<br/>
+{{> hilsen_nn }}
+
+
