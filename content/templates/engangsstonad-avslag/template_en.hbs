@@ -83,7 +83,7 @@ You are not entitled to a lump-sum grant. Your application has thus been denied.
 {{#eq relasjonsRolle "FARA"}}Fathers{{else}}Co-mothers{{/eq}} are only entitled to a lump-sum grant if the {{#eq relasjonsRolle "FARA"}}fathers{{else}}co-mothers{{/eq}} assumes parental responsibility for the {{#eq antallBarn 1}}child{{else}}children{{/eq}} following the mother’s death in connection with the {{#if gjelderFødsel}}birth{{else }}adoption{{/if}}.
     {{/case}}
     {{#case "FØDSELSDATO_IKKE_OPPGITT_ELLER_REGISTRERT"}}
-You are not entitled to a lump-sum grant because we do not have any information that the {{#eq antallBarn 1}}child has{{/eq}}{{#eq antallBarn 0}}child has or children have{{else}}children have{{/eq}} been born.
+You are not entitled to a lump-sum grant because we do not have any information that the {{#eq antallBarn 1}}child has{{/eq}}{{#eq antallBarn 0}}child has or children have{{/eq}}{{#gt antallBarn 1}}children have{{/gt}} been born.
     {{/case}}
     {{#case "MANGLENDE_DOKUMENTASJON"}}
 We have turned down your application because we have not received the documentation we requested.
@@ -93,7 +93,7 @@ If you send us the documentation within four weeks, we will process your case ag
 {{/switch}}
 {{#each vilkårTyper}}
     {{#eq this "FPVK1_4"}}
-This decision has been made pursuant to sections 14-17 of the National Insurance Act.
+This decision has been made pursuant to section 14-17 of the National Insurance Act.
     {{/eq}}
     {{#eq this "FPVK2_FB"}}
 This decision has been made pursuant to sections 14-2 and 14-17 of the National Insurance Act.
@@ -102,13 +102,13 @@ This decision has been made pursuant to sections 14-2 and 14-17 of the National 
 This decision has been made pursuant to sections 14-2 and 14-17 of the National Insurance Act and section 35 of the Public Administration Act.
     {{/eq}}
     {{#eq this "FP_VK_3"}}
-This decision has been made pursuant to sections 22-13 of the National Insurance Act.
+This decision has been made pursuant to section 22-13 of the National Insurance Act.
     {{/eq}}
     {{#eq this "FPVK1_4_5_8_RV"}}
-This decision has been made pursuant to sections 14-17 of the National Insurance Act and section 35 of the Public Administration Act.
+This decision has been made pursuant to section 14-17 of the National Insurance Act and section 35 of the Public Administration Act.
     {{/eq}}
     {{#eq this "FP_VK_34"}}
-This decision has been made pursuant to sections 21-3 of the National Insurance Act.
+This decision has been made pursuant to section 21-3 of the National Insurance Act.
     {{/eq}}
 {{/each}}
 <br/>

@@ -83,7 +83,7 @@ Du har ikkje rett til eingongsstønad, og vi har derfor avslått søknaden din.
 Du har berre rett til eingongsstønad som {{#eq relasjonsRolle "FARA"}}far{{else}}medmor{{/eq}} dersom du tek over omsorga for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} når mor døyr i samband med {{#if gjelderFødsel}}fødselen{{else }}omsorgsovertakinga{{/if}}.
     {{/case}}
     {{#case "FØDSELSDATO_IKKE_OPPGITT_ELLER_REGISTRERT"}}
-Du har ikkje rett til eingongsstønad fordi vi ikkje har opplysningar om at {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{else}}barna{{/eq}} er {{#eq antallBarn 1}}født{{else}}fødde{{/eq}}.
+Du har ikkje rett til eingongsstønad fordi vi ikkje har opplysningar om at {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}} er {{#eq antallBarn 1}}født{{else}}fødde{{/eq}}.
     {{/case}}
     {{#case "MANGLENDE_DOKUMENTASJON"}}
 Vi har avslått søknaden din fordi vi ikkje har fått dokumentasjonen vi har bede om.
@@ -108,7 +108,7 @@ Vedtaket er gjort etter folketrygdlova § 22-13.
 Vedtaket er gjort etter folketrygdlova § 14-17 og forvaltningslova § 35.
     {{/eq}}
     {{#eq this "FP_VK_34"}}
-Vedtaket er gjort etter folketrygdlova §§ 21-3.
+Vedtaket er gjort etter folketrygdlova § 21-3.
     {{/eq}}
 {{/each}}
 <br/>
