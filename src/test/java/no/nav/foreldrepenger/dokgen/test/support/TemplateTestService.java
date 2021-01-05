@@ -28,6 +28,13 @@ public class TemplateTestService {
                 : new Handlebars();
         handlebars.registerHelper("eq", ConditionalHelpers.eq);
         handlebars.registerHelper("neq", ConditionalHelpers.neq);
+        handlebars.registerHelper("gt", ConditionalHelpers.gt);
+        handlebars.registerHelper("gte", ConditionalHelpers.gte);
+        handlebars.registerHelper("lt", ConditionalHelpers.lt);
+        handlebars.registerHelper("lte", ConditionalHelpers.lte);
+        handlebars.registerHelper("and", ConditionalHelpers.and);
+        handlebars.registerHelper("or", ConditionalHelpers.or);
+        handlebars.registerHelper("not", ConditionalHelpers.not);
         handlebars.registerHelper("switch", new SwitchHelper());
         handlebars.registerHelper("case", new CaseHelper());
         handlebars.registerHelpers(StringHelpers.class);
