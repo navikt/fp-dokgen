@@ -22,12 +22,13 @@
       "type": "boolean"
     },
     "anke": {
-      "type": "boolean" }
+      "type": "boolean"
     },
     "innsyn": {
       "type": "boolean"
     },
     "opphavType": {
       "type": "string"
+    }
   }
 }

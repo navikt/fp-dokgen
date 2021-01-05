@@ -83,7 +83,7 @@ Du har ikke rett til engangsstønad og vi har derfor avslått søknaden din.
 Du har kun rett til engangsstønad som {{#eq relasjonsRolle "FARA"}}far{{else}}medmor{{/eq}} hvis du overtar omsorgen for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} når mor dør i forbindelse med {{#if gjelderFødsel}}fødselen{{else }}omsorgsovertakelsen{{/if}}.
     {{/case}}
     {{#case "FØDSELSDATO_IKKE_OPPGITT_ELLER_REGISTRERT"}}
-Du har ikke rett til engangsstønad fordi vi ikke har opplysninger om at {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{else}}barna{{/eq}} er født.
+Du har ikke rett til engangsstønad fordi vi ikke har opplysninger om at {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}} er født.
     {{/case}}
     {{#case "MANGLENDE_DOKUMENTASJON"}}
 Vi har avslått søknaden din fordi vi ikke har mottatt dokumentasjonen vi har bedt om.
@@ -109,7 +109,7 @@ Vedtaket er gjort etter folketrygdloven § 22-13.
 Vedtaket er gjort etter folketrygdloven § 14-17 og forvaltningsloven § 35.
     {{/eq}}
     {{#eq this "FP_VK_34"}}
-Vedtaket er gjort etter folketrygdloven §§ 21-3.
+Vedtaket er gjort etter folketrygdloven § 21-3.
     {{/eq}}
 {{/each}}
 <br/>
