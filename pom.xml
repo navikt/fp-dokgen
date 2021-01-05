@@ -24,7 +24,7 @@
         <handlebar.version>4.2.0</handlebar.version>
         <assertj.version>3.18.1</assertj.version>
         <junit.version>5.7.0</junit.version>
-        <mockito.version>3.6.28</mockito.version>
+        <mockito.version>3.7.0</mockito.version>
     </properties>
 
     <build>
