@@ -1,12 +1,12 @@
 <p align="right">
-Dato: 4. april 2020
+Date: 4. april 2020
 </p>
 <br>
 <br>
 <br>
 
 
-# NAV has closed your case on foreldrepenger
+# NAV has closed your case on parental benefits
     <p style="color:gray">
 Nav's case number: 123456789
 <br/>
