@@ -1,20 +1,20 @@
-{{> header }}
+{{> header_en }}
 
 
-{{#eq felles.ytelseType "ES" }}#  NAV vurderer retten din til engangsstønad på nytt
+{{#eq felles.ytelseType "ES" }}# NAV considers reprocessing your case regarding entitlement to a lump-sum grant
 {{else}}{{#eq felles.ytelseType "FP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søke om å endre foreldrepengeperioden din{{else}}# NAV vurderer retten din til foreldrepenger på nytt{{/eq}}
 {{else}}{{#eq felles.ytelseType "SVP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søke om å endre svangerskapspengeperioden din{{else}}# NAV vurderer retten din til svangerskapspenger på nytt{{/eq}}{{/eq}}{{/eq}}{{/eq}}
-{{> brukerdetaljer_nb }}
+{{> brukerdetaljer_en }}
 
 {{#eq advarselKode "BARNIKKEREG" }}
-Du hadde termin {{terminDato}}, men {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}} er ikke registrert i folkeregisteret. Du må derfor sende oss fødselsattesten innen {{fristDato}}.
+You were expecting {{terminDato}}, but {{#eq antallBarn 1}}your child is{{else}}your children are{{/eq}} not in the National Registry. You will have to send us a birth certificate before {{fristDato}}.
 
-Er {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} født i utlandet, må du opplyse om hvor lenge du har vært i utlandet og om du har planlagt å reise tilbake til Norge.
+If {{#eq antallBarn 1}}the child is{{else}}the children are{{/eq}} born in another country, you will need to inform us about the duration of your stay abroad, and whether you are planning to come back to Norway.
 
-Du har også rett til å uttale deg om saken innen fristen som er oppgitt.
+You are entitled to make a statement before the given deadline.
 
 {{else}}{{#eq advarselKode "ANNET" }}
-Vi har fått nye opplysninger som kan ha betydning for retten din til {{> ytelse_navn_nb}}.
+We have received new information that may influence the decision on your entitlement to the {{> ytelse_navn_en}}.
 
 <p style="white-space: pre">{{felles.fritekst}}</p>{{/eq}}{{/eq}}
 
@@ -66,9 +66,10 @@ Du kan søke om å endre perioden din på [nav.no](https://nav.no/). Ønsker du 
 {{/eq}}{{/eq}}
 
 {{#if flereOpplysninger}}
-Har du flere opplysninger eller ønsker du å uttale deg, må du gjøre dette innen {{fristDato}}.
+This is a notice.
+Do you have further information or do you wish to come with a statement, you will have to do this before {{fristDato}}.
 
-Du sender uttalelsen din ved å logge deg inn på [nav.no/dittnav](https://nav.no/dittnav) og velge «Send beskjed til NAV». Opplysninger sender du inn på [nav.no/ettersendelse](https://nav.no/ettersendelse).
+You can send us your statement by logging into [nav.no/dittnav](https://nav.no/dittnav) and choose «Send beskjed til NAV» (Send message to NAV). You can also send information at [nav.no/ettersendelse](https://nav.no/ettersendelse).
 {{/if}}
 {{#eq advarselKode "JOBBFULLTID" }}{{#eq felles.ytelseType "FP" }}
 Ønsker du å søke om å endre foreldrepengeperioden eller å uttale deg, må du gjøre dette innen {{fristDato}}.
@@ -76,16 +77,16 @@ Du sender uttalelsen din ved å logge deg inn på [nav.no/dittnav](https://nav.n
 Du kan søke om å endre perioden din på [nav.no](https://nav.no/). Ønsker du å uttale deg kan du gjøre det ved å logge deg inn på [nav.no/dittnav](https://nav.no/dittnav) og velge «Send beskjed til NAV».
 {{/eq}}{{/eq}}
 
-Opplysningsplikten går fram av folketrygdloven §§ 21-3 og 21-4.
+Your duty to give information is according to sections 21‑3 og 21‑4 of the National Insurance Act.
 <br/>
 <br/>
 
-**Vedtaket ditt om {{> ytelse_navn_nb}} kan bli omgjort**
+**The decision about your {{> ytelse_navn_en}} can be reversed**
 <br/>
-Vi vil vurdere saken din på nytt når fristen er gått ut. Dersom du ikke har hatt rett til {{> ytelse_navn_nb}}, kan du bli nødt til å betale tilbake pengene.
+We will consider your case again after the deadline has been reached. If you are not entitled to the {{> ytelse_navn_en}}, you can be asked to repay the money back.
 
-Du sender dokumentasjonen til oss på [nav.no/ettersendelser](https://nav.no/ettersendelser).
+You can send us information at [nav.no/ettersendelser](https://nav.no/ettersendelser).
 <br/>
 <br/>
-{{> footer_nb }}
+{{> footer_en }}
 
