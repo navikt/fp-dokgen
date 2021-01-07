@@ -29,6 +29,15 @@ public class InnhenteOpplysningerTest {
     }
 
     @Test
+    public void skal_generere_brev_for_innhente_opplysninger_ES_førstegang_på_engelsk() throws Exception {
+        // Act
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "en", "test_es_fgb");
+
+        // Assert
+        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_fgb_en.txt"));
+    }
+
+    @Test
     public void skal_generere_brev_for_innhente_opplysninger_ES_førstegang_død_på_bokmål() throws Exception {
         // Act
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nb", "test_es_fgb_død");
