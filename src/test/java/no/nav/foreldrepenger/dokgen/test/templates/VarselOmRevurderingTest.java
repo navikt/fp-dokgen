@@ -20,12 +20,30 @@ public class VarselOmRevurderingTest {
     }
 
     @Test
+    public void skal_generere_brev_for_varsel_om_revurdering_ES_kode_ANNET_på_engelsk() throws Exception {
+        // Act
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "en", "test_es_ANNET");
+
+        // Assert
+        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_ANNET_en.txt"));
+    }
+
+    @Test
     public void skal_generere_brev_for_varsel_om_revurdering_ES_kode_BARNIKKEREG_på_bokmål() throws Exception {
         // Act
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nb", "test_es_BARNIKKEREG");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_BARNIKKEREG_nb.txt"));
+    }
+
+    @Test
+    public void skal_generere_brev_for_varsel_om_revurdering_ES_kode_BARNIKKEREG_på_engelsk() throws Exception {
+        // Act
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "en", "test_es_BARNIKKEREG");
+
+        // Assert
+        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_BARNIKKEREG_en.txt"));
     }
 
     @Test
