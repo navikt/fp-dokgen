@@ -1,0 +1,12 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. april 2020",
+    "saksnummer": "123456789",
+    "ytelseType": "SVP",
+    "fritekst": "Vi kan kun gi deg delvis innsyn fordi"
+  },
+  "innsynResultat": "AVVIST",
+  "klagefrist": 6
+}
