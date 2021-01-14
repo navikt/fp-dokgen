@@ -1,0 +1,14 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "fritekst" : "FRITEKST",
+    "brevDato": "4. april 2020",
+    "erKopi" : false,
+    "harVerge" : false,
+    "saksnummer" : "123456789",
+    "ytelseType" : "SVP"
+  },
+  "arbeidsgiverNavn": "Arbeidsplassen AS",
+  "mottattDato": "1. mai 2020"
+}
