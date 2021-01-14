@@ -14,4 +14,4 @@ Spørsmål knyttet til koden eller prosjektet kan stilles til:
 * Jan Erik Johnsen (jan.erik.johnsen@nav.no)
 
 ## For NAV-ansatte
-Interne henvendelser kan stilles på slack-kanalen #teamforeldrepenger
+Interne henvendelser kan stilles på Slack-kanalen #teamforeldrepenger
