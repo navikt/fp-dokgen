@@ -17,7 +17,7 @@ jobs:
         run: |
           echo "TAG=$(echo ${{ github.event.client_payload.github.payload.issue.title }} | awk '{print $NF}' | awk -F- '{print $NF}')" >> $GITHUB_ENV
           echo "IMAGE=$IMAGE_BASE:$(echo ${{ github.event.client_payload.github.payload.issue.title }} | awk '{print $NF}')" >> $GITHUB_ENV
-          echo "CLUSTER=${{ github.event.client_payload.slash_command.arg1 }}" >> $GITHUB_ENV
+          echo "CLUSTER=${{github.event.client_payload.slash_command.args.unnamed.arg1}}" >> $GITHUB_ENV
 
       - name: Sjekk ut kode
         uses: actions/checkout@v1
@@ -35,20 +35,7 @@ jobs:
 
       - name: Oppdater kommentar med deployment status ved feil
         if: failure()
-        uses: actions/github-script@v2
-        with:
-          github-token: ${{secrets.GH_ACCESS_TOKEN}}
-          script: |
-            const issue = { owner: context.issue.owner,
-                            repo: context.issue.repo,
-                            issue_number: ${{ github.event.client_payload.github.payload.issue.number }} }
-            github.issues.createComment({...issue,
-                                    title: 'Deploy av ${{ env.TAG }}',
-                                    body: 'promote til ${{ github.event.client_payload.slash_command.args }} feilet'})
-
-      - name: Oppdater kommentar med deployment status
-        if: success()
-        uses: actions/github-script@v2
+        uses: actions/github-script@v3
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
@@ -56,5 +43,17 @@ jobs:
                             repo: context.issue.repo,
                             issue_number: ${{ github.event.client_payload.github.payload.issue.number }} }
             github.issues.createComment({...issue,
-                                    body: 'promote til ${{ github.event.client_payload.slash_command.args }} utført'})
+                                    title: 'Deploy av ${{ env.TAG }}',
+                                    body: 'promote til ${{ github.event.client_payload.slash_command.args.unnamed.all }} feilet'})
+      - name: Oppdater kommentar med deployment status
+        if: success()
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const issue = { owner: context.issue.owner,
+                            repo: context.issue.repo,
+                            issue_number: ${{ github.event.client_payload.github.payload.issue.number }} }
+            github.issues.createComment({...issue,
+                                    body: 'promote til ${{ github.event.client_payload.slash_command.args.unnamed.all }} utført'})
             github.issues.addLabels({...issue, labels: ['deployment','${{ env.CLUSTER }}-${{ env.NAMESPACE }}']})
