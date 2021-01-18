@@ -1,0 +1,11 @@
+{{> header }}
+
+# Du beheld {{#eq felles.ytelseType "ES" }}eingongsstønaden din{{else}}{{#eq felles.ytelseType "FP" }}foreldrepengane dine{{else}}{{#eq felles.ytelseType "SVP" }}svangerskapspengane dine{{/eq}}{{/eq}}{{/eq}}
+
+{{> brukerdetaljer_nn }}
+
+Vi har fått opplysningane vi har bedt om, og du har framleis rett til {{> ytelse_navn_nn}}.
+
+<br/>
+
+{{> footer_nn }}
