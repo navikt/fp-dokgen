@@ -22,10 +22,10 @@ public class InnsynTest {
     @Test
     public void innsynDelvisInnvilget_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nb", "innsyn_DelvisInnvilget");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nb", "innsyn_delvis_innvilget");
 
         // Assert
-        assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_delvisInnvilget_nb.txt"));
+        assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_delvis_innvilget_nb.txt"));
     }
 
     @Test
@@ -49,10 +49,10 @@ public class InnsynTest {
     @Test
     public void innsynDelvisInnvilget_nn() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nn", "innsyn_DelvisInnvilget");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nn", "innsyn_delvis_innvilget");
 
         // Assert
-        assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_delvisInnvilget_nn.txt"));
+        assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_delvis_innvilget_nn.txt"));
     }
 
     @Test
@@ -76,10 +76,10 @@ public class InnsynTest {
     @Test
     public void innsynDelvisInnvilget_en() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "en", "innsyn_DelvisInnvilget");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "en", "innsyn_delvis_innvilget");
 
         // Assert
-        assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_delvisInnvilget_en.txt"));
+        assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_delvis_innvilget_en.txt"));
     }
 
     @Test
