@@ -110,6 +110,15 @@ public class VarselOmRevurderingTest {
     }
 
     @Test
+    public void skal_generere_brev_for_varsel_om_revurdering_SVP_kode_JOBBFULLTID_på_nynorsk() throws Exception {
+        // Act
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nn", "test_svp_JOBBFULLTID");
+
+        // Assert
+        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_JOBBFULLTID_nn.txt"));
+    }
+
+    @Test
     public void skal_generere_brev_for_varsel_om_revurdering_SVP_kode_JOBB6MND_på_bokmål() throws Exception {
         // Act
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nb", "test_svp_JOBB6MND");
