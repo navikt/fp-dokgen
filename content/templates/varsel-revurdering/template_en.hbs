@@ -22,7 +22,7 @@ We have received new information that may influence the decision on your entitle
 {{#eq advarselKode "JOBBFULLTID" }}
 Vi har fått opplysninger om at du jobber samtidig som du får {{> ytelse_navn_nb}}. Derfor vurderer vi å stanse {{> ytelse_navn_f_nb}} dine.
 
-Du kan ikke jobbe heltid og samtidig få {{> ytelse_navn_nb}}. For at du ikke skal miste {{> ytelse_navn_f_nb}}, må du søke om utsettelse. Arbeider du deltid, må du søke om å kombinere {{> ytelse_navn_f_nb}} med arbeid.
+Du kan ikke jobbe heltid og samtidig få {{> ytelse_navn_nb}}. {{#eq felles.ytelseType "FP" }}For at du ikke skal miste {{> ytelse_navn_f_nb}}, må du søke om utsettelse. {{/eq}}Arbeider du deltid, må du søke om å kombinere {{> ytelse_navn_f_nb}} med arbeid.
 {{/eq}}
 {{#eq advarselKode "IKKEOPPTJENT" }}
 Vi har fått opplysninger om at inntekten din var lavere enn et halvt grunnbeløp i året før skatt. Derfor vurderer vi å stanse {{> ytelse_navn_f_nb}} dine.
