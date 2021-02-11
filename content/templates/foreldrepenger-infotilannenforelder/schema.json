@@ -1,0 +1,23 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "felles",
+    "behandlingsÅrsak",
+    "sisteUttaksdagMor"
+  ],
+  "properties": {
+    "felles": {
+      "type": "object"
+    },
+    "behandlingsÅrsak": {
+      "type": "string"
+    },
+    "sisteUttaksdagMor": {
+      "type": "string"
+    }
+  }
+}
