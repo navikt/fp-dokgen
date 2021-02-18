@@ -34,6 +34,8 @@ spec:
   {{#each ingresses as |url|}}
      - {{url}}
   {{/each}}
+  secureLogs:
+    enabled: true
   env:
   {{#each env}}
     - name: {{@key}}
