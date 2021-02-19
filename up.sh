@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-docker-compose -p dokgen_dev up -d --build
+docker build --pull -t navikt/fpdokgen .
+docker-compose up -d
 
 export HEALTHCHECK_URL=localhost:8080/actuator/health
 export CONTAINER=dokgen_dev
