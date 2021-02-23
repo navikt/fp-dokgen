@@ -6,8 +6,7 @@
   "title": "The Root Schema",
   "required": [
     "felles",
-    "behandlingsÅrsak",
-    "sisteUttaksdagMor"
+    "behandlingsÅrsak"
   ],
   "properties": {
     "felles": {
