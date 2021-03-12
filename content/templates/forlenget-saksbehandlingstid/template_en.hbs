@@ -1,0 +1,29 @@
+{{> header_en }}
+
+{{#eq variantType "FORTIDLIG"}}
+# We have received your application regarding {{> ytelse_navn_en}}
+{{else}}{{#eq variantType "KLAGE"}}
+# We need more time to process your complaint regarding {{> ytelse_navn_en}}
+{{else}}
+# We need more time to process your application for {{> ytelse_navn_en}}
+{{/eq}}{{/eq}}
+
+{{> brukerdetaljer_en }}
+
+{{#if død}}{{#eq variantType "KLAGE"}}
+We expect to be able to process {{felles.søkerNavn}}'s complaint within {{behandlingsfristUker}} weeks.
+{{else}}
+We expect to be able to process {{felles.søkerNavn}}'s application within {{behandlingsfristUker}} weeks.
+{{/eq}}{{else}}{{#eq variantType "FORLENGET"}}
+We expect to be able to process your application within {{behandlingsfristUker}} weeks.
+{{else}}{{#eq variantType "MEDLEM"}}
+We have to wait until the {{#eq antallBarn 1}}child is{{else}}children are{{/eq}} born before we can process your application, because we have no information that you are working in Norway.
+{{else}}{{#eq variantType "KLAGE"}}
+We expect to be able to process your complaint within {{behandlingsfristUker}} weeks.
+{{else}}{{#eq variantType "FORTIDLIG"}}
+We can process your application at the earliest 4 weeks before the period of {{> ytelse_navn_en}} starts.
+{{/eq}}{{/eq}}{{/eq}}{{/eq}}{{/if}}
+
+<br/>
+
+{{> footer_en }}

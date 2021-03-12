@@ -1,0 +1,29 @@
+{{> header }}
+
+{{#eq variantType "FORTIDLIG"}}
+# Vi har fått søknaden din om {{> ytelse_navn_nb}}
+{{else}}{{#eq variantType "KLAGE"}}
+# Vi trenger mer tid til å behandle klagen på {{> ytelse_navn_nb}}
+{{else}}
+# Vi trenger mer tid til å behandle søknaden om {{> ytelse_navn_nb}}
+{{/eq}}{{/eq}}
+
+{{> brukerdetaljer_nb }}
+
+{{#if død}}{{#eq variantType "KLAGE"}}
+Vi regner med å behandle klagen til {{felles.søkerNavn}}, innen {{behandlingsfristUker}} uker.
+{{else}}
+Vi regner med å behandle søknaden til {{felles.søkerNavn}}, innen {{behandlingsfristUker}} uker.
+{{/eq}}{{else}}{{#eq variantType "FORLENGET"}}
+Vi regner med å behandle søknaden din innen {{behandlingsfristUker}} uker.
+{{else}}{{#eq variantType "MEDLEM"}}
+Fordi vi ikke har opplysninger om at du jobber i Norge, må vi vente til {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} er født før vi kan behandle søknaden din.
+{{else}}{{#eq variantType "KLAGE"}}
+Vi regner med å behandle klagen din innen {{behandlingsfristUker}} uker.
+{{else}}{{#eq variantType "FORTIDLIG"}}
+Vi kan tidligst behandle søknaden din når det er fire uker igjen til perioden med {{> ytelse_navn_nb}} starter.
+{{/eq}}{{/eq}}{{/eq}}{{/eq}}{{/if}}
+
+<br/>
+
+{{> footer_nb }}

@@ -1,0 +1,16 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "fritekst" : "FRITEKST",
+    "brevDato": "4. april 2020",
+    "erKopi" : false,
+    "harVerge" : false,
+    "saksnummer" : "123456789",
+    "ytelseType" : "FP"
+  },
+  "variantType": "MEDLEM",
+  "død": false,
+  "behandlingsfristUker": 5,
+  "antallBarn": 1
+}
