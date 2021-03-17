@@ -21,7 +21,7 @@ Fødselsnummer: 300220 12345
 
 Vi har fått nye opplysninger som kan ha betydning for retten din til foreldrepenger.
 
-<p style="white-space: pre">FRITEKST LINJE 1
+<p style="white-space: pre-wrap">FRITEKST LINJE 1
 FRITEKST LINJE 2</p>
 
 
