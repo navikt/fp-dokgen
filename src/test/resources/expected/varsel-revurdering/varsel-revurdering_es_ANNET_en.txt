@@ -21,7 +21,7 @@ National identity number: 300220 12345
 
 We have received new information that may influence the decision on your entitlement to the lump-sum grant.
 
-<p style="white-space: pre">FRITEKST LINJE 1
+<p style="white-space: pre-wrap">FRITEKST LINJE 1
 FRITEKST LINJE 2</p>
 
 
