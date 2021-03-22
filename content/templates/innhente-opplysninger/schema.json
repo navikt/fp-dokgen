@@ -36,9 +36,6 @@
     },
     "fristDato": {
       "type": "string"
-    },
-    "dokumentListe": {
-      "type": "array"
     }
   }
 }

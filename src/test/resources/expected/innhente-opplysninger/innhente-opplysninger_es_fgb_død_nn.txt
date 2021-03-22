@@ -26,11 +26,10 @@ Vi fekk søknad om eingongsstønad frå Dolly Duck 1. april 2020, men manglar op
 
 **Du må sende oss**
 <br/>
-<ul>
-<li>Attest</li>
-
-<li>Bekreftelse</li>
-</ul>
+Tekst
+- Attest
+- Bekreftelse
+Mer tekst
 <br/>
 
 

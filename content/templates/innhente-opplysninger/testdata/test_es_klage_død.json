@@ -2,7 +2,7 @@
   "felles": {
     "søkerNavn": "Dolly Duck",
     "søkerPersonnummer": "300220 12345",
-    "fritekst" : "FRITEKST",
+    "fritekst" : "Tekst\n- Attest\n- Bekreftelse\nMer tekst",
     "brevDato": "4. april 2020",
     "erKopi" : false,
     "harVerge" : false,
@@ -15,6 +15,5 @@
   "død": true,
   "klage": true,
   "søknadDato": "1. april 2020",
-  "fristDato": "24. mai 2020",
-  "dokumentListe": ["Attest", "Bekreftelse"]
+  "fristDato": "24. mai 2020"
 }

@@ -20,25 +20,21 @@ Fødselsnummer: 300220 12345
 
 
 
-
-    
 Vi fikk søknaden din om engangsstønad 1. april 2020, men mangler opplysninger for å kunne behandle den.
 
 
 
 **Du må sende oss**
 <br/>
-<ul>
-<li>Attest</li>
-
-<li>Bekreftelse</li>
-</ul>
+Tekst
+- Attest
+- Bekreftelse
+Mer tekst
 <br/>
 
 
 **Søknaden kan bli avslått**
 <br/>
-
 Hvis vi ikke får opplysningene innen 24. mai 2020, kan søknaden bli avslått.
 
 Dette går fram av folketrygdloven § 21-3.

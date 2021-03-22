@@ -20,25 +20,21 @@ Fødselsnummer: 300220 12345
 
 
 
-
-
 Vi fekk søknaden din om foreldrepengar 1. april 2020, men manglar opplysningar for å kunne behandle den.
 
 
 
 **Du må sende oss**
 <br/>
-<ul>
-<li>Attest</li>
-
-<li>Bekreftelse</li>
-</ul>
+Tekst
+- Attest
+- Bekreftelse
+Mer tekst
 <br/>
 
 
 **Søknaden kan bli avslått**
 <br/>
-
 Dersom vi ikkje får opplysningane innan 24. mai 2020, kan søknaden bli avslått.
 
 Dette går fram av folketrygdlova § 21-3.
