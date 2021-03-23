@@ -20,19 +20,16 @@ Fødselsnummer: 300220 12345
 
 
 
-
-
 Vi fekk klagen din på eingongsstønad 1. april 2020, men manglar opplysningar for å kunne behandle den.
 
 
 
 **Du må sende oss**
 <br/>
-<ul>
-<li>Attest</li>
-
-<li>Bekreftelse</li>
-</ul>
+Tekst
+- Attest
+- Bekreftelse
+Mer tekst
 <br/>
 
 Du sender dokumentasjonen til oss på [nav.no/klage](https://nav.no/klage). Vel NAV-eining: NAV Klageinstans Midt-Noreg.
@@ -40,7 +37,6 @@ Du sender dokumentasjonen til oss på [nav.no/klage](https://nav.no/klage). Vel 
 
 **Søknaden kan bli avslått**
 <br/>
-
 Dersom du ikkje sender oss dette innan 24. mai 2020, behandlar vi saka di med dei opplysningane vi har.
 
 Dette går fram av folketrygdlova § 21-3.

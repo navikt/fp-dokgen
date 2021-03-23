@@ -26,11 +26,10 @@ We received your application concerning lump-sum grant 1. april 2020, but we nee
 
 **You have to send us**
 <br/>
-<ul>
-<li>Attest</li>
-
-<li>Bekreftelse</li>
-</ul>
+Tekst
+- Attest
+- Bekreftelse
+Mer tekst
 <br/>
 
 
