@@ -1,0 +1,77 @@
+{{#if ingenRefusjon}}
+Foreldrepengene blir utbetalt for alle dager, unntatt lørdag og søndag. Fordi det ikke er like mange dager i hver måned, vil de månedlige utbetalingene dine variere.
+
+Pengene er på kontoen din innen den 25. hver måned. Sjekk utbetalingene dine på nav.no/utbetalinger.
+{{else if fullRefusjon}}
+Vi utbetaler foreldrepengene til {{#eq antallArbeidsgivere 1 }}arbeidsgiveren din{{else}}arbeidsgiverne dine{{/eq}}  fordi du får lønn mens du har permisjon.
+{{else}}
+{{#eq antallArbeidsgivere 1 }}Arbeidsgiveren din{{else}}Arbeidsgiverne dine{{/eq}} betaler deg lønn mens du har permisjon. Resten av foreldrepengene får du utbetalt fra NAV innen den 25. hver måned. Sjekk utbetalingene dine på nav.no/utbetalinger.
+{{/if}}
+
+{{#if annenForelderHarRettVurdert }}
+Den andre forelderen har rett til foreldrepenger. Derfor får du ikke hele foreldrepengeperioden.
+{{else}}
+Den andre forelderen har ikke rett til foreldrepenger. Derfor får du hele foreldrepengeperioden.
+{{/if}}
+
+{{#if annenForelderHarRett}}
+    {{eq aleneomsorgKode "NEI"}}
+Du har ikke aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} og får derfor ikke hele foreldrepengeperioden.
+{{/if}}
+
+{{#eq aleneomsorgKode "JA"}}
+    {{not ikkeOmsorg}}
+Du har aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} og får derfor hele foreldrepengeperioden.
+{{/eq}}
+
+{{#gt prematurDager 0}}Vi har forlenget foreldrepengeperioden med {{prematurDager}}{{#gt prematurDager 1}}dager{{else}}dag{{/gt}} fordi du fødte før svangerskapsuke 33.{{/gt}}
+
+{{#if (and
+          (gt antallBarn 1)
+          (not barnErFødt)
+          (gjelderFødsel))}}
+Vi har forlenget foreldrepengeperioden med{{foreldrepengeperiodenUtvidetUker}} uker fordi {{#if (or (eq aleneomsorgKode "NEI")(eq aleneomsorgKode "IKKE_VURDERT"))}}dere{{else}}du{{/if}} venter flere barn.
+{{/if}}
+{{#if (and
+          (gt antallBarn 1)
+          (barnErFødt)
+          (gjelderFødsel))}}
+Vi har forlenget foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} uker fordi {{#if (or (eq aleneomsorgKode "NEI")(eq aleneomsorgKode "IKKE_VURDERT"))}}dere fikk{{else}}du fødte{{/if}} flere barn.
+{{/if}}
+
+{{#if (and
+          (gt antallBarn 1)
+          (not gjelderFødsel))}}
+Vi har forlenget foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} uker fordi {{#eq aleneomsorgKode "JA"}}du{{else}}dere{{/eq}} adopterer flere barn.
+{{/if}}
+
+{{#each perioder}}
+    {{#eq perioder.årsak "4095"}}
+Perioden med foreldrepenger starter tre uker før termin. Du har ikke tatt ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor mister du {{#gt antallTapteDager 1}}disse dagene{{else}}denne dagen{{/gt}}.
+    {{/eq}}
+{{/each}}
+
+HVIS
+gjelderFoedsel = true
+OG
+(
+behandlingsType = FOERSTEGANGSBEHANDLING
+ELLER
+(
+behandlingsType = REVURDERING
+OG
+behandlingsResultat = INNVILGET
+)
+OG
+dagerTaptFørTermin > 0
+
+
+Fordi du fødte før termin, mister du {{dagerTaptFørTermin}} dagdager med foreldrepenger.
+
+<br/>
+<br/>
+<br/>
+
+{{> hilsen_nb }}
+
+{{> footer_nb }}

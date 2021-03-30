@@ -1,0 +1,201 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "felles",
+    "behandlingType",
+    "behandlingResultatType",
+    "konsekvensForInnvilgetYtelse",
+    "søknadsdato",
+    "dekningsgrad",
+    "dagsats",
+    "månedsbeløp",
+    "seksG",
+    "inntektOverSeksG",
+    "forMyeUtbetalt",
+    "inntektMottattArbeidsgiver",
+    "annenForelderHarRett",
+    "annenForelderHarRettVurdert",
+    "aleneomsorgKode",
+    "ikkeOmsorg",
+    "barnErFødt",
+    "årsakErFødselshendelse",
+    "gjelderMor",
+    "gjelderFødsel",
+    "erBesteberegning",
+    "ingenRefusjon",
+    "delvisRefusjon",
+    "fullRefusjon",
+    "antallPerioder",
+    "harInnvilgedePerioder",
+    "antallArbeidsgivere",
+    "dagerTaptFørTermin",
+    "disponibleDager",
+    "disponibleFellesDager",
+    "sisteDagAvSistePeriode",
+    "stønadsperiodeFom",
+    "stønadsperiodeTom",
+    "foreldrepengeperiodenUtvidetUker",
+    "antallBarn",
+    "prematurDager",
+    "perioder",
+    "bruttoBeregningsgrunnlag",
+    "harBruktBruttoBeregningsgrunnlag",
+    "beregningsgrunnlagregler",
+    "klagefristUker",
+    "inkludereInfoOmUtbetaling",
+    "inkludereUtbetaling",
+    "inkludereInnvilget",
+    "inkludereAvslag"
+  ],
+  "properties": {
+    "felles": {
+      "type": "object"
+    },
+    "behandlingType": {
+      "type": "string"
+    },
+    "behandlingResultatType": {
+      "type": "string"
+    },
+    "konsekvensForInnvilgetYtelse": {
+      "type": "string"
+    },
+    "søknadsdato": {
+      "type": "string"
+    },
+    "dekningsgrad": {
+      "type": "number"
+    },
+    "dagsats": {
+      "type": "number"
+    },
+    "månedsbeløp": {
+      "type": "number"
+    },
+    "seksG": {
+      "type": "number"
+    },
+    "inntektOverSeksG": {
+      "type": "number"
+    },
+    "forMyeUtbetalt": {
+      "type": "string"
+    },
+    "inntektMottattArbeidsgiver": {
+      "type": "boolean"
+    },
+    "annenForelderHarRett": {
+      "type": "boolean"
+    },
+    "annenForelderHarRettVurdert": {
+      "type": "boolean"
+    },
+    "aleneomsorgKode": {
+      "type": "string"
+    },
+    "ikkeOmsorg": {
+      "type": "boolean"
+    },
+    "barnErFødt": {
+      "type": "boolean"
+    },
+    "årsakErFødselshendelse": {
+      "type": "boolean"
+    },
+    "gjelderMor": {
+      "type": "boolean"
+    },
+    "gjelderFødsel": {
+      "type": "boolean"
+    },
+    "erBesteberegning": {
+      "type": "boolean"
+    },
+    "ingenRefusjon": {
+      "type": "boolean"
+    },
+    "delvisRefusjon": {
+      "type": "boolean"
+    },
+    "fullRefusjon": {
+      "type": "boolean"
+    },
+    "antallPerioder": {
+      "type": "number"
+    },
+    "harInnvilgedePerioder": {
+      "type": "boolean"
+    },
+    "antallArbeidsgivere": {
+      "type": "number"
+    },
+    "dagerTaptFørTermin": {
+      "type": "number"
+    },
+    "disponibleDager": {
+      "type": "number"
+    },
+    "disponibleFellesDager": {
+      "type": "number"
+    },
+    "sisteDagAvSistePeriode": {
+      "type": "string"
+    },
+    "innvilgetBeløp": {
+      "type": "string"
+    },
+    "stønadsperiodeFom": {
+      "type": "string"
+    },
+    "stønadsperiodeTom": {
+      "type": "string"
+    },
+    "foreldrepengeperiodenUtvidetUker": {
+      "type": "number"
+    },
+    "antallBarn": {
+      "type": "number"
+    },
+    "prematurDager": {
+      "type": "number"
+    },
+    "perioder": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "bruttoBeregningsgrunnlag": {
+      "type": "number"
+    },
+    "harBruktBruttoBeregningsgrunnlag": {
+      "type": "boolean"
+    },
+    "beregningsgrunnlagregler": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "klagefristUker": {
+      "type": "number"
+    },
+    "inkludereInfoOmUtbetaling": {
+      "type": "boolean"
+    },
+    "inkludereUtbetaling": {
+      "type": "boolean"
+    },
+    "inkludereInnvilget": {
+      "type": "boolean"
+    },
+    "inkludereAvslag": {
+      "type": "boolean"
+    }
+  }
+ }
+
