@@ -30,7 +30,6 @@ jobs:
 
       - name: Test med up.sh
         run: |
-          echo  $GITHUB_TOKEN | docker login --username "x-access-token" --password-stdin https://docker.pkg.github.com
           chmod +x *.sh && ./up.sh
 
       - name: Hent tag
