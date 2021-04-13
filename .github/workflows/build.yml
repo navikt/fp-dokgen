@@ -60,42 +60,42 @@ jobs:
           GITHUB_USERNAME: x-access-token
           GITHUB_PASSWORD: ${{ secrets.GH_ACCESS_TOKEN }}
 
-    - name: Lukk gamle deployment-issues
-      uses: actions/github-script@v3
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        script: |
-          github.issues.listForRepo({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            state: 'open',
-            labels: ['deployment']
-          }).then(response => {
-            response.data.forEach(issue => {
-              github.issues.update({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue.number,
-                state: 'closed'
+      - name: Lukk gamle deployment-issues
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['deployment']
+            }).then(response => {
+              response.data.forEach(issue => {
+                github.issues.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  state: 'closed'
+                });
               });
             });
-          });
 
-    - name: Opprett deployment issue
-      id: createdeployissue
-      if: success()
-      uses: actions/github-script@v3
-      with:
-        github-token: ${{secrets.GITHUB_TOKEN}}
-        script: |
-          github.issues.create( {
-          owner: context.issue.owner,
-          repo: context.issue.repo,
-          labels: ['deployment'],
-          title: 'Deploy av ${{ env.TAG }}'})
-          .then(response => {
-              core.setOutput('number', response.data.number);
-          });
+      - name: Opprett deployment issue
+        id: createdeployissue
+        if: success()
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.issues.create( {
+            owner: context.issue.owner,
+            repo: context.issue.repo,
+            labels: ['deployment'],
+            title: 'Deploy av ${{ env.TAG }}'})
+            .then(response => {
+                core.setOutput('number', response.data.number);
+            });
 
       - name: Trigg deploy til dev-fss
         if: success()
