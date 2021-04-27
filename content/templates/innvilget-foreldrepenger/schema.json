@@ -1,9 +1,8 @@
 {
-  "definitions": {},
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://example.com/root.json",
+  "$id": "http://nav.no/foreldrepenger/fpdokgen/innvilget-foreldrepenger",
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev Innvilget Foreldrepenger",
   "type": "object",
-  "title": "The Root Schema",
   "required": [
     "felles",
     "behandlingType",
@@ -51,6 +50,147 @@
     "inkludereInnvilget",
     "inkludereAvslag"
   ],
+  "$defs": {
+    "arbeidsforhold": {
+      "type": "object",
+      "properties": {
+        "arbeidsgiverNavn": {
+          "type": "string"
+        },
+        "gradering": {
+          "type": "boolean"
+        },
+        "uttaksgrad": {
+          "type": "number"
+        },
+        "prosentArbeid": {
+          "type": "number"
+        },
+        "stillingsprosent": {
+          "type": "number"
+        },
+        "utbetalingsgrad": {
+          "type": "number"
+        },
+        "naturalytelseEndringType": {
+          "type": { "enum": [ "START", "STOPP", "INGEN_ENDRING" ] }
+        },
+        "naturalytelseEndringDato": {
+          "type": "string"
+        },
+        "naturalytelseNyDagsats": {
+          "type": "number"
+        }
+      }
+    },
+    "næring": {
+      "type": "object",
+      "properties": {
+        "gradering": {
+          "type": "boolean"
+        },
+        "uttaksgrad": {
+          "type": "number"
+        },
+        "prosentArbeid": {
+          "type": "number"
+        },
+        "sistLignedeÅr": {
+          "type": "number"
+        }
+      }
+    },
+    "annenAktivitet": {
+      "type": "object",
+      "properties": {
+        "aktivitetStatus": {
+          "type": "string"
+        },
+        "gradering": {
+          "type": "boolean"
+        },
+        "uttaksgrad": {
+          "type": "number"
+        },
+        "prosentArbeid": {
+          "type": "number"
+        }
+      }
+    },
+    "utbetalingsperiode": {
+      "type": "object",
+      "properties": {
+        "innvilget": {
+          "type": "boolean"
+        },
+        "årsak": {
+          "type": "string"
+        },
+        "periodeFom": {
+          "type": "string"
+        },
+        "periodeTom": {
+          "type": "string"
+        },
+        "periodeDagsats": {
+          "type": "number"
+        },
+        "antallTapteDager": {
+          "type": "number"
+        },
+        "arbeidsforholdsliste": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/arbeidsforhold" }
+        },
+        "næring": { "$ref": "#/$defs/næring" },
+        "annenAktivitetsliste": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/annenAktivitet" }
+        }
+      }
+    },
+    "beregningsgrunnlagAndel": {
+      "type": "object",
+      "properties": {
+        "aktivitetStatus": {
+          "type": "string"
+        },
+        "arbeidsgiverNavn": {
+          "type": "string"
+        },
+        "dagsats": {
+          "type": "number"
+        },
+        "månedsinntekt": {
+          "type": "number"
+        },
+        "årsinntekt": {
+          "type": "number"
+        },
+        "etterlønnSluttpakke": {
+          "type": "boolean"
+        }
+      }
+    },
+    "beregningsgrunnlagRegel": {
+      "type": "object",
+      "properties": {
+        "aktivitetStatus": {
+          "type": "string"
+        },
+        "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": {
+          "type": "int"
+        },
+        "snNyoppstartet": {
+          "type": "boolean"
+        },
+        "andelListe": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/beregningsgrunnlagAndel" }
+        }
+      }
+    }
+  },
   "properties": {
     "felles": {
       "type": "object"
@@ -62,7 +202,7 @@
       "type": "string"
     },
     "konsekvensForInnvilgetYtelse": {
-      "type": "string"
+      "type": { "enum": [ "ENDRING_I_BEREGNING", "ENDRING_I_UTTAK", "ENDRING_I_BEREGNING_OG_UTTAK" ] }
     },
     "søknadsdato": {
       "type": "string"
@@ -83,7 +223,7 @@
       "type": "number"
     },
     "forMyeUtbetalt": {
-      "type": "string"
+      "type": { "enum": [ "FERIE", "JOBB", "GENERELL" ] }
     },
     "inntektMottattArbeidsgiver": {
       "type": "boolean"
@@ -95,7 +235,7 @@
       "type": "boolean"
     },
     "aleneomsorgKode": {
-      "type": "string"
+      "type": { "enum": [ "JA", "NEI", "IKKE_VURDERT" ] }
     },
     "ikkeOmsorg": {
       "type": "boolean"
@@ -165,9 +305,7 @@
     },
     "perioder": {
       "type": "array",
-      "items": {
-        "type": "object"
-      }
+      "items": { "$ref": "#/$defs/utbetalingsperiode" }
     },
     "bruttoBeregningsgrunnlag": {
       "type": "number"
@@ -177,9 +315,7 @@
     },
     "beregningsgrunnlagregler": {
       "type": "array",
-      "items": {
-        "type": "object"
-      }
+      "items": { "$ref": "#/$defs/beregningsgrunnlagRegel" }
     },
     "klagefristUker": {
       "type": "number"
@@ -197,5 +333,4 @@
       "type": "boolean"
     }
   }
- }
-
+}
