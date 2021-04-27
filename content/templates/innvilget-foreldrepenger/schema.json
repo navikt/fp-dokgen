@@ -14,7 +14,6 @@
     "månedsbeløp",
     "seksG",
     "inntektOverSeksG",
-    "forMyeUtbetalt",
     "inntektMottattArbeidsgiver",
     "annenForelderHarRett",
     "annenForelderHarRettVurdert",
@@ -28,18 +27,16 @@
     "ingenRefusjon",
     "delvisRefusjon",
     "fullRefusjon",
+    "fbEllerRvInnvilget",
     "antallPerioder",
     "harInnvilgedePerioder",
     "antallArbeidsgivere",
     "dagerTaptFørTermin",
     "disponibleDager",
-    "disponibleFellesDager",
     "sisteDagAvSistePeriode",
     "stønadsperiodeFom",
     "stønadsperiodeTom",
-    "foreldrepengeperiodenUtvidetUker",
     "antallBarn",
-    "prematurDager",
     "perioder",
     "bruttoBeregningsgrunnlag",
     "harBruktBruttoBeregningsgrunnlag",
@@ -232,7 +229,7 @@
       "type": "boolean"
     },
     "annenForelderHarRettVurdert": {
-      "type": "boolean"
+      "type": { "enum": [ "JA", "NEI", "IKKE_VURDERT" ] }
     },
     "aleneomsorgKode": {
       "type": { "enum": [ "JA", "NEI", "IKKE_VURDERT" ] }
@@ -262,6 +259,9 @@
       "type": "boolean"
     },
     "fullRefusjon": {
+      "type": "boolean"
+    },
+    "fbEllerRvInnvilget": {
       "type": "boolean"
     },
     "antallPerioder": {
@@ -303,12 +303,12 @@
     "prematurDager": {
       "type": "number"
     },
+    "bruttoBeregningsgrunnlag": {
+      "type": "number"
+    },
     "perioder": {
       "type": "array",
       "items": { "$ref": "#/$defs/utbetalingsperiode" }
-    },
-    "bruttoBeregningsgrunnlag": {
-      "type": "number"
     },
     "harBruktBruttoBeregningsgrunnlag": {
       "type": "boolean"
@@ -320,10 +320,10 @@
     "klagefristUker": {
       "type": "number"
     },
-    "inkludereInfoOmUtbetaling": {
+    "inkludereUtbetaling": {
       "type": "boolean"
     },
-    "inkludereUtbetaling": {
+    "inkludereGradering": {
       "type": "boolean"
     },
     "inkludereInnvilget": {

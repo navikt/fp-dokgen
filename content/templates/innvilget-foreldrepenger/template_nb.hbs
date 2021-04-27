@@ -14,24 +14,12 @@
 {{/if}}
 {{> brukerdetaljer_nb }}
 
-{{#if (and
-          (eq behandlingType "REVURDERING")
-          (eq behandlingResultatType "INNVILGET"))}}
-Vi har vurdert saken din på nytt, og du har rett til foreldrepenger. Vi har derfor endret vedtaket du har fått tidligere.
-{{/if}}
+{{#if (and (eq behandlingType "REVURDERING")(eq behandlingResultatType "INNVILGET"))}}Vi har vurdert saken din på nytt, og du har rett til foreldrepenger. Vi har derfor endret vedtaket du har fått tidligere.{{/if}}
 
-{{#if inkludereInfoOmUtbetaling}}
-Du får {{dagsats}} kroner per dag før skatt fra og med {{stønadsperiodeFom}}. Dette er i gjennomsnitt {{månedsbeløp}} kroner i måneden. Den siste dagen du får foreldrepenger er {{stønadsperiodeTom}}.
-{{/if}}
+{{#if inkludereUtbetaling}}{{> innvilget-foreldrepenger/utbetaling_nb}}{{/if}}
 
-{{#if inkludereUtbetaling}}
-{{> utbetaling_nb}}
-{{/if}}
-
-<br/>
-<br/>
-<br/>
-
-{{> hilsen_nb }}
+{{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.{{#gt dagsats 0}}Du får {{dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{månedsbeløp}} kroner i måneden. Sjekk utbetalingene dine på nav.no/utbetalinger
+{{/gt}}
+{{/eq}}
 
 {{> footer_nb }}

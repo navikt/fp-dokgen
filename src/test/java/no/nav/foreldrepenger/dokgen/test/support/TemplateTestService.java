@@ -40,8 +40,8 @@ public class TemplateTestService {
         handlebars.registerHelpers(StringHelpers.class);
     }
 
-    public String compileTemplateWithTestData(String templateName, String språk, String testDataFilename) throws Exception {
-        String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName, språk));
+    public String compileTemplateWithTestData(String templateName, String templatePath, String språk, String testDataFilename) throws Exception {
+        String  templateContent = readFile(FileStructureUtil.getTemplatePath(templateName+templatePath, språk));
 
         String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(templateName, testDataFilename));
         JsonNode mergeFields = getJsonFromString(mergeFieldsJsonString);
