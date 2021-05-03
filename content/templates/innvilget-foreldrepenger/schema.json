@@ -57,9 +57,6 @@
         "gradering": {
           "type": "boolean"
         },
-        "uttaksgrad": {
-          "type": "number"
-        },
         "prosentArbeid": {
           "type": "number"
         },
@@ -86,7 +83,7 @@
         "gradering": {
           "type": "boolean"
         },
-        "uttaksgrad": {
+        "utbetalingsgrad": {
           "type": "number"
         },
         "prosentArbeid": {
@@ -106,7 +103,7 @@
         "gradering": {
           "type": "boolean"
         },
-        "uttaksgrad": {
+        "utbetalingsgrad": {
           "type": "number"
         },
         "prosentArbeid": {
@@ -133,6 +130,9 @@
           "type": "number"
         },
         "antallTapteDager": {
+          "type": "number"
+        },
+        "prioritertUtbetalingsgrad": {
           "type": "number"
         },
         "arbeidsforholdsliste": {

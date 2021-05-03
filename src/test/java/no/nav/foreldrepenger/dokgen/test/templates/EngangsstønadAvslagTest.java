@@ -1,9 +1,10 @@
 package no.nav.foreldrepenger.dokgen.test.templates;
 
-import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
 
 public class EngangsstønadAvslagTest {
 
@@ -14,7 +15,7 @@ public class EngangsstønadAvslagTest {
     @Test
     public void avslagsbrev_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb","test_avslag_fb" );
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_avslag_fb");
 
         // Assert
         assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-fb_nb.txt"));

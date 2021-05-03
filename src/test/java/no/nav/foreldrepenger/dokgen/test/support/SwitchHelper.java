@@ -1,12 +1,12 @@
 package no.nav.foreldrepenger.dokgen.test.support;
 
-import com.github.jknack.handlebars.Context;
-import com.github.jknack.handlebars.Helper;
-import com.github.jknack.handlebars.Options;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.github.jknack.handlebars.Context;
+import com.github.jknack.handlebars.Helper;
+import com.github.jknack.handlebars.Options;
 
 public class SwitchHelper implements Helper<Object> {
 
@@ -19,7 +19,6 @@ public class SwitchHelper implements Helper<Object> {
         variabelVerdier.add(options.hash.isEmpty() ? variable : options.hash);
         Context ctx = Context.newBlockParamContext(options.context, variabelNavn, variabelVerdier);
         String resultat = options.fn.apply(ctx);
-
 
         Integer antall = (Integer) ctx.get("__condition_fulfilled");
         if (Integer.valueOf(1).equals(antall)) {

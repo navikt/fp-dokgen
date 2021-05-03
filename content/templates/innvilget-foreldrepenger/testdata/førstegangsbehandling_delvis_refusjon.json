@@ -52,10 +52,9 @@
     "arbeidsforholdsliste": [{
       "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
       "gradering": false,
-      "uttaksgrad": 100,
+      "utbetalingsgrad": 100,
       "prosentArbeid": 0,
-      "stillingsprosent": 100,
-      "utbetalingsgrad": 100
+      "stillingsprosent": 100
     }]
   },
     {
@@ -68,10 +67,9 @@
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
         "gradering": false,
-        "uttaksgrad": 100,
+        "utbetalingsgrad": 100,
         "prosentArbeid": 0,
-        "stillingsprosent": 100,
-        "utbetalingsgrad": 100
+        "stillingsprosent": 100
       }]
     },
     {
@@ -84,10 +82,9 @@
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
         "gradering": false,
-        "uttaksgrad": 100,
+        "utbetalingsgrad": 100,
         "prosentArbeid": 0,
-        "stillingsprosent": 100,
-        "utbetalingsgrad": 100
+        "stillingsprosent": 100
       }]
     },
     {
@@ -100,10 +97,9 @@
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
         "gradering": false,
-        "uttaksgrad": 80,
+        "utbetalingsgrad": 80,
         "prosentArbeid": 0,
-        "stillingsprosent": 100,
-        "utbetalingsgrad": 80
+        "stillingsprosent": 100
       }]
     }],
   "bruttoBeregningsgrunnlag": 574548,

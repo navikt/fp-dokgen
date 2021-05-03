@@ -44,66 +44,66 @@
   "prematurDager": 0,
   "perioder": [{
     "innvilget":true,
-    "årsak":"2006",
+    "årsak": "2006",
     "periodeFom": "15. april 2021",
     "periodeTom": "18. august 2021",
     "periodeDagsats": 2209,
     "antallTapteDager": 0,
+    "prioritertUtbetalingsgrad": 100,
     "arbeidsforholdsliste": [{
       "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
       "gradering": false,
-      "uttaksgrad": 100,
+      "utbetalingsgrad": 100,
       "prosentArbeid": 0,
-      "stillingsprosent": 100,
-      "utbetalingsgrad": 100
+      "stillingsprosent": 100
     }]
   },
     {
       "innvilget":true,
-      "årsak":"2010",
+      "årsak": "2010",
       "periodeFom": "19. august 2021",
       "periodeTom": "24. september 2021",
       "periodeDagsats": 0,
       "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
         "gradering": false,
-        "uttaksgrad": 100,
+        "utbetalingsgrad": 100,
         "prosentArbeid": 0,
-        "stillingsprosent": 100,
-        "utbetalingsgrad": 100
+        "stillingsprosent": 100
       }]
     },
     {
       "innvilget":true,
-      "årsak":"2002",
+      "årsak": "2002",
       "periodeFom": "27. september 2021",
       "periodeTom": "25. november 2021",
       "periodeDagsats": 2209,
       "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
         "gradering": false,
-        "uttaksgrad": 100,
+        "utbetalingsgrad": 100,
         "prosentArbeid": 0,
-        "stillingsprosent": 100,
-        "utbetalingsgrad": 100
+        "stillingsprosent": 100
       }]
     },
     {
       "innvilget":true,
-      "årsak":"2002",
+      "årsak": "2002",
       "periodeFom": "26. november 2021",
       "periodeTom": "17. januar 2022",
       "periodeDagsats": 1768,
       "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
         "gradering": false,
-        "uttaksgrad": 80,
+        "utbetalingsgrad": 80,
         "prosentArbeid": 0,
-        "stillingsprosent": 100,
-        "utbetalingsgrad": 80
+        "stillingsprosent": 100
       }]
     }],
   "bruttoBeregningsgrunnlag": 574548,
@@ -124,6 +124,6 @@
   "klagefristUker": 6,
   "inkludereUtbetaling": true,
   "inkludereGradering":  true,
-  "inkludereInnvilget" : true,
+  "inkludereInnvilget" : false,
   "inkludereAvslag": false
 }

@@ -1,9 +1,10 @@
 package no.nav.foreldrepenger.dokgen.test.templates;
 
-import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
 
 public class ForeldrepengerInfoTilAnnenForelderTest {
     private static final String TEMPLATE_NAME = "foreldrepenger-infotilannenforelder";
@@ -13,7 +14,7 @@ public class ForeldrepengerInfoTilAnnenForelderTest {
     @Test
     public void infobrev_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH , "nb", "infobrev");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "infobrev");
 
         // Assert
         assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_nb.txt"));
@@ -22,7 +23,7 @@ public class ForeldrepengerInfoTilAnnenForelderTest {
     @Test
     public void infobrev_nn() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH , "nn", "infobrev");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "infobrev");
 
         // Assert
         assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_nn.txt"));
