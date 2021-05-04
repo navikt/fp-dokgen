@@ -42,6 +42,7 @@
     "harBruktBruttoBeregningsgrunnlag",
     "beregningsgrunnlagregler",
     "klagefristUker",
+    "lovhjemlerUttak",
     "inkludereInfoOmUtbetaling",
     "inkludereUtbetaling",
     "inkludereInnvilget",
@@ -319,6 +320,12 @@
     },
     "klagefristUker": {
       "type": "number"
+    },
+    "lovhjemlerUttak": {
+      "type": "string"
+    },
+    "lovhjemlerBeregning": {
+      "type": "string"
     },
     "inkludereUtbetaling": {
       "type": "boolean"
