@@ -1,0 +1,113 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": true,
+    "saksnummer": "123456789"
+  },
+  "behandlingType": "FØRSTEGANGSSØKNAD",
+  "behandlingResultatType": "INNVILGET",
+  "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
+  "søknadsdato": "4. mai 2021",
+  "dekningsgrad": 100,
+  "dagsats": 2209,
+  "månedsbeløp": 47879,
+  "seksG": 608106,
+  "inntektOverSeksG": false,
+  "forMyeUtbetalt": false,
+  "inntektMottattArbeidsgiver": false,
+  "annenForelderHarRett": true,
+  "annenForelderHarRettVurdert": "JA",
+  "aleneomsorgKode": "NEI",
+  "ikkeOmsorg": false,
+  "barnErFødt": true,
+  "årsakErFødselshendelse": false,
+  "gjelderMor": true,
+  "gjelderFødsel": true,
+  "erBesteberegning": false,
+  "ingenRefusjon": false,
+  "delvisRefusjon": false,
+  "fullRefusjon": true,
+  "fbEllerRvInnvilget": true,
+  "antallPerioder": 4,
+  "harInnvilgedePerioder": true,
+  "antallArbeidsgivere": 2,
+  "dagerTaptFørTermin": 0,
+  "disponibleDager": 0,
+  "disponibleFellesDager": 10,
+  "sisteDagAvSistePeriode": "4. november 2022",
+  "stønadsperiodeFom": "4. juni 2022",
+  "stønadsperiodeTom": "4. november 2022",
+  "foreldrepengeperiodenUtvidetUker": 3,
+  "antallBarn": 2,
+  "prematurDager": 1,
+  "perioder": [{
+    "innvilget": true,
+    "årsak": "2001",
+    "periodeFom": "15. april 2021",
+    "periodeTom": "18. august 2021",
+    "periodeDagsats": 500,
+    "antallTapteDager": 0,
+    "prioritertUtbetalingsgrad": 50,
+    "annenAktivitetsliste": [
+      {
+        "aktivitetStatus": "FL",
+        "gradering": true,
+        "utbetalingsgrad": 50,
+        "prosentArbeid": 40
+      }, {
+        "aktivitetStatus": "FL",
+        "gradering": false,
+        "utbetalingsgrad": 10,
+        "prosentArbeid": 5
+      }, {
+        "aktivitetStatus": "FL",
+        "gradering": true,
+        "utbetalingsgrad": 20,
+        "prosentArbeid": 10
+      }, {
+        "aktivitetStatus": "AT",
+        "gradering": true,
+        "utbetalingsgrad": 40,
+        "prosentArbeid": 30
+      }]
+  }, {
+    "innvilget": false,
+    "årsak": "2001",
+    "periodeFom": "19. august 2021",
+    "periodeTom": "20. august 2021",
+    "periodeDagsats": 600,
+    "antallTapteDager": 0,
+    "prioritertUtbetalingsgrad": 90,
+    "annenAktivitetsliste": [
+      {
+        "aktivitetStatus": "FL",
+        "gradering": true,
+        "utbetalingsgrad": 90,
+        "prosentArbeid": 85
+      }]
+  }, {
+    "innvilget": true,
+    "årsak": "2001",
+    "periodeFom": "21. august 2021",
+    "periodeTom": "22. august 2021",
+    "periodeDagsats": 700,
+    "antallTapteDager": 0,
+    "prioritertUtbetalingsgrad": 70,
+    "næring": {
+        "gradering": true,
+        "utbetalingsgrad": 70,
+        "prosentArbeid": 85,
+        "sistLignedeÅr": 100
+      }
+  }],
+  "bruttoBeregningsgrunnlag": 574548,
+  "harBruktBruttoBeregningsgrunnlag" : true,
+  "beregningsgrunnlagregler": [],
+  "klagefristUker": 6,
+  "inkludereUtbetaling": true,
+  "inkludereGradering": true,
+  "inkludereInnvilget": true,
+  "inkludereAvslag": false
+}

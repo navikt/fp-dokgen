@@ -1,5 +1,9 @@
 package no.nav.foreldrepenger.dokgen.test.support;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.jknack.handlebars.Context;
@@ -13,10 +17,6 @@ import com.github.jknack.handlebars.context.MethodValueResolver;
 import com.github.jknack.handlebars.helper.ConditionalHelpers;
 import com.github.jknack.handlebars.helper.StringHelpers;
 import com.github.jknack.handlebars.io.FileTemplateLoader;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 public class TemplateTestService {
 
@@ -40,8 +40,8 @@ public class TemplateTestService {
         handlebars.registerHelpers(StringHelpers.class);
     }
 
-    public String compileTemplateWithTestData(String templateName, String språk, String testDataFilename) throws Exception {
-        String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName, språk));
+    public String compileTemplateWithTestData(String templateName, String templatePath, String språk, String testDataFilename) throws Exception {
+        String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName + templatePath, språk));
 
         String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(templateName, testDataFilename));
         JsonNode mergeFields = getJsonFromString(mergeFieldsJsonString);

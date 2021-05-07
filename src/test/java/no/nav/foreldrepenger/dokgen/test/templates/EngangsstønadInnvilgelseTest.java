@@ -1,20 +1,20 @@
 package no.nav.foreldrepenger.dokgen.test.templates;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
+import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
 import org.junit.jupiter.api.Test;
 
-import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class EngangsstønadInnvilgelseTest {
 
     private static final String TEMPLATE_NAME = "engangsstonad-innvilgelse";
+    private static final String TEMPLATE_PATH = "/template_";
     private static final TemplateTestService templateTestService = new TemplateTestService();
 
     @Test
     public void skal_generere_brev_for_innvilgelse_ESførstegang_på_bokmål() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nb", "testInnvFB");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "testInnvFB");
 
         // Assert
         assertThat(resultat).isEqualTo(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_nb.txt"));
@@ -23,7 +23,7 @@ public class EngangsstønadInnvilgelseTest {
     @Test
     public void skal_generere_brev_for_innvilgelse_ESførstegang_på_nynorsk() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nn", "testInnvFB");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "testInnvFB");
 
         // Assert
         assertThat(resultat).isEqualTo(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_nn.txt"));
@@ -32,7 +32,7 @@ public class EngangsstønadInnvilgelseTest {
     @Test
     public void skal_generere_brev_for_innvilgelse_på_engelsk() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "en", "testInnvFB");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "en", "testInnvFB");
 
         // Assert
         assertThat(resultat).isEqualTo(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_en.txt"));
@@ -42,7 +42,7 @@ public class EngangsstønadInnvilgelseTest {
     @Test
     public void skal_generere_brev_for_død_på_bokmål() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nb", "testDød");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "testDød");
 
         // Assert
         assertThat(resultat).isEqualTo(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-død_nb.txt"));
@@ -51,7 +51,7 @@ public class EngangsstønadInnvilgelseTest {
     @Test
     public void skal_generere_brev_for_medhold_på_bokmål() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nb", "testMedhold");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "testMedhold");
 
         // Assert
         assertThat(resultat).isEqualTo(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-medhold_nb.txt"));
@@ -60,7 +60,7 @@ public class EngangsstønadInnvilgelseTest {
     @Test
     public void skal_generere_brev_for_endret_sats_på_bokmål() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, "nb", "testEndretSats");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "testEndretSats");
 
         // Assert
         assertThat(resultat).isEqualTo(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-endretSats_nb.txt"));

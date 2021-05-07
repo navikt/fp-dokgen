@@ -8,7 +8,7 @@ public class FileStructureUtil {
     private static final Path EXPECTED_ROOT = Path.of("src/test/resources/expected/");
 
     public static Path getTemplatePath(String templateName, String språk) {
-        return CONTENT_ROOT.resolve("templates/" + templateName + "/template_" + språk + ".hbs");
+        return CONTENT_ROOT.resolve("templates/" + templateName + språk + ".hbs");
     }
 
     public static Path getTestDataPath(String templateName, String testDataName) {
