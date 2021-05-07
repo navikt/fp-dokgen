@@ -49,7 +49,7 @@
     "periodeTom": "18. august 2021",
     "periodeDagsats": 500,
     "antallTapteDager": 0,
-    "prioritertUtbetalingsgrad": 50,
+    "prioritertUtbetalingsgrad": 40,
     "arbeidsforholdsliste": [
       {
         "arbeidsgiverNavn": "Arbeidsgiver 1",
