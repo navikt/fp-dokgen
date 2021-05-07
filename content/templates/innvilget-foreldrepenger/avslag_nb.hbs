@@ -1,232 +1,220 @@
 _Dette har vi avslått
 
-{{~#each utbetalingsperiode}}
-{{~#switch avslagÅrsak}}
-    {{#case "4077"}}
+{{#each perioder}}
+{{~#unless innvilget}}
+{{#switch årsak}}
+{{#case "4077"}}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du får pleiepenger i denne perioden.
 
-Perioder før termindato kan ikke utsettes fordi du fødte før svangerskapsuke 33
-    {{/case}}
-    {{#case "4020"}}
-        {{#gt antallTapteDager 0}}
-Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
+Perioder før termindato kan ikke utsettes fordi du fødte før svangerskapsuke 33.
+{{/case}}
+{{#case "4020"}}{{#gt antallTapteDager 0}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-Du må søke senest tre måneder etter at perioden med foreldrepenger startet. Du søkte {{søknadsdato}}. Derfor får du {{antallTapteDager}} {{#gt antallTapteDager 1}} færre dager{{else}} dag mindre{{/gt}} med foreldrepenger.
-        {{/gt}}
-    {{/case}}
-    {{#case "4005"}}
-        {{#if annenForelderHarRett}}
-Det er ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}} dager{{else}} dag{{/gt}}.
-        {{/if}}
-    {{/case}}
-    {{#case "4005"}}
-        {{#not annenForelderHarRett}}
-Du har ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mistet  {{antallTapteDager}} {{#gt antallTapteDager 1}} dager{{else}} dag{{/gt}}.
-        {{/not}}
-    {{/case}}
-    {{#case "4003"}}
+Du må søke senest tre måneder etter at perioden med foreldrepenger startet. Du søkte {{søknadsdato}}. Derfor får du {{antallTapteDager}} {{#gt antallTapteDager 1}}færre dager{{else}}dag mindre{{/gt}} med foreldrepenger.{{/gt}}{{/case}}
+{{#case "4005"}}{{#if annenForelderHarRett}}Det er ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}} tapt.
+{{else}}Du har ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mistet  {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}}.{{/if}}{{/case}}
+{{~#case "4003"}}
 {{>innvilget-foreldrepenger/avslag/ikke_omsorg_nb}}
-    {{/case}}
-    {{#case "4012"}}
+{{/case}}
+{{~#case "4012"}}
 {{>innvilget-foreldrepenger/avslag/ikke_omsorg_nb}}
-    {{/case}}
-    {{#case "4033"}}
+{{/case}}
+{{#case "4033"}}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke har avtalt ferien med arbeidsgiveren din. Derfor får du utbetalt foreldrepenger i perioden.
-    {{/case}}
-    {{#case "4041"}}
+{{/case}}
+{{#case "4041"}}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke kan ta ut ferie på helligdager. Derfor får du utbetalt foreldrepenger i perioden.
-    {{/case}}
-    {{#case "4032"}}
+{{/case}}
+{{#case "4032"}}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi det er kun arbeidstakere som har rett til ferie etter ferieloven. Derfor får du utbetalt foreldrepenger i perioden.
-    {{/case}}
-    {{#case "4040"}}
-Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi barnet dittbarna dine ikke er innlagt i helseinstitusjon. Derfor får du utbetalt foreldrepenger i perioden.
-    {{/case}}
-    {{#case "4039"}}
+{{/case}}
+{{#case "4040"}}
+Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ikke er innlagt i helseinstitusjon. Derfor får du utbetalt foreldrepenger i perioden.
+{{/case}}
+{{#case "4039"}}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er innlagt i helseinstitusjon. Derfor får du utbetalt foreldrepenger i perioden.
-    {{/case}}
-    {{#case "4037"}}
-        {{~#if (and
-            (lt periodeDagsats dagsats)
-            (gt periodeDagsats 0))}}
+{{/case}}
+{{~#case "4037"}}
+{{#if (and (lt periodeDagsats dagsats)(gt periodeDagsats 0))}}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke jobber heltid. Vi har derfor redusert foreldrepengene dine til {{periodeDagsats}} kroner per dag før skatt.
-        {{#eq periodeDagsats 0 }}
+{{/if}}
+{{#eq periodeDagsats 0 }}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke jobber heltid. Du får ikke foreldrepenger i denne perioden.
-        {{/eq}}
-        {{/if}}
-    {{/case}}
-    {{#case "4023"}}
+{{/eq}}
+{{/case}}
+{{#case "4023"}}
 Vi har redusert foreldrepengene dine fordi du jobber fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 Du har ikke søkt om å kombinere foreldrepengene med arbeid og derfor har vi redusert utbetalingen din.
-    {{/case}}
-    {{#case "4030"}}
-{{>innvilget-foreldrepenger/avslag/ikke_seks_uker_født_nb}}
-    {{/case}}
-    {{#case "4031"}}
-{{>innvilget-foreldrepenger/avslag/ikke_seks_uker_født_nb}}
-    {{/case}}
-    {{#case "4038"}}
+{{/case}}
+{{#case "4030"}}
+{{>innvilget-foreldrepenger/avslag/ikke_seks_uker_født_nb~}}
+{{/case}}
+{{#case "4031"}}
+{{>innvilget-foreldrepenger/avslag/ikke_seks_uker_født_nb~}}
+{{/case}}
+{{#case "4038"}}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}}. For å kunne utsette foreldrepengene på grunn av sykdom, må du være er helt avhengig av hjelp til å ta deg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Legeerklæringen viser ikke dette. Derfor får du utbetalt foreldrepenger i perioden.
-    {{/case}}
-    {{#case "4082"}}
+{{/case}}
+{{#case "4082"}}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
 
 For å ha rett til å utsette foreldrepengene må du søke før du begynner å jobbe.
-    {{/case}}
-    {{#case "4025"}}
+{{/case}}
+{{#case "4025"}}
 Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden av arbeidet, men du kan utsette perioden.
-    {{/case}}
-    {{#case "4093"}}
+{{/case}}
+{{#case "4093"}}
 Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er i jobb.
-    {{/case}}
-    {{#case "4084"}}
-{{>innvilget-foreldrepenger/avslag/den_andre_tar_ut_fp_nb}}
-    {{/case}}
-    {{#case "4085"}}
-{{>innvilget-foreldrepenger/avslag/den_andre_tar_ut_fp_nb}}
-    {{/case}}
-    {{#case "4086"}}
+{{/case}}
+{{~#case "4084"}}
+{{>innvilget-foreldrepenger/avslag/den_andre_tar_ut_fp_nb~}}
+{{/case}}
+{{~#case "4085"}}
+{{>innvilget-foreldrepenger/avslag/den_andre_tar_ut_fp_nb~}}
+{{/case}}
+{{#case "4086"}}
 Du kan ikke ta ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen utsetter foreldrepengene i samme periode.
-    {{/case}}
-    {{#case "4050"}}
+{{/case}}
+{{#case "4050"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke er i jobb.
-    {{/case}}
-    {{#case "4051"}}
+{{/case}}
+{{#case "4051"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke studerer _heltid.
-    {{/case}}
-    {{#case "4052"}}
+{{/case}}
+{{#case "4052"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke jobber og tar utdanning som til sammen utgjør heltid.
-    {{/case}}
-    {{#case "4054"}}
+{{/case}}
+{{#case "4054"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke er innlagt i helseinstitusjon.
-    {{/case}}
-    {{#case "4055"}}
+{{/case}}
+{{#case "4055"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke deltar på heltid i introduksjonsprogrammet for nyankomne innvandrere, ifølge introduksjonslovens kapittel 2.
-    {{/case}}
-    {{#case "4056"}}
+{{/case}}
+{{#case "4056"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke deltar på heltid i kvalifiseringsprogrammet.
-    {{/case}}
-    {{#case "4057"}}
+{{/case}}
+{{#case "4057"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke mottar uføretrygd.
-    {{/case}}
-    {{#case "4007"}}
+{{/case}}
+{{#case "4007"}}
 Du kan ikke overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeFom}}.
 
 For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen viser ikke dette.
-    {{/case}}
-    {{#case "4053"}}
+{{/case}}
+{{#case "4053"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 For at du skal kunne ta ut foreldrepengene, må mor være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen hennes viser ikke dette.
-    {{/case}}
-    {{#case "4008"}}
+{{/case}}
+{{#case "4008"}}
 Du kan ikke overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen ikke er innlagt i helseinstitusjon.
-    {{/case}}
-    {{#case "4092"}}
+{{/case}}
+{{#case "4092"}}
 Du kan ikke overta kvoten fordi du ikke har aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
-    {{/case}}
-    {{#case "4076"}}
+{{/case}}
+{{#case "4076"}}
 Du kan ikke overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeFom}} fordi {{#if gjelderMor}}han{{else}}hun{{/if}} har rett til foreldrepenger. Hvis dette endrer seg kan du søke på nytt.
-    {{/case}}
-    {{#case "4002"}}
+{{/case}}
+{{#case "4002"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeFom}} fordi det ikke er flere dager igjen av foreldrepengeperioden.
-    {{/case}}
-    {{#case "4061"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb}}
-    {{/case}}
-    {{#case "4062"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb}}
-    {{/case}}
-    {{#case "4063"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb}}
-    {{/case}}
-    {{#case "4064"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb}}
-    {{/case}}
-    {{#case "4065"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb}}
-    {{/case}}
-    {{#case "4094"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_kombinere_arbeid_fp_nb}}
-    {{/case}}
-    {{#case "4502"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_kombinere_arbeid_fp_nb}}
-    {{/case}}
-    {{#case "4074"}}
+{{/case}}
+{{~#case "4061"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb~}}
+{{/case}}
+{{~#case "4062"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb~}}
+{{/case}}
+{{~#case "4063"}}
+{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb~}}
+{{/case}}
+{{#case "4064"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb~}}
+{{/case}}
+{{#case "4065"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb~}}
+{{/case}}
+{{#case "4094"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_kombinere_arbeid_fp_nb~}}
+{{/case}}
+{{#case "4502"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_kombinere_arbeid_fp_nb~}}
+{{/case}}
+{{#case "4074"}}
 Du har søkt om å overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}}, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å overta kvoten.
 
 Hvis du sender oss dokumentasjonen innen fire uker, behandler vi søknaden din for denne perioden på nytt. Da trenger du ikke sende ny søknad.
-    {{/case}}
-    {{#case "4066"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb}}
-    {{/case}}
-    {{#case "4067"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb}}
-    {{/case}}
-    {{#case "4068"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb}}
-    {{/case}}
-    {{#case "4069"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb}}
-    {{/case}}
-    {{#case "4070"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb}}
-    {{/case}}
-    {{#case "4088"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb}}
-    {{/case}}
-    {{#case "4089"}}
-{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb}}
-    {{/case}}
-    {{#case "4013"}}
+{{/case}}
+{{~#case "4066"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb~}}
+{{/case}}
+{{#case "4067"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb~}}
+{{/case}}
+{{~#case "4068"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb~}}
+{{/case}}
+{{~#case "4069"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb~}}
+{{/case}}
+{{~#case "4070"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb~}}
+{{/case}}
+{{#case "4088"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb~}}
+{{/case}}
+{{#case "4089"}}
+{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_fp_nb~}}
+{{/case}}
+{{~#case "4013"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du tidligst kan starte foreldrepengeperioden 12 uker før termin.
-    {{/case}}
-    {{#case "4022"}}
-Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} er fylt tre år
-    {{/case}}
-    {{#case "4034"}}
+{{/case}}
+{{#case "4022"}}
+Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} er fylt tre år.
+{{/case}}
+{{#case "4034"}}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi det ikke er flere dager igjen av foreldrepengeperioden.
-    {{/case}}
-    {{#case "4035"}}
+{{/case}}
+{{#case "4035"}}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 Du kan bare utsette når mor jobber, studerer eller er i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
-    {{/case}}
-    {{#case "4058"}}
-{{>innvilget-foreldrepenger/avslag/aktivitetskrav_nb}}
-    {{/case}}
-    {{#case "4059"}}
-{{>innvilget-foreldrepenger/avslag/aktivitetskrav_nb}}
-    {{/case}}
-    {{#case "4060"}}
+{{/case}}
+{{#case "4058"}}
+{{~>innvilget-foreldrepenger/avslag/aktivitetskrav_nb~}}
+{{/case}}
+{{#case "4059"}}
+{{~>innvilget-foreldrepenger/avslag/aktivitetskrav_nb~}}
+{{/case}}
+{{#case "4060"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 Foreldrepengene du har søkt om kan ikke kombineres med det den andre forelderen har søkt om for samme periode. Dere kan bare ta ut foreldrepenger samtidig når den ene av dere tar ut 100 prosent kvote og den andre tar ut opptil 50 prosent fellesperiode.
-    {{/case}}
-    {{#case "4081"}}
+{{/case}}
+{{#case "4081"}}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
 
 For å ha rett til å utsette foreldrepengene må du søke før ferien starter. Derfor får du utbetalt foreldrepenger i perioden.
-    {{/case}}
-    {{#case "4100"}}
+{{/case}}
+{{#case "4100"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du tidligst kan få foreldrepenger fra den dagen du overtar omsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
-    {{/case}}
-    {{#case "4073"}}
-{{>innvilget-foreldrepenger/avslag/mor_ikke_søkt_eller_ikke_rett_nb.hbs}}
-    {{/case}}
-    {{#case "4075"}}
-{{>innvilget-foreldrepenger/avslag/mor_ikke_søkt_eller_ikke_rett_nb.hbs}}
-    {{/case}}
-    {{#case "4075"}}
-Hvis mor søker om foreldrepenger og i tillegg arbeider, studerer eller er i annen aktivitet, kan du ha rett til foreldrepenger. Dette kan du lese mer om på nav.no/familie.
-    {{/case}}
-    {{#case "4087"}}
+{{/case}}
+{{#case "4073"}}
+{{~>innvilget-foreldrepenger/avslag/mor_ikke_søkt_eller_ikke_rett_nb~}}
+{{/case}}
+{{~#case "4075"}}
+{{~>innvilget-foreldrepenger/avslag/mor_ikke_søkt_eller_ikke_rett_nb~}}
+<br/>
+<br/>
+Hvis mor søker om foreldrepenger og i tillegg arbeider, studerer eller er i annen aktivitet, kan du ha rett til foreldrepenger. Dette kan du lese mer om på [nav.no/familie](https://nav.no/familie).
+{{/case}}
+{{#case "4087"}}
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er medlem i folketrygden.
 
 Du har ikke oppholdstillatelse i Norge i denne perioden.
-    {{/case}}
-{{/switch}}
-{{/each}}
+{{/case}}
+{{~/switch}}
+{{~/unless}}
+{{~/each}}
