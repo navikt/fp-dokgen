@@ -8,7 +8,7 @@
   },
   "behandlingType": "FØRSTEGANGSSØKNAD",
   "behandlingResultatType": "INNVILGET",
-  "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
+  "konsekvensForInnvilgetYtelse": "ENDRING_I_UTTAK",
   "søknadsdato": "4. mai 2021",
   "dekningsgrad": 100,
   "dagsats": 2209,
@@ -52,7 +52,7 @@
     "prioritertUtbetalingsgrad": 100,
     "arbeidsforholdsliste": [{
       "arbeidsgiverNavn": "Arbeidsgiver 1",
-      "gradering": true,
+      "gradering": false,
       "utbetalingsgrad": 100,
       "prosentArbeid": 0,
       "stillingsprosent": 100

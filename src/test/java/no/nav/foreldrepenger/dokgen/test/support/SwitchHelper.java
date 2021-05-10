@@ -24,6 +24,6 @@ public class SwitchHelper implements Helper<Object> {
         if (Integer.valueOf(1).equals(antall)) {
             return resultat;
         }
-        throw new IllegalArgumentException("Switch-case må treffe i 1 case, men traff i " + antall + " med verdien " + ctx.get("__condition_variable"));
+        return null;
     }
 }

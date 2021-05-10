@@ -1,0 +1,375 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": true,
+    "saksnummer": "123456789"
+  },
+  "behandlingType": "FØRSTEGANGSSØKNAD",
+  "behandlingResultatType": "INNVILGET",
+  "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
+  "søknadsdato": "4. mai 2021",
+  "dekningsgrad": 100,
+  "dagsats": 2209,
+  "månedsbeløp": 47879,
+  "seksG": 608106,
+  "inntektOverSeksG": false,
+  "forMyeUtbetalt": false,
+  "inntektMottattArbeidsgiver": false,
+  "annenForelderHarRett": true,
+  "annenForelderHarRettVurdert": "JA",
+  "aleneomsorgKode": "NEI",
+  "ikkeOmsorg": false,
+  "barnErFødt": true,
+  "årsakErFødselshendelse": false,
+  "gjelderMor": true,
+  "gjelderFødsel": true,
+  "erBesteberegning": false,
+  "ingenRefusjon": false,
+  "delvisRefusjon": false,
+  "fullRefusjon": true,
+  "fbEllerRvInnvilget": true,
+  "antallPerioder": 4,
+  "harInnvilgedePerioder": true,
+  "antallArbeidsgivere": 2,
+  "dagerTaptFørTermin": 0,
+  "disponibleDager": 0,
+  "disponibleFellesDager": 10,
+  "sisteDagAvSistePeriode": "4. november 2022",
+  "stønadsperiodeFom": "4. juni 2022",
+  "stønadsperiodeTom": "4. november 2022",
+  "foreldrepengeperiodenUtvidetUker": 3,
+  "antallBarn": 2,
+  "prematurDager": 1,
+  "perioder": [{
+    "innvilget": true,
+    "årsak": "4503",
+    "periodeFom": "1. april 2021",
+    "periodeTom": "2. april 2021",
+    "periodeDagsats": 1000,
+    "antallTapteDager": 0,
+    "prioritertUtbetalingsgrad": 100,
+    "arbeidsforholdsliste": [{
+      "arbeidsgiverNavn": "Arbeidsgiver 1",
+      "gradering": false,
+      "utbetalingsgrad": 100,
+      "prosentArbeid": 0,
+      "stillingsprosent": 100
+    }]
+  },
+    {
+      "innvilget": true,
+      "årsak": "4080",
+      "periodeFom": "3. april 2021",
+      "periodeTom": "4. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "4501",
+      "periodeFom": "5. april 2021",
+      "periodeTom": "6. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "4504",
+      "periodeFom": "7. april 2021",
+      "periodeTom": "8. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2038",
+      "periodeFom": "9. april 2021",
+      "periodeTom": "10. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 50,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2010",
+      "periodeFom": "11. april 2021",
+      "periodeTom": "12. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2015",
+      "periodeFom": "13. april 2021",
+      "periodeTom": "14. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2011",
+      "periodeFom": "15. april 2021",
+      "periodeTom": "16. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2016",
+      "periodeFom": "17. april 2021",
+      "periodeTom": "18. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2012",
+      "periodeFom": "19. april 2021",
+      "periodeTom": "20. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2018",
+      "periodeFom": "21. april 2021",
+      "periodeTom": "22. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2013",
+      "periodeFom": "23. april 2021",
+      "periodeTom": "24. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2019",
+      "periodeFom": "25. april 2021",
+      "periodeTom": "26. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2014",
+      "periodeFom": "27. april 2021",
+      "periodeTom": "28. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2017",
+      "periodeFom": "29. april 2021",
+      "periodeTom": "30. april 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2020",
+      "periodeFom": "1. mai 2021",
+      "periodeTom": "2. mai 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2022",
+      "periodeFom": "3. mai 2021",
+      "periodeTom": "4. mai 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2021",
+      "periodeFom": "5. mai 2021",
+      "periodeTom": "6. mai 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2023",
+      "periodeFom": "7. mai 2021",
+      "periodeTom": "8. mai 2021",
+      "periodeDagsats": 1001,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }]
+    }],
+  "bruttoBeregningsgrunnlag": 574548,
+  "harBruktBruttoBeregningsgrunnlag": true,
+  "beregningsgrunnlagregler": [],
+  "klagefristUker": 6,
+  "inkludereUtbetaling": true,
+  "inkludereGradering": true,
+  "inkludereInnvilget": true,
+  "inkludereAvslag": false
+}
