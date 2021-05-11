@@ -37,6 +37,7 @@ public class TemplateTestService {
         handlebars.registerHelper("not", ConditionalHelpers.not);
         handlebars.registerHelper("switch", new SwitchHelper());
         handlebars.registerHelper("case", new CaseHelper());
+        handlebars.registerHelper("add", new AdditionHelper());
         handlebars.registerHelpers(StringHelpers.class);
     }
 
