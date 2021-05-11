@@ -1,0 +1,794 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": true,
+    "saksnummer": "123456789"
+  },
+  "behandlingType": "FØRSTEGANGSSØKNAD",
+  "behandlingResultatType": "INNVILGET",
+  "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
+  "søknadsdato": "4. mai 2021",
+  "dekningsgrad": 100,
+  "dagsats": 2209,
+  "månedsbeløp": 47879,
+  "seksG": 608106,
+  "inntektOverSeksG": false,
+  "forMyeUtbetalt": false,
+  "inntektMottattArbeidsgiver": false,
+  "annenForelderHarRett": true,
+  "annenForelderHarRettVurdert": "IKKE_VURDERT",
+  "aleneomsorgKode": "IKKE_VURDERT",
+  "ikkeOmsorg": false,
+  "barnErFødt": false,
+  "årsakErFødselshendelse": false,
+  "gjelderMor": true,
+  "gjelderFødsel": true,
+  "erBesteberegning": false,
+  "ingenRefusjon": true,
+  "delvisRefusjon": false,
+  "fullRefusjon": false,
+  "fbEllerRvInnvilget": true,
+  "antallPerioder": 4,
+  "harInnvilgedePerioder": true,
+  "antallArbeidsgivere": 1,
+  "dagerTaptFørTermin": 0,
+  "disponibleDager": 0,
+  "disponibleFellesDager": 10,
+  "sisteDagAvSistePeriode": "4. november 2022",
+  "stønadsperiodeFom": "4. juni 2022",
+  "stønadsperiodeTom": "4. november 2022",
+  "foreldrepengeperiodenUtvidetUker": 0,
+  "antallBarn": 1,
+  "prematurDager": 0,
+  "perioder": [{
+    "innvilget": true,
+    "årsak": "2006",
+    "periodeFom": "15. april 2021",
+    "periodeTom": "18. august 2021",
+    "periodeDagsats": 2209,
+    "antallTapteDager": 0,
+    "prioritertUtbetalingsgrad": 100,
+    "arbeidsforholdsliste": [{
+      "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+      "gradering": false,
+      "utbetalingsgrad": 100,
+      "prosentArbeid": 0,
+      "stillingsprosent": 100
+    }]
+  },
+    {
+      "innvilget": false,
+      "årsak": "4077",
+      "periodeFom": "19. august 2021",
+      "periodeTom": "24. september 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [{
+        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+        "gradering": false,
+        "utbetalingsgrad": 100,
+        "prosentArbeid": 0,
+        "stillingsprosent": 100
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4020",
+      "periodeFom": "27. september 2021",
+      "periodeTom": "25. november 2021",
+      "periodeDagsats": 2209,
+      "antallTapteDager": 3,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [{
+        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+        "gradering": false,
+        "utbetalingsgrad": 100,
+        "prosentArbeid": 0,
+        "stillingsprosent": 100
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4005",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 2,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+        "gradering": false,
+        "utbetalingsgrad": 100,
+        "prosentArbeid": 0,
+        "stillingsprosent": 100
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4003",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 10,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+        "gradering": false,
+        "utbetalingsgrad": 100,
+        "prosentArbeid": 0,
+        "stillingsprosent": 100
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4012",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+        "gradering": false,
+        "utbetalingsgrad": 100,
+        "prosentArbeid": 0,
+        "stillingsprosent": 100
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4033",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4041",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4032",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4040",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4039",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4037",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1500,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4037",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4023",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4030",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4031",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4038",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4082",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4025",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4093",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4084",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4085",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4086",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4050",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4051",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4052",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4054",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4055",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4056",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4057",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4007",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4053",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4008",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4092",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4076",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4002",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4061",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4062",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4063",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4064",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4065",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4094",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+      }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4502",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4074",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4066",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4067",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4068",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4069",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4070",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4088",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4089",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4013",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4022",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4034",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4035",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4058",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4059",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4060",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4081",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4100",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4073",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4075",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [{
+    }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4087",
+      "periodeFom": "26. november 2021",
+      "periodeTom": "17. januar 2022",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [
+        {}
+      ]
+    }],
+  "bruttoBeregningsgrunnlag": 574548,
+  "harBruktBruttoBeregningsgrunnlag": true,
+  "beregningsgrunnlagregler": [{
+    "aktivitetStatus": "ARBEIDSTAKER",
+    "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
+    "snNyoppstartet": false,
+    "andelListe":[{
+      "aktivitetStatus": "ARBEIDSTAKER",
+      "arbeidsgiverNavn": "STENDI AS REGION ØST CA MØRK",
+      "dagsats": 2209,
+      "månedsinntekt": 47879,
+      "årsinntekt": 574548,
+      "etterlønnSluttpakke": false
+    }]
+  }],
+  "klagefristUker": 6,
+  "lovhjemlerUttak": "§ forvaltningsloven § 35",
+  "lovhjemlerBeregning": "§§ 14-7 og forvaltningsloven § 35",
+  "inkludereUtbetaling": true,
+  "inkludereGradering": true,
+  "inkludereInnvilget": false,
+  "inkludereAvslag": false
+}

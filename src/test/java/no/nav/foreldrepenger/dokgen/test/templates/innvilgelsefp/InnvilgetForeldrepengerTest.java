@@ -14,7 +14,7 @@ public class InnvilgetForeldrepengerTest {
     @Test
     public void heleBrevet_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "førstegangsbehandling_ingen_refusjon");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "førstegangsbehandling_automatisk_ingen_gradering_ingen_avslag");
 
         // Assert
         assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_template_forstegangsbehandling_nb.txt"));

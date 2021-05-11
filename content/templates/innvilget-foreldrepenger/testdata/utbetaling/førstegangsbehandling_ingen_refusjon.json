@@ -8,7 +8,7 @@
   },
   "behandlingType": "FØRSTEGANGSSØKNAD",
   "behandlingResultatType": "INNVILGET",
-  "konsekvensForInnvilgetYtelse":  "INGEN_ENDRING",
+  "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
   "søknadsdato": "4. mai 2021",
   "dekningsgrad": 100,
   "dagsats": 2209,
@@ -27,15 +27,15 @@
   "gjelderFødsel": true,
   "erBesteberegning": false,
   "ingenRefusjon": true,
-  "delvisRefusjon":  false,
+  "delvisRefusjon": false,
   "fullRefusjon": false,
   "fbEllerRvInnvilget": true,
   "antallPerioder": 4,
   "harInnvilgedePerioder": true,
-  "antallArbeidsgivere": 3,
+  "antallArbeidsgivere": 1,
   "dagerTaptFørTermin": 0,
-  "disponibleDager": 10,
-  "disponibleFellesDager": 2,
+  "disponibleDager": 0,
+  "disponibleFellesDager": 10,
   "sisteDagAvSistePeriode": "4. november 2022",
   "stønadsperiodeFom": "4. juni 2022",
   "stønadsperiodeTom": "4. november 2022",
@@ -49,13 +49,13 @@
     "periodeTom": "18. august 2021",
     "periodeDagsats": 2209,
     "antallTapteDager": 0,
+    "prioritertUtbetalingsgrad": 100,
     "arbeidsforholdsliste": [{
       "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
       "gradering": false,
-      "uttaksgrad": 100,
+      "utbetalingsgrad": 100,
       "prosentArbeid": 0,
-      "stillingsprosent": 100,
-      "utbetalingsgrad": 100
+      "stillingsprosent": 100
     }]
   },
     {
@@ -65,22 +65,14 @@
       "periodeTom": "24. september 2021",
       "periodeDagsats": 0,
       "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
         "gradering": false,
-        "uttaksgrad": 100,
+        "utbetalingsgrad": 100,
         "prosentArbeid": 0,
-        "stillingsprosent": 100,
-        "utbetalingsgrad": 80
-      },
-        {
-          "arbeidsgiverNavn": "Et annet selskap AS",
-          "gradering": true,
-          "uttaksgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100,
-          "utbetalingsgrad": 100
-        }]
+        "stillingsprosent": 100
+      }]
     },
     {
       "innvilget": true,
@@ -89,13 +81,13 @@
       "periodeTom": "25. november 2021",
       "periodeDagsats": 2209,
       "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
         "gradering": false,
-        "uttaksgrad": 100,
+        "utbetalingsgrad": 100,
         "prosentArbeid": 0,
-        "stillingsprosent": 100,
-        "utbetalingsgrad": 100
+        "stillingsprosent": 100
       }]
     },
     {
@@ -105,13 +97,13 @@
       "periodeTom": "17. januar 2022",
       "periodeDagsats": 1768,
       "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
         "gradering": false,
-        "uttaksgrad": 80,
+        "utbetalingsgrad": 80,
         "prosentArbeid": 0,
-        "stillingsprosent": 100,
-        "utbetalingsgrad": 80
+        "stillingsprosent": 100
       }]
     }],
   "bruttoBeregningsgrunnlag": 574548,
@@ -130,8 +122,10 @@
     }]
   }],
   "klagefristUker": 6,
+  "lovhjemlerUttak": "§ forvaltningsloven § 35",
+  "lovhjemlerBeregning": "§§ 14-7 og forvaltningsloven § 35",
   "inkludereUtbetaling": true,
-  "inkludereGradering": true,
-  "inkludereInnvilget": true,
+  "inkludereGradering":  true,
+  "inkludereInnvilget" : false,
   "inkludereAvslag": false
 }
