@@ -21,7 +21,7 @@ public class InnvilgetForeldrepengerBeregningTest {
     }
 
     @Test
-    public void undermal_utbetaling_to_ag_nb() throws Exception {
+    public void undermal_beregning_to_ag_nb() throws Exception {
         // Act
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "beregning/førstegangsbehandling_to_ag");
         // Assert
@@ -29,7 +29,7 @@ public class InnvilgetForeldrepengerBeregningTest {
     }
 
     @Test
-    public void undermal_utbetaling_næring_nb() throws Exception {
+    public void undermal_beregning_næring_nb() throws Exception {
         // Act
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "beregning/førstegangsbehandling_næring");
         // Assert
@@ -37,7 +37,7 @@ public class InnvilgetForeldrepengerBeregningTest {
     }
 
     @Test
-    public void undermal_utbetaling_frilans_nb() throws Exception {
+    public void undermal_beregning_frilans_nb() throws Exception {
         // Act
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "beregning/førstegangsbehandling_frilans");
         // Assert
