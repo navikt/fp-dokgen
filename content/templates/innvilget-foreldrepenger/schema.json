@@ -1,13 +1,12 @@
 {
   "$id": "http://nav.no/foreldrepenger/fpdokgen/innvilget-foreldrepenger",
-  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "Dokumentdata for brev Innvilget Foreldrepenger",
   "type": "object",
   "required": [
     "felles",
     "behandlingType",
     "behandlingResultatType",
-    "konsekvensForInnvilgetYtelse",
     "søknadsdato",
     "dekningsgrad",
     "dagsats",
@@ -43,8 +42,8 @@
     "beregningsgrunnlagregler",
     "klagefristUker",
     "lovhjemlerUttak",
-    "inkludereInfoOmUtbetaling",
     "inkludereUtbetaling",
+    "inkludereGradering",
     "inkludereInnvilget",
     "inkludereAvslag"
   ],
@@ -68,7 +67,8 @@
           "type": "number"
         },
         "naturalytelseEndringType": {
-          "type": { "enum": [ "START", "STOPP", "INGEN_ENDRING" ] }
+          "type": "string",
+          "enum": [ "START", "STOPP", "INGEN_ENDRING" ]
         },
         "naturalytelseEndringDato": {
           "type": "string"
@@ -177,7 +177,7 @@
           "type": "string"
         },
         "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": {
-          "type": "int"
+          "type": "number"
         },
         "snNyoppstartet": {
           "type": "boolean"
@@ -200,7 +200,8 @@
       "type": "string"
     },
     "konsekvensForInnvilgetYtelse": {
-      "type": { "enum": [ "ENDRING_I_BEREGNING", "ENDRING_I_UTTAK", "ENDRING_I_BEREGNING_OG_UTTAK" ] }
+      "type": "string",
+      "enum": [ "ENDRING_I_BEREGNING", "ENDRING_I_UTTAK", "ENDRING_I_BEREGNING_OG_UTTAK" ]
     },
     "søknadsdato": {
       "type": "string"
@@ -218,10 +219,11 @@
       "type": "number"
     },
     "inntektOverSeksG": {
-      "type": "number"
+      "type": "boolean"
     },
     "forMyeUtbetalt": {
-      "type": { "enum": [ "FERIE", "JOBB", "GENERELL" ] }
+      "type": "string",
+      "enum": [ "FERIE", "JOBB", "GENERELL" ]
     },
     "inntektMottattArbeidsgiver": {
       "type": "boolean"
@@ -230,10 +232,12 @@
       "type": "boolean"
     },
     "annenForelderHarRettVurdert": {
-      "type": { "enum": [ "JA", "NEI", "IKKE_VURDERT" ] }
+      "type": "string",
+      "enum": [ "JA", "NEI", "IKKE_VURDERT" ]
     },
     "aleneomsorgKode": {
-      "type": { "enum": [ "JA", "NEI", "IKKE_VURDERT" ] }
+      "type": "string",
+      "enum": [ "JA", "NEI", "IKKE_VURDERT" ]
     },
     "ikkeOmsorg": {
       "type": "boolean"
