@@ -12,11 +12,20 @@ public class InnvilgetForeldrepengerTest {
     private static final TemplateTestService templateTestService = new TemplateTestService();
 
     @Test
-    public void heleBrevet_nb() throws Exception {
+    public void førstegangsbehandling_uten_gradering_og_avslag_nb() throws Exception {
         // Act
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "førstegangsbehandling_automatisk_ingen_gradering_ingen_avslag");
 
         // Assert
         assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_template_forstegangsbehandling_nb.txt"));
+    }
+
+    @Test
+    public void førstegangsbehandling_med_avslag_nb() throws Exception {
+        // Act
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "førstegangsbehandling_med_avslag");
+
+        // Assert
+        assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_template_forstegangsbehandling_med_avslag_nb.txt"));
     }
 }
