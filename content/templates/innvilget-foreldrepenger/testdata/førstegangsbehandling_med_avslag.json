@@ -1,0 +1,237 @@
+{
+  "felles": {
+    "søkerNavn": "Herman Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": true,
+    "saksnummer": "123456789"
+  },
+  "behandlingType": "FØRSTEGANGSSØKNAD",
+  "behandlingResultatType": "INNVILGET",
+  "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
+  "søknadsdato": "16. desember 2020",
+  "dekningsgrad": 100,
+  "dagsats": 1618,
+  "månedsbeløp": 35056,
+  "seksG": 608106,
+  "inntektOverSeksG": false,
+  "forMyeUtbetalt": false,
+  "inntektMottattArbeidsgiver": false,
+  "annenForelderHarRett": true,
+  "annenForelderHarRettVurdert": "IKKE_VURDERT",
+  "aleneomsorgKode": "IKKE_VURDERT",
+  "ikkeOmsorg": false,
+  "barnErFødt": true,
+  "årsakErFødselshendelse": false,
+  "gjelderMor": false,
+  "gjelderFødsel": true,
+  "erBesteberegning": false,
+  "ingenRefusjon": false,
+  "delvisRefusjon": true,
+  "fullRefusjon": false,
+  "fbEllerRvInnvilget": true,
+  "antallPerioder": 7,
+  "harInnvilgedePerioder": true,
+  "antallArbeidsgivere": 2,
+  "dagerTaptFørTermin": 0,
+  "disponibleDager": 0,
+  "disponibleFellesDager": 10,
+  "sisteDagAvSistePeriode": "4. november 2022",
+  "stønadsperiodeFom": "4. juni 2022",
+  "stønadsperiodeTom": "4. november 2022",
+  "foreldrepengeperiodenUtvidetUker": 0,
+  "antallBarn": 2,
+  "prematurDager": 0,
+  "perioder": [{
+      "innvilget": true,
+      "årsak": "2031",
+      "periodeFom": "24. februar 2021",
+      "periodeTom": "26. mars 2021",
+      "periodeDagsats": 1618,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [{
+        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+        "gradering": true,
+        "utbetalingsgrad": 20,
+        "prosentArbeid": 80,
+        "stillingsprosent": 80
+      },
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 80
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "29. mars 2021",
+      "periodeTom": "05. mai 2020",
+      "periodeDagsats": 1939,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [{
+        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+        "gradering": false,
+        "utbetalingsgrad": 100,
+        "prosentArbeid": 0,
+        "stillingsprosent": 80
+      },
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 80
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2031",
+      "periodeFom": "06. april 2021",
+      "periodeTom": "06. juni 2021",
+      "periodeDagsats": 1618,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [{
+        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+        "gradering": true,
+        "utbetalingsgrad": 20,
+        "prosentArbeid": 80,
+        "stillingsprosent": 80
+      },
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 80
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2031",
+      "periodeFom": "09. juni 2021",
+      "periodeTom": "18. juni 2021",
+      "periodeDagsats": 80,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [{
+        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+        "gradering": true,
+        "utbetalingsgrad": 20,
+        "prosentArbeid": 80,
+        "stillingsprosent": 80
+      },
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 80
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "21. juni 2021",
+      "periodeTom": "10. august 2021",
+      "periodeDagsats": 401,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [{
+        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+        "gradering": false,
+        "utbetalingsgrad": 100,
+        "prosentArbeid": 0,
+        "stillingsprosent": 80
+      },
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 80
+        }]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2031",
+      "periodeFom": "18. august 2021",
+      "periodeTom": "05. desember 2021",
+      "periodeDagsats": 80,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [{
+        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+        "gradering": true,
+        "utbetalingsgrad": 20,
+        "prosentArbeid": 80,
+        "stillingsprosent": 80
+      },
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 80
+        }]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4002",
+      "periodeFom": "06. desember 2021",
+      "periodeTom": "07. desember 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [{
+        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+        "gradering": true,
+        "utbetalingsgrad": 20,
+        "prosentArbeid": 80,
+        "stillingsprosent": 80
+      },
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 80
+        }]
+    }
+  ],
+  "bruttoBeregningsgrunnlag": 504360,
+  "harBruktBruttoBeregningsgrunnlag": true,
+  "beregningsgrunnlagregler": [{
+    "aktivitetStatus": "ARBEIDSTAKER",
+    "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 2,
+    "snNyoppstartet": false,
+    "andelListe":[{
+      "aktivitetStatus": "ARBEIDSTAKER",
+      "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+      "dagsats": 401,
+      "månedsinntekt": 8697,
+      "årsinntekt": 104364,
+      "etterlønnSluttpakke": false
+    },
+      {
+      "aktivitetStatus": "ARBEIDSTAKER",
+      "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
+      "dagsats": 1538,
+      "månedsinntekt": 33333,
+      "årsinntekt": 399996,
+      "etterlønnSluttpakke": false
+    }]
+  }],
+  "klagefristUker": 6,
+  "lovhjemlerUttak": "§§ 14-9, 14-12 og 14-16",
+  "lovhjemlerBeregning": "§§ 14-7 og 8-30",
+  "inkludereUtbetaling": true,
+  "inkludereGradering":  true,
+  "inkludereInnvilget" : true,
+  "inkludereAvslag": true
+}
