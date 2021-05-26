@@ -1,24 +1,19 @@
 {{#neq sisteDagAvSistePeriode ""}}
-{{~#if (or
-            (gt disponibleDager 0)
-            (gt disponibleFellesDager 0))}}
-{{~#if annenForelderHarRett
-            (neq aleneomsorgKode "JA")}}
-Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dag{{/gt}} igjen av kvoten din, og {{disponibleFellesDager}} {{#gt disponibleFellesDager 1}}dager{{else}}dag{{/gt}} som dere begge kan ta ut. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} må det søkes om innen {{sisteDagAvSistePeriode}}.
-{{else}}
-Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dag{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} må du søke om innen {{sisteDagAvSistePeriode}}.
-{{/if}}
-{{/if}}
-{{/neq}}
+{{#gt disponibleDager 0}}
+Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dagen{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} må du søke om innen {{sisteDagAvSistePeriode}}.
+{{/gt}}
+{{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}{{~#if annenForelderHarRett (neq aleneomsorgKode "JA")}}
+Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dager{{/eq}} som dere begge kan ta ut. {{#eq disponibleDager 1}}Denne dagene{{else}}Disse dagene{{/eq}} må det søkes om innen {{sisteDagAvSistePeriode}}.
+{{/if}}{{/if}}{{/neq}}
 {{#gt antallArbeidsgivere 1}}
 {{~#each perioder}}
-    {{~#each arbeidsforholdsliste}}
-        {{~#if gradering}}
+{{~#each arbeidsforholdsliste}}
+{{~#if gradering}}
 Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere foreldrepenger med arbeid hos én arbeidsgiver om gangen. Det betyr at det bare er perioden din hos {{this.arbeidsgiverNavn}} som blir forlenget.
 
 Fordi du nå jobber {{this.prosentArbeid}} prosent hos {{this.arbeidsgiverNavn}}, reduserer vi foreldrepengene dine med {{this.prosentArbeid}} prosent hos {{this.arbeidsgiverNavn}} fra og med {{periodeFom}} til og med {{periodeTom}}.
-        {{/if}}
-    {{/each}}
+{{/if}}
+{{/each}}
 {{/each}}
 {{/gt}}
 

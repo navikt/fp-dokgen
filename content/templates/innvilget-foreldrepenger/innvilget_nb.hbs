@@ -62,9 +62,6 @@ Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom
 
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
 Du tar ut {{arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{arbeidsforholdsliste.0.stillingsprosent}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{periodeDagsats}} kroner per dag før skatt.
-{{/if}}
-
-
 {{#each arbeidsforholdsliste}}
 {{#if (and (eq this.prosentArbeid this.stillingsprosent) (lt this.stillingsprosent 100))}} {{#if (and (eq this.gradering false) (eq arbeidsforholdsliste.0.gradering true))}}
 Selv om du er tilbake i arbeid hos {{this.arbeidsgiverNavn}} har du fremdeles rett til foreldrepenger. Derfor får du fremdeles utbetalt foreldrepenger.
@@ -76,6 +73,7 @@ Du jobber ikke i hele deltidsstillingen din hos {{this.arbeidsgiverNavn}}, og f�
 I samme periode tar du ut 100 prosent permisjon hos {{this.arbeidsgiverNavn}}.
 {{/if}}{{/if}}
 {{/each}}
+{{/if}}
 
 
 {{#each annenAktivitetsliste}}

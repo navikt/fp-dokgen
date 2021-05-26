@@ -109,11 +109,11 @@
   "bruttoBeregningsgrunnlag": 574548,
   "harBruktBruttoBeregningsgrunnlag": true,
   "beregningsgrunnlagregler": [{
-    "aktivitetStatus": "ARBEIDSTAKER",
+    "aktivitetStatus": "AT",
     "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
     "snNyoppstartet": false,
     "andelListe":[{
-      "aktivitetStatus": "ARBEIDSTAKER",
+      "aktivitetStatus": "AT",
       "arbeidsgiverNavn": "STENDI AS REGION ØST CA MØRK",
       "dagsats": 2209,
       "månedsinntekt": 47879,
@@ -125,7 +125,7 @@
   "lovhjemlerUttak": "§ forvaltningsloven § 35",
   "lovhjemlerBeregning": "§§ 14-7 og forvaltningsloven § 35",
   "inkludereUtbetaling": true,
-  "inkludereGradering":  true,
-  "inkludereInnvilget" : false,
+  "inkludereGradering":  false,
+  "inkludereInnvilget" : true,
   "inkludereAvslag": false
 }
