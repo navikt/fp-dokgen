@@ -50,6 +50,13 @@
   "$defs": {
     "arbeidsforhold": {
       "type": "object",
+      "required": [
+        "arbeidsgiverNavn",
+        "gradering",
+        "prosentArbeid",
+        "stillingsprosent",
+        "utbetalingsgrad"
+      ],
       "properties": {
         "arbeidsgiverNavn": {
           "type": "string"
@@ -80,6 +87,12 @@
     },
     "næring": {
       "type": "object",
+      "required": [
+        "gradering",
+        "prosentArbeid",
+        "utbetalingsgrad",
+        "sistLignedeÅr"
+      ],
       "properties": {
         "gradering": {
           "type": "boolean"
@@ -97,6 +110,12 @@
     },
     "annenAktivitet": {
       "type": "object",
+      "required": [
+        "aktivitetStatus",
+        "gradering",
+        "utbetalingsgrad",
+        "prosentArbeid"
+      ],
       "properties": {
         "aktivitetStatus": {
           "type": "string"
@@ -114,6 +133,15 @@
     },
     "utbetalingsperiode": {
       "type": "object",
+      "required": [
+        "innvilget",
+        "årsak",
+        "periodeFom",
+        "periodeTom",
+        "periodeDagsats",
+        "antallTapteDager",
+        "prioritertUtbetalingsgrad"
+      ],
       "properties": {
         "innvilget": {
           "type": "boolean"
@@ -149,6 +177,12 @@
     },
     "beregningsgrunnlagAndel": {
       "type": "object",
+      "required": [
+        "aktivitetStatus",
+        "dagsats",
+        "månedsinntekt",
+        "årsinntekt"
+      ],
       "properties": {
         "aktivitetStatus": {
           "type": "string"
@@ -172,6 +206,11 @@
     },
     "beregningsgrunnlagRegel": {
       "type": "object",
+      "required": [
+        "aktivitetStatus",
+        "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke",
+        "snNyoppstartet"
+      ],
       "properties": {
         "aktivitetStatus": {
           "type": "string"
