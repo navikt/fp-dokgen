@@ -1,23 +1,24 @@
+<br/>
+
 **Dette har vi innvilget**
 
 {{#each perioder}}
-
 {{#eq årsak "4503"}}
-Du får {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Dette tilsvarer den stillingsprosenten mor jobber. Det du tar ut i foreldrepenger kan ikke være høyere enn den prosenten mor jobber.
+* Du får {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Dette tilsvarer den stillingsprosenten mor jobber. Det du tar ut i foreldrepenger kan ikke være høyere enn den prosenten mor jobber.
 
 Selv om du jobber i denne perioden, får du ingen forlengelse av foreldrepengeperioden din. For å kombinere foreldrepenger med arbeid og få en lengre periode med foreldrepenger, må uttaket ditt være lavere enn den prosenten mor jobber.
 {{/eq}}
 
 
 {{#if (or (eq årsak "4080") (eq årsak "4501"))}}
-Du får {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
+* Du får {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 Vi har redusert utbetalingen din fordi du har jobbet i denne perioden. Du har søkt om å kombinere foreldrepenger med arbeid etter at du begynte å jobbe, og får derfor får du ingen forlengelse av foreldrepengeperioden din.
 {{/if}}
 
 
 {{#eq årsak "4504"}}
-Du får {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
+* Du får {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jobber i perioden, får du ingen forlengelse av foreldrepengeperioden din. Det må ha gått minst seks uker etter fødselen før du kan kombinere foreldrepenger med arbeid og få en lengre periode med foreldrepenger.
 {{/eq}}
@@ -31,37 +32,37 @@ Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jo
 
 
 {{#eq årsak "2038"}}{{#neq this.prioritertUtbetalingsgrad 100}}
-Du tar ut {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen skal ta ut foreldrepenger i samme periode. I denne perioden får du {{periodeDagsats}} kroner per dag før skatt.
+* Du tar ut {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen skal ta ut foreldrepenger i samme periode. I denne perioden får du {{periodeDagsats}} kroner per dag før skatt.
 {{/neq}}{{/eq}}
 
 
 {{#if (or (eq årsak "2010") (eq årsak "2015"))}}
-Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har ferie.
+* Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har ferie.
 {{/if}}
 
 
 {{#if (or (eq årsak "2011") (eq årsak "2016"))}}
-Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber heltid.
+* Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber heltid.
 {{/if}}
 
 
 {{#if (or (eq årsak "2012") (eq årsak "2018"))}}
-Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du er innlagt i helseinstitusjon.
+* Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du er innlagt i helseinstitusjon.
 {{/if}}
 
 
 {{#if (or (eq årsak "2013") (eq årsak "2019"))}}
-Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}} er innlagt i helseinstitusjon.
+* Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}} er innlagt i helseinstitusjon.
 {{/if}}
 
 
 {{#if (or (eq årsak "2014") (eq årsak "2017"))}}
-Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du er helt avhengig av hjelp til å ta deg av {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
+* Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du er helt avhengig av hjelp til å ta deg av {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
 {{/if}}
 
 
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
-Du tar ut {{arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{arbeidsforholdsliste.0.stillingsprosent}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{periodeDagsats}} kroner per dag før skatt.
+* Du tar ut {{arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{arbeidsforholdsliste.0.stillingsprosent}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{periodeDagsats}} kroner per dag før skatt.
 {{#each arbeidsforholdsliste}}
 {{#if (and (eq this.prosentArbeid this.stillingsprosent) (lt this.stillingsprosent 100))}} {{#if (and (eq this.gradering false) (eq arbeidsforholdsliste.0.gradering true))}}
 Selv om du er tilbake i arbeid hos {{this.arbeidsgiverNavn}} har du fremdeles rett til foreldrepenger. Derfor får du fremdeles utbetalt foreldrepenger.
@@ -78,35 +79,34 @@ I samme periode tar du ut 100 prosent permisjon hos {{this.arbeidsgiverNavn}}.
 
 {{#each annenAktivitetsliste}}
 {{#if (and (eq this.aktivitetStatus "FL") (eq this.gradering true))}} {{#if @../innvilget}}
-Du tar ut {{this.utbetalingsgrad}} prosent foreldrepenger fra og med {{@../periodeFom}} til og med {{@../periodeTom}} fordi du jobber {{this.prosentArbeid}} prosent. I denne perioden får du {{@../periodeDagsats}} kroner per dag før skatt.
+* Du tar ut {{this.utbetalingsgrad}} prosent foreldrepenger fra og med {{@../periodeFom}} til og med {{@../periodeTom}} fordi du jobber {{this.prosentArbeid}} prosent. I denne perioden får du {{@../periodeDagsats}} kroner per dag før skatt.
 {{/if}}{{/if}}
 {{/each}}
 
 
 {{#if (and (eq this.næring.gradering true) (eq this.innvilget true))}}
-Du tar ut {{this.næring.utbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}} fordi du jobber {{this.næring.prosentArbeid}} prosent. I denne perioden får du {{this.periodeDagsats}} kroner per dag før skatt.
+* Du tar ut {{this.næring.utbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}} fordi du jobber {{this.næring.prosentArbeid}} prosent. I denne perioden får du {{this.periodeDagsats}} kroner per dag før skatt.
 {{/if}}
 
 
 {{#eq årsak "2020"}}
-Du får overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen ikke har rett til foreldrepenger.
+* Du får overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen ikke har rett til foreldrepenger.
 {{/eq}}
 
 
 {{#eq årsak "2022"}}
-Du får overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen er innlagt i helseinstitusjon.
+* Du får overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen er innlagt i helseinstitusjon.
 {{/eq}}
 
 
 {{#eq årsak "2021"}}
-Du får overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen er helt avhengig av hjelp til å ta seg av {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
+* Du får overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen er helt avhengig av hjelp til å ta seg av {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
 {{/eq}}
 
 
 {{#eq årsak "2023"}}
-Du får overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har aleneomsorgen for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
+* Du får overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har aleneomsorgen for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
 {{/eq}}
-
 {{/each}}
 
 {{#if (and (eq harInnvilgedePerioder true) (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}

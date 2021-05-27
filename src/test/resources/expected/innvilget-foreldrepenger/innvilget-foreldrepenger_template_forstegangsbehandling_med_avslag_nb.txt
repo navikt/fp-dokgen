@@ -97,6 +97,8 @@ Fordi du nå jobber 80 prosent hos SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK, re
 
 
 
+<br/>
+
 **Dette har vi innvilget**
 
 
@@ -132,8 +134,7 @@ Fordi du nå jobber 80 prosent hos SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK, re
 
 
 
-
-Du tar ut 20 prosent foreldrepenger fra og med 24. februar 2021 til og med 26. mars 2021 fordi du jobber 80 prosent hos SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK. I denne perioden får du 1618 kroner per dag før skatt.
+* Du tar ut 20 prosent foreldrepenger fra og med 24. februar 2021 til og med 26. mars 2021 fordi du jobber 80 prosent hos SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK. I denne perioden får du 1618 kroner per dag før skatt.
 
 
 
@@ -174,9 +175,9 @@ I samme periode tar du ut 100 prosent permisjon hos SYKEHUSET TELEMARK HF SKIEN 
 
 
 
+* Du tar ut foreldrepenger fra og med 29. mars 2021 til og med 05. mai 2020. I denne perioden får du 1939 kroner per dag før skatt.
 
 
-Du tar ut foreldrepenger fra og med 29. mars 2021 til og med 05. mai 2020. I denne perioden får du 1939 kroner per dag før skatt.
 
 
 
@@ -248,196 +249,7 @@ Du tar ut foreldrepenger fra og med 29. mars 2021 til og med 05. mai 2020. I den
 
 
 
-
-
-
-
-Du tar ut 20 prosent foreldrepenger fra og med 06. april 2021 til og med 06. juni 2021 fordi du jobber 80 prosent hos SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK. I denne perioden får du 1618 kroner per dag før skatt.
-
-
-
-
-
-
-
-
-I samme periode tar du ut 100 prosent permisjon hos SYKEHUSET TELEMARK HF SKIEN - SOMATIKK.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Du tar ut 20 prosent foreldrepenger fra og med 09. juni 2021 til og med 18. juni 2021 fordi du jobber 80 prosent hos SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK. I denne perioden får du 80 kroner per dag før skatt.
-
-
-
-
-
-
-
-
-I samme periode tar du ut 100 prosent permisjon hos SYKEHUSET TELEMARK HF SKIEN - SOMATIKK.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Du tar ut foreldrepenger fra og med 21. juni 2021 til og med 10. august 2021. I denne perioden får du 401 kroner per dag før skatt.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Du tar ut 20 prosent foreldrepenger fra og med 18. august 2021 til og med 05. desember 2021 fordi du jobber 80 prosent hos SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK. I denne perioden får du 80 kroner per dag før skatt.
+* Du tar ut 20 prosent foreldrepenger fra og med 06. april 2021 til og med 06. juni 2021 fordi du jobber 80 prosent hos SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK. I denne perioden får du 1618 kroner per dag før skatt.
 
 
 
@@ -501,6 +313,16 @@ I samme periode tar du ut 100 prosent permisjon hos SYKEHUSET TELEMARK HF SKIEN 
 
 
 
+* Du tar ut 20 prosent foreldrepenger fra og med 09. juni 2021 til og med 18. juni 2021 fordi du jobber 80 prosent hos SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK. I denne perioden får du 80 kroner per dag før skatt.
+
+
+
+
+
+
+
+
+I samme periode tar du ut 100 prosent permisjon hos SYKEHUSET TELEMARK HF SKIEN - SOMATIKK.
 
 
 
@@ -525,6 +347,174 @@ I samme periode tar du ut 100 prosent permisjon hos SYKEHUSET TELEMARK HF SKIEN 
 
 
 
+
+
+
+
+
+
+
+* Du tar ut foreldrepenger fra og med 21. juni 2021 til og med 10. august 2021. I denne perioden får du 401 kroner per dag før skatt.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Du tar ut 20 prosent foreldrepenger fra og med 18. august 2021 til og med 05. desember 2021 fordi du jobber 80 prosent hos SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK. I denne perioden får du 80 kroner per dag før skatt.
+
+
+
+
+
+
+
+
+I samme periode tar du ut 100 prosent permisjon hos SYKEHUSET TELEMARK HF SKIEN - SOMATIKK.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br/>
 
 **Dette har vi avslått**
 
@@ -588,6 +578,10 @@ Du har ikke rett til foreldrepenger fra og med 06. desember 2021 til og med 06. 
 Vedtaket er gjort etter folketrygdloven §§ 14-9, 14-12 og 14-16.
 
 
+<br/>
+
+**Inntekt vi har brukt i beregningen**
+
 
 Vi har brukt 504360 kroner i året før skatt i beregningen av foreldrepengene dine.
 
@@ -613,8 +607,6 @@ Arbeidsgiverne dine har gitt oss disse opplysningene.
 
 
 Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.
-
-
 
 
 

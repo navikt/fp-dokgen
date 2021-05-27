@@ -51,6 +51,8 @@ Pengene er på kontoen din innen den 25. hver måned. Sjekk utbetalingene dine p
 
 
 
+<br/>
+
 **Dette har vi innvilget**
 
 
@@ -63,8 +65,8 @@ Pengene er på kontoen din innen den 25. hver måned. Sjekk utbetalingene dine p
 
 
 
+* Du tar ut foreldrepenger fra og med 15. april 2021 til og med 18. august 2021. I denne perioden får du 2209 kroner per dag før skatt.
 
-Du tar ut foreldrepenger fra og med 15. april 2021 til og med 18. august 2021. I denne perioden får du 2209 kroner per dag før skatt.
 
 
 
@@ -122,10 +124,10 @@ Du tar ut foreldrepenger fra og med 15. april 2021 til og med 18. august 2021. I
 
 
 
+* Du får utsatt foreldrepengene fra og med 19. august 2021 til og med 24. september 2021 fordi du har ferie.
 
 
 
-Du får utsatt foreldrepengene fra og med 19. august 2021 til og med 24. september 2021 fordi du har ferie.
 
 
 
@@ -167,12 +169,12 @@ Du får utsatt foreldrepengene fra og med 19. august 2021 til og med 24. septemb
 
 
 
+* Du tar ut foreldrepenger fra og med 27. september 2021 til og med 25. november 2021. I denne perioden får du 2209 kroner per dag før skatt.
 
 
 
 
 
-Du tar ut foreldrepenger fra og med 27. september 2021 til og med 25. november 2021. I denne perioden får du 2209 kroner per dag før skatt.
 
 
 
@@ -218,15 +220,7 @@ Du tar ut foreldrepenger fra og med 27. september 2021 til og med 25. november 2
 
 
 
-
-
-
-
-
-
-
-Du tar ut 80 prosent foreldrepenger fra og med 26. november 2021 til og med 17. januar 2022. I denne perioden får du 1768 kroner per dag før skatt.
-
+* Du tar ut 80 prosent foreldrepenger fra og med 26. november 2021 til og med 17. januar 2022. I denne perioden får du 1768 kroner per dag før skatt.
 
 
 
@@ -279,6 +273,10 @@ Du tar ut 80 prosent foreldrepenger fra og med 26. november 2021 til og med 17. 
 Vedtaket er gjort etter folketrygdloven § forvaltningsloven § 35.
 
 
+<br/>
+
+**Inntekt vi har brukt i beregningen**
+
 
 Vi har brukt 574548 kroner i året før skatt i beregningen av foreldrepengene dine.
 
@@ -294,7 +292,6 @@ Inntekten din hos STENDI AS REGION ØST CA MØRK er 47879 kroner i måneden. Arb
 
 
 Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.
-
 
 
 

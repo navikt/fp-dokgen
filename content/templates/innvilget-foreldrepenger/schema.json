@@ -239,8 +239,7 @@
       "type": "string"
     },
     "konsekvensForInnvilgetYtelse": {
-      "type": "string",
-      "enum": [ "ENDRING_I_BEREGNING", "ENDRING_I_UTTAK", "ENDRING_I_BEREGNING_OG_UTTAK" ]
+      "type": "string"
     },
     "søknadsdato": {
       "type": "string"
