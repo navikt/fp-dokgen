@@ -109,7 +109,7 @@
   "bruttoBeregningsgrunnlag": 574548,
   "harBruktBruttoBeregningsgrunnlag": true,
   "beregningsgrunnlagregler": [{
-    "aktivitetStatus": "ARBEIDSTAKER",
+    "regelStatus": "ARBEIDSTAKER",
     "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
     "snNyoppstartet": false,
     "andelListe":[{
@@ -118,7 +118,8 @@
       "dagsats": 2209,
       "månedsinntekt": 47879,
       "årsinntekt": 574548,
-      "etterlønnSluttpakke": false
+      "etterlønnSluttpakke": false,
+      "sistLignedeÅr": 2019
     }]
   }],
   "klagefristUker": 6,
