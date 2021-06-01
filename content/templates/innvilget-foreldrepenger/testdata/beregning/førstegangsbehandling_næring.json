@@ -105,11 +105,11 @@
   "bruttoBeregningsgrunnlag": 574548,
   "harBruktBruttoBeregningsgrunnlag" : false,
   "beregningsgrunnlagregler": [{
-    "aktivitetStatus": "SN",
+    "aktivitetStatus": "SELVSTENDIG_NÆRINGSDRIVENDE",
     "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
     "snNyoppstartet": false,
     "andelListe":[{
-      "aktivitetStatus": "SN",
+      "aktivitetStatus": "SELVSTENDIG_NÆRINGSDRIVENDE",
       "arbeidsgiverNavn": "STENDI AS REGION ØST CA MØRK",
       "dagsats": 2209,
       "månedsinntekt": 47879,

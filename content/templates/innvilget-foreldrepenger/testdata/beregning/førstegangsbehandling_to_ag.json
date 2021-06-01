@@ -105,11 +105,11 @@
   "bruttoBeregningsgrunnlag": 574548,
   "harBruktBruttoBeregningsgrunnlag" : true,
   "beregningsgrunnlagregler": [{
-    "aktivitetStatus": "AT",
+    "aktivitetStatus": "ARBEIDSTAKER",
     "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 2,
     "snNyoppstartet": false,
     "andelListe":[{
-      "aktivitetStatus": "AT",
+      "aktivitetStatus": "ARBEIDSTAKER",
       "arbeidsgiverNavn": "STENDI AS REGION ØST CA MØRK",
       "dagsats": 2209,
       "månedsinntekt": 47879,
@@ -117,7 +117,7 @@
       "etterlønnSluttpakke": false
     },
       {
-        "aktivitetStatus": "AT",
+        "aktivitetStatus": "ARBEIDSTAKER",
         "arbeidsgiverNavn": "KATE AND ROB",
         "dagsats": 1234,
         "månedsinntekt": 54321,
