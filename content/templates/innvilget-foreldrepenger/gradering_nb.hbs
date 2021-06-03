@@ -7,13 +7,13 @@ Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igje
 {{/if}}{{/if}}{{/neq}}
 {{#gt antallArbeidsgivere 1}}
 {{~#each perioder}}
+{{#if @first}}
 {{~#each arbeidsforholdsliste}}
-{{~#if gradering}}
+{{~#if this.gradering }}
 Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere foreldrepenger med arbeid hos én arbeidsgiver om gangen. Det betyr at det bare er perioden din hos {{this.arbeidsgiverNavn}} som blir forlenget.
-
-Fordi du nå jobber {{this.prosentArbeid}} prosent hos {{this.arbeidsgiverNavn}}, reduserer vi foreldrepengene dine med {{this.prosentArbeid}} prosent hos {{this.arbeidsgiverNavn}} fra og med {{periodeFom}} til og med {{periodeTom}}.
 {{/if}}
 {{/each}}
+{{/if}}
 {{/each}}
 {{/gt}}
 
