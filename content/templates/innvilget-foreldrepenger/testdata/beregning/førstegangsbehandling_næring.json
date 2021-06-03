@@ -1,126 +1,88 @@
 {
   "felles": {
-    "søkerNavn": "Dolly Duck",
-    "søkerPersonnummer": "300220 12345",
-    "brevDato": "4. mai 2021",
-    "erAutomatiskBehandlet": true,
-    "saksnummer" : "123456789"
+    "søkerNavn": "GRIS EMILY",
+    "søkerPersonnummer": "224293 10648",
+    "brevDato": "2. juni 2021",
+    "erAutomatiskBehandlet": false,
+    "erKopi": false,
+    "harVerge": false,
+    "saksnummer": "152001001",
+    "ytelseType": "FP"
   },
   "behandlingType": "FØRSTEGANGSSØKNAD",
   "behandlingResultatType": "INNVILGET",
-  "konsekvensForInnvilgetYtelse":  "INGEN_ENDRING",
-  "søknadsdato" : "4. mai 2021",
+  "søknadsdato": "2. juni 2021",
   "dekningsgrad": 100,
-  "dagsats" : 2209,
-  "månedsbeløp" : 47879,
+  "dagsats": 2077,
+  "månedsbeløp": 45001,
   "seksG": 608106,
   "inntektOverSeksG": false,
-  "forMyeUtbetalt": false,
   "inntektMottattArbeidsgiver": false,
   "annenForelderHarRett": true,
-  "annenForelderHarRettVurdert" : "JA",
-  "aleneomsorgKode" : "NEI",
+  "annenForelderHarRettVurdert": "IKKE_VURDERT",
+  "aleneomsorgKode": "IKKE_VURDERT",
   "ikkeOmsorg": false,
   "barnErFødt": true,
   "årsakErFødselshendelse": false,
   "gjelderMor": true,
   "gjelderFødsel": true,
   "erBesteberegning": false,
-  "ingenRefusjon" : false,
-  "delvisRefusjon":  false,
-  "fullRefusjon":  true,
+  "ingenRefusjon": true,
+  "delvisRefusjon": false,
+  "fullRefusjon": false,
   "fbEllerRvInnvilget": true,
-  "antallPerioder": 4,
+  "antallPerioder": 1,
   "harInnvilgedePerioder": true,
-  "antallArbeidsgivere": 2,
+  "antallArbeidsgivere": 0,
   "dagerTaptFørTermin": 0,
   "disponibleDager": 0,
-  "disponibleFellesDager": 10,
-  "sisteDagAvSistePeriode": "4. november 2022",
-  "stønadsperiodeFom": "4. juni 2022",
-  "stønadsperiodeTom": "4. november 2022",
-  "foreldrepengeperiodenUtvidetUker":3,
-  "antallBarn": 2,
-  "prematurDager": 1,
-  "perioder": [{
-    "innvilget":true,
-    "årsak": "4095",
-    "periodeFom": "15. april 2021",
-    "periodeTom": "18. august 2021",
-    "periodeDagsats": 2209,
-    "antallTapteDager": 0,
-    "arbeidsforholdsliste": [{
-      "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
-      "gradering": false,
-      "utbetalingsgrad": 100,
-      "prosentArbeid": 0,
-      "stillingsprosent": 100
-    }]
-  },
+  "disponibleFellesDager": 0,
+  "sisteDagAvSistePeriode": "21. desember 2021",
+  "stønadsperiodeFom": "28. april 2021",
+  "stønadsperiodeTom": "21. desember 2021",
+  "foreldrepengeperiodenUtvidetUker": 0,
+  "antallBarn": 1,
+  "prematurDager": 0,
+  "perioder": [
     {
-      "innvilget":true,
-      "årsak": "2010",
-      "periodeFom": "19. august 2021",
-      "periodeTom": "24. september 2021",
-      "periodeDagsats": 0,
+      "innvilget": true,
+      "årsak": "2006",
+      "periodeFom": "28. april 2021",
+      "periodeTom": "21. desember 2021",
+      "periodeDagsats": 2077,
       "antallTapteDager": 0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+      "prioritertUtbetalingsgrad": 100,
+      "næring": {
         "gradering": false,
         "utbetalingsgrad": 100,
-        "prosentArbeid": 0,
-        "stillingsprosent": 100
-      }]
-    },
+        "prosentArbeid": 0
+      }
+    }
+  ],
+  "bruttoBeregningsgrunnlag": 540000,
+  "harBruktBruttoBeregningsgrunnlag": false,
+  "beregningsgrunnlagregler": [
     {
-      "innvilget":true,
-      "årsak": "2002",
-      "periodeFom": "27. september 2021",
-      "periodeTom": "25. november 2021",
-      "periodeDagsats": 2209,
-      "antallTapteDager": 0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
-        "gradering": false,
-        "utbetalingsgrad": 100,
-        "prosentArbeid": 0,
-        "stillingsprosent": 100
-      }]
-    },
-    {
-      "innvilget":true,
-      "årsak": "2002",
-      "periodeFom": "26. november 2021",
-      "periodeTom": "17. januar 2022",
-      "periodeDagsats": 1768,
-      "antallTapteDager": 0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
-        "gradering": false,
-        "utbetalingsgrad": 80,
-        "prosentArbeid": 0,
-        "stillingsprosent": 100
-      }]
-    }],
-  "bruttoBeregningsgrunnlag": 574548,
-  "harBruktBruttoBeregningsgrunnlag" : false,
-  "beregningsgrunnlagregler": [{
-    "aktivitetStatus": "SELVSTENDIG_NÆRINGSDRIVENDE",
-    "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
-    "snNyoppstartet": false,
-    "andelListe":[{
-      "aktivitetStatus": "SELVSTENDIG_NÆRINGSDRIVENDE",
-      "arbeidsgiverNavn": "STENDI AS REGION ØST CA MØRK",
-      "dagsats": 2209,
-      "månedsinntekt": 47879,
-      "årsinntekt": 574548,
-      "etterlønnSluttpakke": false
-    }]
-  }
+      "regelStatus": "SELVSTENDIG_NÆRINGSDRIVENDE",
+      "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 0,
+      "snNyoppstartet": false,
+      "andelListe": [
+        {
+          "aktivitetStatus": "SELVSTENDIG_NÆRINGSDRIVENDE",
+          "dagsats": 2077,
+          "månedsinntekt": 45000,
+          "årsinntekt": 540000,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 2019
+        }
+      ]
+    }
   ],
   "klagefristUker": 6,
+  "lovhjemlerUttak": "§§ 14-9, 14-10 og 14-12",
+  "lovhjemlerBeregning": "§§ 14-7 og 8-35",
   "inkludereUtbetaling": true,
-  "inkludereGradering":  true,
-  "inkludereInnvilget" : true,
+  "inkludereGradering": false,
+  "inkludereInnvilget": false,
   "inkludereAvslag": false
 }

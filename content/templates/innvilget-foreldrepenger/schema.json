@@ -90,8 +90,7 @@
       "required": [
         "gradering",
         "prosentArbeid",
-        "utbetalingsgrad",
-        "sistLignedeÅr"
+        "utbetalingsgrad"
       ],
       "properties": {
         "gradering": {
@@ -101,9 +100,6 @@
           "type": "number"
         },
         "prosentArbeid": {
-          "type": "number"
-        },
-        "sistLignedeÅr": {
           "type": "number"
         }
       }
@@ -201,18 +197,21 @@
         },
         "etterlønnSluttpakke": {
           "type": "boolean"
+        },
+        "sistLignedeÅr": {
+          "type": "number"
         }
       }
     },
     "beregningsgrunnlagRegel": {
       "type": "object",
       "required": [
-        "aktivitetStatus",
+        "regelStatus",
         "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke",
         "snNyoppstartet"
       ],
       "properties": {
-        "aktivitetStatus": {
+        "regelStatus": {
           "type": "string"
         },
         "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": {

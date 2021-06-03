@@ -105,7 +105,7 @@
   "bruttoBeregningsgrunnlag": 574548,
   "harBruktBruttoBeregningsgrunnlag" : false,
   "beregningsgrunnlagregler": [{
-    "aktivitetStatus": "FRILANSER",
+    "regelStatus": "FRILANSER",
     "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
     "snNyoppstartet": false,
     "andelListe":[{
@@ -114,8 +114,8 @@
       "dagsats": 2209,
       "månedsinntekt": 47879,
       "årsinntekt": 574548,
-      "sistLignedeÅr": 2020,
-      "etterlønnSluttpakke": false
+      "etterlønnSluttpakke": false,
+      "sistLignedeÅr": 2020
     }]
   }
   ],
