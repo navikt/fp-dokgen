@@ -1,5 +1,5 @@
 {
-  "$id": "http://nav.no/foreldrepenger/fpdokgen/innvilget-foreldrepenger",
+  "$id": "innvilget-foreldrepenger",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "Dokumentdata for brev Innvilget Foreldrepenger",
   "type": "object",
@@ -229,7 +229,7 @@
   },
   "properties": {
     "felles": {
-      "type": "object"
+      "$ref": "file:content/templates/schema_felles.json"
     },
     "behandlingType": {
       "type": "string"

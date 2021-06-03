@@ -1,9 +1,8 @@
 {
-  "definitions": {},
+  "$id": "innsyn",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://example.com/root.json",
+  "description": "Dokumentdata for brev Innsyn",
   "type": "object",
-  "title": "The Root Schema",
   "required": [
     "felles",
     "innsynResultat",
@@ -11,7 +10,7 @@
   ],
   "properties": {
     "felles": {
-      "type": "object"
+      "$ref": "file:content/templates/schema_felles.json"
     },
     "innsynResultat": {
       "type": "string"

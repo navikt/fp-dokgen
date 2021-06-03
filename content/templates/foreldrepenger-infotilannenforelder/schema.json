@@ -1,16 +1,15 @@
 {
-  "definitions": {},
+  "$id": "foreldrepenger-infotilannenforelder",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://example.com/root.json",
+  "description": "Dokumentdata for brev Foreldrepenger info til annen forelder",
   "type": "object",
-  "title": "The Root Schema",
   "required": [
     "felles",
     "behandlingsÅrsak"
   ],
   "properties": {
     "felles": {
-      "type": "object"
+      "$ref": "file:content/templates/schema_felles.json"
     },
     "behandlingsÅrsak": {
       "type": "string"
