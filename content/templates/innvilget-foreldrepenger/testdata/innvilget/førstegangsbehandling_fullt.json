@@ -49,13 +49,13 @@
     "periodeTom": "18. august 2021",
     "periodeDagsats": 1000,
     "antallTapteDager": 0,
-    "prioritertUtbetalingsgrad": 100,
+    "prioritertUtbetalingsgrad": 100.0,
     "arbeidsforholdsliste": [{
       "arbeidsgiverNavn": "Arbeidsgiver 1",
       "gradering": false,
-      "utbetalingsgrad": 100,
-      "prosentArbeid": 0,
-      "stillingsprosent": 100
+      "utbetalingsgrad": 100.0,
+      "prosentArbeid": 0.0,
+      "stillingsprosent": 100.0
     }]
   },
     {
@@ -65,14 +65,14 @@
       "periodeTom": "24. september 2021",
       "periodeDagsats": 1200,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     }],
   "bruttoBeregningsgrunnlag": 574548,

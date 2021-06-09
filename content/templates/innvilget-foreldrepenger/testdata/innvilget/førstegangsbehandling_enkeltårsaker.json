@@ -49,13 +49,13 @@
     "periodeTom": "2. april 2021",
     "periodeDagsats": 1000,
     "antallTapteDager": 0,
-    "prioritertUtbetalingsgrad": 100,
+    "prioritertUtbetalingsgrad": 100.0,
     "arbeidsforholdsliste": [{
       "arbeidsgiverNavn": "Arbeidsgiver 1",
       "gradering": false,
-      "utbetalingsgrad": 100,
-      "prosentArbeid": 0,
-      "stillingsprosent": 100
+      "utbetalingsgrad": 100.0,
+      "prosentArbeid": 0.0,
+      "stillingsprosent": 100.0
     }]
   },
     {
@@ -65,14 +65,14 @@
       "periodeTom": "4. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -82,14 +82,14 @@
       "periodeTom": "6. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -99,14 +99,14 @@
       "periodeTom": "8. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -116,14 +116,14 @@
       "periodeTom": "10. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 50,
+      "prioritertUtbetalingsgrad": 50.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -133,14 +133,14 @@
       "periodeTom": "12. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -150,14 +150,14 @@
       "periodeTom": "14. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -167,14 +167,14 @@
       "periodeTom": "16. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -184,14 +184,14 @@
       "periodeTom": "18. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -201,14 +201,14 @@
       "periodeTom": "20. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -218,14 +218,14 @@
       "periodeTom": "22. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -235,14 +235,14 @@
       "periodeTom": "24. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -252,14 +252,14 @@
       "periodeTom": "26. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -269,14 +269,14 @@
       "periodeTom": "28. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -286,14 +286,14 @@
       "periodeTom": "30. april 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -303,14 +303,14 @@
       "periodeTom": "2. mai 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -320,14 +320,14 @@
       "periodeTom": "4. mai 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -337,14 +337,14 @@
       "periodeTom": "6. mai 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     },
     {
@@ -354,14 +354,14 @@
       "periodeTom": "8. mai 2021",
       "periodeDagsats": 1001,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "Arbeidsgiver 1",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
         }]
     }],
   "bruttoBeregningsgrunnlag": 574548,

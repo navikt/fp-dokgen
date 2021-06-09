@@ -49,13 +49,13 @@
     "periodeTom": "18. august 2021",
     "periodeDagsats": 2209,
     "antallTapteDager": 0,
-    "prioritertUtbetalingsgrad": 100,
+    "prioritertUtbetalingsgrad": 100.0,
     "arbeidsforholdsliste": [{
       "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
       "gradering": false,
-      "utbetalingsgrad": 100,
-      "prosentArbeid": 0,
-      "stillingsprosent": 100
+      "utbetalingsgrad": 100.0,
+      "prosentArbeid": 0.0,
+      "stillingsprosent": 100.0
     }]
   },
     {
@@ -65,13 +65,13 @@
       "periodeTom": "24. september 2021",
       "periodeDagsats": 0,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
         "gradering": false,
-        "utbetalingsgrad": 100,
-        "prosentArbeid": 0,
-        "stillingsprosent": 100
+        "utbetalingsgrad": 100.0,
+        "prosentArbeid": 0.0,
+        "stillingsprosent": 100.0
       }]
     },
     {
@@ -81,13 +81,13 @@
       "periodeTom": "25. november 2021",
       "periodeDagsats": 2209,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
         "gradering": false,
-        "utbetalingsgrad": 100,
-        "prosentArbeid": 0,
-        "stillingsprosent": 100
+        "utbetalingsgrad": 100.0,
+        "prosentArbeid": 0.0,
+        "stillingsprosent": 100.0
       }]
     },
     {
@@ -97,13 +97,13 @@
       "periodeTom": "17. januar 2022",
       "periodeDagsats": 1768,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 80,
+      "prioritertUtbetalingsgrad": 80.0,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
         "gradering": false,
-        "utbetalingsgrad": 80,
-        "prosentArbeid": 0,
-        "stillingsprosent": 100
+        "utbetalingsgrad": 80.0,
+        "prosentArbeid": 0.0,
+        "stillingsprosent": 100.0
       }]
     }],
   "bruttoBeregningsgrunnlag": 574548,

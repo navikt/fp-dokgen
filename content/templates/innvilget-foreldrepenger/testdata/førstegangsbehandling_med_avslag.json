@@ -49,20 +49,20 @@
       "periodeTom": "26. mars 2021",
       "periodeDagsats": 1618,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
         "gradering": true,
-        "utbetalingsgrad": 20,
-        "prosentArbeid": 80,
-        "stillingsprosent": 80
+        "utbetalingsgrad": 20.0,
+        "prosentArbeid": 80.0,
+        "stillingsprosent": 80.0
       },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 80
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 80.0
         }]
     },
     {
@@ -72,20 +72,20 @@
       "periodeTom": "05. mai 2020",
       "periodeDagsats": 1939,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
         "gradering": false,
-        "utbetalingsgrad": 100,
-        "prosentArbeid": 0,
-        "stillingsprosent": 80
+        "utbetalingsgrad": 100.0,
+        "prosentArbeid": 0.0,
+        "stillingsprosent": 80.0
       },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 80
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 80.0
         }]
     },
     {
@@ -95,20 +95,20 @@
       "periodeTom": "06. juni 2021",
       "periodeDagsats": 1618,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
         "gradering": true,
-        "utbetalingsgrad": 20,
-        "prosentArbeid": 80,
-        "stillingsprosent": 80
+        "utbetalingsgrad": 20.0,
+        "prosentArbeid": 80.0,
+        "stillingsprosent": 80.0
       },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 80
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 80.0
         }]
     },
     {
@@ -118,20 +118,20 @@
       "periodeTom": "18. juni 2021",
       "periodeDagsats": 80,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
         "gradering": true,
-        "utbetalingsgrad": 20,
-        "prosentArbeid": 80,
-        "stillingsprosent": 80
+        "utbetalingsgrad": 20.0,
+        "prosentArbeid": 80.0,
+        "stillingsprosent": 80.0
       },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 80
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 80.0
         }]
     },
     {
@@ -141,20 +141,20 @@
       "periodeTom": "10. august 2021",
       "periodeDagsats": 401,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
         "gradering": false,
-        "utbetalingsgrad": 100,
-        "prosentArbeid": 0,
-        "stillingsprosent": 80
+        "utbetalingsgrad": 100.0,
+        "prosentArbeid": 0.0,
+        "stillingsprosent": 80.0
       },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 80
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 80.0
         }]
     },
     {
@@ -164,20 +164,20 @@
       "periodeTom": "05. desember 2021",
       "periodeDagsats": 80,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
         "gradering": true,
-        "utbetalingsgrad": 20,
-        "prosentArbeid": 80,
-        "stillingsprosent": 80
+        "utbetalingsgrad": 20.0,
+        "prosentArbeid": 80.0,
+        "stillingsprosent": 80.0
       },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 80
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 80.0
         }]
     },
     {
@@ -187,20 +187,20 @@
       "periodeTom": "07. desember 2021",
       "periodeDagsats": 0,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [{
         "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
         "gradering": true,
-        "utbetalingsgrad": 20,
-        "prosentArbeid": 80,
-        "stillingsprosent": 80
+        "utbetalingsgrad": 20.0,
+        "prosentArbeid": 80.0,
+        "stillingsprosent": 80.0
       },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 80
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 80.0
         }]
     }
   ],
