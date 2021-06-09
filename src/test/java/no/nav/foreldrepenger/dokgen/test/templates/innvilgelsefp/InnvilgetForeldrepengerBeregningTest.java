@@ -1,10 +1,9 @@
 package no.nav.foreldrepenger.dokgen.test.templates.innvilgelsefp;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
+import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
 import org.junit.jupiter.api.Test;
 
-import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class InnvilgetForeldrepengerBeregningTest {
     private static final String TEMPLATE_NAME = "innvilget-foreldrepenger";
@@ -42,5 +41,13 @@ public class InnvilgetForeldrepengerBeregningTest {
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "beregning/førstegangsbehandling_frilans");
         // Assert
         assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "frilans_nb.txt"));
+    }
+
+    @Test
+    public void undermal_beregning_fri_ytelse_80_dg_nb() throws Exception {
+        // Act
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "beregning/revurdering_kun_ytelse_80_dg");
+        // Assert
+        assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "kun_ytelse_nb.txt"));
     }
 }

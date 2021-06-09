@@ -1,13 +1,9 @@
 {{> header }}
 <br/>
 <br/>
-{{#if (and
-            (eq behandlingType "FØRSTEGANGSSØKNAD")
-            (eq behandlingResultatType "INNVILGET"))}}
+{{#if (and  (eq behandlingType "FØRSTEGANGSSØKNAD")(eq behandlingResultatType "INNVILGET"))}}
 # NAV har innvilget søknaden din om {{dekningsgrad}} prosent foreldrepenger
-{{else if (and
-            (eq behandlingResultatType "FORELDREPENGER_ENDRET")
-            (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
+{{else if (and (eq behandlingResultatType "FORELDREPENGER_ENDRET") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
 # NAV har beregnet foreldrepengene dine på nytt
 {{else}}
 # NAV har endret foreldrepengeperioden din
@@ -18,7 +14,7 @@
 
 {{#if inkludereUtbetaling}}{{> innvilget-foreldrepenger/utbetaling_nb}}{{/if}}
 
-{{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.{{#gt dagsats 0}}Du får {{dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{månedsbeløp}} kroner i måneden. Sjekk utbetalingene dine på nav.no/utbetalinger
+{{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.{{#gt dagsats 0}}Du får {{formaterKroner dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{formaterKroner månedsbeløp}} kroner i måneden. Sjekk utbetalingene dine på nav.no/utbetalinger
 {{/gt}}
 {{/eq}}
 {{#if inkludereGradering}}{{> innvilget-foreldrepenger/gradering_nb}}{{/if}}
@@ -29,9 +25,7 @@
 
 {{#if barnErFødt gjelderMor årsakErFødselshendelse}}
 {{#gt dagerTaptFørTermin 0}}
-{{#if (or
-          (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK")
-          (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING_OG_UTTAK"))}}
+{{#if (or (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING_OG_UTTAK"))}}
 Vi har endret den siste dagen din med foreldrepenger til {{stønadsperiodeTom}}.
 
 Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin, og derfor mister du {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}dager{{else}}dag{{/gt}} med foreldrepenger.
@@ -45,8 +39,7 @@ Vedtaket er gjort etter folketrygdloven {{lovhjemlerUttak}}.
 
 {{#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}{{> innvilget-foreldrepenger/beregning_nb}}{{/neq}}
 
-{{#if inntektOverSeksG
-      (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK")}}
+{{#if inntektOverSeksG (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK")}}
 Foreldrepengene dine er fastsatt til {{seksG}} kroner i året, som er seks ganger grunnbeløpet i folketrygden. Du tjener mer enn dette, men du får ikke foreldrepenger for den delen av inntekten som overstiger seks ganger grunnbeløpet.
 {{/if}}
 
@@ -63,9 +56,7 @@ Beregningen er gjort etter folketrygdloven {{lovhjemlerBeregning}}.
 Hvis arbeidsgiver kommer med nye opplysninger om inntekten du hadde før du startet foreldrepengeperioden, får du et nytt vedtak med ny beregning.
 {{/if}}
 
-{{#if (or
-          (eq forMyeUtbetalt "FERIE")
-          (eq forMyeUtbetalt "JOBB"))}}
+{{#if (or (eq forMyeUtbetalt "FERIE")(eq forMyeUtbetalt "JOBB"))}}
 **Hva skjer hvis du får utbetalt foreldrepenger og lønn for samme periode?**
 
 Hvis du har fått utbetalt foreldrepenger samtidig som du har jobbet eller utsatt dager fordi du har hatt ferie, har du fått utbetalt for mye i foreldrepenger. Det betyr at utbetalingen i neste måned kan bli redusert med det du har fått utbetalt for mye.

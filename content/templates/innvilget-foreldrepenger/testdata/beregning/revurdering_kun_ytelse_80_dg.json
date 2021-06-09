@@ -1,0 +1,90 @@
+{
+  "felles": {
+    "søkerNavn": "GRIS EMILY",
+    "søkerPersonnummer": "224293 10648",
+    "brevDato": "2. juni 2021",
+    "erAutomatiskBehandlet": false,
+    "erKopi": false,
+    "harVerge": false,
+    "saksnummer": "152001001",
+    "ytelseType": "FP"
+  },
+  "behandlingType": "REVURDERING",
+  "behandlingResultatType": "FORELDREPENGER_ENDRET",
+  "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
+  "søknadsdato": "2. juni 2021",
+  "dekningsgrad": 80,
+  "dagsats": 1200,
+  "månedsbeløp": 26000,
+  "seksG": 608106,
+  "inntektOverSeksG": false,
+  "inntektMottattArbeidsgiver": false,
+  "annenForelderHarRett": true,
+  "annenForelderHarRettVurdert": "IKKE_VURDERT",
+  "aleneomsorgKode": "IKKE_VURDERT",
+  "ikkeOmsorg": false,
+  "barnErFødt": true,
+  "årsakErFødselshendelse": false,
+  "gjelderMor": false,
+  "gjelderFødsel": true,
+  "erBesteberegning": false,
+  "ingenRefusjon": true,
+  "delvisRefusjon": false,
+  "fullRefusjon": false,
+  "fbEllerRvInnvilget": true,
+  "antallPerioder": 1,
+  "harInnvilgedePerioder": true,
+  "antallArbeidsgivere": 0,
+  "dagerTaptFørTermin": 0,
+  "disponibleDager": 0,
+  "disponibleFellesDager": 0,
+  "sisteDagAvSistePeriode": "21. desember 2021",
+  "stønadsperiodeFom": "28. april 2021",
+  "stønadsperiodeTom": "21. desember 2021",
+  "foreldrepengeperiodenUtvidetUker": 0,
+  "antallBarn": 1,
+  "prematurDager": 0,
+  "perioder": [
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "28. april 2021",
+      "periodeTom": "21. desember 2021",
+      "periodeDagsats": 1200,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100,
+      "annenAktivitet": {
+        "aktivitetStatus": "BRUKERSANDEL",
+        "gradering": false,
+        "utbetalingsgrad": 100,
+        "prosentArbeid": 0
+      }
+    }
+  ],
+  "bruttoBeregningsgrunnlag": 390000,
+  "harBruktBruttoBeregningsgrunnlag": true,
+  "beregningsgrunnlagregler": [
+    {
+      "regelStatus": "KUN_YTELSE",
+      "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 0,
+      "snNyoppstartet": false,
+      "andelListe": [
+        {
+          "aktivitetStatus": "KUN_YTELSE",
+          "dagsats": 1391,
+          "månedsinntekt": 30137,
+          "årsinntekt": 361644,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 2019
+        }
+      ]
+    }
+  ],
+  "klagefristUker": 6,
+  "lovhjemlerUttak": "§§ 14-9, 14-10 og 14-12",
+  "lovhjemlerBeregning": "§§ 14-7 og 8-35",
+  "inkludereUtbetaling": true,
+  "inkludereGradering": false,
+  "inkludereInnvilget": false,
+  "inkludereAvslag": false
+}
