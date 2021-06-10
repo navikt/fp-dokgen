@@ -1,9 +1,5 @@
 package no.nav.foreldrepenger.dokgen.test.support;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.jknack.handlebars.Context;
@@ -17,6 +13,10 @@ import com.github.jknack.handlebars.context.MethodValueResolver;
 import com.github.jknack.handlebars.helper.ConditionalHelpers;
 import com.github.jknack.handlebars.helper.StringHelpers;
 import com.github.jknack.handlebars.io.FileTemplateLoader;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class TemplateTestService {
 
@@ -38,6 +38,8 @@ public class TemplateTestService {
         handlebars.registerHelper("switch", new SwitchHelper());
         handlebars.registerHelper("case", new CaseHelper());
         handlebars.registerHelper("add", new AdditionHelper());
+        handlebars.registerHelper("divide", new DivideHelper());
+        handlebars.registerHelper("formaterKroner", new FormaterKronerHelper());
         handlebars.registerHelpers(StringHelpers.class);
     }
 

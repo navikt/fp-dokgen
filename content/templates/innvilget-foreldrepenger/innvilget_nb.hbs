@@ -32,7 +32,7 @@ Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jo
 
 
 {{#eq årsak "2038"}}{{#neq this.prioritertUtbetalingsgrad 100}}
-* Du tar ut {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen skal ta ut foreldrepenger i samme periode. I denne perioden får du {{periodeDagsats}} kroner per dag før skatt.
+* Du tar ut {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen skal ta ut foreldrepenger i samme periode. I denne perioden får du {{formaterKroner periodeDagsats}} kroner per dag før skatt.
 {{/neq}}{{/eq}}
 
 
@@ -62,7 +62,7 @@ Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jo
 
 
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
-* Du tar ut {{arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{arbeidsforholdsliste.0.stillingsprosent}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{periodeDagsats}} kroner per dag før skatt.
+* Du tar ut {{arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{arbeidsforholdsliste.0.stillingsprosent}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{formaterKroner periodeDagsats}} kroner per dag før skatt.
 {{#each arbeidsforholdsliste}}
 {{#if (and (eq this.prosentArbeid this.stillingsprosent) (lt this.stillingsprosent 100))}} {{#if (and (eq this.gradering false) (eq arbeidsforholdsliste.0.gradering true))}}
 Selv om du er tilbake i arbeid hos {{this.arbeidsgiverNavn}} har du fremdeles rett til foreldrepenger. Derfor får du fremdeles utbetalt foreldrepenger.
@@ -79,13 +79,13 @@ I samme periode tar du ut 100 prosent permisjon hos {{this.arbeidsgiverNavn}}.
 
 {{#each annenAktivitetsliste}}
 {{#if (and (eq this.aktivitetStatus "FL") (eq this.gradering true))}} {{#if @../innvilget}}
-* Du tar ut {{this.utbetalingsgrad}} prosent foreldrepenger fra og med {{@../periodeFom}} til og med {{@../periodeTom}} fordi du jobber {{this.prosentArbeid}} prosent. I denne perioden får du {{@../periodeDagsats}} kroner per dag før skatt.
+* Du tar ut {{this.utbetalingsgrad}} prosent foreldrepenger fra og med {{@../periodeFom}} til og med {{@../periodeTom}} fordi du jobber {{this.prosentArbeid}} prosent. I denne perioden får du {{formaterKroner @../periodeDagsats}} kroner per dag før skatt.
 {{/if}}{{/if}}
 {{/each}}
 
 
 {{#if (and (eq this.næring.gradering true) (eq this.innvilget true))}}
-* Du tar ut {{this.næring.utbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}} fordi du jobber {{this.næring.prosentArbeid}} prosent. I denne perioden får du {{this.periodeDagsats}} kroner per dag før skatt.
+* Du tar ut {{this.næring.utbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}} fordi du jobber {{this.næring.prosentArbeid}} prosent. I denne perioden får du {{formaterKroner this.periodeDagsats}} kroner per dag før skatt.
 {{/if}}
 
 
