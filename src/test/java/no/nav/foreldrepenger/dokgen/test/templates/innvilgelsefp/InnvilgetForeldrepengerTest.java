@@ -28,4 +28,12 @@ public class InnvilgetForeldrepengerTest {
         // Assert
         assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_template_forstegangsbehandling_med_avslag_nb.txt"));
     }
+
+    @Test
+    public void førstegangsbehandling_med_fritekst_nb() throws Exception {
+        // Act
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "førstegangsbehandling_med_fritekst");
+        // Assert
+        assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_template_forstegangsbehandling_med_fritekst_nb.txt"));
+    }
 }
