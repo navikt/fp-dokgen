@@ -49,28 +49,28 @@
     "periodeTom": "18. august 2021",
     "periodeDagsats": 500,
     "antallTapteDager": 0,
-    "prioritertUtbetalingsgrad": 50,
+    "prioritertUtbetalingsgrad": 50.0,
     "annenAktivitetsliste": [
       {
         "aktivitetStatus": "FL",
         "gradering": true,
-        "utbetalingsgrad": 50,
-        "prosentArbeid": 40
+        "utbetalingsgrad": 50.0,
+        "prosentArbeid": 40.0
       }, {
         "aktivitetStatus": "FL",
         "gradering": false,
-        "utbetalingsgrad": 10,
-        "prosentArbeid": 5
+        "utbetalingsgrad": 10.0,
+        "prosentArbeid": 5.0
       }, {
         "aktivitetStatus": "FL",
         "gradering": true,
-        "utbetalingsgrad": 20,
-        "prosentArbeid": 10
+        "utbetalingsgrad": 20.0,
+        "prosentArbeid": 10.0
       }, {
         "aktivitetStatus": "AT",
         "gradering": true,
-        "utbetalingsgrad": 40,
-        "prosentArbeid": 30
+        "utbetalingsgrad": 40.0,
+        "prosentArbeid": 30.0
       }]
   }, {
     "innvilget": false,
@@ -79,13 +79,13 @@
     "periodeTom": "20. august 2021",
     "periodeDagsats": 600,
     "antallTapteDager": 0,
-    "prioritertUtbetalingsgrad": 90,
+    "prioritertUtbetalingsgrad": 90.0,
     "annenAktivitetsliste": [
       {
         "aktivitetStatus": "FL",
         "gradering": true,
-        "utbetalingsgrad": 90,
-        "prosentArbeid": 85
+        "utbetalingsgrad": 90.0,
+        "prosentArbeid": 85.0
       }]
   }, {
     "innvilget": true,
@@ -94,11 +94,11 @@
     "periodeTom": "22. august 2021",
     "periodeDagsats": 700,
     "antallTapteDager": 0,
-    "prioritertUtbetalingsgrad": 70,
+    "prioritertUtbetalingsgrad": 70.0,
     "næring": {
         "gradering": true,
-        "utbetalingsgrad": 70,
-        "prosentArbeid": 85,
+        "utbetalingsgrad": 70.0,
+        "prosentArbeid": 85.0,
         "sistLignedeÅr": 100
       }
   }],

@@ -4,35 +4,35 @@
 
 {{#each perioder}}
 {{#eq årsak "4503"}}
-* Du får {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Dette tilsvarer den stillingsprosenten mor jobber. Det du tar ut i foreldrepenger kan ikke være høyere enn den prosenten mor jobber.
+* Du får {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Dette tilsvarer den stillingsprosenten mor jobber. Det du tar ut i foreldrepenger kan ikke være høyere enn den prosenten mor jobber.
 
 Selv om du jobber i denne perioden, får du ingen forlengelse av foreldrepengeperioden din. For å kombinere foreldrepenger med arbeid og få en lengre periode med foreldrepenger, må uttaket ditt være lavere enn den prosenten mor jobber.
 {{/eq}}
 
 
 {{#if (or (eq årsak "4080") (eq årsak "4501"))}}
-* Du får {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
+* Du får {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 Vi har redusert utbetalingen din fordi du har jobbet i denne perioden. Du har søkt om å kombinere foreldrepenger med arbeid etter at du begynte å jobbe, og får derfor får du ingen forlengelse av foreldrepengeperioden din.
 {{/if}}
 
 
 {{#eq årsak "4504"}}
-* Du får {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
+* Du får {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jobber i perioden, får du ingen forlengelse av foreldrepengeperioden din. Det må ha gått minst seks uker etter fødselen før du kan kombinere foreldrepenger med arbeid og få en lengre periode med foreldrepenger.
 {{/eq}}
 
 
-{{#lt this.prioritertUtbetalingsgrad 100}}
+{{#lt this.prioritertUtbetalingsgrad 100.0}}
 {{~#switch this.årsak}}{{#case "2001"}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2002"}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2003"}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2004"}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2005"}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2006"}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2007"}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2036"}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2037"}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{/switch}}
 {{else}}
 {{~#switch this.årsak}}{{#case "2001"}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2002"}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2003"}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2004"}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2005"}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2006"}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2007"}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2036"}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2037"}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{/switch}}
 {{/lt}}
 
 
-{{#eq årsak "2038"}}{{#neq this.prioritertUtbetalingsgrad 100}}
-* Du tar ut {{prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen skal ta ut foreldrepenger i samme periode. I denne perioden får du {{formaterKroner periodeDagsats}} kroner per dag før skatt.
+{{#eq årsak "2038"}}{{#neq this.prioritertUtbetalingsgrad 100.0}}
+* Du tar ut {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen skal ta ut foreldrepenger i samme periode. I denne perioden får du {{format-kroner periodeDagsats}} kroner per dag før skatt.
 {{/neq}}{{/eq}}
 
 
@@ -62,15 +62,15 @@ Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jo
 
 
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
-* Du tar ut {{arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{arbeidsforholdsliste.0.stillingsprosent}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{formaterKroner periodeDagsats}} kroner per dag før skatt.
+* Du tar ut {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{trim-decimal arbeidsforholdsliste.0.stillingsprosent}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{format-kroner periodeDagsats}} kroner per dag før skatt.
 {{#each arbeidsforholdsliste}}
-{{#if (and (eq this.prosentArbeid this.stillingsprosent) (lt this.stillingsprosent 100))}} {{#if (and (eq this.gradering false) (eq arbeidsforholdsliste.0.gradering true))}}
+{{#if (and (eq this.prosentArbeid this.stillingsprosent) (lt this.stillingsprosent 100.0))}} {{#if (and (eq this.gradering false) (eq arbeidsforholdsliste.0.gradering true))}}
 Selv om du er tilbake i arbeid hos {{this.arbeidsgiverNavn}} har du fremdeles rett til foreldrepenger. Derfor får du fremdeles utbetalt foreldrepenger.
 {{/if}}{{/if}}
-{{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0))}} {{#if (and (lt this.stillingsprosent 100) (eq this.gradering false))}} {{#if (or (eq delvisRefusjon true) (eq fullRefusjon true))}}
+{{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0))}} {{#if (and (lt this.stillingsprosent 100.0) (eq this.gradering false))}} {{#if (or (eq delvisRefusjon true) (eq fullRefusjon true))}}
 Du jobber ikke i hele deltidsstillingen din hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepenger både fra arbeidsgiveren din og NAV.
 {{/if}}{{/if}}{{/if}}{{/if}}
-{{#if arbeidsforholdsliste.0.gradering}} {{#if (and (eq this.utbetalingsgrad 100) (eq this.gradering false))}}
+{{#if arbeidsforholdsliste.0.gradering}} {{#if (and (eq this.utbetalingsgrad 100.0) (eq this.gradering false))}}
 I samme periode tar du ut 100 prosent permisjon hos {{this.arbeidsgiverNavn}}.
 {{/if}}{{/if}}
 {{/each}}
@@ -79,13 +79,13 @@ I samme periode tar du ut 100 prosent permisjon hos {{this.arbeidsgiverNavn}}.
 
 {{#each annenAktivitetsliste}}
 {{#if (and (eq this.aktivitetStatus "FL") (eq this.gradering true))}} {{#if @../innvilget}}
-* Du tar ut {{this.utbetalingsgrad}} prosent foreldrepenger fra og med {{@../periodeFom}} til og med {{@../periodeTom}} fordi du jobber {{this.prosentArbeid}} prosent. I denne perioden får du {{formaterKroner @../periodeDagsats}} kroner per dag før skatt.
+* Du tar ut {{trim-decimal this.utbetalingsgrad}} prosent foreldrepenger fra og med {{@../periodeFom}} til og med {{@../periodeTom}} fordi du jobber {{trim-decimal this.prosentArbeid}} prosent. I denne perioden får du {{format-kroner @../periodeDagsats}} kroner per dag før skatt.
 {{/if}}{{/if}}
 {{/each}}
 
 
 {{#if (and (eq this.næring.gradering true) (eq this.innvilget true))}}
-* Du tar ut {{this.næring.utbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}} fordi du jobber {{this.næring.prosentArbeid}} prosent. I denne perioden får du {{formaterKroner this.periodeDagsats}} kroner per dag før skatt.
+* Du tar ut {{trim-decimal this.næring.utbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}} fordi du jobber {{trim-decimal this.næring.prosentArbeid}} prosent. I denne perioden får du {{format-kroner this.periodeDagsats}} kroner per dag før skatt.
 {{/if}}
 
 
