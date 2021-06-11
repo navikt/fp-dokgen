@@ -556,9 +556,11 @@ Du har ikke rett til foreldrepenger fra og med 06. desember 2021 til og med 06. 
 Vedtaket er gjort etter folketrygdloven §§ 14-9, 14-12 og 14-16.
 
 
+
+
 <br/>
 
-**Inntekt vi har brukt i beregningen**
+**Inntekt vi har brukt i beregningen**<br/>
 
 
 Vi har brukt 504 360 kroner i året før skatt i beregningen av foreldrepengene dine.
@@ -584,6 +586,8 @@ Arbeidsgiverne dine har gitt oss disse opplysningene.
 
 
 Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.
+
+
 
 
 

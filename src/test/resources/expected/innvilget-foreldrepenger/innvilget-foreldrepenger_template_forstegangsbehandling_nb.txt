@@ -273,9 +273,11 @@ Pengene er på kontoen din innen den 25. hver måned. Sjekk utbetalingene dine p
 Vedtaket er gjort etter folketrygdloven § forvaltningsloven § 35.
 
 
+
+
 <br/>
 
-**Inntekt vi har brukt i beregningen**
+**Inntekt vi har brukt i beregningen**<br/>
 
 
 Vi har brukt 574 548 kroner i året før skatt i beregningen av foreldrepengene dine.
@@ -291,6 +293,8 @@ Inntekten din hos STENDI AS REGION ØST CA MØRK er 47 879 kroner i måneden. Ar
 
 
 Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.
+
+
 
 
 

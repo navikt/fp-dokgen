@@ -1,0 +1,236 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "1234 56789",
+    "fritekst": "Inntekten din hos Arbeidsgiver 1 er oppgitt av din arbeidsgiver etter \n18.496 kroner i måneden.\n\nInntekten din hos Arbeidsgiver 2 er oppgitt av din arbeidsgiver etter 5.700\nkroner i måneden.\n\nSiden denne inntekten avviker med mer enn 25 prosent i forhold til din inntekt de siste \n12 måneder, har vi fastsatt beregningsgrunnlaget ved skjønn. \n\nVi har fastsatt foreldrepengene dine etter gjennomsnittet av inntekten du har hatt i siste \n12 måneder.  Du får foreldrepenger etter en inntekt på 37.280 kroner i måneden. ",
+    "brevDato": "4. juni 2021",
+    "erAutomatiskBehandlet": false,
+    "erKopi": false,
+    "harVerge": false,
+    "saksnummer": "149778975",
+    "ytelseType": "FP"
+  },
+  "behandlingType": "FØRSTEGANGSSØKNAD",
+  "behandlingResultatType": "INNVILGET",
+  "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
+  "søknadsdato": "7. februar 2021",
+  "dekningsgrad": 80,
+  "dagsats": 1377,
+  "månedsbeløp": 29835,
+  "seksG": 638394,
+  "inntektOverSeksG": false,
+  "forMyeUtbetalt": "INGEN",
+  "inntektMottattArbeidsgiver": false,
+  "annenForelderHarRett": true,
+  "annenForelderHarRettVurdert": "IKKE_VURDERT",
+  "aleneomsorgKode": "IKKE_VURDERT",
+  "ikkeOmsorg": false,
+  "barnErFødt": true,
+  "årsakErFødselshendelse": false,
+  "gjelderMor": false,
+  "gjelderFødsel": true,
+  "erBesteberegning": false,
+  "ingenRefusjon": true,
+  "delvisRefusjon": false,
+  "fullRefusjon": false,
+  "fbEllerRvInnvilget": true,
+  "antallPerioder": 4,
+  "harInnvilgedePerioder": true,
+  "antallArbeidsgivere": 3,
+  "dagerTaptFørTermin": 0,
+  "disponibleDager": 7,
+  "disponibleFellesDager": 0,
+  "sisteDagAvSistePeriode": "29. juli 2022",
+  "stønadsperiodeFom": "7. mai 2021",
+  "stønadsperiodeTom": "29. juli 2022",
+  "foreldrepengeperiodenUtvidetUker": 0,
+  "antallBarn": 1,
+  "prematurDager": 0,
+  "perioder": [
+    {
+      "innvilget": true,
+      "årsak": "2011",
+      "periodeFom": "7. mai 2021",
+      "periodeTom": "30. september 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "prosentArbeid": 2.0,
+          "stillingsprosent": 2,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        },
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 2",
+          "gradering": false,
+          "prosentArbeid": 20.0,
+          "stillingsprosent": 20,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        },
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 3",
+          "gradering": false,
+          "prosentArbeid": 100.0,
+          "stillingsprosent": 100,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "1. oktober 2021",
+      "periodeTom": "2. desember 2021",
+      "periodeDagsats": 1377,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 2,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        },
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 2",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 20,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        },
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 3",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2011",
+      "periodeFom": "3. desember 2021",
+      "periodeTom": "31. mai 2022",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "prosentArbeid": 2.0,
+          "stillingsprosent": 2,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        },
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 2",
+          "gradering": false,
+          "prosentArbeid": 20.0,
+          "stillingsprosent": 20,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        },
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 3",
+          "gradering": false,
+          "prosentArbeid": 100.0,
+          "stillingsprosent": 100,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "1. juni 2022",
+      "periodeTom": "29. juli 2022",
+      "periodeDagsats": 1377,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 2,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        },
+        {
+          "arbeidsgiverNavn": "Arbeidsgvier 2",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 20,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        },
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 3",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    }
+  ],
+  "bruttoBeregningsgrunnlag": 447361,
+  "harBruktBruttoBeregningsgrunnlag": false,
+  "beregningsgrunnlagregler": [
+    {
+      "regelStatus": "ARBEIDSTAKER",
+      "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 3,
+      "snNyoppstartet": false,
+      "andelListe": [
+        {
+          "aktivitetStatus": "ARBEIDSTAKER",
+          "arbeidsgiverNavn": "Arbeidsgiver 2",
+          "dagsats": 1123,
+          "månedsinntekt": 30412,
+          "årsinntekt": 364945,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 0
+        },
+        {
+          "aktivitetStatus": "ARBEIDSTAKER",
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "dagsats": 254,
+          "månedsinntekt": 6868,
+          "årsinntekt": 82416,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 0
+        },
+        {
+          "aktivitetStatus": "ARBEIDSTAKER",
+          "arbeidsgiverNavn": "Arbeidsgiver 3",
+          "dagsats": 0,
+          "månedsinntekt": 0,
+          "årsinntekt": 0,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 0
+        }
+      ]
+    }
+  ],
+  "klagefristUker": 6,
+  "lovhjemlerUttak": "§§ 14-11 og 14-12",
+  "lovhjemlerBeregning": "§§ 14-7 og 8-30",
+  "inkludereUtbetaling": true,
+  "inkludereGradering": false,
+  "inkludereInnvilget": true,
+  "inkludereAvslag": false
+}

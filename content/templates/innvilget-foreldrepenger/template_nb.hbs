@@ -37,7 +37,14 @@ Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin,
 Vedtaket er gjort etter folketrygdloven {{lovhjemlerUttak}}.
 {{/neq}}
 
-{{#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}{{> innvilget-foreldrepenger/beregning_nb}}{{/neq}}
+{{#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
+{{#if felles.fritekst}}
+**Inntekt vi har brukt i beregningen**<br/>
+{{felles.fritekst}}
+{{else}}
+{{> innvilget-foreldrepenger/beregning_nb}}
+{{/if}}
+{{/neq}}
 
 {{#if inntektOverSeksG (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK")}}
 Foreldrepengene dine er fastsatt til {{seksG}} kroner i året, som er seks ganger grunnbeløpet i folketrygden. Du tjener mer enn dette, men du får ikke foreldrepenger for den delen av inntekten som overstiger seks ganger grunnbeløpet.
