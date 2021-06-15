@@ -17,6 +17,12 @@
 {{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.{{#gt dagsats 0}}Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{format-kroner månedsbeløp}} kroner i måneden. Sjekk utbetalingene dine på nav.no/utbetalinger
 {{/gt}}
 {{/eq}}
+
+{{#neq sisteDagAvSistePeriode ""}}
+{{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}{{~#if annenForelderHarRett (neq aleneomsorgKode "JA")}}
+Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dager{{/eq}} som dere begge kan ta ut. {{#eq disponibleDager 1}}Denne dagene{{else}}Disse dagene{{/eq}} må det søkes om innen {{sisteDagAvSistePeriode}}.
+{{/if}}{{/if}}{{/neq}}
+
 {{#if inkludereGradering}}{{> innvilget-foreldrepenger/gradering_nb}}{{/if}}
 
 {{#if inkludereInnvilget}}{{> innvilget-foreldrepenger/innvilget_nb}}{{/if}}
@@ -47,7 +53,7 @@ Vedtaket er gjort etter folketrygdloven {{lovhjemlerUttak}}.
 {{/neq}}
 
 {{#if inntektOverSeksG (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK")}}
-Foreldrepengene dine er fastsatt til {{seksG}} kroner i året, som er seks ganger grunnbeløpet i folketrygden. Du tjener mer enn dette, men du får ikke foreldrepenger for den delen av inntekten som overstiger seks ganger grunnbeløpet.
+Foreldrepengene dine er fastsatt til {{format-kroner seksG}} kroner i året, som er seks ganger grunnbeløpet i folketrygden. Du tjener mer enn dette, men du får ikke foreldrepenger for den delen av inntekten som overstiger seks ganger grunnbeløpet.
 {{/if}}
 
 {{#eq dekningsgrad 80}}

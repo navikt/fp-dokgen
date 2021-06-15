@@ -7,7 +7,7 @@ Vi har brukt {{format-kroner bruttoBeregningsgrunnlag}} kroner i året før skat
 {{/eq}}
 
 {{~#if erBesteberegning}}
-Vi har fastsatt foreldrepengene dine til {{dagsats}} kroner per dag før skatt. Du har både jobbet og mottatt dagpenger. Vi har beregnet foreldrepengene dine ut fra de seks beste av de siste ti månedene.
+Vi har fastsatt foreldrepengene dine til {{format-kroner dagsats}} kroner per dag før skatt. Du har både jobbet og mottatt dagpenger. Vi har beregnet foreldrepengene dine ut fra de seks beste av de siste ti månedene.
 {{else}}
 
 {{~#each beregningsgrunnlagregler}}
@@ -58,16 +58,17 @@ Vi har beregnet foreldrepengene dine ut fra en årsinntekt på {{format-kroner t
 {{else}}
 Vi har fastsatt foreldrepengene dine til {{format-kroner this.årsinntekt}} kroner i året. Fordi du har begynt å jobbe i løpet av de tre siste årene, har vi beregnet inntekten din ut fra de opplysningene vi har for det siste året.
 {{/eq}}
-{{~#if (eq @../regelStatus "KOMBINERT_AT_SN")}}
+{{/eq}}
+{{~#if (and (eq @../regelStatus "KOMBINERT_AT_SN")(eq this.aktivitetStatus "SELVSTENDIG_NÆRINGSDRIVENDE"))}}
 Næringsinntekten din er fastsatt til {{format-kroner this.årsinntekt}} kroner i året. Når vi beregner foreldrepenger ut fra næringsinntekten din, bruker vi gjennomsnittet av de siste tre årene vi har fått oppgitt av Skatteetaten. Hvis du nettopp har begynt å arbeide, bruker vi inntekten vi har fått opplyst for det siste året. Dette gjennomsnittet kan også inneholde arbeidsinntekten din. De er trukket fra i beregningen av næringsinntekten.
 {{/if}}
-{{~#if (eq @../regelStatus "KOMBINERT_FL_SN")}}
+{{~#if (and (eq @../regelStatus "KOMBINERT_FL_SN")(eq this.aktivitetStatus "SELVSTENDIG_NÆRINGSDRIVENDE"))}}
 Næringsinntekten din er fastsatt til {{format-kroner this.årsinntekt}} kroner i året. Når vi beregner foreldrepenger ut fra næringsinntekten din, bruker vi gjennomsnittet av de siste tre årene vi har fått oppgitt av Skatteetaten. Hvis du nettopp har begynt å arbeide, bruker vi inntekten vi har fått opplyst for det siste året. Dette gjennomsnittet kan også inneholde inntekten din som frilanser. Den er trukket fra i beregningen av næringsinntekten.
 {{/if}}
-{{~#if (eq @../regelStatus "KOMBINERT_AT_FL_SN")}}
+{{~#if (and (eq @../regelStatus "KOMBINERT_AT_FL_SN")(eq this.aktivitetStatus "SELVSTENDIG_NÆRINGSDRIVENDE"))}}
 Næringsinntekten din er fastsatt til {{format-kroner this.årsinntekt}} kroner i året. Når vi beregner foreldrepenger ut fra næringsinntekten din, bruker vi gjennomsnittet av de siste tre årene vi har fått oppgitt av Skatteetaten. Hvis du nettopp har begynt å arbeide, bruker vi inntekten vi har fått opplyst for det siste året. Dette gjennomsnittet kan også inneholde arbeidsinntekten din og inntekten din som frilanser. De er trukket fra i beregningen av næringsinntekten.
 {{/if}}
-{{/eq}}
+
 {{/each}}
 {{/if}}
 
