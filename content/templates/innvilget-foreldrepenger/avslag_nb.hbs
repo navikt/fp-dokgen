@@ -43,7 +43,7 @@ Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{perio
 {{/case}}
 {{~#case "4037"}}
 {{#if (and (lt periodeDagsats dagsats)(gt periodeDagsats 0))}}
-Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke jobber heltid. Vi har derfor redusert foreldrepengene dine til {{periodeDagsats}} kroner per dag før skatt.
+Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke jobber heltid. Vi har derfor redusert foreldrepengene dine til {{format-kroner periodeDagsats}} kroner per dag før skatt.
 {{/if}}
 {{#eq periodeDagsats 0 }}
 Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke jobber heltid. Du får ikke foreldrepenger i denne perioden.

@@ -32,3 +32,8 @@ Vi har forlenget foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} 
 
 {{#gt dagerTaptFørTermin 0}}{{#if fbEllerRvInnvilget gjelderFødsel}}Fordi du fødte før termin, mister du {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}dager{{else}}dag med foreldrepenger{{/gt}}.{{/if}}{{/gt}}
 
+{{#neq sisteDagAvSistePeriode ""}}
+{{#gt disponibleDager 0}}
+Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dagen{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} må du søke om innen {{sisteDagAvSistePeriode}}.
+{{/gt}}
+{{/neq}}
