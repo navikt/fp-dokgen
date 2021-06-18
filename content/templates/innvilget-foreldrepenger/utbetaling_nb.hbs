@@ -34,6 +34,9 @@ Vi har forlenget foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} 
 
 {{#neq sisteDagAvSistePeriode ""}}
 {{#gt disponibleDager 0}}
-Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dagen{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} må du søke om innen {{sisteDagAvSistePeriode}}.
-{{/gt}}
+{{~#if (and (eq annenForelderHarRett false) (eq aleneomsorgKode "JA"))}}
+Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dagen{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} må du søke om innen {{sisteDagAvSistePeriode}}.{{/if}}{{/gt}}
+{{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
+{{~#if annenForelderHarRett (neq aleneomsorgKode "JA")}}
+Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dager{{/eq}} som dere begge kan ta ut. {{#eq disponibleDager 1}}Denne dagene{{else}}Disse dagene{{/eq}} må det søkes om innen {{sisteDagAvSistePeriode}}.{{/if}}{{/if}}
 {{/neq}}

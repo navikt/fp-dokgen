@@ -18,11 +18,6 @@
 {{/gt}}
 {{/eq}}
 
-{{#neq sisteDagAvSistePeriode ""}}
-{{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}{{~#if annenForelderHarRett (neq aleneomsorgKode "JA")}}
-Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dager{{/eq}} som dere begge kan ta ut. {{#eq disponibleDager 1}}Denne dagene{{else}}Disse dagene{{/eq}} må det søkes om innen {{sisteDagAvSistePeriode}}.
-{{/if}}{{/if}}{{/neq}}
-
 {{#if inkludereGradering}}{{> innvilget-foreldrepenger/gradering_nb}}{{/if}}
 
 {{#if inkludereInnvilget}}{{> innvilget-foreldrepenger/innvilget_nb}}{{/if}}
