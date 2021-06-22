@@ -33,7 +33,7 @@
   "antallPerioder": 4,
   "harInnvilgedePerioder": true,
   "antallArbeidsgivere": 1,
-  "dagerTaptFørTermin": 0,
+  "dagerTaptFørTermin": 3,
   "disponibleDager": 0,
   "disponibleFellesDager": 10,
   "sisteDagAvSistePeriode": "4. november 2022",

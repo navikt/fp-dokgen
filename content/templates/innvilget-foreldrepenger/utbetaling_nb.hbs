@@ -30,4 +30,4 @@ Vi har forlenget foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} 
 
 {{#each perioder}}{{#eq årsak "4095"}}Perioden med foreldrepenger starter tre uker før termin. Du har ikke tatt ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor mister du {{#gt antallTapteDager 1}}disse dagene{{else}}denne dagen{{/gt}}.{{/eq}}{{/each}}
 
-{{#gt dagerTaptFørTermin 0}}{{#if fbEllerRvInnvilget gjelderFødsel}}Fordi du fødte før termin, mister du {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}dager{{else}}dag med foreldrepenger{{/gt}}.{{/if}}{{/gt}}
+{{#gt dagerTaptFørTermin 0}}{{#if fbEllerRvInnvilget gjelderFødsel}}Fordi du fødte før termin, mister du {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}dager{{else}}dag{{/gt}} med foreldrepenger.{{/if}}{{/gt}}
