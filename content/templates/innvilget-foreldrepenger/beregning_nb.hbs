@@ -41,9 +41,13 @@ Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du net
 {{~#each andelListe}}
 {{#eq this.aktivitetStatus "FRILANSER"}}
 Inntekten din som frilanser er {{format-kroner this.månedsinntekt}} kroner i måneden.  Oppdragsgiveren eller oppdragsgiverne dine har gitt oss disse opplysningene.
-{{~#if (neq this.aktivitetStatus "KOMBINERT_AT_FL")}}
+{{~#if (neq @../regelStatus "KOMBINERT_AT_FL")}}
+
+
 Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide som frilanser, har vi brukt inntektene etter at du startet.
 {{else}}
+
+
 Dette er gjennomsnittet av inntekten du har hatt som arbeidstaker og frilanser de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.
 {{/if}}
 {{/eq}}
