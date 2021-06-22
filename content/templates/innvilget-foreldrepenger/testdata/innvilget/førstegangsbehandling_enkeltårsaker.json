@@ -369,7 +369,8 @@
   "beregningsgrunnlagregler": [],
   "klagefristUker": 6,
   "inkludereUtbetaling": true,
-  "inkludereGradering": true,
+  "inkludereUtbetNårGradering": true,
   "inkludereInnvilget": true,
-  "inkludereAvslag": false
+  "inkludereAvslag": false,
+  "inkludereNyeOpplysningerUtbet":false
 }

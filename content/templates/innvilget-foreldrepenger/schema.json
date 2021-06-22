@@ -44,9 +44,10 @@
     "klagefristUker",
     "lovhjemlerUttak",
     "inkludereUtbetaling",
-    "inkludereGradering",
+    "inkludereUtbetNårGradering",
     "inkludereInnvilget",
-    "inkludereAvslag"
+    "inkludereAvslag",
+    "inkludereNyeOpplysningerUtbet"
   ],
   "$defs": {
     "arbeidsforhold": {
@@ -372,13 +373,16 @@
     "inkludereUtbetaling": {
       "type": "boolean"
     },
-    "inkludereGradering": {
+    "inkludereUtbetNårGradering": {
       "type": "boolean"
     },
     "inkludereInnvilget": {
       "type": "boolean"
     },
     "inkludereAvslag": {
+      "type": "boolean"
+    },
+    "inkludereNyeOpplysningerUtbet": {
       "type": "boolean"
     }
   }

@@ -233,7 +233,8 @@
   "lovhjemlerUttak": "§§ 14-9, 14-12 og 14-16",
   "lovhjemlerBeregning": "§§ 14-7 og 8-30",
   "inkludereUtbetaling": true,
-  "inkludereGradering":  true,
+  "inkludereUtbetNårGradering":  true,
   "inkludereInnvilget" : true,
-  "inkludereAvslag": true
+  "inkludereAvslag": true,
+  "inkludereNyeOpplysningerUtbet":false
 }

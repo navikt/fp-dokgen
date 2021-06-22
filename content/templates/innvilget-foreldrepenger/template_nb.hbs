@@ -14,13 +14,33 @@
 
 {{#if inkludereUtbetaling}}{{> innvilget-foreldrepenger/utbetaling_nb}}{{/if}}
 
-{{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.{{#gt dagsats 0}}Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{format-kroner månedsbeløp}} kroner i måneden. Sjekk utbetalingene dine på nav.no/utbetalinger
-{{/gt}}
-{{/eq}}
-
-{{#if inkludereGradering}}{{> innvilget-foreldrepenger/gradering_nb}}{{/if}}
+{{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.
+{{#gt dagsats 0}}Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{format-kroner månedsbeløp}} kroner i måneden. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
+{{/gt}}{{/eq}}
 
 {{#if inkludereInnvilget}}{{> innvilget-foreldrepenger/innvilget_nb}}{{/if}}
+
+{{#if inkludereNyeOpplysningerUtbet}}
+Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{format-kroner månedsbeløp}} kroner i måneden. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
+{{/if}}
+
+{{#if inkludereUtbetNårGradering}}{{> innvilget-foreldrepenger/utbetaling_nb}}{{/if}}
+
+{{#neq sisteDagAvSistePeriode ""}}
+{{#gt disponibleDager 0}}
+{{~#if (and (eq annenForelderHarRett false) (eq aleneomsorgKode "JA"))}}
+Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dagen{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} må du søke om innen {{sisteDagAvSistePeriode}}.{{/if}}{{/gt}}
+{{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
+{{~#if annenForelderHarRett (neq aleneomsorgKode "JA")}}
+Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dager{{/eq}} som dere begge kan ta ut. {{#eq disponibleDager 1}}Denne dagene{{else}}Disse dagene{{/eq}} må det søkes om innen {{sisteDagAvSistePeriode}}.{{/if}}{{/if}}
+{{/neq}}
+
+{{~#gt antallArbeidsgivere 1}}
+{{~#each perioder}}{{#if @first}}{{~#each arbeidsforholdsliste}}{{~#if this.gradering }}
+**Du har flere arbeidsgivere**
+
+Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere foreldrepenger med arbeid hos én arbeidsgiver om gangen. Det betyr at det bare er perioden din hos {{this.arbeidsgiverNavn}} som blir forlenget.
+{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
 
 {{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_nb}}{{/if}}
 
@@ -38,7 +58,7 @@ Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin,
 Vedtaket er gjort etter folketrygdloven {{lovhjemlerUttak}}.
 {{/neq}}
 
-{{#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
+{{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
 {{#if felles.fritekst}}
 **Inntekt vi har brukt i beregningen**<br/>
 {{felles.fritekst}}

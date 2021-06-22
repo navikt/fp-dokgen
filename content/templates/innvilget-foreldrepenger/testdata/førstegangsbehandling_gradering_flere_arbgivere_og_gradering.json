@@ -11,6 +11,7 @@
   },
   "behandlingType": "FØRSTEGANGSSØKNAD",
   "behandlingResultatType": "INNVILGET",
+  "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
   "søknadsdato": "29. april 2021",
   "dekningsgrad": 100,
   "dagsats": 1356,
@@ -52,22 +53,22 @@
       "periodeTom": "14. desember 2021",
       "periodeDagsats": 1356,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100,
+      "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "TULLE TRANSPORT AS",
           "gradering": true,
-          "prosentArbeid": 50,
-          "stillingsprosent": 100,
-          "utbetalingsgrad": 50,
+          "prosentArbeid": 50.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 50.0,
           "naturalytelseNyDagsats": 0
         },
         {
           "arbeidsgiverNavn": "TRALLE TRANSPORT AS",
           "gradering": false,
-          "prosentArbeid": 0,
-          "stillingsprosent": 0,
-          "utbetalingsgrad": 100,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 0.0,
+          "utbetalingsgrad": 100.0,
           "naturalytelseNyDagsats": 0
         }
       ]
@@ -106,7 +107,8 @@
   "lovhjemlerUttak": "§§ 14-12 og 14-16",
   "lovhjemlerBeregning": "§§ 14-7 og 8-30",
   "inkludereUtbetaling": false,
-  "inkludereGradering": true,
+  "inkludereUtbetNårGradering": true,
   "inkludereInnvilget": true,
-  "inkludereAvslag": false
+  "inkludereAvslag": false,
+  "inkludereNyeOpplysningerUtbet":false
 }
