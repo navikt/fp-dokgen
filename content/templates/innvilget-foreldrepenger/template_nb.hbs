@@ -55,9 +55,9 @@ Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin,
 {{/gt}}
 {{/if}}
 
-{{#neq lovhjemlerUttak ""}}
+{{#if (and (neq lovhjemlerUttak "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
 Vedtaket er gjort etter folketrygdloven {{lovhjemlerUttak}}.
-{{/neq}}
+{{/if}}
 
 {{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
 {{#if felles.fritekst}}
@@ -76,12 +76,11 @@ Foreldrepengene dine er fastsatt til {{format-kroner seksG}} kroner i året, som
 Fordi du har valgt 80 prosent foreldrepenger, får du mindre utbetalt i måneden
 {{/eq}}
 
-{{#neq lovhjemlerBeregning ""}}
+{{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
 Beregningen er gjort etter folketrygdloven {{lovhjemlerBeregning}}.
-{{/neq}}
+{{/if}}
 
-{{#if inntektMottattArbeidsgiver
-          (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK")}}
+{{#if inntektMottattArbeidsgiver (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK")}}
 Hvis arbeidsgiver kommer med nye opplysninger om inntekten du hadde før du startet foreldrepengeperioden, får du et nytt vedtak med ny beregning.
 {{/if}}
 
