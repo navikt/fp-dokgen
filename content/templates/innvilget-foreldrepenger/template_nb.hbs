@@ -26,14 +26,15 @@ Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennoms
 
 {{#if inkludereUtbetNårGradering}}{{> innvilget-foreldrepenger/utbetaling_nb}}{{/if}}
 
-{{#neq sisteDagAvSistePeriode ""}}
+{{~#neq sisteDagAvSistePeriode ""}}
 {{#gt disponibleDager 0}}
-{{~#if (and (eq annenForelderHarRett false) (eq aleneomsorgKode "JA"))}}
-Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dagen{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} må du søke om innen {{sisteDagAvSistePeriode}}.{{/if}}{{/gt}}
+{{~#if (or (eq annenForelderHarRett false) (eq aleneomsorgKode "JA"))}}
+Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dag{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} må du søke om innen {{sisteDagAvSistePeriode}}.{{/if}}{{/gt}}
 {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
 {{~#if annenForelderHarRett (neq aleneomsorgKode "JA")}}
-Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dager{{/eq}} som dere begge kan ta ut. {{#eq disponibleDager 1}}Denne dagene{{else}}Disse dagene{{/eq}} må det søkes om innen {{sisteDagAvSistePeriode}}.{{/if}}{{/if}}
-{{/neq}}
+Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dager{{/eq}} som dere begge kan ta ut.
+{{~#eq disponibleDager 1}}{{#if (or (eq disponibleFellesDager 0)(eq disponibleFellesDager 1))}} Denne dagen{{/if}}{{/eq}}{{#if (or (gt disponibleFellesDager 1)(gt disponibleDager 1))}} Disse dagene{{/if}} må det søkes om innen {{sisteDagAvSistePeriode}}.
+{{/if}}{{/if}}{{/neq}}
 
 {{~#gt antallArbeidsgivere 1}}
 {{~#each perioder}}{{#if @first}}{{~#each arbeidsforholdsliste}}{{~#if this.gradering }}
