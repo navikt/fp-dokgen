@@ -31,7 +31,7 @@ Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennoms
 {{~#if (or (eq annenForelderHarRett false) (eq aleneomsorgKode "JA"))}}
 Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dag{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} må du søke om innen {{sisteDagAvSistePeriode}}.{{/if}}{{/gt}}
 {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
-{{~#if annenForelderHarRett (neq aleneomsorgKode "JA")}}
+{{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))}}
 Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dager{{/eq}} som dere begge kan ta ut.
 {{~#eq disponibleDager 1}}{{#if (or (eq disponibleFellesDager 0)(eq disponibleFellesDager 1))}} Denne dagen{{/if}}{{/eq}}{{#if (or (gt disponibleFellesDager 1)(gt disponibleDager 1))}} Disse dagene{{/if}} må det søkes om innen {{sisteDagAvSistePeriode}}.
 {{/if}}{{/if}}{{/neq}}
@@ -68,7 +68,7 @@ Vedtaket er gjort etter folketrygdloven {{lovhjemlerUttak}}.
 {{/if}}
 {{/neq}}
 
-{{#if inntektOverSeksG (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK")}}
+{{#if (and (eq inntektOverSeksG true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
 Foreldrepengene dine er fastsatt til {{format-kroner seksG}} kroner i året, som er seks ganger grunnbeløpet i folketrygden. Du tjener mer enn dette, men du får ikke foreldrepenger for den delen av inntekten som overstiger seks ganger grunnbeløpet.
 {{/if}}
 
@@ -80,7 +80,7 @@ Fordi du har valgt 80 prosent foreldrepenger, får du mindre utbetalt i måneden
 Beregningen er gjort etter folketrygdloven {{lovhjemlerBeregning}}.
 {{/if}}
 
-{{#if inntektMottattArbeidsgiver (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK")}}
+{{#if (and (eq inntektMottattArbeidsgiver true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
 Hvis arbeidsgiver kommer med nye opplysninger om inntekten du hadde før du startet foreldrepengeperioden, får du et nytt vedtak med ny beregning.
 {{/if}}
 
