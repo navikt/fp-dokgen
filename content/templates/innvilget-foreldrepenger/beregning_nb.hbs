@@ -72,7 +72,6 @@ Næringsinntekten din er fastsatt til {{format-kroner this.årsinntekt}} kroner 
 {{~#if (and (eq @../regelStatus "KOMBINERT_AT_FL_SN")(eq this.aktivitetStatus "SELVSTENDIG_NÆRINGSDRIVENDE"))}}
 Næringsinntekten din er fastsatt til {{format-kroner this.årsinntekt}} kroner i året. Når vi beregner foreldrepenger ut fra næringsinntekten din, bruker vi gjennomsnittet av de siste tre årene vi har fått oppgitt av Skatteetaten. Hvis du nettopp har begynt å arbeide, bruker vi inntekten vi har fått opplyst for det siste året. Dette gjennomsnittet kan også inneholde arbeidsinntekten din og inntekten din som frilanser. De er trukket fra i beregningen av næringsinntekten.
 {{/if}}
-
 {{/each}}
 {{/if}}
 
@@ -101,17 +100,20 @@ Fra og med {{this.naturalytelseEndringDato}} får du {{format-kroner this.natura
 {{/each}}
 {{/each}}
 
-{{~#eq regelStatus "DAGPENGER"}}
-Du fikk {{format-kroner dagsats}} kroner per dag før skatt i dagpenger. Vi har brukt dette beløpet i beregningen av foreldrepengene dine.
+{{~#each andelListe}}
+{{~#eq @../regelStatus "DAGPENGER"}}
+Du fikk {{format-kroner this.dagsats}} kroner per dag før skatt i dagpenger. Vi har brukt dette beløpet i beregningen av foreldrepengene dine.
 {{/eq}}
+{{~#eq @../regelStatus  "ARBEIDSAVKLARINGSPENGER"}}
+Du fikk {{format-kroner this.dagsats}} kroner per dag før skatt i arbeidsavklaringspenger. Vi har brukt dette beløpet i beregningen av foreldrepengene dine.
+{{/eq}}
+{{/each}}
+
 {{~#eq regelStatus "MILITÆR_ELLER_SIVIL"}}
 Vi har fastsatt foreldrepengene dine til tre ganger grunnbeløpet fordi du har vært i militæret, i siviltjeneste eller sivilforsvaret.
 {{/eq}}
 {{~#eq regelStatus "KUN_YTELSE"}}
 Vi har beregnet foreldrepengene dine ut fra en inntekt på {{format-kroner (divide 12 bruttoBeregningsgrunnlag)}} kroner i måneden før skatt. Dette er gjennomsnittet av inntekten du har fått fra NAV de siste tre månedene.
-{{/eq}}
-{{~#eq regelStatus "ARBEIDSAVKLARINGSPENGER"}}
-Du fikk {{format-kroner dagsats}} kroner per dag før skatt i arbeidsavklaringspenger. Vi har brukt dette beløpet i beregningen av foreldrepengene dine.
 {{/eq}}
 {{/each}}
 {{/if}}
