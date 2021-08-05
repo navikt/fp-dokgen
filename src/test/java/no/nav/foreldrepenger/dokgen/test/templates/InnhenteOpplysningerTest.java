@@ -1,9 +1,10 @@
 package no.nav.foreldrepenger.dokgen.test.templates;
 
-import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
 
 public class InnhenteOpplysningerTest {
     private static final String TEMPLATE_NAME = "innhente-opplysninger";
@@ -89,6 +90,15 @@ public class InnhenteOpplysningerTest {
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_klage_nn.txt"));
+    }
+
+    @Test
+    public void skal_generere_brev_for_innhente_opplysninger_ES_klage_KA() throws Exception {
+        // Act
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_es_klage_ka");
+
+        // Assert
+        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_klage_ka.txt"));
     }
 
     @Test

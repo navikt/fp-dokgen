@@ -33,7 +33,7 @@ Vi fikk klagen din på {{> ytelse_navn_nb}} {{søknadDato}}, men mangler opplysn
 {{felles.fritekst}}
 <br/>
 
-{{#if klage}}
+{{#if (and (eq klage true) (eq felles.behandlesAvKA true))}}
 Du sender dokumentasjonen til oss på [nav.no/klage](https://nav.no/klage). Velg NAV-enhet: NAV Klageinstans Midt-Norge.
 {{/if}}
 
