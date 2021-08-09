@@ -311,6 +311,9 @@
     "antallPerioder": {
       "type": "number"
     },
+    "antallInnvilgedePerioder": {
+      "type": "number"
+    },
     "harInnvilgedePerioder": {
       "type": "boolean"
     },

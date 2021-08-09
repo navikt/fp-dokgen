@@ -3,7 +3,7 @@
 **Dette har vi innvilget**
 
 {{~#* inline "punkt" ~}}
-{{~#gt antallPerioder 1}}* {{/gt}}
+{{~#if antallInnvilgedePerioder}}{{~#gt antallInnvilgedePerioder 1}}* {{/gt}}{{else}}{{~#gt antallPerioder 1}}* {{/gt}}{{/if}}
 {{~/inline~}}
 
 {{~#each perioder}}
