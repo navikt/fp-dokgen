@@ -32,7 +32,6 @@ Tekst
 Mer tekst
 <br/>
 
-Du sender dokumentasjonen til oss på [nav.no/klage](https://nav.no/klage). Velg NAV-enhet: NAV Klageinstans Midt-Norge.
 
 
 **Søknaden kan bli avslått**

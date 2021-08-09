@@ -20,7 +20,7 @@ Fødselsnummer: 300220 12345
 
 
 
-Vi fikk klage på engangsstønad fra Dolly Duck 1. april 2020, men mangler opplysninger for å kunne behandle den.
+Vi fikk klagen din på engangsstønad 1. april 2020, men mangler opplysninger for å kunne behandle den.
 
 
 
@@ -32,6 +32,7 @@ Tekst
 Mer tekst
 <br/>
 
+Du sender dokumentasjonen til oss på [nav.no/klage](https://nav.no/klage). Velg NAV-enhet: NAV Klageinstans Midt-Norge.
 
 
 **Søknaden kan bli avslått**

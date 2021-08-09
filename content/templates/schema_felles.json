@@ -42,6 +42,9 @@
     },
     "ytelseType": {
       "type": "string"
+    },
+    "behandlesAvKA": {
+      "type": "boolean"
     }
   }
 }
