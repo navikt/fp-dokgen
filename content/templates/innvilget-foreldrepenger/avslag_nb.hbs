@@ -107,7 +107,7 @@ Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{perio
 Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke mottar uføretrygd.
 {{/case}}
 {{#case "4007"}}
-Du kan ikke overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeFom}}.
+Du kan ikke overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen viser ikke dette.
 {{/case}}
@@ -123,10 +123,10 @@ Du kan ikke overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fo
 Du kan ikke overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke har aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Hvis dette endrer seg kan du søke på nytt.
 {{/case}}
 {{#case "4076"}}
-Du kan ikke overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeFom}} fordi {{#if gjelderMor}}han{{else}}hun{{/if}} har rett til foreldrepenger. Hvis dette endrer seg kan du søke på nytt.
+Du kan ikke overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#if gjelderMor}}han{{else}}hun{{/if}} har rett til foreldrepenger. Hvis dette endrer seg kan du søke på nytt.
 {{/case}}
 {{#case "4002"}}
-Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeFom}} fordi det ikke er flere dager igjen av foreldrepengeperioden.
+Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi det ikke er flere dager igjen av foreldrepengeperioden.
 {{/case}}
 {{~#case "4061"}}
 {{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb~}}
