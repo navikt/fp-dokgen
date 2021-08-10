@@ -4,9 +4,10 @@
     "søkerPersonnummer": "300220 12345",
     "brevDato": "4. april 2020",
     "erAutomatiskBehandlet": true,
-    "erKopi" : true,
-    "harVerge" : true,
-    "saksnummer" : "123456789"
+    "erKopi": true,
+    "harVerge": true,
+    "saksnummer": "123456789",
+    "behandlesAvKA": false
   },
   "revurdering": false,
   "førstegangsbehandling": true,
@@ -14,7 +15,7 @@
   "innvilgetBeløp": "85 000",
   "klagefristUker": 6,
   "død": false,
-  "søkersNavn":"Dolly Duck",
+  "søkersNavn": "Dolly Duck",
   "fbEllerMedhold": true,
   "kontaktTelefonnummer": "22 22 22 22",
   "erEndretSats": false

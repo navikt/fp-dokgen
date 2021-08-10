@@ -2,12 +2,13 @@
   "felles": {
     "søkerNavn": "Dolly Duck",
     "søkerPersonnummer": "300220 12345",
-    "fritekst" : "Tekst\n- Attest\n- Bekreftelse\nMer tekst",
+    "fritekst": "Tekst\n- Attest\n- Bekreftelse\nMer tekst",
     "brevDato": "4. april 2020",
-    "erKopi" : false,
-    "harVerge" : false,
-    "saksnummer" : "123456789",
-    "ytelseType" : "SVP"
+    "erKopi": false,
+    "harVerge": false,
+    "saksnummer": "123456789",
+    "ytelseType": "SVP",
+    "behandlesAvKA": false
   },
   "førstegangsbehandling": true,
   "revurdering": false,

@@ -4,7 +4,8 @@
     "søkerPersonnummer": "300220 12345",
     "brevDato": "4. mai 2021",
     "erAutomatiskBehandlet": true,
-    "saksnummer": "123456789"
+    "saksnummer": "123456789",
+    "behandlesAvKA": false
   },
   "behandlingType": "FØRSTEGANGSSØKNAD",
   "behandlingResultatType": "INNVILGET",
@@ -30,8 +31,8 @@
   "delvisRefusjon": false,
   "fullRefusjon": true,
   "fbEllerRvInnvilget": true,
-  "antallPerioder": 4,
-  "harInnvilgedePerioder": true,
+  "antallPerioder": 3,
+  "antallInnvilgedePerioder": 2,
   "antallArbeidsgivere": 2,
   "dagerTaptFørTermin": 0,
   "disponibleDager": 0,
@@ -42,73 +43,82 @@
   "foreldrepengeperiodenUtvidetUker": 3,
   "antallBarn": 2,
   "prematurDager": 1,
-  "perioder": [{
-    "innvilget": true,
-    "årsak": "2001",
-    "periodeFom": "15. april 2021",
-    "periodeTom": "18. august 2021",
-    "periodeDagsats": 500,
-    "antallTapteDager": 0,
-    "prioritertUtbetalingsgrad": 50.0,
-    "annenAktivitetsliste": [
-      {
-        "aktivitetStatus": "FL",
-        "gradering": true,
-        "utbetalingsgrad": 50.0,
-        "prosentArbeid": 40.0
-      }, {
-        "aktivitetStatus": "FL",
-        "gradering": false,
-        "utbetalingsgrad": 10.0,
-        "prosentArbeid": 5.0
-      }, {
-        "aktivitetStatus": "FL",
-        "gradering": true,
-        "utbetalingsgrad": 20.0,
-        "prosentArbeid": 10.0
-      }, {
-        "aktivitetStatus": "AT",
-        "gradering": true,
-        "utbetalingsgrad": 40.0,
-        "prosentArbeid": 30.0
-      }]
-  }, {
-    "innvilget": false,
-    "årsak": "2001",
-    "periodeFom": "19. august 2021",
-    "periodeTom": "20. august 2021",
-    "periodeDagsats": 600,
-    "antallTapteDager": 0,
-    "prioritertUtbetalingsgrad": 90.0,
-    "annenAktivitetsliste": [
-      {
-        "aktivitetStatus": "FL",
-        "gradering": true,
-        "utbetalingsgrad": 90.0,
-        "prosentArbeid": 85.0
-      }]
-  }, {
-    "innvilget": true,
-    "årsak": "2001",
-    "periodeFom": "21. august 2021",
-    "periodeTom": "22. august 2021",
-    "periodeDagsats": 700,
-    "antallTapteDager": 0,
-    "prioritertUtbetalingsgrad": 70.0,
-    "næring": {
+  "perioder": [
+    {
+      "innvilget": true,
+      "årsak": "2001",
+      "periodeFom": "15. april 2021",
+      "periodeTom": "18. august 2021",
+      "periodeDagsats": 500,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 50.0,
+      "annenAktivitetsliste": [
+        {
+          "aktivitetStatus": "FL",
+          "gradering": true,
+          "utbetalingsgrad": 50.0,
+          "prosentArbeid": 40.0
+        },
+        {
+          "aktivitetStatus": "FL",
+          "gradering": false,
+          "utbetalingsgrad": 10.0,
+          "prosentArbeid": 5.0
+        },
+        {
+          "aktivitetStatus": "FL",
+          "gradering": true,
+          "utbetalingsgrad": 20.0,
+          "prosentArbeid": 10.0
+        },
+        {
+          "aktivitetStatus": "AT",
+          "gradering": true,
+          "utbetalingsgrad": 40.0,
+          "prosentArbeid": 30.0
+        }
+      ]
+    },
+    {
+      "innvilget": false,
+      "årsak": "2001",
+      "periodeFom": "19. august 2021",
+      "periodeTom": "20. august 2021",
+      "periodeDagsats": 600,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 90.0,
+      "annenAktivitetsliste": [
+        {
+          "aktivitetStatus": "FL",
+          "gradering": true,
+          "utbetalingsgrad": 90.0,
+          "prosentArbeid": 85.0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2001",
+      "periodeFom": "21. august 2021",
+      "periodeTom": "22. august 2021",
+      "periodeDagsats": 700,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 70.0,
+      "næring": {
         "gradering": true,
         "utbetalingsgrad": 70.0,
         "prosentArbeid": 85.0,
         "sistLignedeÅr": 100
       }
-  }],
+    }
+  ],
   "bruttoBeregningsgrunnlag": 574548,
-  "harBruktBruttoBeregningsgrunnlag" : true,
+  "harBruktBruttoBeregningsgrunnlag": true,
   "beregningsgrunnlagregler": [],
   "klagefristUker": 6,
   "inkludereUtbetaling": true,
   "inkludereUtbetNårGradering": true,
   "inkludereInnvilget": true,
   "inkludereAvslag": false,
-  "inkludereNyeOpplysningerUtbet":false
+  "inkludereNyeOpplysningerUtbet": false
 }

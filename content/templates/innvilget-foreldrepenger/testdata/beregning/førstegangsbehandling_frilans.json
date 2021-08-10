@@ -4,34 +4,35 @@
     "søkerPersonnummer": "300220 12345",
     "brevDato": "4. mai 2021",
     "erAutomatiskBehandlet": true,
-    "saksnummer" : "123456789"
+    "saksnummer": "123456789",
+    "behandlesAvKA": false
   },
   "behandlingType": "FØRSTEGANGSSØKNAD",
   "behandlingResultatType": "INNVILGET",
-  "konsekvensForInnvilgetYtelse":  "INGEN_ENDRING",
-  "søknadsdato" : "4. mai 2021",
+  "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
+  "søknadsdato": "4. mai 2021",
   "dekningsgrad": 100,
-  "dagsats" : 2209,
-  "månedsbeløp" : 47879,
+  "dagsats": 2209,
+  "månedsbeløp": 47879,
   "seksG": 608106,
   "inntektOverSeksG": false,
   "forMyeUtbetalt": false,
   "inntektMottattArbeidsgiver": false,
   "annenForelderHarRett": true,
-  "annenForelderHarRettVurdert" : "JA",
-  "aleneomsorgKode" : "NEI",
+  "annenForelderHarRettVurdert": "JA",
+  "aleneomsorgKode": "NEI",
   "ikkeOmsorg": false,
   "barnErFødt": true,
   "årsakErFødselshendelse": false,
   "gjelderMor": true,
   "gjelderFødsel": true,
   "erBesteberegning": false,
-  "ingenRefusjon" : false,
-  "delvisRefusjon":  false,
-  "fullRefusjon":  true,
+  "ingenRefusjon": false,
+  "delvisRefusjon": false,
+  "fullRefusjon": true,
   "fbEllerRvInnvilget": true,
   "antallPerioder": 4,
-  "harInnvilgedePerioder": true,
+  "antallInnvilgedePerioder": 4,
   "antallArbeidsgivere": 2,
   "dagerTaptFørTermin": 0,
   "disponibleDager": 0,
@@ -39,90 +40,103 @@
   "sisteDagAvSistePeriode": "4. november 2022",
   "stønadsperiodeFom": "4. juni 2022",
   "stønadsperiodeTom": "4. november 2022",
-  "foreldrepengeperiodenUtvidetUker":3,
+  "foreldrepengeperiodenUtvidetUker": 3,
   "antallBarn": 2,
   "prematurDager": 1,
-  "perioder": [{
-    "innvilget":true,
-    "årsak": "4095",
-    "periodeFom": "15. april 2021",
-    "periodeTom": "18. august 2021",
-    "periodeDagsats": 2209,
-    "antallTapteDager": 0,
-    "arbeidsforholdsliste": [{
-      "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
-      "gradering": false,
-      "utbetalingsgrad": 100,
-      "prosentArbeid": 0,
-      "stillingsprosent": 100
-    }]
-  },
+  "perioder": [
     {
-      "innvilget":true,
+      "innvilget": true,
+      "årsak": "4095",
+      "periodeFom": "15. april 2021",
+      "periodeTom": "18. august 2021",
+      "periodeDagsats": 2209,
+      "antallTapteDager": 0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }
+      ]
+    },
+    {
+      "innvilget": true,
       "årsak": "2010",
       "periodeFom": "19. august 2021",
       "periodeTom": "24. september 2021",
       "periodeDagsats": 0,
       "antallTapteDager": 0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
-        "gradering": false,
-        "utbetalingsgrad": 100,
-        "prosentArbeid": 0,
-        "stillingsprosent": 100
-      }]
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }
+      ]
     },
     {
-      "innvilget":true,
+      "innvilget": true,
       "årsak": "2002",
       "periodeFom": "27. september 2021",
       "periodeTom": "25. november 2021",
       "periodeDagsats": 2209,
       "antallTapteDager": 0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
-        "gradering": false,
-        "utbetalingsgrad": 100,
-        "prosentArbeid": 0,
-        "stillingsprosent": 100
-      }]
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }
+      ]
     },
     {
-      "innvilget":true,
+      "innvilget": true,
       "årsak": "2002",
       "periodeFom": "26. november 2021",
       "periodeTom": "17. januar 2022",
       "periodeDagsats": 1768,
       "antallTapteDager": 0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
-        "gradering": false,
-        "utbetalingsgrad": 80,
-        "prosentArbeid": 0,
-        "stillingsprosent": 100
-      }]
-    }],
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "gradering": false,
+          "utbetalingsgrad": 80,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }
+      ]
+    }
+  ],
   "bruttoBeregningsgrunnlag": 574548,
-  "harBruktBruttoBeregningsgrunnlag" : false,
-  "beregningsgrunnlagregler": [{
-    "regelStatus": "FRILANSER",
-    "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
-    "snNyoppstartet": false,
-    "andelListe":[{
-      "aktivitetStatus": "FRILANSER",
-      "arbeidsgiverNavn": "STENDI AS REGION ØST CA MØRK",
-      "dagsats": 2209,
-      "månedsinntekt": 47879,
-      "årsinntekt": 574548,
-      "etterlønnSluttpakke": false,
-      "sistLignedeÅr": 2020
-    }]
-  }
+  "harBruktBruttoBeregningsgrunnlag": false,
+  "beregningsgrunnlagregler": [
+    {
+      "regelStatus": "FRILANSER",
+      "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
+      "snNyoppstartet": false,
+      "andelListe": [
+        {
+          "aktivitetStatus": "FRILANSER",
+          "arbeidsgiverNavn": "STENDI AS REGION ØST CA MØRK",
+          "dagsats": 2209,
+          "månedsinntekt": 47879,
+          "årsinntekt": 574548,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 2020
+        }
+      ]
+    }
   ],
   "klagefristUker": 6,
   "inkludereUtbetaling": true,
-  "inkludereUtbetNårGradering":  true,
-  "inkludereInnvilget" : true,
+  "inkludereUtbetNårGradering": true,
+  "inkludereInnvilget": true,
   "inkludereAvslag": false,
-  "inkludereNyeOpplysningerUtbet":false
+  "inkludereNyeOpplysningerUtbet": false
 }

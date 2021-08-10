@@ -3,8 +3,9 @@
     "søkerNavn": "Dolly Duck",
     "søkerPersonnummer": "300220 12345",
     "brevDato": "4. april 2020",
-    "saksnummer" : "123456789",
-    "ytelseType" : "SVP"
+    "saksnummer": "123456789",
+    "ytelseType": "SVP",
+    "behandlesAvKA": false
   },
   "vanligBehandling": false,
   "klage": true,

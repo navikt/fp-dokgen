@@ -10,7 +10,8 @@
     "erKopi",
     "harVerge",
     "saksnummer",
-    "ytelseType"
+    "ytelseType",
+    "behandlesAvKA"
   ],
   "properties": {
     "søkerNavn": {

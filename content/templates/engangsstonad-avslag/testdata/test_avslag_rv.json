@@ -3,7 +3,8 @@
     "søkerNavn": "Dolly Duck",
     "søkerPersonnummer": "300220 12345",
     "brevDato": "4. april 2020",
-    "saksnummer" : "123456789"
+    "saksnummer": "123456789",
+    "behandlesAvKA": false
   },
   "avslagÅrsak": "MOR_IKKE_DØD_VED_FØDSEL_OMSORG",
   "førstegangsbehandling": false,

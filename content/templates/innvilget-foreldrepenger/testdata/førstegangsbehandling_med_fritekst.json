@@ -8,7 +8,8 @@
     "erKopi": false,
     "harVerge": false,
     "saksnummer": "149778975",
-    "ytelseType": "FP"
+    "ytelseType": "FP",
+    "behandlesAvKA": false
   },
   "behandlingType": "FØRSTEGANGSSØKNAD",
   "behandlingResultatType": "INNVILGET",
@@ -35,7 +36,7 @@
   "fullRefusjon": false,
   "fbEllerRvInnvilget": true,
   "antallPerioder": 4,
-  "harInnvilgedePerioder": true,
+  "antallInnvilgedePerioder": 4,
   "antallArbeidsgivere": 3,
   "dagerTaptFørTermin": 0,
   "disponibleDager": 7,
@@ -233,5 +234,5 @@
   "inkludereUtbetNårGradering": false,
   "inkludereInnvilget": true,
   "inkludereAvslag": false,
-  "inkludereNyeOpplysningerUtbet":false
+  "inkludereNyeOpplysningerUtbet": false
 }

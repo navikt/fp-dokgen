@@ -4,7 +4,8 @@
     "søkerPersonnummer": "300220 12345",
     "brevDato": "4. mai 2021",
     "erAutomatiskBehandlet": true,
-    "saksnummer": "123456789"
+    "saksnummer": "123456789",
+    "behandlesAvKA": false
   },
   "behandlingType": "FØRSTEGANGSSØKNAD",
   "behandlingResultatType": "INNVILGET",
@@ -30,8 +31,8 @@
   "delvisRefusjon": false,
   "fullRefusjon": true,
   "fbEllerRvInnvilget": true,
-  "antallPerioder": 4,
-  "harInnvilgedePerioder": true,
+  "antallPerioder": 2,
+  "antallInnvilgedePerioder": 2,
   "antallArbeidsgivere": 2,
   "dagerTaptFørTermin": 0,
   "disponibleDager": 0,
@@ -42,22 +43,25 @@
   "foreldrepengeperiodenUtvidetUker": 3,
   "antallBarn": 2,
   "prematurDager": 1,
-  "perioder": [{
-    "innvilget": true,
-    "årsak": "2001",
-    "periodeFom": "15. april 2021",
-    "periodeTom": "18. august 2021",
-    "periodeDagsats": 500,
-    "antallTapteDager": 0,
-    "prioritertUtbetalingsgrad": 50.1,
-    "arbeidsforholdsliste": [{
-      "arbeidsgiverNavn": "Arbeidsgiver 1",
-      "gradering": false,
-      "utbetalingsgrad": 50.1,
-      "prosentArbeid": 0.0,
-      "stillingsprosent": 100.0
-    }]
-  },
+  "perioder": [
+    {
+      "innvilget": true,
+      "årsak": "2001",
+      "periodeFom": "15. april 2021",
+      "periodeTom": "18. august 2021",
+      "periodeDagsats": 500,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 50.1,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 50.1,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
+        }
+      ]
+    },
     {
       "innvilget": true,
       "årsak": "2002",
@@ -73,15 +77,17 @@
           "utbetalingsgrad": 40.2,
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0
-        }]
-    }],
+        }
+      ]
+    }
+  ],
   "bruttoBeregningsgrunnlag": 574548,
-  "harBruktBruttoBeregningsgrunnlag" : true,
+  "harBruktBruttoBeregningsgrunnlag": true,
   "beregningsgrunnlagregler": [],
   "klagefristUker": 6,
   "inkludereUtbetaling": true,
   "inkludereUtbetNårGradering": true,
   "inkludereInnvilget": true,
   "inkludereAvslag": false,
-  "inkludereNyeOpplysningerUtbet":false
+  "inkludereNyeOpplysningerUtbet": false
 }

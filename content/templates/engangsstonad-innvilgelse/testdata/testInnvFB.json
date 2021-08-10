@@ -4,9 +4,10 @@
     "søkerPersonnummer": "300220 12345",
     "brevDato": "4. april 2020",
     "erAutomatiskBehandlet": true,
-    "erKopi" : true,
-    "harVerge" : true,
-    "saksnummer" : "123456789"
+    "erKopi": true,
+    "harVerge": true,
+    "saksnummer": "123456789",
+    "behandlesAvKA": false
   },
   "revurdering": false,
   "førstegangsbehandling": true,
