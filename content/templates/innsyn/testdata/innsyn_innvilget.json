@@ -4,7 +4,8 @@
     "søkerPersonnummer": "300220 12345",
     "brevDato": "4. april 2020",
     "saksnummer": "123456789",
-    "ytelseType": "FP"
+    "ytelseType": "FP",
+    "behandlesAvKA": false
   },
   "innsynResultat": "INNV",
   "klagefrist": 6

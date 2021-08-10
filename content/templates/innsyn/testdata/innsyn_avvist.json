@@ -5,7 +5,8 @@
     "brevDato": "4. april 2020",
     "saksnummer": "123456789",
     "ytelseType": "SVP",
-    "fritekst": "Vi kan kun gi deg delvis innsyn fordi"
+    "fritekst": "Vi kan kun gi deg delvis innsyn fordi",
+    "behandlesAvKA": false
   },
   "innsynResultat": "AVVIST",
   "klagefrist": 6

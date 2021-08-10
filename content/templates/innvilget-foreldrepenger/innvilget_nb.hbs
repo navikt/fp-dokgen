@@ -3,7 +3,7 @@
 **Dette har vi innvilget**
 
 {{~#* inline "punkt" ~}}
-{{~#if antallInnvilgedePerioder}}{{~#gt antallInnvilgedePerioder 1}}* {{/gt}}{{else}}{{~#gt antallPerioder 1}}* {{/gt}}{{/if}}
+{{~#gt antallInnvilgedePerioder 1}}* {{/gt}}
 {{~/inline~}}
 
 {{~#each perioder}}
@@ -112,7 +112,7 @@ I samme periode tar du ut 100 prosent permisjon hos {{this.arbeidsgiverNavn}}.
 {{/eq}}
 {{/each}}
 
-{{#if (and (eq harInnvilgedePerioder true) (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
+{{#if (and (gt antallInnvilgedePerioder 0) (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
 Foreldrepengene utgjør det samme som tidligere. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
 {{#eq dagerTaptFørTermin 0}}
 Den siste dagen med foreldrepenger er {{stønadsperiodeTom}}.

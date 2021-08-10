@@ -7,7 +7,8 @@
     "erKopi": false,
     "harVerge": false,
     "saksnummer": "152001001",
-    "ytelseType": "FP"
+    "ytelseType": "FP",
+    "behandlesAvKA": false
   },
   "behandlingType": "REVURDERING",
   "behandlingResultatType": "FORELDREPENGER_ENDRET",
@@ -33,7 +34,7 @@
   "fullRefusjon": false,
   "fbEllerRvInnvilget": true,
   "antallPerioder": 1,
-  "harInnvilgedePerioder": true,
+  "antallInnvilgedePerioder": 1,
   "antallArbeidsgivere": 0,
   "dagerTaptFørTermin": 0,
   "disponibleDager": 0,
@@ -87,5 +88,5 @@
   "inkludereUtbetNårGradering": false,
   "inkludereInnvilget": false,
   "inkludereAvslag": false,
-  "inkludereNyeOpplysningerUtbet":false
+  "inkludereNyeOpplysningerUtbet": false
 }

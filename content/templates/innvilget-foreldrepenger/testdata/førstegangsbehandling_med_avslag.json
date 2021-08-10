@@ -4,7 +4,8 @@
     "søkerPersonnummer": "300220 12345",
     "brevDato": "4. mai 2021",
     "erAutomatiskBehandlet": true,
-    "saksnummer": "123456789"
+    "saksnummer": "123456789",
+    "behandlesAvKA": false
   },
   "behandlingType": "FØRSTEGANGSSØKNAD",
   "behandlingResultatType": "INNVILGET",
@@ -31,7 +32,7 @@
   "fullRefusjon": false,
   "fbEllerRvInnvilget": true,
   "antallPerioder": 7,
-  "harInnvilgedePerioder": true,
+  "antallInnvilgedePerioder": 6,
   "antallArbeidsgivere": 2,
   "dagerTaptFørTermin": 0,
   "disponibleDager": 0,
@@ -42,7 +43,8 @@
   "foreldrepengeperiodenUtvidetUker": 0,
   "antallBarn": 2,
   "prematurDager": 0,
-  "perioder": [{
+  "perioder": [
+    {
       "innvilget": true,
       "årsak": "2031",
       "periodeFom": "24. februar 2021",
@@ -50,20 +52,22 @@
       "periodeDagsats": 1618,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100.0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
-        "gradering": true,
-        "utbetalingsgrad": 20.0,
-        "prosentArbeid": 80.0,
-        "stillingsprosent": 80.0
-      },
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+          "gradering": true,
+          "utbetalingsgrad": 20.0,
+          "prosentArbeid": 80.0,
+          "stillingsprosent": 80.0
+        },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
           "utbetalingsgrad": 100.0,
           "prosentArbeid": 0.0,
           "stillingsprosent": 80.0
-        }]
+        }
+      ]
     },
     {
       "innvilget": true,
@@ -73,20 +77,22 @@
       "periodeDagsats": 1939,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100.0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
-        "gradering": false,
-        "utbetalingsgrad": 100.0,
-        "prosentArbeid": 0.0,
-        "stillingsprosent": 80.0
-      },
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+          "gradering": false,
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 80.0
+        },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
           "utbetalingsgrad": 100.0,
           "prosentArbeid": 0.0,
           "stillingsprosent": 80.0
-        }]
+        }
+      ]
     },
     {
       "innvilget": true,
@@ -96,20 +102,22 @@
       "periodeDagsats": 1618,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100.0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
-        "gradering": true,
-        "utbetalingsgrad": 20.0,
-        "prosentArbeid": 80.0,
-        "stillingsprosent": 80.0
-      },
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+          "gradering": true,
+          "utbetalingsgrad": 20.0,
+          "prosentArbeid": 80.0,
+          "stillingsprosent": 80.0
+        },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
           "utbetalingsgrad": 100.0,
           "prosentArbeid": 0.0,
           "stillingsprosent": 80.0
-        }]
+        }
+      ]
     },
     {
       "innvilget": true,
@@ -119,20 +127,22 @@
       "periodeDagsats": 80,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100.0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
-        "gradering": true,
-        "utbetalingsgrad": 20.0,
-        "prosentArbeid": 80.0,
-        "stillingsprosent": 80.0
-      },
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+          "gradering": true,
+          "utbetalingsgrad": 20.0,
+          "prosentArbeid": 80.0,
+          "stillingsprosent": 80.0
+        },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
           "utbetalingsgrad": 100.0,
           "prosentArbeid": 0.0,
           "stillingsprosent": 80.0
-        }]
+        }
+      ]
     },
     {
       "innvilget": true,
@@ -142,20 +152,22 @@
       "periodeDagsats": 401,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100.0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
-        "gradering": false,
-        "utbetalingsgrad": 100.0,
-        "prosentArbeid": 0.0,
-        "stillingsprosent": 80.0
-      },
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+          "gradering": false,
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 80.0
+        },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
           "utbetalingsgrad": 100.0,
           "prosentArbeid": 0.0,
           "stillingsprosent": 80.0
-        }]
+        }
+      ]
     },
     {
       "innvilget": true,
@@ -165,20 +177,22 @@
       "periodeDagsats": 80,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100.0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
-        "gradering": true,
-        "utbetalingsgrad": 20.0,
-        "prosentArbeid": 80.0,
-        "stillingsprosent": 80.0
-      },
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+          "gradering": true,
+          "utbetalingsgrad": 20.0,
+          "prosentArbeid": 80.0,
+          "stillingsprosent": 80.0
+        },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
           "utbetalingsgrad": 100.0,
           "prosentArbeid": 0.0,
           "stillingsprosent": 80.0
-        }]
+        }
+      ]
     },
     {
       "innvilget": false,
@@ -188,53 +202,59 @@
       "periodeDagsats": 0,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100.0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
-        "gradering": true,
-        "utbetalingsgrad": 20.0,
-        "prosentArbeid": 80.0,
-        "stillingsprosent": 80.0
-      },
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+          "gradering": true,
+          "utbetalingsgrad": 20.0,
+          "prosentArbeid": 80.0,
+          "stillingsprosent": 80.0
+        },
         {
           "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
           "gradering": false,
           "utbetalingsgrad": 100.0,
           "prosentArbeid": 0.0,
           "stillingsprosent": 80.0
-        }]
+        }
+      ]
     }
   ],
   "bruttoBeregningsgrunnlag": 504360,
   "harBruktBruttoBeregningsgrunnlag": true,
-  "beregningsgrunnlagregler": [{
-    "regelStatus": "ARBEIDSTAKER",
-    "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 2,
-    "snNyoppstartet": false,
-    "andelListe":[{
-      "aktivitetStatus": "ARBEIDSTAKER",
-      "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
-      "dagsats": 401,
-      "månedsinntekt": 8697,
-      "årsinntekt": 104364,
-      "etterlønnSluttpakke": false,
-      "sistLignedeÅr": 2019
-    },
-      {
-      "aktivitetStatus": "ARBEIDSTAKER",
-      "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
-      "dagsats": 1538,
-      "månedsinntekt": 33333,
-      "årsinntekt": 399996,
-      "etterlønnSluttpakke": false,
-      "sistLignedeÅr": 2019
-    }]
-  }],
+  "beregningsgrunnlagregler": [
+    {
+      "regelStatus": "ARBEIDSTAKER",
+      "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 2,
+      "snNyoppstartet": false,
+      "andelListe": [
+        {
+          "aktivitetStatus": "ARBEIDSTAKER",
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF NOTODDEN - SOMATIKK",
+          "dagsats": 401,
+          "månedsinntekt": 8697,
+          "årsinntekt": 104364,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 2019
+        },
+        {
+          "aktivitetStatus": "ARBEIDSTAKER",
+          "arbeidsgiverNavn": "SYKEHUSET TELEMARK HF SKIEN - SOMATIKK",
+          "dagsats": 1538,
+          "månedsinntekt": 33333,
+          "årsinntekt": 399996,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 2019
+        }
+      ]
+    }
+  ],
   "klagefristUker": 6,
   "lovhjemlerUttak": "§§ 14-9, 14-12 og 14-16",
   "lovhjemlerBeregning": "§§ 14-7 og 8-30",
   "inkludereUtbetaling": true,
-  "inkludereUtbetNårGradering":  true,
-  "inkludereInnvilget" : true,
+  "inkludereUtbetNårGradering": true,
+  "inkludereInnvilget": true,
   "inkludereAvslag": true,
-  "inkludereNyeOpplysningerUtbet":false
+  "inkludereNyeOpplysningerUtbet": false
 }

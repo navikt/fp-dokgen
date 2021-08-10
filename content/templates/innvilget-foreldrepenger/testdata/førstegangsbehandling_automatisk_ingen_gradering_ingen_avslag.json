@@ -4,7 +4,8 @@
     "søkerPersonnummer": "300220 12345",
     "brevDato": "4. mai 2021",
     "erAutomatiskBehandlet": true,
-    "saksnummer": "123456789"
+    "saksnummer": "123456789",
+    "behandlesAvKA": false
   },
   "behandlingType": "FØRSTEGANGSSØKNAD",
   "behandlingResultatType": "INNVILGET",
@@ -31,7 +32,7 @@
   "fullRefusjon": false,
   "fbEllerRvInnvilget": true,
   "antallPerioder": 4,
-  "harInnvilgedePerioder": true,
+  "antallInnvilgedePerioder": 4,
   "antallArbeidsgivere": 1,
   "dagerTaptFørTermin": 3,
   "disponibleDager": 1,
@@ -42,22 +43,25 @@
   "foreldrepengeperiodenUtvidetUker": 0,
   "antallBarn": 1,
   "prematurDager": 0,
-  "perioder": [{
-    "innvilget": true,
-    "årsak": "2006",
-    "periodeFom": "15. april 2021",
-    "periodeTom": "18. august 2021",
-    "periodeDagsats": 2209,
-    "antallTapteDager": 0,
-    "prioritertUtbetalingsgrad": 100.0,
-    "arbeidsforholdsliste": [{
-      "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
-      "gradering": false,
-      "utbetalingsgrad": 100.0,
-      "prosentArbeid": 0.0,
-      "stillingsprosent": 100.0
-    }]
-  },
+  "perioder": [
+    {
+      "innvilget": true,
+      "årsak": "2006",
+      "periodeFom": "15. april 2021",
+      "periodeTom": "18. august 2021",
+      "periodeDagsats": 2209,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "gradering": false,
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
+        }
+      ]
+    },
     {
       "innvilget": true,
       "årsak": "2010",
@@ -66,13 +70,15 @@
       "periodeDagsats": 0,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100.0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
-        "gradering": false,
-        "utbetalingsgrad": 100.0,
-        "prosentArbeid": 0.0,
-        "stillingsprosent": 100.0
-      }]
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "gradering": false,
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
+        }
+      ]
     },
     {
       "innvilget": true,
@@ -82,13 +88,15 @@
       "periodeDagsats": 2209,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100.0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
-        "gradering": false,
-        "utbetalingsgrad": 100.0,
-        "prosentArbeid": 0.0,
-        "stillingsprosent": 100.0
-      }]
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "gradering": false,
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
+        }
+      ]
     },
     {
       "innvilget": true,
@@ -98,36 +106,43 @@
       "periodeDagsats": 1768,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 80.0,
-      "arbeidsforholdsliste": [{
-        "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
-        "gradering": false,
-        "utbetalingsgrad": 80.0,
-        "prosentArbeid": 0.0,
-        "stillingsprosent": 100.0
-      }]
-    }],
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "gradering": false,
+          "utbetalingsgrad": 80.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
+        }
+      ]
+    }
+  ],
   "bruttoBeregningsgrunnlag": 574548,
   "harBruktBruttoBeregningsgrunnlag": true,
-  "beregningsgrunnlagregler": [{
-    "regelStatus": "ARBEIDSTAKER",
-    "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
-    "snNyoppstartet": false,
-    "andelListe":[{
-      "aktivitetStatus": "ARBEIDSTAKER",
-      "arbeidsgiverNavn": "STENDI AS REGION ØST CA MØRK",
-      "dagsats": 2209,
-      "månedsinntekt": 47879,
-      "årsinntekt": 574548,
-      "etterlønnSluttpakke": false,
-      "sistLignedeÅr": 2019
-    }]
-  }],
+  "beregningsgrunnlagregler": [
+    {
+      "regelStatus": "ARBEIDSTAKER",
+      "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
+      "snNyoppstartet": false,
+      "andelListe": [
+        {
+          "aktivitetStatus": "ARBEIDSTAKER",
+          "arbeidsgiverNavn": "STENDI AS REGION ØST CA MØRK",
+          "dagsats": 2209,
+          "månedsinntekt": 47879,
+          "årsinntekt": 574548,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 2019
+        }
+      ]
+    }
+  ],
   "klagefristUker": 6,
   "lovhjemlerUttak": "§ forvaltningsloven § 35",
   "lovhjemlerBeregning": "§§ 14-7 og forvaltningsloven § 35",
   "inkludereUtbetaling": true,
-  "inkludereUtbetNårGradering":  false,
-  "inkludereInnvilget" : true,
+  "inkludereUtbetNårGradering": false,
+  "inkludereInnvilget": true,
   "inkludereAvslag": false,
   "inkludereNyeOpplysningerUtbet": true
 }

@@ -29,7 +29,7 @@
     "fullRefusjon",
     "fbEllerRvInnvilget",
     "antallPerioder",
-    "harInnvilgedePerioder",
+    "antallInnvilgedePerioder",
     "antallArbeidsgivere",
     "dagerTaptFørTermin",
     "disponibleDager",
@@ -313,9 +313,6 @@
     },
     "antallInnvilgedePerioder": {
       "type": "number"
-    },
-    "harInnvilgedePerioder": {
-      "type": "boolean"
     },
     "antallArbeidsgivere": {
       "type": "number"
