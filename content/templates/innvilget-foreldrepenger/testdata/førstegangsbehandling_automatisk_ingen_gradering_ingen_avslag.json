@@ -33,6 +33,7 @@
   "fbEllerRvInnvilget": true,
   "antallPerioder": 4,
   "antallInnvilgedePerioder": 4,
+  "antallAvslåttePerioder": 0,
   "antallArbeidsgivere": 1,
   "dagerTaptFørTermin": 3,
   "disponibleDager": 1,
