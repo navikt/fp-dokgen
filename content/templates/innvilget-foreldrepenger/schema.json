@@ -30,6 +30,7 @@
     "fbEllerRvInnvilget",
     "antallPerioder",
     "antallInnvilgedePerioder",
+    "antallAvslåttePerioder",
     "antallArbeidsgivere",
     "dagerTaptFørTermin",
     "disponibleDager",
@@ -312,6 +313,9 @@
       "type": "number"
     },
     "antallInnvilgedePerioder": {
+      "type": "number"
+    },
+    "antallAvslåttePerioder": {
       "type": "number"
     },
     "antallArbeidsgivere": {
