@@ -4,7 +4,8 @@
     "søkerPersonnummer": "300220 12345",
     "brevDato": "4. april 2020",
     "saksnummer": "123456789",
-    "behandlesAvKA": false
+    "behandlesAvKA": false,
+    "erUtkast": false
   },
   "behandlingsÅrsak": "INFOBREV_OPPHOLD",
   "sisteUttaksdagMor": "10. september 2020"

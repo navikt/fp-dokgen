@@ -10,7 +10,7 @@ html {
     height:100%;
 }
 
-body{
+body {
     padding:10mm;
     margin:0;
     position: relative;
@@ -108,4 +108,14 @@ table {
 
 li {
     font-size: 14px;
+}
+
+.draft_text {
+    transform: rotate(45deg);
+    transform-origin: right top;
+    position: absolute;
+    top: 600px;
+    color: #dcdcdc;
+    font-size: 200px;
+    z-index: -1;
 }

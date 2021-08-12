@@ -8,7 +8,8 @@
     "harVerge": false,
     "saksnummer": "123456789",
     "ytelseType": "ES",
-    "behandlesAvKA": true
+    "behandlesAvKA": true,
+    "erUtkast": false
   },
   "førstegangsbehandling": false,
   "revurdering": false,

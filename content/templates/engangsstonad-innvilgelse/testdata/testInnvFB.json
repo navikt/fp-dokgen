@@ -7,7 +7,8 @@
     "erKopi": true,
     "harVerge": true,
     "saksnummer": "123456789",
-    "behandlesAvKA": false
+    "behandlesAvKA": false,
+    "erUtkast": false
   },
   "revurdering": false,
   "førstegangsbehandling": true,

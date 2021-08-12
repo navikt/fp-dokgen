@@ -9,12 +9,12 @@
     "saksnummer": "123456789",
     "ytelseType": "ES",
     "behandlesAvKA": false,
-    "erUtkast": false
+    "erUtkast": true
   },
   "førstegangsbehandling": true,
   "revurdering": false,
   "endringssøknad": false,
-  "død": true,
+  "død": false,
   "klage": false,
   "søknadDato": "1. april 2020",
   "fristDato": "24. mai 2020"

@@ -6,7 +6,8 @@
     "saksnummer": "123456789",
     "ytelseType": "SVP",
     "fritekst": "Vi kan kun gi deg delvis innsyn fordi",
-    "behandlesAvKA": false
+    "behandlesAvKA": false,
+    "erUtkast": false
   },
   "innsynResultat": "DELV",
   "klagefrist": 6

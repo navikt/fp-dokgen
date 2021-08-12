@@ -6,7 +6,8 @@
     "saksnummer": "123456789",
     "mottakerNavn": "Finn Verge",
     "fritekst": "Du har ikke gitt dokumentasjon om hvorfor du søkte for sent",
-    "behandlesAvKA": false
+    "behandlesAvKA": false,
+    "erUtkast": false
   },
   "avslagÅrsak": "SØKT_FOR_SENT",
   "førstegangsbehandling": true,

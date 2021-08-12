@@ -172,4 +172,13 @@ public class InnhenteOpplysningerTest {
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_endringssøknad_nn.txt"));
     }
+
+    @Test
+    public void skal_generere_brev_for_innhente_opplysninger_med_utkast() throws Exception {
+        // Act
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_es_fgb_utkast");
+
+        // Assert
+        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_fgb_utkast.txt"));
+    }
 }
