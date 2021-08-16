@@ -9,7 +9,8 @@
     "harVerge": false,
     "saksnummer": "149778975",
     "ytelseType": "FP",
-    "behandlesAvKA": false
+    "behandlesAvKA": false,
+    "erUtkast": false
   },
   "behandlingType": "FØRSTEGANGSSØKNAD",
   "behandlingResultatType": "INNVILGET",

@@ -7,7 +7,8 @@
     "harVerge": false,
     "saksnummer": "123456789",
     "ytelseType": "FP",
-    "behandlesAvKA": false
+    "behandlesAvKA": false,
+    "erUtkast": false
   },
   "terminDato": "23. mai 2020",
   "fristDato": "24. mai 2020",

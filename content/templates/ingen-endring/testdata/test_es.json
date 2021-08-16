@@ -7,6 +7,7 @@
     "harVerge": false,
     "saksnummer": "123456789",
     "ytelseType": "ES",
-    "behandlesAvKA": false
+    "behandlesAvKA": false,
+    "erUtkast": false
   }
 }

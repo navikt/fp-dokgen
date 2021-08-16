@@ -5,7 +5,8 @@
     "brevDato": "4. april 2020",
     "saksnummer": "123456789",
     "ytelseType": "FP",
-    "behandlesAvKA": false
+    "behandlesAvKA": false,
+    "erUtkast": false
   },
   "vanligBehandling": true,
   "klage": false,

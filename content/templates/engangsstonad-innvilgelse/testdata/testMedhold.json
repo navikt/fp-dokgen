@@ -5,7 +5,8 @@
     "brevDato": "4. april 2020",
     "saksnummer": "123456789",
     "erAutomatiskBehandlet": true,
-    "behandlesAvKA": false
+    "behandlesAvKA": false,
+    "erUtkast": false
   },
   "revurdering": true,
   "førstegangsbehandling": false,

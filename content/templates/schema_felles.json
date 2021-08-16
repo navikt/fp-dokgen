@@ -11,7 +11,8 @@
     "harVerge",
     "saksnummer",
     "ytelseType",
-    "behandlesAvKA"
+    "behandlesAvKA",
+    "erUtkast"
   ],
   "properties": {
     "søkerNavn": {
@@ -45,6 +46,9 @@
       "type": "string"
     },
     "behandlesAvKA": {
+      "type": "boolean"
+    },
+    "erUtkast": {
       "type": "boolean"
     }
   }

@@ -8,7 +8,8 @@
     "harVerge": false,
     "saksnummer": "123456789",
     "ytelseType": "FP",
-    "behandlesAvKA": false
+    "behandlesAvKA": false,
+    "erUtkast": false
   },
   "variantType": "KLAGE",
   "død": true,
