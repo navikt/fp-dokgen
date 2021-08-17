@@ -46,7 +46,7 @@ Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere
 
 {{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_nb}}{{/if}}
 
-{{#if barnErFødt gjelderMor årsakErFødselshendelse}}
+{{#if (and (eq barnErFødt true) (eq gjelderMor true) (eq årsakErFødselshendelse true))}}
 {{#gt dagerTaptFørTermin 0}}
 {{#if (or (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING_OG_UTTAK"))}}
 Vi har endret den siste dagen din med foreldrepenger til {{stønadsperiodeTom}}.
