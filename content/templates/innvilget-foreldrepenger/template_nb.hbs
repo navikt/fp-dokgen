@@ -46,7 +46,7 @@ Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere
 
 {{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_nb}}{{/if}}
 
-{{#if barnErFødt gjelderMor årsakErFødselshendelse}}
+{{#if (and (eq barnErFødt true) (eq gjelderMor true) (eq årsakErFødselshendelse true))}}
 {{#gt dagerTaptFørTermin 0}}
 {{#if (or (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING_OG_UTTAK"))}}
 Vi har endret den siste dagen din med foreldrepenger til {{stønadsperiodeTom}}.
@@ -76,7 +76,11 @@ Foreldrepengene dine er fastsatt til {{format-kroner seksG}} kroner i året, som
 {{/if}}
 
 {{#eq dekningsgrad 80}}
-Fordi du har valgt 80 prosent foreldrepenger, får du mindre utbetalt i måneden
+{{#eq behandlingType "FØRSTEGANGSSØKNAD"}}
+{{> innvilget-foreldrepenger/mindre_utbetalt_nb}}
+{{/eq}}
+{{#if (and (eq behandlingType "REVURDERING") (eq behandlingResultatType "INNVILGET"))}}
+{{> innvilget-foreldrepenger/mindre_utbetalt_nb}}{{/if}}
 {{/eq}}
 
 {{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
