@@ -47,6 +47,8 @@ På [nav.no/dittnav](https://nav.no/dittnav) kan du sjå dokumenta i saka di.
 <br/>
 <br/>
 <br/>
+<div style="break-inside: avoid; page-break-inside: avoid">
+
 **Har du spørsmål?**<br/>
 Du finn nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
@@ -54,7 +56,11 @@ Du finn nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 Med vennleg helsing
 <br/>
-NAV Familie- og Pensjonsytelser<br/><br/>
+NAV Familie- og Pensjonsytelser
+
+
+
+</div>
 
 
 
