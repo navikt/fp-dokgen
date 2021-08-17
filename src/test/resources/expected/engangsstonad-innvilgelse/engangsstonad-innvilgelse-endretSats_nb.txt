@@ -35,6 +35,8 @@ På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
 <br/>
 <br/>
 <br/>
+<div style="break-inside: avoid; page-break-inside: avoid">
+
 **Har du spørsmål?**<br/>
 Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
@@ -42,13 +44,16 @@ Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie- og Pensjonsytelser<br/><br/>
+NAV Familie- og Pensjonsytelser
 
+<br/><br/>
 
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
 
+<br/><br/>
 
 
 **Dette er en kopi, orginal er sendt til verge**.
 
 
+</div>
