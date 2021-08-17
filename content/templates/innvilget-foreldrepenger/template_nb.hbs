@@ -76,7 +76,11 @@ Foreldrepengene dine er fastsatt til {{format-kroner seksG}} kroner i året, som
 {{/if}}
 
 {{#eq dekningsgrad 80}}
-Fordi du har valgt 80 prosent foreldrepenger, får du mindre utbetalt i måneden
+{{#eq behandlingType "FØRSTEGANGSSØKNAD"}}
+{{> innvilget-foreldrepenger/mindre_utbetalt_nb}}
+{{/eq}}
+{{#if (and (eq behandlingType "REVURDERING") (eq behandlingResultatType "INNVILGET"))}}
+{{> innvilget-foreldrepenger/mindre_utbetalt_nb}}{{/if}}
 {{/eq}}
 
 {{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
