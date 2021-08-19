@@ -1,7 +1,7 @@
 {{> header }}
 <br/>
 <br/>
-{{#if (and  (eq behandlingType "FØRSTEGANGSSØKNAD")(eq behandlingResultatType "INNVILGET"))}}
+{{#if (eq behandlingResultatType "INNVILGET")}}
 # NAV har innvilget søknaden din om {{dekningsgrad}} prosent foreldrepenger
 {{else if (and (eq behandlingResultatType "FORELDREPENGER_ENDRET") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
 # NAV har beregnet foreldrepengene dine på nytt
