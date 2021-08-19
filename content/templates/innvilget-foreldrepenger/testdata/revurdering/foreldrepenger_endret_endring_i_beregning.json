@@ -1,0 +1,179 @@
+{
+  "felles": {
+    "søkerNavn": "ING ANONYMISERT",
+    "søkerPersonnummer": "11111 11111",
+    "brevDato": "13. august 2021",
+    "erAutomatiskBehandlet": true,
+    "erKopi": false,
+    "harVerge": false,
+    "saksnummer": "222222222",
+    "ytelseType": "FP",
+    "behandlesAvKA": false
+  },
+  "behandlingType": "REVURDERING",
+  "behandlingResultatType": "FORELDREPENGER_ENDRET",
+  "konsekvensForInnvilgetYtelse": "ENDRING_I_BEREGNING",
+  "søknadsdato": "15. november 2020",
+  "dekningsgrad": 80,
+  "dagsats": 1436,
+  "månedsbeløp": 31113,
+  "seksG": 608106,
+  "inntektOverSeksG": false,
+  "inntektMottattArbeidsgiver": true,
+  "annenForelderHarRett": true,
+  "annenForelderHarRettVurdert": "IKKE_VURDERT",
+  "aleneomsorgKode": "IKKE_VURDERT",
+  "ikkeOmsorg": false,
+  "barnErFødt": true,
+  "årsakErFødselshendelse": false,
+  "gjelderMor": false,
+  "gjelderFødsel": true,
+  "erBesteberegning": false,
+  "ingenRefusjon": false,
+  "delvisRefusjon": true,
+  "fullRefusjon": false,
+  "fbEllerRvInnvilget": false,
+  "antallPerioder": 5,
+  "antallInnvilgedePerioder": 5,
+  "antallAvslåttePerioder": 0,
+  "antallArbeidsgivere": 1,
+  "dagerTaptFørTermin": 0,
+  "disponibleDager": 0,
+  "disponibleFellesDager": 0,
+  "sisteDagAvSistePeriode": "10. september 2021",
+  "stønadsperiodeFom": "9. september 2020",
+  "stønadsperiodeTom": "10. september 2021",
+  "foreldrepengeperiodenUtvidetUker": 0,
+  "antallBarn": 1,
+  "prematurDager": 0,
+  "perioder": [
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "9. september 2020",
+      "periodeTom": "10. september 2020",
+      "periodeDagsats": 1436,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "FIRMA AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ],
+      "avslått": false
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "22. september 2020",
+      "periodeTom": "23. september 2020",
+      "periodeDagsats": 1436,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "FIRMA AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ],
+      "avslått": false
+    },
+    {
+      "innvilget": true,
+      "årsak": "2002",
+      "periodeFom": "30. september 2020",
+      "periodeTom": "15. oktober 2020",
+      "periodeDagsats": 1436,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "FIRMA AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ],
+      "avslått": false
+    },
+    {
+      "innvilget": true,
+      "årsak": "2021",
+      "periodeFom": "16. oktober 2020",
+      "periodeTom": "30. oktober 2020",
+      "periodeDagsats": 1436,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "FIRMA AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ],
+      "avslått": false
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "7. mai 2021",
+      "periodeTom": "10. september 2021",
+      "periodeDagsats": 1436,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "FIRMA AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ],
+      "avslått": false
+    }
+  ],
+  "bruttoBeregningsgrunnlag": 466842,
+  "harBruktBruttoBeregningsgrunnlag": false,
+  "beregningsgrunnlagregler": [
+    {
+      "regelStatus": "ARBEIDSTAKER",
+      "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
+      "snNyoppstartet": false,
+      "andelListe": [
+        {
+          "aktivitetStatus": "ARBEIDSTAKER",
+          "arbeidsgiverNavn": "FIRMA AS",
+          "dagsats": 1436,
+          "månedsinntekt": 38904,
+          "årsinntekt": 466842,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 0
+        }
+      ]
+    }
+  ],
+  "klagefristUker": 6,
+  "lovhjemlerUttak": "§§ 14-9, 14-12 og forvaltningsloven § 35",
+  "lovhjemlerBeregning": "§§ 14-7 og 8-30 og forvaltningsloven § 35",
+  "inkludereUtbetaling": false,
+  "inkludereUtbetNårGradering": false,
+  "inkludereInnvilget": false,
+  "inkludereAvslag": false,
+  "inkludereNyeOpplysningerUtbet": false
+}
