@@ -1,16 +1,16 @@
 package no.nav.foreldrepenger.dokgen.test.templates.innvilgelsefp;
 
-import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
 
 public class InnvilgetForeldrepengerUtbetalingTest {
     private static final String TEMPLATE_NAME = "innvilget-foreldrepenger";
     private static final String TEMPLATE_PATH = "/utbetaling_";
     private static final String EXPECTED_PREFIX = "utbetaling/innvilget-foreldrepenger";
     private static final TemplateTestService templateTestService = new TemplateTestService();
-
 
     @Test
     public void undermal_utbetaling_ingen_refusjon_nb() throws Exception {
@@ -38,6 +38,4 @@ public class InnvilgetForeldrepengerUtbetalingTest {
         // Assert
         assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_delvis_refusjon_nb.txt"));
     }
-
-
 }

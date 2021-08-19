@@ -249,6 +249,9 @@
     "dekningsgrad": {
       "type": "number"
     },
+    "harUtbetaling": {
+      "type": "boolean"
+    },
     "dagsats": {
       "type": "number"
     },
