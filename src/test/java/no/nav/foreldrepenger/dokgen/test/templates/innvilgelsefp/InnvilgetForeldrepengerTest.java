@@ -14,7 +14,7 @@ public class InnvilgetForeldrepengerTest {
     @Test
     public void førstegangsbehandling_uten_gradering_og_avslag_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "førstegangsbehandling_automatisk_ingen_gradering_ingen_avslag");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "forstegangsbehandling/automatisk_ingen_gradering_ingen_avslag");
 
         // Assert
         assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_template_forstegangsbehandling_nb.txt"));
@@ -23,7 +23,7 @@ public class InnvilgetForeldrepengerTest {
     @Test
     public void førstegangsbehandling_med_avslag_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "førstegangsbehandling_med_avslag");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "forstegangsbehandling/med_avslag_periode");
 
         // Assert
         assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_template_forstegangsbehandling_med_avslag_nb.txt"));
@@ -32,7 +32,7 @@ public class InnvilgetForeldrepengerTest {
     @Test
     public void førstegangsbehandling_med_fritekst_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "førstegangsbehandling_med_fritekst");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "forstegangsbehandling/med_fritekst");
         // Assert
         assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_template_forstegangsbehandling_med_fritekst_nb.txt"));
     }
@@ -40,7 +40,7 @@ public class InnvilgetForeldrepengerTest {
     @Test
     public void førstegangsbehandling_med_flere_arbeidsgivere_og_gradering_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "førstegangsbehandling_gradering_flere_arbgivere_og_gradering");
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "forstegangsbehandling/gradering_flere_arbgivere_og_gradering");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME,  TEMPLATE_NAME + "_førstegangsbehandling_gradering_nb.txt"));
