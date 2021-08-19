@@ -45,4 +45,14 @@ public class InnvilgetForeldrepengerTest {
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME,  TEMPLATE_NAME + "_førstegangsbehandling_gradering_nb.txt"));
     }
+
+    @Test
+    public void revurdering_foreldrepenger_endret() throws Exception {
+        // Act
+        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "revurdering/foreldrepenger_endret");
+
+        // Assert
+        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_revurdering_foreldrepenger_endret_nb.txt"));
+    }
+
 }

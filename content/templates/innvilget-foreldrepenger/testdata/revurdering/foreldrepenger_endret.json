@@ -1,0 +1,137 @@
+{
+  "felles": {
+    "søkerNavn": "CAR ANONYMISERT",
+    "søkerPersonnummer": "123456 78901",
+    "brevDato": "10. august 2021",
+    "erAutomatiskBehandlet": true,
+    "erKopi": false,
+    "harVerge": false,
+    "saksnummer": "141081123",
+    "ytelseType": "FP",
+    "behandlesAvKA": false
+  },
+  "behandlingType": "REVURDERING",
+  "behandlingResultatType": "FORELDREPENGER_ENDRET",
+  "konsekvensForInnvilgetYtelse": "ENDRING_I_UTTAK",
+  "søknadsdato": "9. august 2021",
+  "dekningsgrad": 80,
+  "dagsats": 1871,
+  "månedsbeløp": 40538,
+  "seksG": 608106,
+  "inntektOverSeksG": true,
+  "inntektMottattArbeidsgiver": false,
+  "annenForelderHarRett": true,
+  "annenForelderHarRettVurdert": "IKKE_VURDERT",
+  "aleneomsorgKode": "IKKE_VURDERT",
+  "ikkeOmsorg": false,
+  "barnErFødt": true,
+  "årsakErFødselshendelse": false,
+  "gjelderMor": false,
+  "gjelderFødsel": true,
+  "erBesteberegning": false,
+  "ingenRefusjon": true,
+  "delvisRefusjon": false,
+  "fullRefusjon": false,
+  "fbEllerRvInnvilget": false,
+  "antallPerioder": 3,
+  "antallInnvilgedePerioder": 1,
+  "antallAvslåttePerioder": 2,
+  "harInnvilgedePerioder": true,
+  "antallArbeidsgivere": 1,
+  "dagerTaptFørTermin": 0,
+  "disponibleDager": 0,
+  "disponibleFellesDager": 0,
+  "sisteDagAvSistePeriode": "21. september 2020",
+  "stønadsperiodeFom": "30. juni 2020",
+  "stønadsperiodeTom": "21. september 2020",
+  "foreldrepengeperiodenUtvidetUker": 0,
+  "antallBarn": 1,
+  "prematurDager": 0,
+  "perioder": [
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "30. juni 2020",
+      "periodeTom": "21. september 2020",
+      "periodeDagsats": 1871,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "KNOTEMAKERIET AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4005",
+      "periodeFom": "22. september 2020",
+      "periodeTom": "9. november 2020",
+      "periodeDagsats": 0,
+      "antallTapteDager": 35,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "KNOTEMAKERIET AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4002",
+      "periodeFom": "13. september 2021",
+      "periodeTom": "13. desember 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "KNOTEMAKERIET AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    }
+  ],
+  "bruttoBeregningsgrunnlag": 656998,
+  "harBruktBruttoBeregningsgrunnlag": false,
+  "beregningsgrunnlagregler": [
+    {
+      "regelStatus": "ARBEIDSTAKER",
+      "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
+      "snNyoppstartet": false,
+      "andelListe": [
+        {
+          "aktivitetStatus": "ARBEIDSTAKER",
+          "arbeidsgiverNavn": "KNOTEMAKERIET AS",
+          "dagsats": 1871,
+          "månedsinntekt": 54750,
+          "årsinntekt": 656998,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 0
+        }
+      ]
+    }
+  ],
+  "klagefristUker": 6,
+  "lovhjemlerUttak": "§§ 14-9, 14-10 og 14-12",
+  "lovhjemlerBeregning": "§§ 14-7 og 8-30",
+  "inkludereUtbetaling": false,
+  "inkludereUtbetNårGradering": false,
+  "inkludereInnvilget": true,
+  "inkludereAvslag": true,
+  "inkludereNyeOpplysningerUtbet": false
+}
