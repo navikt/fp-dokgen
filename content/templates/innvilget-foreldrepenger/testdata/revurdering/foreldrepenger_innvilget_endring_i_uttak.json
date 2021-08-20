@@ -1,0 +1,307 @@
+{
+  "felles": {
+    "søkerNavn": "HOL ANONYMISERT",
+    "søkerPersonnummer": "123456 12345",
+    "brevDato": "12. august 2021",
+    "erAutomatiskBehandlet": true,
+    "erKopi": true,
+    "harVerge": true,
+    "saksnummer": "123456789",
+    "ytelseType": "FP",
+    "behandlesAvKA": false
+  },
+  "behandlingType": "REVURDERING",
+  "behandlingResultatType": "INNVILGET",
+  "konsekvensForInnvilgetYtelse": "ENDRING_I_UTTAK",
+  "søknadsdato": "2. august 2021",
+  "dekningsgrad": 80,
+  "dagsats": 1871,
+  "månedsbeløp": 40538,
+  "seksG": 608106,
+  "inntektOverSeksG": true,
+  "forMyeUtbetalt": "JOBB",
+  "inntektMottattArbeidsgiver": false,
+  "annenForelderHarRett": true,
+  "annenForelderHarRettVurdert": "IKKE_VURDERT",
+  "aleneomsorgKode": "IKKE_VURDERT",
+  "ikkeOmsorg": false,
+  "barnErFødt": true,
+  "årsakErFødselshendelse": false,
+  "gjelderMor": false,
+  "gjelderFødsel": true,
+  "erBesteberegning": false,
+  "ingenRefusjon": true,
+  "delvisRefusjon": false,
+  "fullRefusjon": false,
+  "fbEllerRvInnvilget": true,
+  "antallPerioder": 12,
+  "antallInnvilgedePerioder": 12,
+  "antallArbeidsgivere": 1,
+  "dagerTaptFørTermin": 0,
+  "disponibleDager": 0,
+  "disponibleFellesDager": 0,
+  "sisteDagAvSistePeriode": "13. august 2021",
+  "stønadsperiodeFom": "18. juni 2020",
+  "stønadsperiodeTom": "13. august 2021",
+  "foreldrepengeperiodenUtvidetUker": 0,
+  "antallBarn": 1,
+  "prematurDager": 0,
+  "perioder": [
+    {
+      "innvilget": true,
+      "årsak": "2011",
+      "periodeFom": "18. juni 2020",
+      "periodeTom": "21. juli 2020",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "BYGG AS",
+          "gradering": false,
+          "prosentArbeid": 100.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "22. juli 2020",
+      "periodeTom": "14. august 2020",
+      "periodeDagsats": 1871,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "BYGG AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2011",
+      "periodeFom": "17. august 2020",
+      "periodeTom": "22. september 2020",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "BYGG AS",
+          "gradering": false,
+          "prosentArbeid": 100.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "23. september 2020",
+      "periodeTom": "16. oktober 2020",
+      "periodeDagsats": 1871,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "BYGG AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2011",
+      "periodeFom": "19. oktober 2020",
+      "periodeTom": "24. november 2020",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "BYGG AS",
+          "gradering": false,
+          "prosentArbeid": 100.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "25. november 2020",
+      "periodeTom": "18. desember 2020",
+      "periodeDagsats": 1871,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "BYGG AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2011",
+      "periodeFom": "21. desember 2020",
+      "periodeTom": "30. mars 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "BYGG AS",
+          "gradering": false,
+          "prosentArbeid": 100.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "31. mars 2021",
+      "periodeTom": "23. april 2021",
+      "periodeDagsats": 1871,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "BYGG AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2011",
+      "periodeFom": "26. april 2021",
+      "periodeTom": "1. juni 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "BYGG AS",
+          "gradering": false,
+          "prosentArbeid": 100.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "2. juni 2021",
+      "periodeTom": "25. juni 2021",
+      "periodeDagsats": 1871,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "BYGG AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2011",
+      "periodeFom": "28. juni 2021",
+      "periodeTom": "6. august 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "BYGG AS",
+          "gradering": false,
+          "prosentArbeid": 100.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "9. august 2021",
+      "periodeTom": "13. august 2021",
+      "periodeDagsats": 1871,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "BYGG AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    }
+  ],
+  "bruttoBeregningsgrunnlag": 641952,
+  "harBruktBruttoBeregningsgrunnlag": false,
+  "beregningsgrunnlagregler": [
+    {
+      "regelStatus": "ARBEIDSTAKER",
+      "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
+      "snNyoppstartet": false,
+      "andelListe": [
+        {
+          "aktivitetStatus": "ARBEIDSTAKER",
+          "arbeidsgiverNavn": "BYGG AS",
+          "dagsats": 1871,
+          "månedsinntekt": 53496,
+          "årsinntekt": 641952,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 0
+        }
+      ]
+    }
+  ],
+  "klagefristUker": 6,
+  "lovhjemlerUttak": "§§ 14-11, 14-12 og forvaltningsloven § 35",
+  "lovhjemlerBeregning": "§§ 14-7 og 8-30 og forvaltningsloven § 35",
+  "inkludereUtbetaling": true,
+  "inkludereUtbetNårGradering": false,
+  "inkludereInnvilget": true,
+  "inkludereAvslag": false,
+  "inkludereNyeOpplysningerUtbet": false
+}
