@@ -2,7 +2,7 @@ package no.nav.foreldrepenger.dokgen.test.templates;
 
 import org.junit.jupiter.api.Test;
 
-import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compile;
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compileContent;
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -13,29 +13,29 @@ public class HenleggelseTest {
 
     @Test
     public void henleggelse_innsyn() throws Exception {
-        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_henleggelse_innsyn"))
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_henleggelse_innsyn"))
             .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_innsyn_nb.txt"));
     }
 
     @Test
     public void henleggelse_klage() throws Exception {
-        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_henleggelse_klage"))
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_henleggelse_klage"))
             .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_klage_nb.txt"));
     }
     @Test
     public void vanligBehandling_nb() throws Exception {
-        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_henleggelse_vanligBehandling"))
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_henleggelse_vanligBehandling"))
             .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_vanligBehandling_nb.txt"));
     }
 
     @Test
     public void vanligBehandling_nn() throws Exception {
-        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_henleggelse_vanligBehandling"))
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_henleggelse_vanligBehandling"))
             .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_vanligBehandling_nn.txt"));
     }
     @Test
     public void vanligBehandling_en() throws Exception {
-        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "en", "test_henleggelse_vanligBehandling"))
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "en", "test_henleggelse_vanligBehandling"))
             .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_vanligBehandling_en.txt"));
     }
 }

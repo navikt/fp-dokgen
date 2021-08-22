@@ -53,7 +53,7 @@ public class TemplateTestService {
     public TemplateTestService() {
     }
 
-    public static String compile(String templateName, String templatePath, String språk, String testDataFilename) throws Exception {
+    public static String compileContent(String templateName, String templatePath, String språk, String testDataFilename) throws Exception {
         String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName + templatePath, språk));
 
         String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(templateName, testDataFilename));

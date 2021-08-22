@@ -2,7 +2,7 @@ package no.nav.foreldrepenger.dokgen.test.templates.innvilgelsefp;
 
 import org.junit.jupiter.api.Test;
 
-import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compile;
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compileContent;
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -13,7 +13,7 @@ public class InnvilgetForeldrepengerAvslagTest {
 
     @Test
     public void skal_fortelle_om_innvilget_uttak_med_prosent_nb() throws Exception {
-        String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "avslag/førstegangsbehandling_avslag");
+        String actual = compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "avslag/førstegangsbehandling_avslag");
 
         String resulatUtenLinjeskift = actual.replace("\n", "");
 

@@ -2,7 +2,7 @@ package no.nav.foreldrepenger.dokgen.test.templates;
 
 import org.junit.jupiter.api.Test;
 
-import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compile;
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compileContent;
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -12,37 +12,37 @@ public class ForeldrepengerInfoTilAnnenForelderTest {
 
     @Test
     public void infobrev_nb() throws Exception {
-        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "infobrev"))
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "infobrev"))
             .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_nb.txt"));
     }
 
     @Test
     public void infobrev_nn() throws Exception {
-        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "infobrev"))
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "infobrev"))
             .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_nn.txt"));
     }
 
     @Test
     public void infobrev_en() throws Exception {
-        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "en", "infobrev"))
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "en", "infobrev"))
             .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_en.txt"));
     }
 
     @Test
     public void infobrev_opphold_nb() throws Exception {
-        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "infobrev_opphold"))
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "infobrev_opphold"))
             .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_opphold_nb.txt"));
     }
 
     @Test
     public void infobrev_opphol_nn() throws Exception {
-        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "infobrev_opphold"))
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "infobrev_opphold"))
             .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_opphold_nn.txt"));
     }
 
     @Test
     public void infobrev_opphold_en() throws Exception {
-        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "en", "infobrev_opphold"))
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "en", "infobrev_opphold"))
             .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_opphold_en.txt"));
     }
 }
