@@ -17,6 +17,12 @@ import com.github.jknack.handlebars.context.MethodValueResolver;
 import com.github.jknack.handlebars.helper.ConditionalHelpers;
 import com.github.jknack.handlebars.helper.StringHelpers;
 import com.github.jknack.handlebars.io.FileTemplateLoader;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.AdditionHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.CaseHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.DivideHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.FormatKronerHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.SwitchHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.TrimDecimalHelper;
 
 public class TemplateTestService {
 

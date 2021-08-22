@@ -1,4 +1,4 @@
-package no.nav.foreldrepenger.dokgen.test.handlebarhelpers;
+package no.nav.foreldrepenger.dokgen.test.handlebarshelpers;
 
 import com.github.jknack.handlebars.Helper;
 import com.github.jknack.handlebars.Options;

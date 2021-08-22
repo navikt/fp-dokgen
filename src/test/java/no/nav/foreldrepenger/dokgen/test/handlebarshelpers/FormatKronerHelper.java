@@ -1,4 +1,4 @@
-package no.nav.foreldrepenger.dokgen.test.handlebarhelpers;
+package no.nav.foreldrepenger.dokgen.test.handlebarshelpers;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
