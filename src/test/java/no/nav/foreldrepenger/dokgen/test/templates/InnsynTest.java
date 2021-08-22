@@ -14,7 +14,7 @@ public class InnsynTest {
     @Test
     public void innsynInnvilget_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "innsyn_innvilget");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "innsyn_innvilget");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_innvilget_nb.txt"));
@@ -23,7 +23,7 @@ public class InnsynTest {
     @Test
     public void innsynDelvisInnvilget_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "innsyn_delvis_innvilget");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "innsyn_delvis_innvilget");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_delvis_innvilget_nb.txt"));
@@ -32,7 +32,7 @@ public class InnsynTest {
     @Test
     public void innsynAvvist_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "innsyn_avvist");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "innsyn_avvist");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_avvist_nb.txt"));
@@ -41,7 +41,7 @@ public class InnsynTest {
     @Test
     public void innsynAvvist_nn() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "innsyn_avvist");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "innsyn_avvist");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_avvist_nn.txt"));
@@ -50,7 +50,7 @@ public class InnsynTest {
     @Test
     public void innsynDelvisInnvilget_nn() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "innsyn_delvis_innvilget");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "innsyn_delvis_innvilget");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_delvis_innvilget_nn.txt"));
@@ -59,7 +59,7 @@ public class InnsynTest {
     @Test
     public void innsynInnvilget_nn() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "innsyn_innvilget");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "innsyn_innvilget");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_innvilget_nn.txt"));
@@ -68,7 +68,7 @@ public class InnsynTest {
     @Test
     public void innsynAvvist_en() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "en", "innsyn_avvist");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "en", "innsyn_avvist");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_avvist_en.txt"));
@@ -77,7 +77,7 @@ public class InnsynTest {
     @Test
     public void innsynDelvisInnvilget_en() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "en", "innsyn_delvis_innvilget");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "en", "innsyn_delvis_innvilget");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_delvis_innvilget_en.txt"));
@@ -86,7 +86,7 @@ public class InnsynTest {
     @Test
     public void innsynInnvilget_en() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "en", "innsyn_innvilget");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "en", "innsyn_innvilget");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_innvilget_en.txt"));

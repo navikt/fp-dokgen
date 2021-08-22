@@ -14,7 +14,7 @@ public class ForeldrepengerInfoTilAnnenForelderTest {
     @Test
     public void infobrev_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "infobrev");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "infobrev");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_nb.txt"));
@@ -23,7 +23,7 @@ public class ForeldrepengerInfoTilAnnenForelderTest {
     @Test
     public void infobrev_nn() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "infobrev");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "infobrev");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_nn.txt"));
@@ -32,7 +32,7 @@ public class ForeldrepengerInfoTilAnnenForelderTest {
     @Test
     public void infobrev_en() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "en", "infobrev");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "en", "infobrev");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_en.txt"));
@@ -41,7 +41,7 @@ public class ForeldrepengerInfoTilAnnenForelderTest {
     @Test
     public void infobrev_opphold_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "infobrev_opphold");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "infobrev_opphold");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_opphold_nb.txt"));
@@ -50,7 +50,7 @@ public class ForeldrepengerInfoTilAnnenForelderTest {
     @Test
     public void infobrev_opphol_nn() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "infobrev_opphold");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "infobrev_opphold");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_opphold_nn.txt"));
@@ -59,7 +59,7 @@ public class ForeldrepengerInfoTilAnnenForelderTest {
     @Test
     public void infobrev_opphold_en() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "en", "infobrev_opphold");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "en", "infobrev_opphold");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_opphold_en.txt"));

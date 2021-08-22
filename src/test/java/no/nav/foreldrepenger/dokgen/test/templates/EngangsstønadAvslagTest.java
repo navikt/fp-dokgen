@@ -15,7 +15,7 @@ public class EngangsstønadAvslagTest {
     @Test
     public void avslagsbrev_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_avslag_fb");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_avslag_fb");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-fb_nb.txt"));
@@ -24,7 +24,7 @@ public class EngangsstønadAvslagTest {
     @Test
     public void avslagsbrev_revurdering_nb() throws Exception {
         // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb","test_avslag_rv");
+        String resultat = templateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb","test_avslag_rv");
 
         // Assert
         assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-rv_nb.txt"));
