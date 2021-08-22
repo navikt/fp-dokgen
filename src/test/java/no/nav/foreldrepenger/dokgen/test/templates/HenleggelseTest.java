@@ -13,39 +13,29 @@ public class HenleggelseTest {
 
     @Test
     public void henleggelse_innsyn() throws Exception {
-        String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_henleggelse_innsyn");
-
-        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_innsyn_nb.txt");
-        assertThat(actual).isEqualToIgnoringWhitespace(expected);
+        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_henleggelse_innsyn"))
+            .isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_innsyn_nb.txt"));
     }
 
     @Test
     public void henleggelse_klage() throws Exception {
-        String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_henleggelse_klage");
-
-        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_klage_nb.txt");
-        assertThat(actual).isEqualToIgnoringWhitespace(expected);
+        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_henleggelse_klage"))
+            .isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_klage_nb.txt"));
     }
     @Test
     public void vanligBehandling_nb() throws Exception {
-        String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_henleggelse_vanligBehandling");
-
-        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_vanligBehandling_nb.txt");
-        assertThat(actual).isEqualToIgnoringWhitespace(expected);
+        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_henleggelse_vanligBehandling"))
+            .isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_vanligBehandling_nb.txt"));
     }
 
     @Test
     public void vanligBehandling_nn() throws Exception {
-        String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_henleggelse_vanligBehandling");
-
-        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_vanligBehandling_nn.txt");
-        assertThat(actual).isEqualToIgnoringWhitespace(expected);
+        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_henleggelse_vanligBehandling"))
+            .isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_vanligBehandling_nn.txt"));
     }
     @Test
     public void vanligBehandling_en() throws Exception {
-        String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "en", "test_henleggelse_vanligBehandling");
-
-        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_vanligBehandling_en.txt");
-        assertThat(actual).isEqualToIgnoringWhitespace(expected);
+        assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "en", "test_henleggelse_vanligBehandling"))
+            .isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_vanligBehandling_en.txt"));
     }
 }
