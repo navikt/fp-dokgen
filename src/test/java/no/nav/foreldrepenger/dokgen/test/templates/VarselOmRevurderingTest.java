@@ -8,7 +8,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class VarselOmRevurderingTest {
     private static final String TEMPLATE_NAME = "varsel-revurdering";
     private static final String TEMPLATE_PATH = "/template_";
-    private static final TemplateTestService templateTestService = new TemplateTestService();
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_ES_kode_ANNET_på_bokmål() throws Exception {
@@ -17,10 +16,10 @@ public class VarselOmRevurderingTest {
 
     private void compileTextAndCompareWithExpected(String nb, String test_es_annet, String s, String templateName) throws Exception {
         // Act
-        String resultat = templateTestService.compile(templateName, TEMPLATE_PATH, nb, test_es_annet);
+        String resultat = TemplateTestService.compile(templateName, TEMPLATE_PATH, nb, test_es_annet);
 
         // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(templateName, templateName + s));
+        assertThat(resultat).isEqualToIgnoringWhitespace(TemplateTestService.getExpectedResult(templateName, templateName + s));
     }
 
     @Test
