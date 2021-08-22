@@ -17,7 +17,7 @@ public class InnvilgetForeldrepengerTest {
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "forstegangsbehandling/automatisk_ingen_gradering_ingen_avslag");
 
         // Assert
-        assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME,  "forstegangsbehandling/forstegangsbehandling_uten_gradering_avslag_nb.txt"));
+        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME,  "forstegangsbehandling/forstegangsbehandling_uten_gradering_avslag_nb.txt"));
     }
 
     @Test
@@ -26,7 +26,7 @@ public class InnvilgetForeldrepengerTest {
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "forstegangsbehandling/med_avslag_periode");
 
         // Assert
-        assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME,  "forstegangsbehandling/forstegangsbehandling_med_avslag_periode_nb.txt"));
+        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME,  "forstegangsbehandling/forstegangsbehandling_med_avslag_periode_nb.txt"));
     }
 
     @Test
@@ -34,7 +34,7 @@ public class InnvilgetForeldrepengerTest {
         // Act
         String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "forstegangsbehandling/med_fritekst");
         // Assert
-        assertThat(resultat).isEqualToNormalizingWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME,  "forstegangsbehandling/forstegangsbehandling_med_fritekst_nb.txt"));
+        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME,  "forstegangsbehandling/forstegangsbehandling_med_fritekst_nb.txt"));
     }
 
     @Test
