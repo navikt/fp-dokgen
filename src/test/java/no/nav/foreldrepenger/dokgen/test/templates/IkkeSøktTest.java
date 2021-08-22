@@ -3,7 +3,7 @@ package no.nav.foreldrepenger.dokgen.test.templates;
 import org.junit.jupiter.api.Test;
 
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compile;
-import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpectedResult;
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class IkkeSøktTest {
@@ -13,24 +13,24 @@ public class IkkeSøktTest {
     @Test
     public void skal_generere_brev_for_ikke_søkt_FP_på_bokmål() throws Exception {
         assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_fp"))
-            .isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nb.txt"));
+            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nb.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_FP_på_nynorsk() throws Exception {
         assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_fp"))
-            .isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nn.txt"));
+            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nn.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_SVP_på_bokmål() throws Exception {
         assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_svp"))
-            .isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nb.txt"));
+            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nb.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_SVP_på_nynorsk() throws Exception {
         assertThat(compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_svp"))
-            .isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nn.txt"));
+            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nn.txt"));
     }
 }

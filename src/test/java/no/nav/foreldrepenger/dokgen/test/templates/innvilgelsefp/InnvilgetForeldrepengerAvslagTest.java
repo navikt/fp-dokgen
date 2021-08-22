@@ -3,7 +3,7 @@ package no.nav.foreldrepenger.dokgen.test.templates.innvilgelsefp;
 import org.junit.jupiter.api.Test;
 
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compile;
-import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpectedResult;
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class InnvilgetForeldrepengerAvslagTest {
@@ -17,7 +17,7 @@ public class InnvilgetForeldrepengerAvslagTest {
 
         String resulatUtenLinjeskift = actual.replace("\n", "");
 
-        String expected = getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_førstegangsbehandling_avslag_nb.txt");
+        String expected = getExpected(TEMPLATE_NAME, EXPECTED_PREFIX + "_førstegangsbehandling_avslag_nb.txt");
         assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 

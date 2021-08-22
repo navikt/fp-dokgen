@@ -63,7 +63,7 @@ public class TemplateTestService {
         return template.apply(with(mergeFields));
     }
 
-    public static String getExpectedResult(String templateName, String expectedFileName) throws Exception {
+    public static String getExpected(String templateName, String expectedFileName) throws Exception {
         Path expectedPath = FileStructureUtil.getExpectedPath(templateName, expectedFileName);
         return readFile(expectedPath);
     }
