@@ -14,90 +14,103 @@ public class VarselOmRevurderingTest {
     public void skal_generere_brev_for_varsel_om_revurdering_ES_kode_ANNET_på_bokmål() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_es_ANNET");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_ANNET_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_ANNET_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_ES_kode_ANNET_på_engelsk() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "en", "test_es_ANNET");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_ANNET_en.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_ANNET_en.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_ES_kode_BARNIKKEREG_på_bokmål() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_es_BARNIKKEREG");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_BARNIKKEREG_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_BARNIKKEREG_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_ES_kode_BARNIKKEREG_på_engelsk() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "en", "test_es_BARNIKKEREG");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_BARNIKKEREG_en.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_BARNIKKEREG_en.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_FP_kode_AKTIVITET_flere_opplysninger_og_2barn_på_bokmål() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_fp_AKTIVITET_flere_opplysninger_2barn");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_AKTIVITET_flere_opplysninger_2barn_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_AKTIVITET_flere_opplysninger_2barn_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_FP_kode_AKTIVITET_flere_opplysninger_og_2barn_på_nynorsk() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_fp_AKTIVITET_flere_opplysninger_2barn");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_AKTIVITET_flere_opplysninger_2barn_nn.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_AKTIVITET_flere_opplysninger_2barn_nn.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_FP_kode_IKKEOPPTJENT_ikke_flere_opplysninger_på_bokmål() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_fp_IKKEOPPTJENT_ikke_flere_opplysninger");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_IKKEOPPTJENT_ikke_flere_opplysninger_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_IKKEOPPTJENT_ikke_flere_opplysninger_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_FP_kode_JOBBFULLTID_på_bokmål() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_fp_JOBBFULLTID");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_JOBBFULLTID_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_JOBBFULLTID_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_FP_kode_JOBBFULLTID_på_nynorsk() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_fp_JOBBFULLTID");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_JOBBFULLTID_nn.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_JOBBFULLTID_nn.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_FP_kode_ANNET_på_bokmål() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_fp_ANNET");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_ANNET_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_ANNET_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_SVP_kode_JOBBFULLTID_på_bokmål() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_svp_JOBBFULLTID");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_JOBBFULLTID_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_JOBBFULLTID_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_SVP_kode_JOBBFULLTID_på_nynorsk() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_svp_JOBBFULLTID");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_JOBBFULLTID_nn.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_JOBBFULLTID_nn.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_SVP_kode_JOBB6MND_på_bokmål() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_svp_JOBB6MND");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_JOBB6MND_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_JOBB6MND_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 }

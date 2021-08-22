@@ -15,41 +15,47 @@ public class InnvilgetForeldrepengerInnvilgetTest {
     public void skal_fortelle_om_innvilget_uttak_med_prosent_nb() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "innvilget/førstegangsbehandling_prosent");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "prosent_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "prosent_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_fortelle_om_innvilget_fullt_uttak_uten_prosent_nb() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "innvilget/førstegangsbehandling_fullt");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "fullt_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "fullt_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_liste_ut_arbeidsforhold_2_med_deltidstekst_og_arbeidsforhold_3_med_selvom_tekst_og_arbeidsforhold_4_med_permisjonstekst() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "innvilget/førstegangsbehandling_arbeidsforhold");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "arbeidsforhold_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "arbeidsforhold_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_liste_ut_annen_aktivitet_når_det_er_frilans_med_gradering_og_næring_når_det_er_gradering() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "innvilget/førstegangsbehandling_annenaktivitet_næring");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "annenaktivitet_næring_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "annenaktivitet_næring_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_liste_ut_tekster_for_alle_årsakene_som_finnes_i_periodelista() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "innvilget/førstegangsbehandling_enkeltårsaker");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "enkeltårsaker_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "enkeltårsaker_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_ikke_bruke_punktliste_når_bare_en_periode_er_innvilget() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "innvilget/førstegangsbehandling_innvilget_og_avslått");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "innvilget_og_avslått_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "innvilget_og_avslått_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 }

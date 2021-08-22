@@ -15,20 +15,23 @@ public class InnvilgetForeldrepengerUtbetalingTest {
     public void undermal_utbetaling_ingen_refusjon_nb() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "utbetaling/førstegangsbehandling_ingen_refusjon");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_ingen_refusjon_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_ingen_refusjon_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void undermal_utbetaling_full_refusjon_rettigheter_nb() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "utbetaling/førstegangsbehandling_full_refusjon");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_full_refusjon_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_full_refusjon_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void undermal_utbetaling_delvis_refusjon_rettigheter_nb() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "utbetaling/førstegangsbehandling_delvis_refusjon");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_delvis_refusjon_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_delvis_refusjon_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 }

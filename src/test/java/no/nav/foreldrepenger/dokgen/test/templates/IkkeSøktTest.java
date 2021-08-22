@@ -14,27 +14,31 @@ public class IkkeSøktTest {
     public void skal_generere_brev_for_ikke_søkt_FP_på_bokmål() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_fp");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_FP_på_nynorsk() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_fp");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nn.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nn.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_SVP_på_bokmål() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_svp");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_SVP_på_nynorsk() throws Exception {
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_svp");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nn.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nn.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 }

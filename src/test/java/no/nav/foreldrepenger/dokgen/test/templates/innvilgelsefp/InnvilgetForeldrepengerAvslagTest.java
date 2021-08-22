@@ -17,7 +17,8 @@ public class InnvilgetForeldrepengerAvslagTest {
 
         String resulatUtenLinjeskift = actual.replace("\n", "");
 
-        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_førstegangsbehandling_avslag_nb.txt"));
+        String expected = getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_førstegangsbehandling_avslag_nb.txt");
+        assertThat(actual).isEqualToIgnoringWhitespace(expected);
     }
 
 }
