@@ -1,10 +1,10 @@
 package no.nav.foreldrepenger.dokgen.test.templates;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import org.junit.jupiter.api.Test;
 
-import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compile;
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpectedResult;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class EngangsstønadAvslagTest {
 
@@ -14,19 +14,19 @@ public class EngangsstønadAvslagTest {
     @Test
     public void avslagsbrev_nb() throws Exception {
         // Act
-        String resultat = TemplateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_avslag_fb");
+        String resultat = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_avslag_fb");
 
         // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(TemplateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-fb_nb.txt"));
+        assertThat(resultat).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-fb_nb.txt"));
     }
 
     @Test
     public void avslagsbrev_revurdering_nb() throws Exception {
         // Act
-        String resultat = TemplateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb","test_avslag_rv");
+        String resultat = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb","test_avslag_rv");
 
         // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(TemplateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-rv_nb.txt"));
+        assertThat(resultat).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-rv_nb.txt"));
     }
 
 }

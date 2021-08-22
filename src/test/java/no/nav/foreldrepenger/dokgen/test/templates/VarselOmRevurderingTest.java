@@ -1,8 +1,9 @@
 package no.nav.foreldrepenger.dokgen.test.templates;
 
-import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
 import org.junit.jupiter.api.Test;
 
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compile;
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpectedResult;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class VarselOmRevurderingTest {
@@ -16,10 +17,10 @@ public class VarselOmRevurderingTest {
 
     private void compileTextAndCompareWithExpected(String nb, String test_es_annet, String s, String templateName) throws Exception {
         // Act
-        String resultat = TemplateTestService.compile(templateName, TEMPLATE_PATH, nb, test_es_annet);
+        String resultat = compile(templateName, TEMPLATE_PATH, nb, test_es_annet);
 
         // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(TemplateTestService.getExpectedResult(templateName, templateName + s));
+        assertThat(resultat).isEqualToIgnoringWhitespace(getExpectedResult(templateName, templateName + s));
     }
 
     @Test

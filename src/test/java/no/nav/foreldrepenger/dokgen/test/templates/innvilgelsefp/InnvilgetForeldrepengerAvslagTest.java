@@ -1,8 +1,9 @@
 package no.nav.foreldrepenger.dokgen.test.templates.innvilgelsefp;
 
-import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
 import org.junit.jupiter.api.Test;
 
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compile;
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpectedResult;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class InnvilgetForeldrepengerAvslagTest {
@@ -13,12 +14,12 @@ public class InnvilgetForeldrepengerAvslagTest {
     @Test
     public void skal_fortelle_om_innvilget_uttak_med_prosent_nb() throws Exception {
         // Act
-        String resultat = TemplateTestService.compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "avslag/førstegangsbehandling_avslag");
+        String resultat = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "avslag/førstegangsbehandling_avslag");
 
         String resulatUtenLinjeskift = resultat.replace("\n", "");
 
         // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(TemplateTestService.getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_førstegangsbehandling_avslag_nb.txt"));
+        assertThat(resultat).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_førstegangsbehandling_avslag_nb.txt"));
     }
 
 }
