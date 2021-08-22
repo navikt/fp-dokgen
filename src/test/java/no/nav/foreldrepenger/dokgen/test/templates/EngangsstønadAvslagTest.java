@@ -14,19 +14,19 @@ public class EngangsstønadAvslagTest {
     @Test
     public void avslagsbrev_nb() throws Exception {
         // Act
-        String resultat = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_avslag_fb");
+        String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_avslag_fb");
 
         // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-fb_nb.txt"));
+        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-fb_nb.txt"));
     }
 
     @Test
     public void avslagsbrev_revurdering_nb() throws Exception {
         // Act
-        String resultat = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb","test_avslag_rv");
+        String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb","test_avslag_rv");
 
         // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-rv_nb.txt"));
+        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "-rv_nb.txt"));
     }
 
 }

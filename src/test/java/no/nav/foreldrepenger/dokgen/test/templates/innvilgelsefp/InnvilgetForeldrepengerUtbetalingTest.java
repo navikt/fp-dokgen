@@ -14,27 +14,27 @@ public class InnvilgetForeldrepengerUtbetalingTest {
     @Test
     public void undermal_utbetaling_ingen_refusjon_nb() throws Exception {
         // Act
-        String resultat = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "utbetaling/førstegangsbehandling_ingen_refusjon");
+        String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "utbetaling/førstegangsbehandling_ingen_refusjon");
 
         // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_ingen_refusjon_nb.txt"));
+        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_ingen_refusjon_nb.txt"));
     }
 
     @Test
     public void undermal_utbetaling_full_refusjon_rettigheter_nb() throws Exception {
         // Act
-        String resultat = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "utbetaling/førstegangsbehandling_full_refusjon");
+        String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "utbetaling/førstegangsbehandling_full_refusjon");
 
         // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_full_refusjon_nb.txt"));
+        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_full_refusjon_nb.txt"));
     }
 
     @Test
     public void undermal_utbetaling_delvis_refusjon_rettigheter_nb() throws Exception {
         // Act
-        String resultat = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "utbetaling/førstegangsbehandling_delvis_refusjon");
+        String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "utbetaling/førstegangsbehandling_delvis_refusjon");
 
         // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_delvis_refusjon_nb.txt"));
+        assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_utbetaling_delvis_refusjon_nb.txt"));
     }
 }
