@@ -13,12 +13,10 @@ public class InnvilgetForeldrepengerAvslagTest {
 
     @Test
     public void skal_fortelle_om_innvilget_uttak_med_prosent_nb() throws Exception {
-        // Act
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "avslag/førstegangsbehandling_avslag");
 
         String resulatUtenLinjeskift = actual.replace("\n", "");
 
-        // Assert
         assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, EXPECTED_PREFIX + "_førstegangsbehandling_avslag_nb.txt"));
     }
 

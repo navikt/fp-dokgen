@@ -12,37 +12,29 @@ public class IkkeSøktTest {
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_FP_på_bokmål() throws Exception {
-        // Act
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_fp");
 
-        // Assert
         assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nb.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_FP_på_nynorsk() throws Exception {
-        // Act
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_fp");
 
-        // Assert
         assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nn.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_SVP_på_bokmål() throws Exception {
-        // Act
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_svp");
 
-        // Assert
         assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nb.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_SVP_på_nynorsk() throws Exception {
-        // Act
         String actual = compile(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_svp");
 
-        // Assert
         assertThat(actual).isEqualToIgnoringWhitespace(getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nn.txt"));
     }
 }
