@@ -17,15 +17,21 @@ import com.github.jknack.handlebars.context.MethodValueResolver;
 import com.github.jknack.handlebars.helper.ConditionalHelpers;
 import com.github.jknack.handlebars.helper.StringHelpers;
 import com.github.jknack.handlebars.io.FileTemplateLoader;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.AdditionHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.CaseHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.DivideHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.FormatKronerHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.SwitchHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.TrimDecimalHelper;
 
 public class TemplateTestService {
 
-    private final Handlebars handlebars;
+    private static final Handlebars handlebars;
 
-    public TemplateTestService() {
+    static {
         handlebars = Files.exists(FileStructureUtil.getTemplateRootPath())
-                ? new Handlebars(new FileTemplateLoader(FileStructureUtil.getTemplateRootPath().toFile()))
-                : new Handlebars();
+            ? new Handlebars(new FileTemplateLoader(FileStructureUtil.getTemplateRootPath().toFile()))
+            : new Handlebars();
         handlebars.registerHelper("eq", ConditionalHelpers.eq);
         handlebars.registerHelper("neq", ConditionalHelpers.neq);
         handlebars.registerHelper("gt", ConditionalHelpers.gt);
@@ -44,7 +50,10 @@ public class TemplateTestService {
         handlebars.registerHelpers(StringHelpers.class);
     }
 
-    public String compileTemplateWithTestData(String templateName, String templatePath, String språk, String testDataFilename) throws Exception {
+    public TemplateTestService() {
+    }
+
+    public static String compileContent(String templateName, String templatePath, String språk, String testDataFilename) throws Exception {
         String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName + templatePath, språk));
 
         String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(templateName, testDataFilename));
@@ -54,21 +63,21 @@ public class TemplateTestService {
         return template.apply(with(mergeFields));
     }
 
-    public String getExpectedResult(String templateName, String expectedFileName) throws Exception {
+    public static String getExpected(String templateName, String expectedFileName) throws Exception {
         Path expectedPath = FileStructureUtil.getExpectedPath(templateName, expectedFileName);
         return readFile(expectedPath);
     }
 
-    private String readFile(Path file) throws Exception {
+    private static String readFile(Path file) throws Exception {
         return Files.readString(file);
     }
 
-    private JsonNode getJsonFromString(String json) throws IOException {
+    private static JsonNode getJsonFromString(String json) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         return mapper.readTree(json);
     }
 
-    private Context with(JsonNode model) {
+    private static Context with(JsonNode model) {
         return Context
                 .newBuilder(model)
                 .resolver(JsonNodeValueResolver.INSTANCE,

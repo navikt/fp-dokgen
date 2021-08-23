@@ -1,57 +1,43 @@
 package no.nav.foreldrepenger.dokgen.test.templates;
 
-import no.nav.foreldrepenger.dokgen.test.support.TemplateTestService;
+
 import org.junit.jupiter.api.Test;
 
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compileContent;
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class IngenEndringTest {
     private static final String TEMPLATE_NAME = "ingen-endring";
     private static final String TEMPLATE_PATH = "/template_";
-    private static final TemplateTestService templateTestService = new TemplateTestService();
 
     @Test
     public void skal_generere_brev_for_ingen_endring_FP_på_bokmål() throws Exception {
-        // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_fp");
-
-        // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nb.txt"));
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_fp"))
+            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nb.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ingen_endring_FP_på_nynorsk() throws Exception {
-        // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_fp");
-
-        // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nn.txt"));
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_fp"))
+            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nn.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ingen_endring_ES_på_bokmål() throws Exception {
-        // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_es");
-
-        // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_nb.txt"));
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_es"))
+            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_es_nb.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ingen_endring_ES_på_engelsk() throws Exception {
-        // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "en", "test_es");
-
-        // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_es_en.txt"));
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "en", "test_es"))
+            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_es_en.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ingen_endring_SVP_på_bokmål() throws Exception {
-        // Act
-        String resultat = templateTestService.compileTemplateWithTestData(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_svp");
-
-        // Assert
-        assertThat(resultat).isEqualToIgnoringWhitespace(templateTestService.getExpectedResult(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nb.txt"));
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_svp"))
+            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nb.txt"));
     }
 }

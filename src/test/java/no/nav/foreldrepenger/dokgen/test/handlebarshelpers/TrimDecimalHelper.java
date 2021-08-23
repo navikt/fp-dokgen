@@ -1,4 +1,4 @@
-package no.nav.foreldrepenger.dokgen.test.support;
+package no.nav.foreldrepenger.dokgen.test.handlebarshelpers;
 
 import java.math.BigDecimal;
 
