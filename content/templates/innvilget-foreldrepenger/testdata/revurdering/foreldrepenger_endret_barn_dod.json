@@ -1,155 +1,168 @@
 {
   "felles": {
-    "søkerNavn": "ING ANONYMISERT",
-    "søkerPersonnummer": "11111 11111",
-    "brevDato": "13. august 2021",
-    "erAutomatiskBehandlet": true,
+    "søkerNavn": "Langbein",
+    "søkerPersonnummer": "111111 22222",
+    "brevDato": "9. juli 2021",
+    "erAutomatiskBehandlet": false,
     "erKopi": false,
     "harVerge": false,
-    "saksnummer": "222222222",
-    "ytelseType": "FP",
-    "behandlesAvKA": false
+    "saksnummer": "123456789",
+    "ytelseType": "FP"
   },
   "behandlingType": "REVURDERING",
   "behandlingResultatType": "FORELDREPENGER_ENDRET",
-  "konsekvensForInnvilgetYtelse": "ENDRING_I_BEREGNING",
-  "søknadsdato": "15. november 2020",
-  "dekningsgrad": 80,
-  "dagsats": 1436,
-  "månedsbeløp": 31113,
+  "konsekvensForInnvilgetYtelse": "ENDRING_I_UTTAK",
+  "søknadsdato": "27. august 2020",
+  "dekningsgrad": 100,
+  "dagsats": 2339,
+  "månedsbeløp": 50678,
   "seksG": 608106,
-  "inntektOverSeksG": false,
-  "inntektMottattArbeidsgiver": true,
+  "inntektOverSeksG": true,
+  "inntektMottattArbeidsgiver": false,
   "annenForelderHarRett": true,
   "annenForelderHarRettVurdert": "IKKE_VURDERT",
   "aleneomsorgKode": "IKKE_VURDERT",
   "ikkeOmsorg": false,
   "barnErFødt": true,
   "årsakErFødselshendelse": false,
-  "gjelderMor": false,
+  "gjelderMor": true,
   "gjelderFødsel": true,
   "erBesteberegning": false,
   "ingenRefusjon": false,
-  "delvisRefusjon": true,
-  "fullRefusjon": false,
+  "delvisRefusjon": false,
+  "fullRefusjon": true,
   "fbEllerRvInnvilget": false,
-  "antallPerioder": 5,
-  "antallInnvilgedePerioder": 5,
-  "antallAvslåttePerioder": 0,
+  "antallPerioder": 6,
+  "harInnvilgedePerioder": true,
   "antallArbeidsgivere": 1,
   "dagerTaptFørTermin": 0,
-  "disponibleDager": 0,
-  "disponibleFellesDager": 0,
-  "sisteDagAvSistePeriode": "10. september 2021",
-  "stønadsperiodeFom": "9. september 2020",
-  "stønadsperiodeTom": "10. september 2021",
+  "disponibleDager": 32,
+  "disponibleFellesDager": 71,
+  "sisteDagAvSistePeriode": "15. juni 2021",
+  "stønadsperiodeFom": "2. november 2020",
+  "stønadsperiodeTom": "15. juni 2021",
   "foreldrepengeperiodenUtvidetUker": 0,
   "antallBarn": 1,
   "prematurDager": 0,
-  "antallDødeBarn": 0,
+  "antallDødeBarn": 1,
+  "dødsdato": "15. juni 2021",
   "perioder": [
     {
       "innvilget": true,
-      "årsak": "2003",
-      "periodeFom": "9. september 2020",
-      "periodeTom": "10. september 2020",
-      "periodeDagsats": 1436,
-      "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100.0,
-      "arbeidsforholdsliste": [
-        {
-          "arbeidsgiverNavn": "FIRMA AS",
-          "gradering": false,
-          "prosentArbeid": 0.0,
-          "stillingsprosent": 100.0,
-          "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
-        }
-      ],
-      "avslått": false
-    },
-    {
-      "innvilget": true,
-      "årsak": "2003",
-      "periodeFom": "22. september 2020",
-      "periodeTom": "23. september 2020",
-      "periodeDagsats": 1436,
-      "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100.0,
-      "arbeidsforholdsliste": [
-        {
-          "arbeidsgiverNavn": "FIRMA AS",
-          "gradering": false,
-          "prosentArbeid": 0.0,
-          "stillingsprosent": 100.0,
-          "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
-        }
-      ],
-      "avslått": false
-    },
-    {
-      "innvilget": true,
       "årsak": "2002",
-      "periodeFom": "30. september 2020",
-      "periodeTom": "15. oktober 2020",
-      "periodeDagsats": 1436,
+      "periodeFom": "2. november 2020",
+      "periodeTom": "3. desember 2020",
+      "periodeDagsats": 2339,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "FIRMA AS",
+          "arbeidsgiverNavn": "ANDEBU TV AS",
           "gradering": false,
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 100.0,
           "naturalytelseNyDagsats": 0
         }
-      ],
-      "avslått": false
+      ]
     },
     {
       "innvilget": true,
-      "årsak": "2021",
-      "periodeFom": "16. oktober 2020",
-      "periodeTom": "30. oktober 2020",
-      "periodeDagsats": 1436,
+      "årsak": "2013",
+      "periodeFom": "4. desember 2020",
+      "periodeTom": "26. februar 2021",
+      "periodeDagsats": 0,
       "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 100.0,
+      "prioritertUtbetalingsgrad": 0.0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "FIRMA AS",
+          "arbeidsgiverNavn": "ANDEBU TV AS",
           "gradering": false,
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
-          "utbetalingsgrad": 100.0,
+          "utbetalingsgrad": 0.0,
           "naturalytelseNyDagsats": 0
         }
-      ],
-      "avslått": false
+      ]
     },
     {
       "innvilget": true,
       "årsak": "2003",
-      "periodeFom": "7. mai 2021",
-      "periodeTom": "10. september 2021",
-      "periodeDagsats": 1436,
+      "periodeFom": "27. februar 2021",
+      "periodeTom": "31. mars 2021",
+      "periodeDagsats": 2339,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "FIRMA AS",
+          "arbeidsgiverNavn": "ANDEBU TV AS",
           "gradering": false,
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 100.0,
           "naturalytelseNyDagsats": 0
         }
-      ],
-      "avslått": false
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2013",
+      "periodeFom": "1. april 2021",
+      "periodeTom": "14. mai 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "ANDEBU TV AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2003",
+      "periodeFom": "15. mai 2021",
+      "periodeTom": "13. juni 2021",
+      "periodeDagsats": 2339,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "ANDEBU TV AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2013",
+      "periodeFom": "14. juni 2021",
+      "periodeTom": "15. juni 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "ANDEBU TV AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
     }
   ],
-  "bruttoBeregningsgrunnlag": 466842,
+  "bruttoBeregningsgrunnlag": 612804,
   "harBruktBruttoBeregningsgrunnlag": false,
   "beregningsgrunnlagregler": [
     {
@@ -159,10 +172,10 @@
       "andelListe": [
         {
           "aktivitetStatus": "ARBEIDSTAKER",
-          "arbeidsgiverNavn": "FIRMA AS",
-          "dagsats": 1436,
-          "månedsinntekt": 38904,
-          "årsinntekt": 466842,
+          "arbeidsgiverNavn": "ANDEBU TV AS",
+          "dagsats": 2339,
+          "månedsinntekt": 51067,
+          "årsinntekt": 612804,
           "etterlønnSluttpakke": false,
           "sistLignedeÅr": 0
         }
@@ -170,11 +183,11 @@
     }
   ],
   "klagefristUker": 6,
-  "lovhjemlerUttak": "§§ 14-9, 14-12 og forvaltningsloven § 35",
-  "lovhjemlerBeregning": "§§ 14-7 og 8-30 og forvaltningsloven § 35",
+  "lovhjemlerUttak": "§§ 14-9, 14-10, 14-11 og 14-12",
+  "lovhjemlerBeregning": "§§ 14-7 og 8-30",
   "inkludereUtbetaling": false,
   "inkludereUtbetNårGradering": false,
-  "inkludereInnvilget": false,
+  "inkludereInnvilget": true,
   "inkludereAvslag": false,
   "inkludereNyeOpplysningerUtbet": false
 }

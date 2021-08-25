@@ -38,19 +38,24 @@ public class InnvilgetForeldrepengerTest {
     @Test
     public void revurdering_foreldrepenger_endret_endring_i_uttak() throws Exception {
         assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "revurdering/foreldrepenger_endret_endring_i_uttak"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "revurdering/revurdering_foreldrepenger_endret_nb.txt"));
+            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "revurdering/foreldrepenger_endret_nb.txt"));
     }
 
     @Test
     public void revurdering_foreldrepenger_innvilget_endring_i_uttak() throws Exception {
         assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "revurdering/foreldrepenger_innvilget_endring_i_uttak"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "revurdering/revurdering_foreldrepenger_innvilget_endring_i_uttak_nb.txt"));
+            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "revurdering/foreldrepenger_innvilget_endring_i_uttak_nb.txt"));
     }
 
     @Test
     public void revurdering_foreldrepenger_endret_endring_i_beregning() throws Exception {
         assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "revurdering/foreldrepenger_endret_endring_i_beregning"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "revurdering/revurdering_foreldrepenger_endret_endring_i_beregning_nb.txt"));
+            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "revurdering/foreldrepenger_endret_endring_i_beregning_nb.txt"));
+    }
+    @Test
+    public void revurdering_foreldrepenger_dødt_barn() throws Exception {
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "revurdering/foreldrepenger_endret_barn_dod"))
+                .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "revurdering/foreldrepenger_endret_barn_dod_nb.txt"));
     }
 
 }

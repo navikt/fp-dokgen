@@ -10,6 +10,9 @@
 {{/if}}
 {{> brukerdetaljer_nb }}
 
+{{#gt antallDødeBarn 0}}
+{{> innvilget-foreldrepenger/dodt_barn_nb}}
+{{else}}
 {{#if (and (eq behandlingType "REVURDERING")(eq behandlingResultatType "INNVILGET"))}}Vi har vurdert saken din på nytt, og du har rett til foreldrepenger. Vi har derfor endret vedtaket du har fått tidligere.{{/if}}
 
 {{#if inkludereUtbetaling}}{{> innvilget-foreldrepenger/utbetaling_nb}}{{/if}}
@@ -57,7 +60,7 @@ Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin,
 {{/if}}
 
 {{#if (and (neq lovhjemlerUttak "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
-Vedtaket er gjort etter folketrygdloven {{lovhjemlerUttak}}.
+{{> innvilget-foreldrepenger/felles/lovhjemler_uttak_nb }}
 {{/if}}
 
 {{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
@@ -72,7 +75,7 @@ Vedtaket er gjort etter folketrygdloven {{lovhjemlerUttak}}.
 {{/neq}}
 
 {{#if (and (eq inntektOverSeksG true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-Foreldrepengene dine er fastsatt til {{format-kroner seksG}} kroner i året, som er seks ganger grunnbeløpet i folketrygden. Du tjener mer enn dette, men du får ikke foreldrepenger for den delen av inntekten som overstiger seks ganger grunnbeløpet.
+{{> innvilget-foreldrepenger/felles/over_seksG_nb }}
 {{/if}}
 
 {{#eq dekningsgrad 80}}
@@ -84,7 +87,7 @@ Foreldrepengene dine er fastsatt til {{format-kroner seksG}} kroner i året, som
 {{/eq}}
 
 {{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-Beregningen er gjort etter folketrygdloven {{lovhjemlerBeregning}}.
+{{> innvilget-foreldrepenger/felles/lovhjemler_beregning_nb }}
 {{/if}}
 
 {{#if (and (eq inntektMottattArbeidsgiver true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
@@ -110,6 +113,8 @@ Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, 
 <br/>
 <br/>
 <br/>
+{{/gt}}
+
 **Du har rett til å klage**<br/>
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>

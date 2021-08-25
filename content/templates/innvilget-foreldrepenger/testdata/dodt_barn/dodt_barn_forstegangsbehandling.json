@@ -1,0 +1,123 @@
+{
+  "felles": {
+    "søkerNavn": "Donald Duck",
+    "søkerPersonnummer": "123456 12345",
+    "brevDato": "19. august 2021",
+    "erAutomatiskBehandlet": false,
+    "erKopi": false,
+    "harVerge": false,
+    "saksnummer": "123456789",
+    "ytelseType": "FP",
+    "behandlesAvKA": false,
+    "erUtkast": false
+  },
+  "behandlingType": "FØRSTEGANGSSØKNAD",
+  "behandlingResultatType": "INNVILGET",
+  "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
+  "søknadsdato": "14. juni 2021",
+  "dekningsgrad": 100,
+  "harUtbetaling": true,
+  "dagsats": 2455,
+  "månedsbeløp": 53191,
+  "seksG": 638394,
+  "inntektOverSeksG": true,
+  "inntektMottattArbeidsgiver": false,
+  "annenForelderHarRett": true,
+  "annenForelderHarRettVurdert": "IKKE_VURDERT",
+  "aleneomsorgKode": "IKKE_VURDERT",
+  "ikkeOmsorg": false,
+  "barnErFødt": true,
+  "årsakErFødselshendelse": false,
+  "gjelderMor": true,
+  "gjelderFødsel": true,
+  "erBesteberegning": false,
+  "ingenRefusjon": false,
+  "delvisRefusjon": false,
+  "fullRefusjon": true,
+  "fbEllerRvInnvilget": true,
+  "antallPerioder": 2,
+  "antallInnvilgedePerioder": 1,
+  "antallAvslåttePerioder": 1,
+  "antallArbeidsgivere": 1,
+  "dagerTaptFørTermin": 14,
+  "disponibleDager": 45,
+  "disponibleFellesDager": 80,
+  "sisteDagAvSistePeriode": "25. september 2021",
+  "stønadsperiodeFom": "13. august 2021",
+  "stønadsperiodeTom": "25. september 2021",
+  "foreldrepengeperiodenUtvidetUker": 0,
+  "antallBarn": 1,
+  "prematurDager": 0,
+  "antallDødeBarn": 1,
+  "dødsdato":"15. august 2021",
+  "perioder": [
+    {
+      "innvilget": true,
+      "årsak": "2006",
+      "periodeFom": "13. august 2021",
+      "periodeTom": "25. september 2021",
+      "periodeDagsats": 2455,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "ADVOKATEN AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ],
+      "avslått": false
+    },
+    {
+      "innvilget": false,
+      "årsak": "4072",
+      "periodeFom": "26. september 2021",
+      "periodeTom": "27. mai 2022",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "ADVOKATEN AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ],
+      "avslått": true
+    }
+  ],
+  "bruttoBeregningsgrunnlag": 900000,
+  "harBruktBruttoBeregningsgrunnlag": false,
+  "beregningsgrunnlagregler": [
+    {
+      "regelStatus": "ARBEIDSTAKER",
+      "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 1,
+      "snNyoppstartet": false,
+      "andelListe": [
+        {
+          "aktivitetStatus": "ARBEIDSTAKER",
+          "arbeidsgiverNavn": "ADVOKATEN AS",
+          "dagsats": 2455,
+          "månedsinntekt": 75000,
+          "årsinntekt": 900000,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 0
+        }
+      ]
+    }
+  ],
+  "klagefristUker": 6,
+  "lovhjemlerUttak": "§§ 14-9, 14-10 og 14-12",
+  "lovhjemlerBeregning": "§§ 14-7 og 8-30",
+  "inkludereUtbetaling": true,
+  "inkludereUtbetNårGradering": false,
+  "inkludereInnvilget": true,
+  "inkludereAvslag": true,
+  "inkludereNyeOpplysningerUtbet": false
+}
