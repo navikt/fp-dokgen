@@ -1,0 +1,75 @@
+{
+  "$id": "foreldrepenger-avslag",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for brev Foreldrepenger avslag",
+  "type": "object",
+  "required": [
+    "felles",
+    "antallBarn",
+    "klageFristUker",
+    "lovhjemmelForAvslag",
+    "antallPerioder",
+    "avslåttePerioder"
+  ],
+  "$defs": {
+    "avslåttPeriode": {
+      "type": "object",
+      "required": [
+        "avslagsårsak"
+      ],
+      "properties": {
+        "avslagsårsak": {
+          "type": "string"
+        },
+        "periodeFom": {
+          "type": "string"
+        },
+        "periodeTom": {
+          "type": "string"
+        },
+        "antallTapteDager": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "properties": {
+    "felles": {
+      "$ref": "file:content/templates/schema_felles.json"
+    },
+    "relasjonskode": {
+      "type": "string"
+    },
+    "mottattDato": {
+      "type": "string"
+    },
+    "gjelderFødsel": {
+      "type": "boolean"
+    },
+    "barnErFødt": {
+      "type": "boolean"
+    },
+    "annenForelderHarRett": {
+      "type": "boolean"
+    },
+    "antallBarn": {
+      "type": "number"
+    },
+    "halvG": {
+      "type": "number"
+    },
+    "klageFristUker": {
+      "type": "number"
+    },
+    "lovhjemmelForAvslag": {
+      "type": "string"
+    },
+    "antallPerioder": {
+      "type": "number"
+    },
+    "avslåttePerioder": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/avslåttPeriode" }
+    }
+  }
+}

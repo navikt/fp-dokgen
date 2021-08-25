@@ -1,0 +1,370 @@
+{{> header }}
+
+
+
+#  NAV har avslått søknaden din om foreldrepenger
+{{> brukerdetaljer_nb }}
+
+**Dette har vi avslått**
+
+{{~#* inline "punkt" ~}}
+{{~#gt antallPerioder 1}}* {{/gt}}
+{{~/inline~}}
+
+{{~#each avslåttePerioder}}
+
+{{#eq avslagsårsak "1035"}}
+{{>punkt}}Du har ikke rett til foreldrepenger, fordi du ikke har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i seks av de siste ti månedene før foreldrepengeperioden starter.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1041"}}
+{{>punkt}}Du har ikke rett til foreldrepenger, fordi inntekten din er lavere enn {{halvG}} kroner i året før skatt.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1001"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fordi du har søkt for tidlig. Du kan søke når du er i svangerskapsuke 22.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "1004") (eq avslagsårsak "1013"))}}
+{{>punkt}}Du har ikke rett til foreldrepenger fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} var fylt 15 år da du overtok omsorgen.
+{{/if}}
+
+
+{{#eq avslagsårsak "1026"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fordi vi ikke har opplysninger om at {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}} er født.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1051"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fordi du adopterte {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} til ektefellen eller samboeren din etter at foreldrepengeperioden var avsluttet.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4002"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi det ikke er flere dager igjen av foreldrepengeperioden.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "1031") (eq avslagsårsak "1033"))}}
+{{>punkt}}Du har allerede fått utbetalt engangsstønad. Derfor er søknaden din avslått.
+{{/if}}
+
+
+{{#if relasjonskode}}{{#if (or (eq relasjonskode "FAR") (eq relasjonskode "MEDMOR"))}}{{#if (or (eq avslagsårsak "1027") (eq avslagsårsak "1029"))}}
+{{>punkt}}Du har ikke rett til foreldrepenger fordi du ikke er registrert som {{#eq relasjonskode "FAR"}}far{{/eq}}{{#eq relasjonskode "MEDMOR"}}medmor{{/eq}} til {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}}.
+{{/if}}{{/if}}{{/if}}
+
+
+{{#if (or (eq avslagsårsak "4012") (eq avslagsårsak "4003"))}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke har omsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
+{{/if}}
+
+
+{{#eq avslagsårsak "1015"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fordi du har hatt samvær med {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} minst en dag i uken og annenhver helg.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1014"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fordi du ikke har foreldreansvar for {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}}.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "1020") (eq avslagsårsak "1021") (eq avslagsårsak "1023") (eq avslagsårsak "1024") (eq avslagsårsak "1025"))}}
+{{#eq barnErFødt false}}
+{{>punkt}}Du har ikke rett til foreldrepenger fordi du ikke er medlem i folketrygden.
+{{/eq}}
+{{#eq barnErFødt true}}
+{{#eq gjelderFødsel true}}
+{{>punkt}}Du har ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ble født.
+{{/eq}}
+{{#eq gjelderFødsel false}}
+{{>punkt}}Du har ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet du overtok omsorgen for {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}}.
+{{/eq}}{{/eq}}
+{{/if}}
+
+
+{{#eq avslagsårsak "1021"}}
+{{>punkt}}Ifølge folkeregisteret har du flyttet fra Norge.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1020"}}
+{{>punkt}}Du er omfattet av trygdeordningen i et annet land.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1023"}}
+{{>punkt}}Du har ikke oppholdstillatelse i Norge.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1024"}}
+{{>punkt}}Vi har ikke opplysninger om at du jobber eller har familie som forsørger deg i Norge. Det er derfor ikke dokumentert at du har rett til opphold etter EØS-avtalen.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1025"}}
+{{>punkt}}Du regnes ikke som medlem fordi du oppholder deg mer i utlandet enn i Norge.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4020"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Du må søke senest tre måneder etter at perioden med foreldrepenger har startet. Du søkte {{mottattDato}}.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4008"}}
+{{>punkt}}Du kan ikke overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen ikke er innlagt i helseinstitusjon.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4076"}}
+{{>punkt}}Du kan ikke overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen har rett til foreldrepenger. Hvis dette endrer seg kan du søke på nytt.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "1028") (eq avslagsårsak "4007"))}}
+{{>punkt}}Du kan ikke overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}}.
+
+For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen viser ikke dette.
+{{/if}}
+
+
+{{#eq avslagsårsak "4050"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke er i jobb.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4051"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke tar godkjent utdanning på heltid.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4052"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke tar godkjent utdanning i kombinasjon med arbeid som til sammen blir heltid.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4053"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
+
+For at du skal kunne overta foreldrepengene, må mor være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen hennes viser ikke dette.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4054"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke er innlagt i helseinstitusjon.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4055"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke deltar på heltid i introduksjonsprogrammet for nyankomne innvandrere, ifølge introduksjonslovens kapittel 2.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4056"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke deltar på heltid i kvalifiseringsprogrammet.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4073"}}
+{{>punkt}}Du kan ikke ta ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke har søkt om eller ikke har rett til foreldrepenger.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4075"}}
+{{>punkt}}Hvis mor søker om foreldrepenger og i tillegg arbeider, studerer eller er i annen aktivitet, kan du ha rett til foreldrepenger. Dette kan du lese mer om på [nav.no/familie](https://nav.no/familie).
+{{/eq}}
+
+
+{{#eq avslagsårsak "4057"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke mottar uføretrygd. Hvis dette endrer seg senere, kan du søke på nytt.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1019"}}
+{{>punkt}}Vi har avslått søknaden din fordi vi ikke har mottatt dokumentasjonen vi har bedt om.
+
+Hvis du sender oss dokumentasjonen innen fire uker, behandler vi saken din på nytt. Du trenger ikke sende ny søknad.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4005"}}
+{{#eq annenForelderHarRett true}}
+{{>punkt}}Det er ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}} tapt.
+{{/eq}}
+{{#eq annenForelderHarRett false}}
+{{>punkt}}Du har ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mistet {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}}.
+{{/eq}}{{/eq}}
+
+
+{{#eq avslagsårsak "4033"}}
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke har avtalt ferien med arbeidsgiveren din.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4041"}}
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke kan ta ut ferie på helligdager.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4032"}}
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi det er kun arbeidstakere som har rett til ferie etter ferieloven.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4040"}}
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ikke er innlagt i helseinstitusjon.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4039"}}
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er innlagt i helseinstitusjon.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4037"}}
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke jobber heltid.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "4030") (eq avslagsårsak "4031"))}}
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi det ikke har gått seks uker siden {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ble født.
+{{/if}}
+
+
+{{#eq avslagsårsak "4038"}}
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}}.
+
+For å kunne utsette foreldrepengene på grunn av sykdom, må du være er helt avhengig av hjelp til å ta deg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Legeerklæringen viser ikke dette.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4082"}}
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
+
+For å ha rett til å utsette foreldrepengene må du søke før du begynner å jobbe.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4504"}}
+{{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}}.
+
+Foreldrepengene dine kan først kombineres med arbeid seks uker etter fødselen.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4025"}}
+{{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}}.
+
+Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden av arbeidet, men du kan utsette perioden.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "4080") (eq avslagsårsak "4501"))}}
+{{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
+
+For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du begynner å jobbe. Vi har derfor redusert foreldrepengene dine fordi du jobber.
+{{/if}}
+
+
+{{#eq avslagsårsak "4093"}}
+{{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er i jobb.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "4084") (eq avslagsårsak "4085") (eq avslagsårsak "4086"))}}
+{{>punkt}}Du kan ikke ta ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen tar ut foreldrepenger i samme periode.
+{{/if}}
+
+
+{{#eq avslagsårsak "4092"}}
+{{>punkt}}Du kan ikke overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke har aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Hvis dette endrer seg kan du søke på nytt.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "4061") (eq avslagsårsak "4062") (eq avslagsårsak "4063") (eq avslagsårsak "4064") (eq avslagsårsak "4065"))}}
+{{>punkt}}Du har søkt om å utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}}, men du har ikke sendt oss dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å utsette.
+{{/if}}
+
+
+{{#if (or (eq avslagsårsak "4094") (eq avslagsårsak "4502"))}}
+{{>punkt}}Du har søkt om å kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}}, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å kombinere foreldrepengene med arbeid.
+{{/if}}
+
+
+{{#eq avslagsårsak "4074"}}
+{{>punkt}}Du har søkt om å overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}}, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å overta kvoten.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "4066") (eq avslagsårsak "4067") (eq avslagsårsak "4068") (eq avslagsårsak "4069") (eq avslagsårsak "4070") (eq avslagsårsak "4088") (eq avslagsårsak "4089"))}}
+{{>punkt}}Du har søkt om foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til foreldrepenger i denne perioden.
+{{/if}}
+
+
+{{#eq avslagsårsak "4013"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du tidligst kan starte foreldrepengeperioden 12 uker før termin.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4022"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} er fylt tre år.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4034"}}
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi det ikke er flere dager igjen av foreldrepengeperioden.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4035"}}
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}}.
+
+Du kan bare utsette når mor jobber, studerer eller er i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "4058") (eq avslagsårsak "4059"))}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
+
+For at du skal få flere dager med foreldrepenger, må den andre forelderen jobbe, studere eller være i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{/if}}
+
+
+{{#eq avslagsårsak "4060"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
+
+Foreldrepengene du har søkt om kan ikke kombineres med det den andre forelderen har søkt om for samme periode. Dere kan bare ta ut foreldrepenger samtidig når den ene av dere tar ut 100 prosent kvote og den andre tar ut opptil 50 prosent fellesperiode.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4081"}}
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
+
+For å ha rett til å utsette foreldrepengene må du søke før ferien starter.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4100"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du tidligst kan få foreldrepenger fra den dagen du overtar omsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
+{{/eq}}
+
+{{/each}}
+
+{{#if felles.fritekst}}{{felles.fritekst}}{{/if}}
+
+Vedtaket er gjort etter folketrygdloven {{lovhjemmelForAvslag}}.
+
+<br/>
+
+**Du har rett til å klage**<br/>
+Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+<br/>
+{{> footer_nb }}
