@@ -38,6 +38,7 @@
     "stønadsperiodeFom",
     "stønadsperiodeTom",
     "antallBarn",
+    "antallDødeBarn",
     "perioder",
     "bruttoBeregningsgrunnlag",
     "harBruktBruttoBeregningsgrunnlag",
@@ -353,6 +354,12 @@
     },
     "prematurDager": {
       "type": "number"
+    },
+    "antallDødeBarn": {
+      "type": "number"
+    },
+    "dødsdato": {
+      "type": "string"
     },
     "bruttoBeregningsgrunnlag": {
       "type": "number"
