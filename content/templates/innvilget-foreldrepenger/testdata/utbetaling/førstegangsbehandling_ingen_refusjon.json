@@ -58,7 +58,7 @@
       "prioritertUtbetalingsgrad": 100,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "arbeidsgiverNavn": "ARBEIDSGIVER AS",
           "gradering": false,
           "utbetalingsgrad": 100,
           "prosentArbeid": 0,
@@ -76,7 +76,7 @@
       "prioritertUtbetalingsgrad": 100,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "arbeidsgiverNavn": "ARBEIDSGIVER AS",
           "gradering": false,
           "utbetalingsgrad": 100,
           "prosentArbeid": 0,
@@ -94,7 +94,7 @@
       "prioritertUtbetalingsgrad": 100,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "arbeidsgiverNavn": "ARBEIDSGIVER AS",
           "gradering": false,
           "utbetalingsgrad": 100,
           "prosentArbeid": 0,
@@ -112,7 +112,7 @@
       "prioritertUtbetalingsgrad": 80,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "arbeidsgiverNavn": "ARBEIDSGIVER AS",
           "gradering": false,
           "utbetalingsgrad": 80,
           "prosentArbeid": 0,
@@ -131,7 +131,7 @@
       "andelListe": [
         {
           "aktivitetStatus": "AT",
-          "arbeidsgiverNavn": "STENDI AS REGION ØST CA MØRK",
+          "arbeidsgiverNavn": "ARBEIDSGIVER AS",
           "dagsats": 2209,
           "månedsinntekt": 47879,
           "årsinntekt": 574548,

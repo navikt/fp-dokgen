@@ -56,11 +56,21 @@
       "antallTapteDager": 0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "arbeidsgiverNavn": "ARBEIDSGIVER 1",
           "gradering": false,
           "utbetalingsgrad": 100,
           "prosentArbeid": 0,
           "stillingsprosent": 100
+        },
+        {
+          "arbeidsgiverNavn": "ARBEIDSGIVER 2",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 10,
+          "naturalytelseEndringType": "STOPP",
+          "naturalytelseEndringDato": "15. april 2021",
+          "naturalytelseNyDagsats": 100
         }
       ]
     },
@@ -73,11 +83,21 @@
       "antallTapteDager": 0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "arbeidsgiverNavn": "ARBEIDSGIVER 1",
           "gradering": false,
           "utbetalingsgrad": 100,
           "prosentArbeid": 0,
           "stillingsprosent": 100
+        },
+        {
+          "arbeidsgiverNavn": "ARBEIDSGIVER 2",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 10,
+          "naturalytelseEndringType": "STOPP",
+          "naturalytelseEndringDato": "19. august 2021",
+          "naturalytelseNyDagsats": 100
         }
       ]
     },
@@ -90,7 +110,7 @@
       "antallTapteDager": 0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "arbeidsgiverNavn": "ARBEIDSGIVER 1",
           "gradering": false,
           "utbetalingsgrad": 100,
           "prosentArbeid": 0,
@@ -107,7 +127,7 @@
       "antallTapteDager": 0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "TENDI AS REGION ØST CA MØRK",
+          "arbeidsgiverNavn": "ARBEIDSGIVER 1",
           "gradering": false,
           "utbetalingsgrad": 80,
           "prosentArbeid": 0,
@@ -126,7 +146,7 @@
       "andelListe": [
         {
           "aktivitetStatus": "ARBEIDSTAKER",
-          "arbeidsgiverNavn": "STENDI AS REGION ØST CA MØRK",
+          "arbeidsgiverNavn": "ARBEIDSGIVER 1",
           "dagsats": 2209,
           "månedsinntekt": 47879,
           "årsinntekt": 574548,
@@ -134,7 +154,7 @@
         },
         {
           "aktivitetStatus": "ARBEIDSTAKER",
-          "arbeidsgiverNavn": "KATE AND ROB",
+          "arbeidsgiverNavn": "ARBEIDSGIVER 2",
           "dagsats": 1234,
           "månedsinntekt": 54321,
           "årsinntekt": 432456,
