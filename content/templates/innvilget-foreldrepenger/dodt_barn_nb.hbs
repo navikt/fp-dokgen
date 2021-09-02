@@ -30,7 +30,7 @@ Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennoms
 {{> innvilget-foreldrepenger/felles/over_seksG_nb }}
 {{/if}}
 
-{{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
+{{#if (and (neq lovhjemlerBeregning "")(neq lovhjemlerBeregning "UDEFINERT")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
 {{> innvilget-foreldrepenger/felles/lovhjemler_beregning_nb }}
 {{/if}}
 <br/>
