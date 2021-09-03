@@ -6,7 +6,7 @@
   "required": [
     "felles",
     "antallBarn",
-    "klageFristUker",
+    "klagefristUker",
     "lovhjemmelForAvslag",
     "antallPerioder",
     "avslåttePerioder"
@@ -58,7 +58,7 @@
     "halvG": {
       "type": "number"
     },
-    "klageFristUker": {
+    "klagefristUker": {
       "type": "number"
     },
     "lovhjemmelForAvslag": {
