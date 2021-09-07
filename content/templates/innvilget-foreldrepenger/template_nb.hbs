@@ -30,7 +30,7 @@ Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennoms
 
 {{#if inkludereUtbetNårGradering}}{{> innvilget-foreldrepenger/utbetaling_nb}}{{/if}}
 
-{{~#neq sisteDagAvSistePeriode ""}}
+{{~#if sisteDagAvSistePeriode}}
 {{#gt disponibleDager 0}}
 {{~#if (or (eq annenForelderHarRett false) (eq aleneomsorgKode "JA"))}}
 Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dag{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} må du søke om innen {{sisteDagAvSistePeriode}}.{{/if}}{{/gt}}
@@ -38,7 +38,7 @@ Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dag{{/gt}} igje
 {{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))}}
 Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dager{{/eq}} som dere begge kan ta ut.
 {{~#eq disponibleDager 1}}{{#if (or (eq disponibleFellesDager 0)(eq disponibleFellesDager 1))}} Denne dagen{{/if}}{{/eq}}{{#if (or (gt disponibleFellesDager 1)(gt disponibleDager 1))}} Disse dagene{{/if}} må det søkes om innen {{sisteDagAvSistePeriode}}.
-{{/if}}{{/if}}{{/neq}}
+{{/if}}{{/if}}{{/if}}
 
 {{~#gt antallArbeidsgivere 1}}
 {{~#each perioder}}{{#if @first}}{{~#each arbeidsforholdsliste}}{{~#if this.gradering }}
@@ -52,8 +52,9 @@ Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere
 {{#if (and (eq barnErFødt true) (eq gjelderMor true) (eq årsakErFødselshendelse true))}}
 {{#gt dagerTaptFørTermin 0}}
 {{#if (or (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING_OG_UTTAK"))}}
+{{#if stønadsperiodeTom }}
 Vi har endret den siste dagen din med foreldrepenger til {{stønadsperiodeTom}}.
-
+{{/if}}
 Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin, og derfor mister du {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}dager{{else}}dag{{/gt}} med foreldrepenger.
 {{/if}}
 {{/gt}}
