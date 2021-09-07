@@ -90,6 +90,7 @@ Arbeidsinntekten og inntekten din som frilanser er høyere enn gjennomsnittet av
 {{/each}}
 
 {{~#each perioder}}
+{{#gt periodeDagsats 0}}
 {{~#each arbeidsforholdsliste}}
 {{~#eq this.naturalytelseEndringType "STOPP"}}
 Fra og med {{this.naturalytelseEndringDato}} får du {{format-kroner this.naturalytelseNyDagsats}} kroner per dag før skatt fordi du mister naturalytelsen din fra {{this.arbeidsgiverNavn}}.
@@ -98,6 +99,7 @@ Fra og med {{this.naturalytelseEndringDato}} får du {{format-kroner this.natura
 Fra og med {{this.naturalytelseEndringDato}} får du {{format-kroner this.naturalytelseNyDagsats}} kroner per dag før skatt fordi du får naturalytelsen din fra {{this.arbeidsgiverNavn}}.
 {{/eq}}
 {{/each}}
+{{/gt}}
 {{/each}}
 
 {{~#each andelListe}}

@@ -57,7 +57,7 @@
       "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "ANDEBU TV AS",
+          "arbeidsgiverNavn": "ARBEIDSGIVEREN",
           "gradering": false,
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
@@ -76,7 +76,7 @@
       "prioritertUtbetalingsgrad": 0.0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "ANDEBU TV AS",
+          "arbeidsgiverNavn": "ARBEIDSGIVEREN",
           "gradering": false,
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
@@ -95,7 +95,7 @@
       "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "ANDEBU TV AS",
+          "arbeidsgiverNavn": "ARBEIDSGIVEREN",
           "gradering": false,
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
@@ -114,7 +114,7 @@
       "prioritertUtbetalingsgrad": 0.0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "ANDEBU TV AS",
+          "arbeidsgiverNavn": "ARBEIDSGIVEREN",
           "gradering": false,
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
@@ -133,7 +133,7 @@
       "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "ANDEBU TV AS",
+          "arbeidsgiverNavn": "ARBEIDSGIVEREN",
           "gradering": false,
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
@@ -152,7 +152,7 @@
       "prioritertUtbetalingsgrad": 0.0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "ANDEBU TV AS",
+          "arbeidsgiverNavn": "ARBEIDSGIVEREN",
           "gradering": false,
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
@@ -172,7 +172,7 @@
       "andelListe": [
         {
           "aktivitetStatus": "ARBEIDSTAKER",
-          "arbeidsgiverNavn": "ANDEBU TV AS",
+          "arbeidsgiverNavn": "ARBEIDSGIVEREN",
           "dagsats": 2339,
           "månedsinntekt": 51067,
           "årsinntekt": 612804,
