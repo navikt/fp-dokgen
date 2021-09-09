@@ -307,7 +307,7 @@ Vedtaket er gjort etter folketrygdloven §§ 14-9, 14-10 og 14-12.
 
 
 
-
+Tester at fritekst kommer etter vedtakshjemler når endring i uttak
 
 
 
