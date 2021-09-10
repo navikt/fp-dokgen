@@ -65,13 +65,10 @@ Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin,
 {{/if}}
 
 {{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
-{{#if felles.fritekst}}
-<br/>
-
-**Inntekt vi har brukt i beregningen**<br/>
-{{felles.fritekst}}
-{{else}}
 {{> innvilget-foreldrepenger/beregning_nb}}
+{{else}}
+{{#if felles.fritekst}}
+{{felles.fritekst}}
 {{/if}}
 {{/neq}}
 

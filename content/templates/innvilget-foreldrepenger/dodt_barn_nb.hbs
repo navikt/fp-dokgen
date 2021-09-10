@@ -17,13 +17,10 @@ Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennoms
 {{/if}}
 
 {{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
-{{#if felles.fritekst}}
-<br/>
-
-**Inntekt vi har brukt i beregningen**<br/>
-{{felles.fritekst}}
-{{else}}
 {{> innvilget-foreldrepenger/beregning_nb}}
+{{else}}
+{{#if felles.fritekst}}
+{{felles.fritekst}}
 {{/if}}
 {{/neq}}
 
