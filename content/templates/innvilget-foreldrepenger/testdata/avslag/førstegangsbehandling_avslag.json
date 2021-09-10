@@ -919,7 +919,7 @@
   "lovhjemlerUttak": "§ forvaltningsloven § 35",
   "lovhjemlerBeregning": "§§ 14-7 og forvaltningsloven § 35",
   "inkludereUtbetaling": true,
-  "inkludereUtbetNårGradering": true,
+  "inkludereUtbetNårGradering": false,
   "inkludereInnvilget": false,
   "inkludereAvslag": false,
   "inkludereNyeOpplysningerUtbet": false

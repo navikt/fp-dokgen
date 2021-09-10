@@ -166,7 +166,7 @@
   ],
   "klagefristUker": 6,
   "inkludereUtbetaling": true,
-  "inkludereUtbetNårGradering": true,
+  "inkludereUtbetNårGradering": false,
   "inkludereInnvilget": true,
   "inkludereAvslag": false,
   "inkludereNyeOpplysningerUtbet": false
