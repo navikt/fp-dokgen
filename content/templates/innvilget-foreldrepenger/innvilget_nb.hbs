@@ -70,9 +70,6 @@ Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jo
 {{>punkt}}Du har opphold i foreldrepengeperioden fra og med {{periodeFom}} til og med {{periodeTom}}. Du mister ikke dager, fordi den andre forelderen jobber, studerer eller er i en annen godkjent aktivitet. Les mer om dette på nav.no/foreldrepenger.
 {{/eq}}
 
-
-
-
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
 {{>punkt}}Du tar ut {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{format-kroner periodeDagsats}} kroner per dag før skatt.
 {{#each arbeidsforholdsliste}}
