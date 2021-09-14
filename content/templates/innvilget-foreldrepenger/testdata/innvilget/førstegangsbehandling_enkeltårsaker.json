@@ -388,6 +388,24 @@
           "stillingsprosent": 100.0
         }
       ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2028",
+      "periodeFom": "8. mai 2021",
+      "periodeTom": "10. mai 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
+        }
+      ]
     }
   ],
   "bruttoBeregningsgrunnlag": 574548,
