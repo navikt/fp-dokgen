@@ -52,34 +52,22 @@ Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jo
 {{/if}}
 
 
-{{#if (or (eq årsak "2012") (eq årsak "2018"))}}
+{{#if (or (eq årsak "2012") (eq årsak "2018") (eq årsak "2025"))}}
 {{>punkt}}Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du er innlagt i helseinstitusjon.
 {{/if}}
 
 
-{{#if (or (eq årsak "2013") (eq årsak "2019"))}}
+{{#if (or (eq årsak "2013") (eq årsak "2019") (eq årsak "2026"))}}
 {{>punkt}}Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}} er innlagt i helseinstitusjon.
 {{/if}}
 
 
-{{#if (or (eq årsak "2014") (eq årsak "2017"))}}
+{{#if (or (eq årsak "2014") (eq årsak "2017") (eq årsak "2027"))}}
 {{>punkt}}Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du er helt avhengig av hjelp til å ta deg av {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
 {{/if}}
 
 {{#eq årsak "2028"}}
 {{>punkt}}Du har opphold i foreldrepengeperioden fra og med {{periodeFom}} til og med {{periodeTom}}. Du mister ikke dager, fordi den andre forelderen jobber, studerer eller er i en annen godkjent aktivitet. Les mer om dette på nav.no/foreldrepenger.
-{{/eq}}
-
-{{#eq årsak "2025"}}
-{{>punkt}}Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du er innlagt i helseinstitusjon.
-{{/eq}}
-
-{{#eq årsak "2026"}}
-{{>punkt}}Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi barnet dittbarna dine er innlagt i helseinstitusjon.
-{{/eq}}
-
-{{#eq årsak "2027"}}
-{{>punkt}}Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du er helt avhengig av hjelp til å ta deg av barnet.
 {{/eq}}
 
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
