@@ -1,0 +1,366 @@
+{{> header }}
+
+
+
+#  NAV has denied your application for parental benefit
+{{> brukerdetaljer_en }}
+
+**We have denied the following**
+
+{{~#* inline "punkt" ~}}
+{{~#gt antallPerioder 1}}* {{/gt}}
+{{~/inline~}}
+
+{{~#each avslåttePerioder}}
+
+{{#eq avslagsårsak "1035"}}
+{{>punkt}}You are not entitled to parental benefit, because you have not had earned income or income equivalent to earned income in six of the past ten months before the start of the parental benefit period.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1041"}}
+{{>punkt}}You are not entitled to parental benefit, because your income is lower than {{halvG}} kroner per year before tax.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1001"}}
+{{>punkt}}You are not entitled to parental benefit, because you have applied too early. You can apply when you are in your 22nd week of pregnancy.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "1004") (eq avslagsårsak "1013"))}}
+{{>punkt}}You are not entitled to parental benefit, because your {{#gt antallBarn 1}}children were{{else}}child was{{/gt}} aged 15 years or older when you assumed care.
+{{/if}}
+
+
+{{#eq avslagsårsak "1026"}}
+{{>punkt}}You are not entitled to parental benefit, because we do not have proof that the {{#eq antallBarn 1}}child has{{/eq}}{{#eq antallBarn 0}}child or the children have{{/eq}}{{#gt antallBarn 1}}children have{{/gt}} been born.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1051"}}
+{{>punkt}}You are not entitled to parental benefit, because you adopted your spouse’s or cohabitant’s {{#gt antallBarn 1}}children{{else}}child{{/gt}} after the end of the parental benefit period.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4002"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because there are no more days left of the parental benefit period.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "1031") (eq avslagsårsak "1033"))}}
+{{>punkt}}You have already received a lump-sum grant. Your application has therefore been denied.
+{{/if}}
+
+
+{{#if relasjonskode}}{{#if (or (eq relasjonskode "FAR") (eq relasjonskode "MEDMOR"))}}{{#if (or (eq avslagsårsak "1027") (eq avslagsårsak "1029"))}}
+{{>punkt}}You are not entitled to parental benefit, because you are not registered as the {{#eq antallBarn 1}}child’s{{/eq}}{{#eq antallBarn 0}}child’s or the children’s{{/eq}}{{#gt antallBarn 1}}children’s{{/gt}} {{#eq relasjonskode "FAR"}}father{{/eq}}{{#eq relasjonskode "MEDMOR"}}co-mother{{/eq}}.
+{{/if}}{{/if}}{{/if}}
+
+
+{{#if (or (eq avslagsårsak "4012") (eq avslagsårsak "4003"))}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because you do not have care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}.
+{{/if}}
+
+
+{{#eq avslagsårsak "1015"}}
+{{>punkt}}You are not entitled to parental benefit, because you have had contact with the {{#gt antallBarn 1}}children{{else}}child{{/gt}} at least one day a week and every other weekend.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1014"}}
+{{>punkt}}You are not entitled to parental benefit, because you do not have parental responsibility for the {{#gt antallBarn 1}}children{{else}}child{{/gt}}.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "1020") (eq avslagsårsak "1021") (eq avslagsårsak "1023") (eq avslagsårsak "1024") (eq avslagsårsak "1025"))}}
+{{#eq barnErFødt false}}
+{{>punkt}}You are not entitled to parental benefit, because you are not a member of the Norwegian National Insurance Scheme.
+{{/eq}}
+{{#eq barnErFødt true}}
+{{#eq gjelderFødsel true}}
+{{>punkt}}You are not entitled to parental benefit, because you were not a member of the Norwegian National Insurance Scheme at the time your {{#gt antallBarn 1}}children were{{else}}child was{{/gt}} born.
+{{/eq}}
+{{#eq gjelderFødsel false}}
+{{>punkt}}You are not entitled to parental benefit, because you were not a member of the Norwegian National Insurance Scheme at the time you assumed care of your {{#gt antallBarn 1}}children{{else}}child{{/gt}}.
+{{/eq}}{{/eq}}
+{{/if}}
+
+
+{{#eq avslagsårsak "1021"}}
+{{>punkt}}According to the National Registry, you have moved from Norway.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1020"}}
+{{>punkt}}You are covered by the social security system in another country.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1023"}}
+{{>punkt}}You do not have the right to reside in Norway.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1024"}}
+{{>punkt}}We do not have any information proving that you work or have family that supports you in Norway. It is therefore not documented that you are entitled to stay in Norway pursuant to the EEA Agreement.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1025"}}
+{{>punkt}}You are not considered a member because you spend more time abroad than in Norway.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4020"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}. You must apply no later than three months after the period of parental benefit started. You applied on {{mottattDato}}.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4008"}}
+{{>punkt}}You may not take over the quota from {{periodeFom}} up to and including {{periodeTom}}, because the other parent is not admitted to a health care institution.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4076"}}
+{{>punkt}}You may not take over the quota from {{periodeFom}} up to and including {{periodeTom}} because the other parent is entitled to parental benefit. Should this change, you can reapply.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "1028") (eq avslagsårsak "4007"))}}
+{{>punkt}}You may  not  take over the quota of the other parent from {{periodeFom}} up to and including {{periodeTom}}.
+
+In order to be able to take over the quota, the other parent must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}} due to their own illness. The medical certificate from the doctor does not indicate that this is the case.
+{{/if}}
+
+
+{{#eq avslagsårsak "4050"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because the mother is not working.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4051"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because the mother is not studying full-time on an approved programme.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4052"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because the mother is not studying on an approved programme in combination with work that together comprise full-time activity.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4053"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+In order to be able to take over the parental benefit, the mother must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}} due to her own illness. The medical certificate from her doctor does not indicate that this is the case.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4054"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because the mother is not in a health care institution.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4055"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because the mother is not participating in the Introduction Programme for newly arrived immigrants pursuant to chapter 2 of the Introduction Act on a full-time basis.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4056"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because the mother is not participating in the Qualification Programme on a full-time basis.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4073"}}
+{{>punkt}}You cannot draw parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because the mother has not applied for or is not entitled to parental benefit.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4075"}}
+{{>punkt}}If the mother applies for parental benefit and, in addition, is working, studying or is in some other activity, you may be entitled to parental benefit. You can read more about this at [nav.no/familie](https://nav.no/familie).
+{{/eq}}
+
+
+{{#eq avslagsårsak "4057"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because the mother is not receiving disability benefit. Should this change later on, you can reapply.
+{{/eq}}
+
+
+{{#eq avslagsårsak "1019"}}
+{{>punkt}}We have turned down your application because we have not received the documentation we requested. If you send us the documentation within four weeks, we will process your case again. You will not need to submit a new application.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4005"}}
+{{#eq annenForelderHarRett true}}
+{{>punkt}}No application has been submitted for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. Therefore, {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}} have been lost.
+{{/eq}}
+{{#eq annenForelderHarRett false}}
+{{>punkt}}You have not applied for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost, {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
+{{/eq}}{{/eq}}
+
+
+{{#eq avslagsårsak "4033"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you have not arranged holiday with your employer.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4041"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you cannot take annual leave on public holidays.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4032"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because it is only employees who are entitled to holiday (annual leave) pursuant to the Holiday Act.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4040"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because your {{#gt antallBarn 1}}children are{{else}}child is{{/gt}} not admitted to a health care institution.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4039"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you have not been admitted to a health care institution.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4037"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are not working full time.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "4030") (eq avslagsårsak "4031"))}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because less than six weeks have passed since your {{#gt antallBarn 1}}children were{{else}}child was{{/gt}} born.
+{{/if}}
+
+
+{{#eq avslagsårsak "4038"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+In order to postpone parental benefit on grounds of illness, you must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}} due to your own illness. The medical certificate from your doctor does not indicate that this is the case.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4082"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you have applied too late.
+
+In order to be entitled to postpone parental benefit, you must apply before starting work.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4504"}}
+{{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}}.
+
+Your parental benefit may only be combined with work six weeks after birth.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4025"}}
+{{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}}.
+
+Because you work in a full time position or more, you cannot take out parental benefit at the same time, but you may postpone the period.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "4080") (eq avslagsårsak "4501"))}}
+{{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}} because you have applied too late.
+
+In order to be entitled to combine parental benefit with work, you must apply before starting work. We have therefore reduced your parental benefit because you are working.
+{{/if}}
+
+
+{{#eq avslagsårsak "4093"}}
+{{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}} because you are not working.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "4084") (eq avslagsårsak "4085") (eq avslagsårsak "4086"))}}
+{{>punkt}}You cannot receive parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the other parent takes out parental benefit in the same period.
+{{/if}}
+
+
+{{#eq avslagsårsak "4092"}}
+{{>punkt}}You may not take over the quota from {{periodeFom}} up to and including {{periodeTom}} because you do not have sole care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}. Should this change, you can reapply.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "4061") (eq avslagsårsak "4062") (eq avslagsårsak "4063") (eq avslagsårsak "4064") (eq avslagsårsak "4065"))}}
+{{>punkt}}You have applied to postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}, but you have not sent us the documentation we asked for. We therefore do not have enough information to assess whether you are entitled to postpone parental benefit.
+{{/if}}
+
+
+{{#if (or (eq avslagsårsak "4094") (eq avslagsårsak "4502"))}}
+{{>punkt}}You have applied to combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}}, but you have not sent us the documentation we asked for. We therefore do not have enough information to assess whether you are entitled to combine parental benefit with work.
+{{/if}}
+
+
+{{#eq avslagsårsak "4074"}}
+{{>punkt}}You have applied to take over the other parent’s quota from {{periodeFom}} up to and including {{periodeTom}}, but you have not sent us the documentation we asked for. We therefore do not have enough information to assess whether you are entitled to take over the quota.
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "4066") (eq avslagsårsak "4067") (eq avslagsårsak "4068") (eq avslagsårsak "4069") (eq avslagsårsak "4070") (eq avslagsårsak "4088") (eq avslagsårsak "4089"))}}
+{{>punkt}}You have applied for parental benefit from {{periodeFom}} up to and including {{periodeTom}}, but you have not sent us the documentation we asked for. We therefore do not have enough information to assess whether you are entitled to parental benefit in this period.
+{{/if}}
+
+
+{{#eq avslagsårsak "4013"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because the earliest you can start the parental benefit period is 12 weeks before the estimated delivery date.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4022"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because your {{#gt antallBarn 1}}children are{{else}}child is{{/gt}} 3 years old.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4034"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because there are no more days left of the parental benefit period.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4035"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+You can only postpone parental benefits if the mother is working, studying or taking part in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{/eq}}
+
+
+{{#if (or (eq avslagsårsak "4058") (eq avslagsårsak "4059"))}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+To get more days of parental benefit, the other parent must be working, studying or in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{/if}}
+
+
+{{#eq avslagsårsak "4060"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+The parental benefit you have applied for cannot be combined with what the other parent has applied for in the same period. You can only both receive parental benefit at the same time when one of you takes 100 per cent quota and the other parent takes up to 50 per cent from the shared period.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4081"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because you have applied too late. To be entitled to postpone parental benefit, you must apply before the start of the holiday.
+{{/eq}}
+
+
+{{#eq avslagsårsak "4100"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because the earliest you can receive parental benefit is from the day you assume care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}.
+{{/eq}}
+
+{{/each}}
+
+{{#if felles.fritekst}}{{felles.fritekst}}{{/if}}
+
+The decision has been made in accordance with the National Insurance Act Section {{lovhjemmelForAvslag}}.
+
+<br/>
+
+**You have the right to appeal**<br/>
+You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+<br/>
+{{> footer_en }}
