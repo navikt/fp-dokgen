@@ -5,7 +5,6 @@ Date: 4. april 2020
 <br>
 <br>
 
-
 # NAV sends you the documents in your case
 <p style="color:gray">
 Nav's case number: 123456789
@@ -17,15 +16,11 @@ National identity number: 300220 12345
 
 </p>
 
-
-
 You have requested access to your case, and we are sending you all the documents we have.
 
 This is pursuant to section 18 of the Public Administration Act.
 
 If you have not received all the information you have requested, you can contact us.
-
-
 
 <br/>
 

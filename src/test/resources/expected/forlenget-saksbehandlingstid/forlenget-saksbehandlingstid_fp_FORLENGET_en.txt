@@ -5,9 +5,7 @@ Date: 4. april 2020
 <br>
 <br>
 
-
 # We need more time to process your application for parental benefits
-
 
 <p style="color:gray">
 Nav's case number: 123456789
@@ -19,9 +17,7 @@ National identity number: 300220 12345
 
 </p>
 
-
 We expect to be able to process your application within 5 weeks.
-
 
 <br/>
 
@@ -41,7 +37,5 @@ Yours sincerely,
 <br/>
 NAV Familie- og Pensjonsytelser
 
-
 </div>
-
 

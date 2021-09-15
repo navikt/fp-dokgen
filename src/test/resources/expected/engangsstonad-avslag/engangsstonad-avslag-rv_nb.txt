@@ -17,49 +17,13 @@ Fødselsnummer: 300220 12345
 
 </p>
 
-
-
 Du har ikke rett til engangsstønad fordi du ikke var medlem i folketrygden på det tidspunktet barna dine ble født.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Du har ikke rett til engangsstønad og vi har derfor avslått søknaden din.
 
 Du har kun rett til engangsstønad som far hvis du overtar omsorgen for barna når mor dør i forbindelse med fødselen.
 
-
-
-
-
-
-
-
-
-
 Vedtaket er gjort etter folketrygdloven § 22-13.
-
-
-
 
 <br/>
 
@@ -83,7 +47,6 @@ Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 Med vennlig hilsen
 <br/>
 NAV Familie- og Pensjonsytelser
-
 
 </div>
 

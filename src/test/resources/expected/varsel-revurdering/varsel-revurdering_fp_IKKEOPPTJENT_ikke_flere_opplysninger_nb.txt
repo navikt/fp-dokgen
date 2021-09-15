@@ -5,7 +5,6 @@ Dato: 4. april 2020
 <br>
 <br>
 
-
 # NAV vurderer retten din til foreldrepenger på nytt
 
 <p style="color:gray">
@@ -18,25 +17,7 @@ Fødselsnummer: 300220 12345
 
 </p>
 
-
-
-
-
-
 Vi har fått opplysninger om at inntekten din var lavere enn et halvt grunnbeløp i året før skatt. Derfor vurderer vi å stanse foreldrepengene dine.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Opplysningsplikten går fram av folketrygdloven §§ 21-3 og 21-4.
 <br/>
@@ -65,8 +46,5 @@ Med vennlig hilsen
 <br/>
 NAV Familie- og Pensjonsytelser
 
-
 </div>
-
-
 

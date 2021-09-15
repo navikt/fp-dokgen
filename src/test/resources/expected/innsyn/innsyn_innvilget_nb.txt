@@ -5,7 +5,6 @@ Dato: 4. april 2020
 <br>
 <br>
 
-
 # NAV sender deg dokumentene i saken din
 <p style="color:gray">
 Saksnummer i NAV: 123456789
@@ -17,15 +16,11 @@ Fødselsnummer: 300220 12345
 
 </p>
 
-
-
 Du har bedt om å få innsyn i saken din, og vi sender deg alle dokumentene vi har.
 
 Dette går fram av forvaltningsloven § 18.
 
 Hvis du ikke har fått alle opplysningene du har bedt om, kan du kontakte oss.
-
-
 
 <br/>
 

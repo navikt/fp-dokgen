@@ -5,7 +5,6 @@ Dato: 4. april 2020
 <br>
 <br>
 
-
 # Du må søke om foreldrepenger i tide
 <p style="color:gray">
 Saksnummer i NAV: 123456789
@@ -17,10 +16,7 @@ Fødselsnummer: 300220 12345
 
 </p>
 
-
-
 Du kan ha rett til foreldrepenger. Du må søke før 10. september 2020. Dette er den dagen den andre forelderen har siste dag med foreldrepenger. Hvis du ikke ønsker å starte foreldrepengeperioden rett etter 10. september 2020, må du søke om å utsette perioden. Søker du på et senere tidspunkt, mister du de dagene du har søkt for sent.
-
 
 <br/>
 <br/>

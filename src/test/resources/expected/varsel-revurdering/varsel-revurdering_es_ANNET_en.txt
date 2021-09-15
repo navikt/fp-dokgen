@@ -5,7 +5,6 @@ Date: 4. april 2020
 <br>
 <br>
 
-
 # NAV considers reprocessing your case regarding entitlement to a lump-sum grant
 
 <p style="color:gray">
@@ -18,20 +17,10 @@ National identity number: 300220 12345
 
 </p>
 
-
 We have received new information that may influence the decision on your entitlement to the lump-sum grant.
 
 <p style="white-space: pre-wrap">FRITEKST LINJE 1
 FRITEKST LINJE 2</p>
-
-
-
-
-
-
-
-
-
 
 Your duty to give information is according to sections 21‑3 og 21‑4 of the National Insurance Act.
 <br/>
@@ -60,9 +49,5 @@ Yours sincerely,
 <br/>
 NAV Familie- og Pensjonsytelser
 
-
 </div>
-
-
-
 

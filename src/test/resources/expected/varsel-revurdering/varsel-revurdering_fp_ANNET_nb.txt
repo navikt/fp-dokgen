@@ -5,7 +5,6 @@ Dato: 4. april 2020
 <br>
 <br>
 
-
 # NAV vurderer retten din til foreldrepenger på nytt
 
 <p style="color:gray">
@@ -18,27 +17,10 @@ Fødselsnummer: 300220 12345
 
 </p>
 
-
 Vi har fått nye opplysninger som kan ha betydning for retten din til foreldrepenger.
 
 <p style="white-space: pre-wrap">FRITEKST LINJE 1
 FRITEKST LINJE 2</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Opplysningsplikten går fram av folketrygdloven §§ 21-3 og 21-4.
 <br/>
@@ -67,8 +49,5 @@ Med vennlig hilsen
 <br/>
 NAV Familie- og Pensjonsytelser
 
-
 </div>
-
-
 

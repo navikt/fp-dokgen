@@ -5,7 +5,6 @@ Date: 4. april 2020
 <br>
 <br>
 
-
 # NAV has rejected your request for access to your case regarding pregnancy benefits
 <p style="color:gray">
 Nav's case number: 123456789
@@ -22,10 +21,6 @@ You have requested access to your case, but we cannot send you the documents we 
 Vi kan kun gi deg delvis innsyn fordi
 
 This is pursuant to section 18 of the Public Administration Act.
-
-
-
-
 
 <br/>
 
