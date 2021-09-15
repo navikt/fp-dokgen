@@ -22,6 +22,7 @@ Fødselsnummer: 300220 12345
 **Dette har vi avslått**
 
 
+
 * Du har ikkje rett til foreldrepengar fordi du ikkje har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i seks av dei siste ti månadene før foreldrepengeperioden startar.
 
 
@@ -15150,7 +15151,6 @@ Du kan ikkje kombinere foreldrepengane du har søkt om, med det den andre foreld
 
 
 
-FRITEKST
 
 Vedtaket er gjort etter folketrygdlova § forvaltningsloven § 35.
 

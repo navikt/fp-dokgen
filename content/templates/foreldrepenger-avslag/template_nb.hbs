@@ -6,6 +6,9 @@
 {{> brukerdetaljer_nb }}
 
 **Dette har vi avslått**
+{{#if felles.fritekst}}
+{{felles.fritekst}}
+{{else}}
 
 {{~#* inline "punkt" ~}}
 {{~#gt antallPerioder 1}}* {{/gt}}
@@ -351,8 +354,7 @@ Foreldrepengene du har søkt om kan ikke kombineres med det den andre forelderen
 {{/eq}}
 
 {{/each}}
-
-{{#if felles.fritekst}}{{felles.fritekst}}{{/if}}
+{{/if}}
 
 Vedtaket er gjort etter folketrygdloven {{lovhjemmelForAvslag}}.
 
