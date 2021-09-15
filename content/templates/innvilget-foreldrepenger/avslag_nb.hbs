@@ -43,7 +43,10 @@ Du må søke senest tre måneder etter at perioden med foreldrepenger startet. D
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ikke er innlagt i helseinstitusjon.
 {{/case}}
 {{#case "4039"}}
-{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er innlagt i helseinstitusjon.
+{{>punkt}}{{>innvilget-foreldrepenger/avslag/kan_ikke_utsette_pga_ikke_innlagt_nb~}}
+{{/case}}
+{{#case "4111"}}
+{{>punkt}}{{>innvilget-foreldrepenger/avslag/kan_ikke_utsette_pga_ikke_innlagt_nb~}}
 {{/case}}
 {{~#case "4037"}}
 {{#if (and (lt periodeDagsats dagsats)(gt periodeDagsats 0))}}
