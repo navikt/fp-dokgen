@@ -22,6 +22,7 @@ Fødselsnummer: 300220 12345
 **Dette har vi avslått**
 
 
+
 * Du har ikke rett til foreldrepenger, fordi du ikke har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i seks av de siste ti månedene før foreldrepengeperioden starter.
 
 
@@ -6855,9 +6856,7 @@ For at du skal kunne overta foreldrepengene, må mor være helt avhengig av hjel
 
 
 
-* Vi har avslått søknaden din fordi vi ikke har mottatt dokumentasjonen vi har bedt om.
-
-Hvis du sender oss dokumentasjonen innen seks uker, behandler vi saken din på nytt. Du trenger ikke sende ny søknad.
+* Vi har avslått søknaden din fordi vi ikke har mottatt dokumentasjonen vi har bedt om. Hvis du sender oss dokumentasjonen innen seks uker, behandler vi saken din på nytt. Du trenger ikke sende ny søknad.
 
 
 
@@ -14958,9 +14957,7 @@ Foreldrepengene du har søkt om kan ikke kombineres med det den andre forelderen
 
 
 
-* Du kan ikke utsette foreldrepengene fra og med 7. september 2021 til og med 8. september 2021 fordi du har søkt for sent.
-
-For å ha rett til å utsette foreldrepengene må du søke før ferien starter.
+* Du kan ikke utsette foreldrepengene fra og med 7. september 2021 til og med 8. september 2021 fordi du har søkt for sent. For å ha rett til å utsette foreldrepengene må du søke før ferien starter.
 
 
 
@@ -15154,11 +15151,11 @@ For å ha rett til å utsette foreldrepengene må du søke før ferien starter.
 
 
 
-FRITEKST
 
 Vedtaket er gjort etter folketrygdloven § forvaltningsloven § 35.
 
 <br/>
+
 **Du har rett til å klage**<br/>
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>

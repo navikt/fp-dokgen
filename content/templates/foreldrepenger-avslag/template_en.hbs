@@ -6,6 +6,9 @@
 {{> brukerdetaljer_en }}
 
 **We have denied the following**
+{{#if felles.fritekst}}
+{{felles.fritekst}}
+{{else}}
 
 {{~#* inline "punkt" ~}}
 {{~#gt antallPerioder 1}}* {{/gt}}
@@ -351,8 +354,7 @@ The parental benefit you have applied for cannot be combined with what the other
 {{/eq}}
 
 {{/each}}
-
-{{#if felles.fritekst}}{{felles.fritekst}}{{/if}}
+{{/if}}
 
 The decision has been made in accordance with the National Insurance Act Section {{lovhjemmelForAvslag}}.
 

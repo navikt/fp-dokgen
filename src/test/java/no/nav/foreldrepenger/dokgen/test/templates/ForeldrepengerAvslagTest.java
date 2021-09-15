@@ -27,4 +27,10 @@ public class ForeldrepengerAvslagTest {
         assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "en", "test_mange"))
                 .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_mange_en.txt"));
     }
+
+    @Test
+    public void skal_generere_foreldrepenger_avslag_brevet_med_fritekst() throws Exception {
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_fritekst"))
+                .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_fritekst.txt"));
+    }
 }
