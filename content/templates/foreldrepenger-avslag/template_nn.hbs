@@ -288,9 +288,9 @@ For å ha rett til å kombinere foreldrepengane med arbeid må du søkje før du
 {{/eq}}
 
 
-{{#if (or (eq avslagsårsak "4061") (eq avslagsårsak "4062") (eq avslagsårsak "4063") (eq avslagsårsak "4064") (eq avslagsårsak "4065") (eq avslagsårsak "4115") (eq avslagsårsak "4116") (eq avslagsårsak "4117"))}}
+{{#inArray (array "4061" "4062" "4063" "4064" "4065" "4115" "4116" "4117") avslagsårsak}}
 {{>punkt}}Du har søkt om å utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}}, men du har ikkje sendt oss dokumentasjonen vi har bede om. Derfor har vi ikkje nok opplysningar til å vurdere om du har rett til å utsetje.
-{{/if}}
+{{/inArray}}
 
 
 {{#if (or (eq avslagsårsak "4094") (eq avslagsårsak "4502"))}}

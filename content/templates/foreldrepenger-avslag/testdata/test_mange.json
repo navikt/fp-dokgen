@@ -504,6 +504,24 @@
       "periodeFom": "9. september 2021",
       "periodeTom": "10. september 2021",
       "antallTapteDager": 1
+    },
+    {
+      "avslagsårsak": "4115",
+      "periodeFom": "25. juli 2021",
+      "periodeTom": "26. juli 2021",
+      "antallTapteDager": 1
+    },
+    {
+      "avslagsårsak": "4116",
+      "periodeFom": "27. juli 2021",
+      "periodeTom": "28. juli 2021",
+      "antallTapteDager": 1
+    },
+    {
+      "avslagsårsak": "4117",
+      "periodeFom": "29. juli 2021",
+      "periodeTom": "30. juli 2021",
+      "antallTapteDager": 1
     }
   ]
 }

@@ -21,6 +21,8 @@ import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.AdditionHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.CaseHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.DivideHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.FormatKronerHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.InArrayHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.ArrayHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.SwitchHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.TrimDecimalHelper;
 
@@ -44,6 +46,8 @@ public class TemplateTestService {
         handlebars.registerHelper("switch", new SwitchHelper());
         handlebars.registerHelper("case", new CaseHelper());
         handlebars.registerHelper("add", new AdditionHelper());
+        handlebars.registerHelper("array", new ArrayHelper());
+        handlebars.registerHelper("inArray", new InArrayHelper());
         handlebars.registerHelper("divide", new DivideHelper());
         handlebars.registerHelper("format-kroner", new FormatKronerHelper());
         handlebars.registerHelper("trim-decimal", new TrimDecimalHelper());
