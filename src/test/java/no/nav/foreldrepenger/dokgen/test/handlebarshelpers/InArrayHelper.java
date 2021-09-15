@@ -17,11 +17,11 @@ public class InArrayHelper implements Helper<Object> {
      *
      * ```handlebars
      * <!-- caseArray: ['a', 'b', 'c'] -->
-     * {{#inArray caseArray "d"}}
+     * {{#in-array caseArray "d"}}
      *   foo
      * {{else}}
      *   bar
-     * {{/inArray}}
+     * {{/in-array}}
      * <!-- results in: 'bar' -->
      * ```
      */

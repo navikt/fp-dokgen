@@ -238,11 +238,11 @@ For at du skal kunne overta foreldrepengane, må mor vere heilt avhengig av hjel
 {{/if}}
 
 
-{{#eq avslagsårsak "4038"}}
+{{#if (or (eq avslagsårsak "4038") (eq avslagsårsak "4110"))}}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}}.
 
 For å utsetje foreldrepengane på grunn av sjukdom må du vere heilt avhengig av hjelp til å ta deg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Legeerklæringa di viser ikkje dette.
-{{/eq}}
+{{/if}}
 
 
 {{#eq avslagsårsak "4082"}}
@@ -288,9 +288,9 @@ For å ha rett til å kombinere foreldrepengane med arbeid må du søkje før du
 {{/eq}}
 
 
-{{#inArray (array "4061" "4062" "4063" "4064" "4065" "4115" "4116" "4117") avslagsårsak}}
+{{#in-array (array "4061" "4062" "4063" "4064" "4065" "4115" "4116" "4117") avslagsårsak}}
 {{>punkt}}Du har søkt om å utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}}, men du har ikkje sendt oss dokumentasjonen vi har bede om. Derfor har vi ikkje nok opplysningar til å vurdere om du har rett til å utsetje.
-{{/inArray}}
+{{/in-array}}
 
 
 {{#if (or (eq avslagsårsak "4094") (eq avslagsårsak "4502"))}}

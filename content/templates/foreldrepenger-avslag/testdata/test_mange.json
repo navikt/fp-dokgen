@@ -522,6 +522,12 @@
       "periodeFom": "29. juli 2021",
       "periodeTom": "30. juli 2021",
       "antallTapteDager": 1
+    },
+    {
+      "avslagsårsak": "4110",
+      "periodeFom": "1. august 2021",
+      "periodeTom": "2. august 2021",
+      "antallTapteDager": 1
     }
   ]
 }

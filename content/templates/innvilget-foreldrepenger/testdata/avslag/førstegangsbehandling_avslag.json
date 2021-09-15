@@ -894,6 +894,19 @@
       "arbeidsforholdsliste": [
         {}
       ]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4110",
+      "periodeFom": "1. august 2021",
+      "periodeTom": "2. august 2021",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [
+        {
+        }
+      ]
     }
   ],
   "bruttoBeregningsgrunnlag": 574548,

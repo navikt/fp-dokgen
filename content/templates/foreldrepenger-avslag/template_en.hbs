@@ -238,11 +238,11 @@ In order to be able to take over the parental benefit, the mother must be fully 
 {{/if}}
 
 
-{{#eq avslagsårsak "4038"}}
+{{#if (or (eq avslagsårsak "4038") (eq avslagsårsak "4110"))}}
 {{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
 
 In order to postpone parental benefit on grounds of illness, you must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}} due to your own illness. The medical certificate from your doctor does not indicate that this is the case.
-{{/eq}}
+{{/if}}
 
 
 {{#eq avslagsårsak "4082"}}
@@ -288,9 +288,9 @@ In order to be entitled to combine parental benefit with work, you must apply be
 {{/eq}}
 
 
-{{#inArray (array "4061" "4062" "4063" "4064" "4065" "4115" "4116" "4117") avslagsårsak}}
+{{#in-array (array "4061" "4062" "4063" "4064" "4065" "4115" "4116" "4117") avslagsårsak}}
 {{>punkt}}You have applied to postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}, but you have not sent us the documentation we asked for. We therefore do not have enough information to assess whether you are entitled to postpone parental benefit.
-{{/inArray}}
+{{/in-array}}
 
 
 {{#if (or (eq avslagsårsak "4094") (eq avslagsårsak "4502"))}}

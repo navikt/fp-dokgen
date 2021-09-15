@@ -47,7 +47,7 @@ public class TemplateTestService {
         handlebars.registerHelper("case", new CaseHelper());
         handlebars.registerHelper("add", new AdditionHelper());
         handlebars.registerHelper("array", new ArrayHelper());
-        handlebars.registerHelper("inArray", new InArrayHelper());
+        handlebars.registerHelper("in-array", new InArrayHelper());
         handlebars.registerHelper("divide", new DivideHelper());
         handlebars.registerHelper("format-kroner", new FormatKronerHelper());
         handlebars.registerHelper("trim-decimal", new TrimDecimalHelper());
