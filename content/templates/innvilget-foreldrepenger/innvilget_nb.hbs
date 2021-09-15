@@ -73,9 +73,6 @@ Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jo
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
 {{>punkt}}Du tar ut {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{format-kroner periodeDagsats}} kroner per dag før skatt.
 {{#each arbeidsforholdsliste}}
-{{#if (and (eq this.prosentArbeid this.stillingsprosent) (lt this.stillingsprosent 100.0))}} {{#if (and (eq this.gradering false) (eq arbeidsforholdsliste.0.gradering true))}}
-Selv om du er tilbake i arbeid hos {{this.arbeidsgiverNavn}} har du fremdeles rett til foreldrepenger. Derfor får du fremdeles utbetalt foreldrepenger.
-{{/if}}{{/if}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0))}} {{#if (and (lt this.stillingsprosent 100.0) (eq this.gradering false))}} {{#if (or (eq delvisRefusjon true) (eq fullRefusjon true))}}
 Du jobber ikke i hele deltidsstillingen din hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepenger både fra arbeidsgiveren din og NAV.
 {{/if}}{{/if}}{{/if}}{{/if}}
