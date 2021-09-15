@@ -218,9 +218,9 @@ For at du skal kunne overta foreldrepengane, må mor vere heilt avhengig av hjel
 {{/eq}}
 
 
-{{#eq avslagsårsak "4040"}}
+{{#if (or (eq avslagsårsak "4040") (eq avslagsårsak "4111"))}}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ikkje er {{#gt antallBarn 1}}innlagde{{else}}innlagd{{/gt}} i helseinstitusjon.
-{{/eq}}
+{{/if}}
 
 
 {{#if (or (eq avslagsårsak "4039") (eq avslagsårsak "4112"))}}

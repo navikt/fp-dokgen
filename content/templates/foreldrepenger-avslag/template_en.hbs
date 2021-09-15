@@ -218,9 +218,9 @@ In order to be able to take over the parental benefit, the mother must be fully 
 {{/eq}}
 
 
-{{#eq avslagsårsak "4040"}}
+{{#if (or (eq avslagsårsak "4040") (eq avslagsårsak "4111"))}}
 {{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because your {{#gt antallBarn 1}}children are{{else}}child is{{/gt}} not admitted to a health care institution.
-{{/eq}}
+{{/if}}
 
 
 {{#if (or (eq avslagsårsak "4039") (eq avslagsårsak "4112"))}}
