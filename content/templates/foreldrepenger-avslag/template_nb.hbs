@@ -31,9 +31,9 @@
 {{/eq}}
 
 
-{{#if (or (eq avslagsårsak "1004") (eq avslagsårsak "1013"))}}
+{{#in-array (array "1004" "1013") avslagsårsak}}
 {{>punkt}}Du har ikke rett til foreldrepenger fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} var fylt 15 år da du overtok omsorgen.
-{{/if}}
+{{/in-array}}
 
 
 {{#eq avslagsårsak "1026"}}
@@ -51,19 +51,19 @@
 {{/eq}}
 
 
-{{#if (or (eq avslagsårsak "1031") (eq avslagsårsak "1033"))}}
+{{#in-array (array "1031" "1033") avslagsårsak}}
 {{>punkt}}Du har allerede fått utbetalt engangsstønad. Derfor er søknaden din avslått.
-{{/if}}
+{{/in-array}}
 
 
-{{#if relasjonskode}}{{#if (or (eq relasjonskode "FAR") (eq relasjonskode "MEDMOR"))}}{{#if (or (eq avslagsårsak "1027") (eq avslagsårsak "1029"))}}
+{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}{{#in-array (array "1027" "1029") avslagsårsak}}
 {{>punkt}}Du har ikke rett til foreldrepenger fordi du ikke er registrert som {{#eq relasjonskode "FAR"}}far{{/eq}}{{#eq relasjonskode "MEDMOR"}}medmor{{/eq}} til {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}}.
-{{/if}}{{/if}}{{/if}}
+{{/in-array}}{{/in-array}}{{/if}}
 
 
-{{#if (or (eq avslagsårsak "4012") (eq avslagsårsak "4003"))}}
+{{#in-array (array "4012" "4003") avslagsårsak}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke har omsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
-{{/if}}
+{{/in-array}}
 
 
 {{#eq avslagsårsak "1015"}}
@@ -76,7 +76,7 @@
 {{/eq}}
 
 
-{{#if (or (eq avslagsårsak "1020") (eq avslagsårsak "1021") (eq avslagsårsak "1023") (eq avslagsårsak "1024") (eq avslagsårsak "1025"))}}
+{{#in-array (array "1020" "1021" "1023" "1024" "1025") avslagsårsak}}
 {{#eq barnErFødt false}}
 {{>punkt}}Du har ikke rett til foreldrepenger fordi du ikke er medlem i folketrygden.
 {{/eq}}
@@ -87,7 +87,7 @@
 {{#eq gjelderFødsel false}}
 {{>punkt}}Du har ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet du overtok omsorgen for {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}}.
 {{/eq}}{{/eq}}
-{{/if}}
+{{/in-array}}
 
 
 {{#eq avslagsårsak "1021"}}
@@ -130,11 +130,11 @@
 {{/eq}}
 
 
-{{#if (or (eq avslagsårsak "1028") (eq avslagsårsak "4007"))}}
+{{#in-array (array "1028" "4007") avslagsårsak}}
 {{>punkt}}Du kan ikke overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen viser ikke dette.
-{{/if}}
+{{/in-array}}
 
 
 {{#eq avslagsårsak "4050"}}
@@ -218,14 +218,14 @@ For at du skal kunne overta foreldrepengene, må mor være helt avhengig av hjel
 {{/eq}}
 
 
-{{#if (or (eq avslagsårsak "4040") (eq avslagsårsak "4111"))}}
+{{#in-array (array "4040" "4111") avslagsårsak}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ikke er innlagt i helseinstitusjon.
-{{/if}}
+{{/in-array}}
 
 
-{{#if (or (eq avslagsårsak "4039") (eq avslagsårsak "4112"))}}
+{{#in-array (array "4039" "4112") avslagsårsak}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er innlagt i helseinstitusjon.
-{{/if}}
+{{/in-array}}
 
 
 {{#eq avslagsårsak "4037"}}
@@ -233,16 +233,16 @@ For at du skal kunne overta foreldrepengene, må mor være helt avhengig av hjel
 {{/eq}}
 
 
-{{#if (or (eq avslagsårsak "4030") (eq avslagsårsak "4031"))}}
+{{#in-array (array "4030" "4031") avslagsårsak}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi det ikke har gått seks uker siden {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ble født.
-{{/if}}
+{{/in-array}}
 
 
-{{#if (or (eq avslagsårsak "4038") (eq avslagsårsak "4110"))}}
+{{#in-array (array "4038" "4110") avslagsårsak}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 For å kunne utsette foreldrepengene på grunn av sykdom, må du være er helt avhengig av hjelp til å ta deg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Legeerklæringen viser ikke dette.
-{{/if}}
+{{/in-array}}
 
 
 {{#eq avslagsårsak "4082"}}
@@ -266,11 +266,11 @@ Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden
 {{/eq}}
 
 
-{{#if (or (eq avslagsårsak "4080") (eq avslagsårsak "4501"))}}
+{{#in-array (array "4080" "4501") avslagsårsak}}
 {{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
 
 For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du begynner å jobbe. Vi har derfor redusert foreldrepengene dine fordi du jobber.
-{{/if}}
+{{/in-array}}
 
 
 {{#eq avslagsårsak "4093"}}
@@ -278,9 +278,9 @@ For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du 
 {{/eq}}
 
 
-{{#if (or (eq avslagsårsak "4084") (eq avslagsårsak "4085") (eq avslagsårsak "4086"))}}
+{{#in-array (array "4084" "4085" "4086") avslagsårsak}}
 {{>punkt}}Du kan ikke ta ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen tar ut foreldrepenger i samme periode.
-{{/if}}
+{{/in-array}}
 
 
 {{#eq avslagsårsak "4092"}}
@@ -293,9 +293,9 @@ For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du 
 {{/in-array}}
 
 
-{{#if (or (eq avslagsårsak "4094") (eq avslagsårsak "4502"))}}
+{{#in-array (array "4094" "4502") avslagsårsak}}
 {{>punkt}}Du har søkt om å kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}}, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å kombinere foreldrepengene med arbeid.
-{{/if}}
+{{/in-array}}
 
 
 {{#eq avslagsårsak "4074"}}
@@ -303,9 +303,9 @@ For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du 
 {{/eq}}
 
 
-{{#if (or (eq avslagsårsak "4066") (eq avslagsårsak "4067") (eq avslagsårsak "4068") (eq avslagsårsak "4069") (eq avslagsårsak "4070") (eq avslagsårsak "4088") (eq avslagsårsak "4089"))}}
+{{#in-array (array "4066" "4067" "4068" "4069" "4070" "4088" "4089") avslagsårsak}}
 {{>punkt}}Du har søkt om foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til foreldrepenger i denne perioden.
-{{/if}}
+{{/in-array}}
 
 
 {{#eq avslagsårsak "4013"}}
@@ -330,11 +330,11 @@ Du kan bare utsette når mor jobber, studerer eller er i en annen aktivitet. Du 
 {{/eq}}
 
 
-{{#if (or (eq avslagsårsak "4058") (eq avslagsårsak "4059"))}}
+{{#in-array (array "4058" "4059") avslagsårsak}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 For at du skal få flere dager med foreldrepenger, må den andre forelderen jobbe, studere eller være i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
-{{/if}}
+{{/in-array}}
 
 
 {{#eq avslagsårsak "4060"}}
