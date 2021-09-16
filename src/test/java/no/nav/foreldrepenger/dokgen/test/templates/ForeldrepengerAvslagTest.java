@@ -12,8 +12,7 @@ public class ForeldrepengerAvslagTest {
 
     @Test
     public void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_bokmål() throws Exception {
-        var actual = compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_mange");
-        assertThat(actual)
+        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_mange"))
                 .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_mange_nb.txt"));
     }
 
