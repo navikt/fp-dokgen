@@ -41,11 +41,14 @@ Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igje
 {{/if}}{{/if}}{{/if}}
 
 {{~#gt antallArbeidsgivere 1}}
-{{~#each perioder}}{{#if @first}}{{~#each arbeidsforholdsliste}}{{~#if this.gradering }}
+{{~#each perioder}}{{#if @first}}
+{{~#each arbeidsforholdsliste}}
+{{#if @..first}}
+{{#if this.gradering}}
 **Du har flere arbeidsgivere**
 
 Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere foreldrepenger med arbeid hos én arbeidsgiver om gangen. Det betyr at det bare er perioden din hos {{this.arbeidsgiverNavn}} som blir forlenget.
-{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
+{{/if}}{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
 
 {{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_nb}}{{/if}}
 
