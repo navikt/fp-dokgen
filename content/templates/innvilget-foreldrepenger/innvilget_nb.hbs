@@ -17,11 +17,11 @@ Selv om du jobber i denne perioden, får du ingen forlengelse av foreldrepengepe
 {{/eq}}
 
 
-{{#if (or (eq årsak "4080") (eq årsak "4501"))}}
+{{#in-array (array "4080" "4501") årsak}}
 {{>punkt}}Du får {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 Vi har redusert utbetalingen din fordi du har jobbet i denne perioden. Du har søkt om å kombinere foreldrepenger med arbeid etter at du begynte å jobbe, og får derfor får du ingen forlengelse av foreldrepengeperioden din.
-{{/if}}
+{{/in-array}}
 
 
 {{#eq årsak "4504"}}
@@ -42,29 +42,29 @@ Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jo
 {{/neq}}{{/eq}}
 
 
-{{#if (or (eq årsak "2010") (eq årsak "2015"))}}
+{{#in-array (array "2010" "2015") årsak}}
 {{>punkt}}Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har ferie.
-{{/if}}
+{{/in-array}}
 
 
-{{#if (or (eq årsak "2011") (eq årsak "2016"))}}
+{{#in-array (array "2011" "2016") årsak}}
 {{>punkt}}Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber heltid.
-{{/if}}
+{{/in-array}}
 
 
-{{#if (or (eq årsak "2012") (eq årsak "2018") (eq årsak "2025"))}}
+{{#in-array (array "2012" "2018" "2025") årsak}}
 {{>punkt}}Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du er innlagt i helseinstitusjon.
-{{/if}}
+{{/in-array}}
 
 
-{{#if (or (eq årsak "2013") (eq årsak "2019") (eq årsak "2026"))}}
+{{#in-array (array "2013" "2019" "2026") årsak}}
 {{>punkt}}Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}} er innlagt i helseinstitusjon.
-{{/if}}
+{{/in-array}}
 
 
-{{#if (or (eq årsak "2014") (eq årsak "2017") (eq årsak "2027"))}}
+{{#in-array (array "2014" "2017" "2027") årsak}}
 {{>punkt}}Du får utsatt foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du er helt avhengig av hjelp til å ta deg av {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
-{{/if}}
+{{/in-array}}
 
 {{#eq årsak "2028"}}
 {{>punkt}}Du har opphold i foreldrepengeperioden fra og med {{periodeFom}} til og med {{periodeTom}}. Du mister ikke dager, fordi den andre forelderen jobber, studerer eller er i en annen godkjent aktivitet. Les mer om dette på nav.no/foreldrepenger.
