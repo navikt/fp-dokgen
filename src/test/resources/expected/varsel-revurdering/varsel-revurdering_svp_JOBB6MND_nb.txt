@@ -5,7 +5,6 @@ Dato: 4. april 2020
 <br>
 <br>
 
-
 # NAV vurderer retten din til svangerskapspenger på nytt
 <p style="color:gray">
 Saksnummer i NAV: 123456789
@@ -17,25 +16,7 @@ Fødselsnummer: 300220 12345
 
 </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Vi har fått nye opplysninger som viser at du ikke har jobbet fire uker før du fikk svangerskapspenger. Derfor vurderer vi å stanse svangerskapspengene dine.
-
-
-
-
-
 
 Opplysningsplikten går fram av folketrygdloven §§ 21-3 og 21-4.
 <br/>
@@ -64,8 +45,5 @@ Med vennlig hilsen
 <br/>
 NAV Familie- og Pensjonsytelser
 
-
 </div>
-
-
 

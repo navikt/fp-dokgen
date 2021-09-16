@@ -40,10 +40,16 @@ Du må søke senest tre måneder etter at perioden med foreldrepenger startet. D
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi det er kun arbeidstakere som har rett til ferie etter ferieloven.
 {{/case}}
 {{#case "4040"}}
-{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ikke er innlagt i helseinstitusjon.
+{{>punkt}}{{>innvilget-foreldrepenger/avslag/kan_ikke_utsette_pga_barn_ikke_innlagt_nb~}}
+{{/case}}
+{{#case "4111"}}
+{{>punkt}}{{>innvilget-foreldrepenger/avslag/kan_ikke_utsette_pga_barn_ikke_innlagt_nb~}}
 {{/case}}
 {{#case "4039"}}
-{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er innlagt i helseinstitusjon.
+{{>punkt}}{{>innvilget-foreldrepenger/avslag/kan_ikke_utsette_pga_ikke_innlagt_nb~}}
+{{/case}}
+{{#case "4112"}}
+{{>punkt}}{{>innvilget-foreldrepenger/avslag/kan_ikke_utsette_pga_ikke_innlagt_nb~}}
 {{/case}}
 {{~#case "4037"}}
 {{#if (and (lt periodeDagsats dagsats)(gt periodeDagsats 0))}}
@@ -65,7 +71,10 @@ Du har ikke søkt om å kombinere foreldrepengene med arbeid og derfor har vi re
 {{>punkt}}{{>innvilget-foreldrepenger/avslag/ikke_seks_uker_født_nb~}}
 {{/case}}
 {{#case "4038"}}
-{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}}. For å kunne utsette foreldrepengene på grunn av sykdom, må du være er helt avhengig av hjelp til å ta deg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Legeerklæringen viser ikke dette.
+{{>punkt}}{{>innvilget-foreldrepenger/avslag/kan_ikke_utsette_pga_ikke_nok_syk_nb~}}
+{{/case}}
+{{#case "4110"}}
+{{>punkt}}{{>innvilget-foreldrepenger/avslag/kan_ikke_utsette_pga_ikke_nok_syk_nb~}}
 {{/case}}
 {{#case "4082"}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
@@ -146,6 +155,15 @@ For at du skal kunne ta ut foreldrepengene, må mor være helt avhengig av hjelp
 {{/case}}
 {{#case "4065"}}
 {{>punkt}}{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb~}}
+{{/case}}
+{{~#case "4115"}}
+{{>punkt}}{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb~}}
+{{/case}}
+{{~#case "4116"}}
+{{>punkt}}{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb~}}
+{{/case}}
+{{~#case "4117"}}
+{{>punkt}}{{>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_utsette_nb~}}
 {{/case}}
 {{#case "4094"}}
 {{>punkt}}{{~>innvilget-foreldrepenger/avslag/manglende_dokumentasjon_kombinere_arbeid_fp_nb~}}

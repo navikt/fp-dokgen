@@ -5,7 +5,6 @@ Dato: 4. april 2020
 <br>
 <br>
 
-
 # Du må søkje om å endre foreldrepengeperioden din
 
 <p style="color:gray">
@@ -18,31 +17,13 @@ Fødselsnummer: 300220 12345
 
 </p>
 
-
-
-
-
 Vi har fått opplysningar om at du jobbar samtidig som du får foreldrepengar. Derfor vurderer vi å stanse foreldrepengane dine.
 
 Du kan ikkje jobbe heiltid og samtidig få foreldrepengar. For at du ikkje skal miste foreldrepengane, må du søkje om utsetjing. Arbeider du deltid, må du søkje om å kombinere foreldrepengane med arbeid.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Ønskjer du å søkje om å endre foreldrepengeperioden eller å uttale deg, må du gjere dette innan 24. mai 2020.
 
 Du kan søkje om å endre perioden din på [nav.no](https://nav.no/). Ønskjer du å uttale deg kan du gjere det ved å logge deg inn på [nav.no/dittnav](https://nav.no/dittnav) og velje «Send beskjed til NAV».
-
 
 Opplysningsplikta går fram av folketrygdlova §§ 21-3 og 21-4.
 <br/>
@@ -71,10 +52,5 @@ Med vennleg helsing
 <br/>
 NAV Familie- og Pensjonsytelser
 
-
-
 </div>
-
-
-
 

@@ -894,6 +894,45 @@
       "arbeidsforholdsliste": [
         {}
       ]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4110",
+      "periodeFom": "1. august 2021",
+      "periodeTom": "2. august 2021",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [
+        {
+        }
+      ]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4112",
+      "periodeFom": "3. august 2021",
+      "periodeTom": "4. august 2021",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [
+        {
+        }
+      ]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4111",
+      "periodeFom": "5. august 2021",
+      "periodeTom": "6. august 2021",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [
+        {
+        }
+      ]
     }
   ],
   "bruttoBeregningsgrunnlag": 574548,

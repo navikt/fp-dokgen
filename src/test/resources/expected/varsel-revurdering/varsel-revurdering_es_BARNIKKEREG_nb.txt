@@ -5,7 +5,6 @@ Dato: 4. april 2020
 <br>
 <br>
 
-
 # NAV vurderer retten din til engangsstønad på nytt
 
 <p style="color:gray">
@@ -18,23 +17,11 @@ Fødselsnummer: 300220 12345
 
 </p>
 
-
 Du hadde termin 23. mai 2020, men barnet ditt er ikke registrert i folkeregisteret. Du må derfor sende oss fødselsattesten innen 24. mai 2020.
 
 Er barnet født i utlandet, må du opplyse om hvor lenge du har vært i utlandet og om du har planlagt å reise tilbake til Norge.
 
 Du har også rett til å uttale deg om saken innen fristen som er oppgitt.
-
-
-
-
-
-
-
-
-
-
-
 
 Opplysningsplikten går fram av folketrygdloven §§ 21-3 og 21-4.
 <br/>
@@ -63,8 +50,5 @@ Med vennlig hilsen
 <br/>
 NAV Familie- og Pensjonsytelser
 
-
 </div>
-
-
 

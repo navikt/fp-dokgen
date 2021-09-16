@@ -5,7 +5,6 @@ Dato: 4. april 2020
 <br>
 <br>
 
-
 # NAV vurderer retten din til foreldrepenger på nytt
 
 <p style="color:gray">
@@ -17,18 +16,6 @@ Fødselsnummer: 300220 12345
 <br/>
 
 </p>
-
-
-
-
-
-
-
-
-
-
-
-
 
 Vi har fått opplysninger om at moren til barna ikke lenger jobber. Derfor vurderer vi å stanse foreldrepengene dine.
 
@@ -42,18 +29,9 @@ Du kan ha rett til foreldrepenger hvis mor:
     <li>er helt avhengig av hjelp til å ta seg av barna</li>
 </ul>
 
-
-
-
-
-
-
 Har du flere opplysninger eller ønsker du å uttale deg, må du gjøre dette innen 24. mai 2020.
 
 Du sender uttalelsen din ved å logge deg inn på [nav.no/dittnav](https://nav.no/dittnav) og velge «Send beskjed til NAV». Opplysninger sender du inn på [nav.no/ettersendelse](https://nav.no/ettersendelse).
-
-
-
 
 Opplysningsplikten går fram av folketrygdloven §§ 21-3 og 21-4.
 <br/>
@@ -82,8 +60,5 @@ Med vennlig hilsen
 <br/>
 NAV Familie- og Pensjonsytelser
 
-
 </div>
-
-
 

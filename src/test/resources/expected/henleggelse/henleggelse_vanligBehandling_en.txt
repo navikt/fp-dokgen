@@ -5,7 +5,6 @@ Date: 4. april 2020
 <br>
 <br>
 
-
 # NAV has closed your case on parental benefits
     <p style="color:gray">
 Nav's case number: 123456789
@@ -19,7 +18,6 @@ National identity number: 300220 12345
 
 We have been notified that you withdraw the application for parental benefits. Your case will therefore be closed.<br/><br/>
 
-
 **Do you have questions?**<br/>
 You will find useful information at [nav.no/familie](https://nav.no/familie).
 <br/>
@@ -28,7 +26,4 @@ You will find useful information at [nav.no/familie](https://nav.no/familie).
 Yours sincerely,
 <br/>
 NAV Familie- og Pensjonsytelser
-
-
-
 

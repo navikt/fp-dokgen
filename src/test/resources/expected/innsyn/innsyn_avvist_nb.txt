@@ -5,7 +5,6 @@ Dato: 4. april 2020
 <br>
 <br>
 
-
 # NAV har avslått forespørselen din om innsyn i saken om svangerskapspenger
 <p style="color:gray">
 Saksnummer i NAV: 123456789
@@ -22,10 +21,6 @@ Du har bedt om å få innsyn i saken, men vi kan ikke sende deg dokumentene vi h
 Vi kan kun gi deg delvis innsyn fordi
 
 Dette går fram av forvaltningsloven § 18.
-
-
-
-
 
 <br/>
 

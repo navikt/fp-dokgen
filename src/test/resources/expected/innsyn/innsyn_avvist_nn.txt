@@ -5,7 +5,6 @@ Dato: 4. april 2020
 <br>
 <br>
 
-
 # NAV har avslått førespurnaden din om innsyn i  saka om svangerskapspengar
 <p style="color:gray">
 Saksnummer i NAV: 123456789
@@ -22,10 +21,6 @@ Du har bedt om innsyn i saka, men vi kan ikkje sende deg dokumenta vi har.
 Vi kan kun gi deg delvis innsyn fordi
 
 Dette går fram av forvaltningslova § 18.
-
-
-
-
 
 <br/>
 
@@ -44,5 +39,4 @@ Du finn nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 Med vennleg helsing
 <br/>
 NAV Familie- og Pensjonsytelser
-
 

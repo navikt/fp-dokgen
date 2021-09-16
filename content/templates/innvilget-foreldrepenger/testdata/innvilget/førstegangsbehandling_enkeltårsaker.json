@@ -406,6 +406,60 @@
           "stillingsprosent": 100.0
         }
       ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2025",
+      "periodeFom": "11. mai 2021",
+      "periodeTom": "12. mai 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2026",
+      "periodeFom": "13. mai 2021",
+      "periodeTom": "14. mai 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
+        }
+      ]
+    },
+    {
+      "innvilget": true,
+      "årsak": "2027",
+      "periodeFom": "15. mai 2021",
+      "periodeTom": "16. mai 2021",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "Arbeidsgiver 1",
+          "gradering": false,
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0
+        }
+      ]
     }
   ],
   "bruttoBeregningsgrunnlag": 574548,

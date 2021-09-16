@@ -5,7 +5,6 @@ Dato: 4. april 2020
 <br>
 <br>
 
-
 # You must apply for parental benefits in time
 <p style="color:gray">
 Nav's case number: 123456789
@@ -16,8 +15,6 @@ National identity number: 300220 12345
 <br/>
 
 </p>
-
-
 
 You may be entitled to parental benefits. The other parent has stated that you will have parental benefits for a period that you have not applied for. In order for these days not to be lost, the person who is to be at home must apply for these days. If neither of you are going to be home, one of you must apply to postpone the period of parental benefits.
 

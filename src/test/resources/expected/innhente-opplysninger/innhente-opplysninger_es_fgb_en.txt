@@ -5,8 +5,6 @@ Date: 4. april 2020
 <br>
 <br>
 
-
-
 #  We need more information
 <p style="color:gray">
 Nav's case number: 123456789
@@ -18,11 +16,7 @@ National identity number: 300220 12345
 
 </p>
 
-
-
 We received your application concerning lump-sum grant 1. april 2020, but we need more information to process it.
-
-
 
 **You have to send us**
 <br/>
@@ -31,7 +25,6 @@ Tekst
 - Bekreftelse
 Mer tekst
 <br/>
-
 
 **Your application can be turned down**
 <br/>
@@ -57,8 +50,5 @@ Yours sincerely,
 <br/>
 NAV Familie- og Pensjonsytelser
 
-
 </div>
-
-
 

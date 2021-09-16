@@ -5,7 +5,6 @@ Date: 4. april 2020
 <br>
 <br>
 
-
 #  NAV has granted your application for a lump-sum grant
 <p style="color:gray">
 Nav's case number: 123456789
@@ -52,8 +51,6 @@ This case has been electronically processed by our administration system, which 
 
 <br/><br/>
 
-
 **This is a copy, the orginal has been sent to the guardian**.
-
 
 </div>

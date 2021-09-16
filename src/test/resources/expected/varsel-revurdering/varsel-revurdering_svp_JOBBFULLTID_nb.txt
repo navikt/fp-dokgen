@@ -5,7 +5,6 @@ Dato: 4. april 2020
 <br>
 <br>
 
-
 # Du må søke om å endre svangerskapspengeperioden din
 <p style="color:gray">
 Saksnummer i NAV: 123456789
@@ -17,31 +16,13 @@ Fødselsnummer: 300220 12345
 
 </p>
 
-
-
-
-
 Vi har fått opplysninger om at du jobber samtidig som du får svangerskapspenger. Derfor vurderer vi å stanse svangerskapspengene dine.
 
 Du kan ikke jobbe heltid og samtidig få svangerskapspenger. Arbeider du deltid, må du søke om å kombinere svangerskapspengene med arbeid.
 
-
-
-
-
-
-
-
-
-
-
 Ønsker du å søke om å endre svangerskapsperioden eller å uttale deg, må du gjøre dette innen 24. mai 2020.
 
 Du kan søke om å endre perioden din på [nav.no](https://nav.no/). Ønsker du å uttale deg kan du gjøre det ved å logge deg inn på [nav.no/dittnav](https://nav.no/dittnav) og velge «Send beskjed til NAV».
-
-
-
-
 
 Opplysningsplikten går fram av folketrygdloven §§ 21-3 og 21-4.
 <br/>
@@ -70,8 +51,5 @@ Med vennlig hilsen
 <br/>
 NAV Familie- og Pensjonsytelser
 
-
 </div>
-
-
 
