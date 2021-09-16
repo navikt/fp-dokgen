@@ -86,8 +86,7 @@
 {{/eq}}
 {{#eq gjelderFødsel false}}
 {{>punkt}}You are not entitled to parental benefit, because you were not a member of the Norwegian National Insurance Scheme at the time you assumed care of your {{#gt antallBarn 1}}children{{else}}child{{/gt}}.
-{{/eq}}
-{{/eq}}
+{{/eq}}{{/eq}}
 {{/in-array}}
 
 
@@ -195,13 +194,13 @@ In order to be able to take over the parental benefit, the mother must be fully 
 {{/eq}}
 
 
-{{#eq avslagsårsak "4005"}}
+{{#in-array (array "4005" "4102") avslagsårsak}}
 {{#eq annenForelderHarRett true}}
 {{>punkt}}No application has been submitted for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. Therefore, {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}} have been lost.
 {{/eq}}
 {{#eq annenForelderHarRett false}}
 {{>punkt}}You have not applied for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost, {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
-{{/eq}}{{/eq}}
+{{/eq}}{{/in-array}}
 
 
 {{#eq avslagsårsak "4033"}}
