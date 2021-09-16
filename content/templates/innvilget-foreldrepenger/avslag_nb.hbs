@@ -18,11 +18,13 @@ Perioder før termindato kan ikke utsettes fordi du fødte før svangerskapsuke 
 
 Du må søke senest tre måneder etter at perioden med foreldrepenger startet. Du søkte {{søknadsdato}}. Derfor får du {{antallTapteDager}} {{#gt antallTapteDager 1}}færre dager{{else}}dag mindre{{/gt}} med foreldrepenger.{{/gt}}{{/case}}
 {{#case "4005"}}
-{{#if annenForelderHarRett}}
-{{>punkt}}Det er ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}} tapt.
-{{else}}
-{{>punkt}}Du har ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mistet  {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}}.
-{{/if}}
+{{>innvilget-foreldrepenger/avslag/ikke_søkt_fp_eller_utsettelse_nb}}
+{{/case}}
+{{#case "4102"}}
+{{>innvilget-foreldrepenger/avslag/ikke_søkt_fp_eller_utsettelse_nb}}
+{{/case}}
+{{~#case "4103"}}
+{{>punkt}} Legg på teksten
 {{/case}}
 {{~#case "4003"}}
 {{>punkt}}{{>innvilget-foreldrepenger/avslag/ikke_omsorg_nb}}
