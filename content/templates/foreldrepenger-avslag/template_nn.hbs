@@ -194,13 +194,13 @@ For at du skal kunne overta foreldrepengane, må mor vere heilt avhengig av hjel
 {{/eq}}
 
 
-{{#eq avslagsårsak "4005"}}
+{{#in-array (array "4005" "4102") avslagsårsak}}
 {{#eq annenForelderHarRett true}}
 {{>punkt}}Det er ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dager tapte{{else}}dag tapt{{/gt}}.
 {{/eq}}
 {{#eq annenForelderHarRett false}}
 {{>punkt}}Du har ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mista {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}}.
-{{/eq}}{{/eq}}
+{{/eq}}{{/in-array}}
 
 
 {{#eq avslagsårsak "4033"}}

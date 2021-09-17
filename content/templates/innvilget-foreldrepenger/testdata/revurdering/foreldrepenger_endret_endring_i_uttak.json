@@ -106,6 +106,25 @@
           "naturalytelseNyDagsats": 0
         }
       ]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4102",
+      "periodeFom": "22. september 2020",
+      "periodeTom": "9. november 2020",
+      "periodeDagsats": 0,
+      "antallTapteDager": 35,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "KNOTEMAKERIET AS",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ]
     }
   ],
   "bruttoBeregningsgrunnlag": 656998,
