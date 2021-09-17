@@ -32,9 +32,14 @@ Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jo
 
 
 {{#lt this.prioritertUtbetalingsgrad 100.0}}
-{{~#switch this.årsak}}{{#case "2001"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2002"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2003"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2004"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2005"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2006"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2007"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2036"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{#case "2037"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_prosent_nb }}{{/case}}{{/switch}}
+{{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" ) årsak}}
+{{>punkt}}Du tar ut {{trim-decimal this.prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{format-kroner this.periodeDagsats}} kroner per dag før skatt.
+{{/in-array}}
 {{else}}
-{{~#switch this.årsak}}{{#case "2001"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2002"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2003"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2004"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2005"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2006"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2007"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2036"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{#case "2037"}}{{>punkt}}{{> innvilget-foreldrepenger/innvilget/uttak_fullt_nb }}{{/case}}{{/switch}}{{/lt}}
+{{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" "2038" ) årsak}}
+{{>punkt}}Du tar ut foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{format-kroner this.periodeDagsats}} kroner per dag før skatt.
+{{/in-array}}
+{{/lt}}
 
 
 {{#eq årsak "2038"}}{{#neq this.prioritertUtbetalingsgrad 100.0}}
