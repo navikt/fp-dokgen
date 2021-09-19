@@ -59,18 +59,18 @@ public class TemplateTestService {
 
     public static String compileContent(Brevmal templateName, String undermal, Språk språk, String testDataFilename) throws Exception {
         String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName, undermal, språk));
-        return produserTekst(templateName, testDataFilename, templateContent);
+        String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(templateName, undermal, testDataFilename));
+        return produserTekst(templateName, mergeFieldsJsonString, templateContent);
     }
 
     public static String compileContent(Brevmal templateName, Språk språk, String testDataFilename) throws Exception {
         String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName, språk));
-        return produserTekst(templateName, testDataFilename, templateContent);
+        String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(templateName, testDataFilename));
+        return produserTekst(templateName, mergeFieldsJsonString, templateContent);
     }
 
-    private static String produserTekst(final Brevmal templateName, final String testDataFilename, final String templateContent) throws Exception {
-        String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(templateName, testDataFilename));
+    private static String produserTekst(final Brevmal templateName, final String mergeFieldsJsonString, final String templateContent) throws Exception {
         JsonNode mergeFields = getJsonFromString(mergeFieldsJsonString);
-
         Template template = handlebars.compileInline(templateContent);
         return template.apply(with(mergeFields));
     }

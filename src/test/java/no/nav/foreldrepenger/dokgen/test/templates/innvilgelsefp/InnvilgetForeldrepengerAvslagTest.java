@@ -15,7 +15,7 @@ public class InnvilgetForeldrepengerAvslagTest {
 
     @Test
     public void skal_fortelle_om_innvilget_uttak_med_prosent_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "avslag/førstegangsbehandling_avslag"))
+        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_avslag"))
             .isEqualToIgnoringWhitespace(getExpected(BREVMAL, UNDERMAL, "førstegangsbehandling_avslag_nb.txt"));
     }
 

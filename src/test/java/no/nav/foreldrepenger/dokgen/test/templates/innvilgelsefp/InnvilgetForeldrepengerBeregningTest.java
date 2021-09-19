@@ -15,31 +15,31 @@ public class InnvilgetForeldrepengerBeregningTest {
 
     @Test
     public void undermal_beregning_en_ag_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "beregning/førstegangsbehandling_en_ag"))
+        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_en_ag"))
             .isEqualToIgnoringWhitespace(getExpected(BREVMAL, UNDERMAL, "innvilget-fp_en_ag_nb.txt"));
     }
 
     @Test
     public void undermal_beregning_to_ag_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "beregning/førstegangsbehandling_to_ag"))
+        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_to_ag"))
             .isEqualToIgnoringWhitespace(getExpected(BREVMAL, UNDERMAL,"innvilget-fp_to_ag_nb.txt"));
     }
 
     @Test
     public void undermal_beregning_næring_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "beregning/førstegangsbehandling_næring"))
+        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_næring"))
             .isEqualToIgnoringWhitespace(getExpected(BREVMAL, UNDERMAL,"innvilget-fp_næring_nb.txt"));
     }
 
     @Test
     public void undermal_beregning_frilans_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "beregning/førstegangsbehandling_frilans"))
+        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_frilans"))
             .isEqualToIgnoringWhitespace(getExpected(BREVMAL, UNDERMAL,"innvilget-fp_frilans_nb.txt"));
     }
 
     @Test
     public void undermal_beregning_fri_ytelse_80_dg_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "beregning/revurdering_kun_ytelse_80_dg"))
+        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "revurdering_kun_ytelse_80_dg"))
             .isEqualToIgnoringWhitespace(getExpected(BREVMAL, UNDERMAL,"innvilget-fp_kun_ytelse_nb.txt"));
     }
 }

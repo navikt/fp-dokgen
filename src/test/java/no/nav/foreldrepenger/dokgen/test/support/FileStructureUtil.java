@@ -19,6 +19,10 @@ class FileStructureUtil {
         return CONTENT_ROOT.resolve(String.format("templates/%s/testdata/%s.json", brevmal.getNavn(), testDataName));
     }
 
+    static Path getTestDataPath(Brevmal brevmal, String undermal, String testDataName) {
+        return CONTENT_ROOT.resolve(String.format("templates/%s/testdata/%s/%s.json", brevmal.getNavn(), undermal, testDataName));
+    }
+
     static Path getTemplateRootPath() {
         return CONTENT_ROOT.resolve("templates");
     }
