@@ -6,21 +6,23 @@ import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.comp
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
+import no.nav.foreldrepenger.dokgen.test.support.Språk;
+
 public class EngangsstønadAvslagTest {
 
-    private static final String TEMPLATE_NAME = "engangsstonad-avslag";
-    private static final String TEMPLATE_PATH = "/template_";
+    private static final Brevmal BREVMAL = Brevmal.ES_AVSLAG;
 
     @Test
     public void avslagsbrev_nb() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_avslag_fb"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "-fb_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_avslag_fb"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL,"engangsstonad-avslag-fb_nb.txt"));
     }
 
     @Test
     public void avslagsbrev_revurdering_nb() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_avslag_rv"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "-rv_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_avslag_rv"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "engangsstonad-avslag-rv_nb.txt"));
     }
 
 }

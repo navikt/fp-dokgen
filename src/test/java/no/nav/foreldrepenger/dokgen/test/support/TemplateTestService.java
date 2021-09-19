@@ -57,9 +57,17 @@ public class TemplateTestService {
     public TemplateTestService() {
     }
 
-    public static String compileContent(String templateName, String templatePath, String språk, String testDataFilename) throws Exception {
-        String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName + templatePath, språk));
+    public static String compileContent(Brevmal templateName, String undermal, Språk språk, String testDataFilename) throws Exception {
+        String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName, undermal, språk));
+        return produserTekst(templateName, testDataFilename, templateContent);
+    }
 
+    public static String compileContent(Brevmal templateName, Språk språk, String testDataFilename) throws Exception {
+        String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName, språk));
+        return produserTekst(templateName, testDataFilename, templateContent);
+    }
+
+    private static String produserTekst(final Brevmal templateName, final String testDataFilename, final String templateContent) throws Exception {
         String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(templateName, testDataFilename));
         JsonNode mergeFields = getJsonFromString(mergeFieldsJsonString);
 
@@ -67,8 +75,13 @@ public class TemplateTestService {
         return template.apply(with(mergeFields));
     }
 
-    public static String getExpected(String templateName, String expectedFileName) throws Exception {
-        Path expectedPath = FileStructureUtil.getExpectedPath(templateName, expectedFileName);
+    public static String getExpected(Brevmal brevmal, String expectedFileName) throws Exception {
+        Path expectedPath = FileStructureUtil.getExpectedPath(brevmal, expectedFileName);
+        return readFile(expectedPath);
+    }
+
+    public static String getExpected(Brevmal brevmal, String undermal, String expectedFileName) throws Exception {
+        Path expectedPath = FileStructureUtil.getExpectedPath(brevmal, undermal, expectedFileName);
         return readFile(expectedPath);
     }
 
@@ -91,4 +104,6 @@ public class TemplateTestService {
                         MethodValueResolver.INSTANCE
                 ).build();
     }
+
+
 }

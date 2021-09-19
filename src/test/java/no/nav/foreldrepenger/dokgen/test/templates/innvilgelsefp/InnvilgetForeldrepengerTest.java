@@ -6,56 +6,58 @@ import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.comp
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
+import no.nav.foreldrepenger.dokgen.test.support.Språk;
+
 public class InnvilgetForeldrepengerTest {
 
-    private static final String TEMPLATE_NAME = "innvilget-foreldrepenger";
-    private static final String TEMPLATE_PATH = "/template_";
+    private static final Brevmal BREVMAL = Brevmal.FP_INNVILGET;
 
     @Test
     public void førstegangsbehandling_uten_gradering_og_avslag_nb() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "forstegangsbehandling/automatisk_ingen_gradering_ingen_avslag"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "forstegangsbehandling/forstegangsbehandling_uten_gradering_avslag_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/automatisk_ingen_gradering_ingen_avslag"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "forstegangsbehandling/uten_gradering_avslag_nb.txt"));
     }
 
     @Test
     public void førstegangsbehandling_med_avslag_nb() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "forstegangsbehandling/med_avslag_periode"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "forstegangsbehandling/forstegangsbehandling_med_avslag_periode_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/med_avslag_periode"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL,"forstegangsbehandling/med_avslag_periode_nb.txt"));
     }
 
     @Test
     public void førstegangsbehandling_med_fritekst_nb() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "forstegangsbehandling/med_fritekst"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "forstegangsbehandling/forstegangsbehandling_med_fritekst_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/med_fritekst"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "forstegangsbehandling/med_fritekst_nb.txt"));
     }
 
     @Test
     public void førstegangsbehandling_med_flere_arbeidsgivere_og_gradering_nb() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "forstegangsbehandling/gradering_flere_arbgivere_og_gradering"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "forstegangsbehandling/forstegangsbehandling_gradering_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/gradering_flere_arbgivere_og_gradering"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "forstegangsbehandling/gradering_nb.txt"));
     }
 
     @Test
     public void revurdering_foreldrepenger_endret_endring_i_uttak() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "revurdering/foreldrepenger_endret_endring_i_uttak"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "revurdering/foreldrepenger_endret_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "revurdering/foreldrepenger_endret_endring_i_uttak"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL,"revurdering/foreldrepenger_endret_nb.txt"));
     }
 
     @Test
     public void revurdering_foreldrepenger_innvilget_endring_i_uttak() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "revurdering/foreldrepenger_innvilget_endring_i_uttak"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "revurdering/foreldrepenger_innvilget_endring_i_uttak_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "revurdering/foreldrepenger_innvilget_endring_i_uttak"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "revurdering/foreldrepenger_innvilget_endring_i_uttak_nb.txt"));
     }
 
     @Test
     public void revurdering_foreldrepenger_endret_endring_i_beregning() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "revurdering/foreldrepenger_endret_endring_i_beregning"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "revurdering/foreldrepenger_endret_endring_i_beregning_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "revurdering/foreldrepenger_endret_endring_i_beregning"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "revurdering/foreldrepenger_endret_endring_i_beregning_nb.txt"));
     }
     @Test
     public void revurdering_foreldrepenger_dødt_barn() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "revurdering/foreldrepenger_endret_barn_dod"))
-                .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, "revurdering/foreldrepenger_endret_barn_dod_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "revurdering/foreldrepenger_endret_barn_dod"))
+                .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "revurdering/foreldrepenger_endret_barn_dod_nb.txt"));
     }
 
 }

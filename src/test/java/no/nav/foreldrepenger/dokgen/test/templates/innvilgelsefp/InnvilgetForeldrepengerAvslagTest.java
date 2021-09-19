@@ -6,15 +6,17 @@ import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.comp
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
+import no.nav.foreldrepenger.dokgen.test.support.Språk;
+
 public class InnvilgetForeldrepengerAvslagTest {
-    private static final String TEMPLATE_NAME = "innvilget-foreldrepenger";
-    private static final String TEMPLATE_PATH = "/avslag_";
-    private static final String EXPECTED_PREFIX = "avslag/innvilget-foreldrepenger";
+    private static final Brevmal BREVMAL = Brevmal.FP_INNVILGET;
+    private static final String UNDERMAL = "avslag";
 
     @Test
     public void skal_fortelle_om_innvilget_uttak_med_prosent_nb() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "avslag/førstegangsbehandling_avslag"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, EXPECTED_PREFIX + "_førstegangsbehandling_avslag_nb.txt"));
+        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "avslag/førstegangsbehandling_avslag"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, UNDERMAL, "førstegangsbehandling_avslag_nb.txt"));
     }
 
 }

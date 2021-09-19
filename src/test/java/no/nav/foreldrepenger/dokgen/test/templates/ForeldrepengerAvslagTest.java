@@ -6,31 +6,33 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 
+import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
+import no.nav.foreldrepenger.dokgen.test.support.Språk;
+
 public class ForeldrepengerAvslagTest {
-    private static final String TEMPLATE_NAME = "foreldrepenger-avslag";
-    private static final String TEMPLATE_PATH = "/template_";
+    private static final Brevmal BREVMAL = Brevmal.FP_AVSLAG;
 
     @Test
     public void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_bokmål() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_mange"))
-                .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_mange_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_mange"))
+                .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-avslag_mange_nb.txt"));
     }
 
     @Test
     public void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_nynorsk() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_mange"))
-                .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_mange_nn.txt"));
+        assertThat(compileContent(BREVMAL, Språk.NYNORSK, "test_mange"))
+                .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-avslag_mange_nn.txt"));
     }
 
     @Test
     public void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_engelsk() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "en", "test_mange"))
-                .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_mange_en.txt"));
+        assertThat(compileContent(BREVMAL, Språk.ENGELSK, "test_mange"))
+                .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-avslag_mange_en.txt"));
     }
 
     @Test
     public void skal_generere_foreldrepenger_avslag_brevet_med_fritekst() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_fritekst"))
-                .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_fritekst.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_fritekst"))
+                .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-avslag_fritekst.txt"));
     }
 }

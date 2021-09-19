@@ -7,37 +7,39 @@ import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.comp
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
+import no.nav.foreldrepenger.dokgen.test.support.Språk;
+
 public class IngenEndringTest {
-    private static final String TEMPLATE_NAME = "ingen-endring";
-    private static final String TEMPLATE_PATH = "/template_";
+    private static final Brevmal BREVMAL = Brevmal.INGEN_ENDRING;
 
     @Test
     public void skal_generere_brev_for_ingen_endring_FP_på_bokmål() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_fp"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_fp"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ingen-endring_fp_nb.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ingen_endring_FP_på_nynorsk() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nn", "test_fp"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_fp_nn.txt"));
+        assertThat(compileContent(BREVMAL, Språk.NYNORSK, "test_fp"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ingen-endring_fp_nn.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ingen_endring_ES_på_bokmål() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_es"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_es_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_es"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ingen-endring_es_nb.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ingen_endring_ES_på_engelsk() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "en", "test_es"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_es_en.txt"));
+        assertThat(compileContent(BREVMAL, Språk.ENGELSK, "test_es"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ingen-endring_es_en.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_ingen_endring_SVP_på_bokmål() throws Exception {
-        assertThat(compileContent(TEMPLATE_NAME, TEMPLATE_PATH, "nb", "test_svp"))
-            .isEqualToIgnoringWhitespace(getExpected(TEMPLATE_NAME, TEMPLATE_NAME + "_svp_nb.txt"));
+        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_svp"))
+            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ingen-endring_svp_nb.txt"));
     }
 }
