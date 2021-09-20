@@ -10,7 +10,7 @@ import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 public class ForeldrepengerInfoTilAnnenForelderTest {
-    private static final Brevmal BREVMAL = Brevmal.FP_INFO_TIL_ANNEN_FORELDER;
+    private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_INFOBREV_TIL_ANNEN_FORELDER;
 
     @Test
     public void infobrev_nb() throws Exception {

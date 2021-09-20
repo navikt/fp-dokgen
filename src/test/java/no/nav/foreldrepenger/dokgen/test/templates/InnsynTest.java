@@ -11,7 +11,7 @@ import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 public class InnsynTest {
 
-    private static final Brevmal BREVMAL = Brevmal.INNSYN;
+    private static final Brevmal BREVMAL = Brevmal.INNSYN_SVAR;
 
     @Test
     public void innsynInnvilget_nb() throws Exception {

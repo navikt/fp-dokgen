@@ -10,7 +10,7 @@ import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 public class VarselOmRevurderingTest {
-    private static final Brevmal BREVMAL = Brevmal.VARSEL_REVURDERING;
+    private static final Brevmal BREVMAL = Brevmal.VARSEL_OM_REVURDERING;
 
     @Test
     public void skal_generere_brev_for_varsel_om_revurdering_ES_kode_ANNET_på_bokmål() throws Exception {

@@ -10,7 +10,7 @@ import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 public class ForeldrepengerAvslagTest {
-    private static final Brevmal BREVMAL = Brevmal.FP_AVSLAG;
+    private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_AVSLAG;
 
     @Test
     public void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_bokmål() throws Exception {

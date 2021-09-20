@@ -10,7 +10,7 @@ import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 public class InnvilgetForeldrepengerUtbetalingTest {
-    private static final Brevmal BREVMAL = Brevmal.FP_INNVILGET;
+    private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_INNVILGELSE;
     private static final String UNDERMAL = "utbetaling";
 
     @Test

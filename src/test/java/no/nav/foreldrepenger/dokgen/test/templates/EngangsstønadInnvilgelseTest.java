@@ -11,7 +11,7 @@ import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 public class EngangsstønadInnvilgelseTest {
 
-    private static final Brevmal BREVMAL = Brevmal.ES_INNVILGET;
+    private static final Brevmal BREVMAL = Brevmal.ENGANGSSTØNAD_INNVILGELSE;
 
     @Test
     public void skal_generere_brev_for_innvilgelse_ESførstegang_på_bokmål() throws Exception {

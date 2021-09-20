@@ -11,7 +11,7 @@ import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 public class EngangsstønadAvslagTest {
 
-    private static final Brevmal BREVMAL = Brevmal.ES_AVSLAG;
+    private static final Brevmal BREVMAL = Brevmal.ENGANGSSTØNAD_AVSLAG;
 
     @Test
     public void avslagsbrev_nb() throws Exception {

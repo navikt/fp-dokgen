@@ -11,7 +11,7 @@ import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 public class InnvilgetForeldrepengerTest {
 
-    private static final Brevmal BREVMAL = Brevmal.FP_INNVILGET;
+    private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_INNVILGELSE;
 
     @Test
     public void førstegangsbehandling_uten_gradering_og_avslag_nb() throws Exception {

@@ -10,7 +10,7 @@ import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 public class HenleggelseTest {
-    private static final Brevmal BREVMAL = Brevmal.HENLEGELSE;
+    private static final Brevmal BREVMAL = Brevmal.INFO_OM_HENLEGGELSE;
 
     @Test
     public void henleggelse_innsyn() throws Exception {
