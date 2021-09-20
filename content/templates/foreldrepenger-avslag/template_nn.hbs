@@ -126,7 +126,7 @@
 
 
 {{#eq avslagsårsak "4076"}}
-{{>punkt}}Du kan ikkje ta over kvoten frå og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen har rett til foreldrepengar. Hvis dette endrar seg kan du søkje på nytt.
+{{>punkt}}Du kan ikkje ta over kvoten frå og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen har rett til foreldrepengar. Dersom dette endrar seg kan du søkje på nytt.
 {{/eq}}
 
 
@@ -190,17 +190,20 @@ For at du skal kunne overta foreldrepengane, må mor vere heilt avhengig av hjel
 
 
 {{#eq avslagsårsak "1019"}}
-{{>punkt}}Vi har avslått søknaden din fordi vi ikkje har fått dokumentasjonen vi har bede om. Dersom du sender oss dokumentasjonen innan fire veker, behandlar vi saka di på nytt. Du treng ikkje sende ny søknad.
+{{>punkt}}Vi har avslått søknaden din fordi vi ikkje har fått dokumentasjonen vi har bede om. Dersom du sender oss dokumentasjonen innan seks veker, behandlar vi saka di på nytt. Du treng ikkje sende ny søknad.
 {{/eq}}
 
+{{#eq avslagsårsak "4005"}}
+{{>punkt}}{{#if annenForelderHarRett}}Det er{{else}}Du har{{/if}} ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Du kan ha rett på {{#gt antallTapteDager 1}}desse {{antallTapteDager}} dagene{{else}}denne dagen{{/gt}}. Du kan sende søknad på nav.no. Dersom du ikkje søkjer, vil du mista {{#gt antallTapteDager 1}}desse dagene{{else}}denne dagen{{/gt}}.
+{{/eq}}
 
-{{#in-array (array "4005" "4102") avslagsårsak}}
+{{#eq avslagsårsak "4102"}}
 {{#eq annenForelderHarRett true}}
-{{>punkt}}Det er ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dager tapte{{else}}dag tapt{{/gt}}.
+{{>punkt}}Det er ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar tapte{{else}}dag tapt{{/gt}}.
 {{/eq}}
 {{#eq annenForelderHarRett false}}
-{{>punkt}}Du har ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mista {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}}.
-{{/eq}}{{/in-array}}
+{{>punkt}}Du har ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mista {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar{{else}}dag{{/gt}}.
+{{/eq}}{{/eq}}
 
 
 {{#eq avslagsårsak "4033"}}
@@ -345,7 +348,7 @@ Du kan ikkje kombinere foreldrepengane du har søkt om, med det den andre foreld
 
 
 {{#eq avslagsårsak "4081"}}
-{{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent. For å ha rett til å utsetje foreldrepengane må du søkje før ferien startar.
+{{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for seint. For å ha rett til å utsetje foreldrepengane må du søkje før ferien startar.
 {{/eq}}
 
 

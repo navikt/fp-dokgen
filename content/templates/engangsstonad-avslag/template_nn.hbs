@@ -54,7 +54,7 @@ Du har ikkje rett til eingongsstønad fordi du søkte for seint. Du må søkje i
 {{#if felles.fritekst}}<br/><br/><p style="white-space: pre-wrap">{{felles.fritekst}}</p><br/>{{/if}}
     {{/case}}
     {{#case "OMSORGSOVERTAKELSE_ETTER_56_UKER"}}
-Du har ikkje rett til eingongsstønad fordi du ikkje tok over omsorga for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} innen 56 veker etter {{#if gjelderFødsel}}fødselen{{else }}adopsjonen{{/if}}.
+Du har ikkje rett til eingongsstønad fordi du ikkje tok over omsorga for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} innan 56 veker etter {{#if gjelderFødsel}}fødselen{{else}}adopsjonen{{/if}}.
     {{/case}}
     {{#case "SØKT_FOR_TIDLIG"}}
 Du har ikkje rett til eingongsstønad fordi du har søkt for tidleg. Du kan tidlegast søkje når du er i svangerskapsveke 22.
@@ -88,7 +88,7 @@ Du har ikkje rett til eingongsstønad fordi vi ikkje har opplysningar om at {{#e
     {{#case "MANGLENDE_DOKUMENTASJON"}}
 Vi har avslått søknaden din fordi vi ikkje har fått dokumentasjonen vi har bede om.
 
-Dersom du sender oss dokumentasjonen innan fire veker, behandlar vi saka di på nytt. Du treng ikkje sende ny søknad.
+Dersom du sender oss dokumentasjonen innan seks veker, behandlar vi saka di på nytt. Du treng ikkje sende ny søknad.
     {{/case}}
 {{/switch}}
 {{#each vilkårTyper}}
