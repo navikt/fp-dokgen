@@ -6,17 +6,21 @@
 {{~#gt antallAvslåttePerioder 1}}* {{/gt}}
 {{~/inline~}}
 
+{{~#* inline "indent" }}
+  <!-- Ikke slett meg. Markdown trenger 2 space for å forstå at det er samme avsnitt etter linjeskift -->
+{{~/inline~}}
+
 {{#each perioder}}
 {{~#unless innvilget}}
 {{#switch årsak}}
 {{#case "4077"}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du får pleiepenger i denne perioden.
 
-Perioder før termindato kan ikke utsettes fordi du fødte før svangerskapsuke 33.
+{{>indent}}Perioder før termindato kan ikke utsettes fordi du fødte før svangerskapsuke 33.
 {{/case}}
 {{#case "4020"}}{{#gt antallTapteDager 0}}{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-Du må søke senest tre måneder etter at perioden med foreldrepenger startet. Du søkte {{søknadsdato}}. Derfor får du {{antallTapteDager}} {{#gt antallTapteDager 1}}færre dager{{else}}dag mindre{{/gt}} med foreldrepenger.{{/gt}}{{/case}}
+{{>indent}}Du må søke senest tre måneder etter at perioden med foreldrepenger startet. Du søkte {{søknadsdato}}. Derfor får du {{antallTapteDager}} {{#gt antallTapteDager 1}}færre dager{{else}}dag mindre{{/gt}} med foreldrepenger.{{/gt}}{{/case}}
 {{#case (array "4005" "4102")}}
 {{#if annenForelderHarRett}}
 {{>punkt}}Det er ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}} tapt.
@@ -56,7 +60,7 @@ Du må søke senest tre måneder etter at perioden med foreldrepenger startet. D
 {{#case "4023"}}
 {{>punkt}}Vi har redusert foreldrepengene dine fordi du jobber fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-Du har ikke søkt om å kombinere foreldrepengene med arbeid og derfor har vi redusert utbetalingen din.
+{{>indent}}Du har ikke søkt om å kombinere foreldrepengene med arbeid og derfor har vi redusert utbetalingen din.
 {{/case}}
 {{#case (array "4030" "4031")}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi det ikke har gått seks uker siden {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ble født.
@@ -67,12 +71,12 @@ Du har ikke søkt om å kombinere foreldrepengene med arbeid og derfor har vi re
 {{#case "4082"}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
 
-For å ha rett til å utsette foreldrepengene må du søke før du begynner å jobbe.
+{{>indent}}For å ha rett til å utsette foreldrepengene må du søke før du begynner å jobbe.
 {{/case}}
 {{#case "4025"}}
 {{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden av arbeidet, men du kan utsette perioden.
+{{>indent}}Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden av arbeidet, men du kan utsette perioden.
 {{/case}}
 {{#case "4093"}}
 {{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er i jobb.
@@ -107,12 +111,12 @@ Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden
 {{#case "4007"}}
 {{>punkt}}Du kan ikke overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen viser ikke dette.
+{{>indent}}For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen viser ikke dette.
 {{/case}}
 {{#case "4053"}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-For at du skal kunne ta ut foreldrepengene, må mor være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen hennes viser ikke dette.
+{{>indent}}For at du skal kunne ta ut foreldrepengene, må mor være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen hennes viser ikke dette.
 {{/case}}
 {{#case "4008"}}
 {{>punkt}}Du kan ikke overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen ikke er innlagt i helseinstitusjon.
@@ -129,22 +133,22 @@ For at du skal kunne ta ut foreldrepengene, må mor være helt avhengig av hjelp
 {{~#case (array "4061" "4062" "4063" "4064" "4065" "4115" "4116" "4117")}}
 {{>punkt}}Du har søkt om å utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}}, men du har ikke sendt oss dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å utsette.
 
-Hvis du sender oss dokumentasjonen innen seks uker, behandler vi søknaden din for denne perioden på nytt. Da trenger du ikke sende ny søknad.
+{{>indent}}Hvis du sender oss dokumentasjonen innen seks uker, behandler vi søknaden din for denne perioden på nytt. Da trenger du ikke sende ny søknad.
 {{/case}}
 {{#case (array "4094" "4502")}}
 {{>punkt}}Du har søkt om å kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}}, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å kombinere foreldrepengene med arbeid.
 
-Hvis du sender oss dokumentasjonen innen seks uker, behandler vi søknaden din for denne perioden på nytt. Da trenger du ikke sende ny søknad.
+{{>indent}}Hvis du sender oss dokumentasjonen innen seks uker, behandler vi søknaden din for denne perioden på nytt. Da trenger du ikke sende ny søknad.
 {{/case}}
 {{#case "4074"}}
 {{>punkt}}Du har søkt om å overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}}, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å overta kvoten.
 
-Hvis du sender oss dokumentasjonen innen seks uker, behandler vi søknaden din for denne perioden på nytt. Da trenger du ikke sende ny søknad.
+{{>indent}}Hvis du sender oss dokumentasjonen innen seks uker, behandler vi søknaden din for denne perioden på nytt. Da trenger du ikke sende ny søknad.
 {{/case}}
 {{~#case (array "4066" "4067" "4068" "4069" "4070" "4088" "4089")}}
 {{>punkt}}Du har søkt om foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til foreldrepenger i denne perioden.
 
-Hvis du sender oss dokumentasjonen innen seks uker, behandler vi søknaden din for denne perioden på nytt. Da trenger du ikke sende ny søknad.
+{{>indent}}Hvis du sender oss dokumentasjonen innen seks uker, behandler vi søknaden din for denne perioden på nytt. Da trenger du ikke sende ny søknad.
 {{/case}}
 {{~#case "4013"}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du tidligst kan starte foreldrepengeperioden 12 uker før termin.
@@ -158,22 +162,22 @@ Hvis du sender oss dokumentasjonen innen seks uker, behandler vi søknaden din f
 {{#case "4035"}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-Du kan bare utsette når mor jobber, studerer eller er i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{>indent}}Du kan bare utsette når mor jobber, studerer eller er i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{/case}}
 {{#case (array "4058" "4059")}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-For at du skal få flere dager med foreldrepenger, må den andre forelderen jobbe, studere eller være i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{>indent}}For at du skal få flere dager med foreldrepenger, må den andre forelderen jobbe, studere eller være i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{/case}}
 {{#case "4060"}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-Foreldrepengene du har søkt om kan ikke kombineres med det den andre forelderen har søkt om for samme periode. Dere kan bare ta ut foreldrepenger samtidig når den ene av dere tar ut i opptil 100 prosent kvote og den andre tar ut opptil 50 prosent fellesperiode.
+{{>indent}}Foreldrepengene du har søkt om kan ikke kombineres med det den andre forelderen har søkt om for samme periode. Dere kan bare ta ut foreldrepenger samtidig når den ene av dere tar ut i opptil 100 prosent kvote og den andre tar ut opptil 50 prosent fellesperiode.
 {{/case}}
 {{#case "4081"}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
 
-For å ha rett til å utsette foreldrepengene må du søke før ferien starter.
+{{>indent}}For å ha rett til å utsette foreldrepengene må du søke før ferien starter.
 {{/case}}
 {{#case "4100"}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du tidligst kan få foreldrepenger fra den dagen du overtar omsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
@@ -185,12 +189,12 @@ For å ha rett til å utsette foreldrepengene må du søke før ferien starter.
 {{>punkt}}{{~>innvilget-foreldrepenger/avslag/mor_ikke_søkt_eller_ikke_rett_nb~}}
 <br/>
 <br/>
-Hvis mor søker om foreldrepenger og i tillegg arbeider, studerer eller er i annen aktivitet, kan du ha rett til foreldrepenger. Dette kan du lese mer om på [nav.no/familie](https://nav.no/familie).
+{{>indent}}Hvis mor søker om foreldrepenger og i tillegg arbeider, studerer eller er i annen aktivitet, kan du ha rett til foreldrepenger. Dette kan du lese mer om på [nav.no/familie](https://nav.no/familie).
 {{/case}}
 {{#case "4087"}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er medlem i folketrygden.
 
-Du har ikke oppholdstillatelse i Norge i denne perioden.
+{{>indent}}Du har ikke oppholdstillatelse i Norge i denne perioden.
 {{/case}}
 {{~/switch}}
 {{~/unless}}
