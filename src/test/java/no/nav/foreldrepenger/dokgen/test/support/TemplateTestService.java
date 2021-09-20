@@ -57,18 +57,31 @@ public class TemplateTestService {
     public TemplateTestService() {
     }
 
-    public static String compileContent(String templateName, String templatePath, String språk, String testDataFilename) throws Exception {
-        String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName + templatePath, språk));
+    public static String compileContent(Brevmal templateName, String undermal, Språk språk, String testDataFilename) throws Exception {
+        String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName, undermal, språk));
+        String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(templateName, undermal, testDataFilename));
+        return produceContent(templateName, mergeFieldsJsonString, templateContent);
+    }
 
+    public static String compileContent(Brevmal templateName, Språk språk, String testDataFilename) throws Exception {
+        String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName, språk));
         String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(templateName, testDataFilename));
-        JsonNode mergeFields = getJsonFromString(mergeFieldsJsonString);
+        return produceContent(templateName, mergeFieldsJsonString, templateContent);
+    }
 
+    private static String produceContent(final Brevmal templateName, final String mergeFieldsJsonString, final String templateContent) throws Exception {
+        JsonNode mergeFields = getJsonFromString(mergeFieldsJsonString);
         Template template = handlebars.compileInline(templateContent);
         return template.apply(with(mergeFields));
     }
 
-    public static String getExpected(String templateName, String expectedFileName) throws Exception {
-        Path expectedPath = FileStructureUtil.getExpectedPath(templateName, expectedFileName);
+    public static String getExpected(Brevmal brevmal, String expectedFileName) throws Exception {
+        Path expectedPath = FileStructureUtil.getExpectedPath(brevmal, expectedFileName);
+        return readFile(expectedPath);
+    }
+
+    public static String getExpected(Brevmal brevmal, String undermal, String expectedFileName) throws Exception {
+        Path expectedPath = FileStructureUtil.getExpectedPath(brevmal, undermal, expectedFileName);
         return readFile(expectedPath);
     }
 
@@ -91,4 +104,6 @@ public class TemplateTestService {
                         MethodValueResolver.INSTANCE
                 ).build();
     }
+
+
 }
