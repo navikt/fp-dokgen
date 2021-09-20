@@ -193,14 +193,17 @@ In order to be able to take over the parental benefit, the mother must be fully 
 {{>punkt}}We have turned down your application because we have not received the documentation we requested. If you send us the documentation within four weeks, we will process your case again. You will not need to submit a new application.
 {{/eq}}
 
+{{#eq avslagsårsak "4005"}}
+{{>punkt}}{{#eq annenForelderHarRett true}}No application has been submitted{{else}}You have not applied{{/eq}} for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You may have right to this {{antallTapteDager}} day{{#gt antallTapteDager 1}}s{{/gt}}. It can be applied at [nav.no](https://nav.no). If no application is sent, you may lose this day{{#gt antallTapteDager 1}}s{{/gt}}.
+{{/eq}}
 
-{{#in-array (array "4005" "4102") avslagsårsak}}
+{{#eq avslagsårsak "4102"}}
 {{#eq annenForelderHarRett true}}
 {{>punkt}}No application has been submitted for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. Therefore, {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}} have been lost.
 {{/eq}}
 {{#eq annenForelderHarRett false}}
 {{>punkt}}You have not applied for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost, {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
-{{/eq}}{{/in-array}}
+{{/eq}}{{/eq}}
 
 
 {{#eq avslagsårsak "4033"}}
