@@ -194,7 +194,7 @@ In order to be able to take over the parental benefit, the mother must be fully 
 {{/eq}}
 
 {{#eq avslagsårsak "4005"}}
-{{>punkt}}{{#eq annenForelderHarRett true}}No application has been submitted{{else}}You have not applied{{/eq}} for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You may have right to this {{antallTapteDager}} day{{#gt antallTapteDager 1}}s{{/gt}}. It can be applied at [nav.no](https://nav.no). If no application is sent, you may lose this day{{#gt antallTapteDager 1}}s{{/gt}}.
+{{>punkt}}{{#eq annenForelderHarRett true}}No application has been submitted{{else}}You have not applied{{/eq}} for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You may have right to {{#gt antallTapteDager 1}}these {{antallTapteDager}} days{{else}}this day{{/gt}}. It can be applied at [nav.no](https://nav.no). If no application is sent, you may lose {{#gt antallTapteDager 1}}these days{{else}}this day{{/gt}}.
 {{/eq}}
 
 {{#eq avslagsårsak "4102"}}
