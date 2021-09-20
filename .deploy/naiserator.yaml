@@ -36,8 +36,3 @@ spec:
   {{/each}}
   secureLogs:
     enabled: true
-  env:
-  {{#each env}}
-    - name: {{@key}}
-      value: "{{this}}"
-  {{/each}}
