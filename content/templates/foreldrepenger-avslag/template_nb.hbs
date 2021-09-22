@@ -195,8 +195,13 @@ For at du skal kunne overta foreldrepengene, må mor være helt avhengig av hjel
 
 
 {{#eq avslagsårsak "4005"}}
-{{>punkt}}{{#if annenForelderHarRett}}Det er{{else}}Du har{{/if}} ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Du kan ha rett på {{#gt antallTapteDager 1}}disse {{antallTapteDager}} dagene{{else}}denne dagen{{/gt}}. Du kan sende søknad på nav.no. Dersom du ikke søker, vil du miste {{#gt antallTapteDager 1}}disse dagene{{else}}denne dagen{{/gt}}.
+{{#eq annenForelderHarRett true}}
+{{>punkt}}Det er ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}} tapt.
 {{/eq}}
+{{#eq annenForelderHarRett false}}
+{{>punkt}}Du har ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mistet {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}}.
+{{/eq}}{{/eq}}
+
 
 {{#eq avslagsårsak "4102"}}
 {{#eq annenForelderHarRett true}}
