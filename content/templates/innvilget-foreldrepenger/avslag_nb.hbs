@@ -32,7 +32,7 @@
 {{/if}}
 {{/case}}
 {{~#case "4103"}}
-{{>punkt}}De første 6 ukene etter fødsel er forbeholdt mor og kan bare utsettes ved sykdom eller innleggelse. Du har ikke søkt om uttak eller utsettelse i perioden {{periodeFom}} - {{periodeTom}}. Du vil miste {{#gt antallTapteDager 1}}disse {{antallTapteDager}} dagene{{else}}denne dagen{{/gt}}. Du kan sende en ny søknad på [nav.no/foreldrepenger](https://nav.no/foreldrepenger) dersom dette er en feil.
+{{>punkt}}De første 6 ukene etter fødsel er forbeholdt mor og kan bare utsettes ved sykdom eller innleggelse. Du har ikke søkt om uttak eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Du vil miste {{#gt antallTapteDager 1}}disse {{antallTapteDager}} dagene{{else}}denne dagen{{/gt}}. Du kan sende en ny søknad på [nav.no/foreldrepenger](https://nav.no/foreldrepenger) dersom dette er en feil.
 {{/case}}
 {{~#case (array "4003" "4012")}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke har omsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
