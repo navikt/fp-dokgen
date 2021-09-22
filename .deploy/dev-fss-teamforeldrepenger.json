@@ -3,6 +3,6 @@
   "minReplicas": "1",
   "maxReplicas": "2",
   "ingresses": [
-    "https://fp-dokgen.intern.dev.nav.no"
+    "https://fp-dokgen.dev.intern.nav.no"
   ]
 }
