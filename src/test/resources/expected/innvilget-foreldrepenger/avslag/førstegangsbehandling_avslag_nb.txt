@@ -10,7 +10,7 @@
 
   <!-- Ikke slett meg. Markdown trenger 2 space for å forstå at det er samme avsnitt etter linjeskift -->Du må søke senest tre måneder etter at perioden med foreldrepenger startet. Du søkte 4. mai 2021. Derfor får du 3 færre dager med foreldrepenger.
 
-* Det er ikke søkt om foreldrepenger eller utsettelse fra og med 26. november 2021 til og med 17. januar 2022. Du kan ha rett på disse 2 dagene. Du kan sende søknad på nav.no. Dersom du ikke søker, vil du miste disse dagene.
+* Det er ikke søkt om foreldrepenger eller utsettelse fra og med 26. november 2021 til og med 17. januar 2022. Derfor er 2 dager tapt.
 
 * Du har ikke rett til foreldrepenger fra og med 26. november 2021 til og med 17. januar 2022 fordi du ikke har omsorgen for barnet.
 

@@ -22,7 +22,11 @@
 
 {{>indent}}Du må søke senest tre måneder etter at perioden med foreldrepenger startet. Du søkte {{søknadsdato}}. Derfor får du {{antallTapteDager}} {{#gt antallTapteDager 1}}færre dager{{else}}dag mindre{{/gt}} med foreldrepenger.{{/gt}}{{/case}}
 {{#case "4005"}}
-{{>punkt}}{{#if annenForelderHarRett}}Det er{{else}}Du har{{/if}} ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Du kan ha rett på {{#gt antallTapteDager 1}}disse {{antallTapteDager}} dagene{{else}}denne dagen{{/gt}}. Du kan sende søknad på nav.no. Dersom du ikke søker, vil du miste {{#gt antallTapteDager 1}}disse dagene{{else}}denne dagen{{/gt}}.
+{{#if annenForelderHarRett}}
+{{>punkt}}Det er ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}} tapt.
+{{else}}
+{{>punkt}}Du har ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mistet {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}}.
+{{/if}}
 {{/case}}
 {{#case "4102"}}
 {{#if annenForelderHarRett}}
