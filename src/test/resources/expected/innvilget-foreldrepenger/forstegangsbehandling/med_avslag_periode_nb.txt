@@ -29,23 +29,23 @@ Arbeidsgiverne dine betaler deg lønn mens du har permisjon. Resten av foreldrep
 
 * Du tar ut 20 prosent foreldrepenger fra og med 24. februar 2021 til og med 26. mars 2021 fordi du jobber 80 prosent hos ARBEIDSGIVER 1. I denne perioden får du 1 618 kroner per dag før skatt.
 
-  <!-- Ikke slett meg. Markdown trenger 2 space for å forstå at det er samme avsnitt etter linjeskift -->I samme periode tar du ut 100 prosent permisjon hos ARBEIDSGIVER 2.
+  <!-- 2 space gir riktig innrykk etter linjeskift -->I samme periode tar du ut 100 prosent permisjon hos ARBEIDSGIVER 2.
 
 * Du tar ut foreldrepenger fra og med 29. mars 2021 til og med 05. mai 2020. I denne perioden får du 1 939 kroner per dag før skatt.
 
 * Du tar ut 20 prosent foreldrepenger fra og med 06. april 2021 til og med 06. juni 2021 fordi du jobber 80 prosent hos ARBEIDSGIVER 1. I denne perioden får du 1 618 kroner per dag før skatt.
 
-  <!-- Ikke slett meg. Markdown trenger 2 space for å forstå at det er samme avsnitt etter linjeskift -->I samme periode tar du ut 100 prosent permisjon hos ARBEIDSGIVER 2.
+  <!-- 2 space gir riktig innrykk etter linjeskift -->I samme periode tar du ut 100 prosent permisjon hos ARBEIDSGIVER 2.
 
 * Du tar ut 20 prosent foreldrepenger fra og med 09. juni 2021 til og med 18. juni 2021 fordi du jobber 80 prosent hos ARBEIDSGIVER 1. I denne perioden får du 80 kroner per dag før skatt.
 
-  <!-- Ikke slett meg. Markdown trenger 2 space for å forstå at det er samme avsnitt etter linjeskift -->I samme periode tar du ut 100 prosent permisjon hos ARBEIDSGIVER 2.
+  <!-- 2 space gir riktig innrykk etter linjeskift -->I samme periode tar du ut 100 prosent permisjon hos ARBEIDSGIVER 2.
 
 * Du tar ut foreldrepenger fra og med 21. juni 2021 til og med 10. august 2021. I denne perioden får du 401 kroner per dag før skatt.
 
 * Du tar ut 20 prosent foreldrepenger fra og med 18. august 2021 til og med 05. desember 2021 fordi du jobber 80 prosent hos ARBEIDSGIVER 1. I denne perioden får du 80 kroner per dag før skatt.
 
-  <!-- Ikke slett meg. Markdown trenger 2 space for å forstå at det er samme avsnitt etter linjeskift -->I samme periode tar du ut 100 prosent permisjon hos ARBEIDSGIVER 2.
+  <!-- 2 space gir riktig innrykk etter linjeskift -->I samme periode tar du ut 100 prosent permisjon hos ARBEIDSGIVER 2.
 
 Det er 0 dager igjen av kvoten din, og 10 dager som dere begge kan ta ut. Disse dagene må det søkes om innen 4. november 2022.
 

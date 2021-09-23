@@ -26,7 +26,7 @@ Fødselsnummer: 300220 12345
 Du tar ut 50 prosent foreldrepenger fra og med 19. mai 2021 til og med 14. desember 2021 fordi du jobber 50 prosent hos TULLE TRANSPORT AS. I denne perioden får du 1 356 kroner per dag før skatt.
 
 
-  <!-- Ikke slett meg. Markdown trenger 2 space for å forstå at det er samme avsnitt etter linjeskift -->I samme periode tar du ut 100 prosent permisjon hos TRALLE TRANSPORT AS.
+  <!-- 2 space gir riktig innrykk etter linjeskift -->I samme periode tar du ut 100 prosent permisjon hos TRALLE TRANSPORT AS.
 
 Foreldrepengene blir utbetalt for alle dager, unntatt lørdag og søndag. Fordi det ikke er like mange dager i hver måned, vil de månedlige utbetalingene dine variere.
 

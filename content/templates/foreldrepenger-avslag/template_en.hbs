@@ -14,6 +14,10 @@
 {{~#gt antallPerioder 1}}* {{/gt}}
 {{~/inline~}}
 
+{{~#* inline "indent" }}
+  <!-- 2 space gir riktig innrykk etter linjeskift -->
+{{~/inline~}}
+
 {{~#each avslåttePerioder}}
 
 {{#eq avslagsårsak "1035"}}
@@ -133,7 +137,7 @@
 {{#in-array (array "1028" "4007") avslagsårsak}}
 {{>punkt}}You may  not  take over the quota of the other parent from {{periodeFom}} up to and including {{periodeTom}}.
 
-In order to be able to take over the quota, the other parent must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}} due to their own illness. The medical certificate from the doctor does not indicate that this is the case.
+{{>indent}}In order to be able to take over the quota, the other parent must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}} due to their own illness. The medical certificate from the doctor does not indicate that this is the case.
 {{/in-array}}
 
 
@@ -155,7 +159,7 @@ In order to be able to take over the quota, the other parent must be fully depen
 {{#eq avslagsårsak "4053"}}
 {{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
 
-In order to be able to take over the parental benefit, the mother must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}} due to her own illness. The medical certificate from her doctor does not indicate that this is the case.
+{{>indent}}In order to be able to take over the parental benefit, the mother must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}} due to her own illness. The medical certificate from her doctor does not indicate that this is the case.
 {{/eq}}
 
 
@@ -190,7 +194,9 @@ In order to be able to take over the parental benefit, the mother must be fully 
 
 
 {{#eq avslagsårsak "1019"}}
-{{>punkt}}We have turned down your application because we have not received the documentation we requested. If you send us the documentation within six weeks, we will process your case again. You will not need to submit a new application.
+{{>punkt}}We have turned down your application because we have not received the documentation we requested.
+
+{{>indent}}If you send us the documentation within six weeks, we will process your case again. You will not need to submit a new application.
 {{/eq}}
 
 {{#eq avslagsårsak "4005"}}
@@ -248,35 +254,35 @@ In order to be able to take over the parental benefit, the mother must be fully 
 {{#in-array (array "4038" "4110") avslagsårsak}}
 {{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
 
-In order to postpone parental benefit on grounds of illness, you must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}} due to your own illness. The medical certificate from your doctor does not indicate that this is the case.
+{{>indent}}In order to postpone parental benefit on grounds of illness, you must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}} due to your own illness. The medical certificate from your doctor does not indicate that this is the case.
 {{/in-array}}
 
 
 {{#eq avslagsårsak "4082"}}
 {{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you have applied too late.
 
-In order to be entitled to postpone parental benefit, you must apply before starting work.
+{{>indent}}In order to be entitled to postpone parental benefit, you must apply before starting work.
 {{/eq}}
 
 
 {{#eq avslagsårsak "4504"}}
 {{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}}.
 
-Your parental benefit may only be combined with work six weeks after birth.
+{{>indent}}Your parental benefit may only be combined with work six weeks after birth.
 {{/eq}}
 
 
 {{#eq avslagsårsak "4025"}}
 {{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}}.
 
-Because you work in a full time position or more, you cannot take out parental benefit at the same time, but you may postpone the period.
+{{>indent}}Because you work in a full time position or more, you cannot take out parental benefit at the same time, but you may postpone the period.
 {{/eq}}
 
 
 {{#in-array (array "4080" "4501") avslagsårsak}}
 {{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}} because you have applied too late.
 
-In order to be entitled to combine parental benefit with work, you must apply before starting work. We have therefore reduced your parental benefit because you are working.
+{{>indent}}In order to be entitled to combine parental benefit with work, you must apply before starting work. We have therefore reduced your parental benefit because you are working.
 {{/in-array}}
 
 
@@ -333,21 +339,21 @@ In order to be entitled to combine parental benefit with work, you must apply be
 {{#eq avslagsårsak "4035"}}
 {{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
 
-You can only postpone parental benefits if the mother is working, studying or taking part in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{>indent}}You can only postpone parental benefits if the mother is working, studying or taking part in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{/eq}}
 
 
 {{#in-array (array "4058" "4059") avslagsårsak}}
 {{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
 
-To get more days of parental benefit, the other parent must be working, studying or in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{>indent}}To get more days of parental benefit, the other parent must be working, studying or in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{/in-array}}
 
 
 {{#eq avslagsårsak "4060"}}
 {{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
 
-The parental benefit you have applied for cannot be combined with what the other parent has applied for in the same period. You can only both receive parental benefit at the same time when one of you takes 100 per cent quota and the other parent takes up to 50 per cent from the shared period.
+{{>indent}}The parental benefit you have applied for cannot be combined with what the other parent has applied for in the same period. You can only both receive parental benefit at the same time when one of you takes 100 per cent quota and the other parent takes up to 50 per cent from the shared period.
 {{/eq}}
 
 
