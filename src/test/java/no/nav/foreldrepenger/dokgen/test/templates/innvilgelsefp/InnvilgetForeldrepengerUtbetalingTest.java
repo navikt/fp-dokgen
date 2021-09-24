@@ -28,6 +28,13 @@ public class InnvilgetForeldrepengerUtbetalingTest {
     }
 
     @Test
+    public void undermal_utbetaling_full_refusjon_rettigheter_nn() throws Exception {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.NYNORSK, "førstegangsbehandling_full_refusjon");
+        var expected = getExpected(BREVMAL, UNDERMAL, "utbetaling_full_refusjon_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     public void undermal_utbetaling_delvis_refusjon_rettigheter_nb() throws Exception {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_delvis_refusjon");
         var expected = getExpected(BREVMAL, UNDERMAL, "utbetaling_delvis_refusjon_nb.txt");

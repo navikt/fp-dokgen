@@ -13,7 +13,7 @@ Du får {{format-kroner dagsats}} kroner per dag før skatt fra og med {{stønad
 
 {{#eq aleneomsorgKode "JA"}}{{#not ikkeOmsorg}}Du har aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} og får derfor hele foreldrepengeperioden.{{/not}}{{/eq}}
 
-{{#gt prematurDager 0}}Vi har forlenget foreldrepengeperioden med {{prematurDager}}{{#gt prematurDager 1}} dager{{else}} dag{{/gt}} fordi du fødte før svangerskapsuke 33.{{/gt}}
+{{#gt prematurDager 0}}Vi har forlenget foreldrepengeperioden med {{prematurDager}} {{#gt prematurDager 1}}dager{{else}}dag{{/gt}} fordi du fødte før svangerskapsuke 33.{{/gt}}
 
 {{#gt foreldrepengeperiodenUtvidetUker 0}}{{#if gjelderFødsel}}{{#gt antallBarn 1}}{{#if barnErFødt}}
 Vi har forlenget foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} uker fordi {{#if (or (eq aleneomsorgKode "NEI")(eq aleneomsorgKode "IKKE_VURDERT"))}}dere fikk{{else}}du fødte{{/if}} flere barn.
