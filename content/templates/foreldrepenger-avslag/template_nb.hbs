@@ -14,6 +14,10 @@
 {{~#gt antallPerioder 1}}* {{/gt}}
 {{~/inline~}}
 
+{{~#* inline "indent" }}
+  <!-- 2 space gir riktig innrykk etter linjeskift -->
+{{~/inline~}}
+
 {{~#each avslåttePerioder}}
 
 {{#eq avslagsårsak "1035"}}
@@ -133,7 +137,7 @@
 {{#in-array (array "1028" "4007") avslagsårsak}}
 {{>punkt}}Du kan ikke overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen viser ikke dette.
+{{>indent}}For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen viser ikke dette.
 {{/in-array}}
 
 
@@ -155,7 +159,7 @@ For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig
 {{#eq avslagsårsak "4053"}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-For at du skal kunne overta foreldrepengene, må mor være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen hennes viser ikke dette.
+{{>indent}}For at du skal kunne overta foreldrepengene, må mor være helt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av egen sykdom. Legeerklæringen hennes viser ikke dette.
 {{/eq}}
 
 
@@ -190,7 +194,9 @@ For at du skal kunne overta foreldrepengene, må mor være helt avhengig av hjel
 
 
 {{#eq avslagsårsak "1019"}}
-{{>punkt}}Vi har avslått søknaden din fordi vi ikke har mottatt dokumentasjonen vi har bedt om. Hvis du sender oss dokumentasjonen innen seks uker, behandler vi saken din på nytt. Du trenger ikke sende ny søknad.
+{{>punkt}}Vi har avslått søknaden din fordi vi ikke har mottatt dokumentasjonen vi har bedt om.
+
+{{>indent}}Hvis du sender oss dokumentasjonen innen seks uker, behandler vi saken din på nytt. Du trenger ikke sende ny søknad.
 {{/eq}}
 
 
@@ -250,35 +256,35 @@ For at du skal kunne overta foreldrepengene, må mor være helt avhengig av hjel
 {{#in-array (array "4038" "4110") avslagsårsak}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-For å kunne utsette foreldrepengene på grunn av sykdom, må du være er helt avhengig av hjelp til å ta deg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Legeerklæringen viser ikke dette.
+{{>indent}}For å kunne utsette foreldrepengene på grunn av sykdom, må du være er helt avhengig av hjelp til å ta deg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Legeerklæringen viser ikke dette.
 {{/in-array}}
 
 
 {{#eq avslagsårsak "4082"}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
 
-For å ha rett til å utsette foreldrepengene må du søke før du begynner å jobbe.
+{{>indent}}For å ha rett til å utsette foreldrepengene må du søke før du begynner å jobbe.
 {{/eq}}
 
 
 {{#eq avslagsårsak "4504"}}
 {{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-Foreldrepengene dine kan først kombineres med arbeid seks uker etter fødselen.
+{{>indent}}Foreldrepengene dine kan først kombineres med arbeid seks uker etter fødselen.
 {{/eq}}
 
 
 {{#eq avslagsårsak "4025"}}
 {{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden av arbeidet, men du kan utsette perioden.
+{{>indent}}Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden av arbeidet, men du kan utsette perioden.
 {{/eq}}
 
 
 {{#in-array (array "4080" "4501") avslagsårsak}}
 {{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
 
-For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du begynner å jobbe. Vi har derfor redusert foreldrepengene dine fordi du jobber.
+{{>indent}}For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du begynner å jobbe. Vi har derfor redusert foreldrepengene dine fordi du jobber.
 {{/in-array}}
 
 
@@ -335,26 +341,28 @@ For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du 
 {{#eq avslagsårsak "4035"}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-Du kan bare utsette når mor jobber, studerer eller er i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{>indent}}Du kan bare utsette når mor jobber, studerer eller er i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{/eq}}
 
 
 {{#in-array (array "4058" "4059") avslagsårsak}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-For at du skal få flere dager med foreldrepenger, må den andre forelderen jobbe, studere eller være i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{>indent}}For at du skal få flere dager med foreldrepenger, må den andre forelderen jobbe, studere eller være i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{/in-array}}
 
 
 {{#eq avslagsårsak "4060"}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
-Foreldrepengene du har søkt om kan ikke kombineres med det den andre forelderen har søkt om for samme periode. Dere kan bare ta ut foreldrepenger samtidig når den ene av dere tar ut 100 prosent kvote og den andre tar ut opptil 50 prosent fellesperiode.
+{{>indent}}Foreldrepengene du har søkt om kan ikke kombineres med det den andre forelderen har søkt om for samme periode. Dere kan bare ta ut foreldrepenger samtidig når den ene av dere tar ut 100 prosent kvote og den andre tar ut opptil 50 prosent fellesperiode.
 {{/eq}}
 
 
 {{#eq avslagsårsak "4081"}}
-{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent. For å ha rett til å utsette foreldrepengene må du søke før ferien starter.
+{{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
+
+{{>indent}}For å ha rett til å utsette foreldrepengene må du søke før ferien starter.
 {{/eq}}
 
 
