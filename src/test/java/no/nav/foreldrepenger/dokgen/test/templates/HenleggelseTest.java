@@ -14,25 +14,29 @@ public class HenleggelseTest {
 
     @Test
     public void henleggelse_innsyn() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_henleggelse_innsyn"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "henleggelse_innsyn_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_henleggelse_innsyn");
+        var expected = getExpected(BREVMAL, "henleggelse_innsyn_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void henleggelse_klage() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_henleggelse_klage"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "henleggelse_klage_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_henleggelse_klage");
+        var expected = getExpected(BREVMAL, "henleggelse_klage_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
     @Test
     public void vanligBehandling_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_henleggelse_vanligBehandling"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "henleggelse_vanligBehandling_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_henleggelse_vanligBehandling");
+        var expected = getExpected(BREVMAL, "henleggelse_vanligBehandling_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void vanligBehandling_nn() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.NYNORSK, "test_henleggelse_vanligBehandling"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "henleggelse_vanligBehandling_nn.txt"));
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "test_henleggelse_vanligBehandling");
+        var expected = getExpected(BREVMAL, "henleggelse_vanligBehandling_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
     @Test
     public void vanligBehandling_en() throws Exception {

@@ -15,14 +15,16 @@ public class EngangsstønadAvslagTest {
 
     @Test
     public void avslagsbrev_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_avslag_fb"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL,"engangsstonad-avslag-fb_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_avslag_fb");
+        var expected = getExpected(BREVMAL, "engangsstonad-avslag-fb_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void avslagsbrev_revurdering_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_avslag_rv"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "engangsstonad-avslag-rv_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_avslag_rv");
+        var expected = getExpected(BREVMAL, "engangsstonad-avslag-rv_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
 }

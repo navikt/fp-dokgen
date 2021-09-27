@@ -15,20 +15,23 @@ public class InnsynTest {
 
     @Test
     public void innsynInnvilget_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "innsyn_innvilget"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_innvilget_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "innsyn_innvilget");
+        var expected = getExpected(BREVMAL, "innsyn_innvilget_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void innsynDelvisInnvilget_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "innsyn_delvis_innvilget"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_delvis_innvilget_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "innsyn_delvis_innvilget");
+        var expected = getExpected(BREVMAL, "innsyn_delvis_innvilget_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void innsynAvvist_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "innsyn_avvist"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_avvist_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "innsyn_avvist");
+        var expected = getExpected(BREVMAL, "innsyn_avvist_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
@@ -40,31 +43,36 @@ public class InnsynTest {
 
     @Test
     public void innsynDelvisInnvilget_nn() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.NYNORSK, "innsyn_delvis_innvilget"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_delvis_innvilget_nn.txt"));
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "innsyn_delvis_innvilget");
+        var expected = getExpected(BREVMAL, "innsyn_delvis_innvilget_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void innsynInnvilget_nn() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.NYNORSK, "innsyn_innvilget"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_innvilget_nn.txt"));
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "innsyn_innvilget");
+        var expected = getExpected(BREVMAL, "innsyn_innvilget_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void innsynAvvist_en() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.ENGELSK, "innsyn_avvist"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_avvist_en.txt"));
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "innsyn_avvist");
+        var expected = getExpected(BREVMAL, "innsyn_avvist_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void innsynDelvisInnvilget_en() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.ENGELSK, "innsyn_delvis_innvilget"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_delvis_innvilget_en.txt"));
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "innsyn_delvis_innvilget");
+        var expected = getExpected(BREVMAL, "innsyn_delvis_innvilget_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void innsynInnvilget_en() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.ENGELSK, "innsyn_innvilget"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_innvilget_en.txt"));
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "innsyn_innvilget");
+        var expected = getExpected(BREVMAL, "innsyn_innvilget_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 }

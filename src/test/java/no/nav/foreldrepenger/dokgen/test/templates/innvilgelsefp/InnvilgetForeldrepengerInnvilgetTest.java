@@ -15,20 +15,23 @@ public class InnvilgetForeldrepengerInnvilgetTest {
 
     @Test
     public void skal_fortelle_om_innvilget_uttak_med_prosent_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_prosent"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, UNDERMAL, "innvilget-foreldrepenger_prosent_nb.txt"));
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_prosent");
+        var expected = getExpected(BREVMAL, UNDERMAL, "innvilget-foreldrepenger_prosent_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void skal_fortelle_om_innvilget_fullt_uttak_uten_prosent_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_fullt"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, UNDERMAL,"innvilget-foreldrepenger_fullt_nb.txt"));
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_fullt");
+        var expected = getExpected(BREVMAL, UNDERMAL, "innvilget-foreldrepenger_fullt_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void skal_liste_ut_arbeidsforhold_2_med_deltidstekst_og_arbeidsforhold_3_med_selvom_tekst_og_arbeidsforhold_4_med_permisjonstekst() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_arbeidsforhold"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, UNDERMAL,"innvilget-foreldrepenger_arbeidsforhold_nb.txt"));
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_arbeidsforhold");
+        var expected = getExpected(BREVMAL, UNDERMAL, "innvilget-foreldrepenger_arbeidsforhold_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
@@ -47,7 +50,8 @@ public class InnvilgetForeldrepengerInnvilgetTest {
 
     @Test
     public void skal_ikke_bruke_punktliste_når_bare_en_periode_er_innvilget() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_innvilget_og_avslått"))
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, UNDERMAL,"innvilget-foreldrepenger_innvilget_og_avslått_nb.txt"));
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_innvilget_og_avslått");
+        var expected = getExpected(BREVMAL, UNDERMAL, "innvilget-foreldrepenger_innvilget_og_avslått_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 }
