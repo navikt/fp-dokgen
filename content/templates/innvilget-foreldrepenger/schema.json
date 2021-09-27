@@ -36,6 +36,7 @@
     "disponibleDager",
     "antallBarn",
     "antallDødeBarn",
+    "kreverSammenhengendeUttak",
     "perioder",
     "bruttoBeregningsgrunnlag",
     "harBruktBruttoBeregningsgrunnlag",
@@ -360,6 +361,9 @@
     },
     "bruttoBeregningsgrunnlag": {
       "type": "number"
+    },
+    "kreverSammenhengendeUttak": {
+      "type": "boolean"
     },
     "perioder": {
       "type": "array",

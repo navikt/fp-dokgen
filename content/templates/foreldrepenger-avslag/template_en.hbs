@@ -271,12 +271,16 @@
 {{>indent}}Your parental benefit may only be combined with work six weeks after birth.
 {{/eq}}
 
-
 {{#eq avslagsårsak "4025"}}
+{{#if kreverSammenhengendeUttak }}
 {{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}}.
 
 {{>indent}}Because you work in a full time position or more, you cannot take out parental benefit at the same time, but you may postpone the period.
-{{/eq}}
+{{else}}
+{{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}}.
+
+{{>indent}}Because you work in a full time position or more, you cannot take out parental benefit at the same time.
+{{/if}}{{/eq}}
 
 
 {{#in-array (array "4080" "4501") avslagsårsak}}

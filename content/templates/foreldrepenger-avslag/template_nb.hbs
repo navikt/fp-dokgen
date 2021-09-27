@@ -273,13 +273,16 @@
 {{>indent}}Foreldrepengene dine kan først kombineres med arbeid seks uker etter fødselen.
 {{/eq}}
 
-
 {{#eq avslagsårsak "4025"}}
+{{#if kreverSammenhengendeUttak }}
 {{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}}.
 
 {{>indent}}Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden av arbeidet, men du kan utsette perioden.
-{{/eq}}
+{{else}}
+{{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}}.
 
+{{>indent}}Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden av arbeidet.
+{{/if}}{{/eq}}
 
 {{#in-array (array "4080" "4501") avslagsårsak}}
 {{>punkt}}Du kan ikke kombinere foreldrepengene med arbeid fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for sent.
