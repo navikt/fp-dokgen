@@ -230,14 +230,13 @@
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi det berre er arbeidstakarar som har rett til ferie etter ferielova.
 {{/eq}}
 
-
-{{#in-array (array "4040" "4111") avslagsårsak}}
-{{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ikkje er {{#gt antallBarn 1}}innlagde{{else}}innlagd{{/gt}} i helseinstitusjon.
+{{#in-array (array "4039" "4111") avslagsårsak}}
+{{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi du ikkje er innlagd i helseinstitusjon.
 {{/in-array}}
 
 
-{{#in-array (array "4039" "4112") avslagsårsak}}
-{{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi du ikkje er innlagd i helseinstitusjon.
+{{#in-array (array "4040" "4112") avslagsårsak}}
+{{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ikkje er {{#gt antallBarn 1}}innlagde{{else}}innlagd{{/gt}} i helseinstitusjon.
 {{/in-array}}
 
 
