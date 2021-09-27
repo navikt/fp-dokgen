@@ -16,54 +16,55 @@ public class InnsynTest {
     @Test
     public void innsynInnvilget_nb() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "innsyn_innvilget"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "innsyn_innvilget_nb.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_innvilget_nb.txt"));
     }
 
     @Test
     public void innsynDelvisInnvilget_nb() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "innsyn_delvis_innvilget"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "innsyn_delvis_innvilget_nb.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_delvis_innvilget_nb.txt"));
     }
 
     @Test
     public void innsynAvvist_nb() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "innsyn_avvist"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "innsyn_avvist_nb.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_avvist_nb.txt"));
     }
 
     @Test
     public void innsynAvvist_nn() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.NYNORSK, "innsyn_avvist"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "innsyn_avvist_nn.txt"));
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "innsyn_avvist");
+        var expected = getExpected(BREVMAL, "innsyn_avvist_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void innsynDelvisInnvilget_nn() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.NYNORSK, "innsyn_delvis_innvilget"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "innsyn_delvis_innvilget_nn.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_delvis_innvilget_nn.txt"));
     }
 
     @Test
     public void innsynInnvilget_nn() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.NYNORSK, "innsyn_innvilget"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "innsyn_innvilget_nn.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_innvilget_nn.txt"));
     }
 
     @Test
     public void innsynAvvist_en() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.ENGELSK, "innsyn_avvist"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "innsyn_avvist_en.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_avvist_en.txt"));
     }
 
     @Test
     public void innsynDelvisInnvilget_en() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.ENGELSK, "innsyn_delvis_innvilget"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "innsyn_delvis_innvilget_en.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_delvis_innvilget_en.txt"));
     }
 
     @Test
     public void innsynInnvilget_en() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.ENGELSK, "innsyn_innvilget"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "innsyn_innvilget_en.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "innsyn_innvilget_en.txt"));
     }
 }

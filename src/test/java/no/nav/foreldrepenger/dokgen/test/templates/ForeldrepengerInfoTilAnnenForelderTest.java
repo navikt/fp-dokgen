@@ -15,37 +15,37 @@ public class ForeldrepengerInfoTilAnnenForelderTest {
     @Test
     public void infobrev_nb() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "infobrev"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_nb.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_nb.txt"));
     }
 
     @Test
     public void infobrev_nn() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.NYNORSK, "infobrev"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_nn.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_nn.txt"));
     }
 
     @Test
     public void infobrev_en() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.ENGELSK, "infobrev"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_en.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_en.txt"));
     }
 
     @Test
     public void infobrev_opphold_nb() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "infobrev_opphold"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_opphold_nb.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_opphold_nb.txt"));
     }
 
     @Test
     public void infobrev_opphol_nn() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.NYNORSK, "infobrev_opphold"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_opphold_nn.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_opphold_nn.txt"));
     }
 
     @Test
     public void infobrev_opphold_en() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.ENGELSK, "infobrev_opphold"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_opphold_en.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_opphold_en.txt"));
     }
 }
 

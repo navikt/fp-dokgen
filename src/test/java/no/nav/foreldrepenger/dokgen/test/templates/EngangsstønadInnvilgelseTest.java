@@ -16,38 +16,38 @@ public class EngangsstønadInnvilgelseTest {
     @Test
     public void skal_generere_brev_for_innvilgelse_ESførstegang_på_bokmål() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "testInnvFB"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "engangsstonad-innvilgelse_nb.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "engangsstonad-innvilgelse_nb.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_innvilgelse_ESførstegang_på_nynorsk() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.NYNORSK, "testInnvFB"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "engangsstonad-innvilgelse_nn.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "engangsstonad-innvilgelse_nn.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_innvilgelse_på_engelsk() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.ENGELSK, "testInnvFB"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "engangsstonad-innvilgelse_en.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "engangsstonad-innvilgelse_en.txt"));
     }
 
     //Varianter av samme mal
     @Test
     public void skal_generere_brev_for_død_på_bokmål() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "testDød"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "engangsstonad-innvilgelse-død_nb.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "engangsstonad-innvilgelse-død_nb.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_medhold_på_bokmål() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "testMedhold"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "engangsstonad-innvilgelse-medhold_nb.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "engangsstonad-innvilgelse-medhold_nb.txt"));
     }
 
     @Test
     public void skal_generere_brev_for_endret_sats_på_bokmål() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "testEndretSats"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "engangsstonad-innvilgelse-endretSats_nb.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "engangsstonad-innvilgelse-endretSats_nb.txt"));
     }
 
 }

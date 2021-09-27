@@ -15,24 +15,25 @@ public class ForeldrepengerAvslagTest {
     @Test
     public void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_bokmål() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_mange"))
-                .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-avslag_mange_nb.txt"));
+                .isEqualToIgnoringNewLines(getExpected(BREVMAL, "foreldrepenger-avslag_mange_nb.txt"));
     }
 
     @Test
     public void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_nynorsk() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.NYNORSK, "test_mange"))
-                .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-avslag_mange_nn.txt"));
+                .isEqualToIgnoringNewLines(getExpected(BREVMAL, "foreldrepenger-avslag_mange_nn.txt"));
     }
 
     @Test
     public void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_engelsk() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.ENGELSK, "test_mange"))
-                .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-avslag_mange_en.txt"));
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_mange");
+        var expected = getExpected(BREVMAL, "foreldrepenger-avslag_mange_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void skal_generere_foreldrepenger_avslag_brevet_med_fritekst() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_fritekst"))
-                .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "foreldrepenger-avslag_fritekst.txt"));
+                .isEqualToIgnoringNewLines(getExpected(BREVMAL, "foreldrepenger-avslag_fritekst.txt"));
     }
 }

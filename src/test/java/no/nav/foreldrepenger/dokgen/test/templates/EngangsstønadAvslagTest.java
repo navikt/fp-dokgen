@@ -16,13 +16,13 @@ public class EngangsstønadAvslagTest {
     @Test
     public void avslagsbrev_nb() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_avslag_fb"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL,"engangsstonad-avslag-fb_nb.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL,"engangsstonad-avslag-fb_nb.txt"));
     }
 
     @Test
     public void avslagsbrev_revurdering_nb() throws Exception {
         assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_avslag_rv"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "engangsstonad-avslag-rv_nb.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "engangsstonad-avslag-rv_nb.txt"));
     }
 
 }

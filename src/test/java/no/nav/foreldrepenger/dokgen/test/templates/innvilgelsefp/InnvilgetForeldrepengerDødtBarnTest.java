@@ -16,7 +16,7 @@ public class InnvilgetForeldrepengerDødtBarnTest {
     @Test
     public void dødt_barn_førstegangsbehandling_nb() throws Exception {
         assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "dodt_barn_forstegangsbehandling"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, UNDERMAL, "forstegangsbehandling_nb.txt"));
+            .isEqualToIgnoringNewLines(getExpected(BREVMAL, UNDERMAL, "forstegangsbehandling_nb.txt"));
     }
 
 }

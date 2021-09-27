@@ -72,7 +72,7 @@ public class TemplateTestService {
     private static String produceContent(final Brevmal templateName, final String mergeFieldsJsonString, final String templateContent) throws Exception {
         JsonNode mergeFields = getJsonFromString(mergeFieldsJsonString);
         Template template = handlebars.compileInline(templateContent);
-        return template.apply(with(mergeFields));
+        return template.apply(with(mergeFields)).replaceAll("(?m)^[ \t]*\r?\n", "");
     }
 
     public static String getExpected(Brevmal brevmal, String expectedFileName) throws Exception {
@@ -86,7 +86,7 @@ public class TemplateTestService {
     }
 
     private static String readFile(Path file) throws Exception {
-        return Files.readString(file);
+        return Files.readString(file).replaceAll("(?m)^[ \t]*\r?\n", "");
     }
 
     private static JsonNode getJsonFromString(String json) throws IOException {
