@@ -15,31 +15,36 @@ public class IngenEndringTest {
 
     @Test
     public void skal_generere_brev_for_ingen_endring_FP_på_bokmål() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_fp"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ingen-endring_fp_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fp");
+        var expected = getExpected(BREVMAL, "ingen-endring_fp_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void skal_generere_brev_for_ingen_endring_FP_på_nynorsk() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.NYNORSK, "test_fp"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ingen-endring_fp_nn.txt"));
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "test_fp");
+        var expected = getExpected(BREVMAL, "ingen-endring_fp_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void skal_generere_brev_for_ingen_endring_ES_på_bokmål() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_es"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ingen-endring_es_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_es");
+        var expected = getExpected(BREVMAL, "ingen-endring_es_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void skal_generere_brev_for_ingen_endring_ES_på_engelsk() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.ENGELSK, "test_es"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ingen-endring_es_en.txt"));
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_es");
+        var expected = getExpected(BREVMAL, "ingen-endring_es_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void skal_generere_brev_for_ingen_endring_SVP_på_bokmål() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_svp"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ingen-endring_svp_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_svp");
+        var expected = getExpected(BREVMAL, "ingen-endring_svp_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 }

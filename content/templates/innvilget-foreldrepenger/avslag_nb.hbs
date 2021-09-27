@@ -53,10 +53,10 @@
 {{#case "4032"}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi det er kun arbeidstakere som har rett til ferie etter ferieloven.
 {{/case}}
-{{#case (array "4040" "4111")}}
+{{#case (array "4040" "4112")}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ikke er innlagt i helseinstitusjon.
 {{/case}}
-{{#case (array "4039" "4112")}}
+{{#case (array "4039" "4111")}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er innlagt i helseinstitusjon.
 {{/case}}
 {{~#case "4037"}}

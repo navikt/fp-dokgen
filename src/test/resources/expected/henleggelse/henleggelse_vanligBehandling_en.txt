@@ -6,7 +6,7 @@ Date: 4. april 2020
 <br>
 
 # NAV has closed your case on parental benefits
-    <p style="color:gray">
+<p style="color:gray">
 Nav's case number: 123456789
 <br/>
 Name: Dolly Duck

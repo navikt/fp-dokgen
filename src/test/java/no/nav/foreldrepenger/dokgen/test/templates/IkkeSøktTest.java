@@ -14,25 +14,29 @@ public class IkkeSøktTest {
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_FP_på_bokmål() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_fp"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ikke-sokt_fp_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fp");
+        var expected = getExpected(BREVMAL, "ikke-sokt_fp_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_FP_på_nynorsk() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.NYNORSK, "test_fp"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ikke-sokt_fp_nn.txt"));
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "test_fp");
+        var expected = getExpected(BREVMAL, "ikke-sokt_fp_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_SVP_på_bokmål() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.BOKMÅL, "test_svp"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ikke-sokt_svp_nb.txt"));
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_svp");
+        var expected = getExpected(BREVMAL, "ikke-sokt_svp_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void skal_generere_brev_for_ikke_søkt_SVP_på_nynorsk() throws Exception {
-        assertThat(compileContent(BREVMAL, Språk.NYNORSK, "test_svp"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, "ikke-sokt_svp_nn.txt"));
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "test_svp");
+        var expected = getExpected(BREVMAL, "ikke-sokt_svp_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 }

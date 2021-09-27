@@ -15,19 +15,22 @@ public class InnvilgetForeldrepengerUtbetalingTest {
 
     @Test
     public void undermal_utbetaling_ingen_refusjon_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_ingen_refusjon"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, UNDERMAL, "utbetaling_ingen_refusjon_nb.txt"));
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_ingen_refusjon");
+        var expected = getExpected(BREVMAL, UNDERMAL, "utbetaling_ingen_refusjon_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void undermal_utbetaling_full_refusjon_rettigheter_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_full_refusjon"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, UNDERMAL, "utbetaling_full_refusjon_nb.txt"));
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_full_refusjon");
+        var expected = getExpected(BREVMAL, UNDERMAL, "utbetaling_full_refusjon_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     public void undermal_utbetaling_delvis_refusjon_rettigheter_nb() throws Exception {
-        assertThat(compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_delvis_refusjon"))
-            .isEqualToIgnoringWhitespace(getExpected(BREVMAL, UNDERMAL, "utbetaling_delvis_refusjon_nb.txt"));
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_delvis_refusjon");
+        var expected = getExpected(BREVMAL, UNDERMAL, "utbetaling_delvis_refusjon_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 }
