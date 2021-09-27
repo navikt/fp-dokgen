@@ -46,6 +46,7 @@
   "foreldrepengeperiodenUtvidetUker": 0,
   "antallBarn": 1,
   "antallDødeBarn": 0,
+  "kreverSammenhengendeUttak": true,
   "prematurDager": 0,
   "perioder": [
     {

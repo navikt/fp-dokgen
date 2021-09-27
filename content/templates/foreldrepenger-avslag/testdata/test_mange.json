@@ -18,6 +18,7 @@
   "klagefristUker": 6,
   "lovhjemmelForAvslag": "§ forvaltningsloven § 35",
   "antallPerioder": 81,
+  "kreverSammenhengendeUttak": true,
   "avslåttePerioder": [
     {
       "avslagsårsak": "1035",
