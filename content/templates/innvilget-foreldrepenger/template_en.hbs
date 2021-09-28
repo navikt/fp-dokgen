@@ -25,19 +25,19 @@
 {{#if inkludereInnvilget}}{{> innvilget-foreldrepenger/innvilget_en }}{{/if}}
 
 {{#if inkludereNyeOpplysningerUtbet}}
-Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{format-kroner månedsbeløp}} kroner i måneden. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
+You will receive {{format-kroner dagsats}} kroner per day before taxes. This amounts to {{format-kroner månedsbeløp}} kroner per month, on average. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).
 {{/if}}
 
-{{#if inkludereUtbetNårGradering}}{{> innvilget-foreldrepenger/utbetaling_nb}}{{/if}}
+{{#if inkludereUtbetNårGradering}}{{> innvilget-foreldrepenger/utbetaling_en}}{{/if}}
 
 {{~#if sisteDagAvSistePeriode}}
 {{#gt disponibleDager 0}}
 {{~#if (or (eq annenForelderHarRett false) (eq aleneomsorgKode "JA"))}}
-Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dag{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} må du søke om innen {{sisteDagAvSistePeriode}}.{{/if}}{{/gt}}
+There are {{disponibleDager}} {{#gt disponibleDager 1}}days{{else}}day{{/gt}} remaining of the parental benefit period. You must apply for {{#gt disponibleDager 1}}these days{{else}}this day{{/gt}} by {{sisteDagAvSistePeriode}}.{{/if}}{{/gt}}
 {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
 {{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))}}
-Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dager{{/eq}} som dere begge kan ta ut.
-{{~#eq disponibleDager 1}}{{#if (or (eq disponibleFellesDager 0)(eq disponibleFellesDager 1))}} Denne dagen{{/if}}{{/eq}}{{#if (or (gt disponibleFellesDager 1)(gt disponibleDager 1))}} Disse dagene{{/if}} må det søkes om innen {{sisteDagAvSistePeriode}}.
+There are {{disponibleDager}} {{#eq disponibleDager 1}}day{{else}}days{{/eq}} left of your quota and {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}day{{else}}days{{/eq}} left that you can both take.
+{{~#eq disponibleDager 1}}{{#if (or (eq disponibleFellesDager 0)(eq disponibleFellesDager 1))}} This day{{/if}}{{/eq}}{{#if (or (gt disponibleFellesDager 1)(gt disponibleDager 1))}} These days{{/if}} must be applied for by {{sisteDagAvSistePeriode}}.
 {{/if}}{{/if}}{{/if}}
 
 {{~#gt antallArbeidsgivere 1}}
@@ -45,9 +45,9 @@ Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igje
 {{~#each arbeidsforholdsliste}}
 {{#if @..first}}
 {{#if this.gradering}}
-**Du har flere arbeidsgivere**
+**You have more than one employer**
 
-Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere foreldrepenger med arbeid hos én arbeidsgiver om gangen. Det betyr at det bare er perioden din hos {{this.arbeidsgiverNavn}} som blir forlenget.
+You are working for several employers during the same period. It is only possible to combine parental benefit with work at one employer at a time. This means that it is only your period at {{this.arbeidsgiverNavn}} that will be extended.
 {{/if}}{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
 
 {{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_nb}}{{/if}}
