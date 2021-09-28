@@ -20,10 +20,15 @@ Vi har fått nye opplysningar som kan ha betydning for retten din til {{> ytelse
 
 {{#neq felles.ytelseType "ES" }}
 {{#eq advarselKode "JOBBFULLTID" }}
+{{#if kreverSammenhengendeUttak}}
 Vi har fått opplysningar om at du jobbar samtidig som du får {{> ytelse_navn_nn}}. Derfor vurderer vi å stanse {{> ytelse_navn_f_nn}} dine.
 
 Du kan ikkje jobbe heiltid og samtidig få {{> ytelse_navn_nn}}. {{#eq felles.ytelseType "FP" }}For at du ikkje skal miste {{> ytelse_navn_f_nn}}, må du søkje om utsetjing. {{/eq}}Arbeider du deltid, må du søkje om å kombinere {{> ytelse_navn_f_nn}} med arbeid.
-{{/eq}}
+{{else}}
+Vi har fått opplysningar om at du jobbar samtidig som du får {{> ytelse_navn_nn}}. Derfor vurderer vi å stanse {{> ytelse_navn_f_nn}} dine.
+
+Du kan ikkje jobbe heiltid og samtidig få {{> ytelse_navn_nn}}. Arbeider du deltid, kan du søkje om å kombinere {{> ytelse_navn_f_nn}} med arbeid.
+{{/if}}{{/eq}}
 {{#eq advarselKode "IKKEOPPTJENT" }}
 Vi har fått opplysningar om at inntekta di var lågare enn eit halvt grunnbeløp i året før skatt. Derfor vurderer vi å stanse {{> ytelse_navn_f_nn}} dine.
 {{/eq}}
