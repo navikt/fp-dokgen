@@ -37,17 +37,17 @@
 
 {{#lt this.prioritertUtbetalingsgrad 100.0}}
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" ) årsak}}
-{{>punkt}}You are taking {{trim-decimal this.prioritertUtbetalingsgrad}} per cent parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. During this period, you will receive {{format-kroner this.periodeDagsats}} kroner per day before tax.
+{{>punkt}}You are taking {{trim-decimal this.prioritertUtbetalingsgrad}} per cent parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. During this period, you will receive {{format-kroner this.periodeDagsats}} kroner per day before taxes.
 {{/in-array}}
 {{else}}
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" "2038" ) årsak}}
-{{>punkt}}You are taking parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. During this period, you will receive {{format-kroner this.periodeDagsats}} kroner per day before tax.
+{{>punkt}}You are taking parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. During this period, you will receive {{format-kroner this.periodeDagsats}} kroner per day before taxes.
 {{/in-array}}
 {{/lt}}
 
 
 {{#eq årsak "2038"}}{{#neq this.prioritertUtbetalingsgrad 100.0}}
-{{>punkt}}You will receive {{trim-decimal prioritertUtbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the other parent will receive parental benefit in the same period. During this period, you will receive {{format-kroner periodeDagsats}} kroner per day before tax.
+{{>punkt}}You will receive {{trim-decimal prioritertUtbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the other parent will receive parental benefit in the same period. During this period, you will receive {{format-kroner periodeDagsats}} kroner per day before taxes.
 {{/neq}}{{/eq}}
 
 
@@ -80,13 +80,13 @@
 {{/eq}}
 
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
-{{>punkt}}Du tar ut {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} up to and including {{periodeTom}} fordi du jobber {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{format-kroner periodeDagsats}} kroner per day before tax.
+{{>punkt}}You are taking {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are working {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} per cent at {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. In this period you will receive {{format-kroner periodeDagsats}} kroner per day before taxes.
 {{#each arbeidsforholdsliste}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0))}} {{#if (and (lt this.stillingsprosent 100.0) (eq this.gradering false))}} {{#if (or (eq delvisRefusjon true) (eq fullRefusjon true))}}
-{{>indent}}Du jobber ikke i hele deltidsstillingen din hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepenger både fra arbeidsgiveren din og NAV.
+{{>indent}}You are not working in your entire part-time position at {{this.arbeidsgiverNavn}}, and will therefore receive parental benefit from both your employer and NAV.
 {{/if}}{{/if}}{{/if}}{{/if}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (eq this.utbetalingsgrad 100.0) (eq this.gradering false))}}
-{{>indent}}I samme periode tar du ut 100 prosent permisjon hos {{this.arbeidsgiverNavn}}.
+{{>indent}}In the same period, you will be on 100 per cent parental leave from your job at {{this.arbeidsgiverNavn}}.
 {{/if}}{{/if}}
 {{/each}}
 {{/if}}
@@ -94,40 +94,40 @@
 
 {{#each annenAktivitetsliste}}
 {{#if (and (eq this.aktivitetStatus "FL") (eq this.gradering true))}} {{#if @../innvilget}}
-{{>punkt}}Du tar ut {{trim-decimal this.utbetalingsgrad}} prosent foreldrepenger fra og med {{@../periodeFom}} up to and including {{@../periodeTom}} fordi du jobber {{trim-decimal this.prosentArbeid}} prosent. I denne perioden får du {{format-kroner @../periodeDagsats}} kroner per day before tax.
+{{>punkt}}You are taking {{trim-decimal this.utbetalingsgrad}} per cent parental benefit from {{@../periodeFom}} up to and including {{@../periodeTom}} because you are working {{trim-decimal this.prosentArbeid}} per cent. In this period you will receive {{format-kroner @../periodeDagsats}} kroner per day before taxes.
 {{/if}}{{/if}}
 {{/each}}
 
 
 {{#if (and (eq this.næring.gradering true) (eq this.innvilget true))}}
-{{>punkt}}Du tar ut {{trim-decimal this.næring.utbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} up to and including {{this.periodeTom}} fordi du jobber {{trim-decimal this.næring.prosentArbeid}} prosent. I denne perioden får du {{format-kroner this.periodeDagsats}} kroner per day before tax.
+{{>punkt}}You are taking {{trim-decimal this.næring.utbetalingsgrad}} per cent parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}} because you are working {{trim-decimal this.næring.prosentArbeid}} per cent. In this period you will receive {{format-kroner this.periodeDagsats}} kroner per day before taxes.
 {{/if}}
 
 
 {{#eq årsak "2020"}}
-{{>punkt}}Du får overta kvoten fra og med {{periodeFom}} up to and including {{periodeTom}} fordi den andre forelderen ikke har rett til foreldrepenger.
+{{>punkt}}You may take over the quota from {{periodeFom}} up to and including {{periodeTom}} because the other parent is not entitled to parental benefit.
 {{/eq}}
 
 
 {{#eq årsak "2022"}}
-{{>punkt}}Du får overta kvoten fra og med {{periodeFom}} up to and including {{periodeTom}} fordi den andre forelderen er innlagt i helseinstitusjon.
+{{>punkt}}You may take over the quota from {{periodeFom}} up to and including {{periodeTom}} because the other parent is in a health institution.
 {{/eq}}
 
 
 {{#eq årsak "2021"}}
-{{>punkt}}Du får overta kvoten fra og med {{periodeFom}} up to and including {{periodeTom}} fordi den andre forelderen er helt avhengig av hjelp til å ta seg av {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
+{{>punkt}}You may take over the quota from {{periodeFom}} up to and including {{periodeTom}} because the other parent is fully dependent on help to be able to take care of the {{#eq antallBarn 1}}child{{else}}children{{/eq}}.
 {{/eq}}
 
 
 {{#eq årsak "2023"}}
-{{>punkt}}Du får overta kvoten til den andre forelderen fra og med {{periodeFom}} up to and including {{periodeTom}} fordi du har aleneomsorgen for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
+{{>punkt}}You may take over the quota from the other parent from {{periodeFom}} up to and including {{periodeTom}} because you have sole care of the {{#eq antallBarn 1}}child{{else}}children{{/eq}}.
 {{/eq}}
 {{/each}}
 
 {{#if (and (gt antallInnvilgedePerioder 0) (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-Foreldrepengene utgjør det samme som tidligere. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
+The parental benefit amounts to the same as before. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).
 {{#if stønadsperiodeTom}}
 {{#eq dagerTaptFørTermin 0}}
-Den siste dagen med foreldrepenger er {{stønadsperiodeTom}}.
+The last day of parental benefit is {{stønadsperiodeTom}}.
 {{/eq}}{{/if}}
 {{/if}}
