@@ -16,7 +16,7 @@ Vi har fastsatt foreldrepengene dine til {{format-kroner dagsats}} kroner per da
 {{~#each beregningsgrunnlagregler}}
 {{~#in-array (array "ARBEIDSTAKER" "KOMBINERT_AT_FL_SN" "KOMBINERT_AT_FL" "KOMBINERT_AT_SN") regelStatus }}
 {{~#each andelListe}}
-{{~#if (and (eq this.aktivitetStatus "ARBEIDSTAKER" ) (neq this.etterlønnSluttpakke true))}}
+{{~#if (and (eq this.aktivitetStatus "ARBEIDSTAKER" ) (eq this.etterlønnSluttpakke false))}}
 {{#eq @../antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke 1}}
 Inntekten din hos {{this.arbeidsgiverNavn}} er {{format-kroner this.månedsinntekt}} kroner i måneden. Arbeidsgiveren din har gitt oss disse opplysningene.
 {{/eq}}
