@@ -13,7 +13,7 @@ You will receive {{format-kroner dagsats}} kroner per day before taxes starting 
 
 {{#eq aleneomsorgKode "JA"}}{{#not ikkeOmsorg}}You have lone care for the {{#gt antallBarn 1}}children{{else}}child{{/gt}} and will therefore be granted the whole parental benefit period.{{/not}}{{/eq}}
 
-{{#gt prematurDager 0}}We have extended the parental benefit period by {{prematurDager}}{{#gt prematurDager 1}} days{{else}} day{{/gt}} because you gave birth before the 33rd week of pregnancy.{{/gt}}
+{{#gt prematurDager 0}}We have extended the parental benefit period by {{prematurDager}}{{#gt prematurDager 1}}days{{else}}day{{/gt}} because you gave birth before the 33rd week of pregnancy.{{/gt}}
 
 {{#gt foreldrepengeperiodenUtvidetUker 0}}
 {{#if gjelderFødsel}}

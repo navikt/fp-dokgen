@@ -11,7 +11,7 @@
 {{> brukerdetaljer_en }}
 
 {{#gt antallDødeBarn 0}}
-{{> innvilget-foreldrepenger/dodt_barn_en}}
+{{> innvilget-foreldrepenger/dodt_barn_en }}
 {{else}}
 {{#if (and (eq behandlingType "REVURDERING")(eq behandlingResultatType "INNVILGET"))}}We have reconsidered your case, and you are entitled to parental benefit. We have therefore changed the decision you previously have received.{{/if}}
 
@@ -56,9 +56,9 @@ You are working for several employers during the same period. It is only possibl
 {{#gt dagerTaptFørTermin 0}}
 {{#if (or (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING_OG_UTTAK"))}}
 {{#if stønadsperiodeTom }}
-Vi har endret den siste dagen din med foreldrepenger til {{stønadsperiodeTom}}.
+We have changed your last day of parental benefit to {{stønadsperiodeTom}}.
 {{/if}}
-Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin, og derfor mister du {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}dager{{else}}dag{{/gt}} med foreldrepenger.
+The parental benefit period starts three weeks before the estimated date of delivery. Since you gave birth before the estimated date of delivery, you lose {{dagerTaptFørTermin}}{{#gt dagerTaptFørTermin 1}}days{{else}}day{{/gt}} of parental benefit.
 {{/if}}
 {{/gt}}
 {{/if}}
@@ -68,7 +68,7 @@ Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin,
 {{/if}}
 
 {{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
-{{> innvilget-foreldrepenger/beregning_en}}
+{{> innvilget-foreldrepenger/beregning_en }}
 {{else}}
 {{#if felles.fritekst}}
 {{felles.fritekst}}
@@ -84,7 +84,7 @@ Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin,
 {{> innvilget-foreldrepenger/mindre_utbetalt_en }}
 {{/eq}}
 {{#if (and (eq behandlingType "REVURDERING") (eq behandlingResultatType "INNVILGET"))}}
-{{> innvilget-foreldrepenger/mindre_utbetalt_en}}{{/if}}
+{{> innvilget-foreldrepenger/mindre_utbetalt_en }}{{/if}}
 {{/eq}}
 
 {{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
@@ -92,33 +92,33 @@ Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin,
 {{/if}}
 
 {{#if (and (eq inntektMottattArbeidsgiver true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-Hvis arbeidsgiver kommer med nye opplysninger om inntekten du hadde før du startet foreldrepengeperioden, får du et nytt vedtak med ny beregning.
+If your employer provides new information about the income you had before you started your parental benefit period, you will receive a new decision with a new calculation.
 {{/if}}
 
 {{#if (or (eq forMyeUtbetalt "FERIE")(eq forMyeUtbetalt "JOBB"))}}
-**Hva skjer hvis du får utbetalt foreldrepenger og lønn for samme periode?**
+**What happens if you receive parental benefit and salary for the same period?**
 
-Hvis du har fått utbetalt foreldrepenger samtidig som du har jobbet eller utsatt dager fordi du har hatt ferie, har du fått utbetalt for mye i foreldrepenger. Det betyr at utbetalingen i neste måned kan bli redusert med det du har fått utbetalt for mye.
+If you have been paid the parental benefit at the same time as you have worked or postponed days because you have taken holidays, you have been paid an excess amount of parental benefit. This means that the payment for the next month can be reduced by the excess amount you received.
 {{/if}}
 
 {{#eq forMyeUtbetalt "GENERELL"}}
-**Hva skjer hvis du får utbetalt foreldrepenger og lønn for samme periode?**
+**What happens if you receive parental benefit and salary for the same period?**
 
-Hvis du får utbetalt for mye i foreldrepenger, kan utbetalingen din bli redusert i neste måned.
+If you are paid an excess amount of parental benefit, your payment for the following month may be reduced.
 {{/eq}}
 
 <br/>
 
-**Du må melde fra om endringer**<br/>
-Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+**You must notify any changes**<br/>
+You must notify NAV immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt) for more detailed information.
 <br/>
 <br/>
 <br/>
 {{/gt}}
 
-**Du har rett til å klage**<br/>
-Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+**You have the right to appeal**<br/>
+You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>
 <br/>
-{{> footer_nb }}
+{{> footer_en }}

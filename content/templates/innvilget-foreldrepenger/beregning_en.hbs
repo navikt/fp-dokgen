@@ -16,7 +16,7 @@ We have stipulated your parental benefit to {{format-kroner dagsats}} kroner per
 {{~#each beregningsgrunnlagregler}}
 {{~#in-array (array "ARBEIDSTAKER" "KOMBINERT_AT_FL_SN" "KOMBINERT_AT_FL" "KOMBINERT_AT_SN") regelStatus }}
 {{~#each andelListe}}
-{{~#if (and (eq this.aktivitetStatus "ARBEIDSTAKER" ) (neq this.etterlønnSluttpakke true))}}
+{{~#if (and (eq this.aktivitetStatus "ARBEIDSTAKER" ) (eq this.etterlønnSluttpakke false))}}
 {{#eq @../antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke 1}}
 Your income at {{this.arbeidsgiverNavn}} is {{format-kroner this.månedsinntekt}} kroner per month. Your employer has provided us with this information.
 {{/eq}}
