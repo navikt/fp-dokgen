@@ -15,5 +15,5 @@
   "antallBarn": 1,
   "advarselKode": "JOBBFULLTID",
   "flereOpplysninger": false,
-  "kreverSammenhengendeUttak": true
+  "kreverSammenhengendeUttak": false
 }
