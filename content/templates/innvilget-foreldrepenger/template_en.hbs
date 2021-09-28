@@ -17,9 +17,9 @@
 
 {{#if inkludereUtbetaling}}{{> innvilget-foreldrepenger/utbetaling_en }}{{/if}}
 
-{{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.
+{{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}We have received new income information. We have therefore changed the amount you are going to be paid.
 
-{{#gt dagsats 0}}Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{format-kroner månedsbeløp}} kroner i måneden. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
+{{#gt dagsats 0}}You will receive {{format-kroner dagsats}} kroner per day before tax. This amounts to {{format-kroner månedsbeløp}} kroner per month, on average. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).
 {{/gt}}{{/eq}}
 
 {{#if inkludereInnvilget}}{{> innvilget-foreldrepenger/innvilget_nb}}{{/if}}
