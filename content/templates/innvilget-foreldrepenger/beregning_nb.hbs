@@ -14,9 +14,9 @@ Vi har fastsatt foreldrepengene dine til {{format-kroner dagsats}} kroner per da
 {{else}}
 
 {{~#each beregningsgrunnlagregler}}
-{{~#if (or (eq regelStatus "ARBEIDSTAKER") (eq regelStatus "KOMBINERT_AT_FL_SN") (eq regelStatus "KOMBINERT_AT_FL") (eq regelStatus "KOMBINERT_AT_SN"))}}
+{{~#in-array (array "ARBEIDSTAKER" "KOMBINERT_AT_FL_SN" "KOMBINERT_AT_FL" "KOMBINERT_AT_SN") regelStatus }}
 {{~#each andelListe}}
-{{~#if (and (eq this.aktivitetStatus "ARBEIDSTAKER" ) (neq this.etterlønnSluttpakke))}}
+{{~#if (and (eq this.aktivitetStatus "ARBEIDSTAKER" ) (neq this.etterlønnSluttpakke true))}}
 {{#eq @../antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke 1}}
 Inntekten din hos {{this.arbeidsgiverNavn}} er {{format-kroner this.månedsinntekt}} kroner i måneden. Arbeidsgiveren din har gitt oss disse opplysningene.
 {{/eq}}
@@ -28,7 +28,7 @@ Inntekten din hos {{this.arbeidsgiverNavn}} er {{format-kroner this.månedsinnte
 {{#gt antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke 1}}
 Arbeidsgiverne dine har gitt oss disse opplysningene.
 {{/gt}}
-{{/if}}
+{{/in-array}}
 
 {{~#each andelListe}}
 {{#eq this.etterlønnSluttpakke true }}
@@ -36,14 +36,14 @@ Vi har brukt {{format-kroner this.månedsinntekt}} kroner i måneden før skatt 
 {{/eq}}
 {{/each}}
 
-{{~#if (or (eq regelStatus "ARBEIDSTAKER") (eq regelStatus "KOMBINERT_AT_FL_SN")  (eq regelStatus "KOMBINERT_AT_SN"))}}
+{{~#in-array (array "ARBEIDSTAKER" "KOMBINERT_AT_FL_SN" "KOMBINERT_AT_SN") regelStatus }}
 Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.
-{{/if}}
+{{/in-array}}
 
-{{~#if (or (eq regelStatus "FRILANSER") (eq regelStatus "KOMBINERT_AT_FL_SN") (eq regelStatus "KOMBINERT_AT_FL") (eq regelStatus "KOMBINERT_FL_SN"))}}
+{{~#in-array (array "FRILANSER" "KOMBINERT_AT_FL_SN" "KOMBINERT_AT_FL" "KOMBINERT_FL_SN") regelStatus }}
 {{~#each andelListe}}
 {{#eq this.aktivitetStatus "FRILANSER"}}
-Inntekten din som frilanser er {{format-kroner this.månedsinntekt}} kroner i måneden.  Oppdragsgiveren eller oppdragsgiverne dine har gitt oss disse opplysningene.
+Inntekten din som frilanser er {{format-kroner this.månedsinntekt}} kroner i måneden. Oppdragsgiveren eller oppdragsgiverne dine har gitt oss disse opplysningene.
 {{~#if (neq @../regelStatus "KOMBINERT_AT_FL")}}
 
 
@@ -55,9 +55,9 @@ Dette er gjennomsnittet av inntekten du har hatt som arbeidstaker og frilanser d
 {{/if}}
 {{/eq}}
 {{/each}}
-{{/if}}
+{{/in-array}}
 
-{{~#if (or (eq regelStatus "SELVSTENDIG_NÆRINGSDRIVENDE") (eq regelStatus "KOMBINERT_AT_FL_SN") (eq regelStatus "KOMBINERT_AT_SN") (eq regelStatus "KOMBINERT_FL_SN"))}}
+{{~#in-array (array "SELVSTENDIG_NÆRINGSDRIVENDE" "KOMBINERT_AT_FL_SN" "KOMBINERT_AT_SN" "KOMBINERT_FL_SN") regelStatus }}
 {{~#each andelListe}}
 {{#eq @../regelStatus "SELVSTENDIG_NÆRINGSDRIVENDE"}}
 {{#eq @../snNyoppstartet false}}
@@ -76,7 +76,7 @@ Næringsinntekten din er fastsatt til {{format-kroner this.årsinntekt}} kroner 
 Næringsinntekten din er fastsatt til {{format-kroner this.årsinntekt}} kroner i året. Når vi beregner foreldrepenger ut fra næringsinntekten din, bruker vi gjennomsnittet av de siste tre årene vi har fått oppgitt av Skatteetaten. Hvis du nettopp har begynt å arbeide, bruker vi inntekten vi har fått opplyst for det siste året. Dette gjennomsnittet kan også inneholde arbeidsinntekten din og inntekten din som frilanser. De er trukket fra i beregningen av næringsinntekten.
 {{/if}}
 {{/each}}
-{{/if}}
+{{/in-array}}
 
 {{~#each andelListe}}
 {{~#if (and (eq aktivitetStatus "SELVSTENDIG_NÆRINGSDRIVENDE") (eq dagsats 0))}}

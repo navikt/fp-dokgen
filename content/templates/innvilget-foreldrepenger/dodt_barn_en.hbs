@@ -13,11 +13,11 @@ You will receive {{format-kroner dagsats}} kroner per day before taxes. This is 
 {{> innvilget-foreldrepenger/felles/refusjon_en }}
 
 {{#if (and (neq lovhjemlerUttak "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
-{{> innvilget-foreldrepenger/felles/lovhjemler_uttak_nb }}
+{{> innvilget-foreldrepenger/felles/lovhjemler_uttak_en }}
 {{/if}}
 
 {{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
-{{> innvilget-foreldrepenger/beregning_nb}}
+{{> innvilget-foreldrepenger/beregning_en}}
 {{else}}
 {{#if felles.fritekst}}
 {{felles.fritekst}}
