@@ -50,7 +50,7 @@ There are {{disponibleDager}} {{#eq disponibleDager 1}}day{{else}}days{{/eq}} le
 You are working for several employers during the same period. It is only possible to combine parental benefit with work at one employer at a time. This means that it is only your period at {{this.arbeidsgiverNavn}} that will be extended.
 {{/if}}{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
 
-{{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_nb}}{{/if}}
+{{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_en}}{{/if}}
 
 {{#if (and (eq barnErFødt true) (eq gjelderMor true) (eq årsakErFødselshendelse true))}}
 {{#gt dagerTaptFørTermin 0}}
@@ -64,11 +64,11 @@ Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin,
 {{/if}}
 
 {{#if (and (neq lovhjemlerUttak "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
-{{> innvilget-foreldrepenger/felles/lovhjemler_uttak_nb }}
+{{> innvilget-foreldrepenger/felles/lovhjemler_uttak_en }}
 {{/if}}
 
 {{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
-{{> innvilget-foreldrepenger/beregning_nb}}
+{{> innvilget-foreldrepenger/beregning_en}}
 {{else}}
 {{#if felles.fritekst}}
 {{felles.fritekst}}
@@ -76,7 +76,7 @@ Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin,
 {{/neq}}
 
 {{#if (and (eq inntektOverSeksG true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-{{> innvilget-foreldrepenger/felles/over_seksG_nb }}
+{{> innvilget-foreldrepenger/felles/over_seksG_en }}
 {{/if}}
 
 {{#eq dekningsgrad 80}}
@@ -84,11 +84,11 @@ Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin,
 {{> innvilget-foreldrepenger/mindre_utbetalt_en }}
 {{/eq}}
 {{#if (and (eq behandlingType "REVURDERING") (eq behandlingResultatType "INNVILGET"))}}
-{{> innvilget-foreldrepenger/mindre_utbetalt_nb}}{{/if}}
+{{> innvilget-foreldrepenger/mindre_utbetalt_en}}{{/if}}
 {{/eq}}
 
 {{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-{{> innvilget-foreldrepenger/felles/lovhjemler_beregning_nb }}
+{{> innvilget-foreldrepenger/felles/lovhjemler_beregning_en }}
 {{/if}}
 
 {{#if (and (eq inntektMottattArbeidsgiver true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
