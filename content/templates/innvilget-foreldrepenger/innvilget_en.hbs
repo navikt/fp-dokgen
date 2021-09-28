@@ -1,0 +1,133 @@
+<br/>
+
+{{~#gt antallInnvilgedePerioder 0}}
+
+**We have granted the following**
+{{/gt}}
+
+{{~#* inline "punkt" ~}}
+{{~#gt antallInnvilgedePerioder 1}}* {{/gt}}
+{{~/inline~}}
+
+{{~#* inline "indent" }}
+  <!-- 2 space gir riktig innrykk etter linjeskift -->
+{{~/inline~}}
+
+{{~#each perioder}}
+{{#eq årsak "4503"}}
+{{>punkt}}You will receive {{trim-decimal prioritertUtbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}}. This corresponds to the percentage of a full-time position that the mother is working. The amount of parental benefit you draw cannot be higher than the percentage that the mother is working.
+
+{{>indent}}Even though you are working during this period, you will not be entitled to an extension of your parental benefit period. In order to combine parental benefit with work and get a longer period of parental benefit, the amount you draw must be lower than the percentage that the mother is working.
+{{/eq}}
+
+
+{{#in-array (array "4080" "4501") årsak}}
+{{>punkt}}You will receive {{trim-decimal prioritertUtbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+{{>indent}}We have reduced the amount you receive because you have worked during this period. You have applied to combine parental benefit with work after you started working and are therefore not entitled to an extension of your parental benefit period.
+{{/in-array}}
+
+
+{{#eq årsak "4504"}}
+{{>punkt}}You will receive {{trim-decimal prioritertUtbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+{{>indent}}We have reduced the amount you receive because you are working during this period. Even though you are working during this period, you will not be entitled to an extension of your parental benefit period. At least six weeks must have passed since the birth before you can combine parental benefit with work and get a longer period of parental benefit.
+{{/eq}}
+
+
+{{#lt this.prioritertUtbetalingsgrad 100.0}}
+{{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" ) årsak}}
+{{>punkt}}You are taking {{trim-decimal this.prioritertUtbetalingsgrad}} per cent parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. During this period, you will receive {{format-kroner this.periodeDagsats}} kroner per day before tax.
+{{/in-array}}
+{{else}}
+{{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" "2038" ) årsak}}
+{{>punkt}}You are taking parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. During this period, you will receive {{format-kroner this.periodeDagsats}} kroner per day before tax.
+{{/in-array}}
+{{/lt}}
+
+
+{{#eq årsak "2038"}}{{#neq this.prioritertUtbetalingsgrad 100.0}}
+{{>punkt}}You will receive {{trim-decimal prioritertUtbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the other parent will receive parental benefit in the same period. During this period, you will receive {{format-kroner periodeDagsats}} kroner per day before tax.
+{{/neq}}{{/eq}}
+
+
+{{#in-array (array "2010" "2015") årsak}}
+{{>punkt}}Your parental benefit is postponed from {{periodeFom}} up to and including {{periodeTom}} because you are on holiday.
+{{/in-array}}
+
+
+{{#in-array (array "2011" "2016") årsak}}
+{{>punkt}}Your parental benefit is postponed from {{periodeFom}} up to and including {{periodeTom}} because you are working full time.
+{{/in-array}}
+
+
+{{#in-array (array "2012" "2018" "2025") årsak}}
+{{>punkt}}Your parental benefit is postponed from {{periodeFom}} up to and including {{periodeTom}} because you have been admitted to a health care institution.
+{{/in-array}}
+
+
+{{#in-array (array "2013" "2019" "2026") årsak}}
+{{>punkt}}Your parental benefit is postponed from {{periodeFom}} up to and including {{periodeTom}} because your {{#eq antallBarn 1}}child{{else}}children{{/eq}} have been admitted to a health care institution.
+{{/in-array}}
+
+
+{{#in-array (array "2014" "2017" "2027") årsak}}
+{{>punkt}}Your parental benefit is postponed from {{periodeFom}} up to and including {{periodeTom}} because you are completely dependent on assistance to care for the {{#eq antallBarn 1}}child{{else}}children{{/eq}}.
+{{/in-array}}
+
+{{#eq årsak "2028"}}
+{{>punkt}}Du har opphold i foreldrepengeperioden fra og med {{periodeFom}} up to and including {{periodeTom}}. Du mister ikke dager, fordi den andre forelderen jobber, studerer eller er i en annen godkjent aktivitet. Les mer om dette på nav.no/foreldrepenger.
+{{/eq}}
+
+{{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
+{{>punkt}}Du tar ut {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} up to and including {{periodeTom}} fordi du jobber {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{format-kroner periodeDagsats}} kroner per day before tax.
+{{#each arbeidsforholdsliste}}
+{{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0))}} {{#if (and (lt this.stillingsprosent 100.0) (eq this.gradering false))}} {{#if (or (eq delvisRefusjon true) (eq fullRefusjon true))}}
+{{>indent}}Du jobber ikke i hele deltidsstillingen din hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepenger både fra arbeidsgiveren din og NAV.
+{{/if}}{{/if}}{{/if}}{{/if}}
+{{#if arbeidsforholdsliste.0.gradering}} {{#if (and (eq this.utbetalingsgrad 100.0) (eq this.gradering false))}}
+{{>indent}}I samme periode tar du ut 100 prosent permisjon hos {{this.arbeidsgiverNavn}}.
+{{/if}}{{/if}}
+{{/each}}
+{{/if}}
+
+
+{{#each annenAktivitetsliste}}
+{{#if (and (eq this.aktivitetStatus "FL") (eq this.gradering true))}} {{#if @../innvilget}}
+{{>punkt}}Du tar ut {{trim-decimal this.utbetalingsgrad}} prosent foreldrepenger fra og med {{@../periodeFom}} up to and including {{@../periodeTom}} fordi du jobber {{trim-decimal this.prosentArbeid}} prosent. I denne perioden får du {{format-kroner @../periodeDagsats}} kroner per day before tax.
+{{/if}}{{/if}}
+{{/each}}
+
+
+{{#if (and (eq this.næring.gradering true) (eq this.innvilget true))}}
+{{>punkt}}Du tar ut {{trim-decimal this.næring.utbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} up to and including {{this.periodeTom}} fordi du jobber {{trim-decimal this.næring.prosentArbeid}} prosent. I denne perioden får du {{format-kroner this.periodeDagsats}} kroner per day before tax.
+{{/if}}
+
+
+{{#eq årsak "2020"}}
+{{>punkt}}Du får overta kvoten fra og med {{periodeFom}} up to and including {{periodeTom}} fordi den andre forelderen ikke har rett til foreldrepenger.
+{{/eq}}
+
+
+{{#eq årsak "2022"}}
+{{>punkt}}Du får overta kvoten fra og med {{periodeFom}} up to and including {{periodeTom}} fordi den andre forelderen er innlagt i helseinstitusjon.
+{{/eq}}
+
+
+{{#eq årsak "2021"}}
+{{>punkt}}Du får overta kvoten fra og med {{periodeFom}} up to and including {{periodeTom}} fordi den andre forelderen er helt avhengig av hjelp til å ta seg av {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
+{{/eq}}
+
+
+{{#eq årsak "2023"}}
+{{>punkt}}Du får overta kvoten til den andre forelderen fra og med {{periodeFom}} up to and including {{periodeTom}} fordi du har aleneomsorgen for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
+{{/eq}}
+{{/each}}
+
+{{#if (and (gt antallInnvilgedePerioder 0) (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
+Foreldrepengene utgjør det samme som tidligere. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
+{{#if stønadsperiodeTom}}
+{{#eq dagerTaptFørTermin 0}}
+Den siste dagen med foreldrepenger er {{stønadsperiodeTom}}.
+{{/eq}}{{/if}}
+{{/if}}
