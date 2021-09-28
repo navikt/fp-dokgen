@@ -8,7 +8,8 @@
     "fristDato",
     "antallBarn",
     "advarselKode",
-    "flereOpplysninger"
+    "flereOpplysninger",
+    "kreverSammenhengendeUttak",
   ],
   "properties": {
     "felles": {
@@ -27,6 +28,9 @@
       "type": "string"
     },
     "flereOpplysninger": {
+      "type": "boolean"
+    },
+    "kreverSammenhengendeUttak": {
       "type": "boolean"
     }
   }
