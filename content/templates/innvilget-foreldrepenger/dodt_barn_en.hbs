@@ -17,7 +17,7 @@ You will receive {{format-kroner dagsats}} kroner per day before taxes. This is 
 {{/if}}
 
 {{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
-{{> innvilget-foreldrepenger/beregning_en}}
+{{> innvilget-foreldrepenger/beregning_en }}
 {{else}}
 {{#if felles.fritekst}}
 {{felles.fritekst}}
@@ -25,7 +25,7 @@ You will receive {{format-kroner dagsats}} kroner per day before taxes. This is 
 {{/neq}}
 
 {{#if (and (eq inntektOverSeksG true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-{{> innvilget-foreldrepenger/felles/over_seksG_nb }}
+{{> innvilget-foreldrepenger/felles/over_seksG_en }}
 {{/if}}
 
 {{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
