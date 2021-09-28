@@ -1,0 +1,36 @@
+{{~#neq inkludereUtbetNårGradering true}}
+{{#if stønadsperiodeFom stønadsperiodeTom}}
+{{#gt dagsats 0}}
+You will receive {{format-kroner dagsats}} kroner per day before taxes starting from {{stønadsperiodeFom}}. This is {{format-kroner månedsbeløp}} kroner on average per month. The last day you will receive parental benefit is {{stønadsperiodeTom}}.
+{{/gt}}{{/if}}{{/neq}}
+
+{{> innvilget-foreldrepenger/felles/refusjon_en }}
+
+{{#eq annenForelderHarRettVurdert "JA"}}The other parent is entitled to parental benefit. You will therefore not be granted the whole parental benefit period.{{/eq}}
+{{#eq annenForelderHarRettVurdert "NEI"}}The other parent is not entitled to parental benefit. You will therefore be granted the whole parental benefit period.{{/eq}}
+
+{{#if annenForelderHarRett}}{{#eq aleneomsorgKode "NEI"}}You do not have lone care for the {{#gt antallBarn 1}}children{{else}}child{{/gt}} and will therefore not be granted the whole parental benefit period.{{/eq}}{{/if}}
+
+{{#eq aleneomsorgKode "JA"}}{{#not ikkeOmsorg}}You have lone care for the {{#gt antallBarn 1}}children{{else}}child{{/gt}} and will therefore be granted the whole parental benefit period.{{/not}}{{/eq}}
+
+{{#gt prematurDager 0}}We have extended the parental benefit period by {{prematurDager}}{{#gt prematurDager 1}} days{{else}} day{{/gt}} because you gave birth before the 33rd week of pregnancy.{{/gt}}
+
+{{#gt foreldrepengeperiodenUtvidetUker 0}}
+{{#if gjelderFødsel}}
+{{#gt antallBarn 1}}
+{{#if barnErFødt}}
+We have extended the parental benefit period by {{foreldrepengeperiodenUtvidetUker}} weeks because you {{#in-array (array "NEI" "IKKE_VURDERT") aleneomsorgKode}}got{{else}}gave birth to{{/in-array}} more than one child.
+{{else}}
+We have extended the parental benefit period by {{foreldrepengeperiodenUtvidetUker}} weeks because you are expecting more than one child.
+{{/if}}
+{{/gt}}
+{{else}}
+{{#gt antallBarn 1}}
+We have extended the parental benefit period by {{foreldrepengeperiodenUtvidetUker}} weeks because you are adopting more than one child.
+{{/gt}}
+{{/if}}
+{{/gt}}
+
+{{#each perioder}}{{#eq årsak "4095"}}The parental benefit period starts three weeks before the estimated date of delivery. You have not claimed parental benefit from {{periodeFom}} up to and including {{periodeTom}}. You will therefore lose {{#gt antallTapteDager 1}}these days{{else}}this day{{/gt}}. If you want to take out {{#gt antallTapteDager 1}}these days{{else}}this day{{/gt}}, you must apply for this on nav.no.{{/eq}}{{/each}}
+
+{{#gt dagerTaptFørTermin 0}}{{#if fbEllerRvInnvilget gjelderFødsel}}Because you gave birth before the due date, you lose {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}days{{else}}day{{/gt}} of parental benefit.{{/if}}{{/gt}}

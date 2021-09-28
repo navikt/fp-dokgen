@@ -13,9 +13,9 @@
 {{#gt antallDødeBarn 0}}
 {{> innvilget-foreldrepenger/dodt_barn_en}}
 {{else}}
-{{#if (and (eq behandlingType "REVURDERING")(eq behandlingResultatType "INNVILGET"))}}Vi har vurdert saken din på nytt, og du har rett til foreldrepenger. Vi har derfor endret vedtaket du har fått tidligere.{{/if}}
+{{#if (and (eq behandlingType "REVURDERING")(eq behandlingResultatType "INNVILGET"))}}We have reconsidered your case, and you are entitled to parental benefit. We have therefore changed the decision you previously have received.{{/if}}
 
-{{#if inkludereUtbetaling}}{{> innvilget-foreldrepenger/utbetaling_nb}}{{/if}}
+{{#if inkludereUtbetaling}}{{> innvilget-foreldrepenger/utbetaling_en }}{{/if}}
 
 {{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.
 
