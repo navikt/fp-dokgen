@@ -1,10 +1,10 @@
 package no.nav.foreldrepenger.dokgen.test.templates.innvilgelsefp;
 
-import org.junit.jupiter.api.Test;
-
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compileContent;
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
@@ -24,6 +24,13 @@ public class InnvilgetForeldrepengerBeregningTest {
     public void undermal_beregning_to_ag_nb() throws Exception {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_to_ag");
         var expected = getExpected(BREVMAL, UNDERMAL, "innvilget-fp_to_ag_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void undermal_beregning_to_ag_nn() throws Exception {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.NYNORSK, "førstegangsbehandling_to_ag");
+        var expected = getExpected(BREVMAL, UNDERMAL, "innvilget-fp_to_ag_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 

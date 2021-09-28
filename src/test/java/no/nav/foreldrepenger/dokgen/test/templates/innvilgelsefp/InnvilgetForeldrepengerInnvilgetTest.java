@@ -1,10 +1,10 @@
 package no.nav.foreldrepenger.dokgen.test.templates.innvilgelsefp;
 
-import org.junit.jupiter.api.Test;
-
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compileContent;
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
@@ -42,9 +42,16 @@ public class InnvilgetForeldrepengerInnvilgetTest {
     }
 
     @Test
-    public void skal_liste_ut_tekster_for_alle_årsakene_som_finnes_i_periodelista() throws Exception {
+    public void skal_liste_ut_tekster_for_alle_årsakene_som_finnes_i_periodelista_nb() throws Exception {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_enkeltårsaker");
         var expected = getExpected(BREVMAL, UNDERMAL, "innvilget-foreldrepenger_enkeltårsaker_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void skal_liste_ut_tekster_for_alle_årsakene_som_finnes_i_periodelista_nn() throws Exception {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.NYNORSK, "førstegangsbehandling_enkeltårsaker");
+        var expected = getExpected(BREVMAL, UNDERMAL, "innvilget-foreldrepenger_enkeltårsaker_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
