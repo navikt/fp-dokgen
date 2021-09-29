@@ -195,7 +195,8 @@
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du tidligst kan få foreldrepenger fra den dagen du overtar omsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
 {{/case}}
 {{#case (array "4073" "4075")}}
-{{>punkt}}Du kan ikke ta ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke har søkt om eller ikke har rett til foreldrepenger.{{#eq årsak "4075"}}
+{{>punkt}}Du kan ikke ta ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikke har søkt om eller ikke har rett til foreldrepenger.
+{{#eq årsak "4075"}}
 
   Hvis mor søker om foreldrepenger og i tillegg arbeider, studerer eller er i annen aktivitet, kan du ha rett til foreldrepenger. Dette kan du lese mer om på [nav.no/familie](https://nav.no/familie).
 {{/eq}}{{/case}}
