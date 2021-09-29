@@ -26,4 +26,11 @@ public class InnvilgetForeldrepengerAvslagTest {
         var expected = getExpected(BREVMAL, UNDERMAL, "førstegangsbehandling_avslag_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+
+    @Test
+    public void skal_fortelle_om_innvilget_uttak_med_prosent_en() throws Exception {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.ENGELSK, "førstegangsbehandling_avslag");
+        var expected = getExpected(BREVMAL, UNDERMAL, "førstegangsbehandling_avslag_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
 }

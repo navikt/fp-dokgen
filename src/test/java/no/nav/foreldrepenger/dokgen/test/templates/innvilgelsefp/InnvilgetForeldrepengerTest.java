@@ -35,6 +35,13 @@ public class InnvilgetForeldrepengerTest {
     }
 
     @Test
+    public void førstegangsbehandling_med_avslag_en() throws Exception {
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "forstegangsbehandling/med_avslag_periode");
+        var expected = getExpected(BREVMAL, "forstegangsbehandling/med_avslag_periode_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     public void førstegangsbehandling_med_fritekst_nb() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/med_fritekst");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/med_fritekst_nb.txt");
@@ -66,6 +73,13 @@ public class InnvilgetForeldrepengerTest {
     public void revurdering_foreldrepenger_innvilget_endring_i_uttak_nn() throws Exception {
         var content = compileContent(BREVMAL, Språk.NYNORSK, "revurdering/foreldrepenger_innvilget_endring_i_uttak");
         var expected = getExpected(BREVMAL, "revurdering/foreldrepenger_innvilget_endring_i_uttak_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void revurdering_foreldrepenger_innvilget_endring_i_uttak_en() throws Exception {
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "revurdering/foreldrepenger_innvilget_endring_i_uttak");
+        var expected = getExpected(BREVMAL, "revurdering/foreldrepenger_innvilget_endring_i_uttak_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 

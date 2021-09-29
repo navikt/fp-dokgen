@@ -56,6 +56,13 @@ public class InnvilgetForeldrepengerInnvilgetTest {
     }
 
     @Test
+    public void skal_liste_ut_tekster_for_alle_årsakene_som_finnes_i_periodelista_en() throws Exception {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.ENGELSK, "førstegangsbehandling_enkeltårsaker");
+        var expected = getExpected(BREVMAL, UNDERMAL, "innvilget-foreldrepenger_enkeltårsaker_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     public void skal_ikke_bruke_punktliste_når_bare_en_periode_er_innvilget() throws Exception {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_innvilget_og_avslått");
         var expected = getExpected(BREVMAL, UNDERMAL, "innvilget-foreldrepenger_innvilget_og_avslått_nb.txt");
