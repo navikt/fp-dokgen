@@ -195,7 +195,8 @@
 {{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the earliest you can receive parental benefit is from the day you assume care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}.
 {{/case}}
 {{#case (array "4073" "4075")}}
-{{>punkt}}You cannot receive parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the mother has not applied for or is not entitled to parental benefit.{{#eq årsak "4075"}}
+{{>punkt}}You cannot receive parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the mother has not applied for or is not entitled to parental benefit.
+{{#eq årsak "4075"}}
 
   If the mother applies for parental benefit and, in addition, is working, studying or is in some other activity, you may be entitled to parental benefit. You can read more about this at [nav.no/familie](https://nav.no/familie).
 {{/eq}}{{/case}}
