@@ -35,6 +35,13 @@ public class InnvilgetForeldrepengerBeregningTest {
     }
 
     @Test
+    public void undermal_beregning_to_ag_en() throws Exception {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.ENGELSK, "førstegangsbehandling_to_ag");
+        var expected = getExpected(BREVMAL, UNDERMAL, "innvilget-fp_to_ag_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     public void undermal_beregning_næring_nb() throws Exception {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_næring");
         var expected = getExpected(BREVMAL, UNDERMAL, "innvilget-fp_næring_nb.txt");

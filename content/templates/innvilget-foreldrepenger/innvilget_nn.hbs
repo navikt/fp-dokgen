@@ -9,29 +9,25 @@
 {{~#gt antallInnvilgedePerioder 1}}* {{/gt}}
 {{~/inline~}}
 
-{{~#* inline "indent" }}
-  <!-- 2 space gir riktig innrykk etter linjeskift -->
-{{~/inline~}}
-
 {{~#each perioder}}
 {{#eq årsak "4503"}}
 {{>punkt}}Du får {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}. Dette svarer til den stillingsprosenten mor jobbar. Det du tek ut i foreldrepengar, kan ikkje vere høgare enn den prosenten mor jobbar.
 
-{{>indent}}Sjølv om du jobbar i denne perioden, får du inga forlenging av foreldrepengeperioden din. For å kombinere foreldrepengar med arbeid og få ein lengre periode med foreldrepengar må uttaket ditt vere lågare enn den prosenten mor jobbar.
+  Sjølv om du jobbar i denne perioden, får du inga forlenging av foreldrepengeperioden din. For å kombinere foreldrepengar med arbeid og få ein lengre periode med foreldrepengar må uttaket ditt vere lågare enn den prosenten mor jobbar.
 {{/eq}}
 
 
 {{#in-array (array "4080" "4501") årsak}}
 {{>punkt}}Du får {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}.
 
-{{>indent}}Vi har redusert utbetalinga di fordi du har jobba i denne perioden. Du har søkt om å kombinere foreldrepengar med arbeid etter at du begynte å jobbe, og får derfor inga forlenging av foreldrepengeperioden din.
+  Vi har redusert utbetalinga di fordi du har jobba i denne perioden. Du har søkt om å kombinere foreldrepengar med arbeid etter at du begynte å jobbe, og får derfor inga forlenging av foreldrepengeperioden din.
 {{/in-array}}
 
 
 {{#eq årsak "4504"}}
 {{>punkt}}Du får {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}.
 
-{{>indent}}Vi har redusert utbetalinga di fordi du jobbar i denne perioden. Sjølv om du jobbar i perioden, får du inga forlenging av foreldrepengeperioden din. Det må ha gått minst seks veker etter fødselen før du kan kombinere foreldrepengar med arbeid og få ein lengre periode med foreldrepengar.
+  Vi har redusert utbetalinga di fordi du jobbar i denne perioden. Sjølv om du jobbar i perioden, får du inga forlenging av foreldrepengeperioden din. Det må ha gått minst seks veker etter fødselen før du kan kombinere foreldrepengar med arbeid og få ein lengre periode med foreldrepengar.
 {{/eq}}
 
 
@@ -83,10 +79,10 @@
 {{>punkt}}Du tek ut {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi du jobbar {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{format-kroner periodeDagsats}} kroner per dag før skatt.
 {{#each arbeidsforholdsliste}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0))}} {{#if (and (lt this.stillingsprosent 100.0) (eq this.gradering false))}} {{#if (or (eq delvisRefusjon true) (eq fullRefusjon true))}}
-{{>indent}}Du jobbar ikkje i heile deltidsstillinga di hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepengar både frå arbeidsgivaren din og frå NAV.
+  Du jobbar ikkje i heile deltidsstillinga di hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepengar både frå arbeidsgivaren din og frå NAV.
 {{/if}}{{/if}}{{/if}}{{/if}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (eq this.utbetalingsgrad 100.0) (eq this.gradering false))}}
-{{>indent}}I same perioden tek du ut 100 prosent permisjon hos {{this.arbeidsgiverNavn}}.
+  I same perioden tek du ut 100 prosent permisjon hos {{this.arbeidsgiverNavn}}.
 {{/if}}{{/if}}
 {{/each}}
 {{/if}}

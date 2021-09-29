@@ -26,4 +26,11 @@ public class InnvilgetForeldrepengerDødtBarnTest {
         var expected = getExpected(BREVMAL, UNDERMAL, "forstegangsbehandling_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+
+    @Test
+    public void dødt_barn_førstegangsbehandling_en() throws Exception {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.ENGELSK, "dodt_barn_forstegangsbehandling");
+        var expected = getExpected(BREVMAL, UNDERMAL, "forstegangsbehandling_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
 }

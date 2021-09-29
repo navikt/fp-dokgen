@@ -20,7 +20,7 @@ National identity number: 300220 12345
 
 * You are not entitled to parental benefit, because you have not had earned income or income equivalent to earned income in six of the past ten months before the start of the parental benefit period.
 
-* You are not entitled to parental benefit, because your income is lower than 50 000 kroner per year before tax.
+* You are not entitled to parental benefit, because your income is lower than 50 000 kroner per year before taxes.
 
 * You are not entitled to parental benefit, because you have applied too early. You can apply when you are in your 22nd week of pregnancy.
 
@@ -78,11 +78,11 @@ National identity number: 300220 12345
 
 * You may  not  take over the quota of the other parent from 20. mai 2021 up to and including 21. mai 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->In order to be able to take over the quota, the other parent must be fully dependent on help to be able to take care of the child due to their own illness. The medical certificate from the doctor does not indicate that this is the case.
+  In order to be able to take over the quota, the other parent must be fully dependent on help to be able to take care of the child due to their own illness. The medical certificate from the doctor does not indicate that this is the case.
 
 * You may  not  take over the quota of the other parent from 22. mai 2021 up to and including 23. mai 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->In order to be able to take over the quota, the other parent must be fully dependent on help to be able to take care of the child due to their own illness. The medical certificate from the doctor does not indicate that this is the case.
+  In order to be able to take over the quota, the other parent must be fully dependent on help to be able to take care of the child due to their own illness. The medical certificate from the doctor does not indicate that this is the case.
 
 * You are not entitled to parental benefit from 24. mai 2021 up to and including 25. mai 2021, because the mother is not working.
 
@@ -92,7 +92,7 @@ National identity number: 300220 12345
 
 * You are not entitled to parental benefit from 30. mai 2021 up to and including 31. mai 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->In order to be able to take over the parental benefit, the mother must be fully dependent on help to be able to take care of the child due to her own illness. The medical certificate from her doctor does not indicate that this is the case.
+  In order to be able to take over the parental benefit, the mother must be fully dependent on help to be able to take care of the child due to her own illness. The medical certificate from her doctor does not indicate that this is the case.
 
 * You are not entitled to parental benefit from 1. juni 2021 up to and including 2. juni 2021, because the mother is not in a health care institution.
 
@@ -108,7 +108,7 @@ National identity number: 300220 12345
 
 * We have turned down your application because we have not received the documentation we requested.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->If you send us the documentation within six weeks, we will process your case again. You will not need to submit a new application.
+  If you send us the documentation within six weeks, we will process your case again. You will not need to submit a new application.
 
 * No application has been submitted for parental benefit or postponement from 15. juni 2021 up to and including 16. juni 2021. Therefore, 1 day have been lost.
 
@@ -130,27 +130,27 @@ National identity number: 300220 12345
 
 * You cannot postpone parental benefit from 3. juli 2021 up to and including 4. juli 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->In order to postpone parental benefit on grounds of illness, you must be fully dependent on help to be able to take care of the child due to your own illness. The medical certificate from your doctor does not indicate that this is the case.
+  In order to postpone parental benefit on grounds of illness, you must be fully dependent on help to be able to take care of the child due to your own illness. The medical certificate from your doctor does not indicate that this is the case.
 
 * You cannot postpone parental benefit from 5. juli 2021 up to and including 6. juli 2021 because you have applied too late.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->In order to be entitled to postpone parental benefit, you must apply before starting work.
+  In order to be entitled to postpone parental benefit, you must apply before starting work.
 
 * You cannot combine parental benefit with work from 7. juli 2021 up to and including 8. juli 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->Your parental benefit may only be combined with work six weeks after birth.
+  Your parental benefit may only be combined with work six weeks after birth.
 
 * You cannot combine parental benefit with work from 9. juli 2021 up to and including 10. juli 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->Because you work in a full time position or more, you cannot take out parental benefit at the same time, but you may postpone the period.
+  Because you work in a full time position or more, you cannot take out parental benefit at the same time, but you may postpone the period.
 
 * You cannot combine parental benefit with work from 11. juli 2021 up to and including 12. juli 2021 because you have applied too late.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->In order to be entitled to combine parental benefit with work, you must apply before starting work. We have therefore reduced your parental benefit because you are working.
+  In order to be entitled to combine parental benefit with work, you must apply before starting work. We have therefore reduced your parental benefit because you are working.
 
 * You cannot combine parental benefit with work from 13. juli 2021 up to and including 14. juli 2021 because you have applied too late.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->In order to be entitled to combine parental benefit with work, you must apply before starting work. We have therefore reduced your parental benefit because you are working.
+  In order to be entitled to combine parental benefit with work, you must apply before starting work. We have therefore reduced your parental benefit because you are working.
 
 * You cannot combine parental benefit with work from 15. juli 2021 up to and including 16. juli 2021 because you are not working.
 
@@ -200,19 +200,19 @@ National identity number: 300220 12345
 
 * You cannot postpone parental benefit from 30. august 2021 up to and including 31. august 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->You can only postpone parental benefits if the mother is working, studying or taking part in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+  You can only postpone parental benefits if the mother is working, studying or taking part in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 
 * You are not entitled to parental benefit from 1. september 2021 up to and including 2. september 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->To get more days of parental benefit, the other parent must be working, studying or in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+  To get more days of parental benefit, the other parent must be working, studying or in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 
 * You are not entitled to parental benefit from 3. september 2021 up to and including 4. september 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->To get more days of parental benefit, the other parent must be working, studying or in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+  To get more days of parental benefit, the other parent must be working, studying or in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 
 * You are not entitled to parental benefit from 5. september 2021 up to and including 6. september 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->The parental benefit you have applied for cannot be combined with what the other parent has applied for in the same period. You can only both receive parental benefit at the same time when one of you takes 100 per cent quota and the other parent takes up to 50 per cent from the shared period.
+  The parental benefit you have applied for cannot be combined with what the other parent has applied for in the same period. You can only both receive parental benefit at the same time when one of you takes 100 per cent quota and the other parent takes up to 50 per cent from the shared period.
 
 * You cannot postpone parental benefit from 7. september 2021 up to and including 8. september 2021, because you have applied too late. To be entitled to postpone parental benefit, you must apply before the start of the holiday.
 
@@ -222,7 +222,7 @@ National identity number: 300220 12345
 * You have applied to postpone parental benefit from 29. juli 2021 up to and including 30. juli 2021, but you have not sent us the documentation we asked for. We therefore do not have enough information to assess whether you are entitled to postpone parental benefit.
 * You cannot postpone parental benefit from 1. august 2021 up to and including 2. august 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->In order to postpone parental benefit on grounds of illness, you must be fully dependent on help to be able to take care of the child due to your own illness. The medical certificate from your doctor does not indicate that this is the case.
+  In order to postpone parental benefit on grounds of illness, you must be fully dependent on help to be able to take care of the child due to your own illness. The medical certificate from your doctor does not indicate that this is the case.
 
 * You cannot postpone parental benefit from 3. august 2021 up to and including 4. august 2021 because your child is not admitted to a health care institution.
 * You cannot postpone parental benefit from 5. august 2021 up to and including 6. august 2021 because you have not been admitted to a health care institution.
