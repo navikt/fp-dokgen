@@ -16,9 +16,9 @@ Du får {{format-kroner dagsats}} kroner per dag før skatt frå og med {{støna
 {{#gt prematurDager 0}}Vi har forlengd foreldrepengeperioden med {{prematurDager}} {{#gt prematurDager 1}}dagar{{else}}dag{{/gt}} fordi du fødde før svangerskapsveke 33.{{/gt}}
 
 {{#gt foreldrepengeperiodenUtvidetUker 0}}{{#if gjelderFødsel}}{{#gt antallBarn 1}}{{#if barnErFødt}}
-Vi har forlengd foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} veker fordi {{#if (or (eq aleneomsorgKode "NEI")(eq aleneomsorgKode "IKKE_VURDERT"))}}de fekk{{else}}du fødde{{/if}} fleire barn.
+Vi har forlengd foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} veker fordi {{#in-array (array "NEI" "IKKE_VURDERT") aleneomsorgKode}}de fekk{{else}}du fødde{{/in-array}} fleire barn.
 {{else}}
-Vi har forlengd foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} veker fordi {{#if (or (eq aleneomsorgKode "NEI")(eq aleneomsorgKode "IKKE_VURDERT"))}}de{{else}}du{{/if}} ventar fleire barn.{{/if}}{{/gt}}
+Vi har forlengd foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} veker fordi {{#in-array (array "NEI" "IKKE_VURDERT") aleneomsorgKode}}de{{else}}du{{/in-array}} ventar fleire barn.{{/if}}{{/gt}}
 {{else}}
 {{#gt antallBarn 1}}Vi har forlengd foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} veker fordi {{#eq aleneomsorgKode "JA"}}du{{else}}de{{/eq}} adopterer fleire barn.{{/gt}}{{/if}}{{/gt}}
 

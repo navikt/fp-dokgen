@@ -4,19 +4,19 @@
 
 * Du får 100 prosent foreldrepenger fra og med 1. april 2021 til og med 2. april 2021. Dette tilsvarer den stillingsprosenten mor jobber. Det du tar ut i foreldrepenger kan ikke være høyere enn den prosenten mor jobber.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->Selv om du jobber i denne perioden, får du ingen forlengelse av foreldrepengeperioden din. For å kombinere foreldrepenger med arbeid og få en lengre periode med foreldrepenger, må uttaket ditt være lavere enn den prosenten mor jobber.
+  Selv om du jobber i denne perioden, får du ingen forlengelse av foreldrepengeperioden din. For å kombinere foreldrepenger med arbeid og få en lengre periode med foreldrepenger, må uttaket ditt være lavere enn den prosenten mor jobber.
 
 * Du får 100 prosent foreldrepenger fra og med 3. april 2021 til og med 4. april 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->Vi har redusert utbetalingen din fordi du har jobbet i denne perioden. Du har søkt om å kombinere foreldrepenger med arbeid etter at du begynte å jobbe, og får derfor ingen forlengelse av foreldrepengeperioden din.
+  Vi har redusert utbetalingen din fordi du har jobbet i denne perioden. Du har søkt om å kombinere foreldrepenger med arbeid etter at du begynte å jobbe, og får derfor ingen forlengelse av foreldrepengeperioden din.
 
 * Du får 100 prosent foreldrepenger fra og med 5. april 2021 til og med 6. april 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->Vi har redusert utbetalingen din fordi du har jobbet i denne perioden. Du har søkt om å kombinere foreldrepenger med arbeid etter at du begynte å jobbe, og får derfor ingen forlengelse av foreldrepengeperioden din.
+  Vi har redusert utbetalingen din fordi du har jobbet i denne perioden. Du har søkt om å kombinere foreldrepenger med arbeid etter at du begynte å jobbe, og får derfor ingen forlengelse av foreldrepengeperioden din.
 
 * Du får 100 prosent foreldrepenger fra og med 7. april 2021 til og med 8. april 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jobber i perioden, får du ingen forlengelse av foreldrepengeperioden din. Det må ha gått minst seks uker etter fødselen før du kan kombinere foreldrepenger med arbeid og få en lengre periode med foreldrepenger.
+  Vi har redusert utbetalingen din fordi du jobber i denne perioden. Selv om du jobber i perioden, får du ingen forlengelse av foreldrepengeperioden din. Det må ha gått minst seks uker etter fødselen før du kan kombinere foreldrepenger med arbeid og få en lengre periode med foreldrepenger.
 
 * Du tar ut 50 prosent foreldrepenger fra og med 9. april 2021 til og med 10. april 2021 fordi den andre forelderen skal ta ut foreldrepenger i samme periode. I denne perioden får du 1 001 kroner per dag før skatt.
 

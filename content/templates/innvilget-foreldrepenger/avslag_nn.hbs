@@ -6,21 +6,17 @@
 {{~#gt antallAvslåttePerioder 1}}* {{/gt}}
 {{~/inline~}}
 
-{{~#* inline "indent" }}
-  <!-- 2 space gir riktig innrykk etter linjeskift -->
-{{~/inline~}}
-
 {{#each perioder}}
 {{~#unless innvilget}}
 {{#switch årsak}}
 {{#case "4077"}}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi du får pleiepengar i denne perioden.
 
-{{>indent}}Periodar før termindato kan ikkje utsetjast fordi du fødde før svangerskapsveke 33.
+  Periodar før termindato kan ikkje utsetjast fordi du fødde før svangerskapsveke 33.
 {{/case}}
 {{#case "4020"}}{{#gt antallTapteDager 0}}{{>punkt}}Du har ikkje rett til foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}.
 
-{{>indent}}Du må søkje seinast tre månader etter at perioden med foreldrepengar starta. Du søkte {{søknadsdato}}. Derfor får du {{antallTapteDager}} {{#gt antallTapteDager 1}}færre dagar{{else}}dag mindre{{/gt}} med foreldrepengar.{{/gt}}{{/case}}
+  Du må søkje seinast tre månader etter at perioden med foreldrepengar starta. Du søkte {{søknadsdato}}. Derfor får du {{antallTapteDager}} {{#gt antallTapteDager 1}}færre dagar{{else}}dag mindre{{/gt}} med foreldrepengar.{{/gt}}{{/case}}
 {{#case "4005"}}
 {{#if annenForelderHarRett}}
 {{>punkt}}Det er ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar tapte{{else}}dag tapt{{/gt}}.
@@ -67,7 +63,7 @@
 {{#case "4023"}}
 {{>punkt}}Vi har redusert foreldrepengane dine fordi du jobbar frå og med {{periodeFom}} til og med {{periodeTom}}.
 
-{{>indent}}Du har ikkje søkt om å kombinere foreldrepengane med arbeid, og derfor har vi redusert utbetalinga di.
+  Du har ikkje søkt om å kombinere foreldrepengane med arbeid, og derfor har vi redusert utbetalinga di.
 {{/case}}
 {{#case (array "4030" "4031")}}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi det ikkje har gått seks veker sidan {{#gt antallBarn 1}}barna dine blei fødde{{else}}barnet ditt blei fødd{{/gt}}. Du vil få utbetalt foreldrepengar i perioden.
@@ -78,17 +74,17 @@
 {{#case "4082"}}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for seint.
 
-{{>indent}}For å ha rett til å utsetje foreldrepengane må du søkje før du begynner å jobbe.
+  For å ha rett til å utsetje foreldrepengane må du søkje før du begynner å jobbe.
 {{/case}}
 {{#case "4025"}}
 {{#if kreverSammenhengendeUttak }}
 {{>punkt}}Du kan ikkje kombinere foreldrepengane med arbeid frå og med {{periodeFom}} til og med {{periodeTom}}.
 
-{{>indent}}Fordi du jobbar 100 prosent eller meir, kan du ikkje ta ut foreldrepengar ved sida av arbeidet, men du kan utsetje perioden.
+  Fordi du jobbar 100 prosent eller meir, kan du ikkje ta ut foreldrepengar ved sida av arbeidet, men du kan utsetje perioden.
 {{else}}
 {{>punkt}}Du kan ikkje kombinere foreldrepengane med arbeid frå og med {{periodeFom}} til og med {{periodeTom}}.
 
-{{>indent}}Fordi du jobbar 100 prosent eller meir, kan du ikkje ta ut foreldrepengar ved sida av arbeidet.
+  Fordi du jobbar 100 prosent eller meir, kan du ikkje ta ut foreldrepengar ved sida av arbeidet.
 {{/if}}
 {{/case}}
 {{#case "4093"}}
@@ -124,12 +120,12 @@
 {{#case "4007"}}
 {{>punkt}}Du kan ikkje overta kvoten til den andre forelderen frå og med {{periodeFom}} til og med {{periodeTom}}.
 
-{{>indent}}For at du skal kunne overta kvoten, må den andre forelderen vere heilt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av eigen sjukdom. Legeerklæringa viser ikkje dette.
+  For at du skal kunne overta kvoten, må den andre forelderen vere heilt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av eigen sjukdom. Legeerklæringa viser ikkje dette.
 {{/case}}
 {{#case "4053"}}
 {{>punkt}}Du har ikkje rett til foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}.
 
-{{>indent}}For at du skal kunne ta ut foreldrepengane, må mor vere heilt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av eigen sjukdom. Legeerklæringa hennar viser ikkje dette.
+  For at du skal kunne ta ut foreldrepengane, må mor vere heilt avhengig av hjelp til å ta seg av {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} på grunn av eigen sjukdom. Legeerklæringa hennar viser ikkje dette.
 {{/case}}
 {{#case "4008"}}
 {{>punkt}}Du kan ikkje overta kvoten frå og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen ikkje er innlagd i helseinstitusjon.
@@ -146,22 +142,22 @@
 {{~#case (array "4061" "4062" "4063" "4064" "4065" "4115" "4116" "4117")}}
 {{>punkt}}Du har søkt om å utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}}, men du har ikkje sendt oss dokumentasjonen vi har bede om. Derfor har vi ikkje nok opplysningar til å vurdere om du har rett til å utsetje.
 
-{{>indent}}Dersom du sender oss dokumentasjonen innan seks veker, behandlar vi søknaden din for denne perioden på nytt. Då treng du ikkje sende ny søknad.
+  Dersom du sender oss dokumentasjonen innan seks veker, behandlar vi søknaden din for denne perioden på nytt. Då treng du ikkje sende ny søknad.
 {{/case}}
 {{#case (array "4094" "4502")}}
 {{>punkt}}Du har søkt om å kombinere foreldrepengane med arbeid frå og med {{periodeFom}} til og med {{periodeTom}}, men du har ikkje sendt oss dokumentasjonen vi har bede om. Derfor har vi ikkje nok opplysningar til å vurdere om du har rett til å kombinere foreldrepengane med arbeid.
 
-{{>indent}}Dersom du sender oss dokumentasjonen innan seks veker, behandlar vi søknaden din for denne perioden på nytt. Då treng du ikkje sende ny søknad.
+  Dersom du sender oss dokumentasjonen innan seks veker, behandlar vi søknaden din for denne perioden på nytt. Då treng du ikkje sende ny søknad.
 {{/case}}
 {{#case "4074"}}
 {{>punkt}}Du har søkt om å ta over kvoten til den andre forelderen frå og med {{periodeFom}} til og med {{periodeTom}}, men du har ikkje sendt oss dokumentasjonen vi har bede om. Derfor har vi ikkje nok opplysningar til å vurdere om du har rett til å overta kvoten.
 
-{{>indent}}Dersom du sender oss dokumentasjonen innan seks veker, behandlar vi søknaden din for denne perioden på nytt. Då treng du ikkje sende ny søknad.
+  Dersom du sender oss dokumentasjonen innan seks veker, behandlar vi søknaden din for denne perioden på nytt. Då treng du ikkje sende ny søknad.
 {{/case}}
 {{~#case (array "4066" "4067" "4068" "4069" "4070" "4088" "4089")}}
 {{>punkt}}Du har søkt om foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}, men du har ikkje sendt oss dokumentasjonen vi har bede om. Derfor har vi ikkje nok opplysningar til å vurdere om du har rett til foreldrepengar i denne perioden.
 
-{{>indent}}Dersom du sender oss dokumentasjonen innan seks veker, behandlar vi søknaden din for denne perioden på nytt. Då treng du ikkje sende ny søknad.
+  Dersom du sender oss dokumentasjonen innan seks veker, behandlar vi søknaden din for denne perioden på nytt. Då treng du ikkje sende ny søknad.
 {{/case}}
 {{~#case "4013"}}
 {{>punkt}}Du har ikkje rett til foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi du tidlegast kan starte foreldrepengeperioden 12 veker før termin.
@@ -175,22 +171,22 @@
 {{#case "4035"}}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}}.
 
-{{>indent}}Du kan berre utsetje når mor jobbar, studerer eller er i ein annan aktivitet. Du kan lese meir om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+  Du kan berre utsetje når mor jobbar, studerer eller er i ein annan aktivitet. Du kan lese meir om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{/case}}
 {{#case (array "4058" "4059")}}
 {{>punkt}}Du har ikkje rett til foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}.
 
-{{>indent}}For at du skal kunne få fleire dagar med foreldrepengar, må den andre forelderen vere i jobb, studere eller vere i ein annan aktivitet. Du kan lese meir om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+  For at du skal kunne få fleire dagar med foreldrepengar, må den andre forelderen vere i jobb, studere eller vere i ein annan aktivitet. Du kan lese meir om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{/case}}
 {{#case "4060"}}
 {{>punkt}}Du har ikkje rett til foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}.
 
-{{>indent}}Du kan ikkje kombinere foreldrepengane du har søkt om, med det den andre forelderen har søkt om i same perioden. De kan berre ta ut foreldrepengar samtidig når den eine av dykk tek ut 100 prosent kvote, og den andre tek ut opptil 50 prosentfellesperiode.
+  Du kan ikkje kombinere foreldrepengane du har søkt om, med det den andre forelderen har søkt om i same perioden. De kan berre ta ut foreldrepengar samtidig når den eine av dykk tek ut 100 prosent kvote, og den andre tek ut opptil 50 prosentfellesperiode.
 {{/case}}
 {{#case "4081"}}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for seint.
 
-{{>indent}}For å ha rett til å utsetje foreldrepengane må du søkje før ferien startar.
+  For å ha rett til å utsetje foreldrepengane må du søkje før ferien startar.
 {{/case}}
 {{#case "4100"}}
 {{>punkt}}Du har ikkje rett til foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi du tidlegast kan få foreldrepengar frå den dagen du overtek omsorga for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
@@ -198,12 +194,12 @@
 {{#case (array "4073" "4075")}}
 {{>punkt}}Du kan ikkje ta ut foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi mor ikkje har søkt om eller ikkje har rett til foreldrepengar.{{#eq årsak "4075"}}
 
-{{>indent}}Dersom mor søkjer om foreldrepengar og i tillegg arbeider, studerer eller er i ein annan aktivitet, kan du ha rett til foreldrepengar. Dette kan du lese meir om på [nav.no/familie](https://nav.no/familie).
+  Dersom mor søkjer om foreldrepengar og i tillegg arbeider, studerer eller er i ein annan aktivitet, kan du ha rett til foreldrepengar. Dette kan du lese meir om på [nav.no/familie](https://nav.no/familie).
 {{/eq}}{{/case}}
 {{#case "4087"}}
 {{>punkt}}Du har ikkje rett til foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi du ikkje er medlem i folketrygda.
 
-{{>indent}}Du har ikkje opphaldsløyve i Noreg i denne perioden.
+  Du har ikkje opphaldsløyve i Noreg i denne perioden.
 {{/case}}
 {{~/switch}}
 {{~/unless}}

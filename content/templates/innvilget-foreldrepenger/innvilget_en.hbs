@@ -9,29 +9,25 @@
 {{~#gt antallInnvilgedePerioder 1}}* {{/gt}}
 {{~/inline~}}
 
-{{~#* inline "indent" }}
-  <!-- 2 space gir riktig innrykk etter linjeskift -->
-{{~/inline~}}
-
 {{~#each perioder}}
 {{#eq årsak "4503"}}
 {{>punkt}}You will receive {{trim-decimal prioritertUtbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}}. This corresponds to the percentage of a full-time position that the mother is working. The amount of parental benefit you draw cannot be higher than the percentage that the mother is working.
 
-{{>indent}}Even though you are working during this period, you will not be entitled to an extension of your parental benefit period. In order to combine parental benefit with work and get a longer period of parental benefit, the amount you draw must be lower than the percentage that the mother is working.
+  Even though you are working during this period, you will not be entitled to an extension of your parental benefit period. In order to combine parental benefit with work and get a longer period of parental benefit, the amount you draw must be lower than the percentage that the mother is working.
 {{/eq}}
 
 
 {{#in-array (array "4080" "4501") årsak}}
 {{>punkt}}You will receive {{trim-decimal prioritertUtbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
 
-{{>indent}}We have reduced the amount you receive because you have worked during this period. You have applied to combine parental benefit with work after you started working and are therefore not entitled to an extension of your parental benefit period.
+  We have reduced the amount you receive because you have worked during this period. You have applied to combine parental benefit with work after you started working and are therefore not entitled to an extension of your parental benefit period.
 {{/in-array}}
 
 
-{{#eq årsak "4504"}}
+{{#eq årsak "4504"}}'
 {{>punkt}}You will receive {{trim-decimal prioritertUtbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
 
-{{>indent}}We have reduced the amount you receive because you are working during this period. Even though you are working during this period, you will not be entitled to an extension of your parental benefit period. At least six weeks must have passed since the birth before you can combine parental benefit with work and get a longer period of parental benefit.
+  We have reduced the amount you receive because you are working during this period. Even though you are working during this period, you will not be entitled to an extension of your parental benefit period. At least six weeks must have passed since the birth before you can combine parental benefit with work and get a longer period of parental benefit.
 {{/eq}}
 
 
@@ -83,10 +79,10 @@
 {{>punkt}}You are taking {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are working {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} per cent at {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. In this period you will receive {{format-kroner periodeDagsats}} kroner per day before taxes.
 {{#each arbeidsforholdsliste}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0))}} {{#if (and (lt this.stillingsprosent 100.0) (eq this.gradering false))}} {{#if (or (eq delvisRefusjon true) (eq fullRefusjon true))}}
-{{>indent}}You are not working in your entire part-time position at {{this.arbeidsgiverNavn}}, and will therefore receive parental benefit from both your employer and NAV.
+  You are not working in your entire part-time position at {{this.arbeidsgiverNavn}}, and will therefore receive parental benefit from both your employer and NAV.
 {{/if}}{{/if}}{{/if}}{{/if}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (eq this.utbetalingsgrad 100.0) (eq this.gradering false))}}
-{{>indent}}In the same period, you will be on 100 per cent parental leave from your job at {{this.arbeidsgiverNavn}}.
+  In the same period, you will be on 100 per cent parental leave from your job at {{this.arbeidsgiverNavn}}.
 {{/if}}{{/if}}
 {{/each}}
 {{/if}}

@@ -78,11 +78,11 @@ Fødselsnummer: 300220 12345
 
 * Du kan ikke overta kvoten til den andre forelderen fra og med 20. mai 2021 til og med 21. mai 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av barnet på grunn av egen sykdom. Legeerklæringen viser ikke dette.
+  For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av barnet på grunn av egen sykdom. Legeerklæringen viser ikke dette.
 
 * Du kan ikke overta kvoten til den andre forelderen fra og med 22. mai 2021 til og med 23. mai 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av barnet på grunn av egen sykdom. Legeerklæringen viser ikke dette.
+  For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av barnet på grunn av egen sykdom. Legeerklæringen viser ikke dette.
 
 * Du har ikke rett til foreldrepenger fra og med 24. mai 2021 til og med 25. mai 2021 fordi mor ikke er i jobb.
 
@@ -92,7 +92,7 @@ Fødselsnummer: 300220 12345
 
 * Du har ikke rett til foreldrepenger fra og med 30. mai 2021 til og med 31. mai 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->For at du skal kunne overta foreldrepengene, må mor være helt avhengig av hjelp til å ta seg av barnet på grunn av egen sykdom. Legeerklæringen hennes viser ikke dette.
+  For at du skal kunne overta foreldrepengene, må mor være helt avhengig av hjelp til å ta seg av barnet på grunn av egen sykdom. Legeerklæringen hennes viser ikke dette.
 
 * Du har ikke rett til foreldrepenger fra og med 1. juni 2021 til og med 2. juni 2021 fordi mor ikke er innlagt i helseinstitusjon.
 
@@ -108,7 +108,7 @@ Fødselsnummer: 300220 12345
 
 * Vi har avslått søknaden din fordi vi ikke har mottatt dokumentasjonen vi har bedt om.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->Hvis du sender oss dokumentasjonen innen seks uker, behandler vi saken din på nytt. Du trenger ikke sende ny søknad.
+  Hvis du sender oss dokumentasjonen innen seks uker, behandler vi saken din på nytt. Du trenger ikke sende ny søknad.
 
 * Det er ikke søkt om foreldrepenger eller utsettelse fra og med 15. juni 2021 til og med 16. juni 2021. Derfor er 1 dag tapt.
 
@@ -130,27 +130,27 @@ Fødselsnummer: 300220 12345
 
 * Du kan ikke utsette foreldrepengene fra og med 3. juli 2021 til og med 4. juli 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->For å kunne utsette foreldrepengene på grunn av sykdom, må du være er helt avhengig av hjelp til å ta deg av barnet. Legeerklæringen viser ikke dette.
+  For å kunne utsette foreldrepengene på grunn av sykdom, må du være er helt avhengig av hjelp til å ta deg av barnet. Legeerklæringen viser ikke dette.
 
 * Du kan ikke utsette foreldrepengene fra og med 5. juli 2021 til og med 6. juli 2021 fordi du har søkt for sent.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->For å ha rett til å utsette foreldrepengene må du søke før du begynner å jobbe.
+  For å ha rett til å utsette foreldrepengene må du søke før du begynner å jobbe.
 
 * Du kan ikke kombinere foreldrepengene med arbeid fra og med 7. juli 2021 til og med 8. juli 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->Foreldrepengene dine kan først kombineres med arbeid seks uker etter fødselen.
+  Foreldrepengene dine kan først kombineres med arbeid seks uker etter fødselen.
 
 * Du kan ikke kombinere foreldrepengene med arbeid fra og med 9. juli 2021 til og med 10. juli 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden av arbeidet, men du kan utsette perioden.
+  Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden av arbeidet, men du kan utsette perioden.
 
 * Du kan ikke kombinere foreldrepengene med arbeid fra og med 11. juli 2021 til og med 12. juli 2021 fordi du har søkt for sent.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du begynner å jobbe. Vi har derfor redusert foreldrepengene dine fordi du jobber.
+  For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du begynner å jobbe. Vi har derfor redusert foreldrepengene dine fordi du jobber.
 
 * Du kan ikke kombinere foreldrepengene med arbeid fra og med 13. juli 2021 til og med 14. juli 2021 fordi du har søkt for sent.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du begynner å jobbe. Vi har derfor redusert foreldrepengene dine fordi du jobber.
+  For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du begynner å jobbe. Vi har derfor redusert foreldrepengene dine fordi du jobber.
 
 * Du kan ikke kombinere foreldrepengene med arbeid fra og med 15. juli 2021 til og med 16. juli 2021 fordi du ikke er i jobb.
 
@@ -200,23 +200,23 @@ Fødselsnummer: 300220 12345
 
 * Du kan ikke utsette foreldrepengene fra og med 30. august 2021 til og med 31. august 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->Du kan bare utsette når mor jobber, studerer eller er i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+  Du kan bare utsette når mor jobber, studerer eller er i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 
 * Du har ikke rett til foreldrepenger fra og med 1. september 2021 til og med 2. september 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->For at du skal få flere dager med foreldrepenger, må den andre forelderen jobbe, studere eller være i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+  For at du skal få flere dager med foreldrepenger, må den andre forelderen jobbe, studere eller være i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 
 * Du har ikke rett til foreldrepenger fra og med 3. september 2021 til og med 4. september 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->For at du skal få flere dager med foreldrepenger, må den andre forelderen jobbe, studere eller være i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+  For at du skal få flere dager med foreldrepenger, må den andre forelderen jobbe, studere eller være i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 
 * Du har ikke rett til foreldrepenger fra og med 5. september 2021 til og med 6. september 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->Foreldrepengene du har søkt om kan ikke kombineres med det den andre forelderen har søkt om for samme periode. Dere kan bare ta ut foreldrepenger samtidig når den ene av dere tar ut 100 prosent kvote og den andre tar ut opptil 50 prosent fellesperiode.
+  Foreldrepengene du har søkt om kan ikke kombineres med det den andre forelderen har søkt om for samme periode. Dere kan bare ta ut foreldrepenger samtidig når den ene av dere tar ut 100 prosent kvote og den andre tar ut opptil 50 prosent fellesperiode.
 
 * Du kan ikke utsette foreldrepengene fra og med 7. september 2021 til og med 8. september 2021 fordi du har søkt for sent.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->For å ha rett til å utsette foreldrepengene må du søke før ferien starter.
+  For å ha rett til å utsette foreldrepengene må du søke før ferien starter.
 
 * Du har ikke rett til foreldrepenger fra og med 9. september 2021 til og med 10. september 2021 fordi du tidligst kan få foreldrepenger fra den dagen du overtar omsorgen for barnet.
 * Du har søkt om å utsette foreldrepengene fra og med 25. juli 2021 til og med 26. juli 2021, men du har ikke sendt oss dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å utsette.
@@ -224,7 +224,7 @@ Fødselsnummer: 300220 12345
 * Du har søkt om å utsette foreldrepengene fra og med 29. juli 2021 til og med 30. juli 2021, men du har ikke sendt oss dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å utsette.
 * Du kan ikke utsette foreldrepengene fra og med 1. august 2021 til og med 2. august 2021.
 
-  <!-- 2 space gir riktig innrykk etter linjeskift -->For å kunne utsette foreldrepengene på grunn av sykdom, må du være er helt avhengig av hjelp til å ta deg av barnet. Legeerklæringen viser ikke dette.
+  For å kunne utsette foreldrepengene på grunn av sykdom, må du være er helt avhengig av hjelp til å ta deg av barnet. Legeerklæringen viser ikke dette.
 * Du kan ikke utsette foreldrepengene fra og med 3. august 2021 til og med 4. august 2021 fordi barnet ditt ikke er innlagt i helseinstitusjon.
 * Du kan ikke utsette foreldrepengene fra og med 5. august 2021 til og med 6. august 2021 fordi du ikke er innlagt i helseinstitusjon.
 * Det er ikke søkt om foreldrepenger eller utsettelse fra og med 15. juni 2021 til og med 16. juni 2021. Derfor er 1 dag tapt.
