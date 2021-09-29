@@ -1,10 +1,10 @@
 
 Vi har fått melding om at {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} døde {{dødsdato}}.
 
-{{~#if stønadsperiodeFom stønadsperiodeTom}}
+{{#if stønadsperiodeFom stønadsperiodeTom}}
 Vi sender dette brevet for å informere om at vi har innvilget deg foreldrepenger fra og med {{stønadsperiodeFom}} til og med {{stønadsperiodeTom}}.
 {{/if}}
-{{~#eq dekningsgrad 80}}
+{{#eq dekningsgrad 80}}
 Vi har gjort om søknaden din fra 80 prosent til 100 prosent foreldrepenger.
 {{/eq}}
 
@@ -31,6 +31,4 @@ Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennoms
 {{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
 {{> innvilget-foreldrepenger/felles/lovhjemler_beregning_nb }}
 {{/if}}
-<br/>
-<br/>
 <br/>

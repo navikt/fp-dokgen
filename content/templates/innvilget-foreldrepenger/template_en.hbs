@@ -50,7 +50,7 @@ There are {{disponibleDager}} {{#eq disponibleDager 1}}day{{else}}days{{/eq}} le
 You are working for several employers during the same period. It is only possible to combine parental benefit with work at one employer at a time. This means that it is only your period at {{this.arbeidsgiverNavn}} that will be extended.
 {{/if}}{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
 
-{{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_en}}{{/if}}
+{{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_en }}{{/if}}
 
 {{#if (and (eq barnErFødt true) (eq gjelderMor true) (eq årsakErFødselshendelse true))}}
 {{#gt dagerTaptFørTermin 0}}
