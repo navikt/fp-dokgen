@@ -337,9 +337,15 @@
 
 
 {{#eq avslagsårsak "4035"}}
+{{#if kreverSammenhengendeUttak }}
 {{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
 
   You can only postpone parental benefits if the mother is working, studying or taking part in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{else}}
+{{>punkt}}You may not have a break in the period of parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+  You may only have a break in the period of parental benefit without losing days when the other parent is working, studying or is in any other approved activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{/if}}
 {{/eq}}
 
 
