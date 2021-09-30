@@ -34,6 +34,9 @@
 {{~#case "4103"}}
 {{>punkt}}Dei første seks vekene etter fødsel er øyremerkte mor og kan berre utsetjast ved sjukdom eller innlegging. Du har ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mista {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar{{else}}dag{{/gt}}.
 {{/case}}
+{{~#case "4105"}}
+{{>punkt}}Du har ikkje rett til foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi det berre er mor som har rett på foreldrepengar før fødsel.
+{{/case}}
 {{~#case (array "4003" "4012")}}
 {{>punkt}}Du har ikkje rett til foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi du ikkje har omsorga for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
 {{/case}}
