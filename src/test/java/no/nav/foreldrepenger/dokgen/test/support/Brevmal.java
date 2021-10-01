@@ -2,13 +2,16 @@ package no.nav.foreldrepenger.dokgen.test.support;
 
 public enum Brevmal {
     //Engangsstønad
-    ENGANGSSTØNAD_AVSLAG("engangsstonad-avslag"),
     ENGANGSSTØNAD_INNVILGELSE("engangsstonad-innvilgelse"),
+    ENGANGSSTØNAD_AVSLAG("engangsstonad-avslag"),
+
     //Foreldrepenger
     FORELDREPENGER_INNVILGELSE("innvilget-foreldrepenger"),
     FORELDREPENGER_AVSLAG("foreldrepenger-avslag"),
+    FORELDREPENGER_ANNULLERT("foreldrepenger-annullert"),
     FORELDREPENGER_INFOBREV_TIL_ANNEN_FORELDER("foreldrepenger-infotilannenforelder"),
-    //Støtte brev
+
+    //Støttebrev
     INNHENTE_OPPLYSNINGER("innhente-opplysninger"),
     VARSEL_OM_REVURDERING("varsel-revurdering"),
     INFO_OM_HENLEGGELSE("henleggelse"),
