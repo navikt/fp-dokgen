@@ -5,11 +5,21 @@
 {{>brukerdetaljer_nn}}
 
 {{#eq behandlingsÅrsak "INFOBREV_BEHANDLING"}}
+{{#if kreverSammenhengendeUttak}}
 
 Du kan ha rett til foreldrepengar. Du må søkje før {{sisteUttaksdagMor}}. Dette er den dagen den andre forelderen har siste dag med foreldrepengar. Dersom du ikkje ynskjer å starte foreldrepengeperioden rett etter {{sisteUttaksdagMor}}, må du søkje om å utsetje perioden. Søkjer du på eit seinare tidspunkt, mister du dei dagane du har søkt for seint.
 
 **Lovendring av foreldrepengeordninga gjelder for barn du fekk frå og med 1. oktober 2021**
 For de som fekk barn frå og med 1.oktober 2021, bestemmer foreldrane sjølve når dei vil ta ut foreldrepengane. Fordi du har fått barn før 01.10.2021, må du søkje innan den andre forelderen har siste dag med foreldrepengar. Du må derfor søkje før {{sisteUttaksdagMor}}.
+{{else}}
+
+Du kan ha rett til foreldrepengar. Du bør søkje fire uker før din fyrste dag med foreldrepengar.
+
+Vær oppmerksam på:
+
+* dersom ein forelder startar ny foreldrepengeperiode for nytt barn, vil du miste dagar du ikkje har brukt
+* foreldrepengane må være tatt ut seinast dagen før barnet fyller tre år
+{{/if}}
 {{else}}
 
 Du kan ha rett til foreldrepengar. Den andre forelderen har opplyst at du skal ha foreldrepengar i ein periode som du ikkje har søkt om. For at disse dagane ikkje skal gå tapt må den som skal vere heime søkje om desse dagane. Dersom ingen av dykk skal vere heime må ein av dykk søkje om utsetjing av foreldrepengane.
