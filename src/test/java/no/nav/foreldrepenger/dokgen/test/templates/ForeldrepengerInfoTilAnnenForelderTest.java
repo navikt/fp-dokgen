@@ -1,13 +1,12 @@
 package no.nav.foreldrepenger.dokgen.test.templates;
 
+import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
+import no.nav.foreldrepenger.dokgen.test.support.Språk;
 import org.junit.jupiter.api.Test;
 
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compileContent;
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
-
-import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
-import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 public class ForeldrepengerInfoTilAnnenForelderTest {
     private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_INFOBREV_TIL_ANNEN_FORELDER;
@@ -30,6 +29,27 @@ public class ForeldrepengerInfoTilAnnenForelderTest {
     public void infobrev_en() throws Exception {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "infobrev");
         var expected = getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void infobrev_ikke_sammenhengende_uttak_nb() throws Exception {
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "infobrev_ikke_sammenhengende_uttak");
+        var expected = getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_ikke_sammenhengende_uttak_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void infobrev_ikke_sammenhengende_uttak_nn() throws Exception {
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "infobrev_ikke_sammenhengende_uttak");
+        var expected = getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_ikke_sammenhengende_uttak_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void infobrev_ikke_sammenhengende_uttak_en() throws Exception {
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "infobrev_ikke_sammenhengende_uttak");
+        var expected = getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_ikke_sammenhengende_uttak_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
