@@ -25,11 +25,7 @@
 {{/if}}
 {{/case}}
 {{#case "4102"}}
-{{#if annenForelderHarRett}}
-{{>punkt}}No application has been submitted for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. Therefore, {{antallTapteDager}} {{#gt antallTapteDager 1}}days have{{else}}day has{{/gt}} been lost.
-{{else}}
-{{>punkt}}You have not applied for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
-{{/if}}
+{{>punkt}}You have not applied for parental benefit from {{periodeFom}} up to and including {{periodeTom}}, nor have you informed us that the other parent is working, studying or is in any other approved activity. You have therefore lost {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
 {{/case}}
 {{~#case "4103"}}
 {{>punkt}}The six first weeks after birth are reserved for the mother and can only be postponed due to illness or hospitalization. You have not applied for a period of parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.

@@ -195,6 +195,7 @@
   Dersom du sender oss dokumentasjonen innan seks veker, behandlar vi saka di på nytt. Du treng ikkje sende ny søknad.
 {{/eq}}
 
+
 {{#eq avslagsårsak "4005"}}
 {{#eq annenForelderHarRett true}}
 {{>punkt}}Det er ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar tapte{{else}}dag tapt{{/gt}}.
@@ -203,13 +204,10 @@
 {{>punkt}}Du har ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mista {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar{{else}}dag{{/gt}}.
 {{/eq}}{{/eq}}
 
+
 {{#eq avslagsårsak "4102"}}
-{{#eq annenForelderHarRett true}}
-{{>punkt}}Det er ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar tapte{{else}}dag tapt{{/gt}}.
+{{>punkt}}Du har ikkje søkt om foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}. Du har heller ikkje oppgitt at mor jobbar, studerer eller er i annan aktivitet i denne perioden. Derfor har du mista {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar{{else}}dag{{/gt}}.
 {{/eq}}
-{{#eq annenForelderHarRett false}}
-{{>punkt}}Du har ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mista {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar{{else}}dag{{/gt}}.
-{{/eq}}{{/eq}}
 
 
 {{#eq avslagsårsak "4033"}}
