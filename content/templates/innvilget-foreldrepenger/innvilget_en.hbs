@@ -89,7 +89,7 @@
 
 
 {{#each annenAktivitetsliste}}
-{{#if (and (eq this.aktivitetStatus "FL") (eq this.gradering true))}} {{#if @../innvilget}}
+{{#if (and (eq this.aktivitetStatus "FRILANSER") (eq this.gradering true))}} {{#if @../innvilget}}
 {{>punkt}}You are taking {{trim-decimal this.utbetalingsgrad}} per cent parental benefit from {{@../periodeFom}} up to and including {{@../periodeTom}} because you are working {{trim-decimal this.prosentArbeid}} per cent. In this period you will receive {{format-kroner @../periodeDagsats}} kroner per day before taxes.
 {{/if}}{{/if}}
 {{/each}}

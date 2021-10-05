@@ -89,7 +89,7 @@
 
 
 {{#each annenAktivitetsliste}}
-{{#if (and (eq this.aktivitetStatus "FL") (eq this.gradering true))}} {{#if @../innvilget}}
+{{#if (and (eq this.aktivitetStatus "FRILANSER") (eq this.gradering true))}} {{#if @../innvilget}}
 {{>punkt}}Du tar ut {{trim-decimal this.utbetalingsgrad}} prosent foreldrepenger fra og med {{@../periodeFom}} til og med {{@../periodeTom}} fordi du jobber {{trim-decimal this.prosentArbeid}} prosent. I denne perioden får du {{format-kroner @../periodeDagsats}} kroner per dag før skatt.
 {{/if}}{{/if}}
 {{/each}}

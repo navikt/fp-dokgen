@@ -58,25 +58,25 @@
       "prioritertUtbetalingsgrad": 50.0,
       "annenAktivitetsliste": [
         {
-          "aktivitetStatus": "FL",
+          "aktivitetStatus": "FRILANSER",
           "gradering": true,
           "utbetalingsgrad": 50.0,
           "prosentArbeid": 40.0
         },
         {
-          "aktivitetStatus": "FL",
+          "aktivitetStatus": "FRILANSER",
           "gradering": false,
           "utbetalingsgrad": 10.0,
           "prosentArbeid": 5.0
         },
         {
-          "aktivitetStatus": "FL",
+          "aktivitetStatus": "FRILANSER",
           "gradering": true,
           "utbetalingsgrad": 20.0,
           "prosentArbeid": 10.0
         },
         {
-          "aktivitetStatus": "AT",
+          "aktivitetStatus": "ARBEIDSTAKER",
           "gradering": true,
           "utbetalingsgrad": 40.0,
           "prosentArbeid": 30.0
@@ -93,7 +93,7 @@
       "prioritertUtbetalingsgrad": 90.0,
       "annenAktivitetsliste": [
         {
-          "aktivitetStatus": "FL",
+          "aktivitetStatus": "FRILANSER",
           "gradering": true,
           "utbetalingsgrad": 90.0,
           "prosentArbeid": 85.0
