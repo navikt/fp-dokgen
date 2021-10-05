@@ -195,6 +195,7 @@
   If you send us the documentation within six weeks, we will process your case again. You will not need to submit a new application.
 {{/eq}}
 
+
 {{#eq avslagsårsak "4005"}}
 {{#eq annenForelderHarRett true}}
 {{>punkt}}No application has been submitted for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. Therefore, {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}} have been lost.
@@ -203,13 +204,10 @@
 {{>punkt}}You have not applied for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost, {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
 {{/eq}}{{/eq}}
 
+
 {{#eq avslagsårsak "4102"}}
-{{#eq annenForelderHarRett true}}
-{{>punkt}}No application has been submitted for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. Therefore, {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}} have been lost.
+{{>punkt}}You have not applied for parental benefit from {{periodeFom}} up to and including {{periodeTom}}, nor have you informed us that the other parent is working, studying or is in any other approved activity. You have therefore lost {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
 {{/eq}}
-{{#eq annenForelderHarRett false}}
-{{>punkt}}You have not applied for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost, {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
-{{/eq}}{{/eq}}
 
 
 {{#eq avslagsårsak "4033"}}
