@@ -4,7 +4,7 @@ Dato: 4. april 2020
 <br>
 <br>
 <br>
-# You must apply for parental benefits in time
+# You must apply for parental benefit in time
 <p style="color:gray">
 Nav's case number: 123456789
 <br/>
@@ -13,7 +13,7 @@ Name: Dolly Duck
 National identity number: 300220 12345
 <br/>
 </p>
-You may be entitled to parental benefits. You should apply four weeks before your first day of parental benefit.
+You may be entitled to parental benefit. You should apply four weeks before your first day of parental benefit.
 Please, be aware of:
 * if a parent starts a new parental benefit period for a new child, you will lose days you have not spent
 * parental benefit must be withdrawn no later than the day before the child turns three years old
