@@ -45,10 +45,10 @@
 {{#case "4032"}}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi det berre er arbeidstakarar som har rett til ferie etter ferielova.
 {{/case}}
-{{#case (array "4040" "4111")}}
+{{#case (array "4040" "4112")}}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi {{#gt antallBarn 1}}barna dine ikkje er innlagde{{else}}barnet ditt ikkje er innlagd{{/gt}} i helseinstitusjon.
 {{/case}}
-{{#case (array "4039" "4112")}}
+{{#case (array "4039" "4111")}}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi du ikkje er innlagd i helseinstitusjon.
 {{/case}}
 {{~#case "4037"}}
