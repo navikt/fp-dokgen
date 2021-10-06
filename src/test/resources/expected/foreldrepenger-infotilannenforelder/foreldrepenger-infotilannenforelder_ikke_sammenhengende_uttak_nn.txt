@@ -13,7 +13,7 @@ Namn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Du kan ha rett til foreldrepengar. Du bør søkje fire uker før din fyrste dag med foreldrepengar.
+Du kan ha rett til foreldrepengar. Du bør søkje fire veker før din fyrste dag med foreldrepengar.
 Vær oppmerksam på:
 * dersom ein forelder startar ny foreldrepengeperiode for nytt barn, vil du miste dagar du ikkje har brukt
 * foreldrepengane må være tatt ut seinast dagen før barnet fyller tre år
