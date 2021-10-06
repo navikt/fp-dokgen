@@ -288,9 +288,14 @@
 {{/eq}}
 
 
-{{#in-array (array "4084" "4085" "4086") avslagsårsak}}
+{{#in-array (array "4084" "4085") avslagsårsak}}
 {{>punkt}}Du kan ikke ta ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen tar ut foreldrepenger i samme periode.
 {{/in-array}}
+
+
+{{#eq avslagsårsak "4086"}}
+{{>punkt}}Du kan ikke ta ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen utsetter foreldrepengene i samme periode.
+{{/eq}}
 
 
 {{#eq avslagsårsak "4092"}}

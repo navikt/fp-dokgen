@@ -289,9 +289,14 @@
 {{/eq}}
 
 
-{{#in-array (array "4084" "4085" "4086") avslagsårsak}}
+{{#in-array (array "4084" "4085") avslagsårsak}}
 {{>punkt}}You cannot receive parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the other parent takes out parental benefit in the same period.
 {{/in-array}}
+
+
+{{#eq avslagsårsak "4086"}}
+{{>punkt}}You cannot receive parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the other parent has postponed the parental benefit in the same period.
+{{/eq}}
 
 
 {{#eq avslagsårsak "4092"}}
