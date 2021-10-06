@@ -15,7 +15,21 @@ public class ForeldrepengerAnnullertTest {
     @Test
     public void skal_generere_foreldrepenger_annullert_på_bokmål() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fp_annullert");
-        var expected = getExpected(BREVMAL, "foreldrepenger-annullert.txt");
+        var expected = getExpected(BREVMAL, "foreldrepenger-annullert_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void skal_generere_foreldrepenger_annullert_på_nynorsk() throws Exception {
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "test_fp_annullert");
+        var expected = getExpected(BREVMAL, "foreldrepenger-annullert_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void skal_generere_foreldrepenger_annullert_på_engelsk() throws Exception {
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fp_annullert");
+        var expected = getExpected(BREVMAL, "foreldrepenger-annullert_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 }

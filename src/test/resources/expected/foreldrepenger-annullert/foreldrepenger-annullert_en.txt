@@ -1,0 +1,43 @@
+<p align="right">
+Date: 4. mai 2021
+</p>
+<br>
+<br>
+<br>
+#  NAV has changed your parental benefit
+<p style="color:gray">
+Nav's case number: 123456789
+<br/>
+Name: Dolly Duck
+<br/>
+National identity number: 300220 12345
+<br/>
+</p>
+You have chosen not to withdraw your previously granted period of parental benefit.
+You are not withdrawing your parental benefit before 1. april 2022.
+Your application for parental benefit from and including 1. april 2022 can not be processed before 1. mars 2021 because parental benefit should be calculated based on the income you have when you start your withdrawal. It must also be considered whether you have earned the right to parental benefits when your period starts. You can read more about this at [familie.nav.no/om-foreldrepenger#opptjening](https://familie.nav.no/om-foreldrepenger#opptjening) and [familie.nav.no/om-foreldrepenger#hva-kan-du-fa](https://familie.nav.no/om-foreldrepenger#hva-kan-du-fa).
+When there are 4 weeks left until you are to withdraw your parental benefit, your employer must submit a new income report.
+The decision has been made pursuant to section 14-6, 14-7, 14-9, 14-10, 14-11 and 14-12 of the National Insurance Act.
+<br/>
+**You have the right to appeal**<br/>
+You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+<br/>
+**You have right of access**<br/>
+Go to [nav.no/dittnav](https://nav.no/dittnav) to see the documents in your case.
+<br/>
+<br/>
+<br/>
+<div style="break-inside: avoid; page-break-inside: avoid">
+**Do you have questions?**<br/>
+You will find useful information at [nav.no/familie](https://nav.no/familie).
+<br/>
+<br/>
+<br/>
+Yours sincerely,
+<br/>
+NAV Familie- og Pensjonsytelser
+<br/><br/>
+This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
+</div>
