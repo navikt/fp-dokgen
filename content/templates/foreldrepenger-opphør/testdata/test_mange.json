@@ -1,0 +1,289 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": true,
+    "saksnummer": "123456789",
+    "behandlesAvKA": false,
+    "erUtkast": false
+  },
+  "kontaktTelefonnummer": "22 22 22 22",
+  "fomStønadsdato": "01. januar 2021",
+  "tomStønadsdato": "24. mai 2021",
+  "relasjonskode": "MEDMOR",
+  "opphørDato": "24. mai 2021",
+  "erSøkerDød": false,
+  "gjelderFødsel": true,
+  "antallBarn": 2,
+  "halvG": 50000,
+  "klagefristUker": 6,
+  "lovhjemmelForAvslag": "§ 14",
+  "antallÅrsaker": 81,
+  "avslagsÅrsaker": [
+    {
+      "avslagsårsak": "1035"
+    },
+    {
+      "avslagsårsak": "1041"
+    },
+    {
+      "avslagsårsak": "1001"
+    },
+    {
+      "avslagsårsak": "1004"
+    },
+    {
+      "avslagsårsak": "1013"
+    },
+    {
+      "avslagsårsak": "1026"
+    },
+    {
+      "avslagsårsak": "1051"
+    },
+    {
+      "avslagsårsak": "4002"
+    },
+    {
+      "avslagsårsak": "1031"
+    },
+    {
+      "avslagsårsak": "1033"
+    },
+    {
+      "avslagsårsak": "1027"
+    },
+    {
+      "avslagsårsak": "1029"
+    },
+    {
+      "avslagsårsak": "4012"
+    },
+    {
+      "avslagsårsak": "4003"
+    },
+    {
+      "avslagsårsak": "1015"
+    },
+    {
+      "avslagsårsak": "1014"
+    },
+    {
+      "avslagsårsak": "1020"
+    },
+    {
+      "avslagsårsak": "1021"
+    },
+    {
+      "avslagsårsak": "1023"
+    },
+    {
+      "avslagsårsak": "1024"
+    },
+    {
+      "avslagsårsak": "1025"
+    },
+    {
+      "avslagsårsak": "4020"
+    },
+    {
+      "avslagsårsak": "4008"
+    },
+    {
+      "avslagsårsak": "4076"
+    },
+    {
+      "avslagsårsak": "1028"
+    },
+    {
+      "avslagsårsak": "4007"
+    },
+    {
+      "avslagsårsak": "4050"
+    },
+    {
+      "avslagsårsak": "4051"
+    },
+    {
+      "avslagsårsak": "4052"
+    },
+    {
+      "avslagsårsak": "4053"
+    },
+    {
+      "avslagsårsak": "4054"
+    },
+    {
+      "avslagsårsak": "4055"
+    },
+    {
+      "avslagsårsak": "4056"
+    },
+    {
+      "avslagsårsak": "4073"
+    },
+    {
+      "avslagsårsak": "4075"
+    },
+    {
+      "avslagsårsak": "4057"
+    },
+    {
+      "avslagsårsak": "1019"
+    },
+    {
+      "avslagsårsak": "4005"
+    },
+    {
+      "avslagsårsak": "4033"
+    },
+    {
+      "avslagsårsak": "4041"
+    },
+    {
+      "avslagsårsak": "4032"
+    },
+    {
+      "avslagsårsak": "4040"
+    },
+    {
+      "avslagsårsak": "4039"
+    },
+    {
+      "avslagsårsak": "4037"
+    },
+    {
+      "avslagsårsak": "4030"
+    },
+    {
+      "avslagsårsak": "4031"
+    },
+    {
+      "avslagsårsak": "4038"
+    },
+    {
+      "avslagsårsak": "4082"
+    },
+    {
+      "avslagsårsak": "4504"
+    },
+    {
+      "avslagsårsak": "4025"
+    },
+    {
+      "avslagsårsak": "4080"
+    },
+    {
+      "avslagsårsak": "4501"
+    },
+    {
+      "avslagsårsak": "4093"
+    },
+    {
+      "avslagsårsak": "4084"
+    },
+    {
+      "avslagsårsak": "4085"
+    },
+    {
+      "avslagsårsak": "4086"
+    },
+    {
+      "avslagsårsak": "4092"
+    },
+    {
+      "avslagsårsak": "4061"
+    },
+    {
+      "avslagsårsak": "4062"
+    },
+    {
+      "avslagsårsak": "4063"
+    },
+    {
+      "avslagsårsak": "4064"
+    },
+    {
+      "avslagsårsak": "4065"
+    },
+    {
+      "avslagsårsak": "4094"
+    },
+    {
+      "avslagsårsak": "4502"
+    },
+    {
+      "avslagsårsak": "4074"
+    },
+    {
+      "avslagsårsak": "4066"
+    },
+    {
+      "avslagsårsak": "4067"
+    },
+    {
+      "avslagsårsak": "4068"
+    },
+    {
+      "avslagsårsak": "4069"
+    },
+    {
+      "avslagsårsak": "4070"
+    },
+    {
+      "avslagsårsak": "4088"
+    },
+    {
+      "avslagsårsak": "4089"
+    },
+    {
+      "avslagsårsak": "4013"
+    },
+    {
+      "avslagsårsak": "4022"
+    },
+    {
+      "avslagsårsak": "4034"
+    },
+    {
+      "avslagsårsak": "4035"
+    },
+    {
+      "avslagsårsak": "4058"
+    },
+    {
+      "avslagsårsak": "4059"
+    },
+    {
+      "avslagsårsak": "4060"
+    },
+    {
+      "avslagsårsak": "4081"
+    },
+    {
+      "avslagsårsak": "4100"
+    },
+    {
+      "avslagsårsak": "4115"
+    },
+    {
+      "avslagsårsak": "4116"
+    },
+    {
+      "avslagsårsak": "4117"
+    },
+    {
+      "avslagsårsak": "4110"
+    },
+    {
+      "avslagsårsak": "4112"
+    },
+    {
+      "avslagsårsak": "4111"
+    },
+    {
+      "avslagsårsak": "4102"
+    }
+  ]
+}

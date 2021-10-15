@@ -1,0 +1,74 @@
+{
+  "$id": "foreldrepenger-opphør",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for brev Foreldrepenger Opphør",
+  "type": "object",
+  "required": [
+    "felles",
+    "søkerErDød",
+    "relasjonskode",
+    "antallBarn",
+    "antallÅrsaker",
+    "avslagsÅrsaker",
+    "klagefristUker",
+    "lovhjemmelForAvslag"
+  ],
+  "$defs": {
+    "avslagsÅrsak": {
+      "type": "object",
+      "required": [
+        "avslagsårsak"
+      ],
+      "properties": {
+        "avslagsårsak": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "properties": {
+    "felles": {
+      "$ref": "file:content/templates/schema_felles.json"
+    },
+    "søkerErDød": {
+      "type": "boolean"
+    },
+    "relasjonskode": {
+      "type": "string"
+    },
+    "fomStønadsdato": {
+      "type": "string"
+    },
+    "tomStønadsdato": {
+      "type": "string"
+    },
+    "opphørDato": {
+      "type": "string"
+    },
+    "barnDødsdato": {
+      "type": "string"
+    },
+    "gjelderFødsel": {
+      "type": "boolean"
+    },
+    "antallBarn": {
+      "type": "number"
+    },
+    "halvG": {
+      "type": "number"
+    },
+    "antallÅrsaker": {
+      "type": "number"
+    },
+    "avslagsÅrsaker": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/avslagsÅrsak" }
+    },
+    "klagefristUker": {
+      "type": "number"
+    },
+    "lovhjemmelForAvslag": {
+      "type": "string"
+    }
+  }
+}
