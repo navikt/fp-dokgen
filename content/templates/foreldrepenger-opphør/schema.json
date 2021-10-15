@@ -5,7 +5,7 @@
   "type": "object",
   "required": [
     "felles",
-    "søkerErDød",
+    "erSøkerDød",
     "relasjonskode",
     "antallBarn",
     "antallÅrsaker",
@@ -30,7 +30,7 @@
     "felles": {
       "$ref": "file:content/templates/schema_felles.json"
     },
-    "søkerErDød": {
+    "erSøkerDød": {
       "type": "boolean"
     },
     "relasjonskode": {
@@ -68,6 +68,9 @@
       "type": "number"
     },
     "lovhjemmelForAvslag": {
+      "type": "string"
+    },
+    "kontaktTelefonnummer": {
       "type": "string"
     }
   }
