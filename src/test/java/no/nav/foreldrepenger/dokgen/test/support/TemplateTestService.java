@@ -6,6 +6,7 @@ import java.nio.file.Path;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.jknack.handlebars.Context;
 import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.JsonNodeValueResolver;
@@ -57,20 +58,29 @@ public class TemplateTestService {
     public TemplateTestService() {
     }
 
-    public static String compileContent(Brevmal templateName, String undermal, Språk språk, String testDataFilename) throws Exception {
-        String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName, undermal, språk));
-        String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(templateName, undermal, testDataFilename));
-        return produceContent(templateName, mergeFieldsJsonString, templateContent);
+    public static String compileContent(Brevmal brevmal, String undermal, Språk språk, String testDataFilename) throws Exception {
+        String templateContent = readFile(FileStructureUtil.getTemplatePath(brevmal, undermal, språk));
+        String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(brevmal, undermal, testDataFilename));
+        return produceContent(mergeFieldsJsonString, templateContent);
     }
 
-    public static String compileContent(Brevmal templateName, Språk språk, String testDataFilename) throws Exception {
-        String templateContent = readFile(FileStructureUtil.getTemplatePath(templateName, språk));
-        String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(templateName, testDataFilename));
-        return produceContent(templateName, mergeFieldsJsonString, templateContent);
+    public static String compileContent(Brevmal brevmal, Språk språk, String testDataFilename) throws Exception {
+        String templateContent = readFile(FileStructureUtil.getTemplatePath(brevmal, språk));
+        String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(brevmal, testDataFilename));
+        return produceContent(mergeFieldsJsonString, templateContent);
     }
 
-    private static String produceContent(final Brevmal templateName, final String mergeFieldsJsonString, final String templateContent) throws Exception {
+    public static String compileContent(Brevmal brevmal, Språk språk, JsonNode testData) throws Exception {
+        String templateContent = readFile(FileStructureUtil.getTemplatePath(brevmal, språk));
+        return produceContent(testData, templateContent);
+    }
+
+    private static String produceContent(final String mergeFieldsJsonString, final String templateContent) throws Exception {
         JsonNode mergeFields = getJsonFromString(mergeFieldsJsonString);
+        return produceContent(mergeFields, templateContent);
+    }
+
+    private static String produceContent(final JsonNode mergeFields, final String templateContent) throws Exception {
         Template template = handlebars.compileInline(templateContent);
         return removeNewLines(template.apply(with(mergeFields)));
     }
