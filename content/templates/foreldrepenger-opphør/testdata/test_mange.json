@@ -21,60 +21,24 @@
   "klagefristUker": 6,
   "lovhjemmelForAvslag": "§ 14",
   "antallÅrsaker": 81,
-  "avslagsÅrsaker": [
-    {
-      "avslagsårsak": "1035"
-    },
-    {
-      "avslagsårsak": "1041"
-    },
-    {
-      "avslagsårsak": "1004"
-    },
-    {
-      "avslagsårsak": "1013"
-    },
-    {
-      "avslagsårsak": "1026"
-    },
-    {
-      "avslagsårsak": "1051"
-    },
-    {
-      "avslagsårsak": "1027"
-    },
-    {
-      "avslagsårsak": "1029"
-    },
-    {
-      "avslagsårsak": "4012"
-    },
-    {
-      "avslagsårsak": "4003"
-    },
-    {
-      "avslagsårsak": "1015"
-    },
-    {
-      "avslagsårsak": "1014"
-    },
-    {
-      "avslagsårsak": "4072"
-    },
-    {
-      "avslagsårsak": "1020"
-    },
-    {
-      "avslagsårsak": "1021"
-    },
-    {
-      "avslagsårsak": "1023"
-    },
-    {
-      "avslagsårsak": "1024"
-    },
-    {
-      "avslagsårsak": "1025"
-    }
+  "avslagÅrsaker": [
+    "1035",
+    "1041",
+    "1004",
+    "1013",
+    "1026",
+    "1051",
+    "1027",
+    "1029",
+    "4012",
+    "4003",
+    "1015",
+    "1014",
+    "4072",
+    "1020",
+    "1021",
+    "1023",
+    "1024",
+    "1025"
   ]
 }

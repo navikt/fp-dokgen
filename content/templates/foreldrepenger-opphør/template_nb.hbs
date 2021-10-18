@@ -22,8 +22,8 @@ Klagefristen er seks uker fra den datoen dødsboet fikk brevet.
 {{> brukerdetaljer_nb }}
 
 **Dette har vi avslått**
-{{~#each avslagsÅrsaker}}
-{{~#switch avslagsårsak}}
+{{~#each avslagÅrsaker}}
+{{~#switch this}}
 {{#case "1035" }}
 Du hadde ikke arbeidsinntekt eller inntekt som var likestilt med lønn i seks av de siste ti månedene før perioden med foreldrepenger startet. Derfor har du ikke rett til foreldrepenger.
 {{/case}}
@@ -66,8 +66,8 @@ Du hadde ikke rett til foreldrepenger fordi du ikke hadde foreldreansvar for {{#
 Vi har fått opplyst at {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} døde {{barnDødsdato}}. Den siste dagen din med foreldrepenger er derfor {{tomStønadsdato}}.
 {{/case}}
 
-{{#case (array "1020" "1021" "1023" "1024" "1025") avslagsårsak}}
-{{#if (and opphørDato (neq "1024" avslagsårsak)) }}
+{{#case (array "1020" "1021" "1023" "1024" "1025") this}}
+{{#if (and opphørDato (neq "1024" ../this)) }}
 Du har ikke rett til foreldrepenger fra {{opphørDato}} fordi du ikke lenger er medlem i folketrygden.
 {{else}}
 {{#eq gjelderFødsel true}}
@@ -75,12 +75,12 @@ Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden p�
 {{else}}
 Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet du overtok omsorgen for {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}}.
 {{/eq}}
-{{#eq "1024" avslagsårsak }}Vi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.{{/eq}}
+{{#eq "1024" ../this }}Vi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.{{/eq}}
 {{/if}}
-{{#eq "1020" avslagsårsak }}Du var omfattet av trygdeordningen i et annet land.{{/eq}}
-{{#eq "1021" avslagsårsak }}Ifølge folkeregisteret hadde du flyttet fra Norge.{{/eq}}
-{{#eq "1023" avslagsårsak }}Du hadde ikke oppholdstillatelse i Norge.{{/eq}}
-{{#eq "1025" avslagsårsak }}Du regnes ikke som medlem fordi du oppholdt deg mer i utlandet enn i Norge.{{/eq}}
+{{#eq "1020" ../this }}Du var omfattet av trygdeordningen i et annet land.{{/eq}}
+{{#eq "1021" ../this }}Ifølge folkeregisteret hadde du flyttet fra Norge.{{/eq}}
+{{#eq "1023" ../this }}Du hadde ikke oppholdstillatelse i Norge.{{/eq}}
+{{#eq "1025" ../this }}Du regnes ikke som medlem fordi du oppholdt deg mer i utlandet enn i Norge.{{/eq}}
 {{/case}}
 
 {{/switch}}

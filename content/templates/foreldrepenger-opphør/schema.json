@@ -9,23 +9,10 @@
     "relasjonskode",
     "antallBarn",
     "antallÅrsaker",
-    "avslagsÅrsaker",
+    "avslagÅrsaker",
     "klagefristUker",
     "lovhjemmelForAvslag"
   ],
-  "$defs": {
-    "avslagsÅrsak": {
-      "type": "object",
-      "required": [
-        "avslagsårsak"
-      ],
-      "properties": {
-        "avslagsårsak": {
-          "type": "string"
-        }
-      }
-    }
-  },
   "properties": {
     "felles": {
       "$ref": "file:content/templates/schema_felles.json"
@@ -60,9 +47,9 @@
     "antallÅrsaker": {
       "type": "number"
     },
-    "avslagsÅrsaker": {
+    "avslagÅrsaker": {
       "type": "array",
-      "items": { "$ref": "#/$defs/avslagsÅrsak" }
+      "items": { "type": "string" }
     },
     "klagefristUker": {
       "type": "number"

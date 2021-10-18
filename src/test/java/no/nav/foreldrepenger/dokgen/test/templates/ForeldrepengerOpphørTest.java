@@ -50,8 +50,8 @@ public class ForeldrepengerOpphørTest {
     public void test_kode_søker_1035() throws Exception {
         var testData = opprettTestData();
         var årsaker = OBJECT_MAPPER.createArrayNode();
-        årsaker.add(opprettÅrsak( "1035"));
-        testData.set("avslagsÅrsaker", årsaker);
+        årsaker.add( "1035");
+        testData.set("avslagÅrsaker", årsaker);
         testData.put("antallÅrsaker", 1);
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
@@ -62,8 +62,8 @@ public class ForeldrepengerOpphørTest {
     public void test_kode_søker_1027_medmor_1_barn() throws Exception {
         var testData = opprettTestData();
         var årsaker = OBJECT_MAPPER.createArrayNode();
-        årsaker.add(opprettÅrsak("1027"));
-        testData.set("avslagsÅrsaker", årsaker);
+        årsaker.add("1027");
+        testData.set("avslagÅrsaker", årsaker);
         testData.put("antallÅrsaker", 1);
         testData.put("antallBarn",  1);
 
@@ -75,8 +75,8 @@ public class ForeldrepengerOpphørTest {
     public void test_kode_søker_1027_far_2_barn() throws Exception {
         var testData = opprettTestData();
         var årsaker = OBJECT_MAPPER.createArrayNode();
-        årsaker.add(opprettÅrsak( "1027"));
-        testData.set("avslagsÅrsaker", årsaker);
+        årsaker.add( "1027");
+        testData.set("avslagÅrsaker", årsaker);
         testData.put("relasjonskode",  "FAR");
         testData.put("antallÅrsaker", 1);
         testData.put("antallBarn",  2);
@@ -89,8 +89,8 @@ public class ForeldrepengerOpphørTest {
     public void test_kode_søker_4072_2_barn() throws Exception {
         var testData = opprettTestData();
         var årsaker = OBJECT_MAPPER.createArrayNode();
-        årsaker.add(opprettÅrsak( "4072"));
-        testData.set("avslagsÅrsaker", årsaker);
+        årsaker.add("4072");
+        testData.set("avslagÅrsaker", årsaker);
         testData.put("antallÅrsaker", 1);
         testData.put("antallBarn",  2);
         testData.put("barnDødsdato", BARN_DØDSDATO);
@@ -103,8 +103,8 @@ public class ForeldrepengerOpphørTest {
     public void test_kode_søker_1024_og_opphørdato() throws Exception {
         var testData = opprettTestData();
         var årsaker = OBJECT_MAPPER.createArrayNode();
-        årsaker.add(opprettÅrsak( "1024"));
-        testData.set("avslagsÅrsaker", årsaker);
+        årsaker.add("1024");
+        testData.set("avslagÅrsaker", årsaker);
         testData.put("antallÅrsaker", 1);
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
@@ -141,7 +141,4 @@ public class ForeldrepengerOpphørTest {
         testData.set("felles", felles);
     }
 
-    private ObjectNode opprettÅrsak(String årsakskode) {
-        return OBJECT_MAPPER.createObjectNode().put("avslagsårsak", årsakskode);
-    }
 }
