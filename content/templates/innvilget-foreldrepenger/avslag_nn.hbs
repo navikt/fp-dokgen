@@ -168,15 +168,9 @@
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi det ikkje er fleire dagar igjen av foreldrepengeperioden.
 {{/case}}
 {{#case "4035"}}
-{{#if kreverSammenhengendeUttak }}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}}.
 
   Du kan berre utsetje når mor jobbar, studerer eller er i ein annan aktivitet. Du kan lese meir om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
-{{else}}
-{{>punkt}}Du kan ikkje ha opphald i foreldrepengeperioden frå og med {{periodeFom}} til og med {{periodeTom}}.
-
-  Du kan berre ha opphald utan å miste dagar når mor jobbar, studerer eller er i ein annan aktivitet. Du kan lese meir om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
-{{/if}}
 {{/case}}
 {{#case (array "4058" "4059")}}
 {{>punkt}}Du har ikkje rett til foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}.

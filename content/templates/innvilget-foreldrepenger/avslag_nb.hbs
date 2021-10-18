@@ -168,15 +168,9 @@
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi det ikke er flere dager igjen av foreldrepengeperioden.
 {{/case}}
 {{#case "4035"}}
-{{#if kreverSammenhengendeUttak }}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}}.
 
   Du kan bare utsette når mor jobber, studerer eller er i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
-{{else}}
-{{>punkt}}Du kan ikke ha opphold i foreldrepengeperioden fra og med {{periodeFom}} til og med {{periodeTom}}.
-
-  Du kan bare ha opphold uten å miste dager når mor jobber, studerer eller er i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
-{{/if}}
 {{/case}}
 {{#case (array "4058" "4059")}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
