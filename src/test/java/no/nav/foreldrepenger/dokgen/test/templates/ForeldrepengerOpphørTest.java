@@ -21,6 +21,11 @@ public class ForeldrepengerOpphørTest {
     private static final String STØNADSDATO_TOM = "24. mai 2021";
     private static final String BARN_DØDSDATO = "10. mai 2021";
 
+    protected static final String AVSLAG_ÅRSAKER_LISTE = "avslagÅrsaker";
+    protected static final String ER_SØKER_DØD = "erSøkerDød";
+    protected static final String ANTALL_BARN = "antallBarn";
+    protected static final String RELASJONSKODE = "relasjonskode";
+
     @Test
     public void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_bokmål() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_mange");
@@ -31,7 +36,7 @@ public class ForeldrepengerOpphørTest {
     @Test
     public void test_søker_død() throws Exception {
         var testData = opprettTestData();
-        testData.put("erSøkerDød", true);
+        testData.put(ER_SØKER_DØD, true);
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
         assertThat(content).contains(String.format("Foreldrepengene til %s er stanset", BRUKER_NAVN));
         assertThat(content).contains(String.format("Vi har fått melding om at %s, som mottok foreldrepenger fra og med %s, er død.", BRUKER_NAVN, STØNADSDATO_FOM));
@@ -41,7 +46,7 @@ public class ForeldrepengerOpphørTest {
     @Test
     public void test_søker_ikke_død() throws Exception {
         var testData = opprettTestData();
-        testData.put("erSøkerDød", false);
+        testData.put(ER_SØKER_DØD, false);
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
         assertThat(content).contains("Du har ikke lenger rett til foreldrepenger");
     }
@@ -49,10 +54,7 @@ public class ForeldrepengerOpphørTest {
     @Test
     public void test_kode_søker_1035() throws Exception {
         var testData = opprettTestData();
-        var årsaker = OBJECT_MAPPER.createArrayNode();
-        årsaker.add( "1035");
-        testData.set("avslagÅrsaker", årsaker);
-        testData.put("antallÅrsaker", 1);
+        opprettÅrsaker(testData, "1035");
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
         assertThat(content).contains("Du hadde ikke arbeidsinntekt eller inntekt som var likestilt med lønn i seks av de siste ti månedene før perioden med foreldrepenger startet. Derfor har du ikke rett til foreldrepenger.");
@@ -61,11 +63,9 @@ public class ForeldrepengerOpphørTest {
     @Test
     public void test_kode_søker_1027_medmor_1_barn() throws Exception {
         var testData = opprettTestData();
-        var årsaker = OBJECT_MAPPER.createArrayNode();
-        årsaker.add("1027");
-        testData.set("avslagÅrsaker", årsaker);
-        testData.put("antallÅrsaker", 1);
-        testData.put("antallBarn",  1);
+        opprettÅrsaker(testData, "1027");
+        testData.put(RELASJONSKODE,  "MEDMOR");
+        testData.put(ANTALL_BARN,  1);
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
         assertThat(content).contains("Du hadde ikke rett til foreldrepenger fordi du ikke var registrert som medmor til barnet.");
@@ -74,12 +74,9 @@ public class ForeldrepengerOpphørTest {
     @Test
     public void test_kode_søker_1027_far_2_barn() throws Exception {
         var testData = opprettTestData();
-        var årsaker = OBJECT_MAPPER.createArrayNode();
-        årsaker.add( "1027");
-        testData.set("avslagÅrsaker", årsaker);
-        testData.put("relasjonskode",  "FAR");
-        testData.put("antallÅrsaker", 1);
-        testData.put("antallBarn",  2);
+        opprettÅrsaker(testData, "1027");
+        testData.put(RELASJONSKODE,  "FAR");
+        testData.put(ANTALL_BARN,  2);
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
         assertThat(content).contains("Du hadde ikke rett til foreldrepenger fordi du ikke var registrert som far til barna.");
@@ -88,11 +85,8 @@ public class ForeldrepengerOpphørTest {
     @Test
     public void test_kode_søker_4072_2_barn() throws Exception {
         var testData = opprettTestData();
-        var årsaker = OBJECT_MAPPER.createArrayNode();
-        årsaker.add("4072");
-        testData.set("avslagÅrsaker", årsaker);
-        testData.put("antallÅrsaker", 1);
-        testData.put("antallBarn",  2);
+        opprettÅrsaker(testData, "4072");
+        testData.put(ANTALL_BARN,  2);
         testData.put("barnDødsdato", BARN_DØDSDATO);
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
@@ -102,30 +96,35 @@ public class ForeldrepengerOpphørTest {
     @Test
     public void test_kode_søker_1024_og_opphørdato() throws Exception {
         var testData = opprettTestData();
-        var årsaker = OBJECT_MAPPER.createArrayNode();
-        årsaker.add("1024");
-        testData.set("avslagÅrsaker", årsaker);
-        testData.put("antallÅrsaker", 1);
+        opprettÅrsaker(testData, "1024");
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
         assertThat(content).contains("Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet barna dine ble født.\nVi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.");
     }
 
+    private void opprettÅrsaker(final ObjectNode testData, String... årsaker) {
+        var årsakArray = OBJECT_MAPPER.createArrayNode();
+        for (String årsak : årsaker) {
+            årsakArray.add(årsak);
+        }
+        testData.set(AVSLAG_ÅRSAKER_LISTE, årsakArray);
+    }
+
     private ObjectNode opprettTestData() {
         ObjectNode testData = OBJECT_MAPPER.createObjectNode();
         opprettFelles(testData);
-        testData.put("kontaktTelefonnummer", "22 22 22 22");
-        testData.put("erSøkerDød", false);
+        testData.put(ER_SØKER_DØD, false);
+        testData.put(ANTALL_BARN,  2);
+        testData.put(RELASJONSKODE,  "MEDMOR");
         testData.put("fomStønadsdato", STØNADSDATO_FOM);
         testData.put("tomStønadsdato", STØNADSDATO_TOM);
-        testData.put("relasjonskode",  "MEDMOR");
         testData.put("opphørDato", STØNADSDATO_TOM);
         testData.put("barnDødsdato", BARN_DØDSDATO);
         testData.put("gjelderFødsel",  true);
-        testData.put("antallBarn",  2);
         testData.put("halvG",  50000);
         testData.put("klagefristUker",  6);
         testData.put("lovhjemmelForAvslag",  "§ 14");
+        testData.put("kontaktTelefonnummer", "22 22 22 22");
         return testData;
     }
 
