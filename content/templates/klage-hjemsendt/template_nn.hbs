@@ -1,0 +1,44 @@
+{{> header }}
+
+
+
+{{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}# NAV skal behandle saka om tilbakebetaling av eingongsstønad på nytt
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}# NAV skal behandle saka om tilbakebetaling av foreldrepengar på nytt
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}# NAV skal behandle saka om tilbakebetaling av svangerskapspengar på nytt
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "ES"))}}# NAV skal behandle søknaden din om eingongsstønad på nytt
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}# NAV skal behandle søknaden din om foreldrepengar på nytt
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}# NAV skal behandle søknaden din om svangerskapspengar på nytt
+{{/if}}
+{{> brukerdetaljer_nn }}
+
+{{#if (and (eq gjelderTilbakekreving true)(eq opphevet true)(eq felles.ytelseType "ES"))}}Vi kan ikkje vurdere saka om tilbakebetaling av eingongsstønad fordi vi manglar opplysningar. Derfor har vi oppheva vedtaket og sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+{{else if (and (eq gjelderTilbakekreving true)(eq opphevet true)(eq felles.ytelseType "FP"))}}Vi kan ikkje vurdere saka om tilbakebetaling av foreldrepengar fordi vi manglar opplysningar. Derfor har vi oppheva vedtaket og sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+{{else if (and (eq gjelderTilbakekreving true)(eq opphevet true)(eq felles.ytelseType "SVP"))}}Vi kan ikkje vurdere saka om tilbakebetaling av svangerskapspengar fordi vi manglar opplysningar. Derfor har vi oppheva vedtaket og sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+{{else if (and (eq gjelderTilbakekreving true)(eq opphevet false)(eq felles.ytelseType "ES"))}}Vi kan ikkje vurdere saka om tilbakebetaling av eingongsstønad fordi vi manglar opplysningar. Derfor har vi sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+{{else if (and (eq gjelderTilbakekreving true)(eq opphevet false)(eq felles.ytelseType "FP"))}}Vi kan ikkje vurdere saka om tilbakebetaling av foreldrepengar fordi vi manglar opplysningar. Derfor har vi sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+{{else if (and (eq gjelderTilbakekreving true)(eq opphevet false)(eq felles.ytelseType "SVP"))}}Vi kan ikkje vurdere saka om tilbakebetaling av svangerskapspengar fordi vi manglar opplysningar. Derfor har vi sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq opphevet true)(eq felles.ytelseType "ES"))}}Vi kan ikkje vurdere om du har rett til eingongsstønad fordi vi manglar opplysningar. Derfor har vi oppheva vedtaket og sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq opphevet true)(eq felles.ytelseType "FP"))}}Vi kan ikkje vurdere om du har rett til foreldrepengar fordi vi manglar opplysningar. Derfor har vi oppheva vedtaket og sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq opphevet true)(eq felles.ytelseType "SVP"))}}Vi kan ikkje vurdere om du har rett til svangerskapspengar fordi vi manglar opplysningar. Derfor har vi oppheva vedtaket og sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq opphevet false)(eq felles.ytelseType "ES"))}}Vi kan ikkje vurdere om du har rett til eingongsstønad fordi vi manglar opplysningar. Derfor har vi sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq opphevet false)(eq felles.ytelseType "FP"))}}Vi kan ikkje vurdere om du har rett til foreldrepengar fordi vi manglar opplysningar. Derfor har vi sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq opphevet false)(eq felles.ytelseType "SVP"))}}Vi kan ikkje vurdere om du har rett til svangerskapspengar fordi vi manglar opplysningar. Derfor har vi sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+{{/if}}
+
+Informasjon om saksbehandlingstid finn du på nav.no.
+<br/>
+<br/>
+
+**Dette har vi lagt vekt på i vurderinga vår**
+<br/>
+{{felles.fritekst}}
+<br/>
+<br/>
+
+Du kan ikkje klage på denne avgjerda. Dette følgjer av forvaltningslova §§ 2 og 28.
+
+Har du nye opplysningar eller ønskjer å uttale deg, kan du sende dette via [nav.no/ettersendelser](https://nav.no/ettersendelser) innan {{ettersendelsesfrist}}.
+
+<br/>
+
+{{> footer_nn }}

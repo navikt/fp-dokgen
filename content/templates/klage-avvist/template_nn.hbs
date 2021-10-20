@@ -1,0 +1,60 @@
+{{> header }}
+
+
+
+{{#if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA true)(eq felles.ytelseType "ES"))}}# NAV Klageinstans har avvist klaga di på vedtaket om tilbakebetaling av eingongsstønad
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA true)(eq felles.ytelseType "FP"))}}# NAV Klageinstans har avvist klaga di på vedtaket om tilbakebetaling av foreldrepengar
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA true)(eq felles.ytelseType "SVP"))}}# NAV Klageinstans har avvist klaga di på vedtaket om tilbakebetaling av svangerskapspengar
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA false)(eq felles.ytelseType "ES"))}}# NAV har avvist klaga di på vedtaket om tilbakebetaling av eingongsstønad
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA false)(eq felles.ytelseType "FP"))}}# NAV har avvist klaga di på vedtaket om tilbakebetaling av foreldrepengar
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA false)(eq felles.ytelseType "SVP"))}}# NAV har avvist klaga di på vedtaket om tilbakebetaling av svangerskapspengar
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA true)(eq felles.ytelseType "ES"))}}# NAV Klageinstans har avvist klaga di på vedtaket om eingongsstønad
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA true)(eq felles.ytelseType "FP"))}}# NAV Klageinstans har avvist klaga di på vedtaket om foreldrepengar
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA true)(eq felles.ytelseType "SVP"))}}# NAV Klageinstans har avvist klaga di på vedtaket om svangerskapspengar
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA false)(eq felles.ytelseType "ES"))}}# NAV har avvist klaga di på vedtaket om eingongsstønad
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA false)(eq felles.ytelseType "FP"))}}# NAV har avvist klaga di på vedtaket om foreldrepengar
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA false)(eq felles.ytelseType "SVP"))}}# NAV har avvist klaga di på vedtaket om svangerskapspengar
+{{/if}}
+{{> brukerdetaljer_nn }}
+
+{{~#* inline "punkt" ~}}
+{{~#gt antallGrunner 1}}* {{else}}Vi har avvist klaga di fordi {{/gt}}
+{{~/inline~}}
+
+{{~#gt antallGrunner 1}}
+
+Vi har avvist klaga di fordi{{/gt}}
+{{~#each avvistGrunner}}
+
+{{#eq this "KLAGET_FOR_SENT"}}
+{{>punkt}}du har klaga for seint. Du har ikkje gitt opp ein grunn til at du klaga for seint som gjer at vi kan behandle klaga
+{{/eq}}
+
+{{#eq this "KLAGE_UGYLDIG"}}
+{{>punkt}}du ikkje har skrive under klaga
+{{/eq}}
+
+{{#eq this "IKKE_PAKLAGD_VEDTAK"}}
+{{>punkt}}det du har klaga på, ikkje er eit vedtak
+{{/eq}}
+
+{{#eq this "KLAGER_IKKE_PART"}}
+{{>punkt}}du har klaga på eit vedtak som ikkje gjeld deg
+{{/eq}}
+
+{{#eq this "IKKE_KONKRET"}}
+{{>punkt}}du ikkje har sagt kva det er du klagar på
+{{/eq}}
+
+{{/each}}
+
+Vedtaket er gjort etter {{lovhjemler}}.
+
+<br/>
+
+**Du har rett til å klage**<br/>
+Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+<br/>
+{{> footer_nn }}

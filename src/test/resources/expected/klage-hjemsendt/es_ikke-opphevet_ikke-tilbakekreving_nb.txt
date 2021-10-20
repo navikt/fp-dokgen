@@ -1,0 +1,42 @@
+<p align="right">
+Dato: 4. mai 2021
+</p>
+<br>
+<br>
+<br>
+# NAV skal behandle søknaden din om engangsstønad på nytt
+<p style="color:gray">
+Saksnummer i NAV: 123456789
+<br/>
+Navn: Dolly Duck
+<br/>
+Fødselsnummer: 300220 12345
+<br/>
+</p>
+Vi kan ikke vurdere om du har rett til engangsstønad fordi vi mangler opplysninger. Derfor har vi sendt saken din tilbake til NAV Familie- og pensjonsytelser. De skal behandle saken på nytt.
+Informasjon om saksbehandlingstid finner du på nav.no.
+<br/>
+<br/>
+**Dette har vi lagt vekt på i vurderingen vår**
+<br/>
+FRITEKST
+<br/>
+<br/>
+Du kan ikke klage på denne beslutningen. Dette følger av forvaltningsloven §§ 2 og 28.
+Har du nye opplysninger eller ønsker å uttale deg, kan du sende dette via [nav.no/ettersendelser](https://nav.no/ettersendelser) innen 14. juni 2021.
+<br/>
+**Du har rett til innsyn**<br/>
+På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
+<br/>
+<br/>
+<br/>
+<div style="break-inside: avoid; page-break-inside: avoid">
+**Har du spørsmål?**<br/>
+Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
+<br/>
+<br/>
+<br/>
+Med vennlig hilsen
+<br/>
+NAV Klageinstans
+</div>

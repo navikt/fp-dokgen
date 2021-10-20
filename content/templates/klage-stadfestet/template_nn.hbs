@@ -1,0 +1,34 @@
+{{> header }}
+
+
+
+{{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}# NAV Klageinstans har avslått klaga di på tilbakebetaling av eingongsstønad
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}# NAV Klageinstans har avslått klaga di på tilbakebetaling av foreldrepengar
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}# NAV Klageinstans har avslått klaga di på tilbakebetaling av svangerskapspengar
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "ES"))}}# NAV Klageinstans har avslått klaga di på eingongsstønad
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}# NAV Klageinstans har avslått klaga di på foreldrepengar
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}# NAV Klageinstans har avslått klaga di på svangerskapspengar
+{{/if}}
+{{> brukerdetaljer_nn }}
+
+{{#eq felles.ytelseType "ES"}}
+Vi er samde i avgjerda om at du ikkje har rett til eingongsstønad. Derfor har vi ikkje endra vedtaket du klaga på.
+{{else}}
+Vi er samde i avgjerda til NAV Familie- og pensjonsytelser. Derfor har vi ikkje endra vedtaket du klaga på.
+{{/eq}}
+<br/>
+
+**Dette har vi lagt vekt på i vurderinga vår**
+<br/>
+{{felles.fritekst}}
+<br/>
+<br/>
+
+**Du har rett til å anke**
+<br/>
+Du kan anke vedtaket til Trygderetten. Fristen er {{klagefristUker}} veker frå den datoen vedtaket kom fram til deg.
+Klagerettane dine og skjema for klage/anke finn du på [nav.no/klage](https://nav.no/klage).
+
+<br/>
+
+{{> footer_nn }}

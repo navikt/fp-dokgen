@@ -1,0 +1,23 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": false,
+    "saksnummer": "123456789",
+    "ytelseType": "FP",
+    "behandlesAvKA": true,
+    "erUtkast": false
+  },
+  "gjelderTilbakekreving": true,
+  "lovhjemler": "folketrygdloven § 21-12 og forvaltningsloven §§ 28, 31, 32 og 34",
+  "klagefristUker": 6,
+  "antallGrunner": 5,
+  "avvistGrunner": [
+    "KLAGET_FOR_SENT",
+    "KLAGE_UGYLDIG",
+    "IKKE_PAKLAGD_VEDTAK",
+    "KLAGER_IKKE_PART",
+    "IKKE_KONKRET"
+  ]
+}

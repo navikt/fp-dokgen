@@ -19,7 +19,13 @@ public enum Brevmal {
     INNSYN_SVAR("innsyn"),
     IKKE_SØKT("ikke-sokt"),
     INGEN_ENDRING("ingen-endring"),
-    FORLENGET_SAKSBEHANDLINGSTID("forlenget-saksbehandlingstid");
+    FORLENGET_SAKSBEHANDLINGSTID("forlenget-saksbehandlingstid"),
+    KLAGE_AVVIST("klage-avvist"),
+    KLAGE_HJEMSENDT("klage-hjemsendt"),
+    KLAGE_OMGJORT("klage-omgjort"),
+    KLAGE_OVERSENDT("klage-oversendt"),
+    KLAGE_STADFESTET("klage-stadfestet"),
+    ;
 
     private String navn;
 
