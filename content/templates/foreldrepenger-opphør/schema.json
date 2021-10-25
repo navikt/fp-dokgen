@@ -56,9 +56,6 @@
     },
     "lovhjemmelForAvslag": {
       "type": "string"
-    },
-    "kontaktTelefonnummer": {
-      "type": "string"
     }
   }
 }
