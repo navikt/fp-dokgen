@@ -124,7 +124,6 @@ public class ForeldrepengerOpphørTest {
         testData.put("halvG",  50000);
         testData.put("klagefristUker",  6);
         testData.put("lovhjemmelForAvslag",  "§ 14");
-        testData.put("kontaktTelefonnummer", "22 22 22 22");
         return testData;
     }
 
