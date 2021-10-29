@@ -1,5 +1,5 @@
 {
-  "$id": "foreldrepenger-opphør",
+  "$id": "foreldrepenger-opphor",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "Dokumentdata for brev Foreldrepenger Opphør",
   "type": "object",

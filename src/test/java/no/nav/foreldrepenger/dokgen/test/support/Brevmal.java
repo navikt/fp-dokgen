@@ -8,7 +8,7 @@ public enum Brevmal {
     //Foreldrepenger
     FORELDREPENGER_INNVILGELSE("innvilget-foreldrepenger"),
     FORELDREPENGER_AVSLAG("foreldrepenger-avslag"),
-    FORELDREPENGER_OPPHØR("foreldrepenger-opphør"),
+    FORELDREPENGER_OPPHØR("foreldrepenger-opphor"),
     FORELDREPENGER_ANNULLERT("foreldrepenger-annullert"),
     FORELDREPENGER_INFOBREV_TIL_ANNEN_FORELDER("foreldrepenger-infotilannenforelder"),
 
