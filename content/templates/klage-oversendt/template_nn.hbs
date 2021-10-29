@@ -1,0 +1,30 @@
+{{> header }}
+
+
+
+# Vi har sendt saka di til NAV Klageinstans
+{{> brukerdetaljer_nn }}
+
+{{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}Vi har fått klaga di på vedtaket om tilbakebetaling av eingongsstønad {{mottattDato}}, og kome fram til at det ikkje blir endra. NAV Klageinstans skal derfor vurdere saka di på nytt.
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}Vi har fått klaga di på vedtaket om tilbakebetaling av foreldrepengar {{mottattDato}}, og kome fram til at det ikkje blir endra. NAV Klageinstans skal derfor vurdere saka di på nytt.
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}Vi har fått klaga di på vedtaket om tilbakebetaling av svangerskapspengar {{mottattDato}}, og kome fram til at det ikkje blir endra. NAV Klageinstans skal derfor vurdere saka di på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "ES"))}}Vi har fått klaga di på vedtaket om eingongsstønad {{mottattDato}}, og kome fram til at det ikkje blir endra. NAV Klageinstans skal derfor vurdere saka di på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}Vi har fått klaga di på vedtaket om foreldrepengar {{mottattDato}}, og kome fram til at det ikkje blir endra. NAV Klageinstans skal derfor vurdere saka di på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}Vi har fått klaga di på vedtaket om svangerskapspengar {{mottattDato}}, og kome fram til at det ikkje blir endra. NAV Klageinstans skal derfor vurdere saka di på nytt.
+{{/if}}
+
+Informasjon om saksbehandlingstid finn du på nav.no.
+<br/>
+<br/>
+
+**Dette har vi lagt vekt på i vurderinga vår**
+<br/>
+{{felles.fritekst}}
+<br/>
+<br/>
+
+Har du nye opplysningar eller ønskjer å uttale deg, kan du sende dette via [nav.no/klage](https://nav.no/klage). Vel NAV-eining: NAV Klageinstans Midt-Noreg.
+
+<br/>
+
+{{> footer_nn }}

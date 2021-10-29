@@ -1,0 +1,15 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "fritekst": "FRITEKST",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": false,
+    "saksnummer": "123456789",
+    "ytelseType": "SVP",
+    "behandlesAvKA": false,
+    "erUtkast": false
+  },
+  "gjelderTilbakekreving": false,
+  "klagefristUker": 6
+}

@@ -1,0 +1,22 @@
+{
+  "$id": "klage-omgjort",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for brev klage omgjort",
+  "type": "object",
+  "required": [
+    "felles",
+    "gjelderTilbakekreving",
+    "klagefristUker"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "file:content/templates/schema_felles.json"
+    },
+    "gjelderTilbakekreving": {
+      "type": "boolean"
+    },
+    "klagefristUker": {
+      "type": "number"
+    }
+  }
+}
