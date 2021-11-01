@@ -22,7 +22,7 @@ jobs:
           chmod +x *.sh && ./up.sh
 
       - name: Hent tag
-        run: echo "TAG=$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
+        run: echo "TAG=$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-14)" >> $GITHUB_ENV
 
       - name: Lag image-navn
         run: echo "IMAGE=$IMAGE_BASE:$TAG" >> $GITHUB_ENV
