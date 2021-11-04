@@ -13,6 +13,7 @@ public enum Brevmal {
     FORELDREPENGER_INFOBREV_TIL_ANNEN_FORELDER("foreldrepenger-infotilannenforelder"),
 
     //Svangerskapspenger
+    SVANGERSKAPSPENGER_INNVILGELSE("svangerskapspenger-innvilgelse"),
     SVANGERSKAPSPENGER_OPPHØR("svangerskapspenger-opphor"),
 
     //Støttebrev

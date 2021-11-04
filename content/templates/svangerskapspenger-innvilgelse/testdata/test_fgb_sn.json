@@ -1,0 +1,58 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "fritekst": "FRITEKST",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": false,
+    "saksnummer": "123456789",
+    "ytelseType": "SVP",
+    "behandlesAvKA": false,
+    "erUtkast": false
+  },
+  "revurdering": false,
+  "endretFraAvslag": false,
+  "utbetalingEndret": false,
+  "termindatoEndret": false,
+  "refusjonTilBruker": true,
+  "antallRefusjonerTilArbeidsgivere": 1,
+  "stønadsperiodeTom": "31. juli 2021",
+  "månedsbeløp": 15000,
+  "mottattDato": "1. juli 2021",
+  "klageFristUker": 6,
+  "antallUttaksperioder": 1,
+  "uttaksaktiviteter": [
+    {
+      "aktivitetsbeskrivelse": "Som næringsdrivende",
+      "uttaksperioder": [
+        {
+          "periodeFom": "1. juli 2021",
+          "periodeTom": "12. juli 2021",
+          "utbetalingsgrad": 50.0
+        }
+      ]
+    }
+  ],
+  "utbetalingsperioder": [
+    {
+      "periodeFom": "1. juli 2021",
+      "periodeTom": "12. juli 2021",
+      "periodeDagsats": 500,
+      "utbetaltTilSøker": 200
+    }
+  ],
+  "inkludereBeregning": true,
+  "selvstendigNæringsdrivende": {
+    "nyoppstartet": false,
+    "årsinntekt": 40000,
+    "sistLignedeÅr": 2020,
+    "inntektLavere_AT_SN": true,
+    "inntektLavere_AT_FL_SN": true,
+    "inntektLavere_FL_SN": true
+  },
+  "bruttoBeregningsgrunnlag": 200000,
+  "militærSivil": false,
+  "inntektOver6G": false,
+  "seksG": 600000,
+  "lovhjemmel": "§ 14-4"
+}

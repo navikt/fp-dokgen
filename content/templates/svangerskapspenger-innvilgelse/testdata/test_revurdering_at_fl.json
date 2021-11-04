@@ -1,0 +1,59 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "fritekst": "FRITEKST",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": false,
+    "saksnummer": "123456789",
+    "ytelseType": "SVP",
+    "behandlesAvKA": false,
+    "erUtkast": false
+  },
+  "revurdering": true,
+  "endretFraAvslag": false,
+  "utbetalingEndret": false,
+  "termindatoEndret": true,
+  "refusjonTilBruker": true,
+  "antallRefusjonerTilArbeidsgivere": 0,
+  "stønadsperiodeTom": "31. juli 2021",
+  "månedsbeløp": 15000,
+  "mottattDato": "1. juli 2021",
+  "klageFristUker": 6,
+  "antallUttaksperioder": 1,
+  "uttaksaktiviteter": [
+    {
+      "aktivitetsbeskrivelse": "Arbeidsgiver 1 AS",
+      "uttaksperioder": [
+        {
+          "periodeFom": "1. juli 2021",
+          "periodeTom": "12. juli 2021",
+          "utbetalingsgrad": 100.0
+        }
+      ]
+    }
+  ],
+  "utbetalingsperioder": [
+    {
+      "periodeFom": "1. juli 2021",
+      "periodeTom": "12. juli 2021",
+      "periodeDagsats": 500,
+      "utbetaltTilSøker": 200
+    }
+  ],
+  "inkludereBeregning": true,
+  "arbeidsforhold":  [
+    {
+      "arbeidsgiverNavn": "Arbeidsgiver 1 AS",
+      "månedsinntekt": 15003
+    }
+  ],
+  "frilanser": {
+    "månedsinntekt": 1000
+  },
+  "bruttoBeregningsgrunnlag": 500000,
+  "militærSivil": false,
+  "inntektOver6G": false,
+  "seksG": 600000,
+  "lovhjemmel": "§ 14-4"
+}
