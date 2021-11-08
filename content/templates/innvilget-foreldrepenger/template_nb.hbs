@@ -37,7 +37,7 @@ Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dag{{/gt}} igje
 {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
 {{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))}}
 Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dager{{/eq}} som dere begge kan ta ut.
-{{~#eq disponibleDager 1}}{{#if (or (eq disponibleFellesDager 0)(eq disponibleFellesDager 1))}} Denne dagen{{/if}}{{/eq}}{{#if (or (gt disponibleFellesDager 1)(gt disponibleDager 1))}} Disse dagene{{/if}} {{#if kreverSammenhengendeUttak}}må det søkes om innen {{sisteDagAvSistePeriode}}{{else}}må være tatt ut innen barnet fyller tre år eller innen en ny foreldrepengeperiode for et nytt barn starter{{/if}}.
+{{~#if (and (lt disponibleDager 2) (lt disponibleFellesDager 2))}} Denne dagen{{else}} Disse dagene{{/if}} {{#if kreverSammenhengendeUttak}}må det søkes om innen {{sisteDagAvSistePeriode}}{{else}}må være tatt ut innen barnet fyller tre år eller innen en ny foreldrepengeperiode for et nytt barn starter{{/if}}.
 {{/if}}{{/if}}{{/if}}
 
 {{~#gt antallArbeidsgivere 1}}
