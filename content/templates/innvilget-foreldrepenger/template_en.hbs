@@ -37,7 +37,7 @@ There are {{disponibleDager}} {{#gt disponibleDager 1}}days{{else}}day{{/gt}} re
 {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
 {{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))}}
 There are {{disponibleDager}} {{#eq disponibleDager 1}}day{{else}}days{{/eq}} left of your quota and {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}day{{else}}days{{/eq}} left that you both can take.
-{{~#eq disponibleDager 1}}{{#if (or (eq disponibleFellesDager 0)(eq disponibleFellesDager 1))}} This day{{/if}}{{/eq}}{{#if (or (gt disponibleFellesDager 1)(gt disponibleDager 1))}} These days{{/if}} {{#if kreverSammenhengendeUttak}}must be applied for by {{sisteDagAvSistePeriode}}{{else}}must be withdrawn before the child reaches the age of three, or before a new period of parental benefit starts for a new child{{/if}}.
+{{~#if (and (lt disponibleDager 2) (lt disponibleFellesDager 2))}} This day{{else}} These days{{/if}} {{#if kreverSammenhengendeUttak}}must be applied for by {{sisteDagAvSistePeriode}}{{else}}must be withdrawn before the child reaches the age of three, or before a new period of parental benefit starts for a new child{{/if}}.
 {{/if}}{{/if}}{{/if}}
 
 {{~#gt antallArbeidsgivere 1}}
