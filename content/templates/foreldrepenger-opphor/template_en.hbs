@@ -1,0 +1,96 @@
+{{> header_en }}
+
+{{#eq erSøkerDød true}}
+# Parental benefit for {{felles.søkerNavn}} is stopped
+{{> brukerdetaljer_en }}
+
+We have got a message that {{felles.søkerNavn}}, who received parental benefit from and including {{fomStønadsdato}}, is dead.
+
+We send this letter to inform that we stopped the parental benefit. The last day with paid parental benefit was {{tomStønadsdato}}.
+
+The other parent may have right to the rest of the parental benefit period, but needs to apply for it. You will find useful information at [nav.no](https://nav.no).
+
+The decision has been made in accordance with the National Insurance Act section {{lovhjemmelForAvslag}} and Public Administration Act section 35.
+
+If you have questions about the decision or wish to appeal, you will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
+
+You may appeal within {{klagefristUker}} weeks from the date the estate received this letter.
+
+{{else}}
+# You are not longer entitled to parental benefit
+{{> brukerdetaljer_en }}
+
+**We have denied the following**
+{{~#each avslagÅrsaker}}
+{{~#switch this}}
+{{#case "1035" }}
+Du hadde ikke arbeidsinntekt eller inntekt som var likestilt med lønn i seks av de siste ti månedene før perioden med foreldrepenger startet. Derfor har du ikke rett til foreldrepenger.
+{{/case}}
+
+{{#case "1041" }}
+Du hadde ikke rett til foreldrepenger, fordi inntekten din var lavere enn {{halvG}} kroner i året før skatt.
+{{/case}}
+
+{{#case (array "1004" "1013") }}
+Du hadde ikke rett til foreldrepenger fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} var fylt 15 år da du overtok omsorgen.
+{{/case}}
+
+{{#case "1026" }}
+Du hadde ikke rett til foreldrepenger fordi vi ikke har opplysninger om at {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}} er født.
+{{/case}}
+
+{{#case "1051" }}
+Du hadde ikke rett til foreldrepenger fordi du adopterte {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} til ektefellen eller samboeren din etter at foreldrepengeperioden var avsluttet.
+{{/case}}
+
+{{#case (array "1027" "1029") }}
+{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+Du hadde ikke rett til foreldrepenger fordi du ikke var registrert som {{#eq relasjonskode "FAR"}}far{{/eq}}{{#eq relasjonskode "MEDMOR"}}medmor{{/eq}} til {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}}.
+{{/in-array}}
+{{/case}}
+
+{{#case (array "4012" "4003") }}
+Du har ikke rett til foreldrepenger fra {{opphørDato}} fordi du ikke lenger har omsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
+{{/case}}
+
+{{#case "1015" }}
+Du hadde ikke rett til foreldrepenger fordi du hadde samvær med {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} minst en dag i uken og annenhver helg.
+{{/case}}
+
+{{#case "1014" }}
+Du hadde ikke rett til foreldrepenger fordi du ikke hadde foreldreansvar for {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}}.
+{{/case}}
+
+{{#case "4072" }}
+Vi har fått opplyst at {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} døde {{barnDødsdato}}. Den siste dagen din med foreldrepenger er derfor {{tomStønadsdato}}.
+{{/case}}
+
+{{#case (array "1020" "1021" "1023" "1024" "1025") this}}
+{{#if (and opphørDato (neq "1024" ../this)) }}
+Du har ikke rett til foreldrepenger fra {{opphørDato}} fordi du ikke lenger er medlem i folketrygden.
+{{else}}
+{{#eq gjelderFødsel true}}
+Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ble født.
+{{else}}
+Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet du overtok omsorgen for {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}}.
+{{/eq}}
+{{#eq "1024" ../this }}Vi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.{{/eq}}
+{{/if}}
+{{#eq "1020" ../this }}Du var omfattet av trygdeordningen i et annet land.{{/eq}}
+{{#eq "1021" ../this }}Ifølge folkeregisteret hadde du flyttet fra Norge.{{/eq}}
+{{#eq "1023" ../this }}Du hadde ikke oppholdstillatelse i Norge.{{/eq}}
+{{#eq "1025" ../this }}Du regnes ikke som medlem fordi du oppholdt deg mer i utlandet enn i Norge.{{/eq}}
+{{/case}}
+
+{{/switch}}
+{{/each}}
+
+The decision has been made in accordance with the National Insurance Act section {{lovhjemmelForAvslag}} and Public Administration Act section 35.
+
+**You have the right to appeal**<br/>
+You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+<br/>
+{{/eq}}
+{{> footer_en }}
