@@ -25,7 +25,7 @@ Arbeidsgiverne dine betaler deg lønn mens du har permisjon. Resten av foreldrep
 
 <br/>
 
-**Dette har vi innvilget**
+##### Dette har vi innvilget
 
 * Du tar ut 20 prosent foreldrepenger fra og med 24. februar 2021 til og med 26. mars 2021 fordi du jobber 80 prosent hos ARBEIDSGIVER 1. I denne perioden får du 1 618 kroner per dag før skatt.
 
@@ -49,13 +49,13 @@ Arbeidsgiverne dine betaler deg lønn mens du har permisjon. Resten av foreldrep
 
 Det er 0 dager igjen av kvoten din, og 10 dager som dere begge kan ta ut. Disse dagene må det søkes om innen 4. november 2022.
 
-**Du har flere arbeidsgivere**
+##### Du har flere arbeidsgivere
 
 Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere foreldrepenger med arbeid hos én arbeidsgiver om gangen. Det betyr at det bare er perioden din hos ARBEIDSGIVER 1 som blir forlenget.
 
 <br/>
 
-**Dette har vi avslått**
+##### Dette har vi avslått
 
 Du har ikke rett til foreldrepenger fra og med 06. desember 2021 til og med 07. desember 2021 fordi det ikke er flere dager igjen av foreldrepengeperioden.
 
@@ -63,7 +63,7 @@ Vedtaket er gjort etter folketrygdloven §§ 14-9, 14-12 og 14-16.
 
 <br/>
 
-**Inntekt vi har brukt i beregningen**<br/>
+##### Inntekt vi har brukt i beregningen
 
 Vi har brukt 504 360 kroner i året før skatt i beregningen av foreldrepengene dine.
 
@@ -79,24 +79,24 @@ Beregningen er gjort etter folketrygdloven §§ 14-7 og 8-30.
 
 <br/>
 
-**Du må melde fra om endringer**<br/>
+##### Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
 <br/>
 <br/>
-**Du har rett til å klage**<br/>
+##### Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>
 <br/>
-**Du har rett til innsyn**<br/>
+##### Du har rett til innsyn
 På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
 <br/>
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
 
-**Har du spørsmål?**<br/>
+##### Har du spørsmål?
 Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 <br/>

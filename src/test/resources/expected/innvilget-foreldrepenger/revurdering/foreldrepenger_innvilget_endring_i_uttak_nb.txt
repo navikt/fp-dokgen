@@ -25,7 +25,7 @@ Du får 1 871 kroner per dag før skatt fra og med 18. juni 2020. Dette er i gje
 
 <br/>
 
-**Dette har vi innvilget**
+##### Dette har vi innvilget
 
 * Du får utsatt foreldrepengene fra og med 18. juni 2020 til og med 21. juli 2020 fordi du jobber heltid.
 
@@ -59,30 +59,30 @@ Vedtaket er gjort etter folketrygdloven §§ 14-11, 14-12 og forvaltningsloven �
 
 Fordi du har valgt 80 prosent foreldrepenger, får du mindre utbetalt i måneden.
 
-**Hva skjer hvis du får utbetalt foreldrepenger og lønn for samme periode?**
+##### Hva skjer hvis du får utbetalt foreldrepenger og lønn for samme periode?
 
 Hvis du har fått utbetalt foreldrepenger samtidig som du har jobbet eller utsatt dager fordi du har hatt ferie, har du fått utbetalt for mye i foreldrepenger. Det betyr at utbetalingen i neste måned kan bli redusert med det du har fått utbetalt for mye.
 
 <br/>
 
-**Du må melde fra om endringer**<br/>
+##### Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
 <br/>
 <br/>
-**Du har rett til å klage**<br/>
+##### Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>
 <br/>
-**Du har rett til innsyn**<br/>
+##### Du har rett til innsyn
 På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
 <br/>
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
 
-**Har du spørsmål?**<br/>
+##### Har du spørsmål?
 Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 <br/>
@@ -97,6 +97,6 @@ Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er
 
 <br/><br/>
 
-**Dette er en kopi, orginal er sendt til verge**.
+##### Dette er en kopi, orginal er sendt til verge.
 
 </div>
