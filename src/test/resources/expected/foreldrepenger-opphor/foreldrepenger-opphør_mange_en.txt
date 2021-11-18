@@ -13,7 +13,7 @@ Name: Dolly Duck
 National identity number: 300220 12345
 <br/>
 </p>
-**We have denied the following**
+##### We have denied the following
 You are not entitled to parental benefit, because you have not had earned income or income equivalent to earned income in six of the past ten months before the start of the parental benefit period.
 You are not entitled to parental benefit, because your income is lower than 50 000 kroner per year before taxes.
 You are not entitled to parental benefit, because your children were aged 15 years or older when you assumed care.
@@ -38,18 +38,18 @@ We do not have any information proving that you work or have family that support
 You are not entitled to parental benefit from 24. mai 2021 because you are not a member of the Norwegian National Insurance Scheme.
 You are not considered a member because you spend more time abroad than in Norway.
 The decision has been made in accordance with the National Insurance Act section § 14 and Public Administration Act section 35.
-**You have the right to appeal**<br/>
+##### You have the right to appeal<br/>
 You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>
 <br/>
-**You have right of access**<br/>
+##### You have right of access<br/>
 Go to [nav.no/dittnav](https://nav.no/dittnav) to see the documents in your case.
 <br/>
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-**Do you have questions?**<br/>
+##### Do you have questions?<br/>
 You will find useful information at [nav.no/familie](https://nav.no/familie).
 <br/>
 <br/>
