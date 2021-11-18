@@ -65,7 +65,7 @@ Du hadde ikkje rett til foreldrepengar fordi du ikkje hadde foreldreansvar for {
 Vi har fått opplyst at {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} døydde {{barnDødsdato}}. Den siste dagen din med foreldrepengar er derfor {{tomStønadsdato}}.
 {{/case}}
 
-{{#case (array "1020" "1021" "1023" "1024" "1025") this}}
+{{#case (array "1020" "1021" "1023" "1024" "1025") }}
 {{#if (and opphørDato (neq "1024" ../this)) }}
 Du har ikkje rett til foreldrepengar frå {{opphørDato}} fordi du ikkje lenger er medlem i folketrygda.
 {{else}}

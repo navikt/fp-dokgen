@@ -24,62 +24,62 @@ You may appeal within {{klagefristUker}} weeks from the date the estate received
 {{~#each avslagÅrsaker}}
 {{~#switch this}}
 {{#case "1035" }}
-Du hadde ikke arbeidsinntekt eller inntekt som var likestilt med lønn i seks av de siste ti månedene før perioden med foreldrepenger startet. Derfor har du ikke rett til foreldrepenger.
+You are not entitled to parental benefit, because you have not had earned income or income equivalent to earned income in six of the past ten months before the start of the parental benefit period.
 {{/case}}
 
 {{#case "1041" }}
-Du hadde ikke rett til foreldrepenger, fordi inntekten din var lavere enn {{halvG}} kroner i året før skatt.
+You are not entitled to parental benefit, because your income is lower than {{format-kroner halvG}} kroner per year before taxes.
 {{/case}}
 
 {{#case (array "1004" "1013") }}
-Du hadde ikke rett til foreldrepenger fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} var fylt 15 år da du overtok omsorgen.
+You are not entitled to parental benefit, because your {{#gt antallBarn 1}}children were{{else}}child was{{/gt}} aged 15 years or older when you assumed care.
 {{/case}}
 
 {{#case "1026" }}
-Du hadde ikke rett til foreldrepenger fordi vi ikke har opplysninger om at {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}} er født.
+You are not entitled to parental benefit, because we do not have proof that the {{#eq antallBarn 1}}child has{{/eq}}{{#eq antallBarn 0}}child or the children have{{/eq}}{{#gt antallBarn 1}}children have{{/gt}} been born.
 {{/case}}
 
 {{#case "1051" }}
-Du hadde ikke rett til foreldrepenger fordi du adopterte {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} til ektefellen eller samboeren din etter at foreldrepengeperioden var avsluttet.
+You are not entitled to parental benefit, because you adopted your spouse’s or cohabitant’s {{#gt antallBarn 1}}children{{else}}child{{/gt}} after the end of the parental benefit period.
 {{/case}}
 
 {{#case (array "1027" "1029") }}
 {{#in-array (array "FAR" "MEDMOR") relasjonskode}}
-Du hadde ikke rett til foreldrepenger fordi du ikke var registrert som {{#eq relasjonskode "FAR"}}far{{/eq}}{{#eq relasjonskode "MEDMOR"}}medmor{{/eq}} til {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}}.
+You are not entitled to parental benefit, because you are not registered as the {{#eq antallBarn 1}}child’s{{/eq}}{{#eq antallBarn 0}}child’s or the children’s{{/eq}}{{#gt antallBarn 1}}children’s{{/gt}} {{#eq relasjonskode "FAR"}}father{{/eq}}{{#eq relasjonskode "MEDMOR"}}co-mother{{/eq}}.
 {{/in-array}}
 {{/case}}
 
 {{#case (array "4012" "4003") }}
-Du har ikke rett til foreldrepenger fra {{opphørDato}} fordi du ikke lenger har omsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
+You are not entitled to parental benefit from {{opphørDato}}, because you do not have care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}.
 {{/case}}
 
 {{#case "1015" }}
-Du hadde ikke rett til foreldrepenger fordi du hadde samvær med {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} minst en dag i uken og annenhver helg.
+You are not entitled to parental benefit, because you have had contact with the {{#gt antallBarn 1}}children{{else}}child{{/gt}} at least one day a week and every other weekend.
 {{/case}}
 
 {{#case "1014" }}
-Du hadde ikke rett til foreldrepenger fordi du ikke hadde foreldreansvar for {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}}.
+You are not entitled to parental benefit, because you do not have parental responsibility for the {{#gt antallBarn 1}}children{{else}}child{{/gt}}.
 {{/case}}
 
 {{#case "4072" }}
-Vi har fått opplyst at {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} døde {{barnDødsdato}}. Den siste dagen din med foreldrepenger er derfor {{tomStønadsdato}}.
+We have got a message that your {{#gt antallBarn 1}}children{{else}}child{{/gt}} died on the {{barnDødsdato}}. The last day with parental benefit is therefore {{tomStønadsdato}}.
 {{/case}}
 
-{{#case (array "1020" "1021" "1023" "1024" "1025") this}}
+{{#case (array "1020" "1021" "1023" "1024" "1025") }}
 {{#if (and opphørDato (neq "1024" ../this)) }}
-Du har ikke rett til foreldrepenger fra {{opphørDato}} fordi du ikke lenger er medlem i folketrygden.
+You are not entitled to parental benefit from {{opphørDato}} because you are not a member of the Norwegian National Insurance Scheme.
 {{else}}
 {{#eq gjelderFødsel true}}
-Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} ble født.
+You were not entitled to parental benefit, because you were not a member of the Norwegian National Insurance Scheme at the time your {{#gt antallBarn 1}}children were{{else}}child was{{/gt}} born.
 {{else}}
-Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet du overtok omsorgen for {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}}.
+You were not entitled to parental benefit, because you were not a member of the Norwegian National Insurance Scheme at the time you assumed care of your {{#gt antallBarn 1}}children{{else}}child{{/gt}}.
 {{/eq}}
-{{#eq "1024" ../this }}Vi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.{{/eq}}
+{{#eq "1024" ../this }}We do not have any information proving that you work or have family that supports you in Norway. It is therefore not documented that you are entitled to stay in Norway pursuant to the EEA Agreement.{{/eq}}
 {{/if}}
-{{#eq "1020" ../this }}Du var omfattet av trygdeordningen i et annet land.{{/eq}}
-{{#eq "1021" ../this }}Ifølge folkeregisteret hadde du flyttet fra Norge.{{/eq}}
-{{#eq "1023" ../this }}Du hadde ikke oppholdstillatelse i Norge.{{/eq}}
-{{#eq "1025" ../this }}Du regnes ikke som medlem fordi du oppholdt deg mer i utlandet enn i Norge.{{/eq}}
+{{#eq "1020" ../this }}You are covered by the social security system in another country.{{/eq}}
+{{#eq "1021" ../this }}According to the National Registry, you have moved from Norway.{{/eq}}
+{{#eq "1023" ../this }}You do not have the right to reside in Norway.{{/eq}}
+{{#eq "1025" ../this }}You are not considered a member because you spend more time abroad than in Norway.{{/eq}}
 {{/case}}
 
 {{/switch}}
