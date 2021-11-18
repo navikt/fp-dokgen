@@ -14,37 +14,28 @@ Fødselsnummer: 300220 12345
 <br/>
 </p>
 Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at vedtaket til NAV Familie- og pensjonsytelser må gjøres om.
-**Dette har vi lagt vekt på i vurderingen vår**
-<br/>
+##### Dette har vi lagt vekt på i vurderingen vår
 FRITEKST
 <br/>
-<br/>
-**Du må melde fra om endringer**
-<br/>
+##### Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
-<br/>
-**Skatt**
-<br/>
+##### Skatt
 Beløpet du skal betale tilbake er redusert med den skatten som ble trukket da du fikk utbetalingen. NAV får skatten tilbake gjennom et oppgjør med Skatteetaten.
 NAV gir opplysninger til Skatteetaten. Skatteetaten vil vurdere om det er grunnlag for å endre skatteoppgjør.
-<br/>
-<br/>
-**Hvordan betale tilbake pengene du skylder**
-<br/>
+##### Hvordan betale tilbake pengene du skylder
 NAV Innkreving vil korrigere beløpet du skal betale tilbake. Du finner mer informasjon på [nav.no/innkreving](https://nav.no/innkreving).
 <br/>
-**Du har rett til å anke**
-<br/>
+##### Du har rett til å anke
 Du kan anke vedtaket til Trygderetten. Fristen er 6 uker fra den datoen vedtaket kom fram til deg.
 Klagerettighetene dine og skjema for klage/anke finner du på [nav.no/klage](https://nav.no/klage).
 <br/>
-**Du har rett til innsyn**<br/>
+##### Du har rett til innsyn
 På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
 <br/>
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-**Har du spørsmål?**<br/>
+##### Har du spørsmål?
 Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 <br/>

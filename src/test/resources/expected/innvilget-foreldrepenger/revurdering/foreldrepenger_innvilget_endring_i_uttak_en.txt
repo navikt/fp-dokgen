@@ -18,7 +18,7 @@ National identity number: 123456 12345
 We have reconsidered your case, and you are entitled to parental benefit. We have therefore changed the decision you previously have received.
 You will receive 1 871 kroner per day before taxes starting from 18. juni 2020. This is 40 538 kroner on average per month. The last day you will receive parental benefit is 13. august 2021.
 <br/>
-**We have granted the following**
+##### We have granted the following
 * Your parental benefit is postponed from 18. juni 2020 up to and including 21. juli 2020 because you are working full time.
 * You are taking parental benefit from 22. juli 2020 up to and including 14. august 2020. During this period, you will receive 1 871 kroner per day before taxes.
 * Your parental benefit is postponed from 17. august 2020 up to and including 22. september 2020 because you are working full time.
@@ -35,26 +35,26 @@ The parental benefit amounts to the same as before. Check your payments at [nav.
 The last day of parental benefit is 13. august 2021.
 The decision has been made in accordance with the National Insurance Act §§ 14-11, 14-12 og forvaltningsloven § 35.
 Because you have chosen 80 per cent parental benefit, you will be paid less per month.
-**What happens if you receive parental benefit and salary for the same period?**
+##### What happens if you receive parental benefit and salary for the same period?
 If you have been paid the parental benefit at the same time as you have worked or postponed days because you have taken holidays, you have been paid an excess amount of parental benefit. This means that the payment for the next month can be reduced by the excess amount you received.
 <br/>
-**You must notify any changes**<br/>
+##### You must notify any changes
 You must notify NAV immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt) for more detailed information.
 <br/>
 <br/>
 <br/>
-**You have the right to appeal**<br/>
+##### You have the right to appeal
 You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>
 <br/>
-**You have right of access**<br/>
+##### You have right of access
 Go to [nav.no/dittnav](https://nav.no/dittnav) to see the documents in your case.
 <br/>
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-**Do you have questions?**<br/>
+##### Do you have questions?
 You will find useful information at [nav.no/familie](https://nav.no/familie).
 <br/>
 <br/>
@@ -65,5 +65,5 @@ NAV Familie- og Pensjonsytelser
 <br/><br/>
 This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
 <br/><br/>
-**This is a copy, the orginal has been sent to the guardian**.
+##### This is a copy, the orginal has been sent to the guardian.
 </div>

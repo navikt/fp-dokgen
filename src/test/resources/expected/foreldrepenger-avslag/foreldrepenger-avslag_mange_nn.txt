@@ -16,7 +16,7 @@ Fødselsnummer: 300220 12345
 
 </p>
 
-**Dette har vi avslått**
+##### Dette har vi avslått
 
 * Du har ikkje rett til foreldrepengar fordi du ikkje har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i seks av dei siste ti månadene før foreldrepengeperioden startar.
 
@@ -233,19 +233,19 @@ Vedtaket er gjort etter folketrygdlova § forvaltningsloven § 35.
 
 <br/>
 
-**Du har rett til å klage**<br/>
+##### Du har rett til å klage
 Du kan klage innan 6 veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>
 <br/>
-**Du har rett til innsyn**<br/>
+##### Du har rett til innsyn
 På [nav.no/dittnav](https://nav.no/dittnav) kan du sjå dokumenta i saka di.
 <br/>
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
 
-**Har du spørsmål?**<br/>
+##### Har du spørsmål?
 Du finn nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 <br/>

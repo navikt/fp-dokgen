@@ -18,8 +18,7 @@ Vi gjør oppmerksom på:
 * hvis en forelder starter ny foreldrepengeperiode for nytt barn, vil du miste dager du ikke har brukt
 * foreldrepengene må være tatt ut senest dagen før barnet fyller tre år
 <br/>
-<br/>
-**Har du spørsmål?**<br/>
+##### Har du spørsmål?
 Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 <br/>

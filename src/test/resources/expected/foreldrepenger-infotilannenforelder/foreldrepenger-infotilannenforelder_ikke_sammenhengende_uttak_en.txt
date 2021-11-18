@@ -18,8 +18,7 @@ Please, be aware of:
 * if a parent starts a new parental benefit period for a new child, you will lose days you have not spent
 * parental benefit must be withdrawn no later than the day before the child turns three years old
 <br/>
-<br/>
-**Do you have questions?**<br/>
+##### Do you have questions?
 You will find useful information at [nav.no/familie](https://nav.no/familie).
 <br/>
 <br/>

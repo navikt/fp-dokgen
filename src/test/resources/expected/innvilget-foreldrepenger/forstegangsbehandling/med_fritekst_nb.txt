@@ -27,7 +27,7 @@ Pengene er på kontoen din innen den 25. hver måned. Sjekk utbetalingene dine p
 
 <br/>
 
-**Dette har vi innvilget**
+##### Dette har vi innvilget
 
 * Du får utsatt foreldrepengene fra og med 7. mai 2021 til og med 30. september 2021 fordi du jobber heltid.
 
@@ -41,7 +41,7 @@ Det er 7 dager igjen av kvoten din, og 0 dager som dere begge kan ta ut. Disse d
 
 <br/>
 
-**Inntekt vi har brukt i beregningen**<br/>
+##### Inntekt vi har brukt i beregningen
 Inntekten din hos Arbeidsgiver 1 er oppgitt av din arbeidsgiver etter
 18.496 kroner i måneden.
 
@@ -60,24 +60,24 @@ Beregningen er gjort etter folketrygdloven §§ 14-7 og 8-30.
 
 <br/>
 
-**Du må melde fra om endringer**<br/>
+##### Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
 <br/>
 <br/>
-**Du har rett til å klage**<br/>
+##### Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>
 <br/>
-**Du har rett til innsyn**<br/>
+##### Du har rett til innsyn
 På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
 <br/>
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
 
-**Har du spørsmål?**<br/>
+##### Har du spørsmål?
 Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 <br/>

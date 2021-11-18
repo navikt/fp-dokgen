@@ -24,19 +24,19 @@ The decision has been made pursuant to section 14-17 of the National Insurance A
 
 <br/>
 
-**You have the right to appeal**<br/>
+##### You have the right to appeal
 You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>
 <br/>
-**You have right of access**<br/>
+##### You have right of access
 Go to [nav.no/dittnav](https://nav.no/dittnav) to see the documents in your case.
 <br/>
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
 
-**Do you have questions?**<br/>
+##### Do you have questions?
 You will find useful information at [nav.no/familie](https://nav.no/familie).
 <br/>
 <br/>
@@ -51,6 +51,6 @@ This case has been electronically processed by our administration system, which 
 
 <br/><br/>
 
-**This is a copy, the orginal has been sent to the guardian**.
+##### This is a copy, the orginal has been sent to the guardian.
 
 </div>

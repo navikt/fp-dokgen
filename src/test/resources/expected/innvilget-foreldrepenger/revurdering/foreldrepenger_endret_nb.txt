@@ -21,7 +21,7 @@ Fødselsnummer: 123456 78901
 
 <br/>
 
-**Dette har vi innvilget**
+##### Dette har vi innvilget
 
 Du tar ut foreldrepenger fra og med 30. juni 2020 til og med 21. september 2020. I denne perioden får du 1 871 kroner per dag før skatt.
 
@@ -31,7 +31,7 @@ Den siste dagen med foreldrepenger er 21. september 2020.
 
 <br/>
 
-**Dette har vi avslått**
+##### Dette har vi avslått
 
 * Det er ikke søkt om foreldrepenger eller utsettelse fra og med 22. september 2020 til og med 9. november 2020. Derfor er 35 dager tapt.
 
@@ -45,24 +45,24 @@ Tester at fritekst kommer etter vedtakshjemler når endring i uttak
 
 <br/>
 
-**Du må melde fra om endringer**<br/>
+##### Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
 <br/>
 <br/>
-**Du har rett til å klage**<br/>
+##### Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>
 <br/>
-**Du har rett til innsyn**<br/>
+##### Du har rett til innsyn
 På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
 <br/>
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
 
-**Har du spørsmål?**<br/>
+##### Har du spørsmål?
 Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
 <br/>
