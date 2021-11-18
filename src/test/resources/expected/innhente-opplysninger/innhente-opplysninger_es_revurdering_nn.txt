@@ -24,17 +24,14 @@ Tekst
 - Bekreftelse
 Mer tekst
 <br/>
-<br/>
 ##### Søknaden kan bli avslått
 Dersom du ikkje sender oss dette innan 24. mai 2020, behandlar vi saka di med dei opplysningane vi har.
 
 Dette går fram av folketrygdlova § 21-3.
 <br/>
 <br/>
-<br/>
 ##### Du har rett til innsyn
 På [nav.no/dittnav](https://nav.no/dittnav) kan du sjå dokumenta i saka di.
-<br/>
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">

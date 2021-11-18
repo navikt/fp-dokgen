@@ -24,7 +24,6 @@ Tekst
 - Bekreftelse
 Mer tekst
 <br/>
-<br/>
 Du sender dokumentasjonen til oss på [nav.no/klage](https://nav.no/klage). Velg NAV-enhet: NAV Klageinstans Midt-Norge.
 
 ##### Søknaden kan bli avslått
@@ -33,10 +32,8 @@ Hvis du ikke sender oss dette innen 24. mai 2020, behandler vi saken med de oppl
 Dette går fram av folketrygdloven § 21-3.
 <br/>
 <br/>
-<br/>
 ##### Du har rett til innsyn
 På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
-<br/>
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">

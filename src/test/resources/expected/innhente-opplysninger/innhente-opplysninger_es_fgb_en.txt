@@ -24,17 +24,14 @@ Tekst
 - Bekreftelse
 Mer tekst
 <br/>
-<br/>
 ##### Your application can be turned down
 If you do not send us the requested documentation before 24. mai 2020, your application can be turned down.
 
 This is pursuant to section 21‑3 of the National Insurance Act.
 <br/>
 <br/>
-<br/>
 ##### You have right of access
 Go to [nav.no/dittnav](https://nav.no/dittnav) to see the documents in your case.
-<br/>
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
