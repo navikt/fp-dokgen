@@ -42,6 +42,13 @@ public class ForeldrepengerOpphørTest {
     }
 
     @Test
+    public void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_engelsk() throws Exception {
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_mange");
+        var expected = getExpected(BREVMAL, "foreldrepenger-opphør_mange_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     public void test_søker_død() throws Exception {
         var testData = opprettTestData();
         testData.put(ER_SØKER_DØD, true);
