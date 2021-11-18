@@ -1,0 +1,62 @@
+<p align="right">
+Date: 4. mai 2021
+</p>
+<br>
+<br>
+<br>
+# You are no longer entitled to parental benefit
+<p style="color:gray">
+Nav's case number: 123456789
+<br/>
+Name: Dolly Duck
+<br/>
+National identity number: 300220 12345
+<br/>
+</p>
+##### We have denied the following
+You are not entitled to parental benefit, because you have not had earned income or income equivalent to earned income in six of the past ten months before the start of the parental benefit period.
+You are not entitled to parental benefit, because your income is lower than 50 000 kroner per year before taxes.
+You are not entitled to parental benefit, because your children were aged 15 years or older when you assumed care.
+You are not entitled to parental benefit, because your children were aged 15 years or older when you assumed care.
+You are not entitled to parental benefit, because we do not have proof that the children have been born.
+You are not entitled to parental benefit, because you adopted your spouse’s or cohabitant’s children after the end of the parental benefit period.
+You are not entitled to parental benefit, because you are not registered as the children’s co-mother.
+You are not entitled to parental benefit, because you are not registered as the children’s co-mother.
+You are not entitled to parental benefit from 24. mai 2021, because you do not have care of the children.
+You are not entitled to parental benefit from 24. mai 2021, because you do not have care of the children.
+You are not entitled to parental benefit, because you have had contact with the children at least one day a week and every other weekend.
+You are not entitled to parental benefit, because you do not have parental responsibility for the children.
+We have got a message that your children died on the 10. mai 2021. The last day with parental benefit is therefore 24. mai 2021.
+You are not entitled to parental benefit from 24. mai 2021 because you are not a member of the Norwegian National Insurance Scheme.
+You are covered by the social security system in another country.
+You are not entitled to parental benefit from 24. mai 2021 because you are not a member of the Norwegian National Insurance Scheme.
+According to the National Registry, you have moved from Norway.
+You are not entitled to parental benefit from 24. mai 2021 because you are not a member of the Norwegian National Insurance Scheme.
+You do not have the right to reside in Norway.
+You were not entitled to parental benefit, because you were not a member of the Norwegian National Insurance Scheme at the time your children were born.
+We do not have any information proving that you work or have family that supports you in Norway. It is therefore not documented that you are entitled to stay in Norway pursuant to the EEA Agreement.
+You are not entitled to parental benefit from 24. mai 2021 because you are not a member of the Norwegian National Insurance Scheme.
+You are not considered a member because you spend more time abroad than in Norway.
+The decision has been made in accordance with the National Insurance Act section § 14 and Public Administration Act section 35.
+##### You have the right to appeal
+You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+<br/>
+##### You have right of access
+Go to [nav.no/dittnav](https://nav.no/dittnav) to see the documents in your case.
+<br/>
+<br/>
+<br/>
+<div style="break-inside: avoid; page-break-inside: avoid">
+##### Do you have questions?
+You will find useful information at [nav.no/familie](https://nav.no/familie).
+<br/>
+<br/>
+<br/>
+Yours sincerely,
+<br/>
+NAV Familie- og Pensjonsytelser
+<br/><br/>
+This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
+</div>

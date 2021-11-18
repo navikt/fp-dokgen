@@ -1,0 +1,96 @@
+{{> header }}
+
+{{#eq erSøkerDød true}}
+# Foreldrepengane til {{felles.søkerNavn}} er stansa
+{{> brukerdetaljer_nn }}
+
+Vi har fått melding om at {{felles.søkerNavn}}, som fekk foreldrepengar frå og med {{fomStønadsdato}}, er død.
+
+Vi sender dette brevet for å informere om at vi har stansaforeldrepengane. Siste dagen det blei utbetalt foreldrepengar var {{tomStønadsdato}}.
+
+Den andre forelderen kan ha rett til resten av foreldrepengeperioden, men må sjølv søkje om det. De kan lese meir om dette på nav.no
+
+Vedtaket er gjort etter folketrygdlova {{lovhjemmelForAvslag}} og forvaltningslova § 35.
+
+Dersom dere har spørsmål om vedtaket eller ønskjer å klage, finner dere skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+
+Klagefristen er {{klagefristUker}} veker frå den datoen dødsbuet fekk brevet.
+
+{{else}}
+# Du har ikkje lenger rett til foreldrepengar
+{{> brukerdetaljer_nn }}
+
+##### Dette har vi avslått
+{{~#each avslagÅrsaker}}
+{{~#switch this}}
+{{#case "1035" }}
+Du hadde ikkje arbeidsinntekt eller inntekt som var likestilt med løn i seks av dei siste ti månadene før perioden med foreldrepengar starta. Derfor har du ikkje rett til foreldrepengar.
+{{/case}}
+
+{{#case "1041" }}
+Du hadde ikkje rett til foreldrepengar fordi inntekta di var lågare enn {{halvG}} kroner i året før skatt.
+{{/case}}
+
+{{#case (array "1004" "1013") }}
+Du hadde ikkje rett til foreldrepengar fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} hadde fylt 15 år då du overtok omsorga.
+{{/case}}
+
+{{#case "1026" }}
+Du hadde ikkje rett til foreldrepengar fordi vi ikkje har opplysningar om at {{#eq antallBarn 1}}barnet er fødd{{/eq}}{{#eq antallBarn 0}}barnet eller barna er fødde{{/eq}}{{#gt antallBarn 1}}barna er fødde{{/gt}}.
+{{/case}}
+
+{{#case "1051" }}
+Du hadde ikkje rett til foreldrepengar fordi du adopterte {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} til ektefellen eller sambuaren din etter at perioden med foreldrepengar var avslutta.
+{{/case}}
+
+{{#case (array "1027" "1029") }}
+{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+Du hadde ikkje rett til foreldrepengar fordi du ikkje var registrert som {{#eq relasjonskode "FAR"}}far{{/eq}}{{#eq relasjonskode "MEDMOR"}}medmor{{/eq}} til {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}}.
+{{/in-array}}
+{{/case}}
+
+{{#case (array "4012" "4003") }}
+Du har ikkje rett til foreldrepengar frå {{opphørDato}} fordi du ikkje lenger har omsorga for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
+{{/case}}
+
+{{#case "1015" }}
+Du hadde ikkje rett til foreldrepengar fordi du hadde samvær med {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} minst éin dag i veka og annakvar helg.
+{{/case}}
+
+{{#case "1014" }}
+Du hadde ikkje rett til foreldrepengar fordi du ikkje hadde foreldreansvar for {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}}.
+{{/case}}
+
+{{#case "4072" }}
+Vi har fått opplyst at {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} døydde {{barnDødsdato}}. Den siste dagen din med foreldrepengar er derfor {{tomStønadsdato}}.
+{{/case}}
+
+{{#case (array "1020" "1021" "1023" "1024" "1025") }}
+{{#if (and opphørDato (neq "1024" ../this)) }}
+Du har ikkje rett til foreldrepengar frå {{opphørDato}} fordi du ikkje lenger er medlem i folketrygda.
+{{else}}
+{{#eq gjelderFødsel true}}
+Du hadde ikkje rett til foreldrepengar fordi du ikkje var medlem i folketrygda på det tidspunktet {{#gt antallBarn 1}}barna dine blei fødde{{else}}barnet ditt blei fødd{{/gt}}.
+{{else}}
+Du hadde ikkje rett til foreldrepengar fordi du ikkje var medlem i folketrygda på det tidspunktet du overtok omsorga for {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}}.
+{{/eq}}
+{{#eq "1024" ../this }}Vi har ikkje opplysningar om at du jobba eller hadde familie som forsørgde deg i Noreg. Det var derfor ikkje dokumentert at du hadde rett til opphald etter EØS-avtalen.{{/eq}}
+{{/if}}
+{{#eq "1020" ../this }}Du var omfatta av trygdeordninga i eit anna land.{{/eq}}
+{{#eq "1021" ../this }}Ifølgje folkeregisteret hadde du flytta frå Noreg.{{/eq}}
+{{#eq "1023" ../this }}Du hadde ikkje opphaldsløyve i Noreg.{{/eq}}
+{{#eq "1025" ../this }}Du blir ikkje rekna som medlem fordi du oppheld deg meir i utlandet enn i Noreg.{{/eq}}
+{{/case}}
+
+{{/switch}}
+{{/each}}
+
+Vedtaket er gjort etter folketrygdlova {{lovhjemmelForAvslag}} og forvaltningslova § 35.
+
+##### Du har rett til å klage
+Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+<br/>
+{{/eq}}
+{{> footer_nn }}
