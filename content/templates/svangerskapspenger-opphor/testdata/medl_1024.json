@@ -1,0 +1,23 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": true,
+    "saksnummer": "123456789",
+    "behandlesAvKA": false,
+    "erUtkast": false
+  },
+  "opphørsdato": "4. mai 2021",
+  "erSøkerDød": false,
+  "halvG": 50000,
+  "lovhjemmel":"§ 14-4 og § forvaltningsloven § 35",
+  "klagefristUker": 6,
+  "opphørPerioder": [
+    {
+      "årsak": "1024",
+      "stønadsstønadsperiodeFom": "1. april 2021",
+      "stønadsperiodeTom": "3. april 2021"
+    }
+  ]
+}

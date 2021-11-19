@@ -1,0 +1,91 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": true,
+    "saksnummer": "123456789",
+    "behandlesAvKA": false,
+    "erUtkast": false
+  },
+  "opphørsdato": "10. mai 2021",
+  "erSøkerDød": false,
+  "dødsdatoBarn": "1. mai 2021",
+  "fødselsdato": "6. mai 2021",
+  "halvG": 50000,
+  "lovhjemmel":"§ 14-4 og § forvaltningsloven § 35",
+  "klagefristUker": 6,
+  "opphørPerioder": [
+    {
+      "årsak": "1020"
+    },
+    {
+      "årsak": "1021"
+    },
+    {
+      "årsak": "1023"
+    },
+    {
+      "årsak": "1025"
+    },
+    {
+      "årsak": "1041"
+    },
+    {
+      "årsak": "1060",
+      "stønadsperiodeFom": "6. april 2021",
+      "stønadsperiodeTom": "7. april 2021"
+    },
+    {
+      "årsak": "1061",
+      "stønadsperiodeFom": "1. april 2021",
+      "stønadsperiodeTom": "3. april 2021",
+      "arbeidsgivere": ["Arbeidsgiver1 AS"]
+    },
+    {
+      "årsak": "1062",
+      "stønadsperiodeFom": "8. april 2021",
+      "stønadsperiodeTom": "9. april 2021",
+      "arbeidsgivere": ["Arbeidsgiver1 AS"]
+    },
+    {
+      "årsak": "1063",
+      "stønadsperiodeFom": "10. april 2021",
+      "stønadsperiodeTom": "11. april 2021",
+      "arbeidsgivere": ["Arbeidsgiver1 AS", "Arbeidsgiver2 AS"]
+    },
+    {
+      "årsak": "1064",
+      "stønadsperiodeFom": "14. april 2021",
+      "stønadsperiodeTom": "15. april 2021",
+      "arbeidsgivere": ["Arbeidsgiver1 AS", "Arbeidsgiver2 AS"]
+    },
+    {
+      "årsak": "1065",
+      "arbeidsgivere": ["Arbeidsgiver1 AS", "Arbeidsgiver2 AS"]
+    },
+    {
+      "årsak": "1066",
+      "arbeidsgivere": ["Arbeidsgiver1 AS", "Arbeidsgiver2 AS"]
+    },
+    {
+      "årsak": "8303",
+      "arbeidsgivere": ["Arbeidsgiver1 AS", "Arbeidsgiver2 AS"]
+    },
+    {
+      "årsak": "8305"
+    },
+    {
+      "årsak": "8309"
+    },
+    {
+      "årsak": "8308",
+      "stønadsperiodeFom": "20. april 2021",
+      "stønadsperiodeTom": "21. april 2021"
+    },
+    {
+      "årsak": "8312",
+      "arbeidsgivere": ["Arbeidsgiver3 AS", "Arbeidsgiver2 AS", "Arbeidsgiver1"]
+    }
+  ]
+}
