@@ -53,7 +53,7 @@ public class ForeldrepengerOpphørTest {
         var testData = opprettTestData();
         testData.put(ER_SØKER_DØD, true);
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
-        assertThat(content).contains(String.format("Foreldrepengene til %s er stanset", BRUKER_NAVN));
+        assertThat(content).contains(String.format("Foreldrepengene til <div class=\"capitalize\">%s</div> er stanset", BRUKER_NAVN));
         assertThat(content).contains(String.format("Vi har fått melding om at %s, som mottok foreldrepenger fra og med %s, er død.", BRUKER_NAVN, STØNADSDATO_FOM));
         assertThat(content).contains(String.format("Vi sender dette brevet for å informere om at vi har stanset foreldrepengene. Siste dagen det ble utbetalt foreldrepenger var %s.", STØNADSDATO_TOM));
     }
