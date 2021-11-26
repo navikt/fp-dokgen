@@ -13,11 +13,11 @@
   "halvG": 50000,
   "lovhjemmel":"§ 14-4 og § forvaltningsloven § 35",
   "klagefristUker": 6,
-  "opphørPerioder": [
+  "opphørtPeriode":
     {
       "årsak": "8304",
       "stønadsperiodeFom": "1. april 2021",
-      "stønadsperiodeTom": "3. april 2021"
+      "stønadsperiodeTom": "3. april 2021",
+      "antallArbeidsgivere": 2
     }
-  ]
 }

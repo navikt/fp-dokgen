@@ -3,11 +3,10 @@
 {{#eq erSøkerDød true}}
 # Svangerskapspengene til {{felles.søkerNavn}} er stanset
 {{> brukerdetaljer_nb }}
-{{~#each opphørPerioder}}
-{{#eq årsak "8304" }}
-Vi har fått melding om at {{felles.søkerNavn}}, som mottok svangerskapspenger fra og med {{stønadsperiodeFom}}, er død.
+{{#eq opphørtPeriode.årsak "8304" }}
+Vi har fått melding om at {{felles.søkerNavn}}, som mottok svangerskapspenger fra og med {{opphørtPeriode.stønadsperiodeFom}}, er død.
 
-Vi sender dette brevet for å informere om at vi har stanset svangerskapspengene. Siste dagen det ble utbetalt svangerskapspenger var {{stønadsperiodeTom}}.
+Vi sender dette brevet for å informere om at vi har stanset svangerskapspengene. Siste dagen det ble utbetalt svangerskapspenger var {{opphørtPeriode.stønadsperiodeTom}}.
 {{/eq}}
 
 Vedtaket er gjort etter folketrygdloven {{lovhjemmel}}.
@@ -15,86 +14,78 @@ Vedtaket er gjort etter folketrygdloven {{lovhjemmel}}.
 Hvis dere har spørsmål om vedtaket eller ønsker å klage, finner dere skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 
 Klagefristen er {{klagefristUker}} uker fra den datoen dødsboet fikk brevet.
-{{/each}}
 
 {{else}}
 # Du har ikke lenger rett til svangerskapspenger
 {{> brukerdetaljer_nb }}
 
-{{~#each opphørPerioder}}
-{{#in-array (array "1020" "1021" "1023" "1024" "1025" "8306") årsak}}
-{{#neq årsak "1024"}}
-{{#if opphørsdato }}
-Du har ikke rett til svangerskapspenger fra {{opphørsdato}} fordi du ikke lenger er medlem i folketrygden.
+{{#in-array (array "1020" "1021" "1023" "1024" "1025" "8306") opphørtPeriode.årsak}}
+{{#neq opphørtPeriode.årsak "1024"}}
+{{#if opphørtPeriode.stønadsperiodeFom }}
+Du har ikke rett til svangerskapspenger fra {{opphørtPeriode.stønadsperiodeFom}} fordi du ikke lenger er medlem i folketrygden.
 {{/if}}
 {{else}}
-{{#eq årsak "1024"}}Vi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.{{/eq}}
+{{#eq opphørtPeriode.årsak "1024"}}Vi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.{{/eq}}
 {{/neq}}
-{{#eq årsak "1020"}}
+{{#eq opphørtPeriode.årsak "1020"}}
 
 Du var omfattet av trygdeordningen i et annet land.{{/eq}}
-{{#eq årsak "1021"}}
+{{#eq opphørtPeriode.årsak "1021"}}
 
 Ifølge folkeregisteret hadde du flyttet fra Norge.{{/eq}}
-{{#eq årsak "1023"}}
+{{#eq opphørtPeriode.årsak "1023"}}
 
 Du hadde ikke oppholdstillatelse i Norge.{{/eq}}
-{{#eq årsak "1025"}}
+{{#eq opphørtPeriode.årsak "1025"}}
 
 Du regnes ikke som medlem fordi du oppholdt deg mer i utlandet enn i Norge.{{/eq}}
 {{/in-array}}
 
-{{#in-array (array "1035" "1061") årsak}}
+{{#in-array (array "1035" "1061") opphørtPeriode.årsak}}
 Du hadde ikke rett til svangerskapspenger fordi du ikke hadde arbeidsinntekt eller inntekt som er likestilt med lønn i minst fire uker før du måtte slutte å jobbe.
 {{/in-array}}
 
-{{#eq årsak "1041" }}
+{{#eq opphørtPeriode.årsak "1041" }}
 Du hadde ikke rett til svangerskapspenger fordi inntekten din var lavere enn {{halvG}} kroner i året før skatt. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
 {{/eq}}
 
-{{#eq årsak "1060" }}
+{{#eq opphørtPeriode.årsak "1060" }}
 Du hadde ikke rett til svangerskapspenger fordi det ikke var dokumentert at du er gravid. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
 {{/eq}}
 
-{{#eq årsak "1062" }}
+{{#eq opphørtPeriode.årsak "1062" }}
 Vi har fått opplysninger om at du har mottatt sykepenger i en periode du allerede har mottatt svangerskapspenger. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
 
-Dersom det blir aktuelt med svangerskapspenger fra en senere dato må du sende ny søknad om svangerskapspenger og din arbeidsgiver må sende ny inntektsmelding til NAV.
+Dersom det blir aktuelt med svangerskapspenger fra en senere dato må du sende ny søknad om svangerskapspenger og {{#gt opphørtPeriode.antallArbeidsgivere 1}}dine arbeidsgivere{{else}}din arbeidsgiver{{/gt}} må sende ny inntektsmelding til NAV.
 {{/eq}}
 
-{{#eq årsak "1063" }}
-Du hadde ikke rett til svangerskapspenger fordi du kunne gjøre arbeidsoppgavene hos din(e) arbeidsgiver(e) uten at det var fare for å skade barnet/barna du venter. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
+{{#eq opphørtPeriode.årsak "1063" }}
+Du hadde ikke rett til svangerskapspenger fordi du kunne gjøre arbeidsoppgavene hos {{#gt opphørtPeriode.antallArbeidsgivere 1}}dine arbeidsgivere{{else}}din arbeidsgiver{{/gt}} uten at det var fare for å skade barnet/barna du venter. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
 {{/eq}}
 
-{{#eq årsak "1064" }}
-Vi har fått opplysninger om at din(e) arbeidsgiver(e) kunne tilpasse eller endre arbeidsoppgavene dine uten at det var fare for å skade barnet/barna du venter. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
+{{#eq opphørtPeriode.årsak "1064" }}
+Vi har fått opplysninger om at {{#gt opphørtPeriode.antallArbeidsgivere 1}}dine arbeidsgivere{{else}}din arbeidsgiver{{/gt}} kunne tilpasse eller endre arbeidsoppgavene dine uten at det var fare for å skade barnet/barna du venter. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
 {{/eq}}
 
-{{#eq årsak "1065" }}
+{{#eq opphørtPeriode.årsak "1065" }}
 Du hadde ikke rett til svangerskapspenger fordi du kunne gjøre arbeidsoppgavene som næringsdrivende eller frilanser uten at det var fare for å skade barnet/barna du venter. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
 {{/eq}}
 
-{{#eq årsak "1066"}}
+{{#eq opphørtPeriode.årsak "1066"}}
 Vi har fått opplysninger om at du som næringsdrivende eller frilanser kunne tilpasse eller endre arbeidsoppgavene dine uten at det var fare for å skade barnet/barna du venter. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
 {{/eq}}
 
-{{#eq årsak "8305" }}
+{{#eq opphørtPeriode.årsak "8305" }}
 Vi har fått opplysninger om at barnet ditt/barna dine døde {{dødsdatoBarn}}. Den siste dagen din med svangerskapspenger er derfor {{opphørsdato}}.
 {{/eq}}
 
-{{#in-array (array "8303" "8312") årsak }}
-Vi har fått opplysninger om at dine arbeidsgivere:
-<ul>
-{{#each arbeidsgivere}}
-    <li>{{ this }}</li>
-{{/each}}
-</ul>
-kunne tilpasse eller endre arbeidsoppgavene dine uten at det var fare for å skade barnet/barna du venter.
+{{#in-array (array "8303" "8312") opphørtPeriode.årsak }}
+Vi har fått opplysninger om at {{#gt opphørtPeriode.antallArbeidsgivere 1}}dine arbeidsgivere{{else}}din arbeidsgiver{{/gt}} kunne tilpasse eller endre arbeidsoppgavene dine uten at det var fare for å skade barnet/barna du venter.
 
 Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
 {{/in-array}}
 
-{{#eq årsak "8309" }}
+{{#eq opphørtPeriode.årsak "8309" }}
 Vi har fått melding om at barnet ditt ble født {{fødselsdato}}.
 
 Svangerskapspengene dine stanser fra {{opphørsdato}}.
@@ -102,10 +93,9 @@ Svangerskapspengene dine stanser fra {{opphørsdato}}.
 Du kan ha rett til foreldrepenger eller engangsstønad. Se [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for mer informasjon og hvordan du kan søke.
 {{/eq}}
 
-{{#eq årsak "8308" }}
+{{#eq opphørtPeriode.årsak "8308" }}
 Du hadde ikke rett til svangerskapspenger fordi du søkte for sent.
 {{/eq}}
-{{/each}}
 
 Vedtaket er gjort etter folketrygdloven {{lovhjemmel}}.
 
