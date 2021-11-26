@@ -115,6 +115,10 @@ li {
     font-size: 14px;
 }
 
+div.capitalize {
+    text-transform: capitalize;
+}
+
 .draft_text {
     transform: rotate(45deg);
     transform-origin: right top;
