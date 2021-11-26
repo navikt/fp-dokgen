@@ -1,0 +1,151 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "fritekst": "FRITEKST",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": false,
+    "saksnummer": "123456789",
+    "ytelseType": "SVP",
+    "behandlesAvKA": false,
+    "erUtkast": false
+  },
+  "revurdering": false,
+  "endretFraAvslag": false,
+  "utbetalingEndret": false,
+  "termindatoEndret": false,
+  "refusjonTilBruker": false,
+  "antallRefusjonerTilArbeidsgivere": 2,
+  "stønadsperiodeTom": "31. juli 2021",
+  "månedsbeløp": 15000,
+  "mottattDato": "1. juli 2021",
+  "klageFristUker": 6,
+  "antallUttaksperioder": 3,
+  "uttaksaktiviteter": [
+    {
+      "aktivitetsbeskrivelse": "Arbeidsgiver 1 AS",
+      "uttaksperioder": [
+        {
+          "periodeFom": "1. juli 2021",
+          "periodeTom": "12. juli 2021",
+          "utbetalingsgrad": 50.0
+        },
+        {
+          "periodeFom": "15. juli 2021",
+          "periodeTom": "19. juli 2021",
+          "utbetalingsgrad": 50.0
+        }
+      ]
+    },
+    {
+      "aktivitetsbeskrivelse": "Arbeidsgiver 2 AS",
+      "uttaksperioder": [
+        {
+          "periodeFom": "20. juli 2021",
+          "periodeTom": "31. juli 2021",
+          "utbetalingsgrad": 100.0
+        }
+      ]
+    }
+  ],
+  "utbetalingsperioder": [
+    {
+      "periodeFom": "1. juli 2021",
+      "periodeTom": "12. juli 2021",
+      "periodeDagsats": 500,
+      "utbetaltTilSøker": 200
+    },
+    {
+      "periodeFom": "15. juli 2021",
+      "periodeTom": "19. juli 2021",
+      "periodeDagsats": 700,
+      "utbetaltTilSøker": 700
+    },
+    {
+      "periodeFom": "20. juli 2021",
+      "periodeTom": "31. juli 2021",
+      "periodeDagsats": 1000,
+      "utbetaltTilSøker": 600
+    }
+  ],
+  "avslagsperioder": [
+    {
+      "periodeFom": "1. mai 2021",
+      "periodeTom": "12. mai 2021",
+      "årsak": "8308"
+    },
+    {
+      "periodeFom": "15. juni 2021",
+      "periodeTom": "25. juni 2021",
+      "årsak": "8311"
+    }
+  ],
+  "avslåtteAktiviteter": [
+    {
+      "årsak": "8312",
+      "arbeidsgiverNavn": "Arbeidsgiver 3 AS",
+      "erFL": false,
+      "erSN": false
+    },
+    {
+      "årsak": "8303",
+      "erFL": true,
+      "erSN": false
+    },
+    {
+      "årsak": "8303",
+      "erFL": false,
+      "erSN": true
+    },
+    {
+      "årsak": "8301",
+      "erFL": false,
+      "erSN": false
+    }
+  ],
+  "inkludereBeregning": true,
+  "arbeidsforhold":  [
+    {
+      "arbeidsgiverNavn": "Arbeidsgiver 1 AS",
+      "månedsinntekt": 15003
+    },
+    {
+      "arbeidsgiverNavn": "Arbeidsgiver 2 AS",
+      "månedsinntekt": 10200
+    },
+    {
+      "arbeidsgiverNavn": "Arbeidsgiver 3 AS",
+      "månedsinntekt": 2025
+    }
+  ],
+  "selvstendigNæringsdrivende": {
+    "nyoppstartet": false,
+    "årsinntekt": 40000,
+    "sistLignedeÅr": 2020,
+    "inntektLavere_AT_SN": true,
+    "inntektLavere_AT_FL_SN": true,
+    "inntektLavere_FL_SN": true
+  },
+  "frilanser": {
+    "månedsinntekt": 1000
+  },
+  "naturalytelser":  [
+    {
+      "status": "TILKOMMER",
+      "endringsdato": "1. juli 2021",
+      "nyDagsats": 1100,
+      "arbeidsgiverNavn": "Arbeidsgiver 1 AS"
+    },
+    {
+      "status": "BORTFALLER",
+      "endringsdato": "12. juli 2021",
+      "nyDagsats": 1000,
+      "arbeidsgiverNavn": "Arbeidsgiver 2 AS"
+    }
+  ],
+  "bruttoBeregningsgrunnlag": 789000,
+  "militærSivil": true,
+  "inntektOver6G": true,
+  "seksG": 600000,
+  "lovhjemmel": "§ 14-4"
+}

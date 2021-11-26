@@ -1,0 +1,46 @@
+{{#gt (size avslåtteAktiviteter) 0}}
+
+{{~#* inline "punkt" ~}}
+{{~#gt (size avslåtteAktiviteter) 1}}* {{/gt}}
+{{~/inline~}}
+
+{{#each avslåtteAktiviteter}}
+
+{{#eq årsak "8312"}}
+{{>punkt}}Du har ikke rett til svangerskapspenger {{#if arbeidsgiverNavn}}hos {{arbeidsgiverNavn}}{{else if erFL}}som frilanser{{else if erSN}}som selvstendig næringsdrivende{{/if}} fordi du kan gjøre arbeidsoppgavene uten at det er fare for å skade barnet eller barna du venter frem til tre uker før termin.
+{{/eq}}
+
+{{#eq årsak "8303"}}
+{{>punkt}}Du har ikke rett til svangerskapspenger {{#if arbeidsgiverNavn}}hos {{arbeidsgiverNavn}}{{else if erFL}}som frilanser{{else if erSN}}som selvstendig næringsdrivende{{/if}} fordi du kan gjøre arbeidsoppgavene uten at det er fare for å skade barnet eller barna du venter.
+{{/eq}}
+
+{{#eq årsak "8301"}}
+{{>punkt}}Du har ikke rett til svangerskapspenger fordi det er mindre enn tre uker til du har termin.
+
+  Du kan ha rett til foreldrepenger eller engangsstønad. Se [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for mer informasjon og hvordan du kan søke.
+{{/eq}}
+
+{{/each}}
+{{/gt}}
+
+
+{{#gt (size avslagsperioder) 0}}
+
+##### I {{#gt (size avslagsperioder) 1}}disse periodene{{else}}denne perioden{{/gt}} får du ikke svangerskapspenger
+
+{{~#* inline "punkt" ~}}
+{{~#gt (size avslagsperioder) 1}}* {{/gt}}
+{{~/inline~}}
+
+{{#each avslagsperioder}}
+
+{{#eq årsak "8311"}}
+{{>punkt}}Fra og med {{periodeFom}} til og med {{periodeTom}} får du ikke svangerskapspenger fordi du har ferie.
+{{/eq}}
+
+{{#eq årsak "8308"}}
+{{>punkt}}Fra og med {{periodeFom}} til og med {{periodeTom}} har du ikke rett til svangerskapspenger fordi du har søkt for sent. Du må søke senest tre måneder etter at perioden med svangerskapspenger har startet. Du søkte {{mottattDato}}.
+{{/eq}}
+
+{{/each}}
+{{/gt}}

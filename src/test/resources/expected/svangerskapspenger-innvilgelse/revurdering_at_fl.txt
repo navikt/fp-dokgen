@@ -1,0 +1,58 @@
+<p align="right">
+Dato: 4. mai 2021
+</p>
+<br>
+<br>
+<br>
+# NAV har endret svangerskapspengene dine
+<p style="color:gray">
+Saksnummer i NAV: 123456789
+<br/>
+Navn: Dolly Duck
+<br/>
+Fødselsnummer: 300220 12345
+<br/>
+</p>
+Vi har endret den siste dagen din med svangerskapspenger til 31. juli 2021 fordi du har fått endret termindatoen din.
+Du får i gjennomsnitt 15 000 kroner i måneden før skatt.
+Svangerskapspengene blir utbetalt for alle dager, unntatt lørdag og søndag. Fordi det ikke er like mange dager i hver måned, vil de månedlige utbetalingene dine variere.
+Pengene er på kontoen din innen den 25. hver måned. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
+##### I denne perioden får du svangerskapspenger
+Fra og med 1. juli 2021 til og med 12. juli 2021 får du 100 prosent svangerskapspenger.
+##### Dette får du utbetalt i perioden
+Fra og med 1. juli 2021 til og med 12. juli 2021 får du 500 kroner per dag før skatt. Av dette blir 200 kroner per dag betalt direkte til deg.
+Vedtaket er gjort etter folketrygdloven § 14-4.
+##### Inntekt vi har brukt i beregningen
+Vi har brukt 500 000 kroner i året før skatt i beregningen av svangerskapspengene dine.
+<!-- AT -->
+Inntekten din hos Arbeidsgiver 1 AS er 15 003 kroner i måneden.
+Arbeidsgiveren din har gitt oss disse opplysningene.
+Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.
+<!-- FL -->
+Inntekten din som frilanser er 1 000 kroner i måneden. Oppdragsgiveren eller oppdragsgiverne dine har gitt oss disse opplysningene.
+Dette er gjennomsnittet av inntekten du har hatt som arbeidstaker og frilanser de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.
+FRITEKST
+Beregningen er gjort etter folketrygdloven § 14-4.
+<br/>
+##### Du må melde fra om endringer
+Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+<br/>
+<br/>
+##### Du har rett til å klage
+Du kan klage innen  uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+##### Du har rett til innsyn
+På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
+<br/>
+<br/>
+<div style="break-inside: avoid; page-break-inside: avoid">
+##### Har du spørsmål?
+Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
+<br/>
+<br/>
+<br/>
+Med vennlig hilsen
+<br/>
+NAV Familie- og Pensjonsytelser
+</div>
