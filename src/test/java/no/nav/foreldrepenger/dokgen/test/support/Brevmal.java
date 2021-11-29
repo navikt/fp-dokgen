@@ -17,6 +17,7 @@ public enum Brevmal {
     SVANGERSKAPSPENGER_OPPHØR("svangerskapspenger-opphor"),
 
     //Støttebrev
+    FRITEKSTBREV("fritekstbrev"),
     INNHENTE_OPPLYSNINGER("innhente-opplysninger"),
     VARSEL_OM_REVURDERING("varsel-revurdering"),
     INFO_OM_HENLEGGELSE("henleggelse"),
