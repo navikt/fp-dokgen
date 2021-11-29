@@ -12,7 +12,7 @@
     "refusjonTilBruker",
     "antallRefusjonerTilArbeidsgivere",
     "månedsbeløp",
-    "klageFristUker",
+    "klagefristUker",
     "antallUttaksperioder",
     "uttaksaktiviteter",
     "utbetalingsperioder",
@@ -231,7 +231,7 @@
     "mottattDato": {
       "type": "string"
     },
-    "klageFristUker": {
+    "klagefristUker": {
       "type": "number"
     },
     "antallUttaksperioder": {
