@@ -19,7 +19,7 @@
   "stønadsperiodeTom": "31. juli 2021",
   "månedsbeløp": 15000,
   "mottattDato": "1. juli 2021",
-  "klageFristUker": 6,
+  "klagefristUker": 6,
   "antallUttaksperioder": 3,
   "uttaksaktiviteter": [
     {
