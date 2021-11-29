@@ -21,12 +21,7 @@ Fra og med 1. juli 2021 til og med 12. juli 2021 får du 50 prosent svangerskaps
 Fra og med 1. juli 2021 til og med 12. juli 2021 får du 500 kroner per dag før skatt. Av dette blir 200 kroner per dag betalt direkte til deg.
 Vedtaket er gjort etter folketrygdloven § 14-4.
 ##### Inntekt vi har brukt i beregningen
-<!-- AT -->
-<!-- FL -->
-<!-- SN -->
-Vi har beregnet svangerskapspengene dine ut fra en årsinntekt på 40 000 kroner. Dette er gjennomsnittet av inntekten du hadde i 2020, 2019 og 2018.
-<!-- SN + AT + FL -->
-Beregningen er gjort etter folketrygdloven § 14-4.
+FRITEKST
 <br/>
 ##### Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).

@@ -1,5 +1,9 @@
 ##### Inntekt vi har brukt i beregningen
 
+{{#if felles.fritekst}}
+{{felles.fritekst}}
+{{else}}
+
 {{#if (or (gt (size arbeidsforhold) 0) (if frilanser))}}
 Vi har brukt {{format-kroner bruttoBeregningsgrunnlag}} kroner i året før skatt i beregningen av svangerskapspengene dine.
 {{/if}}
@@ -65,12 +69,9 @@ Fra og med {{endringsdato}} får du {{format-kroner nyDagsats}} kroner per dag f
 Vi har fastsatt svangerskapspengene dine til to ganger grunnbeløpet fordi du har vært i militæret eller sivilforsvaret.
 {{/if}}
 
-{{#if felles.fritekst}}
-{{felles.fritekst}}
-{{/if}}
-
 {{#if inntektOver6G}}
 Svangerskapspengene dine er fastsatt til {{format-kroner seksG}} kroner i året, som er seks ganger grunnbeløpet i folketrygden. Du tjener mer enn dette, men du får ikke svangerskapspenger for den delen av inntekten som overstiger seks ganger grunnbeløpet.
 {{/if}}
 
 Beregningen er gjort etter folketrygdloven {{lovhjemmel}}.
+{{/if}}

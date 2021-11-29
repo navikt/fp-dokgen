@@ -28,6 +28,13 @@ public class SvangerskapspengerInnvilgelseTest {
     }
 
     @Test
+    public void svp_innvilgelse_fgb_sn_fritekst_beregning_nb() throws Exception {
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fgb_sn_fritekst_beregning");
+        var expected = getExpected(BREVMAL, "fgb_sn_nb_fritekst_beregning.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     public void svp_innvilgelse_revurdering_at_fl_nb() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_revurdering_at_fl");
         var expected = getExpected(BREVMAL, "revurdering_at_fl.txt");
