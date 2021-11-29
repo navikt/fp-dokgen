@@ -19,4 +19,18 @@ public class FritekstbrevTest {
         var expected = getExpected(BREVMAL, "fritekstbrev_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+
+    @Test
+    public void skal_generere_fritekstbrev_på_nynorsk() throws Exception {
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "test_fritekstbrev");
+        var expected = getExpected(BREVMAL, "fritekstbrev_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void skal_generere_fritekstbrev_på_engelsk() throws Exception {
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fritekstbrev");
+        var expected = getExpected(BREVMAL, "fritekstbrev_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
 }
