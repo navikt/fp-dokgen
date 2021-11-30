@@ -1,0 +1,21 @@
+{
+  "$id": "anke-omgjort",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for brev anke omgjort",
+  "type": "object",
+  "required": [
+    "felles",
+    "gunst"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "file:content/templates/schema_felles.json"
+    },
+    "vedtaksdato": {
+      "type": "string"
+    },
+    "gunst": {
+      "type": "boolean"
+    }
+  }
+}
