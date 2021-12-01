@@ -17,7 +17,7 @@ public class ForeldrepengerOpphørTest {
     private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_OPPHØR;
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
-    private static final String BRUKER_NAVN = "Donald Duck";
+    private static final String BRUKER_NAVN = "DONALD DUCK";
     private static final String STØNADSDATO_FOM = "01. januar 2021";
     private static final String STØNADSDATO_TOM = "24. mai 2021";
     private static final String BARN_DØDSDATO = "10. mai 2021";
@@ -53,7 +53,7 @@ public class ForeldrepengerOpphørTest {
         var testData = opprettTestData();
         testData.put(ER_SØKER_DØD, true);
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
-        assertThat(content).contains(String.format("Foreldrepengene til <div class=\"capitalize\">%s</div> er stanset", BRUKER_NAVN));
+        assertThat(content).contains(String.format("Foreldrepengene til %s er stanset", "Donald Duck"));
         assertThat(content).contains(String.format("Vi har fått melding om at %s, som mottok foreldrepenger fra og med %s, er død.", BRUKER_NAVN, STØNADSDATO_FOM));
         assertThat(content).contains(String.format("Vi sender dette brevet for å informere om at vi har stanset foreldrepengene. Siste dagen det ble utbetalt foreldrepenger var %s.", STØNADSDATO_TOM));
     }

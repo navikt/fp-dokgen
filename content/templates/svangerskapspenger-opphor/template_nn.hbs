@@ -1,7 +1,7 @@
 {{> header }}
 
 {{#eq erSøkerDød true}}
-# Svangerskapspengene til <div class="capitalize">{{felles.søkerNavn}}</div> er stanset
+# Svangerskapspengene til {{capitalize felles.søkerNavn fully=true}} er stanset
 {{> brukerdetaljer_nb }}
 {{#eq opphørtPeriode.årsak "8304" }}
 Vi har fått melding om at {{felles.søkerNavn}}, som mottok svangerskapspenger fra og med {{opphørtPeriode.stønadsperiodeFom}}, er død.
