@@ -7,13 +7,14 @@
     "felles",
     "lovhjemmel",
     "erSøkerDød",
-    "opphørPerioder"
+    "opphørtPeriode"
   ],
   "$defs": {
     "opphørPeriode": {
       "type": "object",
       "required": [
-        "årsak"
+        "årsak",
+        "antallArbeidsgivere"
       ],
       "properties": {
         "årsak": {
@@ -25,11 +26,8 @@
         "stønadsperiodeTom": {
           "type": "string"
         },
-        "arbeidsgivere": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
+        "antallArbeidsgivere": {
+          "type": "number"
         }
       }
     }
@@ -56,8 +54,8 @@
     "lovhjemmel": {
       "type": "string"
     },
-    "opphørPerioder": {
-      "type": "array",
+    "opphørtPeriode": {
+      "type": "object",
       "items": { "$ref": "#/$defs/opphørPeriode" }
     },
     "klagefristUker": {

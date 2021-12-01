@@ -12,9 +12,9 @@ public class SvangerskapspengerOpphørTest {
     private static final Brevmal BREVMAL = Brevmal.SVANGERSKAPSPENGER_OPPHØR;
 
     @Test
-    public void skal_generere_svp_opphør_med_de_fleste_avslagsårsakene_på_bokmål() throws Exception {
-        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_mange");
-        var expected = getExpected(BREVMAL, "mange_årsaker_nb.txt");
+    public void bruker_har_mottatt_sykepenger() throws Exception {
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "mottatt_sykepenger");
+        var expected = getExpected(BREVMAL, "mottatt_sykepenger_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
@@ -26,9 +26,16 @@ public class SvangerskapspengerOpphørTest {
     }
 
     @Test
-    public void test_medl_1024() throws Exception {
+    public void bruker_er_ikke_medlem() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "medl_1024");
         var expected = getExpected(BREVMAL, "medl_1024_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void bruker_er_ikke_gravid() throws Exception {
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "bruker_ikke_gravid");
+        var expected = getExpected(BREVMAL, "bruker_ikke_gravid_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 

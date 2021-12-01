@@ -8,14 +8,18 @@
     "behandlesAvKA": false,
     "erUtkast": false
   },
-  "opphørsdato": "4. mai 2021",
+  "opphørsdato": "10. mai 2021",
   "erSøkerDød": false,
+  "dødsdatoBarn": "1. mai 2021",
+  "fødselsdato": "6. mai 2021",
   "halvG": 50000,
   "lovhjemmel":"§ 14-4 og § forvaltningsloven § 35",
   "klagefristUker": 6,
   "opphørtPeriode":
     {
-      "årsak": "1024",
-      "antallArbeidsgivere": 1
+      "årsak": "8309",
+      "stønadsperiodeFom": "20. april 2021",
+      "stønadsperiodeTom": "21. april 2021",
+      "antallArbeidsgivere": 2
     }
 }
