@@ -1,7 +1,7 @@
 {{> header }}
 
 {{#eq erSøkerDød true}}
-# Foreldrepengene til <div class="capitalize">{{felles.søkerNavn}}</div> er stanset
+# Foreldrepengene til {{capitalize felles.søkerNavn fully=true}} er stanset
 {{> brukerdetaljer_nb }}
 
 Vi har fått melding om at {{felles.søkerNavn}}, som mottok foreldrepenger fra og med {{fomStønadsdato}}, er død.
