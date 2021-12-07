@@ -1,0 +1,60 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": false,
+    "saksnummer": "123456789",
+    "ytelseType": "SVP",
+    "behandlesAvKA": false,
+    "erUtkast": false
+  },
+  "revurdering": false,
+  "endretFraAvslag": false,
+  "utbetalingEndret": false,
+  "termindatoEndret": false,
+  "refusjonTilBruker": false,
+  "antallRefusjonerTilArbeidsgivere": 2,
+  "stønadsperiodeTom": "31. juli 2021",
+  "månedsbeløp": 15000,
+  "mottattDato": "1. juli 2021",
+  "klagefristUker": 6,
+  "antallUttaksperioder": 2,
+  "uttaksaktiviteter": [
+    {
+      "aktivitetsbeskrivelse": "Arbeidsgiver 1 AS",
+      "uttaksperioder": [
+        {
+          "periodeFom": "1. juli 2021",
+          "periodeTom": "12. juli 2021",
+          "utbetalingsgrad": 50.0
+        }
+      ]
+    },
+    {
+      "aktivitetsbeskrivelse": "Arbeidsgiver 2 AS",
+      "uttaksperioder": [
+        {
+          "periodeFom": "20. juli 2021",
+          "periodeTom": "31. juli 2021",
+          "utbetalingsgrad": 100.0
+        }
+      ]
+    }
+  ],
+  "utbetalingsperioder": [
+    {
+      "periodeFom": "1. juli 2021",
+      "periodeTom": "12. juli 2021",
+      "periodeDagsats": 500,
+      "utbetaltTilSøker": 200
+    },
+    {
+      "periodeFom": "20. juli 2021",
+      "periodeTom": "31. juli 2021",
+      "periodeDagsats": 1000,
+      "utbetaltTilSøker": 600
+    }
+  ],
+  "inkludereBeregning": false
+}
