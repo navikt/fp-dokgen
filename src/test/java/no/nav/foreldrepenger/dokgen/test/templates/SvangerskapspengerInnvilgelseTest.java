@@ -40,4 +40,18 @@ public class SvangerskapspengerInnvilgelseTest {
         var expected = getExpected(BREVMAL, "revurdering_at_fl.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+
+    @Test
+    public void svp_innvilgelse_2_arbeidsforhold_1_periode_hver() throws Exception {
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fgb_2_at_1_periode_hver");
+        var expected = getExpected(BREVMAL, "fgb_2_at_1_periode_hver.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void svp_innvilgelse_1_arbeidsforhold_1_periode() throws Exception {
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fgb_1_at_1_periode");
+        var expected = getExpected(BREVMAL, "fgb_1_at_1_periode.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
 }
