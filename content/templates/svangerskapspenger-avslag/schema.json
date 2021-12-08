@@ -1,0 +1,43 @@
+{
+  "$id": "svangerskapspenger-avslag",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for brev Svangerskapspenger avslag",
+  "type": "object",
+  "required": [
+    "felles",
+    "årsak",
+    "erSøkerDød",
+    "antallArbeidsgivere",
+    "lovhjemmel",
+    "klagefristUker"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "file:content/templates/schema_felles.json"
+    },
+    "årsak": {
+      "type": "string"
+    },
+    "erSøkerDød": {
+      "type": "boolean"
+    },
+    "stønadsdatoFom": {
+      "type": "string"
+    },
+    "mottattDato": {
+      "type": "string"
+    },
+    "antallArbeidsgivere": {
+      "type": "number"
+    },
+    "halvG": {
+      "type": "number"
+    },
+    "lovhjemmel": {
+      "type": "string"
+    },
+    "klagefristUker": {
+      "type": "number"
+    }
+  }
+}
