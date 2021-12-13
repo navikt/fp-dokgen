@@ -30,6 +30,7 @@ public enum Brevmal {
     KLAGE_OMGJORT("klage-omgjort"),
     KLAGE_OVERSENDT("klage-oversendt"),
     KLAGE_STADFESTET("klage-stadfestet"),
+    ETTERLYS_INNTEKTSMELDING("etterlys-inntektsmelding"),
     ;
 
     private String navn;

@@ -1,0 +1,15 @@
+{{> header }}
+
+# Vi trenger opplysninger fra arbeidsgiveren din
+{{> brukerdetaljer_nb }}
+
+Vi fikk søknaden din om {{#eq felles.ytelseType "FP" }}foreldrepenger{{else}}{{#eq felles.ytelseType "SVP" }}svangerskapspenger{{/eq}}{{/eq}} {{søknadDato}}, men mangler opplysninger for å kunne behandle den. Du må be arbeidsgiverne dine sende inntektsmelding til NAV.
+
+Hvis inntektsmelding allerede er sendt fra arbeidsgiver kan du se bort fra denne henvendelsen.
+
+Vi kan ikke behandle søknaden din om {{#eq felles.ytelseType "FP" }}foreldrepenger{{else}}{{#eq felles.ytelseType "SVP" }}svangerskapspenger{{/eq}}{{/eq}} før vi har mottatt inntektsmelding fra arbeidsgiverne dine.
+Frist for å sende inn er {{fristDato}}.
+
+<br/>
+
+{{> footer_nb }}
