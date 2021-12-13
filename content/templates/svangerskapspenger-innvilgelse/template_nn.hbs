@@ -1,0 +1,47 @@
+{{> header }}
+
+{{#if revurdering true}}# NAV har endra svangerskapspengane dine
+{{else}}# NAV har innvilga søknaden din om svangerskapspengar
+{{/if}}
+
+{{> brukerdetaljer_nn }}
+
+{{#if endretFraAvslag}}
+Vi har vurdert saka di på nytt, og du har rett til svangerskapspengar. Vi har derfor endra vedtaket du har fått tidlegare.
+{{else}}{{#if utbetalingEndret}}
+Vi har fått nye inntektsopplysningar. Derfor har vi endra det du får utbetalt.
+{{/if}}{{#if termindatoEndret}}
+Vi har endra den siste dagen din med svangerskapspengar til {{stønadsperiodeTom}} fordi du har fått endra termindato.
+{{/if}}{{/if}}
+
+Du får i gjennomsnitt {{format-kroner månedsbeløp}} kroner i månaden før skatt.
+
+{{#if refusjonTilBruker}}{{#gt antallRefusjonerTilArbeidsgivere 0}}
+Arbeidsgivaren din betaler deg lønn mens du har permisjon. Resten av svangerskapspengane får du utbetalt frå NAV innan den 25. kvar månad. Sjekk utbetalingane dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
+{{else}}
+Svangerskapspengane blir utbetalte for alle dagar, unntatt laurdag og søndag. Fordi det ikkje er like mange dagar i kvar månad, vil utbetalingane dine variere frå månad til månad.
+
+Pengane er på kontoen din innan den 25. kvar månad. Sjekk utbetalingane dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
+{{/gt}}{{else}}
+Vi betaler ut svangerskapspengane til {{#eq antallRefusjonerTilArbeidsgivere 1}}arbeidsgiveren din{{else}}arbeidsgivarane dine{{/eq}} fordi du får lønn mens du er borte frå jobben.
+{{/if}}
+
+{{> svangerskapspenger-innvilgelse/innvilget_nn }}
+{{> svangerskapspenger-innvilgelse/avslått_nn }}
+
+Vedtaket er gjort etter folketrygdlova § 14-4.
+
+{{#if inkludereBeregning}}{{> svangerskapspenger-innvilgelse/beregning_nn }}{{/if}}
+<br/>
+
+##### Du må melde frå om endringar
+Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til NAV med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+<br/>
+<br/>
+
+##### Du har rett til å klage
+Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+
+{{> footer_nn }}
