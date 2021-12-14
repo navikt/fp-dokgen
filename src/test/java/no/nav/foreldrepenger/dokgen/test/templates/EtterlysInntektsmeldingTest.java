@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
-public class EtterlysIntektsmeldingTest {
+public class EtterlysInntektsmeldingTest {
     private static final Brevmal BREVMAL = Brevmal.ETTERLYS_INNTEKTSMELDING;
 
     @Test
