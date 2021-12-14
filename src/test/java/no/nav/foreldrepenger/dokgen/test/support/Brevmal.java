@@ -15,6 +15,7 @@ public enum Brevmal {
     //Svangerskapspenger
     SVANGERSKAPSPENGER_INNVILGELSE("svangerskapspenger-innvilgelse"),
     SVANGERSKAPSPENGER_OPPHØR("svangerskapspenger-opphor"),
+    SVANGERSKAPSPENGER_AVSLAG("svangerskapspenger-avslag"),
 
     //Støttebrev
     FRITEKSTBREV("fritekstbrev"),
@@ -31,6 +32,8 @@ public enum Brevmal {
     KLAGE_OVERSENDT("klage-oversendt"),
     KLAGE_STADFESTET("klage-stadfestet"),
     ETTERLYS_INNTEKTSMELDING("etterlys-inntektsmelding"),
+    ANKE_OMGJORT("anke-omgjort"),
+    ANKE_OPPHEVET("anke-opphevet"),
     ;
 
     private String navn;

@@ -1,0 +1,43 @@
+{{> header }}
+
+
+
+# NAV Klageinstans har omgjort vedtaket ditt
+
+{{> brukerdetaljer_nb }}
+
+{{#if vedtaksdato}}
+Vi har omgjort vedtaket fra {{vedtaksdato}}.
+{{else}}
+Vi har omgjort vedtaket vårt.
+{{/if}}
+
+##### Dette har vi lagt vekt på i vurderingen vår
+{{felles.fritekst}}
+<br/>
+<br/>
+
+##### Du har rett til å anke
+Hvis du mener dette vedtaket er feil, kan du anke til Trygderetten innen seks uker fra den datoen vedtaket kom fram til deg. Du finner informasjon, skjema og førsteside for innsending på [nav.no/klage](https://nav.no/klage). Velg NAV Klageinstans Midt-Norge.
+
+Anken må være underskrevet av deg.
+
+I trygdesaker må du først anke til Trygderetten før du kan ta saken videre til lagmannsretten.
+
+<br/>
+
+##### Informasjon om fri rettshjelp
+Dette får du vite mer om hos fylkesmannen eller advokat.
+
+<br/>
+
+{{#if gunst}}
+##### Informasjon om dekning av sakskostnader
+Vi har gjort om vedtaket til din fordel. Du kan ha rett til å få dekket vesentlige kostnader som har vært nødvendige for å få endret vedtaket.
+
+Dette må du søke om innen tre uker fra den datoen dette vedtaket er kommet fram til deg. Når du søker om å få dekket utgifter til juridisk bistand, må du legge ved spesifisert timeliste og faktura. Du finner førsteside for innsending på [nav.no/klage](https://nav.no/klage). Velg NAV Klageinstans Sakskostnader.
+{{/if}}
+
+<br/>
+
+{{> footer_nb }}

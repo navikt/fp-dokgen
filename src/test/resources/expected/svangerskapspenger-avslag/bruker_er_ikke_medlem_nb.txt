@@ -4,7 +4,7 @@ Dato: 4. mai 2021
 <br>
 <br>
 <br>
-# Du har ikke lenger rett til svangerskapspenger
+# NAV har avslått søknaden din om svangerskapspenger
 <p style="color:gray">
 Saksnummer i NAV: 123456789
 <br/>
@@ -13,8 +13,9 @@ Navn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Du har ikke rett til svangerskapspenger fordi det ikke var dokumentert at du er gravid. Svangerskapspengene dine stanser derfor fra 10. mai 2021.
-Vedtaket er gjort etter folketrygdloven § 14-4 og § forvaltningsloven § 35.
+Du har ikke rett til svangerskapspenger fra 1. april 2021 fordi du ikke lenger er medlem i folketrygden.
+Du har ikke oppholdstillatelse i Norge.
+Vedtaket er gjort etter folketrygdloven § 14-4.
 <br/>
 ##### Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).

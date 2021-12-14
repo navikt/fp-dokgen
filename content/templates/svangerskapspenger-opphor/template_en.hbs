@@ -1,109 +1,109 @@
-{{> header }}
+{{> header_en }}
 
 {{#eq erSøkerDød true}}
-# Svangerskapspengene til {{capitalize felles.søkerNavn fully=true}} er stanset
-{{> brukerdetaljer_nb }}
+# Pregnancy benefits for {{capitalize felles.søkerNavn fully=true}} is stopped
+{{> brukerdetaljer_en }}
 {{#eq opphørtPeriode.årsak "8304" }}
-Vi har fått melding om at {{felles.søkerNavn}}, som mottok svangerskapspenger fra og med {{opphørtPeriode.stønadsperiodeFom}}, er død.
+We have been notified that {{felles.søkerNavn}}, who received pregnancy benefits from and including {{opphørtPeriode.stønadsperiodeFom}}, is dead.
 
-Vi sender dette brevet for å informere om at vi har stanset svangerskapspengene. Siste dagen det ble utbetalt svangerskapspenger var {{opphørtPeriode.stønadsperiodeTom}}.
+We are sending this letter to inform you that we have stopped the pregnancy benefits. The last day pregnancy benefits was paid was {{opphørtPeriode.stønadsperiodeTom}}.
 {{/eq}}
 
-Vedtaket er gjort etter folketrygdloven {{lovhjemmel}}.
+The decision has been made in accordance with the National Insurance Act {{lovhjemmel}}.
 
-Hvis dere har spørsmål om vedtaket eller ønsker å klage, finner dere skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+If you have questions about the decision or want to appeal, you will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 
-Klagefristen er {{klagefristUker}} uker fra den datoen dødsboet fikk brevet.
+You may appeal within {{klagefristUker}} weeks from the date the estate received this letter.
 
 {{else}}
-# Du har ikke lenger rett til svangerskapspenger
-{{> brukerdetaljer_nb }}
+# You are no longer entitled to pregnancy benefits
+{{> brukerdetaljer_en }}
 
 {{#in-array (array "1020" "1021" "1023" "1024" "1025" "8306") opphørtPeriode.årsak}}
 {{#neq opphørtPeriode.årsak "1024"}}
 {{#if opphørtPeriode.stønadsperiodeFom }}
-Du har ikke rett til svangerskapspenger fra {{opphørtPeriode.stønadsperiodeFom}} fordi du ikke lenger er medlem i folketrygden.
+You are not entitled to pregnancy benefits from {{opphørtPeriode.stønadsperiodeFom}} because you are not a member of the Norwegian National Insurance Scheme.
 {{/if}}
 {{else}}
-{{#eq opphørtPeriode.årsak "1024"}}Vi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.{{/eq}}
+{{#eq opphørtPeriode.årsak "1024"}}We do not have any information proving that you work or have family that supports you in Norway. It is therefore not documented that you are entitled to stay in Norway pursuant to the EEA Agreement.{{/eq}}
 {{/neq}}
 {{#eq opphørtPeriode.årsak "1020"}}
 
-Du var omfattet av trygdeordningen i et annet land.{{/eq}}
+You were covered by the social security system in another country.{{/eq}}
 {{#eq opphørtPeriode.årsak "1021"}}
 
-Ifølge folkeregisteret hadde du flyttet fra Norge.{{/eq}}
+According to the National Registry, you had moved from Norway.{{/eq}}
 {{#eq opphørtPeriode.årsak "1023"}}
 
-Du hadde ikke oppholdstillatelse i Norge.{{/eq}}
+You did not have the right to reside in Norway.{{/eq}}
 {{#eq opphørtPeriode.årsak "1025"}}
 
-Du regnes ikke som medlem fordi du oppholdt deg mer i utlandet enn i Norge.{{/eq}}
+You were not considered a member because you spent more time abroad than in Norway.{{/eq}}
 {{/in-array}}
 
 {{#in-array (array "1035" "1061") opphørtPeriode.årsak}}
-Du hadde ikke rett til svangerskapspenger fordi du ikke hadde arbeidsinntekt eller inntekt som er likestilt med lønn i minst fire uker før du måtte slutte å jobbe.
+You are not entitled to pregnancy benefits because you didn’t have earned income or income equivalent to earned income for at least four weeks before the start of the pregnancy benefits period.
 {{/in-array}}
 
 {{#eq opphørtPeriode.årsak "1041" }}
-Du hadde ikke rett til svangerskapspenger fordi inntekten din var lavere enn {{halvG}} kroner i året før skatt. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
+You are not entitled to pregnancy benefits because your income was lower than {{halvG}} kroner per year before taxes. Your pregnancy benefit therefore stops from {{opphørsdato}}.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "1060" }}
-Du hadde ikke rett til svangerskapspenger fordi det ikke var dokumentert at du er gravid. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
+You are not entitled to pregnancy benefits because it was not documented that you are pregnant. Your pregnancy benefit therefore stops from {{opphørsdato}}.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "1062" }}
-Vi har fått opplysninger om at du har mottatt sykepenger i en periode du allerede har mottatt svangerskapspenger. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
+We have received information that you have received sickness benefits for a period when you already received pregnancy benefits. Your pregnancy benefit therefore stops from {{opphørsdato}}.
 
-Dersom det blir aktuelt med svangerskapspenger fra en senere dato må du sende ny søknad om svangerskapspenger og {{#gt opphørtPeriode.antallArbeidsgivere 1}}dine arbeidsgivere{{else}}din arbeidsgiver{{/gt}} må sende ny inntektsmelding til NAV.
+If pregnancy benefits becomes relevant from a later date, you must send a new application for pregnancy benefits, and {{#gt opphørtPeriode.antallArbeidsgivere 1}}your employers{{else}}your employer{{/gt}} must send a new income report to NAV.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "1063" }}
-Du hadde ikke rett til svangerskapspenger fordi du kunne gjøre arbeidsoppgavene hos {{#gt opphørtPeriode.antallArbeidsgivere 1}}dine arbeidsgivere{{else}}din arbeidsgiver{{/gt}} uten at det var fare for å skade barnet/barna du venter. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
+You are not entitled to pregnancy benefits because you can do your tasks at  {{#gt opphørtPeriode.antallArbeidsgivere 1}}your employers {{else}}your employer {{/gt}} without the risk of harming the child/children you are expecting. Your pregnancy benefit therefore stops from {{opphørsdato}}.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "1064" }}
-Vi har fått opplysninger om at {{#gt opphørtPeriode.antallArbeidsgivere 1}}dine arbeidsgivere{{else}}din arbeidsgiver{{/gt}} kunne tilpasse eller endre arbeidsoppgavene dine uten at det var fare for å skade barnet/barna du venter. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
+We have received information that {{#gt opphørtPeriode.antallArbeidsgivere 1}}your employers{{else}}your employer{{/gt}} can adapt or change your tasks without the risk of harming the child/children you are expecting. Your pregnancy benefit therefore stops from {{opphørsdato}}.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "1065" }}
-Du hadde ikke rett til svangerskapspenger fordi du kunne gjøre arbeidsoppgavene som næringsdrivende eller frilanser uten at det var fare for å skade barnet/barna du venter. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
+You are not entitled to pregnancy benefits because you can do the work as a self-employed person or freelancer without the risk of harming the child/children you are expecting. Your pregnancy benefit therefore stops from {{opphørsdato}}.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "1066"}}
-Vi har fått opplysninger om at du som næringsdrivende eller frilanser kunne tilpasse eller endre arbeidsoppgavene dine uten at det var fare for å skade barnet/barna du venter. Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
+We have received information that you as a self-employed person or freelancer can adapt or change your tasks without the risk of harming the child/children you are expecting. Your pregnancy benefit therefore stops from {{opphørsdato}}.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "8305" }}
-Vi har fått opplysninger om at barnet ditt/barna dine døde {{dødsdatoBarn}}. Den siste dagen din med svangerskapspenger er derfor {{opphørsdato}}.
+We have received information that your child/your children died at {{dødsdatoBarn}}. Your last day on pregnancy benefits is therefore {{opphørsdato}}.
 {{/eq}}
 
 {{#in-array (array "8303" "8312") opphørtPeriode.årsak }}
-Vi har fått opplysninger om at {{#gt opphørtPeriode.antallArbeidsgivere 1}}dine arbeidsgivere{{else}}din arbeidsgiver{{/gt}} kunne tilpasse eller endre arbeidsoppgavene dine uten at det var fare for å skade barnet/barna du venter.
+We have received information that {{#gt opphørtPeriode.antallArbeidsgivere 1}}your employers{{else}}your employer{{/gt}} can adapt or change your tasks without the risk of harming the child/children you are expecting.
 
-Svangerskapspengene dine stanser derfor fra {{opphørsdato}}.
+Your pregnancy benefit therefore stops from {{opphørsdato}}.
 {{/in-array}}
 
 {{#eq opphørtPeriode.årsak "8309" }}
-Vi har fått melding om at barnet ditt ble født {{fødselsdato}}.
+We have received information that your child was born at {{fødselsdato}}.
 
-Svangerskapspengene dine stanser fra {{opphørsdato}}.
+Your pregnancy benefit therefore stops from {{opphørsdato}}.
 
-Du kan ha rett til foreldrepenger eller engangsstønad. Se [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for mer informasjon og hvordan du kan søke.
+You may be entitled to parental benefits or lump-sum grant. See [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for more information and how to apply.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "8308" }}
-Du hadde ikke rett til svangerskapspenger fordi du søkte for sent.
+You are not entitled to pregnancy benefits because you applied too late.
 {{/eq}}
 
-Vedtaket er gjort etter folketrygdloven {{lovhjemmel}}.
+The decision has been made in accordance with the National Insurance Act section {{lovhjemmel}}.
 
 <br/>
 
-##### Du har rett til å klage
-Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+##### You have the right to appeal
+You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>
 {{/eq}}
-{{> footer_nb }}
+{{> footer_en }}

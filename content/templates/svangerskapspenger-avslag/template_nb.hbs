@@ -1,0 +1,103 @@
+{{> header }}
+
+{{#eq erSøkerDød true}}
+# Søknaden om svangerskapspenger for {{capitalize felles.søkerNavn fully=true}} er trukket
+{{> brukerdetaljer_nb }}
+
+Vi har fått melding om at {{felles.søkerNavn}} er død.
+
+Vi sender dette brevet for å informere om at vi har trukket søknaden om svangerskapspenger.
+
+Vedtaket er gjort etter folketrygdloven {{lovhjemmel}}.
+
+Hvis dere har spørsmål om vedtaket eller ønsker å klage, finner dere skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+
+Klagefristen er {{klagefristUker}} uker fra den datoen dødsboet fikk brevet.
+
+{{else}}
+# NAV har avslått søknaden din om svangerskapspenger
+{{> brukerdetaljer_nb }}
+
+{{#eq årsak "1019" }}
+Vi har avslått søknaden din om svangerskapspenger som vi mottok {{mottattDato}} fordi vi ikke har mottatt dokumentasjonen vi har bedt om.
+
+Hvis du sender oss dokumentasjonen innen seks uker fra du fikk dette vedtaket, behandler vi saken din på nytt. Da trenger du ikke sende ny søknad.
+{{/eq}}
+{{#in-array (array "1020" "1021" "1023" "1024" "1025") årsak}}
+{{#neq årsak "1024"}}
+{{#if stønadsdatoFom}}
+Du har ikke rett til svangerskapspenger fra {{stønadsdatoFom}} fordi du ikke lenger er medlem i folketrygden.
+{{/if}}
+{{else}}
+{{#eq årsak "1024"}}Vi har ikke opplysninger om at du jobber eller har familie som forsørger deg i Norge. Det er derfor ikke dokumentert at du har rett til opphold etter EØS-avtalen.{{/eq}}
+{{/neq}}
+{{#eq årsak "1020"}}
+
+Du er omfattet av trygdeordningen i et annet land.{{/eq}}
+{{#eq årsak "1021"}}
+
+Ifølge folkeregisteret har du flyttet fra Norge.{{/eq}}
+{{#eq årsak "1023"}}
+
+Du har ikke oppholdstillatelse i Norge.{{/eq}}
+{{#eq årsak "1025"}}
+
+Du regnes ikke som medlem fordi du oppholder deg mer i utlandet enn i Norge.{{/eq}}
+{{/in-array}}
+
+{{#in-array (array "1035" "1061") årsak}}
+Du har ikke rett til svangerskapspenger fordi du ikke har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i minst fire uker før du måtte slutte å jobbe.
+{{/in-array}}
+
+{{#eq årsak "1041" }}
+Du har ikke rett til svangerskapspenger fordi inntekten din var lavere enn {{halvG}} kroner i året før skatt.
+{{/eq}}
+
+{{#eq årsak "1060" }}
+Du har ikke rett til svangerskapspenger fordi det ikke var dokumentert at du er gravid.
+{{/eq}}
+
+{{#eq årsak "1062" }}
+Vi har fått opplysninger om at du er 100 prosent sykmeldt i samme periode som du søker svangerskapspenger. Du fyller dermed ikke vilkårene for å motta svangerskapspenger.
+
+Dersom du har behov for svangerskapspenger etter endt sykmelding, må du sende inn en ny søknad og arbeidsgiver må sende inn en ny inntektsmelding.
+{{/eq}}
+
+{{#eq årsak "1063" }}
+Du har ikke rett til svangerskapspenger fordi du kan gjøre arbeidsoppgavene hos {{#gt antallArbeidsgivere 1}}dine arbeidsgivere{{else}}din arbeidsgiver{{/gt}} uten at det er fare for å skade barnet/barna du venter.
+
+Vi har ikke mottatt opplysninger om at det er nødvending med tilpasninger, eller at du må endre arbeidsoppgavene dine hos {{#gt antallArbeidsgivere 1}}dine arbeidsgivere{{else}}din arbeidsgiver{{/gt}}. Hvis du ikke kan jobbe fordi du er syk, kan du ha rett til sykepenger.
+{{/eq}}
+
+{{#eq årsak "1064" }}
+Vi har fått opplysninger om at {{#gt antallArbeidsgivere 1}}dine arbeidsgivere{{else}}din arbeidsgiver{{/gt}} kan tilpasse eller endre arbeidsoppgavene dine uten at det var fare for å skade barnet/barna du venter.
+{{/eq}}
+
+{{#eq årsak "1065" }}
+Du hadde ikke rett til svangerskapspenger fordi du kunne gjøre arbeidsoppgavene som næringsdrivende eller frilanser uten at det var fare for å skade barnet/barna du venter.
+{{/eq}}
+
+{{#eq årsak "1066"}}
+Vi har fått opplysninger om at du som næringsdrivende eller frilanser kan tilpasse eller endre arbeidsoppgavene dine uten at det var fare for å skade barnet/barna du venter.
+{{/eq}}
+
+{{#eq årsak "8311"}}
+Du får ikke svangerskapspenger fra og med {{stønadsDatoFom}} til og med {{stønadsDatoTom}} fordi du har ferie.
+{{/eq}}
+
+{{#eq årsak "8308"}}
+Du får ikke svangerskapspenger fra og med {{stønadsDatoFom}} til og med {{stønadsDatoTom}} fordi du har søkt for sent.
+
+Du må søke senest tre måneder etter at perioden med svangerskapspenger har startet. Du søkte {{mottattDato}}.
+{{/eq}}
+
+Vedtaket er gjort etter folketrygdloven {{lovhjemmel}}.
+
+<br/>
+
+##### Du har rett til å klage
+Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+{{/eq}}
+{{> footer_nb }}
