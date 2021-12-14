@@ -4,7 +4,7 @@ Dato: 4. mai 2021
 <br>
 <br>
 <br>
-# Du har ikkje lenger rett til svangerskapspengar
+# NAV har avslått søknaden din om svangerskapspengar
 <p style="color:gray">
 Saksnummer i NAV: 123456789
 <br/>
@@ -13,8 +13,10 @@ Namn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Vi har ikkje opplysningar om at du jobba eller hadde familie som forsørga deg i Noreg. Det var derfor ikkje dokumentert at du hadde rett til opphald etter EØS-avtalen.
-Vedtaket er gjort etter folketrygdlova  § 14-4 og § forvaltningsloven § 35.
+Hvis du sender oss dokumentasjonen innan seks veker frå du fekk dette vedtaket, behandlar vi saken din på nytt. Da trenger du ikkje sende ny søknad.
+Du har ikkje rett til svangerskapspengar frå 1. april 2021 fordi du ikkje lenger er medlem i folketrygda.
+Du har ikkje opphaldsløyve i Noreg.
+Vedtaket er gjort etter folketrygdlova § 14-4.
 <br/>
 ##### Du har rett til å klage
 Du kan klage innan 6 veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
