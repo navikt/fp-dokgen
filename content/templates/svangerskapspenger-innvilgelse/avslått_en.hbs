@@ -1,0 +1,46 @@
+{{#gt (size avslåtteAktiviteter) 0}}
+
+{{~#* inline "punkt" ~}}
+{{~#gt (size avslåtteAktiviteter) 1}}* {{/gt}}
+{{~/inline~}}
+
+{{#each avslåtteAktiviteter}}
+
+{{#eq årsak "8312"}}
+{{>punkt}}You are not entitled to pregnancy benefits {{#if arbeidsgiverNavn}}from {{arbeidsgiverNavn}}{{else if erFL}}as freelancer{{else if erSN}}as a self-employed person{{/if}} because you can adapt or change your tasks without the risk of harming the child/children you are expecting up to three weeks before due date.
+{{/eq}}
+
+{{#eq årsak "8303"}}
+{{>punkt}}You are not entitled to pregnancy benefits {{#if arbeidsgiverNavn}}from {{arbeidsgiverNavn}}{{else if erFL}}as freelancer{{else if erSN}}as a self-employed person{{/if}} because you can adapt or change your tasks without the risk of harming the child/children you are expecting.
+{{/eq}}
+
+{{#eq årsak "8301"}}
+{{>punkt}}You are not entitled to pregnancy benefits because it’s less than three weeks until due date.
+
+  You may be entitled to parental benefits or lump-sum grant. See [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for more information and how to apply.
+{{/eq}}
+
+{{/each}}
+{{/gt}}
+
+
+{{#gt (size avslagsperioder) 0}}
+
+##### During {{#gt (size avslagsperioder) 1}}these periods{{else}}this period{{/gt}} you are not entitled to pregnancy benefits
+
+{{~#* inline "punkt" ~}}
+{{~#gt (size avslagsperioder) 1}}* {{/gt}}
+{{~/inline~}}
+
+{{#each avslagsperioder}}
+
+{{#eq årsak "8311"}}
+{{>punkt}}From {{periodeFom}} up to and including {{periodeTom}} you are not entitled to pregnancy benefits because you are on holiday.
+{{/eq}}
+
+{{#eq årsak "8308"}}
+{{>punkt}}From {{periodeFom}} up to and including {{periodeTom}} you are not entitled to pregnancy benefits because you applied too late. You must apply no later than three months after your period with pregnancy benefits has started. You applied {{mottattDato}}.
+{{/eq}}
+
+{{/each}}
+{{/gt}}
