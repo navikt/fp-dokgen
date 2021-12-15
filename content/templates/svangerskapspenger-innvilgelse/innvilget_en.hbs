@@ -1,0 +1,26 @@
+##### You will receive pregnancy benefits in {{#gt antallUttaksperioder 1}}these periods{{else}}this period{{/gt}}
+
+{{#each uttaksaktiviteter}}
+
+{{#gt antallUttaksperioder 1}}{{#unless (and (eq @index 0) @last)}}{{aktivitetsbeskrivelse}}:{{/unless}}{{/gt}}
+
+{{#each uttaksperioder}}
+
+{{~#* inline "punkt" ~}}
+{{~#gt antallUttaksperioder 1}}* {{/gt}}
+{{~/inline~}}
+
+{{>punkt}}From {{periodeFom}} up to and including {{periodeTom}}{{~#lt utbetalingsgrad 100.0}}, you will receive {{trim-decimal utbetalingsgrad}} percent pregnancy benefits because you work part time{{else}} you will receive 100 percent pregnancy benefits{{/lt}}.
+{{/each}}{{/each}}
+
+
+##### This is what you will be paid
+
+{{#each utbetalingsperioder}}
+
+{{~#* inline "punkt" ~}}
+{{~#gt (size utbetalingsperioder) 1}}* {{/gt}}
+{{~/inline~}}
+
+{{>punkt}}From {{periodeFom}} up to and including {{periodeTom}}, you will receive {{format-kroner periodeDagsats}} kroner per day before taxes.{{~#neq periodeDagsats utbetaltTilSøker}} Of this, {{format-kroner utbetaltTilSøker}} kroner per day is paid directly to you.{{/neq}}
+{{/each}}

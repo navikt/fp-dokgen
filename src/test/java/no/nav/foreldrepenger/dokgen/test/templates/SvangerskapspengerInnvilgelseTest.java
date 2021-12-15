@@ -28,9 +28,9 @@ public class SvangerskapspengerInnvilgelseTest {
     }
 
     @Test
-    public void svp_innvilgelse_fgb_at_fl_sn_en_skal_gi_nb() throws Exception {
+    public void svp_innvilgelse_fgb_at_fl_sn_en() throws Exception {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fgb_at_fl_sn");
-        var expected = getExpected(BREVMAL, "fgb_at_fl_sn_nb.txt");
+        var expected = getExpected(BREVMAL, "fgb_at_fl_sn_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 

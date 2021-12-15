@@ -1,1 +1,47 @@
-{{> svangerskapspenger-innvilgelse/template_nb }}
+{{> header_en }}
+
+{{#if revurdering true}}# NAV has changed your pregnancy benefits
+{{else}}# NAV has approved your application for pregnancy benefits
+{{/if}}
+
+{{> brukerdetaljer_en }}
+
+{{#if endretFraAvslag}}
+We have reconsidered your case, and you are entitled to pregnancy benefits. We have therefore changed the decision you previously have received.
+{{else}}{{#if utbetalingEndret}}
+We have received new income information. We have therefore changed the amount you are going to be paid.
+{{/if}}{{#if termindatoEndret}}
+We have changed your last day with pregnancy benefits to {{stønadsperiodeTom}} because your due date has changed.
+{{/if}}{{/if}}
+
+You will receive {{format-kroner månedsbeløp}} kroner per day before taxes.
+
+{{#if refusjonTilBruker}}{{#gt antallRefusjonerTilArbeidsgivere 0}}
+Your employer pays you a salary while you are away from work. You will receive the rest of the pregnancy benefits from NAV by the 25th of each month. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).
+{{else}}
+Your pregnancy benefits are paid for all days, except Saturday and Sunday. Because the number of days per month vary, your monthly payments will also vary.
+
+The money is in your account by the 25th of each month. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).
+{{/gt}}{{else}}
+We pay pregnancy benefits to your {{#eq antallRefusjonerTilArbeidsgivere 1}}employer{{else}}employers{{/eq}} because you get paid while you are away from work.
+{{/if}}
+
+{{> svangerskapspenger-innvilgelse/innvilget_en }}
+{{> svangerskapspenger-innvilgelse/avslått_en }}
+
+The decision was made in accordance with the National Insurance Act § 14-4.
+
+{{#if inkludereBeregning}}{{> svangerskapspenger-innvilgelse/beregning_en }}{{/if}}
+<br/>
+
+##### You must notify any changes
+You must notify NAV immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt).
+<br/>
+<br/>
+
+##### You have the right to appeal
+You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+
+{{> footer_en }}
