@@ -28,6 +28,13 @@ public class KlageAvvistTest {
     }
 
     @Test
+    public void klage_avvist_fp_ka_tilbakekreving_alle_en_på_nb() throws Exception {
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fp_ka_tilbakekreving_alle");
+        var expected = getExpected(BREVMAL, "fp_ka_tilbakekreving_alle_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     public void klage_avvist_svp_nfp_ikke_tilbakekreving_en_nb() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_svp_nfp_ikke-tilbakekreving_en");
         var expected = getExpected(BREVMAL, "svp_nfp_ikke-tilbakekreving_nb.txt");

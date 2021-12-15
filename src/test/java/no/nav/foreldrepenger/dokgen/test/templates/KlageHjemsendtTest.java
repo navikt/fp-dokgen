@@ -28,6 +28,13 @@ public class KlageHjemsendtTest {
     }
 
     @Test
+    public void klage_hjemsendt_fp_opphevet_tilbakekreving_en_på_nb() throws Exception {
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fp_opphevet_tilbakekreving");
+        var expected = getExpected(BREVMAL, "fp_opphevet_tilbakekreving_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     public void klage_hjemsendt_es_ikke_opphevet_ikke_tilbakekreving_nb() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_es_ikke-opphevet_ikke-tilbakekreving");
         var expected = getExpected(BREVMAL, "es_ikke-opphevet_ikke-tilbakekreving_nb.txt");
