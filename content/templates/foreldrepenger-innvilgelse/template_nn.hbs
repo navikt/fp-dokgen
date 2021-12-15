@@ -80,12 +80,9 @@ Perioden med foreldrepengar startar tre veker før termin. Du fødde før termin
 {{/if}}
 
 {{#eq dekningsgrad 80}}
-{{#eq behandlingType "FØRSTEGANGSSØKNAD"}}
-{{> foreldrepenger-innvilgelse/mindre_utbetalt_nn }}
-{{/eq}}
-{{#if (and (eq behandlingType "REVURDERING") (eq behandlingResultatType "INNVILGET"))}}
-{{> foreldrepenger-innvilgelse/mindre_utbetalt_nn }}{{/if}}
-{{/eq}}
+{{#if (or (eq behandlingType "FØRSTEGANGSSØKNAD") (and (eq behandlingType "REVURDERING") (eq behandlingResultatType "INNVILGET")))}}
+Fordi du har valt 80 prosent foreldrepengar, får du mindre utbetalt i månaden.
+{{/if}}{{/eq}}
 
 {{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
 {{> foreldrepenger-innvilgelse/felles/lovhjemler_beregning_nn }}

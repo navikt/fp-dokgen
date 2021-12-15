@@ -78,9 +78,9 @@
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
 {{>punkt}}Du tek ut {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi du jobbar {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{format-kroner periodeDagsats}} kroner per dag før skatt.
 {{#each arbeidsforholdsliste}}
-{{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0))}} {{#if (and (lt this.stillingsprosent 100.0) (eq this.gradering false))}} {{#if (or (eq delvisRefusjon true) (eq fullRefusjon true))}}
+{{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0) (lt this.stillingsprosent 100.0) (eq this.gradering false) (or (eq delvisRefusjon true) (eq fullRefusjon true)))}}
   Du jobbar ikkje i heile deltidsstillinga di hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepengar både frå arbeidsgivaren din og frå NAV.
-{{/if}}{{/if}}{{/if}}{{/if}}
+{{/if}}{{/if}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (eq this.utbetalingsgrad 100.0) (eq this.gradering false))}}
   I same perioden tek du ut 100 prosent permisjon hos {{this.arbeidsgiverNavn}}.
 {{/if}}{{/if}}
