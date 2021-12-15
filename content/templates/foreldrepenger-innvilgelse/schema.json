@@ -1,7 +1,7 @@
 {
-  "$id": "innvilget-foreldrepenger",
+  "$id": "foreldrepenger-innvilgelse",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Dokumentdata for brev Innvilget Foreldrepenger",
+  "description": "Dokumentdata for brev Foreldrepenger innvilgelse",
   "type": "object",
   "required": [
     "felles",

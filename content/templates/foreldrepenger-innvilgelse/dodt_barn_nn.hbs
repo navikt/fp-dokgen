@@ -10,14 +10,14 @@ Vi har gjort om søknaden din frå 80 prosent til 100 prosent foreldrepengar.
 
 Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{format-kroner månedsbeløp}} kroner i månaden.
 
-{{> innvilget-foreldrepenger/felles/refusjon_nn }}
+{{> foreldrepenger-innvilgelse/felles/refusjon_nn }}
 
 {{#if (and (neq lovhjemlerUttak "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
-{{> innvilget-foreldrepenger/felles/lovhjemler_uttak_nn }}
+{{> foreldrepenger-innvilgelse/felles/lovhjemler_uttak_nn }}
 {{/if}}
 
 {{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
-{{> innvilget-foreldrepenger/beregning_nn }}
+{{> foreldrepenger-innvilgelse/beregning_nn }}
 {{else}}
 {{#if felles.fritekst}}
 {{felles.fritekst}}
@@ -25,10 +25,10 @@ Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennoms
 {{/neq}}
 
 {{#if (and (eq inntektOverSeksG true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-{{> innvilget-foreldrepenger/felles/over_seksG_nn }}
+{{> foreldrepenger-innvilgelse/felles/over_seksG_nn }}
 {{/if}}
 
 {{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-{{> innvilget-foreldrepenger/felles/lovhjemler_beregning_nn }}
+{{> foreldrepenger-innvilgelse/felles/lovhjemler_beregning_nn }}
 {{/if}}
 <br/>

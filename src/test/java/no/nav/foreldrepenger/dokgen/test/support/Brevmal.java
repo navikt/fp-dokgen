@@ -6,7 +6,7 @@ public enum Brevmal {
     ENGANGSSTØNAD_AVSLAG("engangsstonad-avslag"),
 
     //Foreldrepenger
-    FORELDREPENGER_INNVILGELSE("innvilget-foreldrepenger"),
+    FORELDREPENGER_INNVILGELSE("foreldrepenger-innvilgelse"),
     FORELDREPENGER_AVSLAG("foreldrepenger-avslag"),
     FORELDREPENGER_OPPHØR("foreldrepenger-opphor"),
     FORELDREPENGER_ANNULLERT("foreldrepenger-annullert"),

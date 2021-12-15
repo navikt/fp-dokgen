@@ -10,14 +10,14 @@ We have changed your parental benefit from 80 per cent to 100 per cent.
 
 You will receive {{format-kroner dagsats}} kroner per day before taxes. This is {{format-kroner månedsbeløp}} kroner on average per month.
 
-{{> innvilget-foreldrepenger/felles/refusjon_en }}
+{{> foreldrepenger-innvilgelse/felles/refusjon_en }}
 
 {{#if (and (neq lovhjemlerUttak "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
-{{> innvilget-foreldrepenger/felles/lovhjemler_uttak_en }}
+{{> foreldrepenger-innvilgelse/felles/lovhjemler_uttak_en }}
 {{/if}}
 
 {{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
-{{> innvilget-foreldrepenger/beregning_en }}
+{{> foreldrepenger-innvilgelse/beregning_en }}
 {{else}}
 {{#if felles.fritekst}}
 {{felles.fritekst}}
@@ -25,10 +25,10 @@ You will receive {{format-kroner dagsats}} kroner per day before taxes. This is 
 {{/neq}}
 
 {{#if (and (eq inntektOverSeksG true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-{{> innvilget-foreldrepenger/felles/over_seksG_en }}
+{{> foreldrepenger-innvilgelse/felles/over_seksG_en }}
 {{/if}}
 
 {{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-{{> innvilget-foreldrepenger/felles/lovhjemler_beregning_en }}
+{{> foreldrepenger-innvilgelse/felles/lovhjemler_beregning_en }}
 {{/if}}
 <br/>

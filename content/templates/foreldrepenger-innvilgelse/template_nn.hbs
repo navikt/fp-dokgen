@@ -11,24 +11,24 @@
 {{> brukerdetaljer_nn }}
 
 {{#gt antallDødeBarn 0}}
-{{> innvilget-foreldrepenger/dodt_barn_nn }}
+{{> foreldrepenger-innvilgelse/dodt_barn_nn }}
 {{else}}
 {{#if (and (eq behandlingType "REVURDERING")(eq behandlingResultatType "INNVILGET"))}}Vi har vurdert saka di på nytt, og du har rett til foreldrepengar. Vi har derfor endra vedtaket du har fått tidlegare.{{/if}}
 
-{{#if inkludereUtbetaling}}{{> innvilget-foreldrepenger/utbetaling_nn }}{{/if}}
+{{#if inkludereUtbetaling}}{{> foreldrepenger-innvilgelse/utbetaling_nn }}{{/if}}
 
 {{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysningar. Derfor har vi endra det du får utbetalt.
 
 {{#gt dagsats 0}}Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{format-kroner månedsbeløp}} kroner i månaden. Sjekk utbetalingane dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
 {{/gt}}{{/eq}}
 
-{{#if inkludereInnvilget}}{{> innvilget-foreldrepenger/innvilget_nn }}{{/if}}
+{{#if inkludereInnvilget}}{{> foreldrepenger-innvilgelse/innvilget_nn }}{{/if}}
 
 {{#if inkludereNyeOpplysningerUtbet}}
 Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{format-kroner månedsbeløp}} kroner i månaden. Sjekk utbetalingane dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
 {{/if}}
 
-{{#if inkludereUtbetNårGradering}}{{> innvilget-foreldrepenger/utbetaling_nn }}{{/if}}
+{{#if inkludereUtbetNårGradering}}{{> foreldrepenger-innvilgelse/utbetaling_nn }}{{/if}}
 
 {{~#if sisteDagAvSistePeriode}}
 {{#gt disponibleDager 0}}
@@ -50,7 +50,7 @@ Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dagar{{/eq}} igje
 Du jobbar hos fleire arbeidsgivarar i same periode. Det er berre mogleg å kombinere foreldrepengar med arbeid hos éin arbeidsgivar om gongen. Det betyr at det berre er perioden din hos {{this.arbeidsgiverNavn}} som blir forlengd.
 {{/if}}{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
 
-{{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_nn }}{{/if}}
+{{#if inkludereAvslag}}{{> foreldrepenger-innvilgelse/avslag_nn }}{{/if}}
 
 {{#if (and (eq barnErFødt true) (eq gjelderMor true) (eq årsakErFødselshendelse true))}}
 {{#gt dagerTaptFørTermin 0}}
@@ -64,11 +64,11 @@ Perioden med foreldrepengar startar tre veker før termin. Du fødde før termin
 {{/if}}
 
 {{#if (and (neq lovhjemlerUttak "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
-{{> innvilget-foreldrepenger/felles/lovhjemler_uttak_nn }}
+{{> foreldrepenger-innvilgelse/felles/lovhjemler_uttak_nn }}
 {{/if}}
 
 {{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
-{{> innvilget-foreldrepenger/beregning_nn }}
+{{> foreldrepenger-innvilgelse/beregning_nn }}
 {{else}}
 {{#if felles.fritekst}}
 {{felles.fritekst}}
@@ -76,19 +76,19 @@ Perioden med foreldrepengar startar tre veker før termin. Du fødde før termin
 {{/neq}}
 
 {{#if (and (eq inntektOverSeksG true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-{{> innvilget-foreldrepenger/felles/over_seksG_nn }}
+{{> foreldrepenger-innvilgelse/felles/over_seksG_nn }}
 {{/if}}
 
 {{#eq dekningsgrad 80}}
 {{#eq behandlingType "FØRSTEGANGSSØKNAD"}}
-{{> innvilget-foreldrepenger/mindre_utbetalt_nn }}
+{{> foreldrepenger-innvilgelse/mindre_utbetalt_nn }}
 {{/eq}}
 {{#if (and (eq behandlingType "REVURDERING") (eq behandlingResultatType "INNVILGET"))}}
-{{> innvilget-foreldrepenger/mindre_utbetalt_nn }}{{/if}}
+{{> foreldrepenger-innvilgelse/mindre_utbetalt_nn }}{{/if}}
 {{/eq}}
 
 {{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-{{> innvilget-foreldrepenger/felles/lovhjemler_beregning_nn }}
+{{> foreldrepenger-innvilgelse/felles/lovhjemler_beregning_nn }}
 {{/if}}
 
 {{#if (and (eq inntektMottattArbeidsgiver true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}

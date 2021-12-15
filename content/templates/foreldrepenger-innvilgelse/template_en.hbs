@@ -11,24 +11,24 @@
 {{> brukerdetaljer_en }}
 
 {{#gt antallDødeBarn 0}}
-{{> innvilget-foreldrepenger/dodt_barn_en }}
+{{> foreldrepenger-innvilgelse/dodt_barn_en }}
 {{else}}
 {{#if (and (eq behandlingType "REVURDERING")(eq behandlingResultatType "INNVILGET"))}}We have reconsidered your case, and you are entitled to parental benefit. We have therefore changed the decision you previously have received.{{/if}}
 
-{{#if inkludereUtbetaling}}{{> innvilget-foreldrepenger/utbetaling_en }}{{/if}}
+{{#if inkludereUtbetaling}}{{> foreldrepenger-innvilgelse/utbetaling_en }}{{/if}}
 
 {{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}We have received new income information. We have therefore changed the amount you are going to be paid.
 
 {{#gt dagsats 0}}You will receive {{format-kroner dagsats}} kroner per day before taxes. This amounts to {{format-kroner månedsbeløp}} kroner per month, on average. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).
 {{/gt}}{{/eq}}
 
-{{#if inkludereInnvilget}}{{> innvilget-foreldrepenger/innvilget_en }}{{/if}}
+{{#if inkludereInnvilget}}{{> foreldrepenger-innvilgelse/innvilget_en }}{{/if}}
 
 {{#if inkludereNyeOpplysningerUtbet}}
 You will receive {{format-kroner dagsats}} kroner per day before taxes. This amounts to {{format-kroner månedsbeløp}} kroner per month, on average. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).
 {{/if}}
 
-{{#if inkludereUtbetNårGradering}}{{> innvilget-foreldrepenger/utbetaling_en}}{{/if}}
+{{#if inkludereUtbetNårGradering}}{{> foreldrepenger-innvilgelse/utbetaling_en}}{{/if}}
 
 {{~#if sisteDagAvSistePeriode}}
 {{#gt disponibleDager 0}}
@@ -50,7 +50,7 @@ There are {{disponibleDager}} {{#eq disponibleDager 1}}day{{else}}days{{/eq}} le
 You are working for several employers during the same period. It is only possible to combine parental benefit with work at one employer at a time. This means that it is only your period at {{this.arbeidsgiverNavn}} that will be extended.
 {{/if}}{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
 
-{{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_en }}{{/if}}
+{{#if inkludereAvslag}}{{> foreldrepenger-innvilgelse/avslag_en }}{{/if}}
 
 {{#if (and (eq barnErFødt true) (eq gjelderMor true) (eq årsakErFødselshendelse true))}}
 {{#gt dagerTaptFørTermin 0}}
@@ -64,11 +64,11 @@ The parental benefit period starts three weeks before the estimated date of deli
 {{/if}}
 
 {{#if (and (neq lovhjemlerUttak "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
-{{> innvilget-foreldrepenger/felles/lovhjemler_uttak_en }}
+{{> foreldrepenger-innvilgelse/felles/lovhjemler_uttak_en }}
 {{/if}}
 
 {{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
-{{> innvilget-foreldrepenger/beregning_en }}
+{{> foreldrepenger-innvilgelse/beregning_en }}
 {{else}}
 {{#if felles.fritekst}}
 {{felles.fritekst}}
@@ -76,19 +76,19 @@ The parental benefit period starts three weeks before the estimated date of deli
 {{/neq}}
 
 {{#if (and (eq inntektOverSeksG true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-{{> innvilget-foreldrepenger/felles/over_seksG_en }}
+{{> foreldrepenger-innvilgelse/felles/over_seksG_en }}
 {{/if}}
 
 {{#eq dekningsgrad 80}}
 {{#eq behandlingType "FØRSTEGANGSSØKNAD"}}
-{{> innvilget-foreldrepenger/mindre_utbetalt_en }}
+{{> foreldrepenger-innvilgelse/mindre_utbetalt_en }}
 {{/eq}}
 {{#if (and (eq behandlingType "REVURDERING") (eq behandlingResultatType "INNVILGET"))}}
-{{> innvilget-foreldrepenger/mindre_utbetalt_en }}{{/if}}
+{{> foreldrepenger-innvilgelse/mindre_utbetalt_en }}{{/if}}
 {{/eq}}
 
 {{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-{{> innvilget-foreldrepenger/felles/lovhjemler_beregning_en }}
+{{> foreldrepenger-innvilgelse/felles/lovhjemler_beregning_en }}
 {{/if}}
 
 {{#if (and (eq inntektMottattArbeidsgiver true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}

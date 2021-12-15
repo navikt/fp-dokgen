@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
-public class InnvilgetForeldrepengerDødtBarnTest {
+public class ForeldrepengerInnvilgelseDødtBarnTest {
     private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_INNVILGELSE;
     private static final String UNDERMAL = "dodt_barn";
 
