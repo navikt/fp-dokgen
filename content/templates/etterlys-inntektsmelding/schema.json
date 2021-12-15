@@ -1,0 +1,22 @@
+{
+  "$id": "etterlys-inntektsmelding",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for brev etterlys inntektsmelding",
+  "type": "object",
+  "required": [
+    "felles",
+    "søknadDato",
+    "fristDato"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "file:content/templates/schema_felles.json"
+    },
+    "søknadDato": {
+      "type": "string"
+    },
+    "fristDato": {
+      "type": "string"
+    }
+  }
+}
