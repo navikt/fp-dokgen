@@ -1,0 +1,122 @@
+{{> header_en }}
+<br/>
+<br/>
+{{#if (and (eq behandlingType "FØRSTEGANGSSØKNAD") (eq behandlingResultatType "INNVILGET"))}}
+# NAV has approved your application for {{dekningsgrad}} per cent parental benefit
+{{else if (and (eq behandlingResultatType "FORELDREPENGER_ENDRET") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
+# NAV has recalculated your parental benefit
+{{else}}
+# NAV has changed your parental benefit period
+{{/if}}
+{{> brukerdetaljer_en }}
+
+{{#gt antallDødeBarn 0}}
+{{> innvilget-foreldrepenger/dodt_barn_en }}
+{{else}}
+{{#if (and (eq behandlingType "REVURDERING")(eq behandlingResultatType "INNVILGET"))}}We have reconsidered your case, and you are entitled to parental benefit. We have therefore changed the decision you previously have received.{{/if}}
+
+{{#if inkludereUtbetaling}}{{> innvilget-foreldrepenger/utbetaling_en }}{{/if}}
+
+{{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}We have received new income information. We have therefore changed the amount you are going to be paid.
+
+{{#gt dagsats 0}}You will receive {{format-kroner dagsats}} kroner per day before taxes. This amounts to {{format-kroner månedsbeløp}} kroner per month, on average. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).
+{{/gt}}{{/eq}}
+
+{{#if inkludereInnvilget}}{{> innvilget-foreldrepenger/innvilget_en }}{{/if}}
+
+{{#if inkludereNyeOpplysningerUtbet}}
+You will receive {{format-kroner dagsats}} kroner per day before taxes. This amounts to {{format-kroner månedsbeløp}} kroner per month, on average. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).
+{{/if}}
+
+{{#if inkludereUtbetNårGradering}}{{> innvilget-foreldrepenger/utbetaling_en}}{{/if}}
+
+{{~#if sisteDagAvSistePeriode}}
+{{#gt disponibleDager 0}}
+{{~#if (or (eq annenForelderHarRett false) (eq aleneomsorgKode "JA"))}}
+There are {{disponibleDager}} {{#gt disponibleDager 1}}days{{else}}day{{/gt}} remaining of the parental benefit period. {{#if kreverSammenhengendeUttak}}You must apply for {{#gt disponibleDager 1}}these days{{else}}this day{{/gt}} by {{sisteDagAvSistePeriode}}{{else}}{{#gt disponibleDager 1}}These days{{else}}This day{{/gt}} must be withdrawn before the child reaches the age of three, or before a new period of parental benefit starts for a new child{{/if}}.{{/if}}{{/gt}}
+{{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
+{{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))}}
+There are {{disponibleDager}} {{#eq disponibleDager 1}}day{{else}}days{{/eq}} left of your quota and {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}day{{else}}days{{/eq}} left that you both can take.
+{{~#if (and (lt disponibleDager 2) (lt disponibleFellesDager 2))}} This day{{else}} These days{{/if}} {{#if kreverSammenhengendeUttak}}must be applied for by {{sisteDagAvSistePeriode}}{{else}}must be withdrawn before the child reaches the age of three, or before a new period of parental benefit starts for a new child{{/if}}.
+{{/if}}{{/if}}{{/if}}
+
+{{~#gt antallArbeidsgivere 1}}
+{{~#each perioder}}{{#if @first}}
+{{~#each arbeidsforholdsliste}}
+{{#if @..first}}
+{{#if this.gradering}}
+##### You have more than one employer
+
+You are working for several employers during the same period. It is only possible to combine parental benefit with work at one employer at a time. This means that it is only your period at {{this.arbeidsgiverNavn}} that will be extended.
+{{/if}}{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
+
+{{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_en }}{{/if}}
+
+{{#if (and (eq barnErFødt true) (eq gjelderMor true) (eq årsakErFødselshendelse true))}}
+{{#gt dagerTaptFørTermin 0}}
+{{#if (or (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING_OG_UTTAK"))}}
+{{#if stønadsperiodeTom }}
+We have changed your last day of parental benefit to {{stønadsperiodeTom}}.
+{{/if}}
+The parental benefit period starts three weeks before the estimated date of delivery. Since you gave birth before the estimated date of delivery, you lose {{dagerTaptFørTermin}}{{#gt dagerTaptFørTermin 1}}days{{else}}day{{/gt}} of parental benefit.
+{{/if}}
+{{/gt}}
+{{/if}}
+
+{{#if (and (neq lovhjemlerUttak "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
+{{> innvilget-foreldrepenger/felles/lovhjemler_uttak_en }}
+{{/if}}
+
+{{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
+{{> innvilget-foreldrepenger/beregning_en }}
+{{else}}
+{{#if felles.fritekst}}
+{{felles.fritekst}}
+{{/if}}
+{{/neq}}
+
+{{#if (and (eq inntektOverSeksG true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
+{{> innvilget-foreldrepenger/felles/over_seksG_en }}
+{{/if}}
+
+{{#eq dekningsgrad 80}}
+{{#eq behandlingType "FØRSTEGANGSSØKNAD"}}
+{{> innvilget-foreldrepenger/mindre_utbetalt_en }}
+{{/eq}}
+{{#if (and (eq behandlingType "REVURDERING") (eq behandlingResultatType "INNVILGET"))}}
+{{> innvilget-foreldrepenger/mindre_utbetalt_en }}{{/if}}
+{{/eq}}
+
+{{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
+{{> innvilget-foreldrepenger/felles/lovhjemler_beregning_en }}
+{{/if}}
+
+{{#if (and (eq inntektMottattArbeidsgiver true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
+If your employer provides new information about the income you had before you started your parental benefit period, you will receive a new decision with a new calculation.
+{{/if}}
+
+{{#if (or (eq forMyeUtbetalt "FERIE")(eq forMyeUtbetalt "JOBB"))}}
+##### What happens if you receive parental benefit and salary for the same period?
+
+If you have been paid the parental benefit at the same time as you have worked or postponed days because you have taken holidays, you have been paid an excess amount of parental benefit. This means that the payment for the next month can be reduced by the excess amount you received.
+{{/if}}
+
+{{#eq forMyeUtbetalt "GENERELL"}}
+##### What happens if you receive parental benefit and salary for the same period?
+
+If you are paid an excess amount of parental benefit, your payment for the following month may be reduced.
+{{/eq}}
+
+<br/>
+
+##### You must notify any changes
+You must notify NAV immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt) for more detailed information.
+<br/>
+<br/>
+{{/gt}}
+
+##### You have the right to appeal
+You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+{{> footer_en }}

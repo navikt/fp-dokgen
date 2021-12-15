@@ -1,0 +1,206 @@
+<br/>
+
+##### We have denied the following
+
+{{~#* inline "punkt" ~}}
+{{~#gt antallAvslåttePerioder 1}}* {{/gt}}
+{{~/inline~}}
+
+{{#each perioder}}
+{{~#unless innvilget}}
+{{#switch årsak}}
+{{#case "4077"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are receiving attendance allowance in this period.
+
+  Periods before due date cannot be postponed because you gave birth before 33rd week of pregnancy.
+{{/case}}
+{{#case "4020"}}{{#gt antallTapteDager 0}}{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+  You must apply no later than three months after the period of parental benefit started. You applied on {{søknadsdato}}. You will therefore have {{antallTapteDager}} {{#gt antallTapteDager 1}}fewer days{{else}}day less{{/gt}} with parental benefit.{{/gt}}{{/case}}
+{{#case "4005"}}
+{{#if annenForelderHarRett}}
+{{>punkt}}No application has been submitted for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. Therefore, {{antallTapteDager}} {{#gt antallTapteDager 1}}days have{{else}}day has{{/gt}} been lost.
+{{else}}
+{{>punkt}}You have not applied for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
+{{/if}}
+{{/case}}
+{{#case "4102"}}
+{{>punkt}}You have not applied for parental benefit from {{periodeFom}} up to and including {{periodeTom}}, nor have you informed us that the other parent is working, studying or is in any other approved activity. You have therefore lost {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
+{{/case}}
+{{~#case "4103"}}
+{{>punkt}}The six first weeks after birth are reserved for the mother and can only be postponed due to illness or hospitalization. You have not applied for a period of parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
+{{/case}}
+{{~#case "4105"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because parental benefit before birth is only entitled the mother.
+{{/case}}
+{{~#case (array "4003" "4012")}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you do not have care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}.
+{{/case}}
+{{#case "4033"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you have not arranged holiday with your employer.
+{{/case}}
+{{#case "4041"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you cannot take annual leave on public holidays.
+{{/case}}
+{{#case "4032"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because it is only employees who are entitled to holiday (annual leave) pursuant to the Holiday Act.
+{{/case}}
+{{#case (array "4040" "4112")}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because your {{#gt antallBarn 1}}children{{else}}child{{/gt}} not admitted to a health care institution.
+{{/case}}
+{{#case (array "4039" "4111")}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you have not been admitted to a health care institution.
+{{/case}}
+{{~#case "4037"}}
+{{#if (and (lt periodeDagsats dagsats)(gt periodeDagsats 0))}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are not working full time. We have therefore reduced your parental benefit to {{format-kroner periodeDagsats}} kroner per day before taxes.
+{{/if}}
+{{#eq periodeDagsats 0 }}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are not working full time. You will not receive parental benefit in this period.
+{{/eq}}
+{{/case}}
+{{#case "4023"}}
+{{>punkt}}We have reduced your parental benefit because you are working from {{periodeFom}} up to and including {{periodeTom}}.
+
+  You have not applied to combine parental benefit with work, and we have therefore reduced your benefit payments.
+{{/case}}
+{{#case (array "4030" "4031")}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because less than six weeks have passed since your {{#gt antallBarn 1}}children were{{else}}child was{{/gt}} born. You will receive parental benefit in this period.
+{{/case}}
+{{#case (array "4038" "4110")}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}. In order to postpone parental benefit on grounds of illness, you must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}. The medical certificate from your doctor does not indicate that this is the case.
+{{/case}}
+{{#case "4082"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you have applied too late.
+
+  In order to be entitled to postpone parental benefit, you must apply before starting work.
+{{/case}}
+{{#case "4025"}}
+{{#if kreverSammenhengendeUttak }}
+{{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}}.
+
+  Because you work in a full time position or more, you cannot take out parental benefit at the same time, but you may postpone the period.
+{{else}}
+{{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}}.
+
+  Because you work in a full time position or more, you cannot take out parental benefit at the same time.
+{{/if}}
+{{/case}}
+{{#case "4093"}}
+{{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}} because you are not working.
+{{/case}}
+{{~#case (array "4084" "4085")}}
+{{>punkt}}You cannot receive parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the other parent takes out parental benefit in the same period.
+{{/case}}
+{{#case "4086"}}
+{{>punkt}}You cannot receive parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the other parent has postponed the parental benefit in the same period.
+{{/case}}
+{{#case "4050"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the mother is not working.
+{{/case}}
+{{#case "4051"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the mother is not studying full-time.
+{{/case}}
+{{#case "4052"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the mother is not working and studying which combined constitute full time.
+{{/case}}
+{{#case "4054"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the mother is not admitted to a health care institution.
+{{/case}}
+{{#case "4055"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the mother is not participating in the Introduction Programme for newly arrived immigrants pursuant to chapter 4 of the Introduction Act on a full-time basis.
+{{/case}}
+{{#case "4056"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the mother is not participating in the Qualification Programme on a full-time basis.
+{{/case}}
+{{#case "4057"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the mother is not receiving a disability pension.
+{{/case}}
+{{#case "4007"}}
+{{>punkt}}You may not take over the other parent’s quota from {{periodeFom}} up to and including {{periodeTom}}.
+
+  In order for you to take over the quota, the other parent must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}} due to his or her own illness. The medical certificate does not indicate that this is the case.
+{{/case}}
+{{#case "4053"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+  In order for you to receive the parental benefit, the mother must be fully dependent on help to be able to take care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}} due to her own illness. The medical certificate from her doctor does not indicate that this is the case.
+{{/case}}
+{{#case "4008"}}
+{{>punkt}}You may not take over the quota from {{periodeFom}} up to and including {{periodeTom}} because the other parent is not admitted to a health care institution.
+{{/case}}
+{{#case "4092"}}
+{{>punkt}}You may not take over the quota from {{periodeFom}} up to and including {{periodeTom}} because you do not have sole care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}. Should this change, you can reapply.
+{{/case}}
+{{#case "4076"}}
+{{>punkt}}You may not take over the other parent’s quota from {{periodeFom}} up to and including {{periodeTom}} because the other parent is entitled to parental benefit. Should this change, you can reapply.
+{{/case}}
+{{#case "4002"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because there are no more days left of the parental benefit period.
+{{/case}}
+{{~#case (array "4061" "4062" "4063" "4064" "4065" "4115" "4116" "4117")}}
+{{>punkt}}You have applied to postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}, but you have not sent us the documentation we asked for. We therefore do not have enough information to assess whether you are entitled to postpone parental benefit.
+
+  If you send us the required documentation within six weeks, we will reprocess your application for this period, meaning you will not need to submit a new application.
+{{/case}}
+{{#case (array "4094" "4502")}}
+{{>punkt}}You have applied to combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}}, but you have not sent us the documentation we asked for. We therefore do not have enough information to assess whether you are entitled to combine parental benefit with work.
+
+  If you send us the required documentation within six weeks, we will reprocess your application for this period, meaning you will not need to submit a new application.
+{{/case}}
+{{#case "4074"}}
+{{>punkt}}You have applied to take over the other parent’s quota from {{periodeFom}} up to and including {{periodeTom}}, but you have not sent us the documentation we asked for. We therefore do not have enough information to assess whether you are entitled to take over the quota.
+
+  If you send us the required documentation within six weeks, we will reprocess your application for this period, meaning you will not need to submit a new application.
+{{/case}}
+{{~#case (array "4066" "4067" "4068" "4069" "4070" "4088" "4089")}}
+{{>punkt}}You have applied for parental benefit from {{periodeFom}} up to and including {{periodeTom}}, but you have not sent us the documentation we asked for. We therefore do not have enough information to assess whether you are entitled to parental benefit in this period.
+
+  If you send us the required documentation within four weeks, we will reprocess your application for this period, meaning you will not need to submit a new application.
+{{/case}}
+{{~#case "4013"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the earliest you can start the parental benefit period is 12 weeks before the estimated delivery date.
+{{/case}}
+{{#case "4022"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because your {{#gt antallBarn 1}}children are{{else}}child is{{/gt}} 3 years old.
+{{/case}}
+{{#case "4034"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because there are no more days left of the parental benefit period.
+{{/case}}
+{{#case "4035"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+  You can only postpone parental benefit if the mother is working, studying or taking part in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{/case}}
+{{#case (array "4058" "4059")}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+  To get more days of parental benefit, the other parent must be working, studying or taking part in some other activity. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{/case}}
+{{#case "4060"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
+
+  The parental benefit you have applied for cannot be combined with what the other parent has applied for in the same period. You can only both receive parental benefit at the same time when one of you takes 100 per cent quota and the other parent takes up to 50 per cent from the shared period.
+{{/case}}
+{{#case "4081"}}
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you have applied too late.
+
+  To be entitled to postpone parental benefit, you must apply before the start of the holiday.
+{{/case}}
+{{#case "4100"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the earliest you can receive parental benefit is from the day you assume care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}.
+{{/case}}
+{{#case (array "4073" "4075")}}
+{{>punkt}}You cannot receive parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the mother has not applied for or is not entitled to parental benefit.
+{{#eq årsak "4075"}}
+
+  If the mother applies for parental benefit and, in addition, is working, studying or is in some other activity, you may be entitled to parental benefit. You can read more about this at [nav.no/familie](https://nav.no/familie).
+{{/eq}}{{/case}}
+{{#case "4087"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are not a member of the Norwegian National Insurance Scheme.
+
+  You do not have the right to reside in Norway during this period.
+{{/case}}
+{{~/switch}}
+{{~/unless}}
+{{~/each}}

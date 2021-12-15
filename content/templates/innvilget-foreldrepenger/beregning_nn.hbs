@@ -1,0 +1,124 @@
+<br/>
+
+##### Inntekt vi har brukt i berekninga
+
+{{~#if felles.fritekst}}
+{{felles.fritekst}}
+{{else}}
+{{~#eq harBruktBruttoBeregningsgrunnlag true}}
+Vi har brukt {{format-kroner bruttoBeregningsgrunnlag}} kroner i året før skatt når vi har berekna foreldrepengane dine.
+{{/eq}}
+
+{{~#if erBesteberegning}}
+Vi har fastsett foreldrepengane dine til {{format-kroner dagsats}} kroner per dag før skatt. Du har fått dagpengar, eller jobba og fått dagpengar. Vi har berekna foreldrepengane dine ut frå dei seks beste av dei siste ti månadene.
+{{else}}
+
+{{~#each beregningsgrunnlagregler}}
+{{~#if (or (eq regelStatus "ARBEIDSTAKER") (eq regelStatus "KOMBINERT_AT_FL_SN") (eq regelStatus "KOMBINERT_AT_FL") (eq regelStatus "KOMBINERT_AT_SN"))}}
+{{~#each andelListe}}
+{{~#if (and (eq this.aktivitetStatus "ARBEIDSTAKER" ) (eq this.etterlønnSluttpakke false))}}
+{{#eq @../antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke 1}}
+Inntekta di hos {{this.arbeidsgiverNavn}} er {{format-kroner this.månedsinntekt}} kroner i månaden. Arbeidsgivaren din har gitt oss desse opplysningane.
+{{/eq}}
+{{#gt @../antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke 1}}
+Inntekta di hos {{this.arbeidsgiverNavn}} er {{format-kroner this.månedsinntekt}} kroner i månaden.
+{{/gt}}
+{{/if}}
+{{/each}}
+{{#gt antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke 1}}
+Arbeidsgivarane dine har gitt oss desse opplysningane.
+{{/gt}}
+{{/if}}
+
+{{~#each andelListe}}
+{{#eq this.etterlønnSluttpakke true }}
+Vi har brukt {{format-kroner this.månedsinntekt}} kroner i månaden før skatt når vi har berekna foreldrepengane dine. Dette er lønna du har hatt frå den tidlegare arbeidsgivaren din etter at arbeidsforholdet blei avslutta.
+{{/eq}}
+{{/each}}
+
+{{~#if (or (eq regelStatus "ARBEIDSTAKER") (eq regelStatus "KOMBINERT_AT_FL_SN")  (eq regelStatus "KOMBINERT_AT_SN"))}}
+Dette er gjennomsnittet av inntekta di frå dei siste tre månadene. Dersom du nettopp har begynt å arbeide, har bytta arbeidsforhold, eller dersom lønna di har endra seg, har vi brukt månadsinntektene etter at endringa skjedde.
+{{/if}}
+
+{{~#if (or (eq regelStatus "FRILANSER") (eq regelStatus "KOMBINERT_AT_FL_SN") (eq regelStatus "KOMBINERT_AT_FL") (eq regelStatus "KOMBINERT_FL_SN"))}}
+{{~#each andelListe}}
+{{#eq this.aktivitetStatus "FRILANSER"}}
+Inntekta di som frilansar er {{format-kroner this.månedsinntekt}} kroner i månaden. Oppdragsgivaren eller oppdragsgivarane dine har gitt oss desse opplysningane.
+{{~#if (neq @../regelStatus "KOMBINERT_AT_FL")}}
+
+
+Dette er gjennomsnittet av inntekta di frå dei siste tre månadene. Dersom du nettopp har begynt å arbeide som frilansar, har vi brukt inntektene etter at du starta.
+{{else}}
+
+
+Dette er gjennomsnittet av inntekta du har hatt som arbeidstakar og frilansar frå dei siste tre månadene. Dersom du nettopp har begynt å arbeide, har bytta arbeidsforhold, eller dersom lønna di har endra seg, har vi brukt månadsinntektene etter at endringa skjedde.
+{{/if}}
+{{/eq}}
+{{/each}}
+{{/if}}
+
+{{~#if (or (eq regelStatus "SELVSTENDIG_NÆRINGSDRIVENDE") (eq regelStatus "KOMBINERT_AT_FL_SN") (eq regelStatus "KOMBINERT_AT_SN") (eq regelStatus "KOMBINERT_FL_SN"))}}
+{{~#each andelListe}}
+{{#eq @../regelStatus "SELVSTENDIG_NÆRINGSDRIVENDE"}}
+{{#eq @../snNyoppstartet false}}
+Vi har berekna foreldrepengane dine ut frå ei årsinntekt på {{format-kroner this.årsinntekt}} kroner. Dette er gjennomsnittet av inntekta du hadde i {{sistLignedeÅr}}, {{add sistLignedeÅr -1}} og {{add sistLignedeÅr -2}}.
+{{else}}
+Vi har fastsett foreldrepengane dine til {{format-kroner this.årsinntekt}} kroner i året. Fordi du har begynt å jobbe i løpet av dei siste tre åra, har vi berekna inntekta di ut frå dei opplysningane vi har for det siste året.
+{{/eq}}
+{{/eq}}
+{{~#if (and (eq @../regelStatus "KOMBINERT_AT_SN")(eq this.aktivitetStatus "SELVSTENDIG_NÆRINGSDRIVENDE"))}}
+Næringsinntekta di er fastsett til {{format-kroner this.årsinntekt}} kroner i året. Når vi bereknar foreldrepengar ut frå næringsinntekta di, bruker vi gjennomsnittet av inntekta di frå dei tre siste åra vi har fått oppgitt av Skatteetaten. Dersom du nettopp har begynt å arbeide, bruker vi inntekta vi har fått opplyst for det siste året. Dette gjennomsnittet kan også innehalde arbeidsinntekta di. Den trekkjer vi frå når vi bereknar næringsinntekta di.
+{{/if}}
+{{~#if (and (eq @../regelStatus "KOMBINERT_FL_SN")(eq this.aktivitetStatus "SELVSTENDIG_NÆRINGSDRIVENDE"))}}
+Næringsinntekta di er fastsett til {{format-kroner this.årsinntekt}} kroner i året. Når vi bereknar foreldrepengar ut frå næringsinntekta di, bruker vi gjennomsnittet av inntekta di frå dei tre siste åra vi har fått oppgitt av Skatteetaten. Dersom du nettopp har begynt å arbeide, bruker vi inntekta vi har fått opplyst for det siste året. Dette gjennomsnittet kan også innehalde inntekta di som frilansar. Den trekkjer vi frå når vi bereknar næringsinntekta di.
+{{/if}}
+{{~#if (and (eq @../regelStatus "KOMBINERT_AT_FL_SN")(eq this.aktivitetStatus "SELVSTENDIG_NÆRINGSDRIVENDE"))}}
+Næringsinntekta di er fastsett til {{format-kroner this.årsinntekt}} kroner i året. Når vi bereknar foreldrepengar ut frå næringsinntekta di, bruker vi gjennomsnittet av inntekta di frå dei tre siste åra vi har fått oppgitt av Skatteetaten. Dersom du nettopp har begynt å arbeide, bruker vi inntekta vi har fått opplyst for det siste året. Dette gjennomsnittet kan også innehalde arbeidsinntekta di og inntekta di som frilansar. Dei trekkjer vi frå når vi bereknar næringsinntekta di.
+{{/if}}
+{{/each}}
+{{/if}}
+
+{{~#each andelListe}}
+{{~#if (and (eq aktivitetStatus "SELVSTENDIG_NÆRINGSDRIVENDE") (eq dagsats 0))}}
+{{~#if (eq @../regelStatus "KOMBINERT_AT_SN")}}
+Fordi arbeidsinntekta di er høgare enn gjennomsnittet av arbeidsinntekta og næringsinntekta, får du foreldrepengar frå arbeidsinntekta.
+{{/if}}
+{{~#if (eq @../regelStatus "KOMBINERT_FL_SN")}}
+Fordi inntekta di som frilansar er høgare enn gjennomsnittet av frilansinntekta og næringsinntekta, får du foreldrepengar frå inntekta di som frilansar.
+{{/if}}
+{{~#if (eq @../regelStatus "KOMBINERT_AT_FL_SN")}}
+Arbeidsinntekta og inntekta di som frilansar er høgare enn gjennomsnittet av arbeidsinntekta, frilansinntekta og næringsinntekta. Derfor får du foreldrepengar frå arbeidsinntekta og inntekta di som frilansar.
+{{/if}}
+{{/if}}
+{{/each}}
+
+{{~#each perioder}}
+{{#gt periodeDagsats 0}}
+{{~#each arbeidsforholdsliste}}
+{{~#eq this.naturalytelseEndringType "STOPP"}}
+Frå og med {{this.naturalytelseEndringDato}} får du {{format-kroner this.naturalytelseNyDagsats}} kroner per dag før skatt fordi du mister mistar naturalyting frå {{this.arbeidsgiverNavn}}.
+{{/eq}}
+{{~#eq this.naturalytelseEndringType "START"}}
+Frå og med {{this.naturalytelseEndringDato}} får du {{format-kroner this.naturalytelseNyDagsats}} kroner per dag før skatt fordi du får naturalyting frå {{this.arbeidsgiverNavn}}.
+{{/eq}}
+{{/each}}
+{{/gt}}
+{{/each}}
+
+{{~#each andelListe}}
+{{~#eq @../regelStatus "DAGPENGER"}}
+Du fekk {{format-kroner this.dagsats}} kroner per dag før skatt i dagpengar. Vi har brukt dette beløpet når vi har berekna foreldrepengane dine.
+{{/eq}}
+{{~#eq @../regelStatus  "ARBEIDSAVKLARINGSPENGER"}}
+Du fekk {{format-kroner this.dagsats}} kroner per dag før skatt i arbeidsavklaringspengar. Vi har brukt dette beløpet når vi har berekna foreldrepengane dine.
+{{/eq}}
+{{/each}}
+
+{{~#eq regelStatus "MILITÆR_ELLER_SIVIL"}}
+Vi har fastsett foreldrepengane dine til tre gonger grunnbeløpet fordi du har vore i militæret, i sivilteneste eller i sivilforsvaret.
+{{/eq}}
+{{~#eq regelStatus "KUN_YTELSE"}}
+Vi har berekna foreldrepengane dine ut frå ei inntekt på {{format-kroner (divide 12 bruttoBeregningsgrunnlag)}} kroner i månaden før skatt. Dette er gjennomsnittet av inntekta du har fått frå NAV for dei tre siste månadene.
+{{/eq}}
+{{/each}}
+{{/if}}{{/if}}

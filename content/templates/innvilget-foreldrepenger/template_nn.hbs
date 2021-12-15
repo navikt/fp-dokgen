@@ -1,0 +1,122 @@
+{{> header }}
+<br/>
+<br/>
+{{#if (eq behandlingResultatType "INNVILGET")}}
+# NAV har innvilga søknaden din om {{dekningsgrad}} prosent foreldrepengar
+{{else if (and (eq behandlingResultatType "FORELDREPENGER_ENDRET") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
+# NAV har berekna foreldrepengane dine på nytt
+{{else}}
+# NAV har endra foreldrepengeperioden din
+{{/if}}
+{{> brukerdetaljer_nn }}
+
+{{#gt antallDødeBarn 0}}
+{{> innvilget-foreldrepenger/dodt_barn_nn }}
+{{else}}
+{{#if (and (eq behandlingType "REVURDERING")(eq behandlingResultatType "INNVILGET"))}}Vi har vurdert saka di på nytt, og du har rett til foreldrepengar. Vi har derfor endra vedtaket du har fått tidlegare.{{/if}}
+
+{{#if inkludereUtbetaling}}{{> innvilget-foreldrepenger/utbetaling_nn }}{{/if}}
+
+{{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysningar. Derfor har vi endra det du får utbetalt.
+
+{{#gt dagsats 0}}Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{format-kroner månedsbeløp}} kroner i månaden. Sjekk utbetalingane dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
+{{/gt}}{{/eq}}
+
+{{#if inkludereInnvilget}}{{> innvilget-foreldrepenger/innvilget_nn }}{{/if}}
+
+{{#if inkludereNyeOpplysningerUtbet}}
+Du får {{format-kroner dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{format-kroner månedsbeløp}} kroner i månaden. Sjekk utbetalingane dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
+{{/if}}
+
+{{#if inkludereUtbetNårGradering}}{{> innvilget-foreldrepenger/utbetaling_nn }}{{/if}}
+
+{{~#if sisteDagAvSistePeriode}}
+{{#gt disponibleDager 0}}
+{{~#if (or (eq annenForelderHarRett false) (eq aleneomsorgKode "JA"))}}
+Det er {{disponibleDager}} {{#gt disponibleDager 1}}dagar{{else}}dag{{/gt}} igjen av perioden med foreldrepengar. {{#gt disponibleDager 1}}Desse dagane{{else}}Denne dagen{{/gt}} {{#if kreverSammenhengendeUttak}}må du søkje om innan {{sisteDagAvSistePeriode}}{{else}}må vere tatt ut innan barnet fyller tre år eller innan ein ny foreldrepengeperiode for eit nytt barn startar{{/if}}.{{/if}}{{/gt}}
+{{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
+{{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))}}
+Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dagar{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dagar{{/eq}} som de begge kan ta ut.
+{{~#if (and (lt disponibleDager 2) (lt disponibleFellesDager 2))}} Denne dagen{{else}} Desse dagane{{/if}} {{#if kreverSammenhengendeUttak}}må du søkje om innan {{sisteDagAvSistePeriode}}{{else}}må vere tatt ut innan barnet fyller tre år eller innan ein ny foreldrepengeperiode for eit nytt barn startar{{/if}}.
+{{/if}}{{/if}}{{/if}}
+
+{{~#gt antallArbeidsgivere 1}}
+{{~#each perioder}}{{#if @first}}
+{{~#each arbeidsforholdsliste}}
+{{#if @..first}}
+{{#if this.gradering}}
+##### Du har fleire arbeidsgivarar
+
+Du jobbar hos fleire arbeidsgivarar i same periode. Det er berre mogleg å kombinere foreldrepengar med arbeid hos éin arbeidsgivar om gongen. Det betyr at det berre er perioden din hos {{this.arbeidsgiverNavn}} som blir forlengd.
+{{/if}}{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
+
+{{#if inkludereAvslag}}{{> innvilget-foreldrepenger/avslag_nn }}{{/if}}
+
+{{#if (and (eq barnErFødt true) (eq gjelderMor true) (eq årsakErFødselshendelse true))}}
+{{#gt dagerTaptFørTermin 0}}
+{{#if (or (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING_OG_UTTAK"))}}
+{{#if stønadsperiodeTom }}
+Vi har endra den siste dagen din med foreldrepengar til {{stønadsperiodeTom}}.
+{{/if}}
+Perioden med foreldrepengar startar tre veker før termin. Du fødde før termin, og derfor mistar du {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}dagar{{else}}dag{{/gt}} med foreldrepengar.
+{{/if}}
+{{/gt}}
+{{/if}}
+
+{{#if (and (neq lovhjemlerUttak "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
+{{> innvilget-foreldrepenger/felles/lovhjemler_uttak_nn }}
+{{/if}}
+
+{{~#neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"}}
+{{> innvilget-foreldrepenger/beregning_nn }}
+{{else}}
+{{#if felles.fritekst}}
+{{felles.fritekst}}
+{{/if}}
+{{/neq}}
+
+{{#if (and (eq inntektOverSeksG true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
+{{> innvilget-foreldrepenger/felles/over_seksG_nn }}
+{{/if}}
+
+{{#eq dekningsgrad 80}}
+{{#eq behandlingType "FØRSTEGANGSSØKNAD"}}
+{{> innvilget-foreldrepenger/mindre_utbetalt_nn }}
+{{/eq}}
+{{#if (and (eq behandlingType "REVURDERING") (eq behandlingResultatType "INNVILGET"))}}
+{{> innvilget-foreldrepenger/mindre_utbetalt_nn }}{{/if}}
+{{/eq}}
+
+{{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
+{{> innvilget-foreldrepenger/felles/lovhjemler_beregning_nn }}
+{{/if}}
+
+{{#if (and (eq inntektMottattArbeidsgiver true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
+Dersom arbeidsgivar kjem med nye opplysningar om inntekta du hadde før foreldrepengeperioden din starta, får du nytt vedtak med ei ny berekning.
+{{/if}}
+
+{{#if (or (eq forMyeUtbetalt "FERIE")(eq forMyeUtbetalt "JOBB"))}}
+##### Kva skjer dersom du får utbetalt foreldrepengar og løn for same periode?
+
+Dersom du har fått utbetalt foreldrepengar samtidig som du har jobba eller hatt ferie, har du fått utbetalt for mykje i foreldrepengar. Det betyr at utbetalinga i neste månad kan bli redusert med det du har fått utbetalt for mykje.
+{{/if}}
+
+{{#eq forMyeUtbetalt "GENERELL"}}
+##### Kva skjer dersom du får utbetalt foreldrepengar og løn for same periode?
+
+Dersom du får utbetalt for mykje i foreldrepengar, kan utbetalinga di bli redusert i neste månad.
+{{/eq}}
+
+<br/>
+
+##### Du må melde frå om endringar
+Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til NAV med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+<br/>
+<br/>
+{{/gt}}
+
+##### Du har rett til å klage
+Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+{{> footer_nn }}
