@@ -13,9 +13,9 @@ Name: Dolly Duck
 National identity number: 300220 12345
 <br/>
 </p>
-We have got your application for parental benefit 1. april 2020, but we are missing information to process it. You must ask your employers to send an income statement to NAV.
-If the income statement has already been sent by your employer, you can disregard this inquiry.
-We will not be able to process your application for parental benefit until we have received an income statement from your employers.
+We have got your application for parental benefit 1. april 2020, but we are missing information to process it. You must ask your employers to send an income report to NAV.
+If the income report already has been sent from the employer, you can disregard this inquiry.
+We will not be able to process your application for parental benefit until we have received an income report from your employers.
 Deadline for submission is 20. mai 2020.
 <br/>
 ##### You have right of access
