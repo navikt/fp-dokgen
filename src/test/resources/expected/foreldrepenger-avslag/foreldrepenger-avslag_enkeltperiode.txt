@@ -1,0 +1,39 @@
+<p align="right">
+Dato: 4. mai 2021
+</p>
+<br>
+<br>
+<br>
+#  NAV har avslått søknaden din om foreldrepenger
+<p style="color:gray">
+Saksnummer i NAV: 123456789
+<br/>
+Navn: Dolly Duck
+<br/>
+Fødselsnummer: 300220 12345
+<br/>
+</p>
+##### Dette har vi avslått
+Du har ikke rett til foreldrepenger, fordi du ikke har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i seks av de siste ti månedene før foreldrepengeperioden starter.
+Vedtaket er gjort etter folketrygdloven § forvaltningsloven § 35.
+<br/>
+##### Du har rett til å klage
+Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
+##### Du har rett til innsyn
+På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
+<br/>
+<br/>
+<div style="break-inside: avoid; page-break-inside: avoid">
+##### Har du spørsmål?
+Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
+<br/>
+<br/>
+<br/>
+Med vennlig hilsen
+<br/>
+NAV Familie- og pensjonsytelser
+<br/><br/>
+Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
+</div>

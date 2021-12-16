@@ -34,6 +34,13 @@ public class ForeldrepengerAvslagTest {
     }
 
     @Test
+    public void skal_generere_foreldrepenger_avslag_brevet_med_en_enkelt_periode() throws Exception {
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_enkeltperiode");
+        var expected = getExpected(BREVMAL, "foreldrepenger-avslag_enkeltperiode.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     public void skal_generere_foreldrepenger_avslag_brevet_med_fritekst() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fritekst");
         var expected = getExpected(BREVMAL, "foreldrepenger-avslag_fritekst.txt");

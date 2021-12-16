@@ -12,7 +12,6 @@
   "gjelderTilbakekreving": true,
   "lovhjemler": "folketrygdloven § 21-12 og forvaltningsloven §§ 28, 31, 32 og 34",
   "klagefristUker": 6,
-  "antallGrunner": 5,
   "avvistGrunner": [
     "KLAGET_FOR_SENT",
     "KLAGE_UGYLDIG",

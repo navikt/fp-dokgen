@@ -8,7 +8,6 @@
     "antallBarn",
     "klagefristUker",
     "lovhjemmelForAvslag",
-    "antallPerioder",
     "avslåttePerioder",
     "kreverSammenhengendeUttak"
   ],
@@ -64,9 +63,6 @@
     },
     "lovhjemmelForAvslag": {
       "type": "string"
-    },
-    "antallPerioder": {
-      "type": "number"
     },
     "kreverSammenhengendeUttak": {
       "type": "boolean"
