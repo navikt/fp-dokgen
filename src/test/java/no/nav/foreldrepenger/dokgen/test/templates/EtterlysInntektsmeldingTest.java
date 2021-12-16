@@ -39,4 +39,18 @@ public class EtterlysInntektsmeldingTest {
         var expected = getExpected(BREVMAL, "etterlys_im_svp_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+
+    @Test
+    public void skal_generere_brev_for_ikke_søkt_FP_på_engelsk() throws Exception {
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fp");
+        var expected = getExpected(BREVMAL, "etterlys_im_fp_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void skal_generere_brev_for_ikke_søkt_SVP_på_engelsk() throws Exception {
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_svp");
+        var expected = getExpected(BREVMAL, "etterlys_im_svp_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
 }

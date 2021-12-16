@@ -1,0 +1,34 @@
+<p align="right">
+Date: 4. april 2020
+</p>
+<br>
+<br>
+<br>
+# We need information from your employer
+<p style="color:gray">
+Nav's case number: 123456789
+<br/>
+Name: Dolly Duck
+<br/>
+National identity number: 300220 12345
+<br/>
+</p>
+We have got your application for pregnancy benefit 1. april 2020, but we are missing information to precess it. You must ask your employers to send an income statement to NAV.
+If the income statement has already been sent by your employer, you can disregard this inquiry.
+We will not be able to process your application for pregnancy benefit until we have received an income statement from your employers.
+Deadline for submission is 20. mai 2020.
+<br/>
+##### You have right of access
+Go to [nav.no/dittnav](https://nav.no/dittnav) to see the documents in your case.
+<br/>
+<br/>
+<div style="break-inside: avoid; page-break-inside: avoid">
+##### Do you have questions?
+You will find useful information at [nav.no/familie](https://nav.no/familie).
+<br/>
+<br/>
+<br/>
+Yours sincerely,
+<br/>
+NAV Familie- og Pensjonsytelser
+</div>
