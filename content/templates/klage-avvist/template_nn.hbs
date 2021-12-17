@@ -18,10 +18,10 @@
 {{> brukerdetaljer_nn }}
 
 {{~#* inline "punkt" ~}}
-{{~#gt antallGrunner 1}}* {{else}}Vi har avvist klaga di fordi {{/gt}}
+{{~#gt (size avvistGrunner) 1}}* {{else}}Vi har avvist klaga di fordi {{/gt}}
 {{~/inline~}}
 
-{{~#gt antallGrunner 1}}
+{{~#gt (size avvistGrunner) 1}}
 
 Vi har avvist klaga di fordi{{/gt}}
 {{~#each avvistGrunner}}

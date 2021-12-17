@@ -8,7 +8,6 @@
     "gjelderTilbakekreving",
     "lovhjemler",
     "klagefristUker",
-    "antallGrunner",
     "avvistGrunner"
   ],
   "properties": {
@@ -22,9 +21,6 @@
       "type": "string"
     },
     "klagefristUker": {
-      "type": "number"
-    },
-    "antallGrunner": {
       "type": "number"
     },
     "avvistGrunner": {

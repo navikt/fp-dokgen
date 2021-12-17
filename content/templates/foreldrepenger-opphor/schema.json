@@ -8,7 +8,6 @@
     "erSøkerDød",
     "relasjonskode",
     "antallBarn",
-    "antallÅrsaker",
     "avslagÅrsaker",
     "klagefristUker",
     "lovhjemmelForAvslag"
@@ -42,9 +41,6 @@
       "type": "number"
     },
     "halvG": {
-      "type": "number"
-    },
-    "antallÅrsaker": {
       "type": "number"
     },
     "avslagÅrsaker": {

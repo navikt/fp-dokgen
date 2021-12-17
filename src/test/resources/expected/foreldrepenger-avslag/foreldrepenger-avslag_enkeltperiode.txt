@@ -4,7 +4,7 @@ Dato: 4. mai 2021
 <br>
 <br>
 <br>
-# Svangerskapspengene til Dolly Duck er stanset
+#  NAV har avslått søknaden din om foreldrepenger
 <p style="color:gray">
 Saksnummer i NAV: 123456789
 <br/>
@@ -13,11 +13,14 @@ Navn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Vi har fått melding om at Dolly Duck, som mottok svangerskapspenger fra og med 1. april 2021, er død.
-Vi sender dette brevet for å informere om at vi har stanset svangerskapspengene. Siste dagen det ble utbetalt svangerskapspenger var 3. april 2021.
-Vedtaket er gjort etter folketrygdloven § 14-4 og § forvaltningsloven § 35.
-Hvis dere har spørsmål om vedtaket eller ønsker å klage, finner dere skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-Klagefristen er 6 uker fra den datoen dødsboet fikk brevet.
+##### Dette har vi avslått
+Du har ikke rett til foreldrepenger, fordi du ikke har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i seks av de siste ti månedene før foreldrepengeperioden starter.
+Vedtaket er gjort etter folketrygdloven § forvaltningsloven § 35.
+<br/>
+##### Du har rett til å klage
+Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+<br/>
+<br/>
 ##### Du har rett til innsyn
 På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
 <br/>
