@@ -361,6 +361,9 @@
     "kreverSammenhengendeUttak": {
       "type": "boolean"
     },
+    "morKanSøkeOmDagerFørFødsel": {
+      "type": "boolean"
+    },
     "perioder": {
       "type": "array",
       "items": { "$ref": "#/$defs/utbetalingsperiode" }

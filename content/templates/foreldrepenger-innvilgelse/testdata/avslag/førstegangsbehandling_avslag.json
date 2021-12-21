@@ -46,6 +46,7 @@
   "prematurDager": 0,
   "antallDødeBarn": 0,
   "kreverSammenhengendeUttak": true,
+  "morKanSøkeOmDagerFørFødsel": true,
   "perioder": [
     {
       "innvilget": true,
@@ -55,6 +56,23 @@
       "periodeDagsats": 2209,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "ARBEIDSGIVER AS",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }
+      ]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4095",
+      "periodeFom": "15. april 2021",
+      "periodeTom": "18. august 2021",
+      "periodeDagsats": 2209,
+      "antallTapteDager": 5,
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "ARBEIDSGIVER AS",

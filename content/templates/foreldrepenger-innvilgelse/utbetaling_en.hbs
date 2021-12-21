@@ -23,6 +23,4 @@ We have extended the parental benefit period by {{foreldrepengeperiodenUtvidetUk
 {{#gt antallBarn 1}}We have extended the parental benefit period by {{foreldrepengeperiodenUtvidetUker}} weeks because you are adopting more than one child.{{/gt}}{{/if}}
 {{/gt}}
 
-{{#each perioder}}{{#eq årsak "4095"}}The parental benefit period starts three weeks before the estimated date of delivery. You have not claimed parental benefit from {{periodeFom}} up to and including {{periodeTom}}. You will therefore lose {{#gt antallTapteDager 1}}these days{{else}}this day{{/gt}}. If you want to take out {{#gt antallTapteDager 1}}these days{{else}}this day{{/gt}}, you must apply for this on nav.no.{{/eq}}{{/each}}
-
 {{#gt dagerTaptFørTermin 0}}{{#if fbEllerRvInnvilget gjelderFødsel}}Because you gave birth before the due date, you lose {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}days{{else}}day{{/gt}} of parental benefit.{{/if}}{{/gt}}

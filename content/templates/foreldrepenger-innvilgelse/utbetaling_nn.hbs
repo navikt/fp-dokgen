@@ -22,6 +22,4 @@ Vi har forlengd foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} v
 {{else}}
 {{#gt antallBarn 1}}Vi har forlengd foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} veker fordi {{#eq aleneomsorgKode "JA"}}du{{else}}de{{/eq}} adopterer fleire barn.{{/gt}}{{/if}}{{/gt}}
 
-{{#each perioder}}{{#eq årsak "4095"}}Perioden med foreldrepengar startar tre veker før termin. Du har ikkje teke ut foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor mistar du {{#gt antallTapteDager 1}}desse dagane{{else}}denne dagen{{/gt}}. Dersom du ønskjer å ta ut {{#gt antallTapteDager 1}}desse dagane{{else}}denne dagen{{/gt}}, må du søkje om det på nav.no.{{/eq}}{{/each}}
-
 {{#gt dagerTaptFørTermin 0}}{{#if fbEllerRvInnvilget gjelderFødsel}}Fordi du fødde før termin, mistar du {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}dagar{{else}}dag{{/gt}} med foreldrepengar.{{/if}}{{/gt}}

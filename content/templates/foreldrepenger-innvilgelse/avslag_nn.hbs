@@ -9,6 +9,11 @@
 {{#each perioder}}
 {{~#unless innvilget}}
 {{#switch årsak}}
+{{#case "4095"}}
+{{#if morKanSøkeOmDagerFørFødsel}}
+{{>punkt}}Perioden med foreldrepengar startar tre veker før termin. Du har ikkje teke ut foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor mistar du {{#gt antallTapteDager 1}}disse dagane{{else}}denne dagen{{/gt}}. Dersom du ønskjer å ta ut {{#gt antallTapteDager 1}}disse dagane{{else}}denne dagen{{/gt}}, må du søkje om det på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{/if}}
+{{/case}}
 {{#case "4077"}}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi du får pleiepengar i denne perioden.
 

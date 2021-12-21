@@ -50,23 +50,6 @@
   "perioder": [
     {
       "innvilget": true,
-      "årsak": "4095",
-      "periodeFom": "15. april 2021",
-      "periodeTom": "18. august 2021",
-      "periodeDagsats": 2209,
-      "antallTapteDager": 0,
-      "arbeidsforholdsliste": [
-        {
-          "arbeidsgiverNavn": "ARBEIDSGIVER AS",
-          "gradering": false,
-          "utbetalingsgrad": 100,
-          "prosentArbeid": 0,
-          "stillingsprosent": 100
-        }
-      ]
-    },
-    {
-      "innvilget": true,
       "årsak": "2010",
       "periodeFom": "19. august 2021",
       "periodeTom": "24. september 2021",
