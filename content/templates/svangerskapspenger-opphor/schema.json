@@ -43,7 +43,7 @@
       "type": "boolean"
     },
     "dødsdatoBarn": {
-      "type": "boolean"
+      "type": "string"
     },
     "fødselsdato": {
       "type": "string"
