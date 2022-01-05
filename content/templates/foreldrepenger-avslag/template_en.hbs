@@ -369,6 +369,13 @@
 {{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because the earliest you can receive parental benefit is from the day you assume care of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}.
 {{/eq}}
 
+
+{{#eq avslagsårsak "4087"}}
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are not a member of the Norwegian National Insurance Scheme.
+
+  You do not have the right to reside in Norway during this period.
+{{/eq}}
+
 {{/each}}
 {{/if}}
 

@@ -507,44 +507,50 @@
     },
     {
       "avslagsårsak": "4115",
-      "periodeFom": "25. juli 2021",
-      "periodeTom": "26. juli 2021",
+      "periodeFom": "11. september 2021",
+      "periodeTom": "12. september 2021",
       "antallTapteDager": 1
     },
     {
       "avslagsårsak": "4116",
-      "periodeFom": "27. juli 2021",
-      "periodeTom": "28. juli 2021",
+      "periodeFom": "13. september 2021",
+      "periodeTom": "14. september 2021",
       "antallTapteDager": 1
     },
     {
       "avslagsårsak": "4117",
-      "periodeFom": "29. juli 2021",
-      "periodeTom": "30. juli 2021",
+      "periodeFom": "15. september 2021",
+      "periodeTom": "16. september 2021",
       "antallTapteDager": 1
     },
     {
       "avslagsårsak": "4110",
-      "periodeFom": "1. august 2021",
-      "periodeTom": "2. august 2021",
+      "periodeFom": "17. september 2021",
+      "periodeTom": "18. september 2021",
       "antallTapteDager": 1
     },
     {
       "avslagsårsak": "4112",
-      "periodeFom": "3. august 2021",
-      "periodeTom": "4. august 2021",
+      "periodeFom": "19. september 2021",
+      "periodeTom": "20. september 2021",
       "antallTapteDager": 1
     },
     {
       "avslagsårsak": "4111",
-      "periodeFom": "5. august 2021",
-      "periodeTom": "6. august 2021",
+      "periodeFom": "21. september 2021",
+      "periodeTom": "22. september 2021",
       "antallTapteDager": 1
     },
     {
       "avslagsårsak": "4102",
-      "periodeFom": "15. juni 2021",
-      "periodeTom": "16. juni 2021",
+      "periodeFom": "23. september 2021",
+      "periodeTom": "24. september 2021",
+      "antallTapteDager": 1
+    },
+    {
+      "avslagsårsak": "4087",
+      "periodeFom": "25. september 2021",
+      "periodeTom": "26. september 2021",
       "antallTapteDager": 1
     }
   ]

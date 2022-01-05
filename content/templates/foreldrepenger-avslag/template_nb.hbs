@@ -370,6 +370,13 @@
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du tidligst kan få foreldrepenger fra den dagen du overtar omsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
 {{/eq}}
 
+
+{{#eq avslagsårsak "4087"}}
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er medlem i folketrygden.
+
+  Du har ikke oppholdstillatelse i Norge i denne perioden.
+{{/eq}}
+
 {{/each}}
 {{/if}}
 

@@ -4,7 +4,6 @@ import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.comp
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -108,14 +107,13 @@ public class ForeldrepengerOpphørTest {
         assertThat(content).contains(String.format("Vi har fått opplyst at barna dine døde %s. Den siste dagen din med foreldrepenger er derfor %s", BARN_DØDSDATO, STØNADSDATO_TOM));
     }
 
-    @Disabled //FIXME Michal - feiler lokalt hos meg
     @Test
     public void test_kode_søker_1024_og_opphørdato() throws Exception {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1024");
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
-        assertThat(content).contains("Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet barna dine ble født.\nVi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.");
+        assertThat(content).containsIgnoringWhitespaces("Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet barna dine ble født.\nVi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.");
     }
 
     private void opprettÅrsaker(final ObjectNode testData, String... årsaker) {
