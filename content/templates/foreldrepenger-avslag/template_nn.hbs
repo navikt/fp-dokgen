@@ -369,6 +369,13 @@
 {{>punkt}}Du har ikkje rett til foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi du tidlegast kan få foreldrepengar frå den dagen du overtek omsorga for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}.
 {{/eq}}
 
+
+{{#eq avslagsårsak "4087"}}
+{{>punkt}}Du har ikkje rett til foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi du ikkje er medlem i folketrygda.
+
+  Du har ikkje opphaldsløyve i Noreg i denne perioden.
+{{/eq}}
+
 {{/each}}
 {{/if}}
 
