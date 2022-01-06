@@ -12,6 +12,8 @@
 {{#case "4095"}}
 {{#if morKanSøkeOmDagerFørFødsel}}
 {{>punkt}}The parental benefit period starts three weeks before the estimated date of delivery. You have not claimed parental benefit from {{periodeFom}} up to and including {{periodeTom}}. You will therefore lose {{#gt antallTapteDager 1}}these days{{else}}this day{{/gt}}. If you want to take out {{#gt antallTapteDager 1}}these days{{else}}this day{{/gt}}, you must apply for this on [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{else}}
+{{>punkt}}The parental benefit period starts three weeks before the estimated date of delivery. You have not claimed parental benefit from {{periodeFom}} up to and including {{periodeTom}}. You will therefore lose {{#gt antallTapteDager 1}}these days{{else}}this day{{/gt}}.
 {{/if}}
 {{/case}}
 {{#case "4077"}}

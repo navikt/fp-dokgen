@@ -12,6 +12,8 @@
 {{#case "4095"}}
 {{#if morKanSøkeOmDagerFørFødsel}}
 {{>punkt}}Perioden med foreldrepenger starter tre uker før termin. Du har ikke tatt ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor mister du {{#gt antallTapteDager 1}}disse dagene{{else}}denne dagen{{/gt}}. Dersom du ønsker å ta ut {{#gt antallTapteDager 1}}disse dagene{{else}}denne dagen{{/gt}}, må du søke om det på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{else}}
+{{>punkt}}Perioden med foreldrepenger starter tre uker før termin. Du har ikke tatt ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor mister du {{#gt antallTapteDager 1}}disse dagene{{else}}denne dagen{{/gt}}.
 {{/if}}
 {{/case}}
 {{#case "4077"}}
