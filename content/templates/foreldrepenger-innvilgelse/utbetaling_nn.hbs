@@ -1,7 +1,7 @@
 {{~#neq inkludereUtbetNårGradering true}}
 {{#if stønadsperiodeFom stønadsperiodeTom}}
 {{#gt dagsats 0}}
-Du får {{format-kroner dagsats}} kroner per dag før skatt frå og med {{stønadsperiodeFom}}. Dette er i gjennomsnitt {{format-kroner månedsbeløp}} kroner i månaden. Den siste dagen du får foreldrepengar er {{stønadsperiodeTom}}.
+Du får {{thousand-seperator dagsats}} kroner per dag før skatt frå og med {{stønadsperiodeFom}}. Dette er i gjennomsnitt {{thousand-seperator månedsbeløp}} kroner i månaden. Den siste dagen du får foreldrepengar er {{stønadsperiodeTom}}.
 {{/gt}}{{/if}}{{/neq}}
 
 {{> foreldrepenger-innvilgelse/felles/refusjon_nn }}

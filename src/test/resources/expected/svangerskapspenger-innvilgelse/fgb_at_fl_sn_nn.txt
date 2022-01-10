@@ -13,7 +13,7 @@ Namn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Du får i gjennomsnitt 15 000 kroner i månaden før skatt.
+Du får i gjennomsnitt 15 000 kroner i månaden før skatt.
 Vi betaler ut svangerskapspengane til arbeidsgivarane dine fordi du får lønn mens du er borte frå jobben.
 ##### I desse periodane får du svangerskapspengar
 Arbeidsgiver 1 AS:
@@ -24,7 +24,7 @@ Arbeidsgiver 2 AS:
 ##### Dette får du utbetalt i periodane
 * Frå og med 1. juli 2021 til og med 12. juli 2021 får du 500 kroner per dag før skatt. Av dette blir 200 kroner per dag betalt direkte til deg.
 * Frå og med 15. juli 2021 til og med 19. juli 2021 får du 700 kroner per dag før skatt.
-* Frå og med 20. juli 2021 til og med 31. juli 2021 får du 1 000 kroner per dag før skatt. Av dette blir 600 kroner per dag betalt direkte til deg.
+* Frå og med 20. juli 2021 til og med 31. juli 2021 får du 1 000 kroner per dag før skatt. Av dette blir 600 kroner per dag betalt direkte til deg.
 * Du har ikkje rett til svangerskapspengar hos Arbeidsgiver 3 AS fordi du kan gjere arbeidsoppgåvene utan at det er fare for å skade barnet eller barna du ventar frem til tre veker før termin.
 * Du har ikkje rett til svangerskapspengar som frilansar fordi du kan gjere arbeidsoppgåvene utan at det er fare for å skade barnet eller barna du ventar.
 * Du har ikkje rett til svangerskapspengar som næringsdrivande fordi du kan gjere arbeidsoppgåvene utan at det er fare for å skade barnet eller barna du ventar.
@@ -35,25 +35,25 @@ Arbeidsgiver 2 AS:
 * Frå og med 15. juni 2021 til og med 25. juni 2021 får du ikkje svangerskapspengar fordi du har ferie.
 Vedtaket er gjort etter folketrygdlova § 14-4.
 ##### Inntekt vi har brukt i berekninga
-Vi har brukt 789 000 kroner i året før skatt når vi har berekna svangerskapspengane dine.
+Vi har brukt 789 000 kroner i året før skatt når vi har berekna svangerskapspengane dine.
 <!-- AT -->
-Inntekta di hos Arbeidsgiver 1 AS er 15 003 kroner i månaden.
-Inntekta di hos Arbeidsgiver 2 AS er 10 200 kroner i månaden.
-Inntekta di hos Arbeidsgiver 3 AS er 2 025 kroner i månaden.
+Inntekta di hos Arbeidsgiver 1 AS er 15 003 kroner i månaden.
+Inntekta di hos Arbeidsgiver 2 AS er 10 200 kroner i månaden.
+Inntekta di hos Arbeidsgiver 3 AS er 2 025 kroner i månaden.
 Arbeidsgivarane dine har gitt oss desse opplysningane.
 Dette er gjennomsnittet av inntekta di frå dei siste tre månadene. Dersom du nettopp har begynt å arbeide, har bytta arbeidsforhold, eller dersom lønna di har endra seg, har vi brukt månadsinntektene etter at endringa skjedde.
 <!-- FL -->
-Inntekta di som frilansar er 1 000 kroner i månaden. Oppdragsgivaren eller oppdragsgivarane dine har gitt oss desse opplysningane.
+Inntekta di som frilansar er 1 000 kroner i månaden. Oppdragsgivaren eller oppdragsgivarane dine har gitt oss desse opplysningane.
 Dette er gjennomsnittet av inntekta du har hatt som arbeidstakar og frilansar frå dei siste tre månadene. Dersom du nettopp har begynt å arbeide, har bytta arbeidsforhold, eller dersom lønna di har endra seg, har vi brukt månadsinntektene etter at endringa skjedde.
 <!-- SN -->
-Næringsinntekta di er fastsett til 40 000 kroner i året. Når vi bereknar svangerskapspengar ut frå næringsinntekta di, bruker vi gjennomsnittet av inntekta di frå dei tre siste åra vi har fått oppgitt av Skatteetaten. Dersom du nettopp har begynt å arbeide, bruker vi inntekta vi har fått opplyst for det siste året. Dette gjennomsnittet kan også innehalde arbeidsinntekta di og inntekta di som frilansar. Dei trekkjer vi frå når vi bereknar næringsinntekta di.
+Næringsinntekta di er fastsett til 40 000 kroner i året. Når vi bereknar svangerskapspengar ut frå næringsinntekta di, bruker vi gjennomsnittet av inntekta di frå dei tre siste åra vi har fått oppgitt av Skatteetaten. Dersom du nettopp har begynt å arbeide, bruker vi inntekta vi har fått opplyst for det siste året. Dette gjennomsnittet kan også innehalde arbeidsinntekta di og inntekta di som frilansar. Dei trekkjer vi frå når vi bereknar næringsinntekta di.
 Arbeidsinntekta og inntekta di som frilansar er høgare enn gjennomsnittet av arbeidsinntekta, frilansinntekta og næringsinntekta. Derfor får du svangerskapspengar frå arbeidsinntekta og inntekta di som frilansar.
 <!-- SN + AT -->
 <!-- SN + FL -->
-Frå og med 1. juli 2021 får du 1 100 kroner per dag før skatt fordi du får naturalyting frå Arbeidsgiver 1 AS.
-Frå og med 12. juli 2021 får du 1 000 kroner per dag før skatt fordi du mistar naturalyting frå Arbeidsgiver 2 AS.
+Frå og med 1. juli 2021 får du 1 100 kroner per dag før skatt fordi du får naturalyting frå Arbeidsgiver 1 AS.
+Frå og med 12. juli 2021 får du 1 000 kroner per dag før skatt fordi du mistar naturalyting frå Arbeidsgiver 2 AS.
 Vi har fastsett svangerskapspengane dine til to gonger grunnbeløpet fordi du har vore i militæret eller i sivilforsvaret.
-Svangerskapspengane dine er fastsette til 600 000 kroner i året, som er seks gonger grunnbeløpet i folketrygda. Du tener meir enn dette, men du får ikkje svangerskapspengar for den delen av inntekta som kjem over seks gonger grunnbeløpet.
+Svangerskapspengane dine er fastsette til 600 000 kroner i året, som er seks gonger grunnbeløpet i folketrygda. Du tener meir enn dette, men du får ikkje svangerskapspengar for den delen av inntekta som kjem over seks gonger grunnbeløpet.
 Berekninga er gjort etter folketrygdlova § 14-4.
 <br/>
 ##### Du må melde frå om endringar

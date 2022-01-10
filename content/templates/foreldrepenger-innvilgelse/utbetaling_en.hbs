@@ -1,7 +1,7 @@
 {{~#neq inkludereUtbetNårGradering true}}
 {{#if stønadsperiodeFom stønadsperiodeTom}}
 {{#gt dagsats 0}}
-You will receive {{format-kroner dagsats}} kroner per day before taxes starting from {{stønadsperiodeFom}}. This is {{format-kroner månedsbeløp}} kroner on average per month. The last day you will receive parental benefit is {{stønadsperiodeTom}}.
+You will receive {{thousand-seperator dagsats}} kroner per day before taxes starting from {{stønadsperiodeFom}}. This is {{thousand-seperator månedsbeløp}} kroner on average per month. The last day you will receive parental benefit is {{stønadsperiodeTom}}.
 {{/gt}}{{/if}}{{/neq}}
 
 {{> foreldrepenger-innvilgelse/felles/refusjon_en }}

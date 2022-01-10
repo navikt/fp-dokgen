@@ -6,9 +6,7 @@ Dato: 10. august 2021
 <br>
 <br/>
 <br/>
-
 # NAV har endret foreldrepengeperioden din
-
 <p style="color:gray">
 Saksnummer i NAV: 141081123
 <br/>
@@ -16,35 +14,20 @@ Navn: CAR ANONYMISERT
 <br/>
 Fødselsnummer: 123456 78901
 <br/>
-
 </p>
-
 <br/>
-
 ##### Dette har vi innvilget
-
-Du tar ut foreldrepenger fra og med 30. juni 2020 til og med 21. september 2020. I denne perioden får du 1 871 kroner per dag før skatt.
-
+Du tar ut foreldrepenger fra og med 30. juni 2020 til og med 21. september 2020. I denne perioden får du 1 871 kroner per dag før skatt.
 Foreldrepengene utgjør det samme som tidligere. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
-
 Den siste dagen med foreldrepenger er 21. september 2020.
-
 <br/>
-
 ##### Dette har vi avslått
-
 * Det er ikke søkt om foreldrepenger eller utsettelse fra og med 22. september 2020 til og med 9. november 2020. Derfor er 35 dager tapt.
-
 * Du har ikke rett til foreldrepenger fra og med 13. september 2021 til og med 13. desember 2021 fordi det ikke er flere dager igjen av foreldrepengeperioden.
-
 * Du har ikke søkt om foreldrepenger fra og med 22. september 2020 til og med 9. november 2020. Du har heller ikke oppgitt at mor jobber, studerer eller er i annen aktivitet i denne perioden. Derfor har du mistet 35 dager.
-
 Vedtaket er gjort etter folketrygdloven §§ 14-9, 14-10 og 14-12.
-
 Tester at fritekst kommer etter vedtakshjemler når endring i uttak
-
 <br/>
-
 ##### Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
@@ -58,7 +41,6 @@ På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-
 ##### Har du spørsmål?
 Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 <br/>
@@ -67,9 +49,6 @@ Du finner nyttig informasjon på [nav.no/familie](https://nav.no/familie).
 Med vennlig hilsen
 <br/>
 NAV Familie- og pensjonsytelser
-
 <br/><br/>
-
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
-
 </div>

@@ -5,13 +5,13 @@
 {{else}}
 
 {{#if (or (gt (size arbeidsforhold) 0) (if frilanser))}}
-Vi har brukt {{format-kroner bruttoBeregningsgrunnlag}} kroner i året før skatt når vi har berekna svangerskapspengane dine.
+Vi har brukt {{thousand-seperator bruttoBeregningsgrunnlag}} kroner i året før skatt når vi har berekna svangerskapspengane dine.
 {{/if}}
 
 <!-- AT -->
 {{#gt (size arbeidsforhold) 0}}
 {{#each arbeidsforhold}}
-Inntekta di hos {{arbeidsgiverNavn}} er {{format-kroner månedsinntekt}} kroner i månaden.
+Inntekta di hos {{arbeidsgiverNavn}} er {{thousand-seperator månedsinntekt}} kroner i månaden.
 {{/each}}
 {{#gt (size arbeidsforhold) 1}}Arbeidsgivarane dine{{else}}Arbeidsgivaren din{{/gt}} har gitt oss desse opplysningane.
 Dette er gjennomsnittet av inntekta di frå dei siste tre månadene. Dersom du nettopp har begynt å arbeide, har bytta arbeidsforhold, eller dersom lønna di har endra seg, har vi brukt månadsinntektene etter at endringa skjedde.
@@ -19,7 +19,7 @@ Dette er gjennomsnittet av inntekta di frå dei siste tre månadene. Dersom du n
 
 <!-- FL -->
 {{#if frilanser}}
-Inntekta di som frilansar er {{format-kroner frilanser.månedsinntekt}} kroner i månaden. Oppdragsgivaren eller oppdragsgivarane dine har gitt oss desse opplysningane.
+Inntekta di som frilansar er {{thousand-seperator frilanser.månedsinntekt}} kroner i månaden. Oppdragsgivaren eller oppdragsgivarane dine har gitt oss desse opplysningane.
 {{#gt (size arbeidsforhold) 0}}
 Dette er gjennomsnittet av inntekta du har hatt som arbeidstakar og frilansar frå dei siste tre månadene. Dersom du nettopp har begynt å arbeide, har bytta arbeidsforhold, eller dersom lønna di har endra seg, har vi brukt månadsinntektene etter at endringa skjedde.
 {{else}}
@@ -31,38 +31,38 @@ Dette er gjennomsnittet av inntekta di frå dei siste tre månadene. Dersom du n
 <!-- SN -->
 {{#unless (or (gt (size arbeidsforhold) 0) frilanser)}}
 {{#with selvstendigNæringsdrivende}}{{#if nyoppstartet}}
-Vi har fastsett svangerskapspengane dine til {{format-kroner årsinntekt}} kroner i året. Fordi du har begynt å jobbe i løpet av dei siste tre åra, har vi berekna inntekta di ut frå dei opplysningane vi har for det siste året.
+Vi har fastsett svangerskapspengane dine til {{thousand-seperator årsinntekt}} kroner i året. Fordi du har begynt å jobbe i løpet av dei siste tre åra, har vi berekna inntekta di ut frå dei opplysningane vi har for det siste året.
 {{else}}
-Vi har berekna svangerskapspengane dine ut frå ei årsinntekt på {{format-kroner årsinntekt}} kroner. Dette er gjennomsnittet av inntekta du hadde i {{sistLignedeÅr}}, {{add sistLignedeÅr -1}} og {{add sistLignedeÅr -2}}.
+Vi har berekna svangerskapspengane dine ut frå ei årsinntekt på {{thousand-seperator årsinntekt}} kroner. Dette er gjennomsnittet av inntekta du hadde i {{sistLignedeÅr}}, {{add sistLignedeÅr -1}} og {{add sistLignedeÅr -2}}.
 {{/if}}{{/with}}
 
 <!-- SN + AT + FL -->
 {{else}}{{#gt (size arbeidsforhold) 0}}
 {{#if frilanser}}
-Næringsinntekta di er fastsett til {{format-kroner selvstendigNæringsdrivende.årsinntekt}} kroner i året. Når vi bereknar svangerskapspengar ut frå næringsinntekta di, bruker vi gjennomsnittet av inntekta di frå dei tre siste åra vi har fått oppgitt av Skatteetaten. Dersom du nettopp har begynt å arbeide, bruker vi inntekta vi har fått opplyst for det siste året. Dette gjennomsnittet kan også innehalde arbeidsinntekta di og inntekta di som frilansar. Dei trekkjer vi frå når vi bereknar næringsinntekta di.
+Næringsinntekta di er fastsett til {{thousand-seperator selvstendigNæringsdrivende.årsinntekt}} kroner i året. Når vi bereknar svangerskapspengar ut frå næringsinntekta di, bruker vi gjennomsnittet av inntekta di frå dei tre siste åra vi har fått oppgitt av Skatteetaten. Dersom du nettopp har begynt å arbeide, bruker vi inntekta vi har fått opplyst for det siste året. Dette gjennomsnittet kan også innehalde arbeidsinntekta di og inntekta di som frilansar. Dei trekkjer vi frå når vi bereknar næringsinntekta di.
 {{#if selvstendigNæringsdrivende.inntektLavere_AT_FL_SN}}
 Arbeidsinntekta og inntekta di som frilansar er høgare enn gjennomsnittet av arbeidsinntekta, frilansinntekta og næringsinntekta. Derfor får du svangerskapspengar frå arbeidsinntekta og inntekta di som frilansar.
 {{/if}}
 
 <!-- SN + AT -->
 {{else}}
-Næringsinntekta di er fastsett til {{format-kroner selvstendigNæringsdrivende.årsinntekt}} kroner i året. Når vi bereknar svangerskapspengar ut frå næringsinntekta di, bruker vi gjennomsnittet av inntekta di frå dei tre siste åra vi har fått oppgitt av Skatteetaten. Dersom du nettopp har begynt å arbeide, bruker vi inntekta vi har fått opplyst for det siste året. Dette gjennomsnittet kan også innehalde arbeidsinntekta di. Den trekkjer vi frå når vi bereknar næringsinntekta di.
+Næringsinntekta di er fastsett til {{thousand-seperator selvstendigNæringsdrivende.årsinntekt}} kroner i året. Når vi bereknar svangerskapspengar ut frå næringsinntekta di, bruker vi gjennomsnittet av inntekta di frå dei tre siste åra vi har fått oppgitt av Skatteetaten. Dersom du nettopp har begynt å arbeide, bruker vi inntekta vi har fått opplyst for det siste året. Dette gjennomsnittet kan også innehalde arbeidsinntekta di. Den trekkjer vi frå når vi bereknar næringsinntekta di.
 {{#if selvstendigNæringsdrivende.inntektLavere_AT_SN}}
 Fordi arbeidsinntekta di er høgare enn gjennomsnittet av arbeidsinntekta og næringsinntekta, får du svangerskapspengar frå arbeidsinntekta.
 {{/if}}{{/if}}
 
 <!-- SN + FL -->
 {{else}}
-Næringsinntekta di er fastsett til {{format-kroner selvstendigNæringsdrivende.årsinntekt}} kroner i året. Når vi bereknar svangerskapspengar ut frå næringsinntekta di, bruker vi gjennomsnittet av inntekta di frå dei tre siste åra vi har fått oppgitt av Skatteetaten. Dersom du nettopp har begynt å arbeide, bruker vi inntekta vi har fått opplyst for det siste året. Dette gjennomsnittet kan også innehalde inntekta di som frilansar. Den trekkjer vi frå når vi bereknar næringsinntekta di.
+Næringsinntekta di er fastsett til {{thousand-seperator selvstendigNæringsdrivende.årsinntekt}} kroner i året. Når vi bereknar svangerskapspengar ut frå næringsinntekta di, bruker vi gjennomsnittet av inntekta di frå dei tre siste åra vi har fått oppgitt av Skatteetaten. Dersom du nettopp har begynt å arbeide, bruker vi inntekta vi har fått opplyst for det siste året. Dette gjennomsnittet kan også innehalde inntekta di som frilansar. Den trekkjer vi frå når vi bereknar næringsinntekta di.
 {{#if selvstendigNæringsdrivende.inntektLavere_FL_SN}}
 Fordi inntekta di som frilansar er høgare enn gjennomsnittet av frilansinntekta og næringsinntekta, får du svangerskapspengar frå inntekta di som frilansar.
 {{/if}}{{/gt}}{{/unless}}{{/if}}
 
 {{#each naturalytelser}}
 {{#eq status "TILKOMMER"}}
-Frå og med {{endringsdato}} får du {{format-kroner nyDagsats}} kroner per dag før skatt fordi du får naturalyting frå {{arbeidsgiverNavn}}.
+Frå og med {{endringsdato}} får du {{thousand-seperator nyDagsats}} kroner per dag før skatt fordi du får naturalyting frå {{arbeidsgiverNavn}}.
 {{else}}
-Frå og med {{endringsdato}} får du {{format-kroner nyDagsats}} kroner per dag før skatt fordi du mistar naturalyting frå {{arbeidsgiverNavn}}.
+Frå og med {{endringsdato}} får du {{thousand-seperator nyDagsats}} kroner per dag før skatt fordi du mistar naturalyting frå {{arbeidsgiverNavn}}.
 {{/eq}}{{/each}}
 
 {{#if militærSivil}}
@@ -70,7 +70,7 @@ Vi har fastsett svangerskapspengane dine til to gonger grunnbeløpet fordi du ha
 {{/if}}
 
 {{#if inntektOver6G}}
-Svangerskapspengane dine er fastsette til {{format-kroner seksG}} kroner i året, som er seks gonger grunnbeløpet i folketrygda. Du tener meir enn dette, men du får ikkje svangerskapspengar for den delen av inntekta som kjem over seks gonger grunnbeløpet.
+Svangerskapspengane dine er fastsette til {{thousand-seperator seksG}} kroner i året, som er seks gonger grunnbeløpet i folketrygda. Du tener meir enn dette, men du får ikkje svangerskapspengar for den delen av inntekta som kjem over seks gonger grunnbeløpet.
 {{/if}}
 
 {{/if}}

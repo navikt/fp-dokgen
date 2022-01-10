@@ -22,5 +22,5 @@
 {{~#gt (size utbetalingsperioder) 1}}* {{/gt}}
 {{~/inline~}}
 
-{{>punkt}}Fra og med {{periodeFom}} til og med {{periodeTom}} får du {{format-kroner periodeDagsats}} kroner per dag før skatt.{{~#neq periodeDagsats utbetaltTilSøker}} Av dette blir {{format-kroner utbetaltTilSøker}} kroner per dag betalt direkte til deg.{{/neq}}
+{{>punkt}}Fra og med {{periodeFom}} til og med {{periodeTom}} får du {{thousand-seperator periodeDagsats}} kroner per dag før skatt.{{~#neq periodeDagsats utbetaltTilSøker}} Av dette blir {{thousand-seperator utbetaltTilSøker}} kroner per dag betalt direkte til deg.{{/neq}}
 {{/each}}

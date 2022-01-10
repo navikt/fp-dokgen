@@ -33,17 +33,17 @@
 
 {{#lt this.prioritertUtbetalingsgrad 100.0}}
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" ) årsak}}
-{{>punkt}}You are taking {{trim-decimal this.prioritertUtbetalingsgrad}} per cent parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. During this period, you will receive {{format-kroner this.periodeDagsats}} kroner per day before taxes.
+{{>punkt}}You are taking {{trim-decimal this.prioritertUtbetalingsgrad}} per cent parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. During this period, you will receive {{thousand-seperator this.periodeDagsats}} kroner per day before taxes.
 {{/in-array}}
 {{else}}
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" "2038" ) årsak}}
-{{>punkt}}You are taking parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. During this period, you will receive {{format-kroner this.periodeDagsats}} kroner per day before taxes.
+{{>punkt}}You are taking parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. During this period, you will receive {{thousand-seperator this.periodeDagsats}} kroner per day before taxes.
 {{/in-array}}
 {{/lt}}
 
 
 {{#eq årsak "2038"}}{{#neq this.prioritertUtbetalingsgrad 100.0}}
-{{>punkt}}You will receive {{trim-decimal prioritertUtbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the other parent will receive parental benefit in the same period. During this period, you will receive {{format-kroner periodeDagsats}} kroner per day before taxes.
+{{>punkt}}You will receive {{trim-decimal prioritertUtbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}} because the other parent will receive parental benefit in the same period. During this period, you will receive {{thousand-seperator periodeDagsats}} kroner per day before taxes.
 {{/neq}}{{/eq}}
 
 
@@ -76,7 +76,7 @@
 {{/eq}}
 
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
-{{>punkt}}You are taking {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are working {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} per cent at {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. In this period you will receive {{format-kroner periodeDagsats}} kroner per day before taxes.
+{{>punkt}}You are taking {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are working {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} per cent at {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. In this period you will receive {{thousand-seperator periodeDagsats}} kroner per day before taxes.
 {{#each arbeidsforholdsliste}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0) (lt this.stillingsprosent 100.0) (eq this.gradering false) (or (eq delvisRefusjon true) (eq fullRefusjon true)))}}
   You are not working in your entire part-time position at {{this.arbeidsgiverNavn}}, and will therefore receive parental benefit from both your employer and NAV.
@@ -90,13 +90,13 @@
 
 {{#each annenAktivitetsliste}}
 {{#if (and (eq this.aktivitetStatus "FRILANSER") (eq this.gradering true))}} {{#if @../innvilget}}
-{{>punkt}}You are taking {{trim-decimal this.utbetalingsgrad}} per cent parental benefit from {{@../periodeFom}} up to and including {{@../periodeTom}} because you are working {{trim-decimal this.prosentArbeid}} per cent. In this period you will receive {{format-kroner @../periodeDagsats}} kroner per day before taxes.
+{{>punkt}}You are taking {{trim-decimal this.utbetalingsgrad}} per cent parental benefit from {{@../periodeFom}} up to and including {{@../periodeTom}} because you are working {{trim-decimal this.prosentArbeid}} per cent. In this period you will receive {{thousand-seperator @../periodeDagsats}} kroner per day before taxes.
 {{/if}}{{/if}}
 {{/each}}
 
 
 {{#if (and (eq this.næring.gradering true) (eq this.innvilget true))}}
-{{>punkt}}You are taking {{trim-decimal this.næring.utbetalingsgrad}} per cent parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}} because you are working {{trim-decimal this.næring.prosentArbeid}} per cent. In this period you will receive {{format-kroner this.periodeDagsats}} kroner per day before taxes.
+{{>punkt}}You are taking {{trim-decimal this.næring.utbetalingsgrad}} per cent parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}} because you are working {{trim-decimal this.næring.prosentArbeid}} per cent. In this period you will receive {{thousand-seperator this.periodeDagsats}} kroner per day before taxes.
 {{/if}}
 
 

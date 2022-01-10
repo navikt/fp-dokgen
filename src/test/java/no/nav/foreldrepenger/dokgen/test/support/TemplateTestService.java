@@ -1,9 +1,5 @@
 package no.nav.foreldrepenger.dokgen.test.support;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.jknack.handlebars.Context;
@@ -17,7 +13,6 @@ import com.github.jknack.handlebars.context.MethodValueResolver;
 import com.github.jknack.handlebars.helper.ConditionalHelpers;
 import com.github.jknack.handlebars.helper.StringHelpers;
 import com.github.jknack.handlebars.io.FileTemplateLoader;
-
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.AdditionHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.ArrayHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.CaseHelper;
@@ -26,7 +21,12 @@ import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.FormatKronerHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.InArrayHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.SizeHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.SwitchHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.ThousandSeperatorHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.TrimDecimalHelper;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class TemplateTestService {
 
@@ -52,6 +52,7 @@ public class TemplateTestService {
         handlebars.registerHelper("in-array", new InArrayHelper());
         handlebars.registerHelper("divide", new DivideHelper());
         handlebars.registerHelper("format-kroner", new FormatKronerHelper());
+        handlebars.registerHelper("thousand-seperator", new ThousandSeperatorHelper());
         handlebars.registerHelper("trim-decimal", new TrimDecimalHelper());
         handlebars.registerHelper("size", new SizeHelper());
         handlebars.registerHelpers(StringHelpers.class);

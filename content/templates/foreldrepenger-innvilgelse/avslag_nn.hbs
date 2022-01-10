@@ -60,7 +60,7 @@
 {{/case}}
 {{~#case "4037"}}
 {{#if (and (lt periodeDagsats dagsats)(gt periodeDagsats 0))}}
-{{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi du ikkje jobbar heiltid. Vi har derfor redusert foreldrepengane dine til {{format-kroner periodeDagsats}} kroner per dag før skatt.
+{{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi du ikkje jobbar heiltid. Vi har derfor redusert foreldrepengane dine til {{thousand-seperator periodeDagsats}} kroner per dag før skatt.
 {{/if}}
 {{#eq periodeDagsats 0 }}
 {{>punkt}}Du kan ikkje utsetje foreldrepengane frå og med {{periodeFom}} til og med {{periodeTom}} fordi du ikkje jobbar heiltid. Du får ikkje foreldrepengar i denne perioden.

@@ -60,7 +60,7 @@
 {{/case}}
 {{~#case "4037"}}
 {{#if (and (lt periodeDagsats dagsats)(gt periodeDagsats 0))}}
-{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are not working full time. We have therefore reduced your parental benefit to {{format-kroner periodeDagsats}} kroner per day before taxes.
+{{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are not working full time. We have therefore reduced your parental benefit to {{thousand-seperator periodeDagsats}} kroner per day before taxes.
 {{/if}}
 {{#eq periodeDagsats 0 }}
 {{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are not working full time. You will not receive parental benefit in this period.
