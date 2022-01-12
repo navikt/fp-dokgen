@@ -13,7 +13,7 @@ Name: Dolly Duck
 National identity number: 300220 12345
 <br/>
 </p>
-You will receive 15 000 kroner per day before taxes.
+You will receive 15 000 kroner per day before taxes.
 We pay pregnancy benefits to your employers because you get paid while you are away from work.
 ##### You will receive pregnancy benefits in these periods
 Arbeidsgiver 1 AS:
@@ -24,7 +24,7 @@ Arbeidsgiver 2 AS:
 ##### This is what you will be paid
 * From 1. juli 2021 up to and including 12. juli 2021, you will receive 500 kroner per day before taxes. Of this, 200 kroner per day is paid directly to you.
 * From 15. juli 2021 up to and including 19. juli 2021, you will receive 700 kroner per day before taxes.
-* From 20. juli 2021 up to and including 31. juli 2021, you will receive 1 000 kroner per day before taxes. Of this, 600 kroner per day is paid directly to you.
+* From 20. juli 2021 up to and including 31. juli 2021, you will receive 1 000 kroner per day before taxes. Of this, 600 kroner per day is paid directly to you.
 * You are not entitled to pregnancy benefits from Arbeidsgiver 3 AS because you can adapt or change your tasks without the risk of harming the child/children you are expecting up to three weeks before due date.
 * You are not entitled to pregnancy benefits as freelancer because you can adapt or change your tasks without the risk of harming the child/children you are expecting.
 * You are not entitled to pregnancy benefits as a self-employed person because you can adapt or change your tasks without the risk of harming the child/children you are expecting.
@@ -35,25 +35,25 @@ Arbeidsgiver 2 AS:
 * From 15. juni 2021 up to and including 25. juni 2021 you are not entitled to pregnancy benefits because you are on holiday.
 The decision was made in accordance with the National Insurance Act § 14-4.
 ##### Income we have used in the calculation
-We have used the income figure of 789 000 kroner a year before taxes to calculate your pregnancy benefits.
+We have used the income figure of 789 000 kroner a year before taxes to calculate your pregnancy benefits.
 <!-- AT -->
-Your income at Arbeidsgiver 1 AS is 15 003 kroner per month.
-Your income at Arbeidsgiver 2 AS is 10 200 kroner per month.
-Your income at Arbeidsgiver 3 AS is 2 025 kroner per month.
+Your income at Arbeidsgiver 1 AS is 15 003 kroner per month.
+Your income at Arbeidsgiver 2 AS is 10 200 kroner per month.
+Your income at Arbeidsgiver 3 AS is 2 025 kroner per month.
 Your employers have provided us with this information.
 This is the average of your income from the last three months. If you have just started working, changed your employment situation or your pay has changed, we have used your monthly income after the change took place.
 <!-- FL -->
-Your income as a freelancer is 1 000 kroner per month. Your client or clients have provided us with this information.
+Your income as a freelancer is 1 000 kroner per month. Your client or clients have provided us with this information.
 This is the average of your income you have had as an employee and as a freelancer, over the last three months before the start of the parental benefit period. If you have just started working, changed your employment situation or your pay has changed, we have used your monthly income after the change took place.
 <!-- SN -->
-Your income from self-employment has been set to 40 000 kroner a year. When we calculate pregnancy benefits based on your income from self-employment, we use the average of the income for the past three years as stated by the Norwegian Tax Administration. If you have just started working, we have used your income based on the information we have for the most recent year. This average may also include your earned income, which is deducted in the calculation of your income from self-employment.
+Your income from self-employment has been set to 40 000 kroner a year. When we calculate pregnancy benefits based on your income from self-employment, we use the average of the income for the past three years as stated by the Norwegian Tax Administration. If you have just started working, we have used your income based on the information we have for the most recent year. This average may also include your earned income, which is deducted in the calculation of your income from self-employment.
 Because your earned income and income as a freelancer is higher than the average of your earned income, income as a freelancer and your income from self-employment, you will receive pregnancy benefits from your earned income and income as a freelancer.
 <!-- SN + AT -->
 <!-- SN + FL -->
-From and including 1. juli 2021, you will receive 1 100 kroner per day before tax because you are receiving payment in kind from Arbeidsgiver 1 AS.
-From and including 12. juli 2021, you will receive 1 000 kroner per day before tax because you are losing your payment in kind from Arbeidsgiver 2 AS.
+From and including 1. juli 2021, you will receive 1 100 kroner per day before tax because you are receiving payment in kind from Arbeidsgiver 1 AS.
+From and including 12. juli 2021, you will receive 1 000 kroner per day before tax because you are losing your payment in kind from Arbeidsgiver 2 AS.
 We have stipulated your pregnancy benefits to two times the national insurance basic amount because you have been doing military service, civil service or civil defence service.
-Your pregnancy benefits are calculated to 600 000 kroner a year, which is six times the national insurance basic amount. You earn more than this, but you will not receive pregnancy benefits for the part of your income that exceeds six times the national insurance basic amount.
+Your pregnancy benefits are calculated to 600 000 kroner a year, which is six times the national insurance basic amount. You earn more than this, but you will not receive pregnancy benefits for the part of your income that exceeds six times the national insurance basic amount.
 The calculation is performed according to the National Insurance Act § 14-4.
 <br/>
 ##### You must notify any changes

@@ -20,7 +20,7 @@ National identity number: 300220 12345
 
 * You are not entitled to parental benefit, because you have not had earned income or income equivalent to earned income in six of the past ten months before the start of the parental benefit period.
 
-* You are not entitled to parental benefit, because your income is lower than 50 000 kroner per year before taxes.
+* You are not entitled to parental benefit, because your income is lower than 50 000 kroner per year before taxes.
 
 * You are not entitled to parental benefit, because you have applied too early. You can apply when you are in your 22nd week of pregnancy.
 

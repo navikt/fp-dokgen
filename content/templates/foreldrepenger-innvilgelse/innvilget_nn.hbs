@@ -33,17 +33,17 @@
 
 {{#lt this.prioritertUtbetalingsgrad 100.0}}
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" ) årsak}}
-{{>punkt}}Du tek ut {{trim-decimal this.prioritertUtbetalingsgrad}} prosent foreldrepengar frå og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{format-kroner this.periodeDagsats}} kroner per dag før skatt.
+{{>punkt}}Du tek ut {{trim-decimal this.prioritertUtbetalingsgrad}} prosent foreldrepengar frå og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
 {{/in-array}}
 {{else}}
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" "2038" ) årsak}}
-{{>punkt}}Du tek ut foreldrepengar frå og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{format-kroner this.periodeDagsats}} kroner per dag før skatt.
+{{>punkt}}Du tek ut foreldrepengar frå og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
 {{/in-array}}
 {{/lt}}
 
 
 {{#eq årsak "2038"}}{{#neq this.prioritertUtbetalingsgrad 100.0}}
-{{>punkt}}Du tek ut {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen skal ta ut foreldrepengar i same perioden. Du får {{format-kroner periodeDagsats}} kroner per dag før skatt i denne perioden.
+{{>punkt}}Du tek ut {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen skal ta ut foreldrepengar i same perioden. Du får {{thousand-seperator periodeDagsats}} kroner per dag før skatt i denne perioden.
 {{/neq}}{{/eq}}
 
 
@@ -76,7 +76,7 @@
 {{/eq}}
 
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
-{{>punkt}}Du tek ut {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi du jobbar {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{format-kroner periodeDagsats}} kroner per dag før skatt.
+{{>punkt}}Du tek ut {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}} fordi du jobbar {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{thousand-seperator periodeDagsats}} kroner per dag før skatt.
 {{#each arbeidsforholdsliste}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0) (lt this.stillingsprosent 100.0) (eq this.gradering false) (or (eq delvisRefusjon true) (eq fullRefusjon true)))}}
   Du jobbar ikkje i heile deltidsstillinga di hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepengar både frå arbeidsgivaren din og frå NAV.
@@ -90,13 +90,13 @@
 
 {{#each annenAktivitetsliste}}
 {{#if (and (eq this.aktivitetStatus "FRILANSER") (eq this.gradering true))}} {{#if @../innvilget}}
-{{>punkt}}Du tek ut {{trim-decimal this.utbetalingsgrad}} prosent foreldrepengar frå og med {{@../periodeFom}} til og med {{@../periodeTom}} fordi du jobbar {{trim-decimal this.prosentArbeid}} prosent. I denne perioden får du {{format-kroner @../periodeDagsats}} kroner per dag før skatt.
+{{>punkt}}Du tek ut {{trim-decimal this.utbetalingsgrad}} prosent foreldrepengar frå og med {{@../periodeFom}} til og med {{@../periodeTom}} fordi du jobbar {{trim-decimal this.prosentArbeid}} prosent. I denne perioden får du {{thousand-seperator @../periodeDagsats}} kroner per dag før skatt.
 {{/if}}{{/if}}
 {{/each}}
 
 
 {{#if (and (eq this.næring.gradering true) (eq this.innvilget true))}}
-{{>punkt}}Du tek ut {{trim-decimal this.næring.utbetalingsgrad}} prosent foreldrepengar frå og med {{this.periodeFom}} til og med {{this.periodeTom}} fordi du jobbar {{trim-decimal this.næring.prosentArbeid}} prosent. I denne perioden får du {{format-kroner this.periodeDagsats}} kroner per dag før skatt.
+{{>punkt}}Du tek ut {{trim-decimal this.næring.utbetalingsgrad}} prosent foreldrepengar frå og med {{this.periodeFom}} til og med {{this.periodeTom}} fordi du jobbar {{trim-decimal this.næring.prosentArbeid}} prosent. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
 {{/if}}
 
 

@@ -22,5 +22,5 @@
 {{~#gt (size utbetalingsperioder) 1}}* {{/gt}}
 {{~/inline~}}
 
-{{>punkt}}From {{periodeFom}} up to and including {{periodeTom}}, you will receive {{format-kroner periodeDagsats}} kroner per day before taxes.{{~#neq periodeDagsats utbetaltTilSøker}} Of this, {{format-kroner utbetaltTilSøker}} kroner per day is paid directly to you.{{/neq}}
+{{>punkt}}From {{periodeFom}} up to and including {{periodeTom}}, you will receive {{thousand-seperator periodeDagsats}} kroner per day before taxes.{{~#neq periodeDagsats utbetaltTilSøker}} Of this, {{thousand-seperator utbetaltTilSøker}} kroner per day is paid directly to you.{{/neq}}
 {{/each}}
