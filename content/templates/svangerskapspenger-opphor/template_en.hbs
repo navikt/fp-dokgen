@@ -16,7 +16,11 @@ If you have questions about the decision or want to appeal, you will find the re
 You may appeal within {{klagefristUker}} weeks from the date the estate received this letter.
 
 {{else}}
+{{#eq opphørtPeriode.årsak "8305" }}
+# NAV has changed your pregnancy benefit
+{{else}}
 # You are no longer entitled to pregnancy benefits
+{{/eq}}
 {{> brukerdetaljer_en }}
 
 {{#in-array (array "1020" "1021" "1023" "1024" "1025" "8306") opphørtPeriode.årsak}}
@@ -76,7 +80,8 @@ We have received information that you as a self-employed person or freelancer ca
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "8305" }}
-We have received information that your child/your children died at {{dødsdatoBarn}}. Your last day on pregnancy benefits is therefore {{opphørsdato}}.
+We have received information that your child/your children died at {{dødsdatoBarn}}.
+You are entitled to pregnancy benefits up to and including {{dødsdatoBarn}}. Your last day on pregnancy benefits is {{opphørsdato}}.
 {{/eq}}
 
 {{#in-array (array "8303" "8312") opphørtPeriode.årsak }}
