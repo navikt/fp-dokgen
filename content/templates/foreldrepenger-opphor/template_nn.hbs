@@ -17,10 +17,17 @@ Dersom dere har spørsmål om vedtaket eller ønskjer å klage, finner dere skje
 Klagefristen er {{klagefristUker}} veker frå den datoen dødsbuet fekk brevet.
 
 {{else}}
+{{#if barnDødsdato }}
+# NAV har endra foreldrepengeperioden din
+{{> brukerdetaljer_nn }}
+
+##### Dette har vi endrat
+{{else}}
 # Du har ikkje lenger rett til foreldrepengar
 {{> brukerdetaljer_nn }}
 
 ##### Dette har vi avslått
+{{/if}}
 {{~#each avslagÅrsaker}}
 {{~#switch this}}
 {{#case "1035" }}
@@ -62,7 +69,8 @@ Du hadde ikkje rett til foreldrepengar fordi du ikkje hadde foreldreansvar for {
 {{/case}}
 
 {{#case "4072" }}
-Vi har fått opplyst at {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} døydde {{barnDødsdato}}. Den siste dagen din med foreldrepengar er derfor {{tomStønadsdato}}.
+Vi har fått opplyst at {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} døydde {{barnDødsdato}}.
+Du har rett til foreldrepengar til og med {{barnDødsdato}}. Den siste dagen din med foreldrepengar er {{tomStønadsdato}}.
 {{/case}}
 
 {{#case (array "1020" "1021" "1023" "1024" "1025") }}

@@ -17,10 +17,17 @@ If you have questions about the decision or want to appeal, you will find the re
 You may appeal within {{klagefristUker}} weeks from the date the estate received this letter.
 
 {{else}}
+{{#if barnDødsdato }}
+#  NAV has changed your parental benefit
+{{> brukerdetaljer_en }}
+
+##### We have changed the following
+{{else}}
 # You are no longer entitled to parental benefit
 {{> brukerdetaljer_en }}
 
 ##### We have denied the following
+{{/if}}
 {{~#each avslagÅrsaker}}
 {{~#switch this}}
 {{#case "1035" }}
@@ -62,7 +69,8 @@ You are not entitled to parental benefit, because you do not have parental respo
 {{/case}}
 
 {{#case "4072" }}
-We have got a message that your {{#gt antallBarn 1}}children{{else}}child{{/gt}} died on the {{barnDødsdato}}. The last day with parental benefit is therefore {{tomStønadsdato}}.
+We have got a message that your {{#gt antallBarn 1}}children{{else}}child{{/gt}} died on the {{barnDødsdato}}.
+You are entitled to parental benefit up to and including {{barnDødsdato}}. The last day with parental benefit is {{tomStønadsdato}}.
 {{/case}}
 
 {{#case (array "1020" "1021" "1023" "1024" "1025") }}

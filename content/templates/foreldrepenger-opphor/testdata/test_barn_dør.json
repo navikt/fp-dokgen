@@ -12,6 +12,7 @@
   "tomStønadsdato": "24. mai 2021",
   "relasjonskode": "MEDMOR",
   "opphørDato": "24. mai 2021",
+  "barnDødsdato": "10. mai 2021",
   "erSøkerDød": false,
   "gjelderFødsel": true,
   "antallBarn": 2,
@@ -19,22 +20,6 @@
   "klagefristUker": 6,
   "lovhjemmelForAvslag": "§ 14",
   "avslagÅrsaker": [
-    "1035",
-    "1041",
-    "1004",
-    "1013",
-    "1026",
-    "1051",
-    "1027",
-    "1029",
-    "4012",
-    "4003",
-    "1015",
-    "1014",
-    "1020",
-    "1021",
-    "1023",
-    "1024",
-    "1025"
+    "4072"
   ]
 }

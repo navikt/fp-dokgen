@@ -3,8 +3,6 @@ package no.nav.foreldrepenger.dokgen.test.handlebarshelpers;
 import java.io.IOException;
 import java.util.List;
 
-import org.assertj.core.util.Lists;
-
 import com.github.jknack.handlebars.Helper;
 import com.github.jknack.handlebars.Options;
 
