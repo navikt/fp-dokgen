@@ -125,7 +125,7 @@ public class ForeldrepengerOpphørTest {
         testData.put("barnDødsdato", BARN_DØDSDATO);
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
-        assertThat(content).contains(String.format("Du har rett til foreldrepenger til og med %s. Den siste dagen din med foreldrepenger er %s", BARN_DØDSDATO, STØNADSDATO_TOM));
+        assertThat(content).contains(String.format("Vi har fått opplyst at barna dine døde %s. Den siste dagen din med foreldrepenger er derfor %s", BARN_DØDSDATO, STØNADSDATO_TOM));
     }
 
     @Test
