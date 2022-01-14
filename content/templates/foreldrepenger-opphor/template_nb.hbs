@@ -17,10 +17,17 @@ Hvis dere har spørsmål om vedtaket eller ønsker å klage, finner dere skjema 
 Klagefristen er {{klagefristUker}} uker fra den datoen dødsboet fikk brevet.
 
 {{else}}
+{{#if barnDødsdato }}
+# NAV har endret foreldrepengeperioden din
+{{> brukerdetaljer_nb }}
+
+##### Dette har vi endret
+{{else}}
 # Du har ikke lenger rett til foreldrepenger
 {{> brukerdetaljer_nb }}
 
 ##### Dette har vi avslått
+{{/if}}
 {{~#each avslagÅrsaker}}
 {{~#switch this}}
 {{#case "1035" }}
@@ -31,7 +38,7 @@ Du hadde ikke arbeidsinntekt eller inntekt som var likestilt med lønn i seks av
 Du hadde ikke rett til foreldrepenger, fordi inntekten din var lavere enn {{halvG}} kroner i året før skatt.
 {{/case}}
 
-{{#case (array "1004" "1013") }}
+{{#case (array "1004" "1013" ) }}
 Du hadde ikke rett til foreldrepenger fordi {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} var fylt 15 år da du overtok omsorgen.
 {{/case}}
 
@@ -62,7 +69,8 @@ Du hadde ikke rett til foreldrepenger fordi du ikke hadde foreldreansvar for {{#
 {{/case}}
 
 {{#case "4072" }}
-Vi har fått opplyst at {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} døde {{barnDødsdato}}. Den siste dagen din med foreldrepenger er derfor {{tomStønadsdato}}.
+Vi har fått opplyst at {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} døde {{barnDødsdato}}.
+Du har rett til foreldrepenger til og med {{barnDødsdato}}. Den siste dagen din med foreldrepenger er {{tomStønadsdato}}.
 {{/case}}
 
 {{#case (array "1020" "1021" "1023" "1024" "1025") }}

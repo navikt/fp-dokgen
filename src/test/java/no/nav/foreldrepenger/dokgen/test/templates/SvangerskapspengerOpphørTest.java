@@ -95,4 +95,24 @@ public class SvangerskapspengerOpphørTest {
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
+    @Test
+    public void barn_død_nb() throws Exception {
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "barn_død");
+        var expected = getExpected(BREVMAL, "barn_død_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void barn_død_nn() throws Exception {
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "barn_død");
+        var expected = getExpected(BREVMAL, "barn_død_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void barn_død_en() throws Exception {
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "barn_død");
+        var expected = getExpected(BREVMAL, "barn_død_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
 }

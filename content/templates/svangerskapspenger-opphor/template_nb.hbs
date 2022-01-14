@@ -16,7 +16,11 @@ Hvis dere har spørsmål om vedtaket eller ønsker å klage, finner dere skjema 
 Klagefristen er {{klagefristUker}} uker fra den datoen dødsboet fikk brevet.
 
 {{else}}
+{{#eq opphørtPeriode.årsak "8305" }}
+# NAV har endret svangerskapspengene dine
+{{else}}
 # Du har ikke lenger rett til svangerskapspenger
+{{/eq}}
 {{> brukerdetaljer_nb }}
 
 {{#in-array (array "1020" "1021" "1023" "1024" "1025" "8306") opphørtPeriode.årsak}}
@@ -76,7 +80,8 @@ Vi har fått opplysninger om at du som næringsdrivende eller frilanser kan tilp
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "8305" }}
-Vi har fått opplysninger om at barnet ditt/barna dine døde {{dødsdatoBarn}}. Den siste dagen din med svangerskapspenger er derfor {{opphørsdato}}.
+Vi har fått opplysninger om at barnet ditt/barna dine døde {{dødsdatoBarn}}.
+Du har rett til svangerskapspenger til og med {{dødsdatoBarn}}. Den siste dagen din med svangerskapspenger er {{opphørsdato}}.
 {{/eq}}
 
 {{#in-array (array "8303" "8312") opphørtPeriode.årsak }}

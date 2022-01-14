@@ -48,6 +48,27 @@ public class ForeldrepengerOpphørTest {
     }
 
     @Test
+    public void skal_generere_foreldrepenger_opphør_for_død_barn_på_bokmål() throws Exception {
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_barn_dør");
+        var expected = getExpected(BREVMAL, "foreldrepenger-opphør_barn_dør_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void skal_generere_foreldrepenger_opphør_for_død_barn_på_nynorsk() throws Exception {
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "test_barn_dør");
+        var expected = getExpected(BREVMAL, "foreldrepenger-opphør_barn_dør_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    public void skal_generere_foreldrepenger_opphør_for_død_barn_på_engelsk() throws Exception {
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_barn_dør");
+        var expected = getExpected(BREVMAL, "foreldrepenger-opphør_barn_dør_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     public void test_søker_død() throws Exception {
         var testData = opprettTestData();
         testData.put(ER_SØKER_DØD, true);
@@ -104,7 +125,7 @@ public class ForeldrepengerOpphørTest {
         testData.put("barnDødsdato", BARN_DØDSDATO);
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
-        assertThat(content).contains(String.format("Vi har fått opplyst at barna dine døde %s. Den siste dagen din med foreldrepenger er derfor %s", BARN_DØDSDATO, STØNADSDATO_TOM));
+        assertThat(content).contains(String.format("Du har rett til foreldrepenger til og med %s. Den siste dagen din med foreldrepenger er %s", BARN_DØDSDATO, STØNADSDATO_TOM));
     }
 
     @Test
@@ -133,7 +154,6 @@ public class ForeldrepengerOpphørTest {
         testData.put("fomStønadsdato", STØNADSDATO_FOM);
         testData.put("tomStønadsdato", STØNADSDATO_TOM);
         testData.put("opphørDato", STØNADSDATO_TOM);
-        testData.put("barnDødsdato", BARN_DØDSDATO);
         testData.put("gjelderFødsel",  true);
         testData.put("halvG",  50000);
         testData.put("klagefristUker",  6);
