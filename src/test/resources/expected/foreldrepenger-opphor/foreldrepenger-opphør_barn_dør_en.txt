@@ -14,8 +14,7 @@ National identity number: 300220 12345
 <br/>
 </p>
 ##### We have changed the following
-We have got a message that your children died on the 10. mai 2021.
-You are entitled to parental benefit up to and including 10. mai 2021. The last day with parental benefit is 24. mai 2021.
+We have got a message that your children died on the 10. mai 2021. The last day with parental benefit is therefore 24. mai 2021.
 The decision has been made in accordance with the National Insurance Act section § 14 and Public Administration Act section 35.
 ##### You have the right to appeal
 You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
