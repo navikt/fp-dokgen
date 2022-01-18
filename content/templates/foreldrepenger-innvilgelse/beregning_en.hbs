@@ -112,11 +112,13 @@ You received {{thousand-seperator this.dagsats}} kroner per day before taxes in 
 {{~#eq @../regelStatus  "ARBEIDSAVKLARINGSPENGER"}}
 You received {{thousand-seperator this.dagsats}} kroner per day before taxes in work assessment allowance. We have used this figure to calculate your parental benefit.
 {{/eq}}
+{{~#eq @../regelStatus "MILITÆR_ELLER_SIVIL"}}
+{{#gt this.dagsats 0}}
+We have stipulated your parental benefit to three times the national insurance basic amount because you have been doing military service, civil service or civil defence service.
+{{/gt}}
+{{/eq}}
 {{/each}}
 
-{{~#eq regelStatus "MILITÆR_ELLER_SIVIL"}}
-We have stipulated your parental benefit to three times the national insurance basic amount because you have been doing military service, civil service or civil defence service.
-{{/eq}}
 {{~#eq regelStatus "KUN_YTELSE"}}
 We have calculated your parental benefit on the basis of an income of {{thousand-seperator (divide 12 bruttoBeregningsgrunnlag)}} kroner a month before taxes. This is the average of the income you received from NAV for the past three months.
 {{/eq}}

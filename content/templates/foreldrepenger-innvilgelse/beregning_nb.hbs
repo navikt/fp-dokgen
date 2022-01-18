@@ -112,11 +112,13 @@ Du fikk {{thousand-seperator this.dagsats}} kroner per dag før skatt i dagpenge
 {{~#eq @../regelStatus  "ARBEIDSAVKLARINGSPENGER"}}
 Du fikk {{thousand-seperator this.dagsats}} kroner per dag før skatt i arbeidsavklaringspenger. Vi har brukt dette beløpet i beregningen av foreldrepengene dine.
 {{/eq}}
+{{~#eq @../regelStatus "MILITÆR_ELLER_SIVIL"}}
+{{#gt this.dagsats 0}}
+Vi har fastsatt foreldrepengene dine til tre ganger grunnbeløpet fordi du har vært i militæret, i siviltjeneste eller sivilforsvaret.
+{{/gt}}
+{{/eq}}
 {{/each}}
 
-{{~#eq regelStatus "MILITÆR_ELLER_SIVIL"}}
-Vi har fastsatt foreldrepengene dine til tre ganger grunnbeløpet fordi du har vært i militæret, i siviltjeneste eller sivilforsvaret.
-{{/eq}}
 {{~#eq regelStatus "KUN_YTELSE"}}
 Vi har beregnet foreldrepengene dine ut fra en inntekt på {{thousand-seperator (divide 12 bruttoBeregningsgrunnlag)}} kroner i måneden før skatt. Dette er gjennomsnittet av inntekten du har fått fra NAV de siste tre månedene.
 {{/eq}}
