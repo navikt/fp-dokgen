@@ -5,7 +5,7 @@
 {{else}}
 
 {{#if (or (gt (size arbeidsforhold) 0) (if frilanser))}}
-We have used the income figure of {{thousand-seperator bruttoBeregningsgrunnlag}} kroner a year before taxes to calculate your pregnancy benefits.
+We have used the income figure of {{thousand-seperator bruttoBeregningsgrunnlag}} kroner a year before taxes to calculate your pregnancy benefit.
 {{/if}}
 
 <!-- AT -->
@@ -31,31 +31,31 @@ This is the average of your income from the past three months. If you have just 
 <!-- SN -->
 {{#unless (or (gt (size arbeidsforhold) 0) frilanser)}}
 {{#with selvstendigNæringsdrivende}}{{#if nyoppstartet}}
-We have set your pregnancy benefits at {{thousand-seperator årsinntekt}} kroner a year. Because you have started to work during the last three years, we have calculated your income based on the information we have for the most recent year.
+We have set your pregnancy benefit at {{thousand-seperator årsinntekt}} kroner a year. Because you have started to work during the last three years, we have calculated your income based on the information we have for the most recent year.
 {{else}}
-We have calculated your pregnancy benefits based on an annual income of {{thousand-seperator årsinntekt}} kroner. This is the average of the income you had in {{sistLignedeÅr}}, {{add sistLignedeÅr -1}} and {{add sistLignedeÅr -2}}.
+We have calculated your pregnancy benefit based on an annual income of {{thousand-seperator årsinntekt}} kroner. This is the average of the income you had in {{sistLignedeÅr}}, {{add sistLignedeÅr -1}} and {{add sistLignedeÅr -2}}.
 {{/if}}{{/with}}
 
 <!-- SN + AT + FL -->
 {{else}}{{#gt (size arbeidsforhold) 0}}
 {{#if frilanser}}
-Your income from self-employment has been set to {{thousand-seperator selvstendigNæringsdrivende.årsinntekt}} kroner a year. When we calculate pregnancy benefits based on your income from self-employment, we use the average of the income for the past three years as stated by the Norwegian Tax Administration. If you have just started working, we have used your income based on the information we have for the most recent year. This average may also include your earned income, which is deducted in the calculation of your income from self-employment.
+Your income from self-employment has been set to {{thousand-seperator selvstendigNæringsdrivende.årsinntekt}} kroner a year. When we calculate pregnancy benefit based on your income from self-employment, we use the average of the income for the past three years as stated by the Norwegian Tax Administration. If you have just started working, we have used your income based on the information we have for the most recent year. This average may also include your earned income, which is deducted in the calculation of your income from self-employment.
 {{#if selvstendigNæringsdrivende.inntektLavere_AT_FL_SN}}
-Because your earned income and income as a freelancer is higher than the average of your earned income, income as a freelancer and your income from self-employment, you will receive pregnancy benefits from your earned income and income as a freelancer.
+Because your earned income and income as a freelancer is higher than the average of your earned income, income as a freelancer and your income from self-employment, you will receive pregnancy benefit from your earned income and income as a freelancer.
 {{/if}}
 
 <!-- SN + AT -->
 {{else}}
-Your income from self-employment has been set to {{thousand-seperator selvstendigNæringsdrivende.årsinntekt}} kroner a year. When we calculate pregnancy benefits based on your income from self-employment, we use the average of the income for the past three years as stated by the Norwegian Tax Administration. If you have just started working, we have used your income based on the information we have for the most recent year. This average may also include your earned income, which is deducted in the calculation of your income from self-employment.
+Your income from self-employment has been set to {{thousand-seperator selvstendigNæringsdrivende.årsinntekt}} kroner a year. When we calculate pregnancy benefit based on your income from self-employment, we use the average of the income for the past three years as stated by the Norwegian Tax Administration. If you have just started working, we have used your income based on the information we have for the most recent year. This average may also include your earned income, which is deducted in the calculation of your income from self-employment.
 {{#if selvstendigNæringsdrivende.inntektLavere_AT_SN}}
-Because your earned income is higher than the average of your earned income and your income from self-employment, you will receive pregnancy benefits from your earned income.
+Because your earned income is higher than the average of your earned income and your income from self-employment, you will receive pregnancy benefit from your earned income.
 {{/if}}{{/if}}
 
 <!-- SN + FL -->
 {{else}}
-Your income from self-employment has been set to {{thousand-seperator selvstendigNæringsdrivende.årsinntekt}} kroner a year. When we calculate pregnancy benefits based on your income from self-employment, we use the average of the income for the past three years as stated by the Norwegian Tax Administration. If you have just started working, we have used your income based on the information we have for the most recent year. This average may also include your income as a freelancer, which is deducted in the calculation of your income from self-employment.
+Your income from self-employment has been set to {{thousand-seperator selvstendigNæringsdrivende.årsinntekt}} kroner a year. When we calculate pregnancy benefit based on your income from self-employment, we use the average of the income for the past three years as stated by the Norwegian Tax Administration. If you have just started working, we have used your income based on the information we have for the most recent year. This average may also include your income as a freelancer, which is deducted in the calculation of your income from self-employment.
 {{#if selvstendigNæringsdrivende.inntektLavere_FL_SN}}
-Because your income as a freelancer is higher than the average of your income as a freelancer and your income from self-employment, you will receive pregnancy benefits from your income as a freelancer.
+Because your income as a freelancer is higher than the average of your income as a freelancer and your income from self-employment, you will receive pregnancy benefit from your income as a freelancer.
 {{/if}}{{/gt}}{{/unless}}{{/if}}
 
 {{#each naturalytelser}}
@@ -66,11 +66,11 @@ From and including {{endringsdato}}, you will receive {{thousand-seperator nyDag
 {{/eq}}{{/each}}
 
 {{#if militærSivil}}
-We have stipulated your pregnancy benefits to two times the national insurance basic amount because you have been doing military service, civil service or civil defence service.
+We have stipulated your pregnancy benefit to two times the national insurance basic amount because you have been doing military service, civil service or civil defence service.
 {{/if}}
 
 {{#if inntektOver6G}}
-Your pregnancy benefits are calculated to {{thousand-seperator seksG}} kroner a year, which is six times the national insurance basic amount. You earn more than this, but you will not receive pregnancy benefits for the part of your income that exceeds six times the national insurance basic amount.
+Your pregnancy benefit are calculated to {{thousand-seperator seksG}} kroner a year, which is six times the national insurance basic amount. You earn more than this, but you will not receive pregnancy benefit for the part of your income that exceeds six times the national insurance basic amount.
 {{/if}}
 
 {{/if}}

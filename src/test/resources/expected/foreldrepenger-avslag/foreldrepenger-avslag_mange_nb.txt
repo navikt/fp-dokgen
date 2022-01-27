@@ -229,6 +229,8 @@ Fødselsnummer: 300220 12345
 * Du har ikke søkt om foreldrepenger fra og med 23. september 2021 til og med 24. september 2021. Du har heller ikke oppgitt at mor jobber, studerer eller er i annen aktivitet i denne perioden. Derfor har du mistet 1 dag.
 * Du har ikke rett til foreldrepenger fra og med 25. september 2021 til og med 26. september 2021 fordi du ikke er medlem i folketrygden.
   Du har ikke oppholdstillatelse i Norge i denne perioden.
+* Du har ikke rett til foreldrepenger fra og med 25. september 2021 til og med 26. september 2021 fordi foreldrepenger for nytt barn har startet.
+
 
 Vedtaket er gjort etter folketrygdloven § forvaltningsloven § 35.
 

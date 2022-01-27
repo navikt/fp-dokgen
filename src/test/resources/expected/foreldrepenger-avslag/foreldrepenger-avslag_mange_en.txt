@@ -227,7 +227,7 @@ National identity number: 300220 12345
 * You have not applied for parental benefit from 23. september 2021 up to and including 24. september 2021, nor have you informed us that the other parent is working, studying or is in any other approved activity. You have therefore lost 1 day.
 * You are not entitled to parental benefit from 25. september 2021 up to and including 26. september 2021 because you are not a member of the Norwegian National Insurance Scheme.
   You do not have the right to reside in Norway during this period.
-
+* You are not entitled to parental benefit from 25. september 2021 up to and including 26. september 2021 because parental benefit for a new child has started.
 The decision has been made in accordance with the National Insurance Act Section § forvaltningsloven § 35.
 
 <br/>

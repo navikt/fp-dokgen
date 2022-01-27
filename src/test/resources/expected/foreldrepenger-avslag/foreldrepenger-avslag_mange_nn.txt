@@ -229,6 +229,7 @@ Fødselsnummer: 300220 12345
 * Du har ikkje søkt om foreldrepengar frå og med 23. september 2021 til og med 24. september 2021. Du har heller ikkje oppgitt at mor jobbar, studerer eller er i annan aktivitet i denne perioden. Derfor har du mista 1 dag.
 * Du har ikkje rett til foreldrepengar frå og med 25. september 2021 til og med 26. september 2021 fordi du ikkje er medlem i folketrygda.
   Du har ikkje opphaldsløyve i Noreg i denne perioden.
+* Du har ikkje rett til foreldrepengar frå og med 25. september 2021 til og med 26. september 2021 fordi foreldrepengar for nytt barn har startet.
 
 Vedtaket er gjort etter folketrygdlova § forvaltningsloven § 35.
 
