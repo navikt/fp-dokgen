@@ -1,12 +1,12 @@
 {{> header_en }}
 
 {{#eq erSøkerDød true}}
-# Pregnancy benefits for {{capitalize felles.søkerNavn fully=true}} is stopped
+# pregnancy benefit for {{capitalize felles.søkerNavn fully=true}} is stopped
 {{> brukerdetaljer_en }}
 {{#eq opphørtPeriode.årsak "8304" }}
-We have been notified that {{felles.søkerNavn}}, who received pregnancy benefits from and including {{opphørtPeriode.stønadsperiodeFom}}, is dead.
+We have been notified that {{felles.søkerNavn}}, who received pregnancy benefit from and including {{opphørtPeriode.stønadsperiodeFom}}, is dead.
 
-We are sending this letter to inform you that we have stopped the pregnancy benefits. The last day pregnancy benefits was paid was {{opphørtPeriode.stønadsperiodeTom}}.
+We are sending this letter to inform you that we have stopped the pregnancy benefit. The last day pregnancy benefit was paid was {{opphørtPeriode.stønadsperiodeTom}}.
 {{/eq}}
 
 The decision has been made in accordance with the National Insurance Act {{lovhjemmel}}.
@@ -19,14 +19,14 @@ You may appeal within {{klagefristUker}} weeks from the date the estate received
 {{#eq opphørtPeriode.årsak "8305" }}
 # NAV has changed your pregnancy benefit
 {{else}}
-# You are no longer entitled to pregnancy benefits
+# You are no longer entitled to pregnancy benefit
 {{/eq}}
 {{> brukerdetaljer_en }}
 
 {{#in-array (array "1020" "1021" "1023" "1024" "1025" "8306") opphørtPeriode.årsak}}
 {{#neq opphørtPeriode.årsak "1024"}}
 {{#if opphørtPeriode.stønadsperiodeFom }}
-You are not entitled to pregnancy benefits from {{opphørtPeriode.stønadsperiodeFom}} because you are not a member of the Norwegian National Insurance Scheme.
+You are not entitled to pregnancy benefit from {{opphørtPeriode.stønadsperiodeFom}} because you are not a member of the Norwegian National Insurance Scheme.
 {{/if}}
 {{else}}
 {{#eq opphørtPeriode.årsak "1024"}}We do not have any information proving that you work or have family that supports you in Norway. It is therefore not documented that you are entitled to stay in Norway pursuant to the EEA Agreement.{{/eq}}
@@ -46,25 +46,25 @@ You were not considered a member because you spent more time abroad than in Norw
 {{/in-array}}
 
 {{#in-array (array "1035" "1061") opphørtPeriode.årsak}}
-You are not entitled to pregnancy benefits because you didn’t have earned income or income equivalent to earned income for at least four weeks before the start of the pregnancy benefits period.
+You are not entitled to pregnancy benefit because you didn’t have earned income or income equivalent to earned income for at least four weeks before the start of the pregnancy benefit period.
 {{/in-array}}
 
 {{#eq opphørtPeriode.årsak "1041" }}
-You are not entitled to pregnancy benefits because your income was lower than {{halvG}} kroner per year before taxes. Your pregnancy benefit therefore stops from {{opphørsdato}}.
+You are not entitled to pregnancy benefit because your income was lower than {{halvG}} kroner per year before taxes. Your pregnancy benefit therefore stops from {{opphørsdato}}.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "1060" }}
-You are not entitled to pregnancy benefits because it was not documented that you are pregnant. Your pregnancy benefit therefore stops from {{opphørsdato}}.
+You are not entitled to pregnancy benefit because it was not documented that you are pregnant. Your pregnancy benefit therefore stops from {{opphørsdato}}.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "1062" }}
-We have received information that you have received sickness benefits for a period when you already received pregnancy benefits. Your pregnancy benefit therefore stops from {{opphørsdato}}.
+We have received information that you have received sickness benefits for a period when you already received pregnancy benefit. Your pregnancy benefit therefore stops from {{opphørsdato}}.
 
-If pregnancy benefits becomes relevant from a later date, you must send a new application for pregnancy benefits, and {{#gt opphørtPeriode.antallArbeidsgivere 1}}your employers{{else}}your employer{{/gt}} must send a new income report to NAV.
+If pregnancy benefit becomes relevant from a later date, you must send a new application for pregnancy benefit, and {{#gt opphørtPeriode.antallArbeidsgivere 1}}your employers{{else}}your employer{{/gt}} must send a new income report to NAV.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "1063" }}
-You are not entitled to pregnancy benefits because you can do your tasks at  {{#gt opphørtPeriode.antallArbeidsgivere 1}}your employers {{else}}your employer {{/gt}} without the risk of harming the child/children you are expecting. Your pregnancy benefit therefore stops from {{opphørsdato}}.
+You are not entitled to pregnancy benefit because you can do your tasks at  {{#gt opphørtPeriode.antallArbeidsgivere 1}}your employers {{else}}your employer {{/gt}} without the risk of harming the child/children you are expecting. Your pregnancy benefit therefore stops from {{opphørsdato}}.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "1064" }}
@@ -72,7 +72,7 @@ We have received information that {{#gt opphørtPeriode.antallArbeidsgivere 1}}y
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "1065" }}
-You are not entitled to pregnancy benefits because you can do the work as a self-employed person or freelancer without the risk of harming the child/children you are expecting. Your pregnancy benefit therefore stops from {{opphørsdato}}.
+You are not entitled to pregnancy benefit because you can do the work as a self-employed person or freelancer without the risk of harming the child/children you are expecting. Your pregnancy benefit therefore stops from {{opphørsdato}}.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "1066"}}
@@ -80,7 +80,7 @@ We have received information that you as a self-employed person or freelancer ca
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "8305" }}
-We have received information that your child/your children died at {{dødsdatoBarn}}. Your last day on pregnancy benefits is therefore {{opphørsdato}}.
+We have received information that your child/your children died at {{dødsdatoBarn}}. Your last day on pregnancy benefit is therefore {{opphørsdato}}.
 {{/eq}}
 
 {{#in-array (array "8303" "8312") opphørtPeriode.årsak }}
@@ -94,11 +94,15 @@ We have received information that your child/children was born {{fødselsdato}}.
 
 Your pregnancy benefit therefore stops from {{opphørsdato}}.
 
-You may be entitled to parental benefits or lump-sum grant. See [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for more information and how to apply.
+You may be entitled to parental benefit or lump-sum grant. See [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for more information and how to apply.
 {{/eq}}
 
 {{#eq opphørtPeriode.årsak "8308" }}
-You are not entitled to pregnancy benefits because you applied too late.
+You are not entitled to pregnancy benefit because you applied too late.
+{{/eq}}
+
+{{#eq opphørtPeriode.årsak "8314" }}
+You are not entitled to pregnancy benefit from {{opphørsdato}} because you get parental benefit.
 {{/eq}}
 
 The decision has been made in accordance with the National Insurance Act section {{lovhjemmel}}.
