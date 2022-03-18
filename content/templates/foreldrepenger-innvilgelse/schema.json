@@ -326,6 +326,12 @@
     "disponibleDager": {
       "type": "number"
     },
+    "disponibleDagerUtenAktivitetskrav": {
+      "type": "number"
+    },
+    "disponibleDagerMedAktivitetskrav": {
+      "type": "number"
+    },
     "disponibleFellesDager": {
       "type": "number"
     },
