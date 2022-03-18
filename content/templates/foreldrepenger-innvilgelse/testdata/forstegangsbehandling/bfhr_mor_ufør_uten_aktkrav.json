@@ -1,20 +1,20 @@
 {
   "felles": {
-    "søkerNavn": "Donald Duck",
-    "søkerPersonnummer": "123456 12345",
-    "brevDato": "19. august 2021",
+    "søkerNavn": "SØKER NAVN",
+    "søkerPersonnummer": "111111 11111",
+    "brevDato": "18. mars 2022",
     "erAutomatiskBehandlet": false,
     "erKopi": false,
     "harVerge": false,
-    "saksnummer": "123456789",
+    "saksnummer": "152001008",
     "ytelseType": "FP",
     "behandlesAvKA": false,
-    "erUtkast": false
+    "erUtkast": true
   },
   "behandlingType": "FØRSTEGANGSSØKNAD",
   "behandlingResultatType": "INNVILGET",
   "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
-  "søknadsdato": "14. juni 2021",
+  "søknadsdato": "16. februar 2022",
   "dekningsgrad": 100,
   "harUtbetaling": true,
   "dagsats": 2455,
@@ -22,48 +22,49 @@
   "seksG": 638394,
   "inntektOverSeksG": true,
   "inntektMottattArbeidsgiver": false,
-  "annenForelderHarRett": true,
-  "annenForelderHarRettVurdert": "IKKE_VURDERT",
+  "annenForelderHarRett": false,
+  "annenForelderHarRettVurdert": "NEI",
   "aleneomsorgKode": "IKKE_VURDERT",
   "ikkeOmsorg": false,
   "barnErFødt": true,
   "årsakErFødselshendelse": false,
-  "gjelderMor": true,
+  "gjelderMor": false,
   "gjelderFødsel": true,
   "erBesteberegning": false,
-  "ingenRefusjon": false,
+  "ingenRefusjon": true,
   "delvisRefusjon": false,
-  "fullRefusjon": true,
+  "fullRefusjon": false,
   "fbEllerRvInnvilget": true,
+  "antallPerioder": 1,
   "antallInnvilgedePerioder": 1,
-  "antallAvslåttePerioder": 1,
+  "antallAvslåttePerioder": 0,
   "antallArbeidsgivere": 1,
-  "dagerTaptFørTermin": 14,
-  "disponibleDager": 45,
-  "disponibleDagerUtenAktivitetskrav": 0,
+  "dagerTaptFørTermin": 0,
+  "disponibleDager": 75,
+  "disponibleDagerUtenAktivitetskrav": 75,
   "disponibleDagerMedAktivitetskrav": 0,
-  "disponibleFellesDager": 80,
-  "sisteDagAvSistePeriode": "25. september 2021",
-  "stønadsperiodeFom": "13. august 2021",
-  "stønadsperiodeTom": "25. september 2021",
+  "disponibleFellesDager": 0,
+  "sisteDagAvSistePeriode": "20. september 2022",
+  "stønadsperiodeFom": "30. mars 2022",
+  "stønadsperiodeTom": "20. september 2022",
   "foreldrepengeperiodenUtvidetUker": 0,
   "antallBarn": 1,
   "prematurDager": 0,
-  "antallDødeBarn": 1,
-  "kreverSammenhengendeUttak": true,
-  "dødsdato":"15. august 2021",
+  "antallDødeBarn": 0,
+  "kreverSammenhengendeUttak": false,
+  "morKanSøkeOmDagerFørFødsel": false,
   "perioder": [
     {
       "innvilget": true,
-      "årsak": "2006",
-      "periodeFom": "13. august 2021",
-      "periodeTom": "25. september 2021",
+      "årsak": "2036",
+      "periodeFom": "30. mars 2022",
+      "periodeTom": "20. september 2022",
       "periodeDagsats": 2455,
       "antallTapteDager": 0,
       "prioritertUtbetalingsgrad": 100.0,
       "arbeidsforholdsliste": [
         {
-          "arbeidsgiverNavn": "ADVOKATEN AS",
+          "arbeidsgiverNavn": "BEDRIFT AS",
           "gradering": false,
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
@@ -72,29 +73,9 @@
         }
       ],
       "avslått": false
-    },
-    {
-      "innvilget": false,
-      "årsak": "4072",
-      "periodeFom": "26. september 2021",
-      "periodeTom": "27. mai 2022",
-      "periodeDagsats": 0,
-      "antallTapteDager": 0,
-      "prioritertUtbetalingsgrad": 0.0,
-      "arbeidsforholdsliste": [
-        {
-          "arbeidsgiverNavn": "ADVOKATEN AS",
-          "gradering": false,
-          "prosentArbeid": 0.0,
-          "stillingsprosent": 100.0,
-          "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
-        }
-      ],
-      "avslått": true
     }
   ],
-  "bruttoBeregningsgrunnlag": 900000,
+  "bruttoBeregningsgrunnlag": 720000,
   "harBruktBruttoBeregningsgrunnlag": false,
   "beregningsgrunnlagregler": [
     {
@@ -104,10 +85,10 @@
       "andelListe": [
         {
           "aktivitetStatus": "ARBEIDSTAKER",
-          "arbeidsgiverNavn": "ADVOKATEN AS",
+          "arbeidsgiverNavn": "BEDRIFT AS",
           "dagsats": 2455,
-          "månedsinntekt": 75000,
-          "årsinntekt": 900000,
+          "månedsinntekt": 60000,
+          "årsinntekt": 720000,
           "etterlønnSluttpakke": false,
           "sistLignedeÅr": 0
         }
@@ -115,11 +96,11 @@
     }
   ],
   "klagefristUker": 6,
-  "lovhjemlerUttak": "§§ 14-9, 14-10 og 14-12",
+  "lovhjemlerUttak": "§§ 14-13 og 14-14",
   "lovhjemlerBeregning": "§§ 14-7 og 8-30",
   "inkludereUtbetaling": true,
   "inkludereUtbetNårGradering": false,
-  "inkludereInnvilget": true,
-  "inkludereAvslag": true,
+  "inkludereInnvilget": false,
+  "inkludereAvslag": false,
   "inkludereNyeOpplysningerUtbet": false
 }

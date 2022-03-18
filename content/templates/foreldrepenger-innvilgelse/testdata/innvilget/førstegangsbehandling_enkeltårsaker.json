@@ -37,6 +37,8 @@
   "antallArbeidsgivere": 2,
   "dagerTaptFørTermin": 0,
   "disponibleDager": 0,
+  "disponibleDagerUtenAktivitetskrav": 0,
+  "disponibleDagerMedAktivitetskrav": 0,
   "disponibleFellesDager": 10,
   "sisteDagAvSistePeriode": "4. november 2022",
   "stønadsperiodeFom": "4. juni 2022",
