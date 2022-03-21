@@ -33,7 +33,7 @@ Du får {{thousand-seperator dagsats}} kroner per dag før skatt. Dette er i gje
 {{~#if sisteDagAvSistePeriode}}
 {{#gt disponibleDager 0}}
 {{~#if (or (eq annenForelderHarRett false) (eq aleneomsorgKode "JA"))}}
-Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dag{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} {{#if kreverSammenhengendeUttak}}må du søke om innen {{sisteDagAvSistePeriode}}{{else}}må være tatt ut innen barnet fyller tre år eller innen en ny foreldrepengeperiode for et nytt barn starter{{/if}}.{{/if}}{{/gt}}
+Det er {{disponibleDager}} {{#gt disponibleDager 1}}dager{{else}}dag{{/gt}} igjen av perioden med foreldrepenger. {{#gt disponibleDager 1}}Disse dagene{{else}}Denne dagen{{/gt}} {{#if kreverSammenhengendeUttak}}må du søke om innen {{sisteDagAvSistePeriode}}{{else}}må være tatt ut innen barnet fyller tre år eller innen en ny foreldrepengeperiode for et nytt barn starter{{/if}}.{{#gt disponibleDagerMedAktivitetskrav 0}} Mor må være i aktivitet for at du skal kunne ta ut{{#gt disponibleDagerUtenAktivitetskrav 0}} {{disponibleDagerMedAktivitetskrav}} av disse dagene, de resterende {{disponibleDagerUtenAktivitetskrav}} dagene kan du ta ut uten at mor er i aktivitet.{{else}} disse dagene.{{/gt}}{{/gt}}{{/if}}{{/gt}}
 {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
 {{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))}}
 Det er {{disponibleDager}} {{#eq disponibleDager 1}}dag{{else}}dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}dag{{else}}dager{{/eq}} som dere begge kan ta ut.

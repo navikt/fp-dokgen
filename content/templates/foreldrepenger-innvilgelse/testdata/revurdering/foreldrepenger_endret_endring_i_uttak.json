@@ -40,6 +40,8 @@
   "antallArbeidsgivere": 1,
   "dagerTaptFørTermin": 0,
   "disponibleDager": 0,
+  "disponibleDagerUtenAktivitetskrav": 0,
+  "disponibleDagerMedAktivitetskrav": 0,
   "disponibleFellesDager": 0,
   "sisteDagAvSistePeriode": "21. september 2020",
   "stønadsperiodeFom": "30. juni 2020",
