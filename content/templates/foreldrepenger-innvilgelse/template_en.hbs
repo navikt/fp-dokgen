@@ -31,14 +31,29 @@ You will receive {{thousand-seperator dagsats}} kroner per day before taxes. Thi
 {{#if inkludereUtbetNårGradering}}{{> foreldrepenger-innvilgelse/utbetaling_en}}{{/if}}
 
 {{~#if sisteDagAvSistePeriode}}
-{{#gt disponibleDager 0}}
-{{~#if (or (eq annenForelderHarRett false) (eq aleneomsorgKode "JA"))}}
-There are {{disponibleDager}} {{#gt disponibleDager 1}}days{{else}}day{{/gt}} remaining of the parental benefit period. {{#if kreverSammenhengendeUttak}}You must apply for {{#gt disponibleDager 1}}these days{{else}}this day{{/gt}} by {{sisteDagAvSistePeriode}}{{else}}{{#gt disponibleDager 1}}These days{{else}}This day{{/gt}} must be taken before the child reaches the age of three, or before a new period of parental benefit starts for a new child{{/if}}.{{#gt disponibleDagerMedAktivitetskrav 0}} The mother is required to work, study or be in any other approved activity for you to take {{#gt disponibleDagerUtenAktivitetskrav 0}} {{disponibleDagerMedAktivitetskrav}} of the remaining days, the other {{disponibleDagerUtenAktivitetskrav}} days can be taken without this requirement.{{else}} the remaining days.{{/gt}}{{/gt}}{{/if}}{{/gt}}
 {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
 {{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))}}
-There are {{disponibleDager}} {{#eq disponibleDager 1}}day{{else}}days{{/eq}} left of your quota and {{disponibleFellesDager}} {{#eq disponibleFellesDager 1}}day{{else}}days{{/eq}} left that you both can take.
-{{~#if (and (lt disponibleDager 2) (lt disponibleFellesDager 2))}} This day{{else}} These days{{/if}} {{#if kreverSammenhengendeUttak}}must be applied for by {{sisteDagAvSistePeriode}}{{else}}must be withdrawn before the child reaches the age of three, or before a new period of parental benefit starts for a new child{{/if}}.
-{{/if}}{{/if}}{{/if}}
+There are {{disponibleDager}}{{~#eq disponibleDager 1}} day{{~else}} days{{/eq}} left of your quota and {{disponibleFellesDager}}{{~#eq disponibleFellesDager 1}} day{{~else}} days{{/eq}} left that you both can take.
+{{~else}}{{#gt disponibleDager 0}}There are {{disponibleDager}}{{~#gt disponibleDager 1}} days{{~else}} day{{/gt}} left of the parental benefit period.{{/gt}}{{/if}}
+{{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}} The mother must be working, studying or taking part in some other activity in order for you to take out {{~#gt disponibleDagerMedAktivitetskrav 1}} {{disponibleDagerMedAktivitetskrav}} of these days{{else}} this day{{/gt}}. For periods where the mother is not in activity, you will lose days, even if you do not take out parental benefit. {{~#gt disponibleDagerMedAktivitetskrav 1}} The remaing days {{disponibleDagerUtenAktivitetskrav}}{{~else}} The remaing day {{/gt}} ,you can take out parental benefit without the mother being in an activity.
+{{~#gt disponibleDagerMedAktivitetskrav 1}} These remaining  {{disponibleDagerMedAktivitetskrav}} days {{~else}} This remaining day {{/gt}}
+{{~#if kreverSammenhengendeUttak}}must be applied for by {{sisteDagAvSistePeriode}}.{{~else}}must be used before the child reaches the age of three or before a new period of parental benefit starts for a new child.
+{{/if}}{{/if}}
+{{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (eq disponibleDagerMedAktivitetskrav 0))}}
+{{~#if kreverSammenhengendeUttak}}{{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} These days{{~else}} This day{{/if}} must be applied for by {{sisteDagAvSistePeriode}}.
+{{~else}}
+{{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} These days{{~else}} This day{{/if}}must be used before the child reaches the age of three or before a new period of parental benefit starts for a new child.
+{{/if}}{{/if}}
+{{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}}
+The mother must be working, studying or taking part in some other activity in order for you to take out {{~#gt disponibleDagerMedAktivitetskrav 1}} these days {{~else}} this day{{/gt}}. For periods where the mother is not in activity, you will lose days, even if you do not take out parental benefit.
+If the mother is taking part in an activity,  {{~#gt disponibleDagerMedAktivitetskrav 1}} the remaining {{disponibleDagerMedAktivitetskrav}} days {{~else}} the remaing day{{/gt}}
+{{~#if kreverSammenhengendeUttak}} must be applied for by {{sisteDagAvSistePeriode}}.
+{{~else}} must be used before the child reaches the age of three or before a new period of parental benefit starts for a new child.
+{{/if}}{{/if}}
+{{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (eq disponibleDagerMedAktivitetskrav 0))}}
+{{~#gt disponibleDagerUtenAktivitetskrav 1}} These days{{~else}}This day{{/gt}} must be used before the child reaches the age of three or before a new period of parental benefit starts for a new child.
+{{/if}}
+{{/if}}{{/if}}
 
 {{~#gt antallArbeidsgivere 1}}
 {{~#each perioder}}{{#if @first}}
