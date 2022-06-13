@@ -16,16 +16,12 @@ jobs:
       - name: Sjekk ut kode
         uses: actions/checkout@v3
 
-      - name: Test med up.sh
-        run: |
-          echo  "${{ secrets.GITHUB_TOKEN }}" | docker login --username "x-access-token" --password-stdin https://docker.pkg.github.com
-          chmod +x *.sh && ./up.sh
-
-      - name: Hent tag
-        run: echo "TAG=$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
-
-      - name: Lag image-navn
-        run: echo "IMAGE=$IMAGE_BASE:$TAG" >> $GITHUB_ENV
+      - name: Setup maven
+        uses: whelk-io/maven-settings-xml-action@v20
+        with:
+          repositories: '[{ "id": "github", "name": "github", "url": "https://maven.pkg.github.com/${{ github.repository }}", "releases": { "enabled": "true" }, "snapshots": { "enabled": "false" } }]'
+          servers: '[{ "id": "github", "username": "${{ github.actor }}", "password": "${{ secrets.GITHUB_TOKEN }}" }]'
+          output_file: settings.xml
 
       - name: Login to GitHub Packages Docker Registry
         uses: docker/login-action@49ed152c8eca782a232dede0303416e8f356c37b # Use commit-sha1 instead of tag for security concerns
@@ -33,6 +29,16 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Test med up.sh
+        run: |
+          chmod +x *.sh && ./up.sh
+
+      - name: Hent tag
+        run: echo "TAG=$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
+
+      - name: Lag image-navn
+        run: echo "IMAGE=$IMAGE_BASE:$TAG" >> $GITHUB_ENV
 
       - name: Bygg, tag og push Docker image
         run: |
@@ -48,7 +54,8 @@ jobs:
       - name: Bygger, tester og deployer fp-dokgen artifact
         run: |
           ./collect-contracts.sh
-          mvn deploy -e --quiet --settings .github/.m2/settings.xml --file pom.xml -Dchangelist= -Dsha1=-$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)
+          mvn -B - settings.xml versions:set -DnewVersion=${$TAG}
+          mvn install -e -q -s settings.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
