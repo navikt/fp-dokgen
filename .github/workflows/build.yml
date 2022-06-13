@@ -54,7 +54,7 @@ jobs:
       - name: Bygger, tester og deployer fp-dokgen artifact
         run: |
           ./collect-contracts.sh
-          mvn -B - settings.xml versions:set -DnewVersion=${$TAG}
+          mvn -B - settings.xml versions:set -DnewVersion=${TAG}
           mvn install -e -q -s settings.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
