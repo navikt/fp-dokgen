@@ -1025,6 +1025,24 @@
           "stillingsprosent": 100
         }
       ]
+    },
+    {
+      "innvilget": false,
+      "årsak": "4106",
+      "periodeFom": "1. november 2021",
+      "periodeTom": "10. november 2021",
+      "periodeDagsats": 1768,
+      "antallTapteDager": 2,
+      "prioritertUtbetalingsgrad": 80,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "ARBEIDSGIVER AS",
+          "gradering": false,
+          "utbetalingsgrad": 100,
+          "prosentArbeid": 0,
+          "stillingsprosent": 100
+        }
+      ]
     }
   ],
   "bruttoBeregningsgrunnlag": 574548,
