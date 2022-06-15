@@ -45,7 +45,7 @@ Du får {{thousand-seperator dagsats}} kroner per dag før skatt. Dette er i gje
             {{~#if kreverSammenhengendeUttak}}
                 {{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} Desse dagane{{~else}} Denne dagen{{/if}} må det søkjes om innan {{sisteDagAvSistePeriode}}.
             {{~else}}
-                {{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} Desse dagane{{~else}} Denne dagen{{/if}} må være tatt ut innan barnet fyller tre år eller innan ein ny foreldrepengeperiode for eit nytt barn startar.
+                {{~#eq utenMinsterett false}}{{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} Desse dagane{{~else}} Denne dagen{{/if}} må være tatt ut innan barnet fyller tre år{{~else}} Du må ta ut {{#gt disponibleDager 1}}desse dagane{{else}}denne dagen{{/gt}} før barnet er {{#eq dekningsgrad 80}}46{{else}}56{{/eq}} ukar gammelt{{/eq}} eller innan ein ny foreldrepengeperiode for eit nytt barn startar.
             {{~/if}}
         {{~/if}}
         {{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}}
