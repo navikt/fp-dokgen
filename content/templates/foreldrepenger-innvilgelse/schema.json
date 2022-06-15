@@ -47,7 +47,8 @@
     "inkludereUtbetNårGradering",
     "inkludereInnvilget",
     "inkludereAvslag",
-    "inkludereNyeOpplysningerUtbet"
+    "inkludereNyeOpplysningerUtbet",
+    "utenMinsterett"
   ],
   "$defs": {
     "arbeidsforhold": {
@@ -404,6 +405,9 @@
       "type": "boolean"
     },
     "inkludereNyeOpplysningerUtbet": {
+      "type": "boolean"
+    },
+    "utenMinsterett": {
       "type": "boolean"
     }
   }
