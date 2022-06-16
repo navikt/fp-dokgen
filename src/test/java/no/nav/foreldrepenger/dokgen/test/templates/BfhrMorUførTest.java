@@ -27,9 +27,23 @@ class BfhrMorUførTest {
     }
 
     @Test
+    void uten_aktkrav_med_misterett() throws Exception {
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/bfhr_mor_ufør_uten_aktkrav_uten_minsterett");
+        var expected = getExpected(BREVMAL, "forstegangsbehandling/bfhr_mor_ufør_uten_aktkrav_uten_minsterett.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     void med_aktkrav() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/bfhr_mor_ufør_med_aktkrav");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/bfhr_mor_ufør_med_aktkrav.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    void med_aktkrav_med_minsterett() throws Exception {
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/bfhr_mor_ufør_med_aktkrav_uten_minsterett");
+        var expected = getExpected(BREVMAL, "forstegangsbehandling/bfhr_mor_ufør_med_aktkrav_uten_minsterett.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 }
