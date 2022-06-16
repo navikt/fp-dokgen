@@ -38,8 +38,8 @@ You will receive {{thousand-seperator dagsats}} kroner per day before taxes. Thi
             {{~#gt disponibleDager 0}}There are {{disponibleDager}}{{#gt disponibleDager 1}} days{{else}} day{{/gt}} left of the parental benefit period.{{/gt}}
         {{~/if}}
         {{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}} The mother must be working, studying or taking part in some other activity in order for you to take out {{#gt disponibleDagerMedAktivitetskrav 1}}{{disponibleDagerMedAktivitetskrav}} of these days{{else}} this day{{/gt}}. For periods where the mother is not in activity, you will lose days, even if you do not take out parental benefit. {{#gt disponibleDagerMedAktivitetskrav 1}}The remaing days {{disponibleDagerUtenAktivitetskrav}}{{else}}The remaing day{{/gt}}, you can take out parental benefit without the mother being in an activity.
-            {{~#gt disponibleDagerMedAktivitetskrav 1}} These remaining {{disponibleDagerMedAktivitetskrav}} days {{~else}} This remaining day {{/gt}}
-            {{~#if kreverSammenhengendeUttak}}must be applied for by {{sisteDagAvSistePeriode}}.{{~else}}must be used before the child reaches the age of three or before a new period of parental benefit starts for a new child.{{/if}}
+            {{~#eq disponibleDager 1}}<br/>This remaining day{{~else}}<br/>All of the {{disponibleDager}} days{{/eq}}
+            {{~#if kreverSammenhengendeUttak}} must be applied for by {{sisteDagAvSistePeriode}}.{{~else}}must be used before the child reaches the age of three, or before a new period of parental benefit starts for a new child.{{/if}}
         {{~/if}}
         {{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (eq disponibleDagerMedAktivitetskrav 0))}}
             {{~#if kreverSammenhengendeUttak}}
@@ -49,14 +49,14 @@ You will receive {{thousand-seperator dagsats}} kroner per day before taxes. Thi
             {{~/if}}
         {{~/if}}
         {{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}}
-            {{~#eq true true}}The mother must be working, studying or taking part in some other activity in order for you to take out {{#gt disponibleDagerMedAktivitetskrav 1}}these days{{else}}this day{{/gt}}. For periods where the mother is not in activity, you will lose days, even if you do not take out parental benefit.{{/eq}}
-            {{~#eq true true}}If the mother is taking part in an activity, {{#gt disponibleDagerMedAktivitetskrav 1}}the remaining {{disponibleDagerMedAktivitetskrav}} days {{else}}the remaing day {{/gt}}{{/eq}}
-            {{~#if kreverSammenhengendeUttak}}must be applied for by {{sisteDagAvSistePeriode}}.
-            {{~else}}must be used before the child reaches the age of three or before a new period of parental benefit starts for a new child.
+            {{~#eq true true}} The mother must be working, studying or taking part in some other activity in order for you to take out {{#gt disponibleDagerMedAktivitetskrav 1}}these days{{else}}this day{{/gt}}. For periods where the mother is not in activity, you will lose days, even if you do not take out parental benefit.{{/eq}}
+            {{~#eq true true}} If the mother is taking part in an activity, {{#gt disponibleDagerMedAktivitetskrav 1}}the remaining {{disponibleDagerMedAktivitetskrav}} days {{else}}the remaing day {{/gt}}{{/eq}}
+            {{~#if kreverSammenhengendeUttak}} must be applied for by {{sisteDagAvSistePeriode}}.
+            {{~else}}must be used before the child reaches the age of three, or before a new period of parental benefit starts for a new child.
             {{~/if}}
         {{~/if}}
         {{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (eq disponibleDagerMedAktivitetskrav 0))}}
-            {{~#gt disponibleDagerUtenAktivitetskrav 1}} These days{{~else}} This day{{/gt}} must be used before the child reaches the age of three or before a new period of parental benefit starts for a new child.
+            {{~#gt disponibleDagerUtenAktivitetskrav 1}} These days{{~else}} This day{{/gt}} must be used before the child reaches the age of three, or before a new period of parental benefit starts for a new child.
         {{~/if}}
     {{~/if}}
 {{~/if}}
