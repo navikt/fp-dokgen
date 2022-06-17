@@ -206,7 +206,7 @@
 
 
 {{#eq avslagsårsak "4102"}}
-{{>punkt}}Du har ikke søkt om foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Du har heller ikke oppgitt at mor jobber, studerer eller er i annen aktivitet i denne perioden. Derfor har du mistet {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}}.
+{{#gt antallTapteDager 0}}{{>punkt}}Du har ikke søkt om foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Du har heller ikke oppgitt at mor jobber, studerer eller er i annen aktivitet i denne perioden. Derfor har du mistet {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}}.{{/gt}}
 {{/eq}}
 
 

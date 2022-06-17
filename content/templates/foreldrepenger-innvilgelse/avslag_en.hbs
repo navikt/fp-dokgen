@@ -28,7 +28,7 @@
 {{#if annenForelderHarRett}}
 {{>punkt}}No application has been submitted for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. Therefore, {{antallTapteDager}} {{#gt antallTapteDager 1}}days have{{else}}day has{{/gt}} been lost.
 {{else}}
-{{>punkt}}You have not applied for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
+{{#gt antallTapteDager 0}}{{>punkt}}You have not applied for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.{{/gt}}
 {{/if}}
 {{/case}}
 {{#case "4102"}}

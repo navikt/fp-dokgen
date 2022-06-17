@@ -32,7 +32,7 @@
 {{/if}}
 {{/case}}
 {{#case "4102"}}
-{{>punkt}}Du har ikkje søkt om foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}. Du har heller ikkje oppgitt at mor jobbar, studerer eller er i annan aktivitet i denne perioden. Derfor har du mista {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar{{else}}dag{{/gt}}.
+{{#gt antallTapteDager 0}}{{>punkt}}Du har ikkje søkt om foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}. Du har heller ikkje oppgitt at mor jobbar, studerer eller er i annan aktivitet i denne perioden. Derfor har du mista {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar{{else}}dag{{/gt}}.{{/gt}}
 {{/case}}
 {{~#case "4103"}}
 {{>punkt}}Dei første seks vekene etter fødsel er øyremerkte mor og kan berre utsetjast ved sjukdom eller innlegging. Du har ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mista {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar{{else}}dag{{/gt}}.
