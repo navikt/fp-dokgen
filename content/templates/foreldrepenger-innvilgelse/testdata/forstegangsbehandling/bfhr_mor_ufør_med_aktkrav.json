@@ -53,6 +53,7 @@
   "antallDødeBarn": 0,
   "kreverSammenhengendeUttak": false,
   "morKanSøkeOmDagerFørFødsel": false,
+  "utenMinsterett": false,
   "perioder": [
     {
       "innvilget": true,
