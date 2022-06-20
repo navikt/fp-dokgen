@@ -41,7 +41,7 @@
   "antallArbeidsgivere": 1,
   "dagerTaptFørTermin": 0,
   "disponibleDager": 75,
-  "disponibleDagerUtenAktivitetskrav": 0,
+  "disponibleDagerUtenAktivitetskrav": 75,
   "disponibleDagerMedAktivitetskrav": 0,
   "disponibleFellesDager": 0,
   "sisteDagAvSistePeriode": "20. september 2022",

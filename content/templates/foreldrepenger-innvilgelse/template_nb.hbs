@@ -39,13 +39,13 @@ Du får {{thousand-seperator dagsats}} kroner per dag før skatt. Dette er i gje
         {{~/if}}
         {{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}} Mor må være i aktivitet for at du skal kunne ta ut {{#gt disponibleDagerMedAktivitetskrav 1}}{{disponibleDagerMedAktivitetskrav}} av disse dagene{{~else}} denne dagen{{/gt}}. I perioder mor ikke er i aktivitet vil du miste dager, selv om du ikke tar ut foreldrepenger. {{#gt disponibleDagerMedAktivitetskrav 1}}De resterende {{disponibleDagerUtenAktivitetskrav}} dager{{else}}Den resterende dagen {{/gt}} kan du ta ut uten at mor er i aktivitet.
             {{~#eq disponibleDager 1}}<br/>Den resterende dagen{{~else}}<br/>Alle {{disponibleDager}} dagene{{/eq}}
-            {{~#if kreverSammenhengendeUttak}} må du søke om innen {{sisteDagAvSistePeriode}}.{{~else}} må være tatt ut innen barnet fyller tre år, eller innen en ny foreldrepengeperiode for et nytt barn starter.{{/if}}
+            {{~#if kreverSammenhengendeUttak}} må du søke om innen {{sisteDagAvSistePeriode}}.{{~else}} må være tatt ut{{~#eq utenMinsterett false}} innen barnet fyller tre år{{~else}} før barnet er {{#eq dekningsgrad 80}}46{{else}}56{{/eq}} uker gammelt{{/eq}}, eller innen en ny foreldrepengeperiode for et nytt barn starter.{{/if}}
         {{~/if}}
         {{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (eq disponibleDagerMedAktivitetskrav 0))}}
             {{~#if kreverSammenhengendeUttak}}
                 {{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} Disse dagene{{~else}} Denne dagen{{/if}} må det søkes om innen {{sisteDagAvSistePeriode}}.
             {{~else}}
-                {{~#eq utenMinsterett false}}{{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} Disse dagene{{~else}} Denne dagen{{/if}} må være tatt ut innen barnet fyller tre år{{~else}} Du må ta ut {{#gt disponibleDager 1}}disse dagene{{else}}denne dagen{{/gt}} før barnet er {{#eq dekningsgrad 80}}46{{else}}56{{/eq}} uker gammelt{{/eq}} eller innen en ny foreldrepengeperiode for et nytt barn starter.
+                {{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} Disse dagene{{~else}} Denne dagen{{/if}} må være tatt ut innen barnet fyller tre år eller innen en ny foreldrepengeperiode for et nytt barn starter.
             {{~/if}}
         {{~/if}}
         {{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}}
@@ -56,7 +56,7 @@ Du får {{thousand-seperator dagsats}} kroner per dag før skatt. Dette er i gje
             {{~/if}}
         {{~/if}}
         {{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (eq disponibleDagerMedAktivitetskrav 0))}}
-            {{~#gt disponibleDagerUtenAktivitetskrav 1}} Disse dagene{{~else}} Denne dagen{{/gt}} må være tatt ut innen barnet fyller tre år, eller innen en ny foreldrepengeperiode for et nytt barn starter.
+            {{~#gt disponibleDagerUtenAktivitetskrav 1}} Disse dagene{{~else}} Denne dagen{{/gt}} må være tatt ut{{~#eq utenMinsterett false}} innen barnet fyller tre år{{~else}} før barnet er {{#eq dekningsgrad 80}}46{{else}}56{{/eq}} uker gammelt{{/eq}}, eller innen en ny foreldrepengeperiode for et nytt barn starter.
         {{~/if}}
     {{~/if}}
 {{~/if}}

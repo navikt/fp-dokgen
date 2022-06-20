@@ -39,13 +39,13 @@ You will receive {{thousand-seperator dagsats}} kroner per day before taxes. Thi
         {{~/if}}
         {{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}} The mother must be working, studying or taking part in some other activity in order for you to take out {{#gt disponibleDagerMedAktivitetskrav 1}}{{disponibleDagerMedAktivitetskrav}} of these days{{else}} this day{{/gt}}. For periods where the mother is not in activity, you will lose days, even if you do not take out parental benefit. {{#gt disponibleDagerMedAktivitetskrav 1}}The remaing days {{disponibleDagerUtenAktivitetskrav}}{{else}}The remaing day{{/gt}}, you can take out parental benefit without the mother being in an activity.
             {{~#eq disponibleDager 1}}<br/>This remaining day{{~else}}<br/>All of the {{disponibleDager}} days{{/eq}}
-            {{~#if kreverSammenhengendeUttak}} must be applied for by {{sisteDagAvSistePeriode}}.{{~else}}must be used before the child reaches the age of three, or before a new period of parental benefit starts for a new child.{{/if}}
+        {{~#if kreverSammenhengendeUttak}} must be applied for by {{sisteDagAvSistePeriode}}.{{~else}} must be used before the child{{~#eq utenMinsterett false}} reaches the age of three{{~else}} is {{#eq dekningsgrad 80}}46{{else}}56{{/eq}} weeks old{{/eq}}, or before a new period of parental benefit starts for a new child.{{/if}}
         {{~/if}}
         {{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (eq disponibleDagerMedAktivitetskrav 0))}}
             {{~#if kreverSammenhengendeUttak}}
                 {{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} These days{{~else}} This day{{/if}} must be applied for by {{sisteDagAvSistePeriode}}.
             {{~else}}
-                {{~#eq utenMinsterett false}}{{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} These days{{~else}} This day{{/if}} must be used before the child reaches the age of three{{~else}} You must use {{#gt disponibleDager 1}}these days{{else}}this day{{/gt}} before the child is {{#eq dekningsgrad 80}}46{{else}}56{{/eq}} weeks old{{/eq}} or before a new period of parental benefit starts for a new child.
+                {{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} These days{{~else}} This day{{/if}} must be used before the child reaches the age of three or before a new period of parental benefit starts for a new child.
             {{~/if}}
         {{~/if}}
         {{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}}
@@ -56,7 +56,7 @@ You will receive {{thousand-seperator dagsats}} kroner per day before taxes. Thi
             {{~/if}}
         {{~/if}}
         {{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (eq disponibleDagerMedAktivitetskrav 0))}}
-            {{~#gt disponibleDagerUtenAktivitetskrav 1}} These days{{~else}} This day{{/gt}} must be used before the child reaches the age of three, or before a new period of parental benefit starts for a new child.
+            {{~#gt disponibleDagerUtenAktivitetskrav 1}} These days{{~else}} This day{{/gt}} must be used before the child{{~#eq utenMinsterett false}} reaches the age of three{{~else}} is {{#eq dekningsgrad 80}}46{{else}}56{{/eq}} weeks old{{/eq}}, or before a new period of parental benefit starts for a new child.
         {{~/if}}
     {{~/if}}
 {{~/if}}
