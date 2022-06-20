@@ -50,9 +50,9 @@ Du får {{thousand-seperator dagsats}} kroner per dag før skatt. Dette er i gje
         {{~/if}}
         {{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}}
             {{~#eq true true}} Mor må være i aktivitet for at du skal kunne ta ut {{#gt disponibleDagerMedAktivitetskrav 1}}disse dagene{{else}}denne dagen{{/gt}}. I perioder mor ikke er i aktivitet vil du miste dager, selv om du ikke tar ut foreldrepenger.{{/eq}}
-            {{~#eq true true}} Hvis mor er i aktivitet må {{#gt disponibleDagerMedAktivitetskrav 1}}resterende {{disponibleDagerMedAktivitetskrav}} dager {{else}}den resterende dagen {{/gt}}{{/eq}}
-            {{~#if kreverSammenhengendeUttak}}søkes om innen {{sisteDagAvSistePeriode}}.
-            {{~else}}være tatt ut innen barnet fyller tre år, eller innen en ny foreldrepengeperiode for et nytt barn starter.
+            {{~#eq true true}}{{#gt disponibleDagerMedAktivitetskrav 1}} Disse dagene {{else}} Denne dagen {{/gt}}{{/eq}}må
+            {{~#if kreverSammenhengendeUttak}} søkes om innen {{sisteDagAvSistePeriode}}.
+            {{~else}} være tatt ut innen barnet fyller tre år, eller innen en ny foreldrepengeperiode for et nytt barn starter.
             {{~/if}}
         {{~/if}}
         {{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (eq disponibleDagerMedAktivitetskrav 0))}}
