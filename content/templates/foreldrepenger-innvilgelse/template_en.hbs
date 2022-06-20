@@ -50,9 +50,9 @@ You will receive {{thousand-seperator dagsats}} kroner per day before taxes. Thi
         {{~/if}}
         {{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}}
             {{~#eq true true}} The mother must be working, studying or taking part in some other activity in order for you to take out {{#gt disponibleDagerMedAktivitetskrav 1}}these days{{else}}this day{{/gt}}. For periods where the mother is not in activity, you will lose days, even if you do not take out parental benefit.{{/eq}}
-            {{~#eq true true}} If the mother is taking part in an activity, {{#gt disponibleDagerMedAktivitetskrav 1}}the remaining {{disponibleDagerMedAktivitetskrav}} days {{else}}the remaing day {{/gt}}{{/eq}}
+            {{~#eq true true}} {{#gt disponibleDagerMedAktivitetskrav 1}} These remaining days {{else}} The remaing day {{/gt}}{{/eq}}
             {{~#if kreverSammenhengendeUttak}} must be applied for by {{sisteDagAvSistePeriode}}.
-            {{~else}}must be used before the child reaches the age of three, or before a new period of parental benefit starts for a new child.
+            {{~else}} must be used before the child reaches the age of three, or before a new period of parental benefit starts for a new child.
             {{~/if}}
         {{~/if}}
         {{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (eq disponibleDagerMedAktivitetskrav 0))}}
