@@ -33,7 +33,7 @@ Du får {{thousand-seperator dagsats}} kroner per dag før skatt. Dette er i gje
 {{~#if sisteDagAvSistePeriode}}
     {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
         {{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))~}}
-            Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dager{{/eq}} som dere begge kan ta ut.
+            Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dager{{/eq}} som begge kan ta ut.
         {{~else}}
             {{~#gt disponibleDager 0}}Det er {{disponibleDager}}{{#gt disponibleDager 1}} dager{{else}} dag{{/gt}} igjen av perioden med foreldrepenger.{{/gt}}
         {{~/if}}
