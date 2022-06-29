@@ -39,6 +39,9 @@
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" "2038" ) årsak}}
 {{>punkt}}Du tar ut foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
 {{/in-array}}
+{{#eq årsak "2039"}}
+{{>punkt}}Du får foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}}. De første seks ukene etter fødselen er forbeholdt mor, derfor har vi endret foreldrepengeperioden din. Dersom du ikke skal ha foreldrepenger disse dagene, må du søke om endring, men du vil ikke kunne ta ut disse dagene senere.
+{{/eq}}
 {{/lt}}
 
 

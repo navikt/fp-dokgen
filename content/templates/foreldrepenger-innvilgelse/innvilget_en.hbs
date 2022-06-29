@@ -24,7 +24,7 @@
 {{/in-array}}
 
 
-{{#eq årsak "4504"}}'
+{{#eq årsak "4504"}}
 {{>punkt}}You will receive {{trim-decimal prioritertUtbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
 
   We have reduced the amount you receive because you are working during this period. Even though you are working during this period, you will not be entitled to an extension of your parental benefit period. At least six weeks must have passed since the birth before you can combine parental benefit with work and get a longer period of parental benefit.
@@ -39,6 +39,9 @@
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" "2038" ) årsak}}
 {{>punkt}}You are taking parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. During this period, you will receive {{thousand-seperator this.periodeDagsats}} kroner per day before taxes.
 {{/in-array}}
+{{#eq årsak "2039"}}
+{{>punkt}}You will receive parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. We have changed your parental benefit period because the six first weeks after birth are reserved for the mother. If you still do not want to receive parental benefit for these days, you must reapply, but you will not be able to receive parental benefit for these days later.
+{{/eq}}
 {{/lt}}
 
 
