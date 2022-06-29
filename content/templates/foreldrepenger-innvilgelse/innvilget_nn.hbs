@@ -39,6 +39,9 @@
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" "2038" ) årsak}}
 {{>punkt}}Du tek ut foreldrepengar frå og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
 {{/in-array}}
+{{#eq årsak "2039"}}
+{{>punkt}}Du får foreldrepengar frå og med {{this.periodeFom}} til og med {{this.periodeTom}}. Dei første seks vekene etter fødsel er øyremerkte mor, derfor har vi endra foreldrepengeperioden din. Dersom du ikkje skal ha foreldrepengar desse dagane, må du søkje om endring, men du vil ikkje kunne ta ut desse dagane seinare.
+{{/eq}}
 {{/lt}}
 
 
