@@ -40,7 +40,7 @@
 {{>punkt}}Du tar ut foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
 {{/in-array}}
 {{#eq årsak "2039"}}
-{{>punkt}}Du får foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}}. De første seks ukene etter fødselen er forbeholdt mor, derfor har vi endret foreldrepengeperioden din. Dersom du ikke skal ha foreldrepenger disse dagene, må du søke om endring, men du vil ikke kunne ta ut disse dagene senere.
+{{>punkt}}Du får foreldrepenger {{#eq this.periodeFom this.periodeTom}}{{this.periodeFom}}{{else}}fra og med {{this.periodeFom}} til og med {{this.periodeTom}}{{/eq}}. De første seks ukene etter fødselen er forbeholdt mor, derfor har vi endret foreldrepengeperioden din. Dersom du ikke skal ha foreldrepenger {{#eq this.periodeFom this.periodeTom}}denne dagen{{else}}disse dagene{{/eq}}, må du søke om endring, men du vil ikke kunne ta ut {{#eq this.periodeFom this.periodeTom}}denne dagen{{else}}disse dagene{{/eq}} senere.
 {{/eq}}
 {{/lt}}
 
