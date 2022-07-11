@@ -29,7 +29,7 @@ spec:
       memory: 512Mi
   prometheus:
     enabled: true
-    path: /internal/prometheus
+    path: actuator/prometheus
   ingresses:
   {{#each ingresses as |url|}}
      - {{url}}
