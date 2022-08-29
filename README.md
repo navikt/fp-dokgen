@@ -11,7 +11,7 @@ https://github.com/navikt/dokgen
 Spørsmål knyttet til koden eller prosjektet kan stilles til:
 
 * Anja Gøtesen Aalerud (anja.gotesen.aalerud@nav.no)
-* Jan Erik Johnsen (jan.erik.johnsen@nav.no)
+* Michal Sladek (michal.sladek@nav.no)
 
 ## For NAV-ansatte
 Interne henvendelser kan stilles på Slack-kanalen #teamforeldrepenger
