@@ -24,7 +24,7 @@ Vi kan ikke vurdere om du har rett til foreldrepenger før du har søkt. Dette g
 <br/>
 
 ##### Du har rett til innsyn
-På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
+For å se dokumentene i saken din, logg inn på [nav.no](https://nav.no/).
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">

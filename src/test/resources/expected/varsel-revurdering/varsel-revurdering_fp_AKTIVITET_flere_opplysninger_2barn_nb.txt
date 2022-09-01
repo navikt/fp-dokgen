@@ -31,7 +31,7 @@ Du kan ha rett til foreldrepenger hvis mor:
 
 Har du flere opplysninger eller ønsker du å uttale deg, må du gjøre dette innen 24. mai 2020.
 
-Du sender uttalelsen din ved å logge deg inn på [nav.no/dittnav](https://nav.no/dittnav) og velge «Send beskjed til NAV». Opplysninger sender du inn på [nav.no/ettersendelse](https://nav.no/ettersendelse).
+Du sender uttalelsen din ved å logge deg inn og velge «Skriv til oss» på [nav.no/skriv-til-oss](https://www.nav.no/skriv-til-oss). Opplysninger sender du inn på [nav.no/ettersendelse](https://nav.no/ettersendelse).
 
 Opplysningsplikten går fram av folketrygdloven §§ 21-3 og 21-4.
 <br/>
@@ -42,7 +42,7 @@ Du sender dokumentasjonen til oss på [nav.no/ettersendelser](https://nav.no/ett
 <br/>
 <br/>
 ##### Du har rett til innsyn
-På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
+For å se dokumentene i saken din, logg inn på [nav.no](https://nav.no/).
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">

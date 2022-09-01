@@ -30,7 +30,7 @@ Du kan anke vedtaket til Trygderetten. Fristen er 6 uker fra den datoen vedtaket
 Klagerettighetene dine og skjema for klage/anke finner du på [nav.no/klage](https://nav.no/klage).
 <br/>
 ##### Du har rett til innsyn
-På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
+For å se dokumentene i saken din, logg inn på [nav.no](https://nav.no/).
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">

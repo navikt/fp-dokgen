@@ -18,7 +18,7 @@ National identity number: 300220 12345
 
 You are entitled to a lump-sum grant and will receive NOK 85 000 within one week.<br/>
 
-The lump-sum grant is not liable to tax, and you can check your payment at [nav.no/dittnav](https://nav.no/dittnav).<br/>
+The lump-sum grant is not liable to tax, and you can check your payment at [nav.no](https://nav.no/).<br/>
 
 The decision has been made pursuant to section 14-17 of the National Insurance Act.<br/>
 
@@ -29,7 +29,7 @@ You may appeal within 6 weeks from the date you received the decision. You will 
 <br/>
 <br/>
 ##### You have right of access
-Go to [nav.no/dittnav](https://nav.no/dittnav) to see the documents in your case.
+Log into [nav.no](https://nav.no/) to see the documents in your case.
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
