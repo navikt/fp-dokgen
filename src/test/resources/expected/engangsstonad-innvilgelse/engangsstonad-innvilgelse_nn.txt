@@ -18,7 +18,7 @@ Fødselsnummer: 300220 12345
 
 Du har rett til eingongsstønad og får utbetalt 85 000 kroner innan ei veke.<br/>
 
-Stønaden er skattefri, og du kan sjekke utbetalinga di på [nav.no/dittnav](https://nav.no/dittnav).<br/>
+Stønaden er skattefri, og du kan sjekke utbetalinga di ved å logge inn på [nav.no](https://nav.no/).<br/>
 
 Vedtaket er gjort etter folketrygdlova § 14-17.<br/>
 
@@ -29,7 +29,7 @@ Du kan klage innan 6 veker frå den datoen du fekk vedtaket. Du finn skjema og i
 <br/>
 <br/>
 ##### Du har rett til innsyn
-På [nav.no/dittnav](https://nav.no/dittnav) kan du sjå dokumenta i saka di.
+For å sjå dokumenta i saka di, logg inn på [nav.no](https://nav.no/).
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">

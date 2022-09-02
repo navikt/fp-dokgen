@@ -26,7 +26,7 @@ Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og
 <br/>
 <br/>
 ##### Du har rett til innsyn
-På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
+For å se dokumentene i saken din, logg inn på [nav.no](https://nav.no/).
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">

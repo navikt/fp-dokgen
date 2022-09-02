@@ -22,7 +22,7 @@ We expect to be able to process your application within 5 weeks.
 <br/>
 
 ##### You have right of access
-Go to [nav.no/dittnav](https://nav.no/dittnav) to see the documents in your case.
+Log into [nav.no](https://nav.no/) to see the documents in your case.
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">

@@ -22,7 +22,7 @@ Du kan ikkje jobbe heiltid og samtidig få svangerskapspengar. Arbeider du delti
 
 Ønskjer du å søkje om å endre svangerskapspengeperioden eller å uttale deg, må du gjere dette innan 24. mai 2020.
 
-Du kan søkje om å endre perioden din på [nav.no](https://nav.no/). Ønskjer du å uttale deg kan du gjere det ved å logge deg inn på [nav.no/dittnav](https://nav.no/dittnav) og velje «Send beskjed til NAV».
+Du kan søkje om å endre perioden din på [nav.no](https://nav.no/). Ønskjer du å uttale deg kan du gjere det ved å logge deg inn og velje «Skriv til oss» på [nav.no/skriv-til-oss](https://www.nav.no/skriv-til-oss).
 
 Opplysningsplikta går fram av folketrygdlova §§ 21-3 og 21-4.
 <br/>
@@ -33,7 +33,7 @@ Du sender dokumentasjonen til oss på [nav.no/ettersendelser](https://nav.no/ett
 <br/>
 <br/>
 ##### Du har rett til innsyn
-På [nav.no/dittnav](https://nav.no/dittnav) kan du sjå dokumenta i saka di.
+For å sjå dokumenta i saka di, logg inn på [nav.no](https://nav.no/).
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">

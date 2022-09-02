@@ -30,7 +30,7 @@ Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og
 Du må som hovedregel begynne å betale beløpet tilbake, selv om du klager på dette vedtaket. Dette følger av forvaltningsloven § 42. Vi vil betale tilbake pengene du har betalt inn, om du får vedtak om at du ikke trengte å betale tilbake hele eller deler av beløpet du skyldte.
 <br/>
 ##### Du har rett til innsyn
-På [nav.no/dittnav](https://nav.no/dittnav) kan du se dokumentene i saken din.
+For å se dokumentene i saken din, logg inn på [nav.no](https://nav.no/).
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
