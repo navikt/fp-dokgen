@@ -16,6 +16,7 @@
     "inntektOverSeksG",
     "inntektMottattArbeidsgiver",
     "annenForelderHarRett",
+    "annenForelderRettEØS",
     "annenForelderHarRettVurdert",
     "aleneomsorgKode",
     "ikkeOmsorg",
@@ -272,6 +273,9 @@
       "type": "boolean"
     },
     "annenForelderHarRett": {
+      "type": "boolean"
+    },
+    "annenForelderRettEØS": {
       "type": "boolean"
     },
     "annenForelderHarRettVurdert": {
