@@ -33,7 +33,11 @@ You will receive {{thousand-seperator dagsats}} kroner per day before taxes. Thi
 {{~#if sisteDagAvSistePeriode}}
     {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
         {{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))~}}
-            There are {{disponibleDager}}{{#eq disponibleDager 1}} day{{else}} days{{/eq}} left of your quota and {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} day{{else}} days{{/eq}} left that you both can take.
+            {{~#if annenForelderRettEØS}}
+There are {{disponibleDager}}{{#eq disponibleDager 1}} day{{else}} days{{/eq}} left of your quota. An additional {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} day{{else}} days{{/eq}} of parental benefit{{#eq disponibleDager 1}} is{{else}} are{{/eq}} available if the other parent has not used {{#eq disponibleDager 1}} it{{else}} them{{/eq}} in another European Economic Area member state{{#eq gjelderMor false}}, and if the other parent is either working, studying or taking part in some other activity{{/eq}}.
+            {{~else}}
+There are {{disponibleDager}}{{#eq disponibleDager 1}} day{{else}} days{{/eq}} left of your quota and {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} day{{else}} days{{/eq}} left that you both can take.
+            {{~/if}}
         {{~else}}
             {{~#gt disponibleDager 0}}There are {{disponibleDager}}{{#gt disponibleDager 1}} days{{else}} day{{/gt}} left of the parental benefit period.{{/gt}}
         {{~/if}}
