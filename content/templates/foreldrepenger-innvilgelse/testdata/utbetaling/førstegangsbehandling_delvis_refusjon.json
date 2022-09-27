@@ -22,6 +22,7 @@
   "inntektMottattArbeidsgiver": false,
   "annenForelderHarRett": true,
   "annenForelderRettEØS": false,
+  "oppgittAnnenForelderRettEØS": false,
   "annenForelderHarRettVurdert": "NEI",
   "aleneomsorgKode": "IKKE_VURDERT",
   "ikkeOmsorg": false,

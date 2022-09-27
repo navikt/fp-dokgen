@@ -6,8 +6,18 @@ You will receive {{thousand-seperator dagsats}} kroner per day before taxes star
 
 {{> foreldrepenger-innvilgelse/felles/refusjon_en }}
 
-{{#eq annenForelderHarRettVurdert "JA"}}The other parent is entitled to parental benefit. You will therefore not be granted the whole parental benefit period.{{/eq}}
-{{#eq annenForelderHarRettVurdert "NEI"}}The other parent is not entitled to parental benefit. You will therefore be granted the whole parental benefit period.{{/eq}}
+{{#eq annenForelderHarRettVurdert "JA"}}
+    {{#if (eq oppgittAnnenForelderRettEØS false)}}
+The other parent is entitled to parental benefit. You will therefore not be granted the whole parental benefit period.
+    {{/if}}
+{{/eq}}
+{{#eq annenForelderHarRettVurdert "NEI"}}
+    {{#if (eq oppgittAnnenForelderRettEØS true)}}
+You are not entitled to qoutas because the other parent has not earned a right to parental benefit in another country, equivalent to the right of parental benefit in Norway.
+    {{else}}
+The other parent is not entitled to parental benefit. You will therefore be granted the whole parental benefit period.
+    {{/if}}
+{{/eq}}
 
 {{#if annenForelderHarRett}}{{#eq aleneomsorgKode "NEI"}}You do not have lone care for the {{#gt antallBarn 1}}children{{else}}child{{/gt}} and will therefore not be granted the whole parental benefit period.{{/eq}}{{/if}}
 
