@@ -6,8 +6,18 @@ Du får {{thousand-seperator dagsats}} kroner per dag før skatt fra og med {{st
 
 {{> foreldrepenger-innvilgelse/felles/refusjon_nb }}
 
-{{#eq annenForelderHarRettVurdert "JA"}}Den andre forelderen har rett til foreldrepenger. Derfor får du ikke hele foreldrepengeperioden.{{/eq}}
-{{#eq annenForelderHarRettVurdert "NEI"}}Den andre forelderen har ikke rett til foreldrepenger. Derfor får du hele foreldrepengeperioden.{{/eq}}
+{{#eq annenForelderHarRettVurdert "JA"}}
+    {{#if (eq oppgittAnnenForelderRettEØS false)}}
+Den andre forelderen har rett til foreldrepenger. Derfor får du ikke hele foreldrepengeperioden.
+    {{/if}}
+{{/eq}}
+{{#eq annenForelderHarRettVurdert "NEI"}}
+    {{#if (eq oppgittAnnenForelderRettEØS true)}}
+Du har ikke rett til kvote fordi den andre forelderen ikke har opptjent rett tilsvarende foreldrepenger i Norge.
+    {{else}}
+Den andre forelderen har ikke rett til foreldrepenger. Derfor får du hele foreldrepengeperioden.
+    {{/if}}
+{{/eq}}
 
 {{#if annenForelderHarRett}}{{#eq aleneomsorgKode "NEI"}}Du har ikke aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} og får derfor ikke hele foreldrepengeperioden.{{/eq}}{{/if}}
 
