@@ -65,6 +65,8 @@ There are {{disponibleDager}}{{#eq disponibleDager 1}} day{{else}} days{{/eq}} l
     {{~/if}}
 {{~/if}}
 
+{{#if (and (eq barnErFødt false) (eq ønskerJustertVedFødsel true))}}Your first period of parental benefit is set to start at the estimated date of delivery. When the child is born we will adjust that period to start at the date of birth.{{/if}}
+
 {{~#gt antallArbeidsgivere 1}}
 {{~#each perioder}}{{#if @first}}
 {{~#each arbeidsforholdsliste}}

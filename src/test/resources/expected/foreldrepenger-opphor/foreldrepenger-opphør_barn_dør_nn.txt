@@ -13,7 +13,7 @@ Namn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-##### Dette har vi endrat
+##### Dette har vi endra
 Vi har fått opplyst at barna dine døydde 10. mai 2021. Den siste dagen din med foreldrepengar er derfor 24. mai 2021.
 Vedtaket er gjort etter folketrygdlova § 14 og forvaltningslova § 35.
 ##### Du har rett til å klage

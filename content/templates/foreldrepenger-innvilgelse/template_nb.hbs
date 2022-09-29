@@ -65,6 +65,8 @@ Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dager{{/eq}} igj
     {{~/if}}
 {{~/if}}
 
+{{#if (and (eq barnErFødt false) (eq ønskerJustertVedFødsel true))}}Du starter å ta ut foreldrepengene dine på termindato. Vi vil automatisk endre perioden til å starte fra fødselsdato når barnet blir født.{{/if}}
+
 {{~#gt antallArbeidsgivere 1}}
 {{~#each perioder}}{{#if @first}}
 {{~#each arbeidsforholdsliste}}
