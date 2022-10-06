@@ -16,11 +16,11 @@
     <artifactId>fp-dokgen</artifactId>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
-        <handlebar.version>4.2.1</handlebar.version>
+        <handlebar.version>4.3.0</handlebar.version>
     </properties>
 
     <build>

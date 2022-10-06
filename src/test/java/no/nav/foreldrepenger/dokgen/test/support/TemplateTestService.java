@@ -25,8 +25,11 @@ import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.ThousandSeperatorHelp
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.TrimDecimalHelper;
 
 import java.io.IOException;
+import java.lang.reflect.AccessibleObject;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class TemplateTestService {
 
@@ -108,11 +111,28 @@ public class TemplateTestService {
     }
 
     private static Context with(JsonNode model) {
+        var MY_FIELD_VALUE_RESOLVER = new FieldValueResolver() {
+
+            @Override
+            protected Set<FieldWrapper> members(Class<?> clazz) {
+                var members = super.members(clazz);
+                return members.stream()
+                        .filter(this::isValidField)
+                        .collect(Collectors.toSet());
+            }
+
+            boolean isValidField(FieldWrapper fw) {
+                if (fw instanceof AccessibleObject) {
+                    return isUseSetAccessible(fw);
+                }
+                return true;
+            }
+        };
         return Context
                 .newBuilder(model)
                 .resolver(JsonNodeValueResolver.INSTANCE,
                         JavaBeanValueResolver.INSTANCE,
-                        FieldValueResolver.INSTANCE,
+                        MY_FIELD_VALUE_RESOLVER,
                         MapValueResolver.INSTANCE,
                         MethodValueResolver.INSTANCE
                 ).build();
