@@ -84,9 +84,6 @@
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0) (lt this.stillingsprosent 100.0) (eq this.gradering false) (or (eq delvisRefusjon true) (eq fullRefusjon true)))}}
   You are not working in your entire part-time position at {{this.arbeidsgiverNavn}}, and will therefore receive parental benefit from both your employer and NAV.
 {{/if}}{{/if}}
-{{#if arbeidsforholdsliste.0.gradering}} {{#if (and (eq this.utbetalingsgrad 100.0) (eq this.gradering false))}}
-  In the same period, you will be on 100 per cent parental leave from your job at {{this.arbeidsgiverNavn}}.
-{{/if}}{{/if}}
 {{/each}}
 {{/if}}
 
@@ -122,6 +119,10 @@
 {{>punkt}}You may take over the quota from the other parent from {{periodeFom}} up to and including {{periodeTom}} because you have sole care of the {{#eq antallBarn 1}}child{{else}}children{{/eq}}.
 {{/eq}}
 {{/each}}
+
+{{#if graderingOgFulltUttakIAnnenAktivitet}}
+When you combine work and parental benefit, you will receive full parental benefit for the position where you are not working.
+{{/if}}
 
 {{#if (and (gt antallInnvilgedePerioder 0) (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
 The parental benefit amounts to the same as before. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).

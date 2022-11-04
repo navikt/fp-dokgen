@@ -84,9 +84,6 @@
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0) (lt this.stillingsprosent 100.0) (eq this.gradering false) (or (eq delvisRefusjon true) (eq fullRefusjon true)))}}
   Du jobber ikke i hele deltidsstillingen din hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepenger både fra arbeidsgiveren din og NAV.
 {{/if}}{{/if}}
-{{#if arbeidsforholdsliste.0.gradering}} {{#if (and (eq this.utbetalingsgrad 100.0) (eq this.gradering false))}}
-  I samme periode tar du ut 100 prosent permisjon hos {{this.arbeidsgiverNavn}}.
-{{/if}}{{/if}}
 {{/each}}
 {{/if}}
 
@@ -122,6 +119,10 @@
 {{>punkt}}Du får overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har aleneomsorgen for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
 {{/eq}}
 {{/each}}
+
+{{#if graderingOgFulltUttakIAnnenAktivitet}}
+I periodene du kombinerer arbeid og foreldrepenger, får du utbetalt fulle foreldrepenger der du ikke jobber.
+{{/if}}
 
 {{#if (and (gt antallInnvilgedePerioder 0) (eq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
 Foreldrepengene utgjør det samme som tidligere. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
