@@ -3,28 +3,38 @@ name: Build and deploy
 on:
   push:
     branches:
-      - master
-
-env:
-  IMAGE_BASE: ghcr.io/${{ github.repository }}
+      - '**'
+    paths-ignore:
+      - '**.md'
+      - '**.MD'
+      - '.gitignore'
+      - 'LICENSE'
+      - 'CODEOWNERS'
+      - 'dokumentasjon/**'
+      - 'lokalutvikling/**'
 
 jobs:
-  kompiler:
+  build-app:
+    name: Build and test
     runs-on: ubuntu-latest
+    outputs:
+      build-version: ${{ steps.generate-build-version.outputs.build-version }}
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3.1.0
 
-      - name: Sjekk ut kode
-        uses: actions/checkout@v3
-
-      - name: Setup maven
-        uses: whelk-io/maven-settings-xml-action@v20
+      - name: Create maven .m2 settings
+        uses: whelk-io/maven-settings-xml-action@v21
         with:
-          repositories: '[{ "id": "github", "name": "github", "url": "https://maven.pkg.github.com/${{ github.repository }}", "releases": { "enabled": "true" }, "snapshots": { "enabled": "false" } }]'
-          servers: '[{ "id": "github", "username": "${{ github.actor }}", "password": "${{ secrets.GITHUB_TOKEN }}" }]'
+          repositories: '[{
+              "id": "github", "name": "github", "url": "https://maven.pkg.github.com/${{ github.repository }}",
+              "releases": { "enabled": "true" }, "snapshots": { "enabled": "false" }
+            }]'
+          servers: '[{ "id": "github", "username": "${{ github.actor }}", "password": "${{ secrets.READER_TOKEN }}" }]'
           output_file: settings.xml
 
       - name: Login to GitHub Packages Docker Registry
-        uses: docker/login-action@49ed152c8eca782a232dede0303416e8f356c37b # Use commit-sha1 instead of tag for security concerns
+        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -34,83 +44,72 @@ jobs:
         run: |
           chmod +x *.sh && ./up.sh
 
-      - name: Hent tag
-        run: echo "TAG=$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
-
-      - name: Lag image-navn
-        run: echo "IMAGE=$IMAGE_BASE:$TAG" >> $GITHUB_ENV
-
-      - name: Bygg, tag og push Docker image
+      - name: Generate build version
+        id: generate-build-version
         run: |
-          docker build --pull --tag ${IMAGE_BASE}:${TAG} --tag ${IMAGE_BASE}:latest .
-          docker push ${IMAGE_BASE} --all-tags
+          echo "build-version=$(date +%Y.%m.%d.%H%M%S)-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_OUTPUT
 
-      - uses: actions/setup-java@v3
+      - name: Print build version
+        run: echo "Generated build-version is ${{ steps.generate-build-version.outputs.build-version }}"
+
+      - name: Set up QEMU
+        if: github.ref_name == 'master'
+        uses: docker/setup-qemu-action@v2
+
+      - name: Set up Docker Buildx
+        if: github.ref_name == 'master'
+        uses: docker/setup-buildx-action@v2
+
+      - name: Build and push
+        if: github.ref_name == 'master'
+        uses: docker/build-push-action@v3
         with:
-          distribution: 'temurin'
+          context: .
+          platforms: linux/amd64, linux/arm64
+          pull: true
+          push: ${{ github.ref_name == 'master' }}
+          tags: ghcr.io/${{ github.repository }}:${{ steps.generate-build-version.outputs.build-version }}, ghcr.io/${{ github.repository }}:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Set up JDK-17 with cache
+        uses: actions/setup-java@v3
+        with:
           java-version: 17
+          distribution: 'temurin'
           cache: 'maven'
 
       - name: Bygger, tester og deployer fp-dokgen artifact
         run: |
           ./collect-contracts.sh
-          mvn -B -s settings.xml versions:set -DnewVersion=${TAG}
+          mvn -B -s settings.xml versions:set -DnewVersion=${{ steps.generate-build-version.outputs.build-version }}
           mvn install -e -q -s settings.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Lukk gamle deployment-issues
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              labels: ['deployment']
-            }).then(response => {
-              response.data.forEach(issue => {
-                github.rest.issues.update({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: issue.number,
-                  state: 'closed'
-                });
-              });
-            });
+  create-issue:
+    name: Issues
+    if: github.ref_name == 'master'
+    needs: build-app
+    uses: navikt/fp-gha-workflows/.github/workflows/issues.yml@main
+    with:
+      build-version: ${{ needs.build-app.outputs.build-version }}
+    secrets: inherit
 
-      - name: Opprett deployment issue
-        id: createdeployissue
-        if: success()
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            github.rest.issues.create( {
-            owner: context.issue.owner,
-            repo: context.issue.repo,
-            labels: ['deployment'],
-            title: 'Deploy av ${{ env.TAG }}',
-            body: '${{ github.sha }}'})
-            .then(response => {
-                core.setOutput('number', response.data.number);
-            });
+  trigger-autotest:
+    name: Autotest FP
+    if: github.ref_name == 'master'
+    needs: [ build-app, create-issue ]
+    uses: navikt/fp-gha-workflows/.github/workflows/autotest.yml@main
+    with:
+      build-version: ${{ needs.build-app.outputs.build-version }}
+      issue-number: ${{ needs.create-issue.outputs.issue-number }}
+    secrets: inherit
 
-      - uses: navikt/github-app-token-generator@v1
-        id: get-token
-        with:
-          private-key: ${{ secrets.FP_PRIVATE_KEY }}
-          app-id: ${{ secrets.FP_APP_ID }}
-
-      - name: Trigger tester for FP
-        run: |
-          curl -XPOST -u "x-access-token:${{ steps.get-token.outputs.token }}" \
-          -H "Accept: application/vnd.github.v3+json" \
-          https://api.github.com/repos/navikt/fpsak-autotest/actions/workflows/trigger.yml/dispatches \
-          -d '{"ref":"master",
-                  "inputs":{
-                      "trigger": "${{ github.repository }}",
-                      "version": "${{ env.TAG }}",
-                      "issue_number": "${{ steps.createdeployissue.outputs.number }}"
-                  }}'
+  snyk:
+    name: Snyk
+    needs: build-app
+    uses: navikt/fp-gha-workflows/.github/workflows/snyk.yml@main
+    with:
+      build-version: ${{ needs.build-app.outputs.build-version }}
+    secrets: inherit
