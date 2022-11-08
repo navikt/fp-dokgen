@@ -97,7 +97,7 @@ jobs:
     secrets: inherit
 
   trigger-autotest:
-    name: Autotest FP
+    name: Autotest
     if: github.ref_name == 'master'
     needs: [ build-app, create-issue ]
     uses: navikt/fp-gha-workflows/.github/workflows/autotest.yml@main
