@@ -98,5 +98,6 @@
   "inkludereUtbetNårGradering": true,
   "inkludereInnvilget": true,
   "inkludereAvslag": false,
-  "inkludereNyeOpplysningerUtbet": false
+  "inkludereNyeOpplysningerUtbet": false,
+  "graderingOgFulltUttakIAnnenAktivitet": true
 }

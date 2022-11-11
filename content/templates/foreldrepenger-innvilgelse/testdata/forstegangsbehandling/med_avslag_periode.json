@@ -264,5 +264,6 @@
   "inkludereUtbetNårGradering": false,
   "inkludereInnvilget": true,
   "inkludereAvslag": true,
-  "inkludereNyeOpplysningerUtbet": false
+  "inkludereNyeOpplysningerUtbet": false,
+  "graderingOgFulltUttakIAnnenAktivitet": true
 }

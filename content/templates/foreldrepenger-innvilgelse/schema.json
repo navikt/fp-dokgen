@@ -49,7 +49,8 @@
     "inkludereInnvilget",
     "inkludereAvslag",
     "inkludereNyeOpplysningerUtbet",
-    "utenMinsterett"
+    "utenMinsterett",
+    "graderingOgFulltUttakIAnnenAktivitet"
   ],
   "$defs": {
     "arbeidsforhold": {
@@ -412,6 +413,9 @@
       "type": "boolean"
     },
     "utenMinsterett": {
+      "type": "boolean"
+    },
+    "graderingOgFulltUttakIAnnenAktivitet": {
       "type": "boolean"
     }
   }
