@@ -42,7 +42,7 @@ jobs:
 
       - name: Run tests
         run: |
-          ./collect-contracts.sh
+          chmod +x collect-contracts.sh && ./collect-contracts.sh
           mvn -B -s settings.xml versions:set -DnewVersion=${{ steps.generate-build-version.outputs.build-version }}
           mvn test -e -q -s settings.xml
 
@@ -55,7 +55,7 @@ jobs:
 
       - name: Test med up.sh
         run: |
-          chmod +x *.sh && ./up.sh
+          chmod +x up.sh && ./up.sh
 
       - name: Generate build version
         id: generate-build-version
