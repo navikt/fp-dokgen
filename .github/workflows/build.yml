@@ -40,11 +40,6 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Run tests
-        run: |
-          chmod +x collect-contracts.sh && ./collect-contracts.sh
-          mvn -B -s settings.xml versions:set -DnewVersion=${{ steps.generate-build-version.outputs.build-version }}
-          mvn test -e -q -s settings.xml
 
       - name: Login to GitHub Packages Docker Registry
         uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
@@ -64,6 +59,12 @@ jobs:
 
       - name: Print build version
         run: echo "Generated build-version is ${{ steps.generate-build-version.outputs.build-version }}"
+
+      - name: Run tests
+        run: |
+          chmod +x collect-contracts.sh && ./collect-contracts.sh
+          mvn -B -s settings.xml versions:set -DnewVersion=${{ steps.generate-build-version.outputs.build-version }}
+          mvn test -e -q -s settings.xml
 
       - name: Set up QEMU
         if: github.ref_name == 'master'
