@@ -23,10 +23,10 @@ Den andre forelderen har ikke rett til foreldrepenger. Derfor får du hele forel
 
 {{#eq aleneomsorgKode "JA"}}{{#not ikkeOmsorg}}Du har aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} og får derfor hele foreldrepengeperioden.{{/not}}{{/eq}}
 
-{{#gt prematurDager 0}}Vi har forlenget foreldrepengeperioden med {{prematurDager}} {{#gt prematurDager 1}}dager{{else}}dag{{/gt}} fordi du fødte før svangerskapsuke 33.{{/gt}}
+{{#gt prematurDager 0}}Vi har forlenget foreldrepengeperioden med {{prematurDager}} {{#gt prematurDager 1}}dager{{else}}dag{{/gt}} fordi barnet/barna ble født før svangerskapsuke 33.{{/gt}}
 
 {{#gt foreldrepengeperiodenUtvidetUker 0}}{{#if gjelderFødsel}}{{#gt antallBarn 1}}{{#if barnErFødt}}
-Vi har forlenget foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} uker fordi {{#in-array (array "NEI" "IKKE_VURDERT") aleneomsorgKode}}dere fikk{{else}}du fødte{{/in-array}} flere barn.
+Vi har forlenget foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} uker fordi {{#in-array (array "NEI" "IKKE_VURDERT") aleneomsorgKode}}dere fikk{{else}}du fikk{{/in-array}} flere barn.
 {{else}}
 Vi har forlenget foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} uker fordi {{#in-array (array "NEI" "IKKE_VURDERT") aleneomsorgKode}}dere{{else}}du{{/in-array}} venter flere barn.{{/if}}{{/gt}}
 {{else}}
