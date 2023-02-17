@@ -1,11 +1,11 @@
 package no.nav.foreldrepenger.dokgen.test.handlebarshelpers;
 
-import com.github.jknack.handlebars.Helper;
-import com.github.jknack.handlebars.Options;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+
+import com.github.jknack.handlebars.Helper;
+import com.github.jknack.handlebars.Options;
 
 public class CaseHelper implements Helper<Object> {
 

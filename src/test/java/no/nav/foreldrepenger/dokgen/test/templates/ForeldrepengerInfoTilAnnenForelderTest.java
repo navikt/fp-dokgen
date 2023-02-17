@@ -1,12 +1,13 @@
 package no.nav.foreldrepenger.dokgen.test.templates;
 
-import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
-import no.nav.foreldrepenger.dokgen.test.support.Språk;
-import org.junit.jupiter.api.Test;
-
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compileContent;
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
+
+import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
+import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 public class ForeldrepengerInfoTilAnnenForelderTest {
     private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_INFOBREV_TIL_ANNEN_FORELDER;
@@ -63,8 +64,7 @@ public class ForeldrepengerInfoTilAnnenForelderTest {
     @Test
     public void infobrev_opphol_nn() throws Exception {
         var content = compileContent(BREVMAL, Språk.NYNORSK, "infobrev_opphold");
-        assertThat(content)
-            .isEqualToIgnoringNewLines(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_opphold_nn.txt"));
+        assertThat(content).isEqualToIgnoringNewLines(getExpected(BREVMAL, "foreldrepenger-infotilannenforelder_opphold_nn.txt"));
     }
 
     @Test

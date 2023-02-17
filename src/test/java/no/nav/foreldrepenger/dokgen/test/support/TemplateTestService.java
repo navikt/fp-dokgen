@@ -1,5 +1,12 @@
 package no.nav.foreldrepenger.dokgen.test.support;
 
+import java.io.IOException;
+import java.lang.reflect.AccessibleObject;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Set;
+import java.util.stream.Collectors;
+
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.jknack.handlebars.Context;
@@ -13,6 +20,7 @@ import com.github.jknack.handlebars.context.MethodValueResolver;
 import com.github.jknack.handlebars.helper.ConditionalHelpers;
 import com.github.jknack.handlebars.helper.StringHelpers;
 import com.github.jknack.handlebars.io.FileTemplateLoader;
+
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.AdditionHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.ArrayHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.CaseHelper;
@@ -24,21 +32,13 @@ import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.SwitchHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.ThousandSeperatorHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.TrimDecimalHelper;
 
-import java.io.IOException;
-import java.lang.reflect.AccessibleObject;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.Set;
-import java.util.stream.Collectors;
-
 public class TemplateTestService {
 
     private static final Handlebars handlebars;
 
     static {
-        handlebars = Files.exists(FileStructureUtil.getTemplateRootPath())
-            ? new Handlebars(new FileTemplateLoader(FileStructureUtil.getTemplateRootPath().toFile()))
-            : new Handlebars();
+        handlebars = Files.exists(FileStructureUtil.getTemplateRootPath()) ? new Handlebars(
+            new FileTemplateLoader(FileStructureUtil.getTemplateRootPath().toFile())) : new Handlebars();
         handlebars.registerHelper("eq", ConditionalHelpers.eq);
         handlebars.registerHelper("neq", ConditionalHelpers.neq);
         handlebars.registerHelper("gt", ConditionalHelpers.gt);
@@ -116,9 +116,7 @@ public class TemplateTestService {
             @Override
             protected Set<FieldWrapper> members(Class<?> clazz) {
                 var members = super.members(clazz);
-                return members.stream()
-                        .filter(this::isValidField)
-                        .collect(Collectors.toSet());
+                return members.stream().filter(this::isValidField).collect(Collectors.toSet());
             }
 
             boolean isValidField(FieldWrapper fw) {
@@ -128,14 +126,10 @@ public class TemplateTestService {
                 return true;
             }
         };
-        return Context
-                .newBuilder(model)
-                .resolver(JsonNodeValueResolver.INSTANCE,
-                        JavaBeanValueResolver.INSTANCE,
-                        MY_FIELD_VALUE_RESOLVER,
-                        MapValueResolver.INSTANCE,
-                        MethodValueResolver.INSTANCE
-                ).build();
+        return Context.newBuilder(model)
+            .resolver(JsonNodeValueResolver.INSTANCE, JavaBeanValueResolver.INSTANCE, MY_FIELD_VALUE_RESOLVER, MapValueResolver.INSTANCE,
+                MethodValueResolver.INSTANCE)
+            .build();
     }
 
     private static String removeNewLines(String text) {

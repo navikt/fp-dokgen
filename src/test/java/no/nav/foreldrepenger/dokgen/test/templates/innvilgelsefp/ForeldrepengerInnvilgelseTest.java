@@ -89,6 +89,7 @@ public class ForeldrepengerInnvilgelseTest {
         var expected = getExpected(BREVMAL, "revurdering/foreldrepenger_endret_endring_i_beregning_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+
     @Test
     public void revurdering_foreldrepenger_dødt_barn() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "revurdering/foreldrepenger_endret_barn_dod");

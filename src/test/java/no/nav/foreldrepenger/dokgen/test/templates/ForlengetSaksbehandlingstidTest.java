@@ -44,8 +44,7 @@ public class ForlengetSaksbehandlingstidTest {
     public void skal_generere_brev_for_forlenget_saksbehandlingstid_FP_FORLENGET_på_engelsk() throws Exception {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fp_FORLENGET");
         var expected = getExpected(BREVMAL, "forlenget-saksbehandlingstid_fp_FORLENGET_en.txt");
-        assertThat(content)
-            .isEqualToIgnoringNewLines(expected);
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test

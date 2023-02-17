@@ -74,8 +74,11 @@ public class ForeldrepengerOpphørTest {
         testData.put(ER_SØKER_DØD, true);
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
         assertThat(content).contains(String.format("Foreldrepengene til %s er stanset", "Donald Duck"));
-        assertThat(content).contains(String.format("Vi har fått melding om at %s, som mottok foreldrepenger fra og med %s, er død.", BRUKER_NAVN, STØNADSDATO_FOM));
-        assertThat(content).contains(String.format("Vi sender dette brevet for å informere om at vi har stanset foreldrepengene. Siste dagen det ble utbetalt foreldrepenger var %s.", STØNADSDATO_TOM));
+        assertThat(content).contains(
+            String.format("Vi har fått melding om at %s, som mottok foreldrepenger fra og med %s, er død.", BRUKER_NAVN, STØNADSDATO_FOM));
+        assertThat(content).contains(String.format(
+            "Vi sender dette brevet for å informere om at vi har stanset foreldrepengene. Siste dagen det ble utbetalt foreldrepenger var %s.",
+            STØNADSDATO_TOM));
     }
 
     @Test
@@ -92,15 +95,16 @@ public class ForeldrepengerOpphørTest {
         opprettÅrsaker(testData, "1035");
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
-        assertThat(content).contains("Du hadde ikke arbeidsinntekt eller inntekt som var likestilt med lønn i seks av de siste ti månedene før perioden med foreldrepenger startet. Derfor har du ikke rett til foreldrepenger.");
+        assertThat(content).contains(
+            "Du hadde ikke arbeidsinntekt eller inntekt som var likestilt med lønn i seks av de siste ti månedene før perioden med foreldrepenger startet. Derfor har du ikke rett til foreldrepenger.");
     }
 
     @Test
     public void test_kode_søker_1027_medmor_1_barn() throws Exception {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1027");
-        testData.put(RELASJONSKODE,  "MEDMOR");
-        testData.put(ANTALL_BARN,  1);
+        testData.put(RELASJONSKODE, "MEDMOR");
+        testData.put(ANTALL_BARN, 1);
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
         assertThat(content).contains("Du hadde ikke rett til foreldrepenger fordi du ikke var registrert som medmor til barnet.");
@@ -110,8 +114,8 @@ public class ForeldrepengerOpphørTest {
     public void test_kode_søker_1027_far_2_barn() throws Exception {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1027");
-        testData.put(RELASJONSKODE,  "FAR");
-        testData.put(ANTALL_BARN,  2);
+        testData.put(RELASJONSKODE, "FAR");
+        testData.put(ANTALL_BARN, 2);
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
         assertThat(content).contains("Du hadde ikke rett til foreldrepenger fordi du ikke var registrert som far til barna.");
@@ -121,11 +125,13 @@ public class ForeldrepengerOpphørTest {
     public void test_kode_søker_4072_2_barn() throws Exception {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "4072");
-        testData.put(ANTALL_BARN,  2);
+        testData.put(ANTALL_BARN, 2);
         testData.put("barnDødsdato", BARN_DØDSDATO);
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
-        assertThat(content).contains(String.format("Vi har fått opplyst at barna dine døde %s. Den siste dagen din med foreldrepenger er derfor %s", BARN_DØDSDATO, STØNADSDATO_TOM));
+        assertThat(content).contains(
+            String.format("Vi har fått opplyst at barna dine døde %s. Den siste dagen din med foreldrepenger er derfor %s", BARN_DØDSDATO,
+                STØNADSDATO_TOM));
     }
 
     @Test
@@ -134,7 +140,8 @@ public class ForeldrepengerOpphørTest {
         opprettÅrsaker(testData, "1024");
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
-        assertThat(content).containsIgnoringWhitespaces("Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet barna dine ble født.\nVi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.");
+        assertThat(content).containsIgnoringWhitespaces(
+            "Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet barna dine ble født.\nVi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.");
     }
 
     private void opprettÅrsaker(final ObjectNode testData, String... årsaker) {
@@ -149,15 +156,15 @@ public class ForeldrepengerOpphørTest {
         ObjectNode testData = OBJECT_MAPPER.createObjectNode();
         opprettFelles(testData);
         testData.put(ER_SØKER_DØD, false);
-        testData.put(ANTALL_BARN,  2);
-        testData.put(RELASJONSKODE,  "MEDMOR");
+        testData.put(ANTALL_BARN, 2);
+        testData.put(RELASJONSKODE, "MEDMOR");
         testData.put("fomStønadsdato", STØNADSDATO_FOM);
         testData.put("tomStønadsdato", STØNADSDATO_TOM);
         testData.put("opphørDato", STØNADSDATO_TOM);
-        testData.put("gjelderFødsel",  true);
-        testData.put("halvG",  50000);
-        testData.put("klagefristUker",  6);
-        testData.put("lovhjemmelForAvslag",  "§ 14");
+        testData.put("gjelderFødsel", true);
+        testData.put("halvG", 50000);
+        testData.put("klagefristUker", 6);
+        testData.put("lovhjemmelForAvslag", "§ 14");
         return testData;
     }
 
