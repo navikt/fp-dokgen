@@ -15,76 +15,13 @@ on:
 
 jobs:
   build-app:
-    name: Build and test
-    runs-on: ubuntu-latest
-    outputs:
-      build-version: ${{ steps.generate-build-version.outputs.build-version }}
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3.3.0
-
-      - name: Create maven .m2 settings
-        uses: whelk-io/maven-settings-xml-action@v21
-        with:
-          repositories: '[{
-              "id": "github", "name": "github", "url": "https://maven.pkg.github.com/${{ github.repository }}",
-              "releases": { "enabled": "true" }, "snapshots": { "enabled": "false" }
-            }]'
-          servers: '[{ "id": "github", "username": "${{ github.actor }}", "password": "${{ secrets.GITHUB_TOKEN }}" }]'
-          output_file: settings.xml
-
-      - name: Set up JDK-17 with cache
-        uses: actions/setup-java@v3
-        with:
-          java-version: 17
-          distribution: 'temurin'
-          cache: 'maven'
-
-
-      - name: Login to GitHub Packages Docker Registry
-        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Test med up.sh
-        run: |
-          chmod +x up.sh && ./up.sh
-
-      - name: Generate build version
-        id: generate-build-version
-        run: |
-          echo "build-version=$(date +%Y.%m.%d.%H%M%S)-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_OUTPUT
-
-      - name: Print build version
-        run: echo "Generated build-version is ${{ steps.generate-build-version.outputs.build-version }}"
-
-      - name: Run tests
-        run: |
-          chmod +x collect-contracts.sh && ./collect-contracts.sh
-          mvn -B -s settings.xml versions:set -DnewVersion=${{ steps.generate-build-version.outputs.build-version }}
-          mvn test -e -q -s settings.xml
-
-      - name: Set up QEMU
-        if: github.ref_name == 'master'
-        uses: docker/setup-qemu-action@v2
-
-      - name: Set up Docker Buildx
-        if: github.ref_name == 'master'
-        uses: docker/setup-buildx-action@v2
-
-      - name: Build and push
-        if: github.ref_name == 'master'
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          platforms: linux/amd64, linux/arm64
-          pull: true
-          push: ${{ github.ref_name == 'master' }}
-          tags: ghcr.io/${{ github.repository }}:${{ steps.generate-build-version.outputs.build-version }}, ghcr.io/${{ github.repository }}:latest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+    name: Build
+    uses: navikt/fp-gha-workflows/.github/workflows/build-app-no-db.yml@main
+    with:
+      sonar-scan: true
+      build-image: ${{ github.ref_name == 'master' }} # default: true
+      push-image: ${{ github.ref_name == 'master' }} # default: false
+    secrets: inherit
 
   create-issue:
     name: Issues
