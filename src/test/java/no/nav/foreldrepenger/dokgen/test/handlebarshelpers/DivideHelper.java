@@ -1,10 +1,10 @@
 package no.nav.foreldrepenger.dokgen.test.handlebarshelpers;
 
-import com.github.jknack.handlebars.Helper;
-import com.github.jknack.handlebars.Options;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+
+import com.github.jknack.handlebars.Helper;
+import com.github.jknack.handlebars.Options;
 
 public class DivideHelper implements Helper<Integer> {
 
