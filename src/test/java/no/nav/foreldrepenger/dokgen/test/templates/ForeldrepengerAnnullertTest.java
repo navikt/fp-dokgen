@@ -9,25 +9,25 @@ import org.junit.jupiter.api.Test;
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
-public class ForeldrepengerAnnullertTest {
+class ForeldrepengerAnnullertTest {
     private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_ANNULLERT;
 
     @Test
-    public void skal_generere_foreldrepenger_annullert_på_bokmål() throws Exception {
+    void skal_generere_foreldrepenger_annullert_på_bokmål() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fp_annullert");
         var expected = getExpected(BREVMAL, "foreldrepenger-annullert_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void skal_generere_foreldrepenger_annullert_på_nynorsk() throws Exception {
+    void skal_generere_foreldrepenger_annullert_på_nynorsk() throws Exception {
         var content = compileContent(BREVMAL, Språk.NYNORSK, "test_fp_annullert");
         var expected = getExpected(BREVMAL, "foreldrepenger-annullert_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void skal_generere_foreldrepenger_annullert_på_engelsk() throws Exception {
+    void skal_generere_foreldrepenger_annullert_på_engelsk() throws Exception {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fp_annullert");
         var expected = getExpected(BREVMAL, "foreldrepenger-annullert_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);

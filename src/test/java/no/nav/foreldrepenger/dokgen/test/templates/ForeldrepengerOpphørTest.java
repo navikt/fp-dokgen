@@ -12,7 +12,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
-public class ForeldrepengerOpphørTest {
+class ForeldrepengerOpphørTest {
     private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_OPPHØR;
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
@@ -27,62 +27,61 @@ public class ForeldrepengerOpphørTest {
     protected static final String RELASJONSKODE = "relasjonskode";
 
     @Test
-    public void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_bokmål() throws Exception {
+    void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_bokmål() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_mange");
         var expected = getExpected(BREVMAL, "foreldrepenger-opphør_mange_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_nynorsk() throws Exception {
+    void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_nynorsk() throws Exception {
         var content = compileContent(BREVMAL, Språk.NYNORSK, "test_mange");
         var expected = getExpected(BREVMAL, "foreldrepenger-opphør_mange_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_engelsk() throws Exception {
+    void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_engelsk() throws Exception {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "test_mange");
         var expected = getExpected(BREVMAL, "foreldrepenger-opphør_mange_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void skal_generere_foreldrepenger_opphør_for_død_barn_på_bokmål() throws Exception {
+    void skal_generere_foreldrepenger_opphør_for_død_barn_på_bokmål() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_barn_dør");
         var expected = getExpected(BREVMAL, "foreldrepenger-opphør_barn_dør_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void skal_generere_foreldrepenger_opphør_for_død_barn_på_nynorsk() throws Exception {
+    void skal_generere_foreldrepenger_opphør_for_død_barn_på_nynorsk() throws Exception {
         var content = compileContent(BREVMAL, Språk.NYNORSK, "test_barn_dør");
         var expected = getExpected(BREVMAL, "foreldrepenger-opphør_barn_dør_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void skal_generere_foreldrepenger_opphør_for_død_barn_på_engelsk() throws Exception {
+    void skal_generere_foreldrepenger_opphør_for_død_barn_på_engelsk() throws Exception {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "test_barn_dør");
         var expected = getExpected(BREVMAL, "foreldrepenger-opphør_barn_dør_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void test_søker_død() throws Exception {
+    void test_søker_død() throws Exception {
         var testData = opprettTestData();
         testData.put(ER_SØKER_DØD, true);
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
-        assertThat(content).contains(String.format("Foreldrepengene til %s er stanset", "Donald Duck"));
-        assertThat(content).contains(
-            String.format("Vi har fått melding om at %s, som mottok foreldrepenger fra og med %s, er død.", BRUKER_NAVN, STØNADSDATO_FOM));
-        assertThat(content).contains(String.format(
-            "Vi sender dette brevet for å informere om at vi har stanset foreldrepengene. Siste dagen det ble utbetalt foreldrepenger var %s.",
-            STØNADSDATO_TOM));
+        assertThat(content).contains(String.format("Foreldrepengene til %s er stanset", "Donald Duck"))
+            .contains(String.format("Vi har fått melding om at %s, som mottok foreldrepenger fra og med %s, er død.", BRUKER_NAVN, STØNADSDATO_FOM))
+            .contains(String.format(
+                "Vi sender dette brevet for å informere om at vi har stanset foreldrepengene. Siste dagen det ble utbetalt foreldrepenger var %s.",
+                STØNADSDATO_TOM));
     }
 
     @Test
-    public void test_søker_ikke_død() throws Exception {
+    void test_søker_ikke_død() throws Exception {
         var testData = opprettTestData();
         testData.put(ER_SØKER_DØD, false);
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
@@ -90,7 +89,7 @@ public class ForeldrepengerOpphørTest {
     }
 
     @Test
-    public void test_kode_søker_1035() throws Exception {
+    void test_kode_søker_1035() throws Exception {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1035");
 
@@ -100,7 +99,7 @@ public class ForeldrepengerOpphørTest {
     }
 
     @Test
-    public void test_kode_søker_1027_medmor_1_barn() throws Exception {
+    void test_kode_søker_1027_medmor_1_barn() throws Exception {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1027");
         testData.put(RELASJONSKODE, "MEDMOR");
@@ -111,7 +110,7 @@ public class ForeldrepengerOpphørTest {
     }
 
     @Test
-    public void test_kode_søker_1027_far_2_barn() throws Exception {
+    void test_kode_søker_1027_far_2_barn() throws Exception {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1027");
         testData.put(RELASJONSKODE, "FAR");
@@ -122,7 +121,7 @@ public class ForeldrepengerOpphørTest {
     }
 
     @Test
-    public void test_kode_søker_4072_2_barn() throws Exception {
+    void test_kode_søker_4072_2_barn() throws Exception {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "4072");
         testData.put(ANTALL_BARN, 2);
@@ -135,7 +134,7 @@ public class ForeldrepengerOpphørTest {
     }
 
     @Test
-    public void test_kode_søker_1024_og_opphørdato() throws Exception {
+    void test_kode_søker_1024_og_opphørdato() throws Exception {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1024");
 

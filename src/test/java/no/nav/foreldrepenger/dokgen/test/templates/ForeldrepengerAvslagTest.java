@@ -9,39 +9,39 @@ import org.junit.jupiter.api.Test;
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
-public class ForeldrepengerAvslagTest {
+class ForeldrepengerAvslagTest {
     private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_AVSLAG;
 
     @Test
-    public void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_bokmål() throws Exception {
+    void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_bokmål() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_mange");
         var expected = getExpected(BREVMAL, "foreldrepenger-avslag_mange_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_nynorsk() throws Exception {
+    void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_nynorsk() throws Exception {
         var content = compileContent(BREVMAL, Språk.NYNORSK, "test_mange");
         var expected = getExpected(BREVMAL, "foreldrepenger-avslag_mange_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_engelsk() throws Exception {
+    void skal_generere_foreldrepenger_avslag_brevet_med_de_fleste_avslagsårsakene_på_engelsk() throws Exception {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "test_mange");
         var expected = getExpected(BREVMAL, "foreldrepenger-avslag_mange_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void skal_generere_foreldrepenger_avslag_brevet_med_en_enkelt_periode() throws Exception {
+    void skal_generere_foreldrepenger_avslag_brevet_med_en_enkelt_periode() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_enkeltperiode");
         var expected = getExpected(BREVMAL, "foreldrepenger-avslag_enkeltperiode.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void skal_generere_foreldrepenger_avslag_brevet_med_fritekst() throws Exception {
+    void skal_generere_foreldrepenger_avslag_brevet_med_fritekst() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fritekst");
         var expected = getExpected(BREVMAL, "foreldrepenger-avslag_fritekst.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);

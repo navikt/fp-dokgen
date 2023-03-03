@@ -9,89 +9,89 @@ import org.junit.jupiter.api.Test;
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
-public class ForeldrepengerInnvilgelseTest {
+class ForeldrepengerInnvilgelseTest {
 
     private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_INNVILGELSE;
 
     @Test
-    public void førstegangsbehandling_uten_gradering_og_avslag_nb() throws Exception {
+    void førstegangsbehandling_uten_gradering_og_avslag_nb() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/automatisk_ingen_gradering_ingen_avslag");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/uten_gradering_avslag_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void førstegangsbehandling_med_avslag_nb() throws Exception {
+    void førstegangsbehandling_med_avslag_nb() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/med_avslag_periode");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/med_avslag_periode_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void førstegangsbehandling_med_avslag_nn() throws Exception {
+    void førstegangsbehandling_med_avslag_nn() throws Exception {
         var content = compileContent(BREVMAL, Språk.NYNORSK, "forstegangsbehandling/med_avslag_periode");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/med_avslag_periode_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void førstegangsbehandling_med_avslag_en() throws Exception {
+    void førstegangsbehandling_med_avslag_en() throws Exception {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "forstegangsbehandling/med_avslag_periode");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/med_avslag_periode_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void førstegangsbehandling_med_fritekst_nb() throws Exception {
+    void førstegangsbehandling_med_fritekst_nb() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/med_fritekst");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/med_fritekst_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void førstegangsbehandling_med_flere_arbeidsgivere_og_gradering_nb() throws Exception {
+    void førstegangsbehandling_med_flere_arbeidsgivere_og_gradering_nb() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/gradering_flere_arbgivere_og_gradering");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/gradering_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void revurdering_foreldrepenger_endret_endring_i_uttak() throws Exception {
+    void revurdering_foreldrepenger_endret_endring_i_uttak() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "revurdering/foreldrepenger_endret_endring_i_uttak");
         var expected = getExpected(BREVMAL, "revurdering/foreldrepenger_endret_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void revurdering_foreldrepenger_innvilget_endring_i_uttak_nb() throws Exception {
+    void revurdering_foreldrepenger_innvilget_endring_i_uttak_nb() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "revurdering/foreldrepenger_innvilget_endring_i_uttak");
         var expected = getExpected(BREVMAL, "revurdering/foreldrepenger_innvilget_endring_i_uttak_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void revurdering_foreldrepenger_innvilget_endring_i_uttak_nn() throws Exception {
+    void revurdering_foreldrepenger_innvilget_endring_i_uttak_nn() throws Exception {
         var content = compileContent(BREVMAL, Språk.NYNORSK, "revurdering/foreldrepenger_innvilget_endring_i_uttak");
         var expected = getExpected(BREVMAL, "revurdering/foreldrepenger_innvilget_endring_i_uttak_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void revurdering_foreldrepenger_innvilget_endring_i_uttak_en() throws Exception {
+    void revurdering_foreldrepenger_innvilget_endring_i_uttak_en() throws Exception {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "revurdering/foreldrepenger_innvilget_endring_i_uttak");
         var expected = getExpected(BREVMAL, "revurdering/foreldrepenger_innvilget_endring_i_uttak_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void revurdering_foreldrepenger_endret_endring_i_beregning() throws Exception {
+    void revurdering_foreldrepenger_endret_endring_i_beregning() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "revurdering/foreldrepenger_endret_endring_i_beregning");
         var expected = getExpected(BREVMAL, "revurdering/foreldrepenger_endret_endring_i_beregning_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void revurdering_foreldrepenger_dødt_barn() throws Exception {
+    void revurdering_foreldrepenger_dødt_barn() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "revurdering/foreldrepenger_endret_barn_dod");
         var expected = getExpected(BREVMAL, "revurdering/foreldrepenger_endret_barn_dod_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);

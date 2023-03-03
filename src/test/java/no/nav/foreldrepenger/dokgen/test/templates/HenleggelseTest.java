@@ -9,39 +9,39 @@ import org.junit.jupiter.api.Test;
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
-public class HenleggelseTest {
+class HenleggelseTest {
     private static final Brevmal BREVMAL = Brevmal.INFO_OM_HENLEGGELSE;
 
     @Test
-    public void henleggelse_innsyn() throws Exception {
+    void henleggelse_innsyn() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_henleggelse_innsyn");
         var expected = getExpected(BREVMAL, "henleggelse_innsyn_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void henleggelse_klage() throws Exception {
+    void henleggelse_klage() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_henleggelse_klage");
         var expected = getExpected(BREVMAL, "henleggelse_klage_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void vanligBehandling_nb() throws Exception {
+    void vanligBehandling_nb() throws Exception {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_henleggelse_vanligBehandling");
         var expected = getExpected(BREVMAL, "henleggelse_vanligBehandling_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void vanligBehandling_nn() throws Exception {
+    void vanligBehandling_nn() throws Exception {
         var content = compileContent(BREVMAL, Språk.NYNORSK, "test_henleggelse_vanligBehandling");
         var expected = getExpected(BREVMAL, "henleggelse_vanligBehandling_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    public void vanligBehandling_en() throws Exception {
+    void vanligBehandling_en() throws Exception {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "test_henleggelse_vanligBehandling");
         var expected = getExpected(BREVMAL, "henleggelse_vanligBehandling_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
