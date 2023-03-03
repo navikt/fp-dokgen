@@ -2,7 +2,7 @@
   "namespace": "teamforeldrepenger",
   "minReplicas": "1",
   "maxReplicas": "2",
-  "ingresses":
+  "ingresses": [
     "https://fpdokgen.dev.intern.nav.no"
   ]
 }
