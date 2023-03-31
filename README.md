@@ -1,5 +1,4 @@
 # fp-dokgen
-===============
 
 [![Bygg og deploy](https://github.com/navikt/fp-dokgen/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/navikt/fp-dokgen/actions/workflows/build.yml)
 [![Promote](https://github.com/navikt/fp-dokgen/actions/workflows/promote.yml/badge.svg?branch=master)](https://github.com/navikt/fp-dokgen/actions/workflows/promote.yml)
