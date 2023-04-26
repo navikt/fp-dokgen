@@ -61,4 +61,23 @@ class ForeldrepengerInnvilgelseBeregningTest {
         var expected = getExpected(BREVMAL, UNDERMAL, "fp-innvilgelse_kun_ytelse_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+    @Test
+    void undermal_beregning_besteberegning_seks_av_de_ti_beste_nb() throws Exception {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegang_besteberegning_seksAvDeTiBeste");
+        var expected = getExpected(BREVMAL, UNDERMAL, "fp-innvilgelse_besteberegning_ja_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+    @Test
+    void undermal_beregning_besteberegning_ordinærDP_nb() throws Exception {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegang_besteberegning_ordinær_kunDP");
+        var expected = getExpected(BREVMAL, UNDERMAL, "fp-innvilgelse_besteberegning_nei_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    void undermal_beregning_besteberegning_ordinærDP_AT_nb() throws Exception {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegang_besteberegning_ordinær_DP_AT");
+        var expected = getExpected(BREVMAL, UNDERMAL, "fp-innvilgelse_besteberegning_nei_DP_AT_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
 }
