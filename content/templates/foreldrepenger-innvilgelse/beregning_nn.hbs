@@ -5,14 +5,18 @@
 {{~#if felles.fritekst}}
 {{felles.fritekst}}
 {{else}}
+{{~#if erBesteberegning}}
+Når du har fått dagpengar i forkant av foreldrepengane kan du få berekna foreldrepengar ut i frå 6 av de 10 beste månadene med inntekt, eller etter ordinære berekningsreglar avhengig av kva som gjer deg best resultat.
+{{#if seksAvDeTiBeste}}
+Vi har fastsett foreldrepengane dine til {{thousand-seperator dagsats}} kroner per dag før skatt. Du har fått dagpengar, eller jobba og fått dagpengar. Vi har berekna foreldrepengane dine ut frå dei seks beste av dei siste ti månadene.
+{{else}}
+Vi har berekna foreldrepengane dine ut i frå ordinære berekningsreglar:
+{{/if}}{{/if}}
 {{~#eq harBruktBruttoBeregningsgrunnlag true}}
 Vi har brukt {{thousand-seperator bruttoBeregningsgrunnlag}} kroner i året før skatt når vi har berekna foreldrepengane dine.
 {{/eq}}
 
-{{~#if erBesteberegning}}
-Vi har fastsett foreldrepengane dine til {{thousand-seperator dagsats}} kroner per dag før skatt. Du har fått dagpengar, eller jobba og fått dagpengar. Vi har berekna foreldrepengane dine ut frå dei seks beste av dei siste ti månadene.
-{{else}}
-
+{{#eq seksAvDeTiBeste false }}
 {{~#each beregningsgrunnlagregler}}
 {{~#if (or (eq regelStatus "ARBEIDSTAKER") (eq regelStatus "KOMBINERT_AT_FL_SN") (eq regelStatus "KOMBINERT_AT_FL") (eq regelStatus "KOMBINERT_AT_SN"))}}
 {{~#each andelListe}}
@@ -123,4 +127,4 @@ Vi har fastsett foreldrepengane dine til tre gonger grunnbeløpet fordi du har v
 Vi har berekna foreldrepengane dine ut frå ei inntekt på {{thousand-seperator (divide 12 bruttoBeregningsgrunnlag)}} kroner i månaden før skatt. Dette er gjennomsnittet av inntekta du har fått frå NAV for dei tre siste månadene.
 {{/eq}}
 {{/each}}
-{{/if}}{{/if}}
+{{/eq}}{{/if}}

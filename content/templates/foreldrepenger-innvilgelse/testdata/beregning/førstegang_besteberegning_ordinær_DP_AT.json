@@ -1,0 +1,188 @@
+{
+  "felles": {
+    "søkerNavn": "BRYNEMO KRISTINE H",
+    "søkerPersonnummer": "090797 49254",
+    "brevDato": "28. mars 2023",
+    "erAutomatiskBehandlet": false,
+    "erKopi": false,
+    "harVerge": false,
+    "saksnummer": "152214978",
+    "ytelseType": "FP",
+    "behandlesAvKA": false,
+    "erUtkast": false
+  },
+  "behandlingType": "FØRSTEGANGSSØKNAD",
+  "behandlingResultatType": "INNVILGET",
+  "konsekvensForInnvilgetYtelse": "INGEN_ENDRING",
+  "søknadsdato": "17. januar 2023",
+  "dekningsgrad": 100,
+  "harUtbetaling": true,
+  "dagsats": 1377,
+  "månedsbeløp": 29835,
+  "seksG": 668862,
+  "inntektOverSeksG": false,
+  "inntektMottattArbeidsgiver": false,
+  "annenForelderHarRett": true,
+  "annenForelderRettEØS": false,
+  "oppgittAnnenForelderRettEØS": false,
+  "annenForelderHarRettVurdert": "IKKE_VURDERT",
+  "aleneomsorgKode": "IKKE_VURDERT",
+  "ikkeOmsorg": false,
+  "barnErFødt": true,
+  "årsakErFødselshendelse": false,
+  "gjelderMor": true,
+  "gjelderFødsel": true,
+  "erBesteberegning": true,
+  "seksAvDeTiBeste": false,
+  "ingenRefusjon": true,
+  "delvisRefusjon": false,
+  "fullRefusjon": false,
+  "fbEllerRvInnvilget": true,
+  "antallPerioder": 2,
+  "antallInnvilgedePerioder": 1,
+  "antallAvslåttePerioder": 1,
+  "antallArbeidsgivere": 2,
+  "dagerTaptFørTermin": 13,
+  "disponibleDager": 0,
+  "disponibleDagerUtenAktivitetskrav": 0,
+  "disponibleDagerMedAktivitetskrav": 0,
+  "disponibleFellesDager": 0,
+  "sisteDagAvSistePeriode": "15. oktober 2023",
+  "stønadsperiodeFom": "9. mars 2023",
+  "stønadsperiodeTom": "15. oktober 2023",
+  "foreldrepengeperiodenUtvidetUker": 0,
+  "antallBarn": 1,
+  "prematurDager": 0,
+  "antallDødeBarn": 0,
+  "kreverSammenhengendeUttak": false,
+  "morKanSøkeOmDagerFørFødsel": false,
+  "perioder": [
+    {
+      "innvilget": true,
+      "årsak": "2006",
+      "periodeFom": "9. mars 2023",
+      "periodeTom": "15. oktober 2023",
+      "periodeDagsats": 1377,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 100.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "ARBEIDSGIVER 1",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 30.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        },
+        {
+          "arbeidsgiverNavn": "ARBEIDSGIVER 2",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 100.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ],
+      "annenAktivitetsliste": [
+        {
+          "aktivitetStatus": "DAGPENGER",
+          "gradering": false,
+          "utbetalingsgrad": 100.0,
+          "prosentArbeid": 0.0
+        }
+      ],
+      "avslått": false
+    },
+    {
+      "innvilget": false,
+      "årsak": "4002",
+      "periodeFom": "16. oktober 2023",
+      "periodeTom": "1. november 2023",
+      "periodeDagsats": 0,
+      "antallTapteDager": 0,
+      "prioritertUtbetalingsgrad": 0.0,
+      "arbeidsforholdsliste": [
+        {
+          "arbeidsgiverNavn": "ARBEIDSGIVER 1",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 30.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        },
+        {
+          "arbeidsgiverNavn": "ARBEIDSGIVER 2",
+          "gradering": false,
+          "prosentArbeid": 0.0,
+          "stillingsprosent": 100.0,
+          "utbetalingsgrad": 0.0,
+          "naturalytelseNyDagsats": 0
+        }
+      ],
+      "annenAktivitetsliste": [
+        {
+          "aktivitetStatus": "DAGPENGER",
+          "gradering": false,
+          "utbetalingsgrad": 0.0,
+          "prosentArbeid": 0.0
+        }
+      ],
+      "avslått": true
+    }
+  ],
+  "bruttoBeregningsgrunnlag": 358065,
+  "harBruktBruttoBeregningsgrunnlag": true,
+  "beregningsgrunnlagregler": [
+    {
+      "regelStatus": "ARBEIDSTAKER",
+      "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 2,
+      "snNyoppstartet": false,
+      "andelListe": [
+        {
+          "aktivitetStatus": "ARBEIDSTAKER",
+          "arbeidsgiverNavn": "ARBEIDSGIVER 1",
+          "dagsats": 710,
+          "månedsinntekt": 15382,
+          "årsinntekt": 184584,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 0
+        },
+        {
+          "aktivitetStatus": "ARBEIDSTAKER",
+          "arbeidsgiverNavn": "ARBEIDSGIVER 2",
+          "dagsats": 167,
+          "månedsinntekt": 3618,
+          "årsinntekt": 43416,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 0
+        }
+      ]
+    },
+    {
+      "regelStatus": "DAGPENGER",
+      "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": 0,
+      "snNyoppstartet": false,
+      "andelListe": [
+        {
+          "aktivitetStatus": "DAGPENGER",
+          "dagsats": 500,
+          "månedsinntekt": 10839,
+          "årsinntekt": 130065,
+          "etterlønnSluttpakke": false,
+          "sistLignedeÅr": 0
+        }
+      ]
+    }
+  ],
+  "klagefristUker": 6,
+  "lovhjemlerUttak": "§§ 14-9, 14-10 og 14-12",
+  "lovhjemlerBeregning": "§§ 14-7 og 8-49",
+  "inkludereUtbetaling": true,
+  "inkludereUtbetNårGradering": false,
+  "inkludereInnvilget": true,
+  "inkludereAvslag": true,
+  "inkludereNyeOpplysningerUtbet": false,
+  "utenMinsterett": false,
+  "ønskerJustertVedFødsel": false,
+  "graderingOgFulltUttakIAnnenAktivitet": false
+}

@@ -5,14 +5,18 @@
 {{~#if felles.fritekst}}
 {{felles.fritekst}}
 {{else}}
+{{~#if erBesteberegning}}
+When you have received unemployment benefit before parental benefit, you can have parental benefit calculated based on 6 of the best of the past 10 months of income, or based on ordinary calculation rules depending on what gives you the best result.
+{{#if seksAvDeTiBeste}}
+We have stipulated your parental benefit to {{thousand-seperator dagsats}} kroner per day before taxes. We have calculated your parental benefit based on 6 of the best of the past 10 months.
+{{else}}
+We have calculated your parental benefit based on ordinary calculation rules:
+{{/if}}{{/if}}
 {{~#eq harBruktBruttoBeregningsgrunnlag true}}
 We have used the income figure of {{thousand-seperator bruttoBeregningsgrunnlag}} kroner a year before taxes to calculate your parental benefit.
 {{/eq}}
 
-{{~#if erBesteberegning}}
-We have stipulated your parental benefit to {{thousand-seperator dagsats}} kroner per day before taxes. You have received unemployment benefit, or worked and received unemployment benefit. We have calculated your parental benefit on the basis of the six best of the past ten months.
-{{else}}
-
+{{#eq seksAvDeTiBeste false }}
 {{~#each beregningsgrunnlagregler}}
 {{~#in-array (array "ARBEIDSTAKER" "KOMBINERT_AT_FL_SN" "KOMBINERT_AT_FL" "KOMBINERT_AT_SN") regelStatus }}
 {{~#each andelListe}}
@@ -123,4 +127,4 @@ We have stipulated your parental benefit to three times the national insurance b
 We have calculated your parental benefit on the basis of an income of {{thousand-seperator (divide 12 bruttoBeregningsgrunnlag)}} kroner a month before taxes. This is the average of the income you received from NAV for the past three months.
 {{/eq}}
 {{/each}}
-{{/if}}{{/if}}
+{{/eq}}{{/if}}

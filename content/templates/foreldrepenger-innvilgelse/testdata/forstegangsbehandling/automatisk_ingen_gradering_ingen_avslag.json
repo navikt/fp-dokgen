@@ -30,6 +30,7 @@
   "gjelderMor": true,
   "gjelderFødsel": true,
   "erBesteberegning": false,
+  "seksAvDeTiBeste": false,
   "ingenRefusjon": true,
   "delvisRefusjon": false,
   "fullRefusjon": false,
