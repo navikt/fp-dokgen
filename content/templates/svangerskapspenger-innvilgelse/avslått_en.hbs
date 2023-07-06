@@ -17,7 +17,7 @@
 {{#eq årsak "8301"}}
 {{>punkt}}You are not entitled to pregnancy benefit because it’s less than three weeks until due date.
 
-  You may be entitled to parental benefit or lump-sum grant. See [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for more information and how to apply.
+You may be entitled to parental benefit or lump-sum grant. See [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for more information and how to apply.
 {{/eq}}
 
 {{/each}}
@@ -35,11 +35,11 @@
 {{#each avslagsperioder}}
 
 {{#eq årsak "8311"}}
-{{>punkt}}From {{periodeFom}} up to and including {{periodeTom}} you are not entitled to pregnancy benefit because you are on holiday.
+{{>punkt}}From {{periodeFom}} up to and including {{periodeTom}} you are not entitled to pregnancy benefit{{#if arbeidsforholdInformasjon.arbeidsgivernavn}} from {{arbeidsforholdInformasjon.arbeidsgivernavn}}{{/if}}{{#eq arbeidsforholdInformasjon.type "SELVSTENDIG_NÆRINGSDRIVENDE"}} as self-employed{{/eq}}{{#eq arbeidsforholdInformasjon.type "FRILANS"}} as freelancer{{/eq}} because you are on holiday.
 {{/eq}}
 
 {{#eq årsak "8317"}}
-{{>punkt}}From {{periodeFom}} up to and including {{periodeTom}} you are not entitled to pregnancy benefit because you receive sickness benefit.
+{{>punkt}}From {{periodeFom}} up to and including {{periodeTom}} you are not entitled to pregnancy benefit{{#if arbeidsforholdInformasjon.arbeidsgivernavn}} from {{arbeidsforholdInformasjon.arbeidsgivernavn}}{{/if}}{{#eq arbeidsforholdInformasjon.type "SELVSTENDIG_NÆRINGSDRIVENDE"}} as self-employed{{/eq}}{{#eq arbeidsforholdInformasjon.type "FRILANS"}} as freelancer{{/eq}} because you receive sickness benefit.
 {{/eq}}
 
 {{#eq årsak "8308"}}
