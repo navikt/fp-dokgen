@@ -32,8 +32,9 @@ Arbeidsgiver 2 AS:
   Du kan ha rett til foreldrepenger eller engangsstønad. Se [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for mer informasjon og hvordan du kan søke.
 ##### I disse periodene får du ikke svangerskapspenger
 * Fra og med 1. mai 2021 til og med 12. mai 2021 har du ikke rett til svangerskapspenger fordi du har søkt for sent. Du må søke senest tre måneder etter at perioden med svangerskapspenger har startet. Du søkte 1. juli 2021.
-* Fra og med 1. mai 2021 til og med 12. mai 2021 får du ikke svangerskapspenger fordi du får sykepenger.
-* Fra og med 15. juni 2021 til og med 25. juni 2021 får du ikke svangerskapspenger fordi du har ferie.
+* Fra og med 1. mai 2021 til og med 12. mai 2021 får du ikke svangerskapspenger fra Arbeidsgiver 3 fordi du får sykepenger.
+* Fra og med 1. mai 2021 til og med 12. mai 2021 får du ikke svangerskapspenger fra frilansinntekten din fordi du får sykepenger.
+* Fra og med 15. juni 2021 til og med 25. juni 2021 får du ikke svangerskapspenger fra næringsvirksomheten din fordi du har ferie.
 Vedtaket er gjort etter folketrygdloven § 14-4.
 ##### Inntekt vi har brukt i beregningen
 Vi har brukt 789 000 kroner i året før skatt i beregningen av svangerskapspengene dine.

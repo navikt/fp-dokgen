@@ -76,12 +76,27 @@
     {
       "periodeFom": "1. mai 2021",
       "periodeTom": "12. mai 2021",
-      "årsak": "8317"
+      "årsak": "8317",
+      "arbeidsforholdInformasjon": {
+        "arbeidsgivernavn": "Arbeidsgiver 3",
+        "type": "ORDINÆRT_ARBEID"
+      }
+    },
+    {
+      "periodeFom": "1. mai 2021",
+      "periodeTom": "12. mai 2021",
+      "årsak": "8317",
+      "arbeidsforholdInformasjon": {
+        "type": "FRILANS"
+      }
     },
     {
       "periodeFom": "15. juni 2021",
       "periodeTom": "25. juni 2021",
-      "årsak": "8311"
+      "årsak": "8311",
+      "arbeidsforholdInformasjon": {
+        "type": "SELVSTENDIG_NÆRINGSDRIVENDE"
+      }
     }
   ],
   "avslåtteAktiviteter": [

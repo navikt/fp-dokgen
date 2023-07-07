@@ -93,6 +93,17 @@
         },
         "årsak": {
           "type": "string"
+        },
+        "arbeidsforholdInformasjon": {
+          "type": "object",
+          "properties":{
+            "arbeidsgivernavn": {
+              "type": "string"
+            },
+            "aktivitetType": {
+              "type": "string"
+            }
+          }
         }
       }
     },

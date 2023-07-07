@@ -29,11 +29,12 @@ Arbeidsgiver 2 AS:
 * You are not entitled to pregnancy benefit as freelancer because you can adapt or change your tasks without the risk of harming the child/children you are expecting.
 * You are not entitled to pregnancy benefit as a self-employed person because you can adapt or change your tasks without the risk of harming the child/children you are expecting.
 * You are not entitled to pregnancy benefit because it’s less than three weeks until due date.
-  You may be entitled to parental benefit or lump-sum grant. See [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for more information and how to apply.
+You may be entitled to parental benefit or lump-sum grant. See [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for more information and how to apply.
 ##### During these periods you are not entitled to pregnancy benefit
 * From 1. mai 2021 up to and including 12. mai 2021 you are not entitled to pregnancy benefit because you applied too late. You must apply no later than three months after your period with pregnancy benefit has started. You applied 1. juli 2021.
-* From 1. mai 2021 up to and including 12. mai 2021 you are not entitled to pregnancy benefit because you receive sickness benefit.
-* From 15. juni 2021 up to and including 25. juni 2021 you are not entitled to pregnancy benefit because you are on holiday.
+* From 1. mai 2021 up to and including 12. mai 2021 you are not entitled to pregnancy benefit from Arbeidsgiver 3 because you receive sickness benefit.
+* From 1. mai 2021 up to and including 12. mai 2021 you are not entitled to pregnancy benefit as freelancer because you receive sickness benefit.
+* From 15. juni 2021 up to and including 25. juni 2021 you are not entitled to pregnancy benefit as self-employed because you are on holiday.
 The decision was made in accordance with the National Insurance Act § 14-4.
 ##### Income we have used in the calculation
 We have used the income figure of 789 000 kroner a year before taxes to calculate your pregnancy benefit.

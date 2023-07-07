@@ -35,11 +35,11 @@
 {{#each avslagsperioder}}
 
 {{#eq årsak "8311"}}
-{{>punkt}}Fra og med {{periodeFom}} til og med {{periodeTom}} får du ikke svangerskapspenger fordi du har ferie.
+{{>punkt}}Fra og med {{periodeFom}} til og med {{periodeTom}} får du ikke svangerskapspenger fra {{#if arbeidsforholdInformasjon.arbeidsgivernavn}}{{arbeidsforholdInformasjon.arbeidsgivernavn}}{{/if}}{{~#eq arbeidsforholdInformasjon.type "SELVSTENDIG_NÆRINGSDRIVENDE"~}}næringsvirksomheten din{{/eq}}{{~#eq arbeidsforholdInformasjon.type "FRILANS"~}}frilansinntekten din{{/eq}} fordi du har ferie.
 {{/eq}}
 
 {{#eq årsak "8317"}}
-{{>punkt}}Fra og med {{periodeFom}} til og med {{periodeTom}} får du ikke svangerskapspenger fordi du får sykepenger.
+{{>punkt}}Fra og med {{periodeFom}} til og med {{periodeTom}} får du ikke svangerskapspenger fra {{#if arbeidsforholdInformasjon.arbeidsgivernavn}}{{arbeidsforholdInformasjon.arbeidsgivernavn}}{{/if}}{{~#eq arbeidsforholdInformasjon.type "SELVSTENDIG_NÆRINGSDRIVENDE"~}}næringsvirksomheten din{{/eq}}{{~#eq arbeidsforholdInformasjon.type "FRILANS"~}}frilansinntekten din{{/eq}} fordi du får sykepenger.
 {{/eq}}
 
 {{#eq årsak "8308"}}

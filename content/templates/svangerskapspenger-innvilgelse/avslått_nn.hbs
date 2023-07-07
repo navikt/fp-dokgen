@@ -35,11 +35,11 @@
 {{#each avslagsperioder}}
 
 {{#eq årsak "8311"}}
-{{>punkt}}Frå og med {{periodeFom}} til og med {{periodeTom}} får du ikkje svangerskapspengar fordi du har ferie.
+{{>punkt}}Frå og med {{periodeFom}} til og med {{periodeTom}} får du ikkje svangerskapspengar frå {{#if arbeidsforholdInformasjon.arbeidsgivernavn}}{{arbeidsforholdInformasjon.arbeidsgivernavn}}{{/if}}{{~#eq arbeidsforholdInformasjon.type "SELVSTENDIG_NÆRINGSDRIVENDE"~}}næringsverksemda di{{/eq}}{{~#eq arbeidsforholdInformasjon.type "FRILANS"~}}frilansinntekta di{{/eq}} fordi du har ferie.
 {{/eq}}
 
 {{#eq årsak "8317"}}
-{{>punkt}}Frå og med {{periodeFom}} til og med {{periodeTom}} får du ikkje svangerskapspengar fordi du får sjukepengar.
+{{>punkt}}Frå og med {{periodeFom}} til og med {{periodeTom}} får du ikkje svangerskapspengar frå {{#if arbeidsforholdInformasjon.arbeidsgivernavn}}{{arbeidsforholdInformasjon.arbeidsgivernavn}}{{/if}}{{~#eq arbeidsforholdInformasjon.type "SELVSTENDIG_NÆRINGSDRIVENDE"~}}næringsverksemda di{{/eq}}{{~#eq arbeidsforholdInformasjon.type "FRILANS"~}}frilansinntekta di{{/eq}} fordi du får sjukepengar.
 {{/eq}}
 
 {{#eq årsak "8308"}}
