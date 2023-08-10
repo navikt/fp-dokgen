@@ -1,0 +1,33 @@
+{
+  "$id": "selvbetjening-tilsvar-tilbakebetalingvarsel",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "schema for tilsvar til varsel om tilbakebetaling",
+  "type": "object",
+  "required": [
+    "navn",
+    "fnr",
+    "saksnummer",
+    "ytelse",
+    "innsendtDato"
+  ],
+  "properties": {
+    "navn": {
+      "type": "string"
+    },
+    "fnr": {
+      "type": "string"
+    },
+    "saksnummer": {
+      "type": "string"
+    },
+    "ytelse": {
+      "type": "string"
+    },
+    "innsendtDato": {
+      "type": "string"
+    },
+    "tilsvar": {
+      "type": "string"
+    }
+  }
+}

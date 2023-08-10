@@ -1,0 +1,16 @@
+<br/>
+<br/>
+<br/>
+
+# Svar på varsel om tilbakebetaling av {{ ytelse }}
+
+{{> selvbetjening-tilsvar-tilbakebetalingvarsel/sb_brukerdetaljer_nb }}
+
+{{# if tilsvar }}
+<p>{{ tilsvar }}</p>
+{{/if}}
+
+{{# unless tilsvar }}
+<p>Jeg ønsker ikke å uttale meg i saken før den behandles.</p>
+{{/unless}}
+
