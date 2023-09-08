@@ -19,8 +19,10 @@ Fødselsnummer: 300220 12345
 ##### Dette har vi avslått
 
 * Du har ikke rett til foreldrepenger, fordi du ikke har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i seks av de siste ti månedene før foreldrepengeperioden starter.
+Selv om du ikke har rett til foreldrepenger, kan det være at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)
 
 * Du har ikke rett til foreldrepenger, fordi inntekten din er lavere enn 50 000 kroner i året før skatt.
+Selv om du ikke har rett til foreldrepenger, kan det være at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)
 
 * Du har ikke rett til foreldrepenger fordi du har søkt for tidlig. Du kan søke når du er i svangerskapsuke 22.
 

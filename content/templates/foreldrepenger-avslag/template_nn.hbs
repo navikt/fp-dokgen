@@ -20,10 +20,16 @@
 {{>punkt}}Du har ikkje rett til foreldrepengar fordi du ikkje har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i seks av dei siste ti månadene før foreldrepengeperioden startar.
 {{/eq}}
 
-
 {{#eq avslagsårsak "1041"}}
 {{>punkt}}Du har ikkje rett til foreldrepengar fordi inntekta di er lågare enn {{thousand-seperator halvG}} kroner i året før skatt.
 {{/eq}}
+
+
+{{#in-array (array "1035" "1041") avslagsårsak}}
+{{#if gjelderMor}}
+Sjølv om du ikkje har rett til foreldrepengar, kan det vere at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)
+{{/if}}
+{{/in-array}}
 
 
 {{#eq avslagsårsak "1001"}}
