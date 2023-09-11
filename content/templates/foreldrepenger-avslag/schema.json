@@ -67,6 +67,9 @@
     "kreverSammenhengendeUttak": {
       "type": "boolean"
     },
+    "gjelderMor": {
+      "type": "boolean"
+    },
     "avslåttePerioder": {
       "type": "array",
       "items": { "$ref": "#/$defs/avslåttPeriode" }
