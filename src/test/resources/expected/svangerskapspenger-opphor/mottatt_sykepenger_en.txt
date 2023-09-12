@@ -22,7 +22,7 @@ You may appeal within 6 weeks from the date you received the decision. You will 
 <br/>
 <br/>
 ##### You have right of access
-Log into [nav.no](https://nav.no/) to see the documents in your case.
+Log into [foreldrepenger.nav.no](https://foreldrepenger.nav.no/) to see the documents in your case.
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
