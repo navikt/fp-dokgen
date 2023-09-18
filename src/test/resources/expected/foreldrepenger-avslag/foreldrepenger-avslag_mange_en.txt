@@ -19,10 +19,8 @@ National identity number: 300220 12345
 ##### We have denied the following
 
 * You are not entitled to parental benefit, because you have not had earned income or income equivalent to earned income in six of the past ten months before the start of the parental benefit period.
-Even if you are not entitled to parental benefits, you may still be eligible for a lump-sum grant. You can read more at [nav.no/engangsstonad](https://www.nav.no/engangsstonad)
 
 * You are not entitled to parental benefit, because your income is lower than 50 000 kroner per year before taxes.
-Even if you are not entitled to parental benefits, you may still be eligible for a lump-sum grant. You can read more at [nav.no/engangsstonad](https://www.nav.no/engangsstonad)
 
 * You are not entitled to parental benefit, because you have applied too early. You can apply when you are in your 22nd week of pregnancy.
 
@@ -230,6 +228,9 @@ Even if you are not entitled to parental benefits, you may still be eligible for
 * You are not entitled to parental benefit from 25. september 2021 up to and including 26. september 2021 because you are not a member of the Norwegian National Insurance Scheme.
   You do not have the right to reside in Norway during this period.
 * You are not entitled to parental benefit from 25. september 2021 up to and including 26. september 2021 because parental benefit for a new child has started.
+Even if you are not entitled to parental benefits, you may still be eligible for a lump-sum grant. You can read more at [nav.no/engangsstonad](https://www.nav.no/engangsstonad)<br/><br/>
+Even if you are not entitled to parental benefits, you may still be eligible for a lump-sum grant. You can read more at [nav.no/engangsstonad](https://www.nav.no/engangsstonad)<br/><br/>
+
 The decision has been made in accordance with the National Insurance Act Section § forvaltningsloven § 35.
 
 <br/>

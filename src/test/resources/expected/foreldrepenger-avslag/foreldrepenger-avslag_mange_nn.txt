@@ -19,10 +19,8 @@ Fødselsnummer: 300220 12345
 ##### Dette har vi avslått
 
 * Du har ikkje rett til foreldrepengar fordi du ikkje har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i seks av dei siste ti månadene før foreldrepengeperioden startar.
-Sjølv om du ikkje har rett til foreldrepengar, kan det vere at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)
 
 * Du har ikkje rett til foreldrepengar fordi inntekta di er lågare enn 50 000 kroner i året før skatt.
-Sjølv om du ikkje har rett til foreldrepengar, kan det vere at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)
 
 * Du har ikkje rett til foreldrepengar fordi du har søkt for tidleg. Du kan tidlegast søkje når du er i svangerskapsveke 22.
 
@@ -232,6 +230,8 @@ Sjølv om du ikkje har rett til foreldrepengar, kan det vere at du har rett til 
 * Du har ikkje rett til foreldrepengar frå og med 25. september 2021 til og med 26. september 2021 fordi du ikkje er medlem i folketrygda.
   Du har ikkje opphaldsløyve i Noreg i denne perioden.
 * Du har ikkje rett til foreldrepengar frå og med 25. september 2021 til og med 26. september 2021 fordi foreldrepengar for nytt barn har startet.
+Sjølv om du ikkje har rett til foreldrepengar, kan det vere at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)<br/><br/>
+Sjølv om du ikkje har rett til foreldrepengar, kan det vere at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)<br/><br/>
 
 Vedtaket er gjort etter folketrygdlova § forvaltningsloven § 35.
 
