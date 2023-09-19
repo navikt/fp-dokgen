@@ -6,9 +6,6 @@
 {{> brukerdetaljer_nb }}
 
 ##### Dette har vi avslått
-{{#if felles.fritekst}}
-{{felles.fritekst}}
-{{else}}
 
 {{~#* inline "punkt" ~}}
 {{~#gt (size avslåttePerioder) 1}}* {{/gt}}
@@ -23,14 +20,6 @@
 {{#eq avslagsårsak "1041"}}
 {{>punkt}}Du har ikke rett til foreldrepenger, fordi inntekten din er lavere enn {{thousand-seperator halvG}} kroner i året før skatt.
 {{/eq}}
-
-
-{{#in-array (array "1035" "1041") avslagsårsak}}
-{{#if gjelderMor}}
-Selv om du ikke har rett til foreldrepenger, kan det være at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)
-{{/if}}
-{{/in-array}}
-
 
 {{#eq avslagsårsak "1001"}}
 {{>punkt}}Du har ikke rett til foreldrepenger fordi du har søkt for tidlig. Du kan søke når du er i svangerskapsuke 22.
@@ -388,7 +377,18 @@ Selv om du ikke har rett til foreldrepenger, kan det være at du har rett til en
 {{/eq}}
 
 {{/each}}
+
+{{~#if felles.fritekst}}
+{{felles.fritekst}}
+{{/if~}}
+
+{{~#each avslåttePerioder}}
+{{#in-array (array "1035" "1041") avslagsårsak}}
+{{#if gjelderMor}}
+Selv om du ikke har rett til foreldrepenger, kan det være at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)<br/><br/>
 {{/if}}
+{{/in-array}}
+{{/each}}
 
 Vedtaket er gjort etter folketrygdloven {{lovhjemmelForAvslag}}.
 
