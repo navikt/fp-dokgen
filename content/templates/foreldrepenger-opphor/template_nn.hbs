@@ -73,7 +73,7 @@ Du hadde ikkje rett til foreldrepengar fordi du ikkje hadde foreldreansvar for {
 {{/case}}
 
 {{#case "4072" }}
-Vi har fått opplyst at {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} døydde {{barnDødsdato}}. Den siste dagen din med foreldrepengar er derfor {{tomStønadsdato}}.
+Vi har fått opplyst at {{#gt antallBarn 1}}barna dine{{else}}barnet ditt{{/gt}} døydde {{barnDødsdato}}. Den siste dagen din med foreldrepengar er derfor {{tomStønadsdato}}.{{#if endretDekningsgrad}} Foreldrepengane dine er endra til 100 prosent.{{/if}}
 {{/case}}
 
 {{#case (array "1020" "1021" "1023" "1024" "1025") }}

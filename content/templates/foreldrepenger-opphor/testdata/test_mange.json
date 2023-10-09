@@ -16,6 +16,7 @@
   "gjelderFødsel": true,
   "antallBarn": 2,
   "halvG": 50000,
+  "endretDekningsgrad": false,
   "klagefristUker": 6,
   "lovhjemmelForAvslag": "§ 14",
   "avslagÅrsaker": [

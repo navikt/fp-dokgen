@@ -14,6 +14,7 @@
   "opphørDato": "24. mai 2021",
   "barnDødsdato": "10. mai 2021",
   "erSøkerDød": false,
+  "endretDekningsgrad": true,
   "gjelderFødsel": true,
   "antallBarn": 2,
   "halvG": 50000,

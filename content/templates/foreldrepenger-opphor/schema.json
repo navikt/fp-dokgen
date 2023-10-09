@@ -43,6 +43,9 @@
     "halvG": {
       "type": "number"
     },
+    "endretDekningsgrad": {
+      "type": "boolean"
+    },
     "avslagÅrsaker": {
       "type": "array",
       "items": { "type": "string" }
