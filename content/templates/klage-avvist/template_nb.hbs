@@ -2,18 +2,18 @@
 
 
 
-{{#if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA true)(eq felles.ytelseType "ES"))}}# NAV Klageinstans har avvist klagen din på vedtaket om tilbakebetaling av engangsstønad
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA true)(eq felles.ytelseType "FP"))}}# NAV Klageinstans har avvist klagen din på vedtaket om tilbakebetaling av foreldrepenger
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA true)(eq felles.ytelseType "SVP"))}}# NAV Klageinstans har avvist klagen din på vedtaket om tilbakebetaling av svangerskapspenger
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA false)(eq felles.ytelseType "ES"))}}# NAV har avvist klagen din på vedtaket om tilbakebetaling av engangsstønad
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA false)(eq felles.ytelseType "FP"))}}# NAV har avvist klagen din på vedtaket om tilbakebetaling av foreldrepenger
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA false)(eq felles.ytelseType "SVP"))}}# NAV har avvist klagen din på vedtaket om tilbakebetaling av svangerskapspenger
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA true)(eq felles.ytelseType "ES"))}}# NAV Klageinstans har avvist klagen din på vedtaket om engangsstønad
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA true)(eq felles.ytelseType "FP"))}}# NAV Klageinstans har avvist klagen din på vedtaket om foreldrepenger
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA true)(eq felles.ytelseType "SVP"))}}# NAV Klageinstans har avvist klagen din på vedtaket om svangerskapspenger
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA false)(eq felles.ytelseType "ES"))}}# NAV har avvist klagen din på vedtaket om engangsstønad
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA false)(eq felles.ytelseType "FP"))}}# NAV har avvist klagen din på vedtaket om foreldrepenger
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA false)(eq felles.ytelseType "SVP"))}}# NAV har avvist klagen din på vedtaket om svangerskapspenger
+{{#if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA true)(eq felles.ytelseType "ES"))}}# NAV Klageinstans har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av engangsstønad
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA true)(eq felles.ytelseType "FP"))}}# NAV Klageinstans har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av foreldrepenger
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA true)(eq felles.ytelseType "SVP"))}}# NAV Klageinstans har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av svangerskapspenger
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA false)(eq felles.ytelseType "ES"))}}# NAV har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av engangsstønad
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA false)(eq felles.ytelseType "FP"))}}# NAV har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av foreldrepenger
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.behandlesAvKA false)(eq felles.ytelseType "SVP"))}}# NAV har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av svangerskapspenger
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA true)(eq felles.ytelseType "ES"))}}# NAV Klageinstans har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}engangsstønad
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA true)(eq felles.ytelseType "FP"))}}# NAV Klageinstans har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}foreldrepenger
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA true)(eq felles.ytelseType "SVP"))}}# NAV Klageinstans har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}svangerskapspenger
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA false)(eq felles.ytelseType "ES"))}}# NAV har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}engangsstønad
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA false)(eq felles.ytelseType "FP"))}}# NAV har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}foreldrepenger
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.behandlesAvKA false)(eq felles.ytelseType "SVP"))}}# NAV har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}svangerskapspenger
 {{/if}}
 {{> brukerdetaljer_nb }}
 

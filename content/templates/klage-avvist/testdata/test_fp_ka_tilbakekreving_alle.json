@@ -18,5 +18,6 @@
     "IKKE_PAKLAGD_VEDTAK",
     "KLAGER_IKKE_PART",
     "IKKE_KONKRET"
-  ]
+  ],
+  "påklagdVedtak": false
 }
