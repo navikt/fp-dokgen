@@ -35,7 +35,6 @@
   "ingenRefusjon": true,
   "delvisRefusjon": false,
   "fullRefusjon": false,
-  "fbEllerRvInnvilget": false,
   "antallInnvilgedePerioder": 1,
   "antallAvslåttePerioder": 2,
   "harInnvilgedePerioder": true,

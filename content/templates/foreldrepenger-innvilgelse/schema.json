@@ -29,7 +29,6 @@
     "ingenRefusjon",
     "delvisRefusjon",
     "fullRefusjon",
-    "fbEllerRvInnvilget",
     "antallInnvilgedePerioder",
     "antallAvslåttePerioder",
     "antallArbeidsgivere",
@@ -313,9 +312,6 @@
       "type": "boolean"
     },
     "fullRefusjon": {
-      "type": "boolean"
-    },
-    "fbEllerRvInnvilget": {
       "type": "boolean"
     },
     "antallInnvilgedePerioder": {

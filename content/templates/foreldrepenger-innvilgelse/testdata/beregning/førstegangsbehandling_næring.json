@@ -34,7 +34,6 @@
   "ingenRefusjon": true,
   "delvisRefusjon": false,
   "fullRefusjon": false,
-  "fbEllerRvInnvilget": true,
   "antallInnvilgedePerioder": 1,
   "antallAvslåttePerioder": 0,
   "antallArbeidsgivere": 0,

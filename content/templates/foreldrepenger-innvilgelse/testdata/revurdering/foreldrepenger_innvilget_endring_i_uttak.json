@@ -35,7 +35,6 @@
   "ingenRefusjon": true,
   "delvisRefusjon": false,
   "fullRefusjon": false,
-  "fbEllerRvInnvilget": true,
   "antallInnvilgedePerioder": 12,
   "antallArbeidsgivere": 1,
   "dagerTaptFørTermin": 0,
