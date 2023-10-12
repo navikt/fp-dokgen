@@ -5,7 +5,7 @@
     "brevDato": "4. mai 2021",
     "erAutomatiskBehandlet": false,
     "saksnummer": "123456789",
-    "ytelseType": "SVP",
+    "ytelseType": "FP",
     "behandlesAvKA": false,
     "erUtkast": false
   },
@@ -13,7 +13,7 @@
   "lovhjemler": "folketrygdloven § 21-12 og forvaltningsloven §§ 28, 31, 32 og 34",
   "klagefristUker": 6,
   "avvistGrunner": [
-    "IKKE_PAKLAGD_VEDTAK"
+    "KLAGE_UGYLDIG"
   ],
-  "påklagdVedtak": false
+  "påklagdVedtak": true
 }
