@@ -1,5 +1,5 @@
 {{~#neq inkludereUtbetNårGradering true}}
-{{#if stønadsperiodeFom stønadsperiodeTom}}
+{{#if stønadsperiodeFom}}
 {{#gt dagsats 0}}
 You will receive {{thousand-seperator dagsats}} kroner per day before taxes starting from {{stønadsperiodeFom}}. This is {{thousand-seperator månedsbeløp}} kroner on average per month. The last day you will receive parental benefit is {{stønadsperiodeTom}}.
 {{/gt}}{{/if}}{{/neq}}
