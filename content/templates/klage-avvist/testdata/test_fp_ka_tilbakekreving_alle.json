@@ -7,7 +7,8 @@
     "saksnummer": "123456789",
     "ytelseType": "FP",
     "behandlesAvKA": true,
-    "erUtkast": false
+    "erUtkast": false,
+    "fritekst":"Tester at fritekst kommer dersom angitt for en avvist klage"
   },
   "gjelderTilbakekreving": true,
   "lovhjemler": "folketrygdloven § 21-12 og forvaltningsloven §§ 28, 31, 32 og 34",
