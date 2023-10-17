@@ -101,22 +101,22 @@
 
 
 {{#eq årsak "2020"}}
-{{>punkt}}Du får overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen ikke har rett til foreldrepenger.
+{{>punkt}}Du får overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen ikke har rett til foreldrepenger. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
 {{/eq}}
 
 
 {{#eq årsak "2022"}}
-{{>punkt}}Du får overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen er innlagt i helseinstitusjon.
+{{>punkt}}Du får overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen er innlagt i helseinstitusjon. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
 {{/eq}}
 
 
 {{#eq årsak "2021"}}
-{{>punkt}}Du får overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen er helt avhengig av hjelp til å ta seg av {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
+{{>punkt}}Du får overta kvoten fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen er helt avhengig av hjelp til å ta seg av {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
 {{/eq}}
 
 
 {{#eq årsak "2023"}}
-{{>punkt}}Du får overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har aleneomsorgen for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}.
+{{>punkt}}Du får overta kvoten til den andre forelderen fra og med {{periodeFom}} til og med {{periodeTom}} fordi du har aleneomsorgen for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
 {{/eq}}
 {{/each}}
 

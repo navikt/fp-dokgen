@@ -46,6 +46,7 @@
   "disponibleFellesDager": 10,
   "sisteDagAvSistePeriode": "4. november 2022",
   "stønadsperiodeFom": "4. juni 2022",
+  "utbetalingFom": "4. juni 2022",
   "stønadsperiodeTom": "4. november 2022",
   "foreldrepengeperiodenUtvidetUker": 1,
   "antallBarn": 3,
@@ -142,8 +143,6 @@
     }
   ],
   "klagefristUker": 6,
-  "inkludereUtbetaling": true,
-  "inkludereUtbetNårGradering": false,
   "inkludereInnvilget": true,
   "inkludereAvslag": false
 }

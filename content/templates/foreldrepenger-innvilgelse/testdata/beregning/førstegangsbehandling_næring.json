@@ -45,6 +45,7 @@
   "disponibleFellesDager": 0,
   "sisteDagAvSistePeriode": "21. desember 2021",
   "stønadsperiodeFom": "28. april 2021",
+  "utbetalingFom": "28. april 2021",
   "stønadsperiodeTom": "21. desember 2021",
   "foreldrepengeperiodenUtvidetUker": 0,
   "antallBarn": 1,
@@ -89,9 +90,6 @@
   "klagefristUker": 6,
   "lovhjemlerUttak": "§§ 14-9, 14-10 og 14-12",
   "lovhjemlerBeregning": "§§ 14-7 og 8-35",
-  "inkludereUtbetaling": true,
-  "inkludereUtbetNårGradering": false,
   "inkludereInnvilget": false,
-  "inkludereAvslag": false,
-  "inkludereNyeOpplysningerUtbet": false
+  "inkludereAvslag": false
 }
