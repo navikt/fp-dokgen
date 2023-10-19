@@ -48,6 +48,7 @@
   "disponibleFellesDager": 0,
   "sisteDagAvSistePeriode": "20. september 2022",
   "stønadsperiodeFom": "30. mars 2022",
+  "utbetalingFom": "30. mars 2022",
   "stønadsperiodeTom": "20. september 2022",
   "foreldrepengeperiodenUtvidetUker": 0,
   "antallBarn": 1,
@@ -101,9 +102,6 @@
   "klagefristUker": 6,
   "lovhjemlerUttak": "§§ 14-13 og 14-14",
   "lovhjemlerBeregning": "§§ 14-7 og 8-30",
-  "inkludereUtbetaling": true,
-  "inkludereUtbetNårGradering": false,
   "inkludereInnvilget": false,
-  "inkludereAvslag": false,
-  "inkludereNyeOpplysningerUtbet": false
+  "inkludereAvslag": false
 }

@@ -45,11 +45,11 @@
     "beregningsgrunnlagregler",
     "klagefristUker",
     "lovhjemlerUttak",
-    "inkludereUtbetaling",
-    "inkludereUtbetNårGradering",
+    "stønadsperiodeFom",
+    "stønadsperiodeTom",
+    "utbetalingFom",
     "inkludereInnvilget",
     "inkludereAvslag",
-    "inkludereNyeOpplysningerUtbet",
     "utenMinsterett",
     "graderingOgFulltUttakIAnnenAktivitet"
   ],
@@ -354,6 +354,9 @@
     "stønadsperiodeTom": {
       "type": "string"
     },
+    "utbetalingFom": {
+      "type": "string"
+    },
     "foreldrepengeperiodenUtvidetUker": {
       "type": "number"
     },
@@ -398,19 +401,10 @@
     "lovhjemlerBeregning": {
       "type": "string"
     },
-    "inkludereUtbetaling": {
-      "type": "boolean"
-    },
-    "inkludereUtbetNårGradering": {
-      "type": "boolean"
-    },
     "inkludereInnvilget": {
       "type": "boolean"
     },
     "inkludereAvslag": {
-      "type": "boolean"
-    },
-    "inkludereNyeOpplysningerUtbet": {
       "type": "boolean"
     },
     "utenMinsterett": {

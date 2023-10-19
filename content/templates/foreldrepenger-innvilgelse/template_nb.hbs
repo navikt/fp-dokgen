@@ -15,7 +15,7 @@
 {{else}}
 {{#if (and (eq behandlingType "REVURDERING")(eq behandlingResultatType "INNVILGET"))}}Vi har vurdert saken din på nytt, og du har rett til foreldrepenger. Vi har derfor endret vedtaket du har fått tidligere.{{/if}}
 
-{{#if inkludereUtbetaling}}{{> foreldrepenger-innvilgelse/utbetaling_nb }}{{/if}}
+{{#eq behandlingResultatType "INNVILGET"}}{{> foreldrepenger-innvilgelse/utbetaling_nb }}{{/eq}}
 
 {{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.
 
@@ -23,12 +23,6 @@
 {{/gt}}{{/eq}}
 
 {{#if inkludereInnvilget}}{{> foreldrepenger-innvilgelse/innvilget_nb }}{{/if}}
-
-{{#if inkludereNyeOpplysningerUtbet}}
-Du får {{thousand-seperator dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{thousand-seperator månedsbeløp}} kroner i måneden. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
-{{/if}}
-
-{{#if inkludereUtbetNårGradering}}{{> foreldrepenger-innvilgelse/utbetaling_nb }}{{/if}}
 
 {{~#if sisteDagAvSistePeriode}}
     {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}

@@ -176,9 +176,6 @@
   "klagefristUker": 6,
   "lovhjemlerUttak": "§§ 14-9, 14-12 og forvaltningsloven § 35",
   "lovhjemlerBeregning": "§§ 14-7 og 8-30 og forvaltningsloven § 35",
-  "inkludereUtbetaling": false,
-  "inkludereUtbetNårGradering": false,
   "inkludereInnvilget": false,
-  "inkludereAvslag": false,
-  "inkludereNyeOpplysningerUtbet": false
+  "inkludereAvslag": false
 }

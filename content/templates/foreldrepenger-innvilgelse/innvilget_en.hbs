@@ -101,22 +101,22 @@
 
 
 {{#eq årsak "2020"}}
-{{>punkt}}You may take over the quota from {{periodeFom}} up to and including {{periodeTom}} because the other parent is not entitled to parental benefit.
+{{>punkt}}You may take over the quota from {{periodeFom}} up to and including {{periodeTom}} because the other parent is not entitled to parental benefit. During this period, you will receive {{thousand-seperator this.periodeDagsats}} kroner per day before taxes.
 {{/eq}}
 
 
 {{#eq årsak "2022"}}
-{{>punkt}}You may take over the quota from {{periodeFom}} up to and including {{periodeTom}} because the other parent is in a health institution.
+{{>punkt}}You may take over the quota from {{periodeFom}} up to and including {{periodeTom}} because the other parent is in a health institution. During this period, you will receive {{thousand-seperator this.periodeDagsats}} kroner per day before taxes.
 {{/eq}}
 
 
 {{#eq årsak "2021"}}
-{{>punkt}}You may take over the quota from {{periodeFom}} up to and including {{periodeTom}} because the other parent is fully dependent on help to be able to take care of the {{#eq antallBarn 1}}child{{else}}children{{/eq}}.
+{{>punkt}}You may take over the quota from {{periodeFom}} up to and including {{periodeTom}} because the other parent is fully dependent on help to be able to take care of the {{#eq antallBarn 1}}child{{else}}children{{/eq}}. During this period, you will receive {{thousand-seperator this.periodeDagsats}} kroner per day before taxes.
 {{/eq}}
 
 
 {{#eq årsak "2023"}}
-{{>punkt}}You may take over the quota from the other parent from {{periodeFom}} up to and including {{periodeTom}} because you have sole care of the {{#eq antallBarn 1}}child{{else}}children{{/eq}}.
+{{>punkt}}You may take over the quota from the other parent from {{periodeFom}} up to and including {{periodeTom}} because you have sole care of the {{#eq antallBarn 1}}child{{else}}children{{/eq}}. During this period, you will receive {{thousand-seperator this.periodeDagsats}} kroner per day before taxes.
 {{/eq}}
 {{/each}}
 

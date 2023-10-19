@@ -15,7 +15,7 @@
 {{else}}
 {{#if (and (eq behandlingType "REVURDERING")(eq behandlingResultatType "INNVILGET"))}}We have reconsidered your case, and you are entitled to parental benefit. We have therefore changed the decision you previously have received.{{/if}}
 
-{{#if inkludereUtbetaling}}{{> foreldrepenger-innvilgelse/utbetaling_en }}{{/if}}
+{{#eq behandlingResultatType "INNVILGET"}}{{> foreldrepenger-innvilgelse/utbetaling_en }}{{/eq}}
 
 {{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}We have received new income information. We have therefore changed the amount you are going to be paid.
 
@@ -23,12 +23,6 @@
 {{/gt}}{{/eq}}
 
 {{#if inkludereInnvilget}}{{> foreldrepenger-innvilgelse/innvilget_en }}{{/if}}
-
-{{#if inkludereNyeOpplysningerUtbet}}
-You will receive {{thousand-seperator dagsats}} kroner per day before taxes. This amounts to {{thousand-seperator månedsbeløp}} kroner per month, on average. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).
-{{/if}}
-
-{{#if inkludereUtbetNårGradering}}{{> foreldrepenger-innvilgelse/utbetaling_en}}{{/if}}
 
 {{~#if sisteDagAvSistePeriode}}
     {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
