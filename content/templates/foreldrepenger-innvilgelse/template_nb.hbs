@@ -24,6 +24,7 @@
 
 {{#if inkludereInnvilget}}{{> foreldrepenger-innvilgelse/innvilget_nb }}{{/if}}
 
+{{#not avslagBarnOver3år}}
 {{~#if sisteDagAvSistePeriode}}
     {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
         {{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))~}}
@@ -58,6 +59,7 @@ Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dager{{/eq}} igj
         {{~/if}}
     {{~/if}}
 {{~/if}}
+{{/not}}
 
 {{#if (and (eq barnErFødt false) (eq ønskerJustertVedFødsel true))}}Du starter å ta ut foreldrepengene dine på termindato. Vi vil automatisk endre perioden til å starte fra fødselsdato når barnet blir født.{{/if}}
 

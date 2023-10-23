@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.jknack.handlebars.Context;
 import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.JsonNodeValueResolver;
@@ -64,6 +65,11 @@ public final class TemplateTestService {
     }
 
     private TemplateTestService() {
+    }
+
+    public static ObjectNode getTestDataJson(Brevmal brevmal, String undermal, String testDataFilename) {
+        var mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(brevmal, undermal, testDataFilename));
+        return (ObjectNode) getJsonFromString(mergeFieldsJsonString);
     }
 
     public static String compileContent(Brevmal brevmal, String undermal, Språk språk, String testDataFilename) {

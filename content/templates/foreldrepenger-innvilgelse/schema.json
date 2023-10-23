@@ -291,6 +291,9 @@
     "barnErFødt": {
       "type": "boolean"
     },
+    "avslagBarnOver3år": {
+      "type": "boolean"
+    },
     "årsakErFødselshendelse": {
       "type": "boolean"
     },
