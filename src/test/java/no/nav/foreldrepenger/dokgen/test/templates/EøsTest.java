@@ -13,7 +13,7 @@ class EøsTest {
     private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_INNVILGELSE;
 
     @Test
-    void far_der_mor_har_rett_eøs() throws Exception {
+    void far_der_mor_har_rett_eøs() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/far_der_mor_rett_eøs");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/far_der_mor_rett_eøs_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);

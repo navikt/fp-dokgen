@@ -1,6 +1,5 @@
 package no.nav.foreldrepenger.dokgen.test.handlebarshelpers;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -26,7 +25,7 @@ public class ArrayHelper implements Helper<Object> {
      * ```
      */
     @Override
-    public Object apply(Object verdi, Options options) throws IOException {
+    public Object apply(Object verdi, Options options) {
         List<Object> verdier = new ArrayList<>();
         if (options.hash.isEmpty()) {
             verdier.add(verdi);

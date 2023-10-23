@@ -14,21 +14,21 @@ class FritekstbrevTest {
     private static final Brevmal BREVMAL = Brevmal.FRITEKSTBREV;
 
     @Test
-    void skal_generere_fritekstbrev_på_bokmål() throws Exception {
+    void skal_generere_fritekstbrev_på_bokmål() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fritekstbrev");
         var expected = getExpected(BREVMAL, "fritekstbrev_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void skal_generere_fritekstbrev_på_nynorsk() throws Exception {
+    void skal_generere_fritekstbrev_på_nynorsk() {
         var content = compileContent(BREVMAL, Språk.NYNORSK, "test_fritekstbrev");
         var expected = getExpected(BREVMAL, "fritekstbrev_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void skal_generere_fritekstbrev_på_engelsk() throws Exception {
+    void skal_generere_fritekstbrev_på_engelsk() {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fritekstbrev");
         var expected = getExpected(BREVMAL, "fritekstbrev_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);

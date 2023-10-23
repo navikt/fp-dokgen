@@ -22,7 +22,7 @@ class BfhrMorUførTest {
          *   "disponibleDagerMedAktivitetskrav": 35,
          *   "utenMinsterett": false,
          */
-    void med_og_uten_aktkrav_etter_wlb() throws Exception {
+    void med_og_uten_aktkrav_etter_wlb() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/bfhr_mor_ufør_med_og_uten_aktkrav");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/bfhr_mor_ufør_med_og_uten_aktkrav.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
@@ -36,7 +36,7 @@ class BfhrMorUførTest {
          *   "disponibleDagerMedAktivitetskrav": 35,
          *   "utenMinsterett": true,
          */
-    void med_og_uten_aktkrav_før_wlb() throws Exception {
+    void med_og_uten_aktkrav_før_wlb() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/bfhr_mor_ufør_med_og_uten_aktkrav_uten_minsterett");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/bfhr_mor_ufør_med_aktkrav_uten_minsterett.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
@@ -50,7 +50,7 @@ class BfhrMorUførTest {
          *   "disponibleDagerMedAktivitetskrav": 0,
          *   "utenMinsterett": false,
          */
-    void uten_aktkrav_etter_wlb() throws Exception {
+    void uten_aktkrav_etter_wlb() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/bfhr_mor_ufør_uten_aktkrav");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/bfhr_mor_ufør_uten_aktkrav.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
@@ -64,7 +64,7 @@ class BfhrMorUførTest {
          *   "disponibleDagerMedAktivitetskrav": 0,
          *   "utenMinsterett": true,
          */
-    void uten_aktkrav_før_wlb() throws Exception {
+    void uten_aktkrav_før_wlb() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/bfhr_mor_ufør_uten_aktkrav_uten_minsterett");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/bfhr_mor_ufør_uten_aktkrav_uten_minsterett.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
@@ -78,7 +78,7 @@ class BfhrMorUførTest {
          *   "disponibleDagerMedAktivitetskrav": 75,
          *   "utenMinsterett": false,
          */
-    void med_aktkrav_etter_wlb() throws Exception {
+    void med_aktkrav_etter_wlb() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/bfhr_mor_ufør_med_aktkrav");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/bfhr_mor_ufør_med_aktkrav.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
@@ -92,7 +92,7 @@ class BfhrMorUførTest {
          *   "disponibleDagerMedAktivitetskrav": 75,
          *   "utenMinsterett": true,
          */
-    void med_aktkrav_før_wlb() throws Exception {
+    void med_aktkrav_før_wlb() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "forstegangsbehandling/bfhr_mor_ufør_med_aktkrav_uten_minsterett");
         var expected = getExpected(BREVMAL, "forstegangsbehandling/bfhr_mor_ufør_med_aktkrav.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);

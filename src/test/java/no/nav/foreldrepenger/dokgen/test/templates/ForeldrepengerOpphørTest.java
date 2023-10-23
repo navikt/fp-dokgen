@@ -27,49 +27,49 @@ class ForeldrepengerOpphørTest {
     protected static final String RELASJONSKODE = "relasjonskode";
 
     @Test
-    void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_bokmål() throws Exception {
+    void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_bokmål() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_mange");
         var expected = getExpected(BREVMAL, "foreldrepenger-opphør_mange_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_nynorsk() throws Exception {
+    void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_nynorsk() {
         var content = compileContent(BREVMAL, Språk.NYNORSK, "test_mange");
         var expected = getExpected(BREVMAL, "foreldrepenger-opphør_mange_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_engelsk() throws Exception {
+    void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_engelsk() {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "test_mange");
         var expected = getExpected(BREVMAL, "foreldrepenger-opphør_mange_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void skal_generere_foreldrepenger_opphør_for_død_barn_på_bokmål() throws Exception {
+    void skal_generere_foreldrepenger_opphør_for_død_barn_på_bokmål() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_barn_dør");
         var expected = getExpected(BREVMAL, "foreldrepenger-opphør_barn_dør_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void skal_generere_foreldrepenger_opphør_for_død_barn_på_nynorsk() throws Exception {
+    void skal_generere_foreldrepenger_opphør_for_død_barn_på_nynorsk() {
         var content = compileContent(BREVMAL, Språk.NYNORSK, "test_barn_dør");
         var expected = getExpected(BREVMAL, "foreldrepenger-opphør_barn_dør_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void skal_generere_foreldrepenger_opphør_for_død_barn_på_engelsk() throws Exception {
+    void skal_generere_foreldrepenger_opphør_for_død_barn_på_engelsk() {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "test_barn_dør");
         var expected = getExpected(BREVMAL, "foreldrepenger-opphør_barn_dør_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void test_søker_død() throws Exception {
+    void test_søker_død() {
         var testData = opprettTestData();
         testData.put(ER_SØKER_DØD, true);
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
@@ -81,7 +81,7 @@ class ForeldrepengerOpphørTest {
     }
 
     @Test
-    void test_søker_ikke_død() throws Exception {
+    void test_søker_ikke_død() {
         var testData = opprettTestData();
         testData.put(ER_SØKER_DØD, false);
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
@@ -89,7 +89,7 @@ class ForeldrepengerOpphørTest {
     }
 
     @Test
-    void test_kode_søker_1035() throws Exception {
+    void test_kode_søker_1035() {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1035");
 
@@ -99,7 +99,7 @@ class ForeldrepengerOpphørTest {
     }
 
     @Test
-    void test_kode_søker_1027_medmor_1_barn() throws Exception {
+    void test_kode_søker_1027_medmor_1_barn() {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1027");
         testData.put(RELASJONSKODE, "MEDMOR");
@@ -110,7 +110,7 @@ class ForeldrepengerOpphørTest {
     }
 
     @Test
-    void test_kode_søker_1027_far_2_barn() throws Exception {
+    void test_kode_søker_1027_far_2_barn() {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1027");
         testData.put(RELASJONSKODE, "FAR");
@@ -121,7 +121,7 @@ class ForeldrepengerOpphørTest {
     }
 
     @Test
-    void test_kode_søker_4072_2_barn() throws Exception {
+    void test_kode_søker_4072_2_barn() {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "4072");
         testData.put(ANTALL_BARN, 2);
@@ -134,7 +134,7 @@ class ForeldrepengerOpphørTest {
     }
 
     @Test
-    void test_kode_søker_1024_og_opphørdato() throws Exception {
+    void test_kode_søker_1024_og_opphørdato() {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1024");
 
@@ -145,14 +145,14 @@ class ForeldrepengerOpphørTest {
 
     private void opprettÅrsaker(final ObjectNode testData, String... årsaker) {
         var årsakArray = OBJECT_MAPPER.createArrayNode();
-        for (String årsak : årsaker) {
+        for (var årsak : årsaker) {
             årsakArray.add(årsak);
         }
         testData.set(AVSLAG_ÅRSAKER_LISTE, årsakArray);
     }
 
     private ObjectNode opprettTestData() {
-        ObjectNode testData = OBJECT_MAPPER.createObjectNode();
+        var testData = OBJECT_MAPPER.createObjectNode();
         opprettFelles(testData);
         testData.put(ER_SØKER_DØD, false);
         testData.put(ANTALL_BARN, 2);
@@ -168,7 +168,7 @@ class ForeldrepengerOpphørTest {
     }
 
     private void opprettFelles(final ObjectNode testData) {
-        ObjectNode felles = OBJECT_MAPPER.createObjectNode();
+        var felles = OBJECT_MAPPER.createObjectNode();
         felles.put("søkerNavn", BRUKER_NAVN);
         felles.put("søkerPersonnummer", "12345 66789");
         felles.put("brevDato", "4. mai 2021");

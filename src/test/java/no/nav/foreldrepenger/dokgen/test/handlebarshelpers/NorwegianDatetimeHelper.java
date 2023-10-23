@@ -10,7 +10,7 @@ public class NorwegianDatetimeHelper implements Helper<String> {
     private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
 
     @Override
-    public Object apply(String s, Options options) throws IOException {
+    public Object apply(String s, Options options) {
         return formatter.format((DateTimeFormatter.ISO_DATE_TIME.parse(s)));
     }
 }
