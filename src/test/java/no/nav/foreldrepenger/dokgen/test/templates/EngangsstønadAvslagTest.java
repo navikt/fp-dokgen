@@ -14,14 +14,14 @@ class EngangsstønadAvslagTest {
     private static final Brevmal BREVMAL = Brevmal.ENGANGSSTØNAD_AVSLAG;
 
     @Test
-    void avslagsbrev_nb() throws Exception {
+    void avslagsbrev_nb() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_avslag_fb");
         var expected = getExpected(BREVMAL, "engangsstonad-avslag-fb_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void avslagsbrev_revurdering_nb() throws Exception {
+    void avslagsbrev_revurdering_nb() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_avslag_rv");
         var expected = getExpected(BREVMAL, "engangsstonad-avslag-rv_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);

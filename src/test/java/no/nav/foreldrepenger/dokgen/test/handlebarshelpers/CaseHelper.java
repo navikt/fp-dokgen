@@ -14,9 +14,9 @@ public class CaseHelper implements Helper<Object> {
 
     @Override
     public Object apply(Object caseKonstant, Options options) throws IOException {
-        Object konstant = options.hash.isEmpty() ? caseKonstant : options.hash;
-        Map<String, Object> model = (Map<String, Object>) options.context.model();
-        Object condition_variable = model.get(CONDITION_VARIABLE);
+        var konstant = options.hash.isEmpty() ? caseKonstant : options.hash;
+        var model = (Map<String, Object>) options.context.model();
+        var condition_variable = model.get(CONDITION_VARIABLE);
         if (caseKonstant instanceof Iterable) {
             if (((List) caseKonstant).contains(condition_variable)) {
                 incrementConditionFulfilledCounter(model);
@@ -30,7 +30,7 @@ public class CaseHelper implements Helper<Object> {
     }
 
     private void incrementConditionFulfilledCounter(final Map<String, Object> model) {
-        Integer antall = (Integer) model.get(CONDITION_FULFILLED);
+        var antall = (Integer) model.get(CONDITION_FULFILLED);
         model.put(CONDITION_FULFILLED, ++antall);
     }
 }

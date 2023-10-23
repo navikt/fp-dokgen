@@ -7,12 +7,12 @@ import java.nio.file.Path;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.jknack.handlebars.Context;
 import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.JsonNodeValueResolver;
-import com.github.jknack.handlebars.Template;
 import com.github.jknack.handlebars.context.FieldValueResolver;
 import com.github.jknack.handlebars.context.JavaBeanValueResolver;
 import com.github.jknack.handlebars.context.MapValueResolver;
@@ -33,83 +33,95 @@ import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.SwitchHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.ThousandSeperatorHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.TrimDecimalHelper;
 
-public class TemplateTestService {
+public final class TemplateTestService {
 
-    private static final Handlebars handlebars;
+    private static final Handlebars HANDLEBARS;
 
     static {
-        handlebars = Files.exists(FileStructureUtil.getTemplateRootPath()) ? new Handlebars(
+        HANDLEBARS = Files.exists(FileStructureUtil.getTemplateRootPath()) ? new Handlebars(
             new FileTemplateLoader(FileStructureUtil.getTemplateRootPath().toFile())) : new Handlebars();
-        handlebars.registerHelper("eq", ConditionalHelpers.eq);
-        handlebars.registerHelper("neq", ConditionalHelpers.neq);
-        handlebars.registerHelper("gt", ConditionalHelpers.gt);
-        handlebars.registerHelper("gte", ConditionalHelpers.gte);
-        handlebars.registerHelper("lt", ConditionalHelpers.lt);
-        handlebars.registerHelper("lte", ConditionalHelpers.lte);
-        handlebars.registerHelper("and", ConditionalHelpers.and);
-        handlebars.registerHelper("or", ConditionalHelpers.or);
-        handlebars.registerHelper("not", ConditionalHelpers.not);
-        handlebars.registerHelper("switch", new SwitchHelper());
-        handlebars.registerHelper("case", new CaseHelper());
-        handlebars.registerHelper("add", new AdditionHelper());
-        handlebars.registerHelper("array", new ArrayHelper());
-        handlebars.registerHelper("in-array", new InArrayHelper());
-        handlebars.registerHelper("divide", new DivideHelper());
-        handlebars.registerHelper("format-kroner", new FormatKronerHelper());
-        handlebars.registerHelper("thousand-seperator", new ThousandSeperatorHelper());
-        handlebars.registerHelper("trim-decimal", new TrimDecimalHelper());
-        handlebars.registerHelper("size", new SizeHelper());
-        handlebars.registerHelper("norwegian-datetime", new NorwegianDatetimeHelper());
-        handlebars.registerHelpers(StringHelpers.class);
+        HANDLEBARS.registerHelper("eq", ConditionalHelpers.eq);
+        HANDLEBARS.registerHelper("neq", ConditionalHelpers.neq);
+        HANDLEBARS.registerHelper("gt", ConditionalHelpers.gt);
+        HANDLEBARS.registerHelper("gte", ConditionalHelpers.gte);
+        HANDLEBARS.registerHelper("lt", ConditionalHelpers.lt);
+        HANDLEBARS.registerHelper("lte", ConditionalHelpers.lte);
+        HANDLEBARS.registerHelper("and", ConditionalHelpers.and);
+        HANDLEBARS.registerHelper("or", ConditionalHelpers.or);
+        HANDLEBARS.registerHelper("not", ConditionalHelpers.not);
+        HANDLEBARS.registerHelper("switch", new SwitchHelper());
+        HANDLEBARS.registerHelper("case", new CaseHelper());
+        HANDLEBARS.registerHelper("add", new AdditionHelper());
+        HANDLEBARS.registerHelper("array", new ArrayHelper());
+        HANDLEBARS.registerHelper("in-array", new InArrayHelper());
+        HANDLEBARS.registerHelper("divide", new DivideHelper());
+        HANDLEBARS.registerHelper("format-kroner", new FormatKronerHelper());
+        HANDLEBARS.registerHelper("thousand-seperator", new ThousandSeperatorHelper());
+        HANDLEBARS.registerHelper("trim-decimal", new TrimDecimalHelper());
+        HANDLEBARS.registerHelper("size", new SizeHelper());
+        HANDLEBARS.registerHelper("norwegian-datetime", new NorwegianDatetimeHelper());
+        HANDLEBARS.registerHelpers(StringHelpers.class);
     }
 
-    public TemplateTestService() {
+    private TemplateTestService() {
     }
 
-    public static String compileContent(Brevmal brevmal, String undermal, Språk språk, String testDataFilename) throws Exception {
-        String templateContent = readFile(FileStructureUtil.getTemplatePath(brevmal, undermal, språk));
-        String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(brevmal, undermal, testDataFilename));
+    public static String compileContent(Brevmal brevmal, String undermal, Språk språk, String testDataFilename) {
+        var templateContent = readFile(FileStructureUtil.getTemplatePath(brevmal, undermal, språk));
+        var mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(brevmal, undermal, testDataFilename));
         return produceContent(mergeFieldsJsonString, templateContent);
     }
 
-    public static String compileContent(Brevmal brevmal, Språk språk, String testDataFilename) throws Exception {
-        String templateContent = readFile(FileStructureUtil.getTemplatePath(brevmal, språk));
-        String mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(brevmal, testDataFilename));
+    public static String compileContent(Brevmal brevmal, Språk språk, String testDataFilename) {
+        var templateContent = readFile(FileStructureUtil.getTemplatePath(brevmal, språk));
+        var mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(brevmal, testDataFilename));
         return produceContent(mergeFieldsJsonString, templateContent);
     }
 
-    public static String compileContent(Brevmal brevmal, Språk språk, JsonNode testData) throws Exception {
-        String templateContent = readFile(FileStructureUtil.getTemplatePath(brevmal, språk));
+    public static String compileContent(Brevmal brevmal, Språk språk, JsonNode testData) {
+        var templateContent = readFile(FileStructureUtil.getTemplatePath(brevmal, språk));
         return produceContent(testData, templateContent);
     }
 
-    private static String produceContent(final String mergeFieldsJsonString, final String templateContent) throws Exception {
-        JsonNode mergeFields = getJsonFromString(mergeFieldsJsonString);
+    private static String produceContent(String mergeFieldsJsonString, String templateContent) {
+        var mergeFields = getJsonFromString(mergeFieldsJsonString);
         return produceContent(mergeFields, templateContent);
     }
 
-    private static String produceContent(final JsonNode mergeFields, final String templateContent) throws Exception {
-        Template template = handlebars.compileInline(templateContent);
-        return removeNewLines(template.apply(with(mergeFields)));
+    private static String produceContent(JsonNode mergeFields, String templateContent) {
+        try {
+            var template = HANDLEBARS.compileInline(templateContent);
+            return removeNewLines(template.apply(with(mergeFields)));
+        } catch (IOException e) {
+            throw new RuntimeException("Feil ved lesing av fil", e);
+        }
     }
 
-    public static String getExpected(Brevmal brevmal, String expectedFileName) throws Exception {
-        Path expectedPath = FileStructureUtil.getExpectedPath(brevmal, expectedFileName);
+    public static String getExpected(Brevmal brevmal, String expectedFileName) {
+        var expectedPath = FileStructureUtil.getExpectedPath(brevmal, expectedFileName);
         return readFile(expectedPath);
     }
 
-    public static String getExpected(Brevmal brevmal, String undermal, String expectedFileName) throws Exception {
-        Path expectedPath = FileStructureUtil.getExpectedPath(brevmal, undermal, expectedFileName);
+    public static String getExpected(Brevmal brevmal, String undermal, String expectedFileName) {
+        var expectedPath = FileStructureUtil.getExpectedPath(brevmal, undermal, expectedFileName);
         return readFile(expectedPath);
     }
 
-    private static String readFile(Path file) throws Exception {
-        return removeNewLines(Files.readString(file));
+    private static String readFile(Path file) {
+        try {
+            return removeNewLines(Files.readString(file));
+        } catch (IOException e) {
+            throw new RuntimeException("Feil ved lesing av fil", e);
+        }
     }
 
-    private static JsonNode getJsonFromString(String json) throws IOException {
-        ObjectMapper mapper = new ObjectMapper();
-        return mapper.readTree(json);
+    private static JsonNode getJsonFromString(String json) {
+        var mapper = new ObjectMapper();
+        try {
+            return mapper.readTree(json);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException("Feil med konvertering til jsonnode", e);
+        }
     }
 
     private static Context with(JsonNode model) {

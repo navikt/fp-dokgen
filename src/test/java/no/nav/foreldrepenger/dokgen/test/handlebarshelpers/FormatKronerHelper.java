@@ -11,8 +11,8 @@ import com.github.jknack.handlebars.Options;
 public class FormatKronerHelper implements Helper<Integer> {
     @Override
     public Object apply(Integer kroner, final Options options) {
-        DecimalFormat formatter = (DecimalFormat) NumberFormat.getInstance(Locale.US);
-        DecimalFormatSymbols symbols = formatter.getDecimalFormatSymbols();
+        var formatter = (DecimalFormat) NumberFormat.getInstance(Locale.US);
+        var symbols = formatter.getDecimalFormatSymbols();
 
         symbols.setGroupingSeparator(' ');
         formatter.setDecimalFormatSymbols(symbols);

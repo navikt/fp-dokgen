@@ -14,35 +14,35 @@ class ForeldrepengerInnvilgelseUtbetalingTest {
     private static final String UNDERMAL = "utbetaling";
 
     @Test
-    void undermal_utbetaling_ingen_refusjon_nb() throws Exception {
+    void undermal_utbetaling_ingen_refusjon_nb() {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_ingen_refusjon");
         var expected = getExpected(BREVMAL, UNDERMAL, "utbetaling_ingen_refusjon_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void undermal_utbetaling_full_refusjon_rettigheter_nb() throws Exception {
+    void undermal_utbetaling_full_refusjon_rettigheter_nb() {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_full_refusjon");
         var expected = getExpected(BREVMAL, UNDERMAL, "utbetaling_full_refusjon_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void undermal_utbetaling_full_refusjon_rettigheter_nn() throws Exception {
+    void undermal_utbetaling_full_refusjon_rettigheter_nn() {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.NYNORSK, "førstegangsbehandling_full_refusjon");
         var expected = getExpected(BREVMAL, UNDERMAL, "utbetaling_full_refusjon_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void undermal_utbetaling_full_refusjon_rettigheter_en() throws Exception {
+    void undermal_utbetaling_full_refusjon_rettigheter_en() {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.ENGELSK, "førstegangsbehandling_full_refusjon");
         var expected = getExpected(BREVMAL, UNDERMAL, "utbetaling_full_refusjon_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
-    void undermal_utbetaling_delvis_refusjon_rettigheter_nb() throws Exception {
+    void undermal_utbetaling_delvis_refusjon_rettigheter_nb() {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_delvis_refusjon");
         var expected = getExpected(BREVMAL, UNDERMAL, "utbetaling_delvis_refusjon_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
