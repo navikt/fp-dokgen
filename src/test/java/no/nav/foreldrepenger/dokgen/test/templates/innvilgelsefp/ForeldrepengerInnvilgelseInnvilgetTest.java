@@ -2,6 +2,7 @@ package no.nav.foreldrepenger.dokgen.test.templates.innvilgelsefp;
 
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compileContent;
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
+import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getTestDataJson;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
@@ -67,5 +68,13 @@ class ForeldrepengerInnvilgelseInnvilgetTest {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_innvilget_og_avslått");
         var expected = getExpected(BREVMAL, UNDERMAL, "foreldrepenger-innvilgelse_innvilget_og_avslått_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    void skal_ekskludere_gjenværende_dager_hvis_avslagBarnOver3år() {
+        var testDataJson = getTestDataJson(BREVMAL, UNDERMAL, "førstegangsbehandling_prosent");
+        testDataJson.put("avslagBarnOver3år", true);
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, testDataJson);
+        assertThat(content).doesNotContain("igjen av kvoten din");
     }
 }

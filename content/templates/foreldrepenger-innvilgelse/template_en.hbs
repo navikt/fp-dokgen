@@ -24,6 +24,7 @@
 
 {{#if inkludereInnvilget}}{{> foreldrepenger-innvilgelse/innvilget_en }}{{/if}}
 
+{{#not avslagBarnOver3år}}
 {{~#if sisteDagAvSistePeriode}}
     {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
         {{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))~}}
@@ -58,6 +59,7 @@ There are {{disponibleDager}}{{#eq disponibleDager 1}} day{{else}} days{{/eq}} l
         {{~/if}}
     {{~/if}}
 {{~/if}}
+{{/not}}
 
 {{#if (and (eq barnErFødt false) (eq ønskerJustertVedFødsel true))}}Your first period of parental benefit is set to start at the estimated date of delivery. When the child is born we will adjust that period to start at the date of birth.{{/if}}
 
