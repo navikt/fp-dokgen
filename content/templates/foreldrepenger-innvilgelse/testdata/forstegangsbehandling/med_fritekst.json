@@ -73,7 +73,7 @@
           "prosentArbeid": 2.0,
           "stillingsprosent": 2,
           "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         },
         {
           "arbeidsgiverNavn": "Arbeidsgiver 2",
@@ -81,7 +81,7 @@
           "prosentArbeid": 20.0,
           "stillingsprosent": 20,
           "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         },
         {
           "arbeidsgiverNavn": "Arbeidsgiver 3",
@@ -89,7 +89,7 @@
           "prosentArbeid": 100.0,
           "stillingsprosent": 100,
           "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -108,7 +108,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 2,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         },
         {
           "arbeidsgiverNavn": "Arbeidsgiver 2",
@@ -116,7 +116,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 20,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         },
         {
           "arbeidsgiverNavn": "Arbeidsgiver 3",
@@ -124,7 +124,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 100,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -143,7 +143,7 @@
           "prosentArbeid": 2.0,
           "stillingsprosent": 2,
           "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         },
         {
           "arbeidsgiverNavn": "Arbeidsgiver 2",
@@ -151,7 +151,7 @@
           "prosentArbeid": 20.0,
           "stillingsprosent": 20,
           "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         },
         {
           "arbeidsgiverNavn": "Arbeidsgiver 3",
@@ -159,7 +159,7 @@
           "prosentArbeid": 100.0,
           "stillingsprosent": 100,
           "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -178,7 +178,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 2,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         },
         {
           "arbeidsgiverNavn": "Arbeidsgvier 2",
@@ -186,7 +186,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 20,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         },
         {
           "arbeidsgiverNavn": "Arbeidsgiver 3",
@@ -194,7 +194,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 100,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     }

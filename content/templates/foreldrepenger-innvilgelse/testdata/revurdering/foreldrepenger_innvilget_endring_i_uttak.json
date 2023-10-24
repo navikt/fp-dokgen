@@ -68,7 +68,7 @@
           "prosentArbeid": 100.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -87,7 +87,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -106,7 +106,7 @@
           "prosentArbeid": 100.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -125,7 +125,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -144,7 +144,7 @@
           "prosentArbeid": 100.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -163,7 +163,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -182,7 +182,7 @@
           "prosentArbeid": 100.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -201,7 +201,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -220,7 +220,7 @@
           "prosentArbeid": 100.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -239,7 +239,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -258,7 +258,7 @@
           "prosentArbeid": 100.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 0.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     },
@@ -277,7 +277,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     }

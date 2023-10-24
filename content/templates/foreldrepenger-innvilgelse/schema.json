@@ -85,6 +85,9 @@
         },
         "naturalytelseNyDagsats": {
           "type": "number"
+        },
+        "bruttoInkludertBortfaltNaturalytelsePrAar": {
+          "type": "number"
         }
       }
     },

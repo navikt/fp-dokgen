@@ -72,7 +72,7 @@
           "prosentArbeid": 50.0,
           "stillingsprosent": 100.0,
           "utbetalingsgrad": 50.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         },
         {
           "arbeidsgiverNavn": "TRALLE TRANSPORT AS",
@@ -80,7 +80,7 @@
           "prosentArbeid": 0.0,
           "stillingsprosent": 0.0,
           "utbetalingsgrad": 100.0,
-          "naturalytelseNyDagsats": 0
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 0
         }
       ]
     }
