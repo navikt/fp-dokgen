@@ -1,4 +1,8 @@
+{{#if (or (eq starterMedFullUtbetaling true)(not varierendeDagsats))}}
 Du får {{thousand-seperator dagsats}} kroner per dag før skatt frå og med {{utbetalingFom}}. Dette er i gjennomsnitt {{thousand-seperator månedsbeløp}} kroner i månaden. Den siste dagen du får foreldrepengar er {{stønadsperiodeTom}}.
+{{else}}
+Du får foreldrepengar frå og med {{utbetalingFom}}. Den siste dagen du får foreldrepengar er {{stønadsperiodeTom}}.
+{{/if}}
 
 {{> foreldrepenger-innvilgelse/felles/refusjon_nn }}
 

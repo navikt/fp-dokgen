@@ -77,4 +77,32 @@ class ForeldrepengerInnvilgelseInnvilgetTest {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testDataJson);
         assertThat(content).doesNotContain("igjen av kvoten din");
     }
+
+    @Test
+    void skal_ikke_oppgi_dagsats_i_utbetaling_hvis_varierendeDagsats() {
+        var testDataJson = getTestDataJson(BREVMAL, UNDERMAL, "førstegangsbehandling_prosent");
+        testDataJson.put("varierendeDagsats", true);
+        testDataJson.put("starterMedFullUtbetaling", false);
+        var nb = compileContent(BREVMAL, Språk.BOKMÅL, testDataJson);
+        var nn = compileContent(BREVMAL, Språk.NYNORSK, testDataJson);
+        var en = compileContent(BREVMAL, Språk.ENGELSK, testDataJson);
+
+        assertThat(nb).contains("Du får foreldrepenger fra og med 4. juni 2022. Den siste dagen du får foreldrepenger er");
+        assertThat(nn).contains("Du får foreldrepengar frå og med 4. juni 2022. Den siste dagen du får foreldrepengar er");
+        assertThat(en).contains("You will receive parental benefit starting from");
+    }
+
+    @Test
+    void skal_oppgi_dagsats_i_utbetaling_hvis_varierendeDagsats_og_starterMedFullUtbetaling() {
+        var testDataJson = getTestDataJson(BREVMAL, UNDERMAL, "førstegangsbehandling_prosent");
+        testDataJson.put("varierendeDagsats", true);
+        testDataJson.put("starterMedFullUtbetaling", true);
+        var nb = compileContent(BREVMAL, Språk.BOKMÅL, testDataJson);
+        var nn = compileContent(BREVMAL, Språk.NYNORSK, testDataJson);
+        var en = compileContent(BREVMAL, Språk.ENGELSK, testDataJson);
+
+        assertThat(nb).contains("kroner per dag før skatt fra");
+        assertThat(nn).contains("kroner per dag før skatt frå");
+        assertThat(en).contains("kroner per day before taxes starting");
+    }
 }

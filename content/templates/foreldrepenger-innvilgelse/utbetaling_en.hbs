@@ -1,4 +1,8 @@
+{{#if (or (eq starterMedFullUtbetaling true)(not varierendeDagsats))}}
 You will receive {{thousand-seperator dagsats}} kroner per day before taxes starting from {{utbetalingFom}}. This is {{thousand-seperator månedsbeløp}} kroner on average per month. The last day you will receive parental benefit is {{stønadsperiodeTom}}.
+{{else}}
+You will receive parental benefit starting from {{utbetalingFom}}. The last day you will receive parental benefit is {{stønadsperiodeTom}}.
+{{/if}}
 
 {{> foreldrepenger-innvilgelse/felles/refusjon_en }}
 
