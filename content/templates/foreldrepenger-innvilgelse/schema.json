@@ -83,7 +83,7 @@
         "naturalytelseEndringDato": {
           "type": "string"
         },
-        "naturalytelseNyDagsats": {
+        "bruttoInkludertBortfaltNaturalytelsePrAar": {
           "type": "number"
         }
       }

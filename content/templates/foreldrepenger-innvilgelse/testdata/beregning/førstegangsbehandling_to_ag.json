@@ -75,7 +75,8 @@
           "stillingsprosent": 10,
           "naturalytelseEndringType": "STOPP",
           "naturalytelseEndringDato": "15. april 2021",
-          "naturalytelseNyDagsats": 100
+          "naturalytelseNyDagsats": 100,
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 48200
         }
       ]
     },
@@ -102,7 +103,8 @@
           "stillingsprosent": 10,
           "naturalytelseEndringType": "STOPP",
           "naturalytelseEndringDato": "19. august 2021",
-          "naturalytelseNyDagsats": 100
+          "naturalytelseNyDagsats": 100,
+          "bruttoInkludertBortfaltNaturalytelsePrAar": 52200
         }
       ]
     },

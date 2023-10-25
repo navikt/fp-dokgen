@@ -100,10 +100,10 @@ Arbeidsinntekta og inntekta di som frilansar er høgare enn gjennomsnittet av ar
 {{#gt periodeDagsats 0}}
 {{~#each arbeidsforholdsliste}}
 {{~#eq this.naturalytelseEndringType "STOPP"}}
-Frå og med {{this.naturalytelseEndringDato}} får du {{thousand-seperator this.naturalytelseNyDagsats}} kroner per dag før skatt fordi du mister mistar naturalyting frå {{this.arbeidsgiverNavn}}.
+Frå og med {{this.naturalytelseEndringDato}} er inntekta di {{thousand-seperator this.bruttoInkludertBortfaltNaturalytelsePrAar}} kroner før skatt fordi du mistar naturalyting frå {{this.arbeidsgiverNavn}}.
 {{/eq}}
 {{~#eq this.naturalytelseEndringType "START"}}
-Frå og med {{this.naturalytelseEndringDato}} får du {{thousand-seperator this.naturalytelseNyDagsats}} kroner per dag før skatt fordi du får naturalyting frå {{this.arbeidsgiverNavn}}.
+Frå og med {{this.naturalytelseEndringDato}} er inntekten din {{thousand-seperator this.bruttoInkludertBortfaltNaturalytelsePrAar}} kroner før skatt fordi du får naturalyting frå {{this.arbeidsgiverNavn}}.
 {{/eq}}
 {{/each}}
 {{/gt}}
