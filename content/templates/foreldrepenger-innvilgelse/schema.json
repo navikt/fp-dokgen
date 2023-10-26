@@ -48,7 +48,9 @@
     "inkludereInnvilget",
     "inkludereAvslag",
     "utenMinsterett",
-    "graderingOgFulltUttakIAnnenAktivitet"
+    "graderingOgFulltUttakIAnnenAktivitet",
+    "varierendeDagsats",
+    "starterMedFullUtbetaling"
   ],
   "$defs": {
     "arbeidsforhold": {
@@ -250,6 +252,12 @@
       "type": "number"
     },
     "harUtbetaling": {
+      "type": "boolean"
+    },
+    "varierendeDagsats": {
+      "type": "boolean"
+    },
+    "starterMedFullUtbetaling": {
       "type": "boolean"
     },
     "dagsats": {
