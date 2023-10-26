@@ -173,6 +173,9 @@
         "annenAktivitetsliste": {
           "type": "array",
           "items": { "$ref": "#/$defs/annenAktivitet" }
+        },
+        "tidligstMottattDato": {
+          "type": "string"
         }
       }
     },
