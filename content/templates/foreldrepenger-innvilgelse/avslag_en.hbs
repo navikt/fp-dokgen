@@ -23,7 +23,7 @@
 {{/case}}
 {{#case "4020"}}{{#gt antallTapteDager 0}}{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
 
-  You must apply no later than three months after the period of parental benefit started. You applied on {{søknadsdato}}. You will therefore have {{antallTapteDager}} {{#gt antallTapteDager 1}}fewer days{{else}}day less{{/gt}} with parental benefit.{{/gt}}{{/case}}
+  You must apply no later than three months after the period of parental benefit started. You applied on {{tidligstMottattDato}}. You will therefore have {{antallTapteDager}} {{#gt antallTapteDager 1}}fewer days{{else}}day less{{/gt}} with parental benefit.{{/gt}}{{/case}}
 {{#case "4005"}}
 {{#if annenForelderHarRett}}
 {{>punkt}}No application has been submitted for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. Therefore, {{antallTapteDager}} {{#gt antallTapteDager 1}}days have{{else}}day has{{/gt}} been lost.

@@ -113,6 +113,7 @@
       "periodeDagsats": 2209,
       "antallTapteDager": 3,
       "prioritertUtbetalingsgrad": 100,
+      "tidligstMottattDato": "15. januar 2022",
       "arbeidsforholdsliste": [
         {
           "arbeidsgiverNavn": "ARBEIDSGIVER AS",
