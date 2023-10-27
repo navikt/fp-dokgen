@@ -247,9 +247,6 @@
     "konsekvensForInnvilgetYtelse": {
       "type": "string"
     },
-    "søknadsdato": {
-      "type": "string"
-    },
     "dekningsgrad": {
       "type": "number"
     },
