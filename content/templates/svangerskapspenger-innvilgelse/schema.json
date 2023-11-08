@@ -14,69 +14,10 @@
     "månedsbeløp",
     "klagefristUker",
     "antallUttaksperioder",
-    "uttaksaktiviteter",
-    "utbetalingsperioder",
+    "uttakAktiviteterMedPerioder",
     "inkludereBeregning"
   ],
   "$defs": {
-    "uttaksperiode": {
-      "type": "object",
-      "required": [
-        "periodeFom",
-        "periodeTom",
-        "utbetalingsgrad"
-      ],
-      "properties": {
-        "periodeFom": {
-          "type": "string"
-        },
-        "periodeTom": {
-          "type": "string"
-        },
-        "utbetalingsgrad": {
-          "type": "number"
-        }
-      }
-    },
-    "uttaksaktivitet": {
-      "type": "object",
-      "required": [
-        "aktivitetsbeskrivelse",
-        "uttaksperioder"
-      ],
-      "properties": {
-        "aktivitetsbeskrivelse": {
-          "type": "string"
-        },
-        "uttaksperioder": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/uttaksperiode" }
-        }
-      }
-    },
-    "utbetalingsperiode": {
-      "type": "object",
-      "required": [
-        "periodeFom",
-        "periodeTom",
-        "periodeDagsats",
-        "utbetaltTilSøker"
-      ],
-      "properties": {
-        "periodeFom": {
-          "type": "string"
-        },
-        "periodeTom": {
-          "type": "string"
-        },
-        "periodeDagsats": {
-          "type": "number"
-        },
-        "utbetaltTilSøker": {
-          "type": "number"
-        }
-      }
-    },
     "avslagsperiode": {
       "type": "object",
       "required": [
@@ -209,6 +150,49 @@
           "type": "string"
         }
       }
+    },
+    "uttakAktivitetMedPerioder": {
+      "type": "object",
+      "required": [
+        "beskrivelse",
+        "utbetalingsperioder"
+      ],
+      "properties": {
+        "beskrivelse": {
+          "type": "string"
+        },
+        "utbetalingsperioder": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/utbetalingsperiode" }
+        }
+      }
+    },
+    "utbetalingsperiode": {
+      "type": "object",
+      "required":[
+        "periodeFom",
+        "periodeTom",
+        "dagsats",
+        "utbetalingsgrad",
+        "utbetaltTilSøker"
+      ],
+      "properties": {
+        "periodeFom": {
+          "type": "string"
+        },
+        "periodeTom": {
+          "type": "string"
+        },
+        "dagsats": {
+          "type": "number"
+        },
+        "utbetalingsgrad": {
+          "type": "number"
+        },
+        "utbetaltTilSøker": {
+          "type": "number"
+        }
+      }
     }
   },
   "properties": {
@@ -247,14 +231,6 @@
     },
     "antallUttaksperioder": {
       "type": "number"
-    },
-    "uttaksaktiviteter": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/uttaksaktivitet" }
-    },
-    "utbetalingsperioder": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/utbetalingsperiode" }
     },
     "avslagsperioder": {
       "type": "array",
@@ -295,6 +271,11 @@
     },
     "lovhjemmel": {
       "type": "string"
+    },
+    "uttakAktiviteterMedPerioder": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/uttakAktivitetMedPerioder" }
     }
   }
 }
+

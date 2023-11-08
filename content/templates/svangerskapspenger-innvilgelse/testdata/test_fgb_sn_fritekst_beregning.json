@@ -21,24 +21,18 @@
   "mottattDato": "1. juli 2021",
   "klagefristUker": 6,
   "antallUttaksperioder": 1,
-  "uttaksaktiviteter": [
+  "uttakAktiviteterMedPerioder": [
     {
-      "aktivitetsbeskrivelse": "Som næringsdrivende",
-      "uttaksperioder": [
+      "beskrivelse": "Arbeidsgiver 1 AS",
+      "utbetalingsperioder": [
         {
           "periodeFom": "1. juli 2021",
           "periodeTom": "12. juli 2021",
-          "utbetalingsgrad": 50.0
+          "dagsats": 500,
+          "utbetalingsgrad": 50.0,
+          "utbetaltTilSøker": 200
         }
       ]
-    }
-  ],
-  "utbetalingsperioder": [
-    {
-      "periodeFom": "1. juli 2021",
-      "periodeTom": "12. juli 2021",
-      "periodeDagsats": 500,
-      "utbetaltTilSøker": 200
     }
   ],
   "inkludereBeregning": true,
