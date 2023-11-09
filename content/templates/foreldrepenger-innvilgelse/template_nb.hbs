@@ -64,14 +64,12 @@ Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dager{{/eq}} igj
 {{#if (and (eq barnErFødt false) (eq ønskerJustertVedFødsel true))}}Du starter å ta ut foreldrepengene dine på termindato. Vi vil automatisk endre perioden til å starte fra fødselsdato når barnet blir født.{{/if}}
 
 {{~#gt antallArbeidsgivere 1}}
-{{~#each perioder}}{{#if @first}}
-{{~#each arbeidsforholdsliste}}
-{{#if @..first}}
-{{#if this.gradering}}
+{{#if graderingOgFlereArbeidsforhold}}
 ##### Du har flere arbeidsgivere
 
-Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere foreldrepenger med arbeid hos én arbeidsgiver om gangen. Det betyr at det bare er perioden din hos {{this.arbeidsgiverNavn}} som blir forlenget.
-{{/if}}{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
+Det er kun mulig å kombinere foreldrepenger med arbeid hos én arbeidsgiver om gangen. Det betyr at det bare er perioden din hos {{this.arbeidsgiverNavn}} som blir forlenget.
+{{/if}}
+{{/gt}}
 
 {{#if inkludereAvslag}}{{> foreldrepenger-innvilgelse/avslag_nb }}{{/if}}
 

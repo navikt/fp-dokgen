@@ -79,7 +79,11 @@
 {{/eq}}
 
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
+{{#if graderingOgFlereArbeidsforhold}}
+{{>punkt}}Du kombinerer arbeid og foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. I denne perioden jobber du {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}, og får derfor {{thousand-seperator periodeDagsats}} kroner per dag før skatt.
+{{else}}
 {{>punkt}}Du tar ut {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{thousand-seperator periodeDagsats}} kroner per dag før skatt.
+{{/if}}
 {{#each arbeidsforholdsliste}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0) (lt this.stillingsprosent 100.0) (eq this.gradering false) (or (eq delvisRefusjon true) (eq fullRefusjon true)))}}
   Du jobber ikke i hele deltidsstillingen din hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepenger både fra arbeidsgiveren din og NAV.
@@ -90,13 +94,21 @@
 
 {{#each annenAktivitetsliste}}
 {{#if (and (eq this.aktivitetStatus "FRILANSER") (eq this.gradering true))}} {{#if @../innvilget}}
+{{#if graderingOgFlereArbeidsforhold}}
+{{>punkt}}Du kombinerer arbeid og foreldrepenger fra og med {{@../periodeFom}} til og med {{@../periodeTom}}. I denne perioden jobber du {{trim-decimal this.prosentArbeid}} prosent som frilanser, og får derfor {{thousand-seperator @../periodeDagsats}} kroner per dag før skatt.
+{{else}}
 {{>punkt}}Du tar ut {{trim-decimal this.utbetalingsgrad}} prosent foreldrepenger fra og med {{@../periodeFom}} til og med {{@../periodeTom}} fordi du jobber {{trim-decimal this.prosentArbeid}} prosent. I denne perioden får du {{thousand-seperator @../periodeDagsats}} kroner per dag før skatt.
+{{/if}}
 {{/if}}{{/if}}
 {{/each}}
 
 
 {{#if (and (eq this.næring.gradering true) (eq this.innvilget true))}}
+{{#if graderingOgFlereArbeidsforhold}}
+{{>punkt}}Du kombinerer arbeid og foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden jobber du {{trim-decimal this.næring.prosentArbeid}} prosent som selvstendig næringsdrivende, og får derfor {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
+{{else}}
 {{>punkt}}Du tar ut {{trim-decimal this.næring.utbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}} fordi du jobber {{trim-decimal this.næring.prosentArbeid}} prosent. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
+{{/if}}
 {{/if}}
 
 
