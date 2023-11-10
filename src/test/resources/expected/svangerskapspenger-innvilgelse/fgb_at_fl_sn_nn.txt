@@ -13,22 +13,17 @@ Namn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Du får i gjennomsnitt 15 000 kroner i månaden før skatt.
 Vi betaler ut svangerskapspengane til arbeidsgivarane dine fordi du får lønn mens du er borte frå jobben.
 ##### I desse periodane får du svangerskapspengar
 Arbeidsgiver 1 AS:
-* Frå og med 1. juli 2021 til og med 12. juli 2021 får du 50 prosent svangerskapspengar fordi du jobbar delvis.
-* Frå og med 15. juli 2021 til og med 19. juli 2021 får du 50 prosent svangerskapspengar fordi du jobbar delvis.
+* Frå og med 1. juli 2021 til og med 12. juli 2021 får du 50 prosent svangerskapspengar fordi du jobbar delvis. Du får utbetalt 500 kroner per dag før skatt. Av dette blir 200 kroner per dag betalt direkte til deg.
+* Frå og med 15. juli 2021 til og med 19. juli 2021 får du 50 prosent svangerskapspengar fordi du jobbar delvis. Du får utbetalt 700 kroner per dag før skatt.
 Arbeidsgiver 2 AS:
-* Frå og med 20. juli 2021 til og med 31. juli 2021 får du 100 prosent svangerskapspengar.
-##### Dette får du utbetalt i periodane
-* Frå og med 1. juli 2021 til og med 12. juli 2021 får du 500 kroner per dag før skatt. Av dette blir 200 kroner per dag betalt direkte til deg.
-* Frå og med 15. juli 2021 til og med 19. juli 2021 får du 700 kroner per dag før skatt.
-* Frå og med 20. juli 2021 til og med 31. juli 2021 får du 1 000 kroner per dag før skatt. Av dette blir 600 kroner per dag betalt direkte til deg.
-* Du har ikkje rett til svangerskapspengar hos Arbeidsgiver 3 AS fordi du kan gjere arbeidsoppgåvene utan at det er fare for å skade barnet eller barna du ventar frem til tre veker før termin.
-* Du har ikkje rett til svangerskapspengar som frilansar fordi du kan gjere arbeidsoppgåvene utan at det er fare for å skade barnet eller barna du ventar.
-* Du har ikkje rett til svangerskapspengar som næringsdrivande fordi du kan gjere arbeidsoppgåvene utan at det er fare for å skade barnet eller barna du ventar.
-* Du har ikkje rett til svangerskapspengar fordi det er mindre enn tre veker til du har termin.
+* Frå og med 20. juli 2021 til og med 31. juli 2021 får du 100 prosent svangerskapspengar. Du får utbetalt 1 000 kroner per dag før skatt. Av dette blir 600 kroner per dag betalt direkte til deg.
+* Du får ikkje svangerskapspengar hos Arbeidsgiver 3 AS fordi du kan gjere arbeidsoppgåvene utan at det er fare for å skade barnet eller barna du ventar frem til tre veker før termin.
+* Du får ikkje svangerskapspengar som frilansar fordi du kan gjere arbeidsoppgåvene utan at det er fare for å skade barnet eller barna du ventar.
+* Du får ikkje svangerskapspengar som næringsdrivande fordi du kan gjere arbeidsoppgåvene utan at det er fare for å skade barnet eller barna du ventar.
+* Du får ikkje svangerskapspengar fordi det er mindre enn tre veker til du har termin.
   Du kan ha rett til foreldrepengar eller eingongsstønad. Sjå [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for meir informasjon og korleis du kan søkje.
 ##### I desse periodane får du ikkje svangerskapspengar
 * Frå og med 1. mai 2021 til og med 12. mai 2021 har du ikkje rett til svangerskapspengar fordi du har søkt for seint. Du må søkje seinast tre månader etter at perioden med svangerskapspengar har starta. Du søkte 1. juli 2021.

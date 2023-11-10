@@ -20,51 +20,37 @@
   "mottattDato": "1. juli 2021",
   "klagefristUker": 6,
   "antallUttaksperioder": 3,
-  "uttaksaktiviteter": [
+  "uttakAktiviteterMedPerioder": [
     {
-      "aktivitetsbeskrivelse": "Arbeidsgiver 1 AS",
-      "uttaksperioder": [
+      "beskrivelse": "Arbeidsgiver 1 AS",
+      "utbetalingsperioder": [
         {
           "periodeFom": "1. juli 2021",
           "periodeTom": "12. juli 2021",
-          "utbetalingsgrad": 50.0
+          "dagsats": 500,
+          "utbetalingsgrad": 50.0,
+          "utbetaltTilSøker": 200
         },
         {
           "periodeFom": "15. juli 2021",
           "periodeTom": "19. juli 2021",
-          "utbetalingsgrad": 50.0
+          "dagsats": 700,
+          "utbetalingsgrad": 50.0,
+          "utbetaltTilSøker": 700
         }
       ]
     },
     {
-      "aktivitetsbeskrivelse": "Arbeidsgiver 2 AS",
-      "uttaksperioder": [
+      "beskrivelse": "Arbeidsgiver 2 AS",
+      "utbetalingsperioder": [
         {
           "periodeFom": "20. juli 2021",
           "periodeTom": "31. juli 2021",
-          "utbetalingsgrad": 100.0
+          "dagsats": 1000,
+          "utbetalingsgrad": 100.0,
+          "utbetaltTilSøker": 600
         }
       ]
-    }
-  ],
-  "utbetalingsperioder": [
-    {
-      "periodeFom": "1. juli 2021",
-      "periodeTom": "12. juli 2021",
-      "periodeDagsats": 500,
-      "utbetaltTilSøker": 200
-    },
-    {
-      "periodeFom": "15. juli 2021",
-      "periodeTom": "19. juli 2021",
-      "periodeDagsats": 700,
-      "utbetaltTilSøker": 700
-    },
-    {
-      "periodeFom": "20. juli 2021",
-      "periodeTom": "31. juli 2021",
-      "periodeDagsats": 1000,
-      "utbetaltTilSøker": 600
     }
   ],
   "avslagsperioder": [

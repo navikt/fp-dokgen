@@ -13,22 +13,17 @@ Name: Dolly Duck
 National identity number: 300220 12345
 <br/>
 </p>
-You will receive 15 000 kroner per day before taxes.
 We pay pregnancy benefit to your employers because you get paid while you are away from work.
 ##### You will receive pregnancy benefit in these periods
 Arbeidsgiver 1 AS:
-* From 1. juli 2021 up to and including 12. juli 2021, you will receive 50 percent pregnancy benefit because you work part time.
-* From 15. juli 2021 up to and including 19. juli 2021, you will receive 50 percent pregnancy benefit because you work part time.
+* From 1. juli 2021 up to and including 12. juli 2021, you will receive 50 percent pregnancy benefit because you work part-time. You will receive 500 kroner per day before taxes. Of this, 200 kroner per day is paid directly to you.
+* From 15. juli 2021 up to and including 19. juli 2021, you will receive 50 percent pregnancy benefit because you work part-time. You will receive 700 kroner per day before taxes.
 Arbeidsgiver 2 AS:
-* From 20. juli 2021 up to and including 31. juli 2021 you will receive 100 percent pregnancy benefit.
-##### This is what you will be paid
-* From 1. juli 2021 up to and including 12. juli 2021, you will receive 500 kroner per day before taxes. Of this, 200 kroner per day is paid directly to you.
-* From 15. juli 2021 up to and including 19. juli 2021, you will receive 700 kroner per day before taxes.
-* From 20. juli 2021 up to and including 31. juli 2021, you will receive 1 000 kroner per day before taxes. Of this, 600 kroner per day is paid directly to you.
-* You are not entitled to pregnancy benefit from Arbeidsgiver 3 AS because you can adapt or change your tasks without the risk of harming the child/children you are expecting up to three weeks before due date.
-* You are not entitled to pregnancy benefit as freelancer because you can adapt or change your tasks without the risk of harming the child/children you are expecting.
-* You are not entitled to pregnancy benefit as a self-employed person because you can adapt or change your tasks without the risk of harming the child/children you are expecting.
-* You are not entitled to pregnancy benefit because it’s less than three weeks until due date.
+* From 20. juli 2021 up to and including 31. juli 2021 you will receive 100 percent pregnancy benefit. You will receive 1 000 kroner per day before taxes. Of this, 600 kroner per day is paid directly to you.
+* You will not receive pregnancy benefit from Arbeidsgiver 3 AS because you can adapt or change your tasks without the risk of harming the child/children you are expecting up to three weeks before due date.
+* You will not receive pregnancy benefit as freelancer because you can adapt or change your tasks without the risk of harming the child/children you are expecting.
+* You will not receive pregnancy benefit as a self-employed person because you can adapt or change your tasks without the risk of harming the child/children you are expecting.
+* You will not receive pregnancy benefit because it’s less than three weeks until due date.
 You may be entitled to parental benefit or lump-sum grant. See [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for more information and how to apply.
 ##### During these periods you are not entitled to pregnancy benefit
 * From 1. mai 2021 up to and including 12. mai 2021 you are not entitled to pregnancy benefit because you applied too late. You must apply no later than three months after your period with pregnancy benefit has started. You applied 1. juli 2021.

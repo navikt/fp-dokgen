@@ -1,26 +1,12 @@
 ##### I {{#gt antallUttaksperioder 1}}desse periodane{{else}}denne perioden{{/gt}} får du svangerskapspengar
 
-{{#each uttaksaktiviteter}}
-
-{{#gt antallUttaksperioder 1}}{{#unless (and (eq @index 0) @last)}}{{aktivitetsbeskrivelse}}:{{/unless}}{{/gt}}
-
-{{#each uttaksperioder}}
+{{#each uttakAktiviteterMedPerioder}}
+{{beskrivelse}}:
 
 {{~#* inline "punkt" ~}}
 {{~#gt antallUttaksperioder 1}}* {{/gt}}
 {{~/inline~}}
 
-{{>punkt}}Frå og med {{periodeFom}} til og med {{periodeTom}}{{~#lt utbetalingsgrad 100.0}} får du {{trim-decimal utbetalingsgrad}} prosent svangerskapspengar fordi du jobbar delvis{{else}} får du 100 prosent svangerskapspengar{{/lt}}.
-{{/each}}{{/each}}
-
-
-##### Dette får du utbetalt i {{#gt (size utbetalingsperioder) 1}}periodane{{else}}perioden{{/gt}}
-
 {{#each utbetalingsperioder}}
-
-{{~#* inline "punkt" ~}}
-{{~#gt (size utbetalingsperioder) 1}}* {{/gt}}
-{{~/inline~}}
-
-{{>punkt}}Frå og med {{periodeFom}} til og med {{periodeTom}} får du {{thousand-seperator periodeDagsats}} kroner per dag før skatt.{{~#neq periodeDagsats utbetaltTilSøker}} Av dette blir {{thousand-seperator utbetaltTilSøker}} kroner per dag betalt direkte til deg.{{/neq}}
-{{/each}}
+{{>punkt}}Frå og med {{periodeFom}} til og med {{periodeTom}}{{~#lt utbetalingsgrad 100.0}} får du {{trim-decimal utbetalingsgrad}} prosent svangerskapspengar fordi du jobbar delvis.{{else}} får du 100 prosent svangerskapspengar.{{/lt}} Du får utbetalt {{thousand-seperator dagsats}} kroner per dag før skatt.{{#gt utbetaltTilSøker 0}}{{~#neq dagsats utbetaltTilSøker}} Av dette blir {{thousand-seperator utbetaltTilSøker}} kroner per dag betalt direkte til deg.{{/neq}}{{/gt}}
+{{/each}}{{/each}}

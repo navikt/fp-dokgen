@@ -14,7 +14,7 @@ We have received new income information. We have therefore changed the amount yo
 We have changed your last day with pregnancy benefit to {{stønadsperiodeTom}} because your due date has changed.
 {{/if}}{{/if}}
 
-You will receive {{thousand-seperator månedsbeløp}} kroner per day before taxes.
+{{#eq antallUttaksperioder 1}}You will receive {{thousand-seperator månedsbeløp}} kroner per day before taxes.{{/eq}}
 
 {{#if refusjonTilBruker}}{{#gt antallRefusjonerTilArbeidsgivere 0}}
 Your employer pays you a salary while you are away from work. You will receive the rest of the pregnancy benefit from NAV by the 25th of each month. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).
