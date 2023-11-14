@@ -20,8 +20,8 @@
   "månedsbeløp": 15000,
   "mottattDato": "1. juli 2021",
   "klagefristUker": 6,
-  "antallUttaksperioder": 1,
-  "uttakAktiviteterMedPerioder": [
+  "antallUtbetalingsperioder": 1,
+  "aktiviteterOgUtbetalingsPerioder": [
     {
       "beskrivelse": "Arbeidsgiver 1 AS",
       "utbetalingsperioder": [
