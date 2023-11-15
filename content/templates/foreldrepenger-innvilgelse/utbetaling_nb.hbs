@@ -32,4 +32,4 @@ Vi har forlenget foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} 
 {{else}}
 {{#gt antallBarn 1}}Vi har forlenget foreldrepengeperioden med {{foreldrepengeperiodenUtvidetUker}} uker fordi {{#eq aleneomsorgKode "JA"}}du{{else}}dere{{/eq}} adopterer flere barn.{{/gt}}{{/if}}{{/gt}}
 
-{{#gt dagerTaptFørTermin 0}}{{#if fbEllerRvInnvilget gjelderFødsel}}Fordi du fødte før termin, mister du {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}dager{{else}}dag{{/gt}} med foreldrepenger.{{/if}}{{/gt}}
+{{#gt dagerTaptFørTermin 0}}{{#if fbEllerRvInnvilget gjelderFødsel}}Perioden med foreldrepenger starter tre uker før termin. Du fødte før termin, og derfor mister du {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}dager{{else}}dag{{/gt}} med foreldrepenger.{{/if}}{{/gt}}
