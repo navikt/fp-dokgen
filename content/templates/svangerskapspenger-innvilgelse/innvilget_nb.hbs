@@ -1,10 +1,10 @@
-##### I {{#gt antallUttaksperioder 1}}disse periodene{{else}}denne perioden{{/gt}} får du svangerskapspenger
+##### I {{#gt antallUtbetalingsperioder 1}}disse periodene{{else}}denne perioden{{/gt}} får du svangerskapspenger
 
-{{#each uttakAktiviteterMedPerioder}}
+{{#each aktiviteterOgUtbetalingsPerioder}}
 {{beskrivelse}}:
 
 {{~#* inline "punkt" ~}}
-{{~#gt antallUttaksperioder 1}}* {{/gt}}
+{{~#gt antallUtbetalingsperioder 1}}* {{/gt}}
 {{~/inline~}}
 
 {{#each utbetalingsperioder}}

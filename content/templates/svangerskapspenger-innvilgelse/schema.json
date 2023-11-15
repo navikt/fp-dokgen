@@ -13,8 +13,8 @@
     "antallRefusjonerTilArbeidsgivere",
     "månedsbeløp",
     "klagefristUker",
-    "antallUttaksperioder",
-    "uttakAktiviteterMedPerioder",
+    "antallUtbetalingsperioder",
+    "aktiviteterOgUtbetalingsPerioder",
     "inkludereBeregning"
   ],
   "$defs": {
@@ -151,7 +151,7 @@
         }
       }
     },
-    "uttakAktivitetMedPerioder": {
+    "aktiviteterOgUtbetalingsPerioder": {
       "type": "object",
       "required": [
         "beskrivelse",
@@ -229,7 +229,7 @@
     "klagefristUker": {
       "type": "number"
     },
-    "antallUttaksperioder": {
+    "antallUtbetalingsperioder": {
       "type": "number"
     },
     "avslagsperioder": {
@@ -272,9 +272,9 @@
     "lovhjemmel": {
       "type": "string"
     },
-    "uttakAktiviteterMedPerioder": {
+    "aktiviteterOgUtbetalingsPerioder": {
       "type": "array",
-      "items": { "$ref": "#/$defs/uttakAktivitetMedPerioder" }
+      "items": { "$ref": "#/$defs/aktiviteterOgUtbetalingsPerioder" }
     }
   }
 }

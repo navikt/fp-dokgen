@@ -1,10 +1,10 @@
-##### You will receive pregnancy benefit in {{#gt antallUttaksperioder 1}}these periods{{else}}this period{{/gt}}
+##### You will receive pregnancy benefit in {{#gt antallUtbetalingsperioder 1}}these periods{{else}}this period{{/gt}}
 
-{{#each uttakAktiviteterMedPerioder}}
+{{#each aktiviteterOgUtbetalingsPerioder}}
 {{beskrivelse}}:
 
 {{~#* inline "punkt" ~}}
-{{~#gt antallUttaksperioder 1}}* {{/gt}}
+{{~#gt antallUtbetalingsperioder 1}}* {{/gt}}
 {{~/inline~}}
 
 {{#each utbetalingsperioder}}
