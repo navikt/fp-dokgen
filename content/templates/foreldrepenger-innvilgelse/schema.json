@@ -131,7 +131,7 @@
         }
       }
     },
-    "utbetalingsperiode": {
+    "vedtaksperiode": {
       "type": "object",
       "required": [
         "innvilget",
@@ -390,7 +390,7 @@
     },
     "perioder": {
       "type": "array",
-      "items": { "$ref": "#/$defs/utbetalingsperiode" }
+      "items": { "$ref": "#/$defs/vedtaksperiode" }
     },
     "harBruktBruttoBeregningsgrunnlag": {
       "type": "boolean"
