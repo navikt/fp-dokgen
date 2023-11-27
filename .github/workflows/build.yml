@@ -12,6 +12,7 @@ on:
       - 'CODEOWNERS'
       - 'dokumentasjon/**'
       - 'lokalutvikling/**'
+  workflow_dispatch:
 
 jobs:
   build-app:
