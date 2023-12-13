@@ -1,8 +1,12 @@
 {
-  "namespace": "teamforeldrepenger",
   "minReplicas": "2",
   "maxReplicas": "3",
-  "ingresses": [
-    "https://fpdokgen.intern.nav.no"
-  ]
+  "limits": {
+    "cpu": "1",
+    "mem": "1024Mi"
+  },
+  "requests": {
+    "cpu": "200m",
+    "mem": "512Mi"
+  }
 }
