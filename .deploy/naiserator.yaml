@@ -27,10 +27,10 @@ spec:
     path: actuator/prometheus
   resources:
     limits:
-      cpu: "{{limits.cpu}}"
-      memory: "{{limits.mem}}"
+      cpu: "1"
+      memory: "1024Mi"
     requests:
-      cpu: "{{requests.cpu}}"
-      memory: "{{requests.mem}}"
+      cpu: "200m"
+      memory: "512Mi"
   secureLogs:
     enabled: true

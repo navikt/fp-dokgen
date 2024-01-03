@@ -9,19 +9,21 @@ on:
       environment:
         required: true
         type: choice
-        description: 'The environment to deployed to (dev|prod)'
+        description: 'Deploy to (dev|prod)-(fss|gcp)'
         options:
-          - dev
-          - prod
+          - dev-fss
+          - prod-fss
+          - dev-gcp
+          - prod-gcp
 
 jobs:
   deploy:
-    name: Deploy dev
+    name: Deploy manuelt
     permissions:
       id-token: write
     uses: navikt/fp-gha-workflows/.github/workflows/deploy.yml@main
     with:
       gar: true
       image: ${{ inputs.image }}
-      cluster: ${{ inputs.environment }}-fss
+      cluster: ${{ inputs.environment }}
     secrets: inherit
