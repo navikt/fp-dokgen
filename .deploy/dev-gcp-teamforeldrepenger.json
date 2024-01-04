@@ -1,4 +1,7 @@
 {
   "minReplicas": "1",
-  "maxReplicas": "2"
+  "maxReplicas": "2",
+  "consumers": [
+    "foreldrepengesoknad-api"
+  ]
 }
