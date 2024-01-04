@@ -34,3 +34,11 @@ spec:
       memory: "512Mi"
   secureLogs:
     enabled: true
+  {{#if consumers}}
+  accessPolicy:
+    inbound:
+      rules:
+    {{#each consumers as |app|}}
+        - application: {{app}}
+    {{/each}}
+  {{/if}}
