@@ -80,7 +80,7 @@ jobs:
     permissions:
       id-token: write
     if: github.ref_name == 'master'
-    needs: [build-app, verdikjede, deploy-dev]
+    needs: [build-app, verdikjede, deploy-dev-fss]
     uses: navikt/fp-gha-workflows/.github/workflows/deploy.yml@main
     with:
       gar: true
@@ -93,7 +93,7 @@ jobs:
     permissions:
       id-token: write
     if: github.ref_name == 'master'
-    needs: [build-app, verdikjede, deploy-dev]
+    needs: [build-app, verdikjede, deploy-dev-gcp]
     uses: navikt/fp-gha-workflows/.github/workflows/deploy.yml@main
     with:
       gar: true
