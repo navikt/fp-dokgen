@@ -44,9 +44,6 @@
     "ytelseType": {
       "type": "string"
     },
-    "behandlesAvKA": {
-      "type": "boolean"
-    },
     "erUtkast": {
       "type": "boolean"
     }

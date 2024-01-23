@@ -8,8 +8,7 @@
     "harVerge": false,
     "saksnummer": "141081123",
     "fritekst": "Tester at fritekst kommer etter vedtakshjemler når endring i uttak",
-    "ytelseType": "FP",
-    "behandlesAvKA": false
+    "ytelseType": "FP"
   },
   "behandlingType": "REVURDERING",
   "behandlingResultatType": "FORELDREPENGER_ENDRET",
