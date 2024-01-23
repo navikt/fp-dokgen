@@ -32,10 +32,6 @@ Vi fikk klagen din på {{> ytelse_navn_nb}} {{søknadDato}}, men mangler opplysn
 {{felles.fritekst}}
 <br/>
 
-{{#if (and (eq klage true) (eq felles.behandlesAvKA true))}}
-Du sender dokumentasjonen til oss på [nav.no/klage](https://nav.no/klage). Velg NAV-enhet: NAV Klageinstans Midt-Norge.
-{{/if}}
-
 ##### Søknaden kan bli avslått
 {{#if førstegangsbehandling}}Hvis vi ikke får opplysningene innen {{fristDato}}, kan søknaden bli avslått.
 {{else}}Hvis du ikke sender oss dette innen {{fristDato}}, behandler vi saken med de opplysningene vi har.

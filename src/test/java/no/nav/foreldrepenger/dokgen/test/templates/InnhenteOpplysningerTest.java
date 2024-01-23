@@ -76,13 +76,6 @@ class InnhenteOpplysningerTest {
     }
 
     @Test
-    void skal_generere_brev_for_innhente_opplysninger_ES_klage_KA() {
-        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_es_klage_ka");
-        var expected = getExpected(BREVMAL, "innhente-opplysninger_es_klage_ka.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
     void skal_generere_brev_for_innhente_opplysninger_ES_klage_død_på_bokmål() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_es_klage_død");
         var expected = getExpected(BREVMAL, "innhente-opplysninger_es_klage_død_nb.txt");

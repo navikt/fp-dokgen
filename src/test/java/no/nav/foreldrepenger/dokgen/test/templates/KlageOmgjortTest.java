@@ -15,22 +15,22 @@ class KlageOmgjortTest {
 
     @Test
     void klage_omgjort_fp_ka_tilbakekreving_nb() {
-        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fp_ka_tilbakekreving");
-        var expected = getExpected(BREVMAL, "fp_ka_tilbakekreving_nb.txt");
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fp_nfp_tilbakekreving");
+        var expected = getExpected(BREVMAL, "fp_nfp_tilbakekreving_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void klage_omgjort_fp_ka_tilbakekreving_nn() {
-        var content = compileContent(BREVMAL, Språk.NYNORSK, "test_fp_ka_tilbakekreving");
-        var expected = getExpected(BREVMAL, "fp_ka_tilbakekreving_nn.txt");
+        var content = compileContent(BREVMAL, Språk.NYNORSK, "test_fp_nfp_tilbakekreving");
+        var expected = getExpected(BREVMAL, "fp_nfp_tilbakekreving_nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void klage_omgjort_fp_ka_tilbakekreving_en_på_nb() {
-        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fp_ka_tilbakekreving");
-        var expected = getExpected(BREVMAL, "fp_ka_tilbakekreving_nb.txt");
+        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fp_nfp_tilbakekreving");
+        var expected = getExpected(BREVMAL, "fp_nfp_tilbakekreving_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 

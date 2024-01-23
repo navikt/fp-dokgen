@@ -174,7 +174,6 @@ class ForeldrepengerOpphørTest {
         felles.put("brevDato", "4. mai 2021");
         felles.put("erAutomatiskBehandlet", true);
         felles.put("saksnummer", "123456789");
-        felles.put("behandlesAvKA", false);
         felles.put("erUtkast", false);
         testData.set("felles", felles);
     }
