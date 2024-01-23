@@ -25,9 +25,6 @@
     },
     "innsyn": {
       "type": "boolean"
-    },
-    "opphavType": {
-      "type": "string"
     }
   }
 }

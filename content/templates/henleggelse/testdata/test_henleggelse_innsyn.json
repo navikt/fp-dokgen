@@ -5,12 +5,10 @@
     "brevDato": "4. april 2020",
     "saksnummer": "123456789",
     "ytelseType": "ES",
-    "behandlesAvKA": false,
     "erUtkast": false
   },
   "vanligBehandling": false,
   "klage": false,
   "anke": false,
-  "innsyn": true,
-  "opphavType": "FAMPEN"
+  "innsyn": true
 }

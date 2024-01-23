@@ -6,16 +6,9 @@
 
 We have been notified that you withdraw the application for {{>ytelse_navn_en}}. Your case will therefore be closed.<br/><br/>
     {{else if klage}}
-    {{#eq opphavType "FAMPEN"}}
 
 # NAV has closed your complaint on {{>ytelse_navn_en}}
 {{> brukerdetaljer_en }}
-    {{/eq}}
-    {{#eq opphavType "KLAGE"}}
-
-# NAV Klageinstans has closed your complaint on {{>ytelse_navn_en}}
-{{> brukerdetaljer_en }}
-    {{/eq}}
 
 We have been notified that you withdraw your complaint on {{>ytelse_navn_en}}. Your case will therefore be closed.<br/><br/>
 {{else if anke}}

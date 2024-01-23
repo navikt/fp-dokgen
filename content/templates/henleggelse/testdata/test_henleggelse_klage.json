@@ -5,12 +5,10 @@
     "brevDato": "4. april 2020",
     "saksnummer": "123456789",
     "ytelseType": "SVP",
-    "behandlesAvKA": false,
     "erUtkast": false
   },
   "vanligBehandling": false,
   "klage": true,
   "anke": false,
-  "innsyn": false,
-  "opphavType": "KLAGE"
+  "innsyn": false
 }

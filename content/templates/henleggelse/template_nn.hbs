@@ -6,16 +6,9 @@
 
 Vi har fått beskjed om at du trekkjer søknaden om {{>ytelse_navn_nn}}, og avsluttar derfor saka di.<br/><br/>
     {{else if klage}}
-    {{#eq opphavType "FAMPEN"}}
 
 # NAV har avslutta klagesaka di på {{>ytelse_navn_nn}}
 {{> brukerdetaljer_nn }}
-    {{/eq}}
-    {{#eq opphavType "KLAGE"}}
-
-# NAV Klageinstans har avslutta klagesaka di på {{>ytelse_navn_nn}}
-{{> brukerdetaljer_nn }}
-    {{/eq}}
 
 Vi har fått beskjed om at du trekkjer klagen på {{>ytelse_navn_nn}}, og avslutter derfor klagesaka di.<br/><br/>
 {{else if anke}}
