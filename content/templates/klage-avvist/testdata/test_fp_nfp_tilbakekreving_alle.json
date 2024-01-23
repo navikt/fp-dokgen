@@ -6,7 +6,6 @@
     "erAutomatiskBehandlet": false,
     "saksnummer": "123456789",
     "ytelseType": "FP",
-    "behandlesAvKA": true,
     "erUtkast": false,
     "fritekst":"Tester at fritekst kommer dersom angitt for en avvist klage"
   },
