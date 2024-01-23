@@ -7,7 +7,6 @@
     "erAutomatiskBehandlet": false,
     "saksnummer": "123456789",
     "ytelseType": "FP",
-    "behandlesAvKA": true,
     "erUtkast": false
   },
   "gjelderTilbakekreving": true,

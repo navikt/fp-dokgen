@@ -4,7 +4,7 @@ Dato: 4. mai 2021
 <br>
 <br>
 <br>
-# NAV Klageinstans har gjort om vedtaket ditt om tilbakebetaling av foreldrepengar
+# NAV har gjort om vedtaket ditt om tilbakebetaling av foreldrepengar
 <p style="color:gray">
 Saksnummer i NAV: 123456789
 <br/>
@@ -13,7 +13,7 @@ Namn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Etter at du klaga, har vi vurdert saka di på nytt. Vi har kome fram til at vedtaket til NAV Familie- og pensjonsytelser må gjerast om.
+Etter at du klaga, har vi vurdert saka di på nytt. Vi har kome fram til at vedtaket ditt må gjerast om.
 ##### Dette har vi lagt vekt på i vurderinga vår
 FRITEKST
 <br/>
@@ -25,9 +25,9 @@ NAV gjev opplysningar til Skatteetaten. Skatteetaten vil vurdere om det er grunn
 ##### Korleis betale tilbake pengane du skuldar
 NAV Innkrevjing vil korrigere beløpet du skal betale tilbake. Du finn meir informasjon på [nav.no/innkreving](https://nav.no/innkreving).
 <br/>
-##### Du har rett til å anke
-Du kan anke vedtaket til Trygderetten. Fristen er 6 veker frå den datoen vedtaket kom fram til deg.
-Klagerettane dine og skjema for klage/anke finn du på [nav.no/klage](https://nav.no/klage).
+##### Du har rett til å klage
+Du kan klage innan 6 veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+Du må som hovudregel begynne å betale beløpet tilbake sjølv om du klagar på dette vedtaket. Dette følgjer av forvaltningslova § 42. Vi vil betale tilbake pengane du har betalt inn, om du får vedtak om at du ikkje trong å betale tilbake heile eller delar av beløpet du skulda.
 <br/>
 ##### Du har rett til innsyn
 For å sjå dokumenta i saka di, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
