@@ -91,9 +91,9 @@
         "nyoppstartet",
         "årsinntekt",
         "sistLignedeÅr",
-        "inntektLavere_AT_SN",
-        "inntektLavere_AT_FL_SN",
-        "inntektLavere_FL_SN"
+        "inntektLavereATSN",
+        "inntektLavereATFLSN",
+        "inntektLavereFLSN"
       ],
       "properties": {
         "nyoppstartet": {
@@ -105,13 +105,13 @@
         "sistLignedeÅr": {
           "type": "number"
         },
-        "inntektLavere_AT_SN": {
+        "inntektLavereATSN": {
           "type": "boolean"
         },
-        "inntektLavere_AT_FL_SN": {
+        "inntektLavereATFLSN": {
           "type": "boolean"
         },
-        "inntektLavere_FL_SN": {
+        "inntektLavereFLSN": {
           "type": "boolean"
         }
       }

@@ -38,9 +38,9 @@
     "nyoppstartet": false,
     "årsinntekt": 40000,
     "sistLignedeÅr": 2020,
-    "inntektLavere_AT_SN": true,
-    "inntektLavere_AT_FL_SN": true,
-    "inntektLavere_FL_SN": true
+    "inntektLavereATSN": true,
+    "inntektLavereATFLSN": true,
+    "inntektLavereFLSN": true
   },
   "bruttoBeregningsgrunnlag": 200000,
   "militærSivil": false,

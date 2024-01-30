@@ -40,21 +40,21 @@ Vi har beregnet svangerskapspengene dine ut fra en årsinntekt på {{thousand-se
 {{else}}{{#gt (size arbeidsforhold) 0}}
 {{#if frilanser}}
 Næringsinntekten din er fastsatt til {{thousand-seperator selvstendigNæringsdrivende.årsinntekt}} kroner i året. Når vi beregner svangerskapspenger ut fra næringsinntekten din, bruker vi gjennomsnittet av de siste tre årene vi har fått oppgitt av Skatteetaten. Hvis du nettopp har begynt å arbeide, bruker vi inntekten vi har fått opplyst for det siste året. Dette gjennomsnittet kan også inneholde arbeidsinntekten din og inntekten din som frilanser. De er trukket fra i beregningen av næringsinntekten.
-{{#if selvstendigNæringsdrivende.inntektLavere_AT_FL_SN}}
+{{#if selvstendigNæringsdrivende.inntektLavereATFLSN}}
 Arbeidsinntekten og inntekten din som frilanser er høyere enn gjennomsnittet av arbeidsinntekten, frilansinntekten og næringsinntekten. Derfor får du svangerskapspenger fra arbeidsinntekten og inntekten som frilanser.
 {{/if}}
 
 <!-- SN + AT -->
 {{else}}
 Næringsinntekten din er fastsatt til {{thousand-seperator selvstendigNæringsdrivende.årsinntekt}} kroner i året. Når vi beregner svangerskapspenger ut fra næringsinntekten din, bruker vi gjennomsnittet av de siste tre årene vi har fått oppgitt av Skatteetaten. Hvis du nettopp har begynt å arbeide, bruker vi inntekten vi har fått opplyst for det siste året. Dette gjennomsnittet kan også inneholde arbeidsinntekten din. Den er trukket fra i beregningen av næringsinntekten.
-{{#if selvstendigNæringsdrivende.inntektLavere_AT_SN}}
+{{#if selvstendigNæringsdrivende.inntektLavereATSN}}
 Fordi arbeidsinntekten din er høyere enn gjennomsnittet av arbeidsinntekten og næringsinntekten, får du svangerskapspenger fra arbeidsinntekten.
 {{/if}}{{/if}}
 
 <!-- SN + FL -->
 {{else}}
 Næringsinntekten din er fastsatt til {{thousand-seperator selvstendigNæringsdrivende.årsinntekt}} kroner i året. Når vi beregner svangerskapspenger ut fra næringsinntekten din, bruker vi gjennomsnittet av de siste tre årene vi har fått oppgitt av Skatteetaten. Hvis du nettopp har begynt å arbeide, bruker vi inntekten vi har fått opplyst for det siste året. Dette gjennomsnittet kan også inneholde inntekten din som frilanser. Den er trukket fra i beregningen av næringsinntekten.
-{{#if selvstendigNæringsdrivende.inntektLavere_FL_SN}}
+{{#if selvstendigNæringsdrivende.inntektLavereFLSN}}
 Fordi inntekten din som frilanser er høyere enn gjennomsnittet av frilansinntekten og næringsinntekten, får du svangerskapspenger fra inntekten som frilanser.
 {{/if}}{{/gt}}{{/unless}}{{/if}}
 
