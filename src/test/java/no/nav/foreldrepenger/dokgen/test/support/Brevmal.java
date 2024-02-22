@@ -11,6 +11,7 @@ public enum Brevmal {
     FORELDREPENGER_OPPHØR("foreldrepenger-opphor"),
     FORELDREPENGER_ANNULLERT("foreldrepenger-annullert"),
     FORELDREPENGER_INFOBREV_TIL_ANNEN_FORELDER("foreldrepenger-infotilannenforelder"),
+    FORELDREPENGER_FEIL_PRAKSIS_UTSETTELSE_INFOBREV("foreldrepenger-feil-praksis-utsettelse-infobrev"),
 
     //Svangerskapspenger
     SVANGERSKAPSPENGER_INNVILGELSE("svangerskapspenger-innvilgelse"),
