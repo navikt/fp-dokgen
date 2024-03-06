@@ -51,7 +51,6 @@ Du har allerede fått utbetalt foreldrepenger. Derfor er søknaden din avslått.
     {{/case}}
     {{#case "SØKT_FOR_SENT"}}
 Du har ikke rett til engangsstønad fordi du søkte for sent. Du må søke innen seks måneder etter {{#if gjelderFødsel}}fødselen{{else}}omsorgsovertakelsen{{/if}}.
-{{#if felles.fritekst}}<br/><br/><p style="white-space: pre-wrap">{{felles.fritekst}}</p><br/>{{/if}}
     {{/case}}
     {{#case "OMSORGSOVERTAKELSE_ETTER_56_UKER"}}
 Du har ikke rett til engangsstønad fordi du ikke overtok omsorgen for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} innen 56 uker etter {{#if gjelderFødsel}}fødselen{{else }}adopsjonen{{/if}}.
@@ -92,6 +91,10 @@ Hvis du sender oss dokumentasjonen innen seks uker, behandler vi saken din på n
     {{/case}}
 {{/switch}}
 
+{{~#if felles.fritekst}}
+{{felles.fritekst}}
+{{/if~}}
+
 {{#each vilkårTyper}}
     {{#eq this "FPVK1_4"}}
 Vedtaket er gjort etter folketrygdloven § 14-17.
@@ -112,7 +115,6 @@ Vedtaket er gjort etter folketrygdloven § 14-17 og forvaltningsloven § 35.
 Vedtaket er gjort etter folketrygdloven § 21-3.
     {{/eq}}
 {{/each}}
-<br/>
 
 ##### Du har rett til å klage
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
