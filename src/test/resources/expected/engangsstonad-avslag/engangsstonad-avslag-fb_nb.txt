@@ -18,11 +18,11 @@ Verge/Fullmektig: Finn Verge<br/>
 </p>
 
 Du har ikke rett til engangsstønad fordi du søkte for sent. Du må søke innen seks måneder etter omsorgsovertakelsen.
-<br/><br/><p style="white-space: pre-wrap">Du har ikke gitt dokumentasjon om hvorfor du søkte for sent</p><br/>
+
+Du har ikke gitt dokumentasjon om hvorfor du søkte for sent
 
 Vedtaket er gjort etter folketrygdloven § 22-13.
 
-<br/>
 
 ##### Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
