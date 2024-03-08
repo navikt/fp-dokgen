@@ -6,8 +6,35 @@
   "required": [
     "felles",
     "søknadDato",
-    "fristDato"
+    "antallIkkeMottattIM",
+    "antallMottattIM",
+    "inntektsmeldingerStatus"
   ],
+  "$defs": {
+    "arbeidsforholdInntektsmelding": {
+      "type": "object",
+      "required": [
+        "arbeidsgiverIdent",
+        "arbeidsgiverNavn",
+        "stillingsprosent",
+        "erInntektsmeldingMottatt"
+      ],
+      "properties": {
+        "arbeidsgiverIdent": {
+          "type": "string"
+        },
+        "arbeidsgiverNavn": {
+          "type": "string"
+        },
+        "stillingsprosent": {
+          "type": "number"
+        },
+        "erInntektsmeldingMottatt": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
   "properties": {
     "felles": {
       "$ref": "file:content/templates/schema_felles.json"
@@ -15,8 +42,15 @@
     "søknadDato": {
       "type": "string"
     },
-    "fristDato": {
-      "type": "string"
+    "antallIkkeMottattIM": {
+      "type": "number"
+    },
+    "antallMottattIM": {
+      "type": "number"
+    },
+    "inntektsmeldingerStatus": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/arbeidsforholdInntektsmelding" }
     }
   }
 }

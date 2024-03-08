@@ -9,6 +9,32 @@
     "ytelseType": "FP",
     "erUtkast": false
   },
-  "fristDato": "20. mai 2020",
-  "søknadDato": "1. april 2020"
+  "søknadDato": "1. april 2020",
+    "antallIkkeMottattIM": 2,
+    "antallMottattIM": 2,
+    "inntektsmeldingerStatus":[    {
+      "arbeidsgiverIdent": "123456789",
+      "arbeidsgiverNavn": "Andeby Bank AS",
+      "stillingsprosent": 80,
+      "erInntektsmeldingMottatt":false
+    },
+      {
+        "arbeidsgiverIdent": "99999999",
+        "arbeidsgiverNavn": "Andeby Vask AS",
+        "stillingsprosent": 10,
+        "erInntektsmeldingMottatt":false
+      },
+      {
+        "arbeidsgiverIdent": "99999998",
+        "arbeidsgiverNavn": "Andeby Vaktmester AS",
+        "stillingsprosent": 5,
+        "erInntektsmeldingMottatt":true
+      },
+      {
+        "arbeidsgiverIdent": "99999997",
+        "arbeidsgiverNavn": "Andeby Service AS",
+        "stillingsprosent": 5,
+        "erInntektsmeldingMottatt":true
+      }
+    ]
 }
