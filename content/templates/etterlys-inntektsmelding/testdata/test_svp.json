@@ -16,13 +16,13 @@
     {
       "arbeidsgiverIdent": "123456789",
       "arbeidsgiverNavn": "Andeby Bank AS",
-      "stillingsprosent": 80,
+      "stillingsprosent": 80.0,
       "erInntektsmeldingMottatt": false
     },
     {
       "arbeidsgiverIdent": "99999998",
       "arbeidsgiverNavn": "Andeby Vaktmester AS",
-      "stillingsprosent": 20,
+      "stillingsprosent": 20.0,
       "erInntektsmeldingMottatt": true
     }
   ]

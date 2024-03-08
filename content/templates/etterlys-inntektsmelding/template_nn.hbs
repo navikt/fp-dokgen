@@ -3,19 +3,19 @@
 # Vi treng opplysningar frå {{#gt antallIkkeMottattIM 1}}arbeidsgivarane dine{{else}}arbeidsgivaren din{{/gt}}
 {{> brukerdetaljer_nn }}
 
-Vi fekk søknaden din om {{>ytelse_navn_nn}} {{søknadDato}}, men manglar opplysningar frå {{#gt antallIkkeMottattIM 1}}arbeidsgivarane dine{{else}}arbeidsgivaren din{{/gt}}.
+Vi fekk søknaden din om {{>ytelse_navn_nn}} {{søknadDato}}, men manglar opplysningar for å behandle saka.
 
 {{#eq antallIkkeMottattIM 1}}
 {{#each inntektsmeldingerStatus}}
 {{#eq erInntektsmeldingMottatt false}}
-Du må be {{arbeidsgiverNavn}} med verksemdsnummer {{arbeidsgiverIdent}} senda inntektsmelding til Nav slik at me får behandla saka di.
+Du må be {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} senda inntektsmelding til Nav slik at vi får behandla saka di.
 {{/eq}}
 {{/each}}
 {{else}}
 Du må be desse arbeidsgivarane om å senda inntektsmelding:
 {{#each inntektsmeldingerStatus}}
 {{#eq erInntektsmeldingMottatt false}}
-* {{arbeidsgiverNavn}} med verksemdsnummer {{arbeidsgiverIdent}} i stillinga du jobbar {{stillingsprosent}} prosent.
+* {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} i stillinga du jobbar {{trim-decimal stillingsprosent}} prosent.
 {{/eq}}
 {{/each}}
 {{/eq}}
@@ -25,14 +25,14 @@ Dersom arbeidsgivar allereie har sendt inntektsmelding, kan du sjå bort frå de
 {{#eq antallMottattIM 1}}
 {{#each inntektsmeldingerStatus}}
 {{#if erInntektsmeldingMottatt }}
-Vi har mottatt inntektsmelding fra {{arbeidsgiverNavn}} med verksemdsnummer {{arbeidsgiverIdent}} i stillinga du jobbar {{stillingsprosent}} prosent.
+Vi har fått inntektsmelding fra {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}}.
 {{/if}}
 {{/each}}
 {{else}}
 Vi har fått inntektsmelding frå desse arbeidsgivarane:
 {{#each inntektsmeldingerStatus}}
 {{#if erInntektsmeldingMottatt }}
-* {{arbeidsgiverNavn}} med verksemdsnummer {{arbeidsgiverIdent}} i stillinga du jobbar {{stillingsprosent}} prosent.
+* {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} i stillinga du jobbar {{trim-decimal stillingsprosent}} prosent.
 {{/if}}
 {{/each}}
 {{/eq}}

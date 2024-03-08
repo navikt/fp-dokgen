@@ -15,12 +15,12 @@ Fødselsnummer: 300220 12345
 </p>
 Vi fikk søknaden din om foreldrepenger 1. april 2020, men mangler opplysninger for å behandle den.
 Du må be disse arbeidsgiverne om å sende inntektsmelding:
-* Andeby Bank AS med virksomhetsnummer 123456789 i stillingen du jobber 80 prosent.
-* Andeby Vask AS med virksomhetsnummer 99999999 i stillingen du jobber 10 prosent.
-Hvis inntektsmelding allerede er sendt kan du se bort fra denne henvendelsen.
+* Andeby Bank AS med organisasjonsnummer 123456789 i stillingen du jobber 80 prosent.
+* Andeby Vask AS med organisasjonsnummer 99999999 i stillingen du jobber 10 prosent.
+Hvis arbeidsgiver allerede har sendt inntektsmelding, kan du se bort fra denne henvendelsen.
 Vi har mottatt inntektsmelding fra disse arbeidsgiverne:
-* Andeby Vaktmester AS med virksomhetsnummer 99999998 i stillingen du jobber 5 prosent.
-* Andeby Service AS med virksomhetsnummer 99999997 i stillingen du jobber 5 prosent.
+* Andeby Vaktmester AS med organisasjonsnummer 99999998 i stillingen du jobber 5 prosent.
+* Andeby Service AS med organisasjonsnummer 99999997 i stillingen du jobber 5 prosent.
 Vi kan ikke behandle søknaden din om foreldrepenger før vi har mottatt inntektsmelding fra arbeidsgiverne dine.
 <br/>
 ##### Du har rett til innsyn
