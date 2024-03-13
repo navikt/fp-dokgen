@@ -14,7 +14,7 @@ Fødselsnummer: 300220 12345
 <br/>
 </p>
 Vi fikk søknaden din om svangerskapspenger 1. april 2020, men mangler opplysninger for å behandle den.
-Du må be Andeby Bank AS med organisasjonsnummer 123456789 sende inntektsmelding til Nav slik at vi får behandlet saken din.
+Du må be Andeby Bank AS med organisasjonsnummer 123456789 sende inntektsmelding til NAV slik at vi får behandlet saken din.
 Hvis arbeidsgiver allerede har sendt inntektsmelding, kan du se bort fra denne henvendelsen.
 Vi har mottatt inntektsmelding fra Andeby Vaktmester AS med organisasjonsnummer 99999998.
 Vi kan ikke behandle søknaden din om svangerskapspenger før vi har mottatt inntektsmelding fra arbeidsgiveren din.

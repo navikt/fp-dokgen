@@ -3,11 +3,11 @@
 # We need information from {{#gt antallIkkeMottattIM 1}}your employers{{else}}your employer{{/gt}}
 {{> brukerdetaljer_en }}
 
-We have got your application for {{>ytelse_navn_en}} {{søknadDato}}, but we are missing information to process it.
+We have got your application for {{>ytelse_navn_en}} {{søknadDato}}, but we have not received all the information we need to process it.
 {{#eq antallIkkeMottattIM 1}}
 {{#each inntektsmeldingerStatus}}
 {{#eq erInntektsmeldingMottatt false}}
-You must ask {{arbeidsgiverNavn}} with company number {{arbeidsgiverIdent}} to submit an income report to Nav so that we can process your case.
+You must ask {{arbeidsgiverNavn}} with company number {{arbeidsgiverIdent}} to submit an income report to NAV so that we can process your case.
 {{/eq}}
 {{/each}}
 {{else}}

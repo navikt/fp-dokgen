@@ -7,7 +7,7 @@ Date: 4. april 2020
 
 #  NAV has granted your application for a lump-sum grant
 <p style="color:gray">
-Nav's case number: 123456789
+NAV's case number: 123456789
 <br/>
 Name: Dolly Duck
 <br/>

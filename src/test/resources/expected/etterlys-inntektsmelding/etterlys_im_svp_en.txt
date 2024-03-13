@@ -6,15 +6,15 @@ Date: 4. april 2020
 <br>
 # We need information from your employer
 <p style="color:gray">
-Nav's case number: 123456789
+NAV's case number: 123456789
 <br/>
 Name: Dolly Duck
 <br/>
 National identity number: 300220 12345
 <br/>
 </p>
-We have got your application for pregnancy benefit 1. april 2020, but we are missing information to process it.
-You must ask Andeby Bank AS with company number 123456789 to submit an income report to Nav so that we can process your case.
+We have got your application for pregnancy benefit 1. april 2020, but we have not received all the information we need to process it.
+You must ask Andeby Bank AS with company number 123456789 to submit an income report to NAV so that we can process your case.
 If the income report already has been sent from the employer, you can disregard this inquiry.
 We have received the income report from Andeby Vaktmester AS with company number 99999998.
 We will not be able to process your application for pregnancy benefit until we have received an income report from your employer.
