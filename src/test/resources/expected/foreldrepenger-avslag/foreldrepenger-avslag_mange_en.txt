@@ -7,7 +7,7 @@ Date: 4. mai 2021
 
 #  NAV has denied your application for parental benefit
 <p style="color:gray">
-Nav's case number: 123456789
+NAV's case number: 123456789
 <br/>
 Name: Dolly Duck
 <br/>

@@ -6,14 +6,14 @@ Date: 4. april 2020
 <br>
 # We need information from your employers
 <p style="color:gray">
-Nav's case number: 123456789
+NAV's case number: 123456789
 <br/>
 Name: Dolly Duck
 <br/>
 National identity number: 300220 12345
 <br/>
 </p>
-We have got your application for parental benefit 1. april 2020, but we are missing information to process it.
+We have got your application for parental benefit 1. april 2020, but we have not received all the information we need to process it.
 You must ask these employers to submit an income report to NAV:
 * Andeby Bank AS with company number 123456789 and where you work 80 percent.
 * Andeby Vask AS with company number 99999999 and where you work 10 percent.

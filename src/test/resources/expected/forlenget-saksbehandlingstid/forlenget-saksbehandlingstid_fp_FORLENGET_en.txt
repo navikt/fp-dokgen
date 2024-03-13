@@ -8,7 +8,7 @@ Date: 4. april 2020
 # We need more time to process your application for parental benefit
 
 <p style="color:gray">
-Nav's case number: 123456789
+NAV's case number: 123456789
 <br/>
 Name: Dolly Duck
 <br/>
