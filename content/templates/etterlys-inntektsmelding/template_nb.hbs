@@ -1,14 +1,46 @@
 {{> header }}
 
-# Vi trenger opplysninger fra arbeidsgiveren din
+# Vi trenger opplysninger fra {{#gt antallIkkeMottattIM 1}}arbeidsgiverne dine{{else}}arbeidsgiveren din{{/gt}}
 {{> brukerdetaljer_nb }}
 
-Vi fikk søknaden din om {{>ytelse_navn_nb}} {{søknadDato}}, men mangler opplysninger for å kunne behandle den. Du må be arbeidsgiverne dine sende inntektsmelding til NAV.
+Vi fikk søknaden din om {{> ytelse_navn_nb}} {{søknadDato}}, men mangler opplysninger for å behandle den.
 
-Hvis inntektsmelding allerede er sendt fra arbeidsgiver kan du se bort fra denne henvendelsen.
+{{#eq antallIkkeMottattIM 1}}
+{{#each inntektsmeldingerStatus}}
+{{#eq erInntektsmeldingMottatt false}}
+Du må be {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} sende inntektsmelding til Nav slik at vi får behandlet saken din.
+{{/eq}}
+{{/each}}
+{{else}}
+Du må be disse arbeidsgiverne om å sende inntektsmelding:
+{{#each inntektsmeldingerStatus}}
+{{#eq erInntektsmeldingMottatt false}}
+* {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} i stillingen du jobber {{trim-decimal stillingsprosent}} prosent.
+{{/eq}}
+{{/each}}
+{{/eq}}
 
-Vi kan ikke behandle søknaden din om {{>ytelse_navn_nb}} før vi har mottatt inntektsmelding fra arbeidsgiverne dine.
-Frist for å sende inn er {{fristDato}}.
+Hvis arbeidsgiver allerede har sendt inntektsmelding, kan du se bort fra denne henvendelsen.
+
+{{#eq antallMottattIM 1}}
+{{#each inntektsmeldingerStatus}}
+{{#if erInntektsmeldingMottatt }}
+Vi har mottatt inntektsmelding fra {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}}.
+{{/if}}
+{{/each}}
+{{else}}
+{{#gt antallMottattIM 1}}
+Vi har mottatt inntektsmelding fra disse arbeidsgiverne:
+{{/gt}}
+{{#each inntektsmeldingerStatus}}
+{{#if erInntektsmeldingMottatt }}
+* {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} i stillingen du jobber {{trim-decimal stillingsprosent}} prosent.
+{{/if}}
+{{/each}}
+{{/eq}}
+
+Vi kan ikke behandle søknaden din om {{> ytelse_navn_nb}} før vi har mottatt inntektsmelding fra {{#gt antallIkkeMottattIM 1}}arbeidsgiverne dine{{else}}arbeidsgiveren din{{/gt}}.
+
 
 <br/>
 

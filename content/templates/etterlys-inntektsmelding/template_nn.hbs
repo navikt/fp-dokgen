@@ -1,14 +1,44 @@
 {{> header }}
 
-# Vi treng opplysningar frå arbeidsgivaren din
+# Vi treng opplysningar frå {{#gt antallIkkeMottattIM 1}}arbeidsgivarane dine{{else}}arbeidsgivaren din{{/gt}}
 {{> brukerdetaljer_nn }}
 
-Vi fekk søknaden din om {{>ytelse_navn_nn}} {{søknadDato}}, men manglar opplysningar for å kunne behandle han. Du må be arbeidsgivarane dine sende inntektsmelding til NAV.
+Vi fekk søknaden din om {{>ytelse_navn_nn}} {{søknadDato}}, men manglar opplysningar for å behandle saka.
+
+{{#eq antallIkkeMottattIM 1}}
+{{#each inntektsmeldingerStatus}}
+{{#eq erInntektsmeldingMottatt false}}
+Du må be {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} senda inntektsmelding til Nav slik at vi får behandla saka di.
+{{/eq}}
+{{/each}}
+{{else}}
+Du må be desse arbeidsgivarane om å senda inntektsmelding:
+{{#each inntektsmeldingerStatus}}
+{{#eq erInntektsmeldingMottatt false}}
+* {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} i stillinga du jobbar {{trim-decimal stillingsprosent}} prosent.
+{{/eq}}
+{{/each}}
+{{/eq}}
 
 Dersom arbeidsgivar allereie har sendt inntektsmelding, kan du sjå bort frå denne førespurnaden.
 
-Vi kan ikkje behandle søknaden din om {{>ytelse_navn_nn}} før vi har fått inntektsmeldinga frå arbeidsgivarane dine.
-Frist for å sende inn er {{fristDato}}.
+{{#eq antallMottattIM 1}}
+{{#each inntektsmeldingerStatus}}
+{{#if erInntektsmeldingMottatt }}
+Vi har fått inntektsmelding fra {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}}.
+{{/if}}
+{{/each}}
+{{else}}
+Vi har fått inntektsmelding frå desse arbeidsgivarane:
+{{#each inntektsmeldingerStatus}}
+{{#if erInntektsmeldingMottatt }}
+* {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} i stillinga du jobbar {{trim-decimal stillingsprosent}} prosent.
+{{/if}}
+{{/each}}
+{{/eq}}
+
+Vi kan ikkje behandle søknaden din om {{>ytelse_navn_nn}} før vi har fått inntektsmeldinga frå {{#gt antallIkkeMottattIM 1}}arbeidsgivarane dine{{else}}arbeidsgivaren din{{/gt}}.
+
 
 <br/>
 

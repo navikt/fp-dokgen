@@ -13,10 +13,11 @@ Navn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Vi fikk søknaden din om svangerskapspenger 1. april 2020, men mangler opplysninger for å kunne behandle den. Du må be arbeidsgiverne dine sende inntektsmelding til NAV.
-Hvis inntektsmelding allerede er sendt fra arbeidsgiver kan du se bort fra denne henvendelsen.
-Vi kan ikke behandle søknaden din om svangerskapspenger før vi har mottatt inntektsmelding fra arbeidsgiverne dine.
-Frist for å sende inn er 20. mai 2020.
+Vi fikk søknaden din om svangerskapspenger 1. april 2020, men mangler opplysninger for å behandle den.
+Du må be Andeby Bank AS med organisasjonsnummer 123456789 sende inntektsmelding til Nav slik at vi får behandlet saken din.
+Hvis arbeidsgiver allerede har sendt inntektsmelding, kan du se bort fra denne henvendelsen.
+Vi har mottatt inntektsmelding fra Andeby Vaktmester AS med organisasjonsnummer 99999998.
+Vi kan ikke behandle søknaden din om svangerskapspenger før vi har mottatt inntektsmelding fra arbeidsgiveren din.
 <br/>
 ##### Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
@@ -25,9 +26,7 @@ For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://
 <div style="break-inside: avoid; page-break-inside: avoid">
 ##### Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hverdager 09.00-15.00.
 <br/>
 <br/>

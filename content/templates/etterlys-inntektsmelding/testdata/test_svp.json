@@ -9,6 +9,21 @@
     "ytelseType": "SVP",
     "erUtkast": false
   },
-  "fristDato": "20. mai 2020",
-  "søknadDato": "1. april 2020"
+  "søknadDato": "1. april 2020",
+  "antallIkkeMottattIM": 1,
+  "antallMottattIM": 1,
+  "inntektsmeldingerStatus": [
+    {
+      "arbeidsgiverIdent": "123456789",
+      "arbeidsgiverNavn": "Andeby Bank AS",
+      "stillingsprosent": 80.0,
+      "erInntektsmeldingMottatt": false
+    },
+    {
+      "arbeidsgiverIdent": "99999998",
+      "arbeidsgiverNavn": "Andeby Vaktmester AS",
+      "stillingsprosent": 20.0,
+      "erInntektsmeldingMottatt": true
+    }
+  ]
 }

@@ -4,7 +4,7 @@ Dato: 4. april 2020
 <br>
 <br>
 <br>
-# Vi trenger opplysninger fra arbeidsgiveren din
+# Vi trenger opplysninger fra arbeidsgiverne dine
 <p style="color:gray">
 Saksnummer i NAV: 123456789
 <br/>
@@ -13,10 +13,15 @@ Navn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Vi fikk søknaden din om foreldrepenger 1. april 2020, men mangler opplysninger for å kunne behandle den. Du må be arbeidsgiverne dine sende inntektsmelding til NAV.
-Hvis inntektsmelding allerede er sendt fra arbeidsgiver kan du se bort fra denne henvendelsen.
+Vi fikk søknaden din om foreldrepenger 1. april 2020, men mangler opplysninger for å behandle den.
+Du må be disse arbeidsgiverne om å sende inntektsmelding:
+* Andeby Bank AS med organisasjonsnummer 123456789 i stillingen du jobber 80 prosent.
+* Andeby Vask AS med organisasjonsnummer 99999999 i stillingen du jobber 10 prosent.
+Hvis arbeidsgiver allerede har sendt inntektsmelding, kan du se bort fra denne henvendelsen.
+Vi har mottatt inntektsmelding fra disse arbeidsgiverne:
+* Andeby Vaktmester AS med organisasjonsnummer 99999998 i stillingen du jobber 5 prosent.
+* Andeby Service AS med organisasjonsnummer 99999997 i stillingen du jobber 5 prosent.
 Vi kan ikke behandle søknaden din om foreldrepenger før vi har mottatt inntektsmelding fra arbeidsgiverne dine.
-Frist for å sende inn er 20. mai 2020.
 <br/>
 ##### Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
@@ -25,9 +30,7 @@ For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://
 <div style="break-inside: avoid; page-break-inside: avoid">
 ##### Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hverdager 09.00-15.00.
 <br/>
 <br/>

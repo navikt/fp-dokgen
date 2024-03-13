@@ -1,14 +1,42 @@
 {{> header_en }}
 
-# We need information from your employer
+# We need information from {{#gt antallIkkeMottattIM 1}}your employers{{else}}your employer{{/gt}}
 {{> brukerdetaljer_en }}
 
-We have got your application for {{>ytelse_navn_en}} {{søknadDato}}, but we are missing information to process it. You must ask your employers to send an income report to NAV.
+We have got your application for {{>ytelse_navn_en}} {{søknadDato}}, but we are missing information to process it.
+{{#eq antallIkkeMottattIM 1}}
+{{#each inntektsmeldingerStatus}}
+{{#eq erInntektsmeldingMottatt false}}
+You must ask {{arbeidsgiverNavn}} with company number {{arbeidsgiverIdent}} to submit an income report to Nav so that we can process your case.
+{{/eq}}
+{{/each}}
+{{else}}
+You must ask these employers to submit an income report to NAV:
+{{#each inntektsmeldingerStatus}}
+{{#eq erInntektsmeldingMottatt false}}
+* {{arbeidsgiverNavn}} with company number {{arbeidsgiverIdent}} and where you work {{trim-decimal stillingsprosent}} percent.
+{{/eq}}
+{{/each}}
+{{/eq}}
 
 If the income report already has been sent from the employer, you can disregard this inquiry.
 
-We will not be able to process your application for {{>ytelse_navn_en}} until we have received an income report from your employers.
-Deadline for submission is {{fristDato}}.
+{{#eq antallMottattIM 1}}
+{{#each inntektsmeldingerStatus}}
+{{#if erInntektsmeldingMottatt }}
+We have received the income report from {{arbeidsgiverNavn}} with company number {{arbeidsgiverIdent}}.
+{{/if}}
+{{/each}}
+{{else}}
+We have received the income report from these employers:
+{{#each inntektsmeldingerStatus}}
+{{#if erInntektsmeldingMottatt }}
+* {{arbeidsgiverNavn}} with company number {{arbeidsgiverIdent}} and where you work {{trim-decimal stillingsprosent}} percent.
+{{/if}}
+{{/each}}
+{{/eq}}
+
+We will not be able to process your application for {{>ytelse_navn_en}} until we have received an income report from {{#gt antallIkkeMottattIM 1}}your employers{{else}}your employer{{/gt}}.
 
 <br/>
 
