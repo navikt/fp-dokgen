@@ -1,2 +1,2 @@
-FROM ghcr.io/navikt/dokgen/dokgen:d18a96234735c1e7c31cbf9438c47f470e8547e1
+FROM ghcr.io/navikt/dokgen/dokgen:b8147b5bebe27c5f7f5de14e70642a2380095b18
 COPY content content
