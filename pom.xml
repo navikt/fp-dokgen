@@ -18,7 +18,7 @@
         <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
         <sonar.projectKey>navikt_fp-dokgen</sonar.projectKey>
 
-        <handlebar.version>4.3.1</handlebar.version>
+        <handlebar.version>4.4.0</handlebar.version>
     </properties>
 
     <distributionManagement>
@@ -63,7 +63,7 @@
         </dependency>
         <dependency>
             <groupId>com.github.jknack</groupId>
-            <artifactId>handlebars-jackson2</artifactId>
+            <artifactId>handlebars-jackson</artifactId>
             <version>${handlebar.version}</version>
             <scope>test</scope>
         </dependency>
