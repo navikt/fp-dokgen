@@ -23,7 +23,7 @@ Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut,
 Beløpet du skal betale tilbake, er redusert med den skatten som blei trekt då du fekk utbetalinga. NAV får skatten tilbake gjennom eit oppgjer med Skatteetaten.
 NAV gjev opplysningar til Skatteetaten. Skatteetaten vil vurdere om det er grunnlag for å endre skatteoppgjer.
 ##### Korleis betale tilbake pengane du skuldar
-NAV Innkrevjing vil korrigere beløpet du skal betale tilbake. Du finn meir informasjon på [nav.no/innkreving](https://nav.no/innkreving).
+NAV Innkrevjing vil korrigere beløpet du skal betale tilbake. Du finn meir informasjon på [nav.no/innbetaling](https://nav.no/innbetaling).
 <br/>
 ##### Du har rett til å klage
 Du kan klage innan 6 veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
