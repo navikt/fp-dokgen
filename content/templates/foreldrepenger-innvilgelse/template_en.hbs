@@ -2,7 +2,7 @@
 <br/>
 <br/>
 {{#if (eq behandlingResultatType "INNVILGET")}}
-# NAV has approved your application for {{dekningsgrad}} per cent parental benefit
+{{#if endretDekningsgrad}}# NAV has approved your application for parental benefit{{else}}# NAV has approved your application for {{dekningsgrad}} per cent parental benefit{{/if}}
 {{else if (and (eq behandlingResultatType "FORELDREPENGER_ENDRET") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
 # NAV has recalculated your parental benefit
 {{else}}
@@ -17,6 +17,7 @@
 
 {{#eq behandlingResultatType "INNVILGET"}}{{> foreldrepenger-innvilgelse/utbetaling_en }}{{/eq}}
 
+{{#eq behandlingType "REVURDERING"}}{{#if endretDekningsgrad}}We have changed your parental benefit from {{#eq dekningsgrad 80}}100 per cent til 80{{else}}80 per cent til 100{{/eq}} per cent.{{/if}}{{/eq}}
 {{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}We have received new income information. We have therefore changed the amount you are going to be paid.
 
 {{#gt dagsats 0}}You will receive {{thousand-seperator dagsats}} kroner per day before taxes. This amounts to {{thousand-seperator månedsbeløp}} kroner per month, on average. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).

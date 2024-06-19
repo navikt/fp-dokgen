@@ -2,7 +2,7 @@
 <br/>
 <br/>
 {{#if (eq behandlingResultatType "INNVILGET")}}
-# NAV har innvilga søknaden din om {{dekningsgrad}} prosent foreldrepengar
+{{#if endretDekningsgrad}}# NAV har innvilga søknaden din om foreldrepengar{{else}}# NAV har innvilga søknaden din om {{dekningsgrad}} prosent foreldrepengar{{/if}}
 {{else if (and (eq behandlingResultatType "FORELDREPENGER_ENDRET") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
 # NAV har berekna foreldrepengane dine på nytt
 {{else}}
@@ -17,6 +17,7 @@
 
 {{#eq behandlingResultatType "INNVILGET"}}{{> foreldrepenger-innvilgelse/utbetaling_nn }}{{/eq}}
 
+{{#eq behandlingType "REVURDERING"}}{{#if endretDekningsgrad}}Vi har gjort om foreldrepengane dine frå {{#eq dekningsgrad 80}}100 prosent til 80{{else}}80 prosent til 100{{/eq}} prosent.{{/if}}{{/eq}}
 {{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysningar. Derfor har vi endra det du får utbetalt.
 
 {{#gt dagsats 0}}Du får {{thousand-seperator dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{thousand-seperator månedsbeløp}} kroner i månaden. Sjekk utbetalingane dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).

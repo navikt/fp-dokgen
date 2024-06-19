@@ -9,6 +9,7 @@
     "behandlingResultatType",
     "konsekvensForInnvilgetYtelse",
     "dekningsgrad",
+    "endretDekningsgrad",
     "dagsats",
     "månedsbeløp",
     "seksG",
@@ -249,6 +250,9 @@
     },
     "dekningsgrad": {
       "type": "number"
+    },
+    "endretDekningsgrad": {
+      "type": "boolean"
     },
     "harUtbetaling": {
       "type": "boolean"
