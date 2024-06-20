@@ -3,6 +3,7 @@ Du får {{thousand-seperator dagsats}} kroner per dag før skatt fra og med {{ut
 {{else}}
 Du får foreldrepenger fra og med {{utbetalingFom}}. Den siste dagen du får foreldrepenger er {{stønadsperiodeTom}}.
 {{/if}}
+{{#if endretDekningsgrad}}Vi har gjort om foreldrepengene dine fra {{#eq dekningsgrad 80}}100 prosent til 80{{else}}80 prosent til 100{{/eq}} prosent.{{/if}}
 
 {{> foreldrepenger-innvilgelse/felles/refusjon_nb }}
 
