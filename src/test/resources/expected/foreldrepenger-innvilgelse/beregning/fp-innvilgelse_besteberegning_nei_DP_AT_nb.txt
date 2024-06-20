@@ -1,7 +1,7 @@
 <br/>
 
 ##### Inntekt vi har brukt i beregningen
-Når du har mottatt dagpenger i forkant av foreldrepenger kan du få beregnet foreldrepenger ut i fra 6 av de 10 beste månedene med inntekt, eller etter ordinære beregningsregler avhengig av hva som gir deg best resultat.
+Når du har mottatt dagpenger i forkant av foreldrepenger kan du få beregnet foreldrepenger ut i fra de 6 beste av de 10 siste månedene med inntekt, eller etter ordinære beregningsregler avhengig av hva som gir deg best resultat.
 Vi har beregnet dine foreldrepenger ut i fra ordinære beregningsregler:
 Vi har brukt 358 065 kroner i året før skatt i beregningen av foreldrepengene dine.
 Inntekten din hos ARBEIDSGIVER 1 er 15 382 kroner i måneden.
