@@ -21,23 +21,23 @@ Vi har avvist klagen din fordi{{/gt}}
 {{~#each avvistGrunner}}
 
 {{#eq this "KLAGET_FOR_SENT"}}
-{{>punkt}}du har klaget for sent. Du har ikke oppgitt en grunn til at du klaget for sent som gjør at vi kan behandle klagen
+{{>punkt}}du har klaget for sent. Du har ikke oppgitt en grunn til at du klaget for sent som gjør at vi kan behandle klagen.
 {{/eq}}
 
 {{#eq this "KLAGE_UGYLDIG"}}
-{{>punkt}}du ikke har underskrevet den
+{{>punkt}}du ikke har underskrevet den.
 {{/eq}}
 
 {{#eq this "IKKE_PAKLAGD_VEDTAK"}}
-{{>punkt}}det du har klaget på ikke er et vedtak
+{{>punkt}}det du har klaget på ikke er et vedtak.
 {{/eq}}
 
 {{#eq this "KLAGER_IKKE_PART"}}
-{{>punkt}}du har klaget på et vedtak som ikke gjelder deg
+{{>punkt}}du har klaget på et vedtak som ikke gjelder deg.
 {{/eq}}
 
 {{#eq this "IKKE_KONKRET"}}
-{{>punkt}}du ikke har sagt hva det er du klager på
+{{>punkt}}du ikke har sagt hva det er du klager på.
 {{/eq}}
 
 {{/each}}
