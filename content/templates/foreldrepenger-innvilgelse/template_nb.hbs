@@ -17,7 +17,7 @@
 
 {{#eq behandlingResultatType "INNVILGET"}}{{> foreldrepenger-innvilgelse/utbetaling_nb }}{{/eq}}
 
-{{#eq behandlingType "REVURDERING"}}{{#if endretDekningsgrad}}Vi har gjort om foreldrepengene dine fra {{#eq dekningsgrad 80}}100 prosent til 80{{else}}80 prosent til 100{{/eq}} prosent.{{/if}}{{/eq}}
+{{#eq behandlingType "REVURDERING"}}{{#if endretDekningsgrad}}Vi har gjort om foreldrepengene dine fra {{#eq dekningsgrad 80}}100 prosent til 80{{else}}80 prosent til 100{{/eq}} prosent. Du får {{thousand-seperator dagsats}} kroner per dag før skatt etter endringen. Dette er i gjennomsnitt {{thousand-seperator månedsbeløp}} kroner i måneden.{{/if}}{{/eq}}
 {{#eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"}}Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.
 
 {{#gt dagsats 0}}Du får {{thousand-seperator dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{thousand-seperator månedsbeløp}} kroner i måneden. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
