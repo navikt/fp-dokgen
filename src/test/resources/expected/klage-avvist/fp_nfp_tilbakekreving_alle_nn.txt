@@ -14,11 +14,11 @@ Fødselsnummer: 300220 12345
 <br/>
 </p>
 Vi har avvist klaga di fordi
-* du har klaga for seint. Du har ikkje gitt opp ein grunn til at du klaga for seint som gjer at vi kan behandle klaga
-* du ikkje har skrive under klaga
-* det du har klaga på, ikkje er eit vedtak
-* du har klaga på eit vedtak som ikkje gjeld deg
-* du ikkje har sagt kva det er du klagar på
+* du har klaga for seint. Du har ikkje gitt opp ein grunn til at du klaga for seint som gjer at vi kan behandle klaga.
+* du ikkje har skrive under klaga.
+* det du har klaga på, ikkje er eit vedtak.
+* du har klaga på eit vedtak som ikkje gjeld deg.
+* du ikkje har sagt kva det er du klagar på.
 Vedtaket er gjort etter folketrygdloven § 21-12 og forvaltningsloven §§ 28, 31, 32 og 34.
 <br/>
 ##### Du har rett til å klage

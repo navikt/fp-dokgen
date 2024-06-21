@@ -13,7 +13,7 @@ Navn: Dolly Duck
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Vi har avvist klagen din fordi det du har klaget på ikke er et vedtak
+Vi har avvist klagen din fordi det du har klaget på ikke er et vedtak.
 Vedtaket er gjort etter folketrygdloven § 21-12 og forvaltningsloven §§ 28, 31, 32 og 34.
 <br/>
 ##### Du har rett til å klage

@@ -14,11 +14,11 @@ Fødselsnummer: 300220 12345
 <br/>
 </p>
 Vi har avvist klagen din fordi
-* du har klaget for sent. Du har ikke oppgitt en grunn til at du klaget for sent som gjør at vi kan behandle klagen
-* du ikke har underskrevet den
-* det du har klaget på ikke er et vedtak
-* du har klaget på et vedtak som ikke gjelder deg
-* du ikke har sagt hva det er du klager på
+* du har klaget for sent. Du har ikke oppgitt en grunn til at du klaget for sent som gjør at vi kan behandle klagen.
+* du ikke har underskrevet den.
+* det du har klaget på ikke er et vedtak.
+* du har klaget på et vedtak som ikke gjelder deg.
+* du ikke har sagt hva det er du klager på.
 Tester at fritekst kommer dersom angitt for en avvist klage<br/>
 Vedtaket er gjort etter folketrygdloven § 21-12 og forvaltningsloven §§ 28, 31, 32 og 34.
 <br/>
