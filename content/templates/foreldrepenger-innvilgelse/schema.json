@@ -368,7 +368,10 @@
     "utbetalingFom": {
       "type": "string"
     },
-    "foreldrepengeperiodenUtvidetUker": {
+    "flerbarnsdagerUtvidetUker": {
+      "type": "number"
+    },
+    "flerbarnsdagerUtvidetDager": {
       "type": "number"
     },
     "antallBarn": {
