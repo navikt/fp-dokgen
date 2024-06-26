@@ -4,7 +4,7 @@
 <br>
 <br>
 <br>
-# Inntektsmelding for Foreldrepenger
+# Inntektsmelding for
 ### Den ansatte
 | Navn | Personnummer |
 | --- | --- |
@@ -16,12 +16,11 @@
 | Innsender | Telefonnummer |
 | --- | --- |
 | Navn kontaktperson | 22 22 22 22 |
----
+___
 ### Startdato permisjon
-Startdato: 4. juni 2024
----
+4. juni 2024
 ### Beregnet månedslønn
-Registrert inntekt (per 4. juni 2024)
+Registrert inntekt (per 4. juni 2024):
 56 000
 ---
 ### Refusjon
@@ -32,13 +31,12 @@ Opphører refusjonskravet i perioden?
 Ja
 Opphørsdato: 30. oktober 2024
 Endringer i refusjon i perioden?
-Ja
-| Refusjonsbeløp | Fra | Til |
+| Fra |  Til | Refusjonsbeløp |
 | --- | --- | --- |
-| 45 000 | 30. november 2024 | 2. desember 2024 |
+| 30. november 2024 | 2. desember 2024 | 45 000 |
 ---
 ### Bortfall av naturalytelser
-| Naturalytelse | Fra | Til |
+| Fra | Til | Naturalytelsetype | Beløp |
 | --- | --- | --- | --- |
 | Rentefordel lån | | 5 000 | 31. mai 2024 | 30. oktober 2024 |
 ### Gjenopptatte naturalytelser
