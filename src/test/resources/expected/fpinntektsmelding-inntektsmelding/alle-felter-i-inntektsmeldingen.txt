@@ -1,0 +1,47 @@
+<p align="left">
+    Dato: 31. mai 2024 kl.12.20
+</p>
+<br>
+<br>
+<br>
+# Inntektsmelding for Foreldrepenger
+### Den ansatte
+| Navn | Personnummer |
+| --- | --- |
+| Test Tester Testesen | *********5298 |
+### Arbeidsgiveren
+| Virksomhetsnavn | Organisasjonsnummer |
+| --- | --- |
+| Arbeidsgiver 1 | *****4556 |
+| Innsender | Telefonnummer |
+| --- | --- |
+| Navn kontaktperson | 22 22 22 22 |
+---
+### Startdato permisjon
+Startdato: 4. juni 2024
+---
+### Beregnet månedslønn
+Registrert inntekt (per 4. juni 2024)
+56 000
+---
+### Refusjon
+Betaler arbeidsgiver lønn under hele eller deler av fraværet?
+Ja
+Refusjonsbeløp: 56 000
+Opphører refusjonskravet i perioden?
+Ja
+Opphørsdato: 30. oktober 2024
+Endringer i refusjon i perioden?
+Ja
+| Refusjonsbeløp | Fra | Til |
+| --- | --- | --- |
+| 45 000 | 30. november 2024 | 2. desember 2024 |
+---
+### Bortfall av naturalytelser
+| Naturalytelse | Fra | Til |
+| --- | --- | --- | --- |
+| Rentefordel lån | | 5 000 | 31. mai 2024 | 30. oktober 2024 |
+### Gjenopptatte naturalytelser
+| naturalytelseType | Fra | Til |
+| --- | --- | --- | --- |
+| Bolig | 2 000 | 31. mai 2024 | 30. oktober 2024 |

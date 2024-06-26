@@ -1,0 +1,134 @@
+{
+  "$id": "fpinntektsmelding-inntektsmelding",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for generering av pdf av inntektsmelding",
+  "type": "object",
+  "required": [
+    "avsenderSystem",
+    "navnSøker",
+    "personnummer",
+    "ytelsetype",
+    "arbeidsgiverIdent",
+    "arbeidsgiverNavn",
+    "startDato",
+    "månedInntekt",
+    "opprettetTidspunkt",
+    "kontaktperson"
+  ],
+  "$defs": {
+    "refusjonsperiode": {
+      "type": "object",
+      "required": [
+        "fom",
+        "tom",
+        "beloep"
+      ],
+      "properties": {
+        "fom": {
+          "type": "string"
+        },
+        "tom": {
+          "type": "string"
+        },
+        "beloep": {
+          "type": "number"
+        }
+      }
+    },
+    "naturalytelse": {
+      "type": "object",
+      "required": [
+        "fom",
+        "tom",
+        "naturalytelseType",
+        "beloep"
+      ],
+      "properties": {
+        "fom": {
+          "type": "string"
+        },
+        "tom": {
+          "type": "string"
+        },
+        "naturalytelseType": {
+          "type": "string"
+        },
+        "beloep": {
+          "type": "number"
+        },
+        "erBortfalt": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "properties": {
+    "avsenderSystem": {
+      "type": "string"
+    },
+    "navnSøker": {
+      "type": "string"
+    },
+    "personnummer": {
+      "type": "string"
+    },
+    "ytelsetype": {
+      "type": "string",
+      "enum": ["FORELDREPENGER", "SVANGERSKAPSPENGER", "PLEIEPENGER_SYKT_BARN", "PLEIEPENGER_NÆRSTÅENDE", "OPPLÆRINGSPENGER", "OMSORGSPENGER"]
+    },
+    "arbeidsgiverIdent": {
+      "type": "string"
+    },
+    "arbeidsgiverNavn": {
+      "type": "string"
+    },
+    "kontaktperson": {
+      "type": "object",
+      "required": [
+        "navn",
+        "telefonnummer"
+      ],
+      "properties": {
+        "navn": {
+          "type": "string"
+        },
+        "telefonnummer": {
+          "type": "string"
+        }
+      }
+    },
+    "startDato": {
+      "type": "string"
+    },
+    "månedInntekt": {
+      "type": "number"
+    },
+    "opprettetTidspunkt": {
+      "type": "string"
+    },
+    "refusjonsbeløp": {
+      "type": "number"
+    },
+    "refusjonOpphørsdato": {
+      "type": "string"
+    },
+    "endringIrefusjonsperioder": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/refusjonsperiode"
+      }
+    },
+    "ingenBortfaltNaturalytelse": {
+      "type": "boolean"
+    },
+    "ingenGjenopptattNaturalytelse": {
+      "type": "boolean"
+    },
+    "naturalytelser": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/naturalytelse"
+      }
+    }
+  }
+}

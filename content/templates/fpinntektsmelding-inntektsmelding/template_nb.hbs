@@ -1,0 +1,94 @@
+<p align="left">
+    Dato: {{opprettetTidspunkt}}
+</p>
+<br>
+<br>
+<br>
+
+# Inntektsmelding for{{~#switch ytelsetype}}{{#case "FORELDREPENGER"}} foreldrepenger{{/case}}{{#case "SVANGERSKAPSPENGER"}} svangerskapspenger{{/case}}{{#case "PLEIEPENGER_SYKT_BARN"}} pleiepenger sykt barn{{/case}}{{#case "OPPLÆRINGSPENGER"}} pleiepenger nærtstående{{/case}}{{#case "PLEIEPENGER_NÆRSTÅENDE"}} opplæringspenger{{/case}}{{#case "OMSORGSPENGER"}} omsorgspenger{{/case}}{{/switch}}
+
+### Den ansatte
+
+| Navn | Personnummer |
+| --- | --- |
+| {{navnSøker}} | {{personnummer}} |
+
+
+### Arbeidsgiveren
+
+| Virksomhetsnavn | Organisasjonsnummer |
+| --- | --- |
+| {{arbeidsgiverNavn}} | {{arbeidsgiverIdent}} |
+
+| Innsender | Telefonnummer |
+| --- | --- |
+| {{kontaktperson.navn}} | {{kontaktperson.telefonnummer}} |
+
+___
+
+### Startdato permisjon
+
+{{startDato}}
+
+
+### Beregnet månedslønn
+
+Registrert inntekt (per {{startDato}}):
+{{thousand-seperator månedInntekt}}
+
+---
+
+### Refusjon
+
+Betaler arbeidsgiver lønn under hele eller deler av fraværet?
+{{#if refusjonsbeløp}}
+Ja
+Refusjonsbeløp: {{thousand-seperator refusjonsbeløp}}
+{{else}}Nei
+{{/if}}
+Opphører refusjonskravet i perioden?
+{{#if refusjonOpphørsdato}}
+Ja
+Opphørsdato: {{refusjonOpphørsdato}}
+{{else}}
+Nei
+{{/if}}
+Endringer i refusjon i perioden?
+{{~#if endringIrefusjonsperioder.length}}
+| Fra |  Til | Refusjonsbeløp |
+{{#each endringIrefusjonsperioder}}
+| --- | --- | --- |
+| {{fom}} | {{tom}} | {{thousand-seperator beloep}} |
+{{/each}}
+{{else}}
+Nei
+{{/if}}
+
+---
+
+### Bortfall av naturalytelser
+
+{{~#if ingenBortfaltNaturalytelse}}
+Nei
+{{else}}
+| Fra | Til | Naturalytelsetype | Beløp |
+{{/if}}
+{{#each naturalytelser}}
+{{#if erBortfalt}}
+| --- | --- | --- | --- |
+| {{naturalytelseType}} | | {{thousand-seperator beloep}} | {{fom}} | {{tom}} |
+{{/if}}
+{{/each}}
+
+
+### Gjenopptatte naturalytelser
+
+{{~#if ingenGjenopptattNaturalytelse}}Nei{{else}}
+| naturalytelseType | Fra | Til |
+| --- | --- | --- | --- |
+{{/if}}
+{{#each naturalytelser}}
+{{#eq erBortfalt false}}
+| {{naturalytelseType}} | {{thousand-seperator beloep}} | {{fom}} | {{tom}} |
+{{/eq}}
+{{/each}}
