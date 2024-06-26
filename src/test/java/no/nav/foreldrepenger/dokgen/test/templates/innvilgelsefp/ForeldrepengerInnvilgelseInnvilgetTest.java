@@ -93,6 +93,51 @@ class ForeldrepengerInnvilgelseInnvilgetTest {
     }
 
     @Test
+    void flerbarnsdager() {
+        var testDataJson = getTestDataJson(BREVMAL, UNDERMAL, "førstegangsbehandling_prosent");
+        testDataJson.put("antallBarn", 2);
+        testDataJson.put("flerbarnsdagerUtvidetUker", 10);
+        testDataJson.put("flerbarnsdagerUtvidetDager", 0);
+        var nb = compileContent(BREVMAL, Språk.BOKMÅL, testDataJson);
+        var nn = compileContent(BREVMAL, Språk.NYNORSK, testDataJson);
+        var en = compileContent(BREVMAL, Språk.ENGELSK, testDataJson);
+
+        assertThat(nb).contains("forlenget foreldrepengeperioden med 10 uker fordi");
+        assertThat(nn).contains("forlengd foreldrepengeperioden med 10 veker fordi");
+        assertThat(en).contains("extended the parental benefit period by 10 weeks because");
+    }
+
+    @Test
+    void flerbarnsdager_dager() {
+        var testDataJson = getTestDataJson(BREVMAL, UNDERMAL, "førstegangsbehandling_prosent");
+        testDataJson.put("antallBarn", 2);
+        testDataJson.put("flerbarnsdagerUtvidetUker", 10);
+        testDataJson.put("flerbarnsdagerUtvidetDager", 5);
+        var nb = compileContent(BREVMAL, Språk.BOKMÅL, testDataJson);
+        var nn = compileContent(BREVMAL, Språk.NYNORSK, testDataJson);
+        var en = compileContent(BREVMAL, Språk.ENGELSK, testDataJson);
+
+        assertThat(nb).contains("forlenget foreldrepengeperioden med 10 uker og 5 dager fordi");
+        assertThat(nn).contains("forlengd foreldrepengeperioden med 10 veker og 5 dagar fordi");
+        assertThat(en).contains("extended the parental benefit period by 10 weeks and 5 days because");
+    }
+
+    @Test
+    void flerbarnsdager_1_dager() {
+        var testDataJson = getTestDataJson(BREVMAL, UNDERMAL, "førstegangsbehandling_prosent");
+        testDataJson.put("antallBarn", 2);
+        testDataJson.put("flerbarnsdagerUtvidetUker", 10);
+        testDataJson.put("flerbarnsdagerUtvidetDager", 1);
+        var nb = compileContent(BREVMAL, Språk.BOKMÅL, testDataJson);
+        var nn = compileContent(BREVMAL, Språk.NYNORSK, testDataJson);
+        var en = compileContent(BREVMAL, Språk.ENGELSK, testDataJson);
+
+        assertThat(nb).contains("forlenget foreldrepengeperioden med 10 uker og 1 dag fordi");
+        assertThat(nn).contains("forlengd foreldrepengeperioden med 10 veker og 1 dag fordi");
+        assertThat(en).contains("extended the parental benefit period by 10 weeks and 1 day because");
+    }
+
+    @Test
     void skal_oppgi_dagsats_i_utbetaling_hvis_varierendeDagsats_og_starterMedFullUtbetaling() {
         var testDataJson = getTestDataJson(BREVMAL, UNDERMAL, "førstegangsbehandling_prosent");
         testDataJson.put("varierendeDagsats", true);

@@ -26,12 +26,12 @@ The other parent is not entitled to parental benefit. You will therefore be gran
 
 {{#gt prematurDager 0}}We have extended the parental benefit period by {{prematurDager}} {{#gt prematurDager 1}}days{{else}}day{{/gt}} because you gave birth before the 33rd week of pregnancy.{{/gt}}
 
-{{#gt foreldrepengeperiodenUtvidetUker 0}}{{#if gjelderFødsel}}{{#gt antallBarn 1}}{{#if barnErFødt}}
-We have extended the parental benefit period by {{foreldrepengeperiodenUtvidetUker}} weeks because you {{#in-array (array "NEI" "IKKE_VURDERT") aleneomsorgKode}}got{{else}}gave birth to{{/in-array}} more than one child.
+{{#gt flerbarnsdagerUtvidetUker 0}}{{#if gjelderFødsel}}{{#gt antallBarn 1}}{{#if barnErFødt}}
+We have extended the parental benefit period by {{flerbarnsdagerUtvidetUker}} weeks{{#gt flerbarnsdagerUtvidetDager 1}} and {{flerbarnsdagerUtvidetDager}} days{{/gt}}{{#eq flerbarnsdagerUtvidetDager 1}} and {{flerbarnsdagerUtvidetDager}} day{{/eq}} because you {{#in-array (array "NEI" "IKKE_VURDERT") aleneomsorgKode}}got{{else}}gave birth to{{/in-array}} more than one child.
 {{else}}
-We have extended the parental benefit period by {{foreldrepengeperiodenUtvidetUker}} weeks because you are expecting more than one child.{{/if}}{{/gt}}
+We have extended the parental benefit period by {{flerbarnsdagerUtvidetUker}} weeks{{#gt flerbarnsdagerUtvidetDager 1}} and {{flerbarnsdagerUtvidetDager}} days{{/gt}}{{#eq flerbarnsdagerUtvidetDager 1}} and {{flerbarnsdagerUtvidetDager}} day{{/eq}} because you are expecting more than one child.{{/if}}{{/gt}}
 {{else}}
-{{#gt antallBarn 1}}We have extended the parental benefit period by {{foreldrepengeperiodenUtvidetUker}} weeks because you are adopting more than one child.{{/gt}}{{/if}}
+{{#gt antallBarn 1}}We have extended the parental benefit period by {{flerbarnsdagerUtvidetUker}} weeks{{#gt flerbarnsdagerUtvidetDager 1}} and {{flerbarnsdagerUtvidetDager}} days{{/gt}}{{#eq flerbarnsdagerUtvidetDager 1}} and {{flerbarnsdagerUtvidetDager}} day{{/eq}} because you are adopting more than one child.{{/gt}}{{/if}}
 {{/gt}}
 
 {{#gt dagerTaptFørTermin 0}}{{#if fbEllerRvInnvilget gjelderFødsel}}Because you gave birth before the due date, you lose {{dagerTaptFørTermin}} {{#gt dagerTaptFørTermin 1}}days{{else}}day{{/gt}} of parental benefit.{{/if}}{{/gt}}
