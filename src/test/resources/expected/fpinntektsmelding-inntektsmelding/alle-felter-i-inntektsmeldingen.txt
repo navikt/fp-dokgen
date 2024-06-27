@@ -1,5 +1,5 @@
 <p align="left">
-    Dato: 31. mai 2024 kl.12.20
+Mottatt tidspunkt: 31. mai 2024 kl.12.20
 </p>
 <br>
 <br>
@@ -9,37 +9,52 @@
 | Navn | Personnummer |
 | --- | --- |
 | Test Tester Testesen | *********5298 |
+<br>
 ### Arbeidsgiveren
-| Virksomhetsnavn | Organisasjonsnummer |
+| Virksomhetens navn | Organisasjonsnummer |
 | --- | --- |
 | Arbeidsgiver 1 | *****4556 |
+<br>
 | Innsender | Telefonnummer |
 | --- | --- |
 | Navn kontaktperson | 22 22 22 22 |
-___
+<br>
+<span style="color: lightgray">
+___________________________________________________________________________________________________________________________________________________________________________________________________
+</span>
 ### Startdato permisjon
-4. juni 2024
+<br>4. juni 2024
+<br>
+<span style="color: lightgray">
+___________________________________________________________________________________________________________________________________________________________________________________________________
+</span>
 ### Beregnet månedslønn
 Registrert inntekt (per 4. juni 2024):
-56 000
----
+**56 000**
 ### Refusjon
 Betaler arbeidsgiver lønn under hele eller deler av fraværet?
-Ja
 Refusjonsbeløp: 56 000
 Opphører refusjonskravet i perioden?
-Ja
-Opphørsdato: 30. oktober 2024
+<br>Opphørsdato:30. oktober 2024
 Endringer i refusjon i perioden?
 | Fra |  Til | Refusjonsbeløp |
 | --- | --- | --- |
 | 30. november 2024 | 2. desember 2024 | 45 000 |
----
+<br>
+<span style="color: lightgray">
+___________________________________________________________________________________________________________________________________________________________________________________________________
+</span>
+<br>
 ### Bortfall av naturalytelser
 | Fra | Til | Naturalytelsetype | Beløp |
 | --- | --- | --- | --- |
 | Rentefordel lån | | 5 000 | 31. mai 2024 | 30. oktober 2024 |
+<br>
+<span style="color: lightgray">
+___________________________________________________________________________________________________________________________________________________________________________________________________
+</span>
+<br>
 ### Gjenopptatte naturalytelser
-| naturalytelseType | Fra | Til |
+| Fra | Til | Naturalytelsetype | Beløp |
 | --- | --- | --- | --- |
 | Bolig | 2 000 | 31. mai 2024 | 30. oktober 2024 |
