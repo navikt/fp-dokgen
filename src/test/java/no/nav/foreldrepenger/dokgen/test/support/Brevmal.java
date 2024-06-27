@@ -35,7 +35,10 @@ public enum Brevmal {
     ETTERLYS_INNTEKTSMELDING("etterlys-inntektsmelding"),
     ANKE_OMGJORT("anke-omgjort"),
     ANKE_OPPHEVET("anke-opphevet"),
-    SELVBETJENING_TILSVAR_TILBAKEBETALINGVARSEL("selvbetjening-tilsvar-tilbakebetalingvarsel")
+    SELVBETJENING_TILSVAR_TILBAKEBETALINGVARSEL("selvbetjening-tilsvar-tilbakebetalingvarsel"),
+
+    //Fpinntektsmelding
+    FP_INNTEKTSMELDING("fpinntektsmelding-inntektsmelding")
     ;
 
     private String navn;
