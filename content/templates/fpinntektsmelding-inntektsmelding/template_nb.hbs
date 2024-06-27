@@ -1,5 +1,5 @@
 <p align="left">
-    Dato: {{opprettetTidspunkt}}
+Mottatt tidspunkt: {{opprettetTidspunkt}}
 </p>
 <br>
 <br>
@@ -12,83 +12,109 @@
 | Navn | Personnummer |
 | --- | --- |
 | {{navnSøker}} | {{personnummer}} |
-
+<br>
 
 ### Arbeidsgiveren
 
-| Virksomhetsnavn | Organisasjonsnummer |
+| Virksomhetens navn | Organisasjonsnummer |
 | --- | --- |
 | {{arbeidsgiverNavn}} | {{arbeidsgiverIdent}} |
+<br>
 
 | Innsender | Telefonnummer |
 | --- | --- |
 | {{kontaktperson.navn}} | {{kontaktperson.telefonnummer}} |
+<br>
 
-___
+<span style="color: lightgray">
+___________________________________________________________________________________________________________________________________________________________________________________________________
+</span>
+
 
 ### Startdato permisjon
+<br>{{~startDato}}
 
-{{startDato}}
+<br>
 
+<span style="color: lightgray">
+___________________________________________________________________________________________________________________________________________________________________________________________________
+</span>
 
 ### Beregnet månedslønn
-
 Registrert inntekt (per {{startDato}}):
-{{thousand-seperator månedInntekt}}
 
----
+**{{~thousand-seperator månedInntekt}}**
 
 ### Refusjon
 
 Betaler arbeidsgiver lønn under hele eller deler av fraværet?
-{{#if refusjonsbeløp}}
-Ja
+{{~#if refusjonsbeløp}}
+
 Refusjonsbeløp: {{thousand-seperator refusjonsbeløp}}
-{{else}}Nei
+{{else}} Nei
 {{/if}}
 Opphører refusjonskravet i perioden?
-{{#if refusjonOpphørsdato}}
-Ja
-Opphørsdato: {{refusjonOpphørsdato}}
+{{~#if refusjonOpphørsdato}}
+<br>Opphørsdato:{{refusjonOpphørsdato}}
 {{else}}
 Nei
 {{/if}}
 Endringer i refusjon i perioden?
 {{~#if endringIrefusjonsperioder.length}}
-| Fra |  Til | Refusjonsbeløp |
 {{#each endringIrefusjonsperioder}}
+{{#if @first}}
+| Fra |  Til | Refusjonsbeløp |
 | --- | --- | --- |
+{{/if}}
 | {{fom}} | {{tom}} | {{thousand-seperator beloep}} |
 {{/each}}
 {{else}}
 Nei
 {{/if}}
 
----
+<br>
+
+<span style="color: lightgray">
+___________________________________________________________________________________________________________________________________________________________________________________________________
+</span>
+
+<br>
 
 ### Bortfall av naturalytelser
 
 {{~#if ingenBortfaltNaturalytelse}}
 Nei
 {{else}}
+{{/if}}
+{{~#each naturalytelser}}
+{{#if erBortfalt}}
+{{#if @first}}
 | Fra | Til | Naturalytelsetype | Beløp |
 {{/if}}
-{{#each naturalytelser}}
-{{#if erBortfalt}}
 | --- | --- | --- | --- |
 | {{naturalytelseType}} | | {{thousand-seperator beloep}} | {{fom}} | {{tom}} |
 {{/if}}
 {{/each}}
 
+<br>
+
+<span style="color: lightgray">
+___________________________________________________________________________________________________________________________________________________________________________________________________
+</span>
+
+<br>
 
 ### Gjenopptatte naturalytelser
 
 {{~#if ingenGjenopptattNaturalytelse}}Nei{{else}}
-| naturalytelseType | Fra | Til |
+| Fra | Til | Naturalytelsetype | Beløp |
 | --- | --- | --- | --- |
 {{/if}}
-{{#each naturalytelser}}
+{{~#each naturalytelser}}
 {{#eq erBortfalt false}}
 | {{naturalytelseType}} | {{thousand-seperator beloep}} | {{fom}} | {{tom}} |
 {{/eq}}
 {{/each}}
+
+
+
