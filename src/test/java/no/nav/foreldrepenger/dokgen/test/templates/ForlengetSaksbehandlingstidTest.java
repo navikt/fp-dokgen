@@ -76,9 +76,9 @@ class ForlengetSaksbehandlingstidTest {
     }
 
     @Test
-    void skal_generere_brev_for_forlenget_saksbehandlingstid_FP_MEDLEM_på_bokmål() {
-        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fp_MEDLEM");
-        var expected = getExpected(BREVMAL, "forlenget-saksbehandlingstid_fp_MEDLEM_nb.txt");
+    void skal_generere_brev_for_forlenget_saksbehandlingstid_ES_MEDLEM_på_bokmål() {
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_es_MEDLEM");
+        var expected = getExpected(BREVMAL, "forlenget-saksbehandlingstid_es_MEDLEM_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 }
