@@ -1,5 +1,5 @@
 <p align="left">
-Mottatt tidspunkt: {{opprettetTidspunkt}}
+Innsendt: {{opprettetTidspunkt}}
 </p>
 <br>
 <br>
@@ -7,114 +7,204 @@ Mottatt tidspunkt: {{opprettetTidspunkt}}
 
 # Inntektsmelding for{{~#switch ytelsetype}}{{#case "FORELDREPENGER"}} foreldrepenger{{/case}}{{#case "SVANGERSKAPSPENGER"}} svangerskapspenger{{/case}}{{#case "PLEIEPENGER_SYKT_BARN"}} pleiepenger sykt barn{{/case}}{{#case "OPPLÆRINGSPENGER"}} pleiepenger nærtstående{{/case}}{{#case "PLEIEPENGER_NÆRSTÅENDE"}} opplæringspenger{{/case}}{{#case "OMSORGSPENGER"}} omsorgspenger{{/case}}{{/switch}}
 
-### Den ansatte
+#### Den ansatte
+<table style="width:100%">
+<tr>
+    <th style="width: 60%">Navn</th>
+    <th style="width: 40%">Personnummer</th>
+</tr>
+<tr>
+    <td>{{navnSøker}}</td>
+    <td>{{personnummer}}</td>
+</tr>
+</table>
 
-| Navn | Personnummer |
-| --- | --- |
-| {{navnSøker}} | {{personnummer}} |
-<br>
+<span style="color: lightgray">
+<br>___________________________________________________________________________________________________________________________________________________________________________________________________
+</span>
 
-### Arbeidsgiveren
+#### Arbeidsgiveren
+<table style="width:100%">
+    <tr>
+    <th style="width: 60%">Navn på virksomheten</th>
+    <th style="width: 40%">Organisasjonsnummer</th>
+</tr>
+<tr>
+    <td>{{arbeidsgiverNavn}}</td>
+    <td>{{arbeidsgiverIdent}}</td>
+</tr>
+</table>
+<table style="width:100%">
+<tr>
+    <th style="width: 60%">Innsender</th>
+    <th style="width: 40%">Telefonnummer</th>
+</tr>
+<tr>
+    <td>{{kontaktperson.navn}}</td>
+    <td>{{kontaktperson.telefonnummer}}</td>
+</tr>
+</table>
 
-| Virksomhetens navn | Organisasjonsnummer |
-| --- | --- |
-| {{arbeidsgiverNavn}} | {{arbeidsgiverIdent}} |
-<br>
+<span style="color: lightgray">
+<br>___________________________________________________________________________________________________________________________________________________________________________________________________
+</span>
 
-| Innsender | Telefonnummer |
-| --- | --- |
-| {{kontaktperson.navn}} | {{kontaktperson.telefonnummer}} |
-<br>
+#### Startdato permisjon: {{startDato}}
 
+#### Beregnet månedslønn per {{startDato}}: {{thousand-seperator månedInntekt}}
+
+<div style="break-inside: avoid; page-break-inside: avoid">
 <span style="color: lightgray">
 ___________________________________________________________________________________________________________________________________________________________________________________________________
 </span>
 
-
-### Startdato permisjon
-<br>{{~startDato}}
-
-<br>
-
-<span style="color: lightgray">
-___________________________________________________________________________________________________________________________________________________________________________________________________
-</span>
-
-### Beregnet månedslønn
-Registrert inntekt (per {{startDato}}):
-
-**{{~thousand-seperator månedInntekt}}**
-
-### Refusjon
+#### Refusjon
 
 Betaler arbeidsgiver lønn under hele eller deler av fraværet?
 {{~#if refusjonsbeløp}}
-
-Refusjonsbeløp: {{thousand-seperator refusjonsbeløp}}
-{{else}} Nei
+ **Ja**<br>Refusjonsbeløp: **{{thousand-seperator refusjonsbeløp}}**
+{{else}}<br>**Nei**
 {{/if}}
 Opphører refusjonskravet i perioden?
 {{~#if refusjonOpphørsdato}}
-<br>Opphørsdato:{{refusjonOpphørsdato}}
+ **Ja**<br>Opphørsdato: **{{refusjonOpphørsdato}}**
 {{else}}
-Nei
+<br>**Nei**
 {{/if}}
 Endringer i refusjon i perioden?
 {{~#if endringIrefusjonsperioder.length}}
-{{#each endringIrefusjonsperioder}}
-{{#if @first}}
-| Fra |  Til | Refusjonsbeløp |
-| --- | --- | --- |
+ **Ja**
+{{~#each endringIrefusjonsperioder}}
+{{~#if @first}}
+<br>
+<br>
+<table style="width:100%">
+<thead>
+<tr>
+    <th style="width: 33%">Fra</th>
+    <th style="width: 33%">Til</th>
+    <th style="width: 33%">Refusjonsbeløp</th>
+    </tr>
+</thead>
+</table>
 {{/if}}
-| {{fom}} | {{tom}} | {{thousand-seperator beloep}} |
+<table style="width:100%">
+<thead>
+<tr>
+    <th style="width: 33%"></th>
+    <th style="width: 33%"></th>
+    <th style="width: 33%"></th>
+</tr>
+</thead>
+    <tbody>
+    <tr>
+    <td>{{fom}}</td>
+    <td>{{tom}}</td>
+    <td>{{thousand-seperator beloep}}</td>
+</tr>
+</tbody>
+</table>
 {{/each}}
 {{else}}
-Nei
+<br> **Nei**
 {{/if}}
+</div>
 
-<br>
-
+<div style="break-inside: avoid; page-break-inside: avoid">
 <span style="color: lightgray">
-___________________________________________________________________________________________________________________________________________________________________________________________________
+<br>___________________________________________________________________________________________________________________________________________________________________________________________________
 </span>
 
-<br>
-
-### Bortfall av naturalytelser
-
-{{~#if ingenBortfaltNaturalytelse}}
-Nei
-{{else}}
-{{/if}}
+#### Bortfall av naturalytelser
+{{~#if naturalytelser}}
+Er det bortfall av naturalytelser i perioden?
+{{~#if ingenBortfaltNaturalytelse}} **Nei**{{else}} **Ja**{{/if}}
 {{~#each naturalytelser}}
-{{#if erBortfalt}}
-{{#if @first}}
-| Fra | Til | Naturalytelsetype | Beløp |
+{{~#if erBortfalt}}
+{{~#if @first}}
+<br>
+<br>
+<table style="width:100%">
+<thead>
+    <tr>
+        <th style="width: 40%">Type</th>
+        <th style="width: 20%">Fra</th>
+        <th style="width: 20%">Til</th>
+        <th style="width: 20%">Beløp</th>
+    </tr>
+    </thead>
+</table>
 {{/if}}
-| --- | --- | --- | --- |
-| {{naturalytelseType}} | | {{thousand-seperator beloep}} | {{fom}} | {{tom}} |
+<table style="width:100%">
+<thead>
+<tr>
+    <th style="width: 40%"></th>
+    <th style="width: 20%"></th>
+    <th style="width: 20%"></th>
+    <th style="width: 20%"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>{{naturalytelseType}}</td>
+    <td>{{fom}}</td>
+    <td>{{tom}}</td>
+    <td>{{thousand-seperator beloep}}</td>
+</tr>
+</tbody>
+</table>
 {{/if}}
 {{/each}}
+</div>
 
-<br>
-
+<div style="break-inside: avoid; page-break-inside: avoid">
 <span style="color: lightgray">
-___________________________________________________________________________________________________________________________________________________________________________________________________
+<br>___________________________________________________________________________________________________________________________________________________________________________________________________
 </span>
 
+#### Gjenopptatte naturalytelser
+
+Er det gjenopptatte naturalytelser  i perioden?
+{{~#if ingenGjenopptattNaturalytelse}} **Nei**{{else}} **Ja**
 <br>
-
-### Gjenopptatte naturalytelser
-
-{{~#if ingenGjenopptattNaturalytelse}}Nei{{else}}
-| Fra | Til | Naturalytelsetype | Beløp |
-| --- | --- | --- | --- |
+<br>
+<table style="width:100%">
+    <thead>
+    <tr>
+        <th style="width: 40%">Type</th>
+        <th style="width: 20%">Fra</th>
+        <th style="width: 20%">Til</th>
+        <th style="width: 20%">Beløp</th>
+    </tr>
+    </thead>
+</table>
 {{/if}}
 {{~#each naturalytelser}}
-{{#eq erBortfalt false}}
-| {{naturalytelseType}} | {{thousand-seperator beloep}} | {{fom}} | {{tom}} |
+{{~#eq erBortfalt false}}
+<table style="width:100%">
+<thead>
+    <tr>
+        <th style="width: 40%"></th>
+        <th style="width: 20%"></th>
+        <th style="width: 20%"></th>
+        <th style="width: 20%"></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>{{naturalytelseType}}</td>
+        <td>{{fom}}</td>
+        <td>{{tom}}</td>
+        <td>{{thousand-seperator beloep}}</td>
+    </tr>
+</tbody>
+</table>
 {{/eq}}
 {{/each}}
+{{else}}
+ **Nei**
+{{/if}}
+</div>
 
 
 
