@@ -2,7 +2,7 @@
   "avsenderSystem": "navn.no/arbeidsgiverportalen",
   "navnSøker": "Test Tester Testesen",
   "personnummer": "*********5298",
-  "ytelse": "Foreldrepenger",
+  "ytelsetype": "FORELDREPENGER",
   "arbeidsgiverIdent": "*****4556",
   "arbeidsgiverNavn": "Arbeidsgiver 1",
   "kontaktperson": {

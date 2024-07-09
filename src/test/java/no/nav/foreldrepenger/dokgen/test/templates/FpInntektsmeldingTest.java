@@ -14,7 +14,7 @@ class FpInntektsmeldingTest {
 
     @Test
     void alleFelterIInntektsmeldingen() {
-        var content = compileContent(BREVMAL, Språk.BOKMÅL, "inntektsmeldingMedAllleFelter");
+        var content = compileContent(BREVMAL, null, "inntektsmeldingMedAllleFelter");
         var expected = getExpected(BREVMAL, "alle-felter-i-inntektsmeldingen.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }

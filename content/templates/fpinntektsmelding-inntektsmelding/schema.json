@@ -6,6 +6,7 @@
   "required": [
     "avsenderSystem",
     "navnSøker",
+    "fornavnSøker",
     "personnummer",
     "ytelsetype",
     "arbeidsgiverIdent",
@@ -67,6 +68,9 @@
       "type": "string"
     },
     "navnSøker": {
+      "type": "string"
+    },
+    "fornavnSøker": {
       "type": "string"
     },
     "personnummer": {

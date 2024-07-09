@@ -79,7 +79,12 @@ public final class TemplateTestService {
     }
 
     public static String compileContent(Brevmal brevmal, Språk språk, String testDataFilename) {
-        var templateContent = readFile(FileStructureUtil.getTemplatePath(brevmal, språk));
+        String templateContent;
+        if (språk == null) {
+            templateContent = readFile(FileStructureUtil.getTemplatePath(brevmal));
+        } else {
+            templateContent = readFile(FileStructureUtil.getTemplatePath(brevmal, språk));
+        }
         var mergeFieldsJsonString = readFile(FileStructureUtil.getTestDataPath(brevmal, testDataFilename));
         return produceContent(mergeFieldsJsonString, templateContent);
     }
