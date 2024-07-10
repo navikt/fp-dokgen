@@ -11,28 +11,28 @@ Kontaktperson fra bedriften
 Den ansatte
 <br>{{navnSøker}}, personnummer {{personnummer}}
 
-<hr style="color:#D3D3D3; margin-top: 7mm; margin-bottom: 7mm">
+<hr style="color:#A9A9A9; margin-top:7mm; margin-bottom:1mm;">
 
 #### Første dag med foreldrepenger
 {{startDato}}
 
-<hr style="color:#D3D3D3; margin-top: 7mm; margin-bottom: 7mm">
+<hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
 
 #### Månedslønn
 Beregnet månedslønn basert på de tre siste, fulle månedene før {{> fpinntektsmelding-inntektsmelding/ytelseNavn}}<br>{{thousand-seperator månedInntekt}} kr
 
 <div style="break-inside: avoid; page-break-inside: avoid">
-<hr style="color:#D3D3D3; margin-top: 7mm; margin-bottom: 7mm">
+<hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
 
 #### Refusjon
 
 Skal dere betale lønn til {{fornavnSøker}} og ha refusjon fra NAV?
 {{~#if refusjonsbeløp}}
-<br>Ja<br>Refusjonsbeløp per måned:<br>{{thousand-seperator refusjonsbeløp}} kr
+<br>Ja<br>Refusjonsbeløp per måned<br>{{thousand-seperator refusjonsbeløp}} kr
 {{else}}<br>Nei
 {{/if}}
 Opphører refusjonen i løpet av perioden til {{fornavnSøker}}?
-{{~#if refusjonOpphørsdato}}Ja<br>Opphørsdato<br>{{refusjonOpphørsdato}}
+{{~#if refusjonOpphørsdato}}<br>Ja<br>{{refusjonOpphørsdato}}
 {{else}}
 <br>Nei
 {{/if}}
@@ -76,7 +76,7 @@ Vil det være endringer i refusjon i løpet av perioden til {{fornavnSøker}}?
 </div>
 
 <div style="break-inside: avoid; page-break-inside: avoid">
-<hr style="color:#D3D3D3; margin-top: 7mm; margin-bottom: 7mm">
+<hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
 
 #### Naturalytelser
 {{~#if naturalytelser}}
@@ -121,7 +121,7 @@ Er det bortfall av naturalytelser i perioden til {{fornavnSøker}}?
 </div>
 
 <div style="break-inside: avoid; page-break-inside: avoid">
-<hr style="color:#D3D3D3; margin-top: 7mm; margin-bottom: 7mm">
+<hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
 
 #### Gjenopptatte naturalytelser
 
