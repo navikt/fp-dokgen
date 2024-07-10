@@ -1,27 +1,46 @@
-# Inntektsmelding foreldrepenger
-Innsendt: 31. mai 2024 kl.12.20. Fra Arbeidsgiver 1, org nr. *****4556
+# Inntektsmelding {{> fpinntektsmelding-inntektsmelding/ytelseNavn}}
+Innsendt: {{opprettetTidspunkt}}. Fra {{arbeidsgiverNavn}}, org nr. {{arbeidsgiverIdent}}
 <br>
 <br>
+
 #### Arbeidsgiver og den ansatte
+
 Kontaktperson fra bedriften
-<br>Navn kontaktperson, 22 22 22 22
+<br>{{kontaktperson.navn}}, {{kontaktperson.telefonnummer}}
+
 Den ansatte
-<br>Test Tester Testesen, personnummer *********5298
+<br>{{navnSøker}}, personnummer {{personnummer}}
+
 <hr style="color:#A9A9A9; margin-top:7mm; margin-bottom:1mm;">
+
 #### Første dag med foreldrepenger
-4. juni 2024
+{{startDato}}
+
 <hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
+
 #### Månedslønn
-Beregnet månedslønn basert på de tre siste, fulle månedene før foreldrepenger
-<br>56 000 kr
+Beregnet månedslønn basert på de tre siste, fulle månedene før {{> fpinntektsmelding-inntektsmelding/ytelseNavn}}<br>{{thousand-seperator månedInntekt}} kr
+
 <div style="break-inside: avoid; page-break-inside: avoid">
 <hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
+
 #### Refusjon
-Skal dere betale lønn til  og ha refusjon fra NAV?
-<br>Ja<br>Refusjonsbeløp per måned<br>56 000 kr
-Opphører refusjonen i løpet av perioden til ?<br>Ja<br>30. oktober 2024
-Vil det være endringer i refusjon i løpet av perioden til ?
+
+Skal dere betale lønn til {{fornavnSøker}} og ha refusjon fra NAV?
+{{~#if refusjonsbeløp}}
+<br>Ja<br>Refusjonsbeløp per måned<br>{{thousand-seperator refusjonsbeløp}} kr
+{{else}}<br>Nei
+{{/if}}
+Opphører refusjonen i løpet av perioden til {{fornavnSøker}}?
+{{~#if refusjonOpphørsdato}}<br>Ja<br>{{refusjonOpphørsdato}}
+{{else}}
+<br>Nei
+{{/if}}
+Vil det være endringer i refusjon i løpet av perioden til {{fornavnSøker}}?
+{{~#if endringIrefusjonsperioder.length}}
 <br>Ja
+{{~#each endringIrefusjonsperioder}}
+{{~#if @first}}
 <br>
 <br>
 <table style="width:100%">
@@ -33,6 +52,7 @@ Vil det være endringer i refusjon i løpet av perioden til ?
     </tr>
 </thead>
 </table>
+{{/if}}
 <table style="width:100%">
 <thead>
 <tr>
@@ -43,17 +63,28 @@ Vil det være endringer i refusjon i løpet av perioden til ?
 </thead>
     <tbody>
     <tr>
-    <td>30. november 2024</td>
-    <td>2. desember 2024</td>
-    <td>45 000</td>
+    <td>{{fom}}</td>
+    <td>{{tom}}</td>
+    <td>{{thousand-seperator beloep}}</td>
 </tr>
 </tbody>
 </table>
+{{/each}}
+{{else}}
+<br>Nei
+{{/if}}
 </div>
+
 <div style="break-inside: avoid; page-break-inside: avoid">
 <hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
+
 #### Naturalytelser
-Er det bortfall av naturalytelser i perioden til ?<br>Ja
+{{~#if naturalytelser}}
+Er det bortfall av naturalytelser i perioden til {{fornavnSøker}}?
+{{~#if ingenBortfaltNaturalytelse}}<br>Nei{{else}}<br>Ja{{/if}}
+{{~#each naturalytelser}}
+{{~#if erBortfalt}}
+{{~#if @first}}
 <br>
 <br>
 <table style="width:100%">
@@ -66,6 +97,7 @@ Er det bortfall av naturalytelser i perioden til ?<br>Ja
     </tr>
     </thead>
 </table>
+{{/if}}
 <table style="width:100%">
 <thead>
 <tr>
@@ -77,18 +109,24 @@ Er det bortfall av naturalytelser i perioden til ?<br>Ja
 </thead>
 <tbody>
 <tr>
-    <td>31. mai 2024</td>
-    <td>30. oktober 2024</td>
-    <td>Rentefordel lån</td>
-    <td>5 000</td>
+    <td>{{fom}}</td>
+    <td>{{tom}}</td>
+    <td>{{naturalytelseType}}</td>
+    <td>{{thousand-seperator beloep}}</td>
 </tr>
 </tbody>
 </table>
+{{/if}}
+{{/each}}
 </div>
+
 <div style="break-inside: avoid; page-break-inside: avoid">
 <hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
+
 #### Gjenopptatte naturalytelser
-Er det gjenopptatte naturalytelser  i perioden til ?<br>Ja
+
+Er det gjenopptatte naturalytelser  i perioden til {{fornavnSøker}}?
+{{~#if ingenGjenopptattNaturalytelse}}<br>Nei{{else}}<br>Ja
 <br>
 <br>
 <table style="width:100%">
@@ -101,6 +139,9 @@ Er det gjenopptatte naturalytelser  i perioden til ?<br>Ja
     </tr>
     </thead>
 </table>
+{{/if}}
+{{~#each naturalytelser}}
+{{~#eq erBortfalt false}}
 <table style="width:100%">
 <thead>
     <tr>
@@ -112,11 +153,19 @@ Er det gjenopptatte naturalytelser  i perioden til ?<br>Ja
 </thead>
 <tbody>
     <tr>
-        <td>31. mai 2024</td>
-        <td>30. oktober 2024</td>
-        <td>Bolig</td>
-        <td>2 000</td>
+        <td>{{fom}}</td>
+        <td>{{tom}}</td>
+        <td>{{naturalytelseType}}</td>
+        <td>{{thousand-seperator beloep}}</td>
     </tr>
 </tbody>
 </table>
+{{/eq}}
+{{/each}}
+{{else}}
+Nei
+{{/if}}
 </div>
+
+
+
