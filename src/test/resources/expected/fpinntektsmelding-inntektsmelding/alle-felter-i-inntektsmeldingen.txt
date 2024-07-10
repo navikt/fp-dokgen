@@ -2,25 +2,24 @@
 Innsendt: 31. mai 2024 kl.12.20. Fra Arbeidsgiver 1, org nr. *****4556
 <br>
 <br>
-### Arbeidsgiver og den ansatte
-<br>
-#### Kontaktperson fra bedriften
-Navn kontaktperson, 22 22 22 22
-#### Den ansatte
-Test Tester Testesen, personnummer *********5298
-<hr style="color:#D3D3D3; margin-top: 7mm; margin-bottom: 7mm">
-### Første dag med foreldrepenger
+#### Arbeidsgiver og den ansatte
+Kontaktperson fra bedriften
+<br>Navn kontaktperson, 22 22 22 22
+Den ansatte
+<br>Test Tester Testesen, personnummer *********5298
+<hr style="color:#A9A9A9; margin-top:7mm; margin-bottom:1mm;">
+#### Første dag med foreldrepenger
 4. juni 2024
-<hr style="color:#D3D3D3; margin-top: 7mm; margin-bottom: 7mm">
-### Månedslønn
+<hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
+#### Månedslønn
 Beregnet månedslønn basert på de tre siste, fulle månedene før foreldrepenger
 <br>56 000 kr
 <div style="break-inside: avoid; page-break-inside: avoid">
-<hr style="color:#D3D3D3; margin-top: 7mm; margin-bottom: 7mm">
-### Refusjon
+<hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
+#### Refusjon
 Skal dere betale lønn til  og ha refusjon fra NAV?
-<br>Ja<br>Refusjonsbeløp per måned:<br>56 000 kr
-Opphører refusjonen i løpet av perioden til ?Ja<br>Opphørsdato<br>30. oktober 2024
+<br>Ja<br>Refusjonsbeløp per måned<br>56 000 kr
+Opphører refusjonen i løpet av perioden til ?<br>Ja<br>30. oktober 2024
 Vil det være endringer i refusjon i løpet av perioden til ?
 <br>Ja
 <br>
@@ -52,8 +51,8 @@ Vil det være endringer i refusjon i løpet av perioden til ?
 </table>
 </div>
 <div style="break-inside: avoid; page-break-inside: avoid">
-<hr style="color:#D3D3D3; margin-top: 7mm; margin-bottom: 7mm">
-### Naturalytelser
+<hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
+#### Naturalytelser
 Er det bortfall av naturalytelser i perioden til ?<br>Ja
 <br>
 <br>
@@ -87,8 +86,8 @@ Er det bortfall av naturalytelser i perioden til ?<br>Ja
 </table>
 </div>
 <div style="break-inside: avoid; page-break-inside: avoid">
-<hr style="color:#D3D3D3; margin-top: 7mm; margin-bottom: 7mm">
-### Gjenopptatte naturalytelser
+<hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
+#### Gjenopptatte naturalytelser
 Er det gjenopptatte naturalytelser  i perioden til ?<br>Ja
 <br>
 <br>
