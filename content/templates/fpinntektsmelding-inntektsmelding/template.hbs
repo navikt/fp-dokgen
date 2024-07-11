@@ -19,7 +19,7 @@ Den ansatte
 <hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
 
 #### Månedslønn
-Beregnet månedslønn basert på de tre siste, fulle månedene før {{> fpinntektsmelding-inntektsmelding/ytelseNavn}}<br>{{thousand-seperator månedInntekt}} kr
+Beregnet månedslønn basert på de tre siste, fulle månedene før {{> fpinntektsmelding-inntektsmelding/ytelseNavn}}<br>{{thousand-seperator-double månedInntekt}} kr
 
 <div style="break-inside: avoid; page-break-inside: avoid">
 <hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
@@ -28,7 +28,7 @@ Beregnet månedslønn basert på de tre siste, fulle månedene før {{> fpinntek
 
 Skal dere betale lønn til {{fornavnSøker}} og ha refusjon fra NAV?
 {{~#if refusjonsbeløp}}
-<br>Ja<br>Refusjonsbeløp per måned<br>{{thousand-seperator refusjonsbeløp}} kr
+<br>Ja<br>Refusjonsbeløp per måned<br>{{thousand-seperator-double refusjonsbeløp}} kr
 {{else}}<br>Nei
 {{/if}}
 Opphører refusjonen i løpet av perioden til {{fornavnSøker}}?
@@ -65,7 +65,7 @@ Vil det være endringer i refusjon i løpet av perioden til {{fornavnSøker}}?
     <tr>
     <td>{{fom}}</td>
     <td>{{tom}}</td>
-    <td>{{thousand-seperator beloep}}</td>
+    <td>{{thousand-seperator-double beloep}}</td>
 </tr>
 </tbody>
 </table>
@@ -112,7 +112,7 @@ Er det bortfall av naturalytelser i perioden til {{fornavnSøker}}?
     <td>{{fom}}</td>
     <td>{{tom}}</td>
     <td>{{naturalytelseType}}</td>
-    <td>{{thousand-seperator beloep}}</td>
+    <td>{{thousand-seperator-double beloep}}</td>
 </tr>
 </tbody>
 </table>
@@ -156,7 +156,7 @@ Er det gjenopptatte naturalytelser  i perioden til {{fornavnSøker}}?
         <td>{{fom}}</td>
         <td>{{tom}}</td>
         <td>{{naturalytelseType}}</td>
-        <td>{{thousand-seperator beloep}}</td>
+        <td>{{thousand-seperator-double beloep}}</td>
     </tr>
 </tbody>
 </table>
