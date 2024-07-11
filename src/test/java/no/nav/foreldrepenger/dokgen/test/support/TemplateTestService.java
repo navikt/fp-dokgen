@@ -32,6 +32,7 @@ import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.NorwegianDatetimeHelp
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.SizeHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.SwitchHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.ThousandSeperatorHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.ThousandSeperatorHelperDouble;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.TrimDecimalHelper;
 
 public final class TemplateTestService {
@@ -58,6 +59,7 @@ public final class TemplateTestService {
         HANDLEBARS.registerHelper("divide", new DivideHelper());
         HANDLEBARS.registerHelper("format-kroner", new FormatKronerHelper());
         HANDLEBARS.registerHelper("thousand-seperator", new ThousandSeperatorHelper());
+        HANDLEBARS.registerHelper("thousand-seperator-double", new ThousandSeperatorHelperDouble());
         HANDLEBARS.registerHelper("trim-decimal", new TrimDecimalHelper());
         HANDLEBARS.registerHelper("size", new SizeHelper());
         HANDLEBARS.registerHelper("norwegian-datetime", new NorwegianDatetimeHelper());
