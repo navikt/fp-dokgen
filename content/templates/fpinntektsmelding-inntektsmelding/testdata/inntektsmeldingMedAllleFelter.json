@@ -10,15 +10,15 @@
     "telefonnummer": "22 22 22 22"
   },
   "startDato":"4. juni 2024",
-  "månedInntekt": 56000,
+  "månedInntekt": 56000.50,
   "opprettetTidspunkt": "31. mai 2024 kl.12.20",
-  "refusjonsbeløp": 56000,
+  "refusjonsbeløp": 56000.00,
   "refusjonOpphørsdato": "30. oktober 2024",
   "endringIrefusjonsperioder": [
     {
       "fom": "30. november 2024",
       "tom": "2. desember 2024",
-      "beloep": 45000
+      "beloep": 45000.00
     }
   ],
   "ingenBortfaltNaturalytelse": false,
@@ -28,14 +28,14 @@
       "fom": "31. mai 2024",
       "tom": "30. oktober 2024",
       "naturalytelseType": "Rentefordel lån",
-      "beloep": 5000,
+      "beloep": 5000.00,
       "erBortfalt": true
     },
     {
       "fom": "31. mai 2024",
       "tom": "30. oktober 2024",
       "naturalytelseType": "Bolig",
-      "beloep": 2000,
+      "beloep": 2001.99,
       "erBortfalt": false
     }
   ]
