@@ -11,7 +11,7 @@
 
 {{~#each perioder}}
 {{#eq årsak "4503"}}
-{{>punkt}}Du får {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Dette tilsvarer den stillingsprosenten mor jobber. Det du tar ut i foreldrepenger kan ikke være høyere enn den prosenten mor jobber.
+{{>punkt}}Du får {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}. Dette tilsvarer den stillingsprosenten mor jobber. Det du får i foreldrepenger kan ikke være høyere enn den prosenten mor jobber.
 
   Selv om du jobber i denne perioden, får du ingen forlengelse av foreldrepengeperioden din. For å kombinere foreldrepenger med arbeid og få en lengre periode med foreldrepenger, må uttaket ditt være lavere enn den prosenten mor jobber.
 {{/eq}}
@@ -33,11 +33,15 @@
 
 {{#lt this.prioritertUtbetalingsgrad 100.0}}
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" ) årsak}}
-{{>punkt}}Du tar ut {{trim-decimal this.prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
+{{>punkt}}Du får {{trim-decimal this.prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
+{{#if erUtbetalingRedusertTilMorsStillingsprosent}}
+Barnets mor må jobbe minst 75 prosent for at du skal få utbetalt fulle foreldrepenger.
+I denne perioden jobber barnets mor {{trim-decimal this.prioritertUtbetalingsgrad}} prosent, og du får derfor utbetalt {{trim-decimal this.prioritertUtbetalingsgrad}} prosent foreldrepenger. Samtidig bruker du fulle dager i perioden.
+{{/if}}
 {{/in-array}}
 {{else}}
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" "2038" ) årsak}}
-{{>punkt}}Du tar ut foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
+{{>punkt}}Du får foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
 {{/in-array}}
 {{#eq årsak "2039"}}
 {{>punkt}}Du får foreldrepenger {{#eq this.periodeFom this.periodeTom}}{{this.periodeFom}}{{else}}fra og med {{this.periodeFom}} til og med {{this.periodeTom}}{{/eq}}. De første seks ukene etter fødselen er forbeholdt mor, derfor har vi endret foreldrepengeperioden din. Dersom du ikke skal ha foreldrepenger {{#eq this.periodeFom this.periodeTom}}denne dagen{{else}}disse dagene{{/eq}}, må du søke om endring, men du vil ikke kunne ta ut {{#eq this.periodeFom this.periodeTom}}denne dagen{{else}}disse dagene{{/eq}} senere.
@@ -46,7 +50,7 @@
 
 
 {{#eq årsak "2038"}}{{#neq this.prioritertUtbetalingsgrad 100.0}}
-{{>punkt}}Du tar ut {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen skal ta ut foreldrepenger i samme periode. I denne perioden får du {{thousand-seperator periodeDagsats}} kroner per dag før skatt.
+{{>punkt}}Du får {{trim-decimal prioritertUtbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen skal ta ut foreldrepenger i samme periode. I denne perioden får du {{thousand-seperator periodeDagsats}} kroner per dag før skatt.
 {{/neq}}{{/eq}}
 
 
@@ -79,7 +83,7 @@
 {{/eq}}
 
 {{#if (and (eq arbeidsforholdsliste.0.gradering true) (eq innvilget true))}}
-{{>punkt}}Du tar ut {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{thousand-seperator periodeDagsats}} kroner per dag før skatt.
+{{>punkt}}Du får {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{thousand-seperator periodeDagsats}} kroner per dag før skatt.
 {{#each arbeidsforholdsliste}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0) (lt this.stillingsprosent 100.0) (eq this.gradering false) (or (eq delvisRefusjon true) (eq fullRefusjon true)))}}
   Du jobber ikke i hele deltidsstillingen din hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepenger både fra arbeidsgiveren din og NAV.
@@ -90,13 +94,13 @@
 
 {{#each annenAktivitetsliste}}
 {{#if (and (eq this.aktivitetStatus "FRILANSER") (eq this.gradering true))}} {{#if @../innvilget}}
-{{>punkt}}Du tar ut {{trim-decimal this.utbetalingsgrad}} prosent foreldrepenger fra og med {{@../periodeFom}} til og med {{@../periodeTom}} fordi du jobber {{trim-decimal this.prosentArbeid}} prosent. I denne perioden får du {{thousand-seperator @../periodeDagsats}} kroner per dag før skatt.
+{{>punkt}}Du får {{trim-decimal this.utbetalingsgrad}} prosent foreldrepenger fra og med {{@../periodeFom}} til og med {{@../periodeTom}} fordi du jobber {{trim-decimal this.prosentArbeid}} prosent. I denne perioden får du {{thousand-seperator @../periodeDagsats}} kroner per dag før skatt.
 {{/if}}{{/if}}
 {{/each}}
 
 
 {{#if (and (eq this.næring.gradering true) (eq this.innvilget true))}}
-{{>punkt}}Du tar ut {{trim-decimal this.næring.utbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}} fordi du jobber {{trim-decimal this.næring.prosentArbeid}} prosent. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
+{{>punkt}}Du får {{trim-decimal this.næring.utbetalingsgrad}} prosent foreldrepenger fra og med {{this.periodeFom}} til og med {{this.periodeTom}} fordi du jobber {{trim-decimal this.næring.prosentArbeid}} prosent. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
 {{/if}}
 
 

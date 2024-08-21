@@ -1,62 +1,34 @@
 <p align="right">
-Dato: 3. juni 2021
+Dato: 18. mars 2022
 </p>
 <br>
 <br>
 <br>
 <br/>
 <br/>
-
 # NAV har innvilget søknaden din om 100 prosent foreldrepenger
-
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i NAV: 152001008
 <br/>
-Navn: Dolly Duck
+Navn: SØKER NAVN
 <br/>
-Fødselsnummer: 300220 12345
+Fødselsnummer: 111111 11111
 <br/>
-
 </p>
-
-Du får 1 356 kroner per dag før skatt fra og med 19. mai 2021. Dette er i gjennomsnitt 29 380 kroner i måneden. Den siste dagen du får foreldrepenger er 14. desember 2021.
+<p class="draft_text">UTKAST</p>
+Du får 2 455 kroner per dag før skatt fra og med 30. mars 2022. Dette er i gjennomsnitt 53 191 kroner i måneden. Den siste dagen du får foreldrepenger er 20. september 2022.
 Foreldrepengene blir utbetalt for alle dager, unntatt lørdag og søndag. Fordi det ikke er like mange dager i hver måned, vil de månedlige utbetalingene dine variere.
 Pengene er på kontoen din innen den 25. hver måned. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
-
+Den andre forelderen har ikke rett til foreldrepenger. Derfor får du hele foreldrepengeperioden.
+Det er 75 dager igjen av perioden med foreldrepenger. Mor må være i aktivitet for at du skal kunne ta ut disse dagene. I perioder mor ikke er i aktivitet vil du miste dager, selv om du ikke får foreldrepenger. Disse dagene må være tatt ut innen barnet fyller tre år, eller innen en ny foreldrepengeperiode for et nytt barn starter.
+Vedtaket er gjort etter folketrygdloven §§ 14-13 og 14-14.
 <br/>
-
-##### Dette har vi innvilget
-
-Du får 50 prosent foreldrepenger fra og med 19. mai 2021 til og med 14. desember 2021 fordi du jobber 50 prosent hos TULLE TRANSPORT AS. I denne perioden får du 1 356 kroner per dag før skatt.
-
-I periodene du kombinerer arbeid og foreldrepenger, får du utbetalt fulle foreldrepenger der du ikke jobber.
-
-Det er 25 dager igjen av kvoten din, og 10 dager som begge kan ta ut. Disse dagene må det søkes om innen 14. desember 2021.
-
-##### Du har flere arbeidsgivere
-
-Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere foreldrepenger med arbeid hos én arbeidsgiver om gangen. Det betyr at det bare er perioden din hos TULLE TRANSPORT AS som blir forlenget.
-
-Vedtaket er gjort etter folketrygdloven §§ 14-12 og 14-16.
-
-<br/>
-
 ##### Inntekt vi har brukt i beregningen
-
-Inntekten din hos TULLE TRANSPORT AS er 47 585 kroner i måneden.
-
-Inntekten din hos TRALLE TRANSPORT AS er 5 600 kroner i måneden.
-
-Arbeidsgiverne dine har gitt oss disse opplysningene.
-
+Inntekten din hos BEDRIFT AS er 60 000 kroner i måneden. Arbeidsgiveren din har gitt oss disse opplysningene.
 Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.
-
-##### Hva skjer hvis du får utbetalt foreldrepenger og lønn for samme periode?
-
-Hvis du får utbetalt for mye i foreldrepenger, kan utbetalingen din bli redusert i neste måned.
-
+Foreldrepengene dine er fastsatt til 638 394 kroner i året, som er seks ganger grunnbeløpet i folketrygden. Du tjener mer enn dette, men du får ikke foreldrepenger for den delen av inntekten som overstiger seks ganger grunnbeløpet.
+Beregningen er gjort etter folketrygdloven §§ 14-7 og 8-30.
 <br/>
-
 ##### Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
@@ -70,7 +42,6 @@ For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-
 ##### Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
 
@@ -83,10 +54,4 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 Med vennlig hilsen
 <br/>
 NAV Familie- og pensjonsytelser
-
-<br/><br/>
-
-Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
-
 </div>
-

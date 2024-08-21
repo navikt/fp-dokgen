@@ -141,7 +141,8 @@
         "periodeTom",
         "periodeDagsats",
         "antallTapteDager",
-        "prioritertUtbetalingsgrad"
+        "prioritertUtbetalingsgrad",
+        "erUtbetalingRedusertTilMorsStillingsprosent"
       ],
       "properties": {
         "innvilget": {
@@ -176,6 +177,9 @@
         },
         "tidligstMottattDato": {
           "type": "string"
+        },
+        "erUtbetalingRedusertTilMorsStillingsprosent": {
+          "type": "boolean"
         }
       }
     },
