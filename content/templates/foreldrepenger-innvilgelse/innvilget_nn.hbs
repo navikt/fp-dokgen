@@ -34,10 +34,10 @@
 {{#lt this.prioritertUtbetalingsgrad 100.0}}
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" ) årsak}}
 {{>punkt}}Du får {{trim-decimal this.prioritertUtbetalingsgrad}} prosent foreldrepengar frå og med {{this.periodeFom}} til og med {{this.periodeTom}}. I denne perioden får du {{thousand-seperator this.periodeDagsats}} kroner per dag før skatt.
-{{#if erUtbetalingRedusertTilMorsStillingsprosent}}
-Barnets mor må jobbe minst 75 prosent for at du skal få utbetalt fulle foreldrepengar.
-I denne perioden jobbar barnets mor {{trim-decimal this.prioritertUtbetalingsgrad}} prosent, så du vil få utbetalt {{trim-decimal this.prioritertUtbetalingsgrad}} prosent foreldrepengar. Samstundes brukar du fulle dagar i perioden.
-{{/if}}
+ {{#if erUtbetalingRedusertTilMorsStillingsprosent}}
+ <br/><br/>Barnets mor må jobbe minst 75 prosent for at du skal få utbetalt fulle foreldrepengar.
+ I denne perioden jobbar barnets mor {{trim-decimal this.prioritertUtbetalingsgrad}} prosent, så du vil få utbetalt {{trim-decimal this.prioritertUtbetalingsgrad}} prosent foreldrepengar. Samstundes brukar du fulle dagar i perioden.
+ {{/if}}
 {{/in-array}}
 {{else}}
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" "2038" ) årsak}}

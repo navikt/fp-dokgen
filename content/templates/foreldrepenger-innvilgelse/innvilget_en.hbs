@@ -34,10 +34,10 @@
 {{#lt this.prioritertUtbetalingsgrad 100.0}}
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" ) årsak}}
 {{>punkt}}You will receive {{trim-decimal this.prioritertUtbetalingsgrad}} per cent parental benefit from {{this.periodeFom}} up to and including {{this.periodeTom}}. During this period, you will receive {{thousand-seperator this.periodeDagsats}} kroner per day before taxes.
-{{#if erUtbetalingRedusertTilMorsStillingsprosent}}
-The child's mother must work at least 75 percent for you to receive full parental benefits.
-During this period, the child's mother works {{trim-decimal this.prioritertUtbetalingsgrad}} per cent, so you will receive {{trim-decimal this.prioritertUtbetalingsgrad}} per cent parental benefits. At the same time, you are using full days during the period.
-{{/if}}
+ {{#if erUtbetalingRedusertTilMorsStillingsprosent}}
+ <br/><br/>The child's mother must work at least 75 percent for you to receive full parental benefits.
+ During this period, the child's mother works {{trim-decimal this.prioritertUtbetalingsgrad}} per cent, so you will receive {{trim-decimal this.prioritertUtbetalingsgrad}} per cent parental benefits. At the same time, you are using full days during the period.
+ {{/if}}
 {{/in-array}}
 {{else}}
 {{#in-array (array "2001" "2002" "2003" "2004" "2005" "2006" "2007" "2036" "2037" "2038" ) årsak}}
