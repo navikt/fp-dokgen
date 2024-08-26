@@ -150,4 +150,16 @@ class ForeldrepengerInnvilgelseInnvilgetTest {
         assertThat(nn).contains("kroner per dag før skatt frå");
         assertThat(en).contains("kroner per day before taxes starting");
     }
+
+    @Test
+    void førstegangsbehandling_foreldrepenger_redusert_utbetaling() {
+        var testDataJson = getTestDataJson(BREVMAL, UNDERMAL, "førstegangsbehandling_far_redusert_utbetaling");
+        var nb = compileContent(BREVMAL, Språk.BOKMÅL, testDataJson);
+        var nn = compileContent(BREVMAL, Språk.NYNORSK, testDataJson);
+        var en = compileContent(BREVMAL, Språk.ENGELSK, testDataJson);
+
+        assertThat(nb).contains("Barnets mor må jobbe minst 75 prosent for at du skal få utbetalt fulle foreldrepenger.");
+        assertThat(nn).contains("Barnets mor må jobbe minst 75 prosent for at du skal få utbetalt fulle foreldrepengar.");
+        assertThat(en).contains("The child's mother must work at least 75 percent for you to receive full parental benefits.");
+    }
 }

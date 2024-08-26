@@ -96,5 +96,4 @@ class ForeldrepengerInnvilgelseTest {
         var expected = getExpected(BREVMAL, "revurdering/foreldrepenger_endret_barn_dod_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
-
 }
