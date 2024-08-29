@@ -4,7 +4,6 @@ Date: 4. april 2020
 <br>
 <br>
 <br>
-
 # You must apply for parental benefit in time
 <p style="color:gray">
 NAV's case number: 123456789
@@ -13,16 +12,12 @@ Name: Dolly Duck
 <br/>
 National identity number: 300220 12345
 <br/>
-
 </p>
-
-You may be entitled to parental benefit. You must apply before 10. september 2020. This is the day the other parent has the last day of parental benefit. If you do not want to start the parental benefit period immediately after 10. september 2020, you must apply to postpone the period. If you apply at a later date, you will lose the days you did not postpone.
-
-##### The change of parental benefit law for children born from 1 October 2021
-For children born from and including 1 October 2021, the parents decide when they want to take out the parental benefit. Because your child was born before 1 October 2021, you must apply before the other parent has the last day of parental benefit. You must therefore apply before 10. september 2020.
-
+You may be entitled to parental benefit. You should apply four weeks before your first day of parental benefit.
+Please, be aware of:
+* if a parent starts a new parental benefit period for a new child, you will lose days you have not spent
+* parental benefit must be withdrawn no later than the day before the child turns three years old
 <br/>
-
 ##### Do you have questions?
 You can find more information at [nav.no/barn](https://nav.no/barn).
 
@@ -35,4 +30,3 @@ If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekda
 Yours sincerely,
 <br/>
 NAV Familie- og pensjonsytelser
-

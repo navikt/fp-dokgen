@@ -51,7 +51,6 @@
   "antallBarn": 2,
   "prematurDager": 1,
   "antallDødeBarn": 0,
-  "kreverSammenhengendeUttak": true,
   "perioder": [
     {
       "innvilget": true,

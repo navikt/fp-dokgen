@@ -48,7 +48,6 @@
   "flerbarnsdagerUtvidetUker": 0,
   "antallBarn": 1,
   "antallDødeBarn": 0,
-  "kreverSammenhengendeUttak": true,
   "morKanSøkeOmDagerFørFødsel": false,
   "prematurDager": 0,
   "perioder": [

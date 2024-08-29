@@ -263,15 +263,10 @@
 {{/eq}}
 
 {{#eq avslagsårsak "4025"}}
-{{#if kreverSammenhengendeUttak }}
-{{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}}.
-
-  Because you work in a full time position or more, you cannot take out parental benefit at the same time, but you may postpone the period.
-{{else}}
 {{>punkt}}You cannot combine parental benefit with work from {{periodeFom}} up to and including {{periodeTom}}.
 
   Because you work in a full time position or more, you cannot take out parental benefit at the same time.
-{{/if}}{{/eq}}
+{{/eq}}
 
 
 {{#in-array (array "4080" "4501") avslagsårsak}}
