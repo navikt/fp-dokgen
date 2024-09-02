@@ -38,22 +38,12 @@ Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dagar{{/eq}} igj
             {{~#gt disponibleDager 0}}Det er {{disponibleDager}}{{#gt disponibleDager 1}} dagar{{else}} dag{{/gt}} igjen av perioden med foreldrepengar.{{/gt}}
         {{~/if}}
         {{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}} Mor må vere i aktivitet for at du skal kunne ta ut {{disponibleDagerMedAktivitetskrav}} av desse dagane. I periodar mor ikkje er i aktivitet vil du miste dagar, sjølv om du ikkje tar ut foreldrepengar. {{~#gt disponibleDagerUtenAktivitetskrav 1}} Dei resterande {{disponibleDagerUtenAktivitetskrav}} dagane{{~else}} Den resterande dagen {{/gt}} kan du ta ut utan at mor er i aktivitet.
-            {{~#eq disponibleDager 1}}<br/>Den resterande dagen{{~else}}<br/>Alle {{disponibleDager}} dagane{{/eq}}
-            {{~#if kreverSammenhengendeUttak}} må du søkje om innan {{sisteDagAvSistePeriode}}.{{~else}} må vere tatt ut{{~#eq utenMinsterett false}} innan barnet fyller tre år{{~else}} før barnet er {{#eq dekningsgrad 80}}56{{else}}46{{/eq}} veker gamalt{{/eq}}, eller innan ein ny foreldrepengeperiode for eit nytt barn startar.{{/if}}
+            {{~#eq disponibleDager 1}}<br/>Den resterande dagen{{~else}}<br/>Alle {{disponibleDager}} dagane{{/eq}} må vere tatt ut{{~#eq utenMinsterett false}} innan barnet fyller tre år{{~else}} før barnet er {{#eq dekningsgrad 80}}56{{else}}46{{/eq}} veker gamalt{{/eq}}, eller innan ein ny foreldrepengeperiode for eit nytt barn startar.
         {{~/if}}
         {{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (eq disponibleDagerMedAktivitetskrav 0))}}
-            {{~#if kreverSammenhengendeUttak}}
-                {{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} Desse dagane{{~else}} Denne dagen{{/if}} må det søkjast om innan {{sisteDagAvSistePeriode}}.
-            {{~else}}
-                {{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} Desse dagane{{~else}} Denne dagen{{/if}} må vere tatt ut innan barnet fyller tre år eller innan ein ny foreldrepengeperiode for eit nytt barn startar.
-            {{~/if}}
+            {{~#if (or (gt disponibleDager 1) (gt disponibleFellesDager 1))}} Desse dagane{{~else}} Denne dagen{{/if}} må vere tatt ut innan barnet fyller tre år eller innan ein ny foreldrepengeperiode for eit nytt barn startar.
         {{~/if}}
-        {{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}}
-            {{~#eq true true}} Mor må vere i aktivitet for at du skal kunne ta ut {{#gt disponibleDagerMedAktivitetskrav 1}} desse dagane {{else}}denne dagen{{/gt}}. I periodar mor ikkje er i aktivitet vil du miste dagar, sjølv om du ikkje tar ut foreldrepengar.{{/eq}}
-            {{~#eq true true}}{{#gt disponibleDagerMedAktivitetskrav 1}} Desse dagane {{else}} Denne dagen {{/gt}}{{/eq}}må
-            {{~#if kreverSammenhengendeUttak}} søkjast om innan {{sisteDagAvSistePeriode}}.
-            {{~else}} vere tatt ut innan barnet fyller tre år, eller innan en ny foreldrepengeperiode for eit nytt barn startar.
-            {{~/if}}
+        {{~#if (and (eq disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}} Mor må vere i aktivitet for at du skal kunne ta ut {{#gt disponibleDagerMedAktivitetskrav 1}} desse dagane {{else}}denne dagen{{/gt}}. I periodar mor ikkje er i aktivitet vil du miste dagar, sjølv om du ikkje tar ut foreldrepengar.{{#gt disponibleDagerMedAktivitetskrav 1}} Desse dagane {{else}} Denne dagen {{/gt}}må vere tatt ut innan barnet fyller tre år, eller innan en ny foreldrepengeperiode for eit nytt barn startar.
         {{~/if}}
         {{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (eq disponibleDagerMedAktivitetskrav 0))}}
             {{~#gt disponibleDagerUtenAktivitetskrav 1}} Desse dagane{{~else}} Denne dagen{{/gt}} må vere tatt ut{{~#eq utenMinsterett false}} innan barnet fyller tre år{{~else}} før barnet er {{#eq dekningsgrad 80}}56{{else}}46{{/eq}} veker gamalt{{/eq}}, eller innan ein ny foreldrepengeperiode for eit nytt barn startar.

@@ -37,7 +37,6 @@
     "disponibleDager",
     "antallBarn",
     "antallDødeBarn",
-    "kreverSammenhengendeUttak",
     "morKanSøkeOmDagerFørFødsel",
     "perioder",
     "bruttoBeregningsgrunnlag",
@@ -392,9 +391,6 @@
     },
     "bruttoBeregningsgrunnlag": {
       "type": "number"
-    },
-    "kreverSammenhengendeUttak": {
-      "type": "boolean"
     },
     "morKanSøkeOmDagerFørFødsel": {
       "type": "boolean"

@@ -8,8 +8,7 @@
     "antallBarn",
     "klagefristUker",
     "lovhjemmelForAvslag",
-    "avslåttePerioder",
-    "kreverSammenhengendeUttak"
+    "avslåttePerioder"
   ],
   "$defs": {
     "avslåttPeriode": {
@@ -63,9 +62,6 @@
     },
     "lovhjemmelForAvslag": {
       "type": "string"
-    },
-    "kreverSammenhengendeUttak": {
-      "type": "boolean"
     },
     "gjelderMor": {
       "type": "boolean"

@@ -17,7 +17,6 @@
   "halvG": 50000,
   "klagefristUker": 6,
   "lovhjemmelForAvslag": "§ forvaltningsloven § 35",
-  "kreverSammenhengendeUttak": true,
   "gjelderMor": true,
   "avslåttePerioder": [
     {

@@ -5,8 +5,7 @@
   "type": "object",
   "required": [
     "felles",
-    "behandlingsÅrsak",
-    "kreverSammenhengendeUttak"
+    "behandlingsÅrsak"
   ],
   "properties": {
     "felles": {
@@ -17,9 +16,6 @@
     },
     "sisteUttaksdagMor": {
       "type": "string"
-    },
-    "kreverSammenhengendeUttak": {
-      "type": "boolean"
     }
   }
 }

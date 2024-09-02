@@ -261,15 +261,10 @@
 {{/eq}}
 
 {{#eq avslagsårsak "4025"}}
-{{#if kreverSammenhengendeUttak }}
-{{>punkt}}Du kan ikkje kombinere foreldrepengane med arbeid frå og med {{periodeFom}} til og med {{periodeTom}}.
-
-  Fordi du jobbar 100 prosent eller meir, kan du ikkje ta ut foreldrepengar ved sida av arbeidet, men du kan utsetje perioden.
-{{else}}
 {{>punkt}}Du kan ikkje kombinere foreldrepengane med arbeid frå og med {{periodeFom}} til og med {{periodeTom}}.
 
   Fordi du jobbar 100 prosent eller meir, kan du ikkje ta ut foreldrepengar ved sida av arbeidet.
-{{/if}}{{/eq}}
+{{/eq}}
 
 {{#in-array (array "4080" "4501") avslagsårsak}}
 {{>punkt}}Du kan ikkje kombinere foreldrepengane med arbeid frå og med {{periodeFom}} til og med {{periodeTom}} fordi du har søkt for seint.

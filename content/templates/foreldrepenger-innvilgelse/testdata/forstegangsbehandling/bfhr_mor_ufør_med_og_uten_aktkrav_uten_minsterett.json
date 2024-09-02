@@ -52,7 +52,6 @@
   "antallBarn": 1,
   "prematurDager": 0,
   "antallDødeBarn": 0,
-  "kreverSammenhengendeUttak": false,
   "morKanSøkeOmDagerFørFødsel": false,
   "utenMinsterett": true,
   "perioder": [
