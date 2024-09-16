@@ -18,7 +18,7 @@ Beregnet månedslønn basert på de tre siste, fulle månedene før foreldrepeng
 <hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
 #### Refusjon
 Skal dere betale lønn til  og ha refusjon fra NAV?
-<br>Ja<br>Refusjonsbeløp per måned<br>56 000 kr
+<br>Ja<br><br>Refusjonsbeløp per måned<br>56 000 kr
 Opphører refusjonen i løpet av perioden til ?<br>Ja<br>30. oktober 2024
 Vil det være endringer i refusjon i løpet av perioden til ?
 <br>Ja

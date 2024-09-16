@@ -17,11 +17,10 @@
     "kontaktperson"
   ],
   "$defs": {
-    "refusjonsperiode": {
+    "refusjonsendringPeriode": {
       "type": "object",
       "required": [
         "fom",
-        "tom",
         "beloep"
       ],
       "properties": {
@@ -40,9 +39,9 @@
       "type": "object",
       "required": [
         "fom",
-        "tom",
         "naturalytelseType",
-        "beloep"
+        "beloep",
+        "erBortfalt"
       ],
       "properties": {
         "fom": {
@@ -116,10 +115,10 @@
     "refusjonOpphørsdato": {
       "type": "string"
     },
-    "endringIrefusjonsperioder": {
+    "refusjonsendringer": {
       "type": "array",
       "items": {
-        "$ref": "#/$defs/refusjonsperiode"
+        "$ref": "#/$defs/refusjonsendringPeriode"
       }
     },
     "ingenBortfaltNaturalytelse": {
