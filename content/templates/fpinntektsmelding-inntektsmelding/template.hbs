@@ -24,7 +24,7 @@ Beregnet månedslønn basert på de tre siste, fulle månedene før {{> fpinntek
 <div style="break-inside: avoid; page-break-inside: avoid">
 <hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
 
-#### Refusjon
+#### Utbetaling og refusjon
 
 Skal dere betale lønn til {{fornavnSøker}} og ha refusjon fra NAV?
 {{~#if refusjonsbeløp}}
@@ -80,7 +80,7 @@ Vil det være endringer i refusjon i løpet av perioden til {{fornavnSøker}}?
 
 #### Naturalytelser
 {{~#if naturalytelser}}
-Er det bortfall av naturalytelser i perioden til {{fornavnSøker}}?
+Har {{fornavnSøker}} naturalytelser som faller bort ved fraværet?
 {{~#if ingenBortfaltNaturalytelse}}<br>Nei{{else}}<br>Ja{{/if}}
 {{~#each naturalytelser}}
 {{~#if erBortfalt}}
@@ -123,9 +123,7 @@ Er det bortfall av naturalytelser i perioden til {{fornavnSøker}}?
 <div style="break-inside: avoid; page-break-inside: avoid">
 <hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
 
-#### Gjenopptatte naturalytelser
-
-Er det gjenopptatte naturalytelser  i perioden til {{fornavnSøker}}?
+Vil {{fornavnSøker}} ha naturalytelser som kommer tilbake i løpet av fraværet?
 {{~#if ingenGjenopptattNaturalytelse}}<br>Nei{{else}}<br>Ja
 <br>
 <br>
