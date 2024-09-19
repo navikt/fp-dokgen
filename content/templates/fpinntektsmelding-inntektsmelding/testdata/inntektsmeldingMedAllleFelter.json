@@ -1,6 +1,7 @@
 {
   "avsenderSystem": "navn.no/arbeidsgiverportalen",
-  "navnSøker": "Test Tester Testesen",
+  "navnSøker": "Gro Gror Testesen",
+  "fornavnSøker": "Gro",
   "personnummer": "*********5298",
   "ytelsetype": "FORELDREPENGER",
   "arbeidsgiverIdent": "*****4556",
@@ -14,7 +15,7 @@
   "opprettetTidspunkt": "31. mai 2024 kl.12.20",
   "refusjonsbeløp": 56000.00,
   "refusjonOpphørsdato": "30. oktober 2024",
-  "endringIrefusjonsperioder": [
+  "refusjonsendringer": [
     {
       "fom": "30. november 2024",
       "tom": "2. desember 2024",

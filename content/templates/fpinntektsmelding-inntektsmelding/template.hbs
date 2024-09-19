@@ -13,7 +13,7 @@ Den ansatte
 
 <hr style="color:#A9A9A9; margin-top:7mm; margin-bottom:1mm;">
 
-#### Første dag med foreldrepenger
+#### Første dag med {{> fpinntektsmelding-inntektsmelding/ytelseNavn}}
 {{startDato}}
 
 <hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
@@ -24,11 +24,11 @@ Beregnet månedslønn basert på de tre siste, fulle månedene før {{> fpinntek
 <div style="break-inside: avoid; page-break-inside: avoid">
 <hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
 
-#### Refusjon
+#### Utbetaling og refusjon
 
 Skal dere betale lønn til {{fornavnSøker}} og ha refusjon fra NAV?
 {{~#if refusjonsbeløp}}
-<br>Ja<br>Refusjonsbeløp per måned<br>{{thousand-seperator-double refusjonsbeløp}} kr
+<br>Ja<br><br>Refusjonsbeløp per måned<br>{{thousand-seperator-double refusjonsbeløp}} kr
 {{else}}<br>Nei
 {{/if}}
 Opphører refusjonen i løpet av perioden til {{fornavnSøker}}?
@@ -37,9 +37,9 @@ Opphører refusjonen i løpet av perioden til {{fornavnSøker}}?
 <br>Nei
 {{/if}}
 Vil det være endringer i refusjon i løpet av perioden til {{fornavnSøker}}?
-{{~#if endringIrefusjonsperioder.length}}
+{{~#if refusjonsendringer.length}}
 <br>Ja
-{{~#each endringIrefusjonsperioder}}
+{{~#each refusjonsendringer}}
 {{~#if @first}}
 <br>
 <br>
@@ -64,7 +64,7 @@ Vil det være endringer i refusjon i løpet av perioden til {{fornavnSøker}}?
     <tbody>
     <tr>
     <td>{{fom}}</td>
-    <td>{{tom}}</td>
+    <td>{{#if tom}}{{tom}}{{else}}Ut perioden{{/if}}</td>
     <td>{{thousand-seperator-double beloep}}</td>
 </tr>
 </tbody>
@@ -80,7 +80,7 @@ Vil det være endringer i refusjon i løpet av perioden til {{fornavnSøker}}?
 
 #### Naturalytelser
 {{~#if naturalytelser}}
-Er det bortfall av naturalytelser i perioden til {{fornavnSøker}}?
+Har {{fornavnSøker}} naturalytelser som faller bort ved fraværet?
 {{~#if ingenBortfaltNaturalytelse}}<br>Nei{{else}}<br>Ja{{/if}}
 {{~#each naturalytelser}}
 {{~#if erBortfalt}}
@@ -110,7 +110,7 @@ Er det bortfall av naturalytelser i perioden til {{fornavnSøker}}?
 <tbody>
 <tr>
     <td>{{fom}}</td>
-    <td>{{tom}}</td>
+    <td>{{#if tom}}{{tom}}{{else}}Ut perioden{{/if}}</td>
     <td>{{naturalytelseType}}</td>
     <td>{{thousand-seperator-double beloep}}</td>
 </tr>
@@ -123,9 +123,7 @@ Er det bortfall av naturalytelser i perioden til {{fornavnSøker}}?
 <div style="break-inside: avoid; page-break-inside: avoid">
 <hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
 
-#### Gjenopptatte naturalytelser
-
-Er det gjenopptatte naturalytelser  i perioden til {{fornavnSøker}}?
+Vil {{fornavnSøker}} ha naturalytelser som kommer tilbake i løpet av fraværet?
 {{~#if ingenGjenopptattNaturalytelse}}<br>Nei{{else}}<br>Ja
 <br>
 <br>
@@ -154,7 +152,7 @@ Er det gjenopptatte naturalytelser  i perioden til {{fornavnSøker}}?
 <tbody>
     <tr>
         <td>{{fom}}</td>
-        <td>{{tom}}</td>
+        <td>{{#if tom}}{{tom}}{{else}}Ut perioden{{/if}}</td>
         <td>{{naturalytelseType}}</td>
         <td>{{thousand-seperator-double beloep}}</td>
     </tr>
