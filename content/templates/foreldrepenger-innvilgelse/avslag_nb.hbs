@@ -198,9 +198,7 @@
   Hvis mor søker om foreldrepenger og i tillegg arbeider, studerer eller er i annen aktivitet, kan du ha rett til foreldrepenger. Dette kan du lese mer om på [nav.no/familie](https://nav.no/familie).
 {{/eq}}{{/case}}
 {{#case "4087"}}
-{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er medlem i folketrygden.
-
-  Du har ikke oppholdstillatelse i Norge i denne perioden.
+{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du ikke er medlem i folketrygden. {{#if medlemskapOpphørsårsak}}{{#switch medlemskapOpphørsårsak}}{{#case "1020"}}I denne perioden er du omfattet av trygdeordningen i et annet land.{{/case}}{{#case "1021"}}Ifølge folkeregisteret har du flyttet fra Norge i denne perioden.{{/case}}{{#case "1023"}}Du har ikke oppholdstillatelse i Norge i denne perioden.{{/case}}{{#case "1024"}}Vi har ikke opplysninger om at du jobber eller har familie som forsørger deg i Norge. Det var derfor ikke dokumentert at du har rett til opphold etter EØS-avtalen.{{/case}}{{#case "1025"}}I denne perioden regnes du ikke som medlem fordi du oppholder deg mer i utlandet enn i Norge.{{/case}}{{/switch}}{{/if}}
 {{/case}}
 {{#case "4104"}}
 {{>punkt}}Du har ikke rett til foreldrepenger fra {{periodeFom}} fordi foreldrepenger for nytt barn starter samme dag.

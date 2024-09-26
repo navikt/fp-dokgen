@@ -198,9 +198,7 @@
   If the mother applies for parental benefit and, in addition, is working, studying or is in some other activity, you may be entitled to parental benefit. You can read more about this at [nav.no/familie](https://nav.no/familie).
 {{/eq}}{{/case}}
 {{#case "4087"}}
-{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are not a member of the Norwegian National Insurance Scheme.
-
-  You do not have the right to reside in Norway during this period.
+{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are not a member of the Norwegian National Insurance Scheme. {{#if medlemskapOpphørsårsak}}{{#switch medlemskapOpphørsårsak}}{{#case "1020"}}You are covered by the social security system in another country.{{/case}}{{#case "1021"}}According to the National Registry, you have moved from Norway.{{/case}}{{#case "1023"}}You do not have the right to reside in Norway.{{/case}}{{#case "1024"}}We do not have any information proving that you work or have family that supports you in Norway. It is therefore not documented that you are entitled to stay in Norway pursuant to the EEA Agreement.{{/case}}{{#case "1025"}}You are not considered a member because you spend more time abroad than in Norway.{{/case}}{{/switch}}{{/if}}
 {{/case}}
 {{#case "4104"}}
 {{>punkt}}You are not entitled to parental benefit from {{periodeFom}} because parental benefit for a new child starts the same day.
