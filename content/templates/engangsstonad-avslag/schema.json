@@ -43,6 +43,9 @@
     },
     "avslagMedlemskap": {
       "type": "string"
+    },
+    "medlemskapFom": {
+      "type": "string"
     }
   }
 }
