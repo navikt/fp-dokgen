@@ -1,169 +1,70 @@
+<div class="align"> <p> Innsendt: {{opprettetTidspunkt}}</p></div>
+<br>
+<br>
+<br>
+
 # Inntektsmelding {{> fpinntektsmelding-inntektsmelding/ytelseNavn}}
-Innsendt: {{opprettetTidspunkt}}. Fra {{arbeidsgiverNavn}}, org nr. {{arbeidsgiverIdent}}
-<br>
-<br>
 
-#### Arbeidsgiver og den ansatte
+**Arbeidsgiver**
+<br>{{arbeidsgiverNavn}}, org.nr. {{arbeidsgiverIdent}}
 
-Kontaktperson fra bedriften
-<br>{{kontaktperson.navn}}, {{kontaktperson.telefonnummer}}
-
-Den ansatte
+**Den ansatte**
 <br>{{navnSøker}}, personnummer {{personnummer}}
 
-<hr style="color:#A9A9A9; margin-top:7mm; margin-bottom:1mm;">
+**Kontaktperson fra bedriften**
+<br>{{kontaktperson.navn}}, {{kontaktperson.telefonnummer}}
+
+<hr>
 
 #### Første dag med {{> fpinntektsmelding-inntektsmelding/ytelseNavn}}
 {{startDato}}
 
-<hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
+<hr>
 
-#### Månedslønn
-Beregnet månedslønn basert på de tre siste, fulle månedene før {{> fpinntektsmelding-inntektsmelding/ytelseNavn}}<br>{{thousand-seperator-double månedInntekt}} kr
+#### Beregnet Månedslønn
+{{#if endringsarsaker.length}}Endret til: {{thousand-seperator-double månedInntekt}} kr
+<br><br>**Hva er årsaken til endringen?**
+{{~#each endringsarsaker}}
+* {{arsak}} {{#if (and fom tom)}}: {{fom}} - {{tom}} {{else if fom}}: fra og med {{fom}} {{#if bleKjentFra}} , ble kjent fra og med {{bleKjentFra}}{{/if}}{{else}}{{/if}}
+{{/each}}
+{{else}}{{thousand-seperator-double månedInntekt}} kr
+{{/if}}
 
-<div style="break-inside: avoid; page-break-inside: avoid">
-<hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
+<hr>
 
 #### Utbetaling og refusjon
-
-Skal dere betale lønn til {{fornavnSøker}} og ha refusjon fra NAV?
-{{~#if refusjonsbeløp}}
-<br>Ja<br><br>Refusjonsbeløp per måned<br>{{thousand-seperator-double refusjonsbeløp}} kr
+**Betaler dere {{fornavnSøker}} lønn under fraværet og krever refusjon**?
+{{~#if refusjonsendringer}}
+<br>Ja, men kun deler av perioden eller varierende beløp<br><br>**Refusjonsbeløp dere krever per måned**
+{{~#each refusjonsendringer}}
+- Fra og med {{fom}}: {{thousand-seperator-double beloep}} kr
+{{/each}}
+{{else if refusjonsbeløp}}<br>Ja, likt beløp i hele perioden<br><br>**Refusjonsbeløp dere krever per måned**<br>{{thousand-seperator-double refusjonsbeløp}} kr
 {{else}}<br>Nei
 {{/if}}
-Opphører refusjonen i løpet av perioden til {{fornavnSøker}}?
-{{~#if refusjonOpphørsdato}}<br>Ja<br>{{refusjonOpphørsdato}}
-{{else}}
-<br>Nei
-{{/if}}
-Vil det være endringer i refusjon i løpet av perioden til {{fornavnSøker}}?
-{{~#if refusjonsendringer.length}}
-<br>Ja
-{{~#each refusjonsendringer}}
-{{~#if @first}}
-<br>
-<br>
-<table style="width:100%">
-<thead>
-<tr>
-    <th style="width: 33%">Fra</th>
-    <th style="width: 33%">Til</th>
-    <th style="width: 33%">Refusjonsbeløp</th>
-    </tr>
-</thead>
-</table>
-{{/if}}
-<table style="width:100%">
-<thead>
-<tr>
-    <th style="width: 33%"></th>
-    <th style="width: 33%"></th>
-    <th style="width: 33%"></th>
-</tr>
-</thead>
-    <tbody>
-    <tr>
-    <td>{{fom}}</td>
-    <td>{{#if tom}}{{tom}}{{else}}Ut perioden{{/if}}</td>
-    <td>{{thousand-seperator-double beloep}}</td>
-</tr>
-</tbody>
-</table>
-{{/each}}
-{{else}}
-<br>Nei
-{{/if}}
-</div>
 
-<div style="break-inside: avoid; page-break-inside: avoid">
-<hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
+<hr>
 
 #### Naturalytelser
 {{~#if naturalytelser}}
-Har {{fornavnSøker}} naturalytelser som faller bort ved fraværet?
-{{~#if ingenBortfaltNaturalytelse}}<br>Nei{{else}}<br>Ja{{/if}}
+**Har {{fornavnSøker}} naturalytelser som faller bort ved fraværet?**
+{{~#if ingenBortfaltNaturalytelse}}<br>Nei{{else}}<br>Ja<br><br>**Naturalytelser som faller bort**{{/if}}
 {{~#each naturalytelser}}
 {{~#if erBortfalt}}
-{{~#if @first}}
-<br>
-<br>
-<table style="width:100%">
-<thead>
-    <tr>
-        <th style="width: 20%">Fra</th>
-        <th style="width: 20%">Til</th>
-        <th style="width: 40%">Type</th>
-        <th style="width: 20%">Beløp</th>
-    </tr>
-    </thead>
-</table>
-{{/if}}
-<table style="width:100%">
-<thead>
-<tr>
-    <th style="width: 20%"></th>
-    <th style="width: 20%"></th>
-    <th style="width: 40%"></th>
-    <th style="width: 20%"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>{{fom}}</td>
-    <td>{{#if tom}}{{tom}}{{else}}Ut perioden{{/if}}</td>
-    <td>{{naturalytelseType}}</td>
-    <td>{{thousand-seperator-double beloep}}</td>
-</tr>
-</tbody>
-</table>
+* {{naturalytelseType}}, verdi {{thousand-seperator-double beloep}} kr: fra og med {{fom}}
 {{/if}}
 {{/each}}
-</div>
-
-<div style="break-inside: avoid; page-break-inside: avoid">
-<hr style="color:#A9A9A9; margin-top: 7mm; margin-bottom: 1mm">
-
-Vil {{fornavnSøker}} ha naturalytelser som kommer tilbake i løpet av fraværet?
+<br>**Vil {{fornavnSøker}} ha naturalytelser som kommer tilbake i løpet av fraværet?**
 {{~#if ingenGjenopptattNaturalytelse}}<br>Nei{{else}}<br>Ja
-<br>
-<br>
-<table style="width:100%">
-    <thead>
-    <tr>
-        <th style="width: 20%">Fra</th>
-        <th style="width: 20%">Til</th>
-        <th style="width: 40%">Type</th>
-        <th style="width: 20%">Beløp</th>
-    </tr>
-    </thead>
-</table>
-{{/if}}
+<br><br>**Naturalytelser som kommer tilbake**{{/if}}
 {{~#each naturalytelser}}
 {{~#eq erBortfalt false}}
-<table style="width:100%">
-<thead>
-    <tr>
-        <th style="width: 20%"></th>
-        <th style="width: 20%"></th>
-        <th style="width: 40%"></th>
-        <th style="width: 20%"></th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>{{fom}}</td>
-        <td>{{#if tom}}{{tom}}{{else}}Ut perioden{{/if}}</td>
-        <td>{{naturalytelseType}}</td>
-        <td>{{thousand-seperator-double beloep}}</td>
-    </tr>
-</tbody>
-</table>
+* {{naturalytelseType}}, verdi {{thousand-seperator-double beloep}} kr: fra og med {{fom}}
 {{/eq}}
 {{/each}}
 {{else}}
 Nei
 {{/if}}
-</div>
 
 
 

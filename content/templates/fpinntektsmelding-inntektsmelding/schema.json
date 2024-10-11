@@ -27,9 +27,6 @@
         "fom": {
           "type": "string"
         },
-        "tom": {
-          "type": "string"
-        },
         "beloep": {
           "type": "number"
         }
@@ -47,9 +44,6 @@
         "fom": {
           "type": "string"
         },
-        "tom": {
-          "type": "string"
-        },
         "naturalytelseType": {
           "type": "string"
         },
@@ -58,6 +52,26 @@
         },
         "erBortfalt": {
           "type": "boolean"
+        }
+      }
+    },
+    "endringsarsak" : {
+      "type": "object",
+      "required": [
+        "arsak"
+      ],
+      "properties": {
+        "arsak": {
+          "type": "string"
+        },
+        "fom": {
+          "type": "string"
+        },
+        "tom": {
+          "type": "string"
+        },
+        "bleKjentFra": {
+          "type": "string"
         }
       }
     }
@@ -112,9 +126,6 @@
     "refusjonsbeløp": {
       "type": "number"
     },
-    "refusjonOpphørsdato": {
-      "type": "string"
-    },
     "refusjonsendringer": {
       "type": "array",
       "items": {
@@ -131,6 +142,12 @@
       "type": "array",
       "items": {
         "$ref": "#/$defs/naturalytelse"
+      }
+    },
+    "endringsarsaker": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/endringsarsak"
       }
     }
   }

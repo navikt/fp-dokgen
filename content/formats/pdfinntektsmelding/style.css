@@ -1,5 +1,4 @@
 /* WARNING: Uses CSS 2.1 */
-
 * {
     font-family: "Source Sans Pro", sans-serif !important;
     color: #000000;
@@ -10,9 +9,6 @@ html {
     height:100%;
 }
 
-#header {
-    margin: 0
-}
 
 #footer {
     position: fixed;
@@ -24,6 +20,13 @@ html {
     font-size: 10px;
 }
 
+#content {
+    margin-top: 48px;
+    margin-bottom: 74px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
 #pagenumber:before {
     content: counter(page);
 }
@@ -32,40 +35,36 @@ html {
     content: counter(pages);
 }
 
-#ny_nav_logo {
-    margin: auto;
-    padding: 0 0 10mm 0;
-    position: absolute;
-    right: 10mm;
-}
-
 h1 {
-    font-size: 25px;
-    margin-bottom: -5mm;
-    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 22px;
-    margin-bottom: 3mm;
+    font-size: 13px;
+    line-height: 6px;
+    font-weight: bold;
 }
 
 h3 {
-    font-size: 18px;
-    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 6px;
+    font-weight: bold;
 }
 
 h4 {
-    font-size: 16px;
-    margin-bottom: -2.5mm;
+    font-size: 11px;
+    line-height: 6px;
+    font-weight: bold;
 }
 
 p {
-    font-size: 14px;
+    font-size: 11px !important;
 }
 
 tr {
-    font-size: 14px;
+    font-size: 11px;
 }
 
 table {
@@ -80,6 +79,31 @@ table {
     page-break-before: always;
 }
 
-li {
-    font-size: 14px;
+ul{
+    margin-left: -30px;
+    content: ". ";
+}
+
+li{
+    line-height: 1em;
+    padding: 0;
+    margin:0;
+    font-size: 11px;
+}
+#ny_nav_logo {
+    margin-bottom: 55px;
+    margin-left: 64px;
+}
+
+.align {
+    margin-top: -64px;
+    text-align: right;
+}
+hr{
+    height: 1px;
+    border:0;
+    border-top: 1px solid gray;
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+    padding: 0;
 }
