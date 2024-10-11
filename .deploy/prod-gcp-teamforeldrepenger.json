@@ -3,6 +3,7 @@
   "maxReplicas": "3",
   "consumers": [
     "foreldrepengesoknad-api",
-    "fpinntektsmelding"
+    "fpinntektsmelding",
+    "k9-inntektsmelding"
   ]
 }
