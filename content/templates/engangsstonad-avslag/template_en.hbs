@@ -54,7 +54,6 @@ You have already received the parental benefit and therefore, your application h
     {{/case}}
     {{#case "SØKT_FOR_SENT"}}
 You are not entitled to a lump-sum grant because you did not apply in time. You must apply within six months of the birth or when you assumed care of your {{#eq antallBarn 1}}child{{else}}children{{/eq}}.
-{{#if felles.fritekst}}<br/><br/><p style="white-space: pre-wrap">{{felles.fritekst}}</p><br/>{{/if}}
     {{/case}}
     {{#case "OMSORGSOVERTAKELSE_ETTER_56_UKER"}}
 You are not entitled to a lump-sum grant because you have not assumed care of the {{#eq antallBarn 1}}child{{else}}children{{/eq}} within 56 weeks after the {{#if gjelderFødsel}}birth{{else }}adoption{{/if}}.
@@ -94,6 +93,11 @@ We have turned down your application because we have not received the documentat
 If you send us the documentation within six weeks, we will process your case again. You will not need to submit a new application.
     {{/case}}
 {{/switch}}
+
+{{~#if felles.fritekst}}
+{{felles.fritekst}}
+{{/if~}}
+
 {{#each vilkårTyper}}
     {{#eq this "FPVK1_4"}}
 This decision has been made pursuant to section 14-17 of the National Insurance Act.
