@@ -40,5 +40,7 @@ spec:
       rules:
     {{#each consumers as |app|}}
         - application: {{app}}
+        - namespace: {{namespace}}
+        - cluster: {{cluster}}
     {{/each}}
   {{/if}}

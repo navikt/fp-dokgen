@@ -2,8 +2,7 @@
   "minReplicas": "2",
   "maxReplicas": "3",
   "consumers": [
-    "foreldrepengesoknad-api",
-    "fpinntektsmelding",
-    "k9-inntektsmelding"
-  ]
+    { "app": "foreldrepengesoknad-api", "namespace": "teamforeldrepenger", "cluster": "prod-gcp" },
+    { "app": "fpinntektsmelding", "namespace": "teamforeldrepenger", "cluster": "prod-gcp" },
+    { "app": "k9-inntektsmelding", "namespace": "k9saksbehandling", "cluster": "prod-gcp" } ]
 }
