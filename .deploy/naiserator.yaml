@@ -38,7 +38,7 @@ spec:
   accessPolicy:
     inbound:
       rules:
-    {{#each consumers as |app|}}
+    {{#each consumers}}
         - application: {{app}}
         - namespace: {{namespace}}
         - cluster: {{cluster}}
