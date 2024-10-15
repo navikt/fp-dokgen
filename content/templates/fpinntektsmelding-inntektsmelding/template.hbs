@@ -25,7 +25,7 @@
 {{#if endringsarsaker.length}}Endret til: {{thousand-seperator-double månedInntekt}} kr
 <br><br>**Hva er årsaken til endringen?**
 {{~#each endringsarsaker}}
-* {{arsak}} {{#if (and fom tom)}}: {{fom}} - {{tom}} {{else if fom}}: fra og med {{fom}} {{#if bleKjentFra}} , ble kjent fra og med {{bleKjentFra}}{{/if}}{{else}}{{/if}}
+* <span>{{arsak}} {{#if (and fom tom)}}: {{fom}} - {{tom}} {{else if fom}}: fra og med {{fom}} {{#if bleKjentFra}} , ble kjent fra og med {{bleKjentFra}}{{/if}}{{else}}{{/if}}</span>
 {{/each}}
 {{else}}{{thousand-seperator-double månedInntekt}} kr
 {{/if}}
@@ -37,7 +37,7 @@
 {{~#if refusjonsendringer}}
 <br>Ja, men kun deler av perioden eller varierende beløp<br><br>**Refusjonsbeløp dere krever per måned**
 {{~#each refusjonsendringer}}
-- Fra og med {{fom}}: {{thousand-seperator-double beloep}} kr
+* <span>Fra og med {{fom}}: {{thousand-seperator-double beloep}} kr</span>
 {{/each}}
 {{else if refusjonsbeløp}}<br>Ja, likt beløp i hele perioden<br><br>**Refusjonsbeløp dere krever per måned**<br>{{thousand-seperator-double refusjonsbeløp}} kr
 {{else}}<br>Nei
@@ -51,7 +51,7 @@
 {{~#if ingenBortfaltNaturalytelse}}<br>Nei{{else}}<br>Ja<br><br>**Naturalytelser som faller bort**{{/if}}
 {{~#each naturalytelser}}
 {{~#if erBortfalt}}
-* {{naturalytelseType}}, verdi {{thousand-seperator-double beloep}} kr: fra og med {{fom}}
+* <span>{{naturalytelseType}}, verdi {{thousand-seperator-double beloep}} kr: fra og med {{fom}}</span>
 {{/if}}
 {{/each}}
 <br>**Vil {{fornavnSøker}} ha naturalytelser som kommer tilbake i løpet av fraværet?**
@@ -59,7 +59,7 @@
 <br><br>**Naturalytelser som kommer tilbake**{{/if}}
 {{~#each naturalytelser}}
 {{~#eq erBortfalt false}}
-* {{naturalytelseType}}, verdi {{thousand-seperator-double beloep}} kr: fra og med {{fom}}
+* <span>{{naturalytelseType}}, verdi {{thousand-seperator-double beloep}} kr: fra og med {{fom}}</span>
 {{/eq}}
 {{/each}}
 {{else}}
