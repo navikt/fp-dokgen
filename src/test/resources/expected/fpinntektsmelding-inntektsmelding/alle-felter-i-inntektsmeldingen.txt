@@ -6,22 +6,22 @@
 **Arbeidsgiver**
 <br>Arbeidsgiver 1, org.nr. *****4556
 **Den ansatte**
-<br>Gro Gror Testesen, personnummer *********5298
+<br>Gro Gror Testesen, f.nr. *********5298
 **Kontaktperson fra bedriften**
-<br>Navn kontaktperson, 22 22 22 22
+<br>Navn kontaktperson, tlf. 22 22 22 22
 <hr>
-#### Første dag med foreldrepenger
+## Første dag med foreldrepenger
 4. juni 2024
 <hr>
-#### Beregnet Månedslønn
+## Beregnet månedslønn
 56 000,5 kr
 <hr>
-#### Utbetaling og refusjon
+## Utbetaling og refusjon
 **Betaler dere Gro lønn under fraværet og krever refusjon**?
 <br>Ja, men kun deler av perioden eller varierende beløp<br><br>**Refusjonsbeløp dere krever per måned**
 * <span>Fra og med 30. november 2024: 45 000 kr</span>
 <hr>
-#### Naturalytelser
+## Naturalytelser
 **Har Gro naturalytelser som faller bort ved fraværet?**<br>Ja<br><br>**Naturalytelser som faller bort**
 * <span>Rentefordel lån, verdi 5 000 kr: fra og med 31. mai 2024</span>
 <br>**Vil Gro ha naturalytelser som kommer tilbake i løpet av fraværet?**<br>Ja
