@@ -54,7 +54,6 @@ Du har allereie fått utbetalt foreldrepengar. Derfor er søknaden din avslått.
     {{/case}}
     {{#case "SØKT_FOR_SENT"}}
 Du har ikkje rett til eingongsstønad fordi du søkte for seint. Du må søkje innan seks månader etter {{#if gjelderFødsel}}fødselen{{else}}omsorgsovertakinga{{/if}}.
-{{#if felles.fritekst}}<br/><br/><p style="white-space: pre-wrap">{{felles.fritekst}}</p><br/>{{/if}}
     {{/case}}
     {{#case "OMSORGSOVERTAKELSE_ETTER_56_UKER"}}
 Du har ikkje rett til eingongsstønad fordi du ikkje tok over omsorga for {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} innan 56 veker etter {{#if gjelderFødsel}}fødselen{{else}}adopsjonen{{/if}}.
@@ -94,6 +93,11 @@ Vi har avslått søknaden din fordi vi ikkje har fått dokumentasjonen vi har be
 Dersom du sender oss dokumentasjonen innan seks veker, behandlar vi saka di på nytt. Du treng ikkje sende ny søknad.
     {{/case}}
 {{/switch}}
+
+{{~#if felles.fritekst}}
+{{felles.fritekst}}
+{{/if~}}
+
 {{#each vilkårTyper}}
     {{#eq this "FPVK1_4"}}
 Vedtaket er gjort etter folketrygdlova § 14-17.
