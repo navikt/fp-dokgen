@@ -33,7 +33,7 @@
 <hr>
 
 ## Utbetaling og refusjon
-**Betaler dere {{fornavnSøker}} lønn under fraværet og krever refusjon**?
+**Betaler dere den ansatte lønn under fraværet og krever refusjon**?
 {{~#if refusjonsendringer}}
 <br>Ja, men kun deler av perioden eller varierende beløp<br><br>**Refusjonsbeløp dere krever per måned**
 {{~#each refusjonsendringer}}
@@ -46,24 +46,23 @@
 <hr>
 
 ## Naturalytelser
-{{~#if naturalytelser}}
-**Har {{fornavnSøker}} naturalytelser som faller bort ved fraværet?**
-{{~#if ingenBortfaltNaturalytelse}}<br>Nei{{else}}<br>Ja<br><br>**Naturalytelser som faller bort**{{/if}}
+**Har den ansatte naturalytelser som faller bort ved fraværet?**
+{{~#if ingenBortfaltNaturalytelse}}<br>Nei{{else}}<br>Ja<br><br>**Naturalytelser som faller bort**
 {{~#each naturalytelser}}
 {{~#if erBortfalt}}
 * <span>{{naturalytelseType}}, verdi {{thousand-seperator-double beloep}} kr: fra og med {{fom}}</span>
 {{/if}}
 {{/each}}
-<br>**Vil {{fornavnSøker}} ha naturalytelser som kommer tilbake i løpet av fraværet?**
-{{~#if ingenGjenopptattNaturalytelse}}<br>Nei{{else}}<br>Ja
-<br><br>**Naturalytelser som kommer tilbake**{{/if}}
+{{~#eq ingenGjenopptattNaturalytelse false}}
+<br>**Vil den ansatte ha naturalytelser som kommer tilbake i løpet av fraværet?**
+<br>Ja
+<br><br>**Naturalytelser som kommer tilbake**
 {{~#each naturalytelser}}
 {{~#eq erBortfalt false}}
 * <span>{{naturalytelseType}}, verdi {{thousand-seperator-double beloep}} kr: fra og med {{fom}}</span>
 {{/eq}}
 {{/each}}
-{{else}}
-Nei
+{{/eq}}
 {{/if}}
 
 
