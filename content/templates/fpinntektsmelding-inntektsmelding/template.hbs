@@ -34,14 +34,19 @@
 
 ## Utbetaling og refusjon
 **Betaler dere den ansatte lønn under fraværet og krever refusjon**?
-{{~#if refusjonsendringer}}
+{{~#gt antallRefusjonsperioder 0}}
+{{~#eq antallRefusjonsperioder 1}}
+{{~#each refusjonsendringer}}
+<br>Ja, likt beløp i hele perioden<br><br>**Refusjonsbeløp dere krever per måned**<br>{{thousand-seperator-double beloep}}kr
+{{/each}}
+{{else}}
 <br>Ja, men kun deler av perioden eller varierende beløp<br><br>**Refusjonsbeløp dere krever per måned**
 {{~#each refusjonsendringer}}
 * <span>Fra og med {{fom}}: {{thousand-seperator-double beloep}} kr</span>
-{{/each}}
-{{else if refusjonsbeløp}}<br>Ja, likt beløp i hele perioden<br><br>**Refusjonsbeløp dere krever per måned**<br>{{thousand-seperator-double refusjonsbeløp}} kr
-{{else}}<br>Nei
-{{/if}}
+{{/each}}{{/eq}}
+{{else}}
+<br>Nei
+{{/gt}}
 
 <hr>
 

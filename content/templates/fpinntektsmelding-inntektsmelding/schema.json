@@ -13,7 +13,8 @@
     "startDato",
     "månedInntekt",
     "opprettetTidspunkt",
-    "kontaktperson"
+    "kontaktperson",
+    "antallRefusjonsperioder"
   ],
   "$defs": {
     "refusjonsendringPeriode": {
@@ -119,9 +120,6 @@
     "opprettetTidspunkt": {
       "type": "string"
     },
-    "refusjonsbeløp": {
-      "type": "number"
-    },
     "refusjonsendringer": {
       "type": "array",
       "items": {
@@ -145,6 +143,9 @@
       "items": {
         "$ref": "#/$defs/endringsarsak"
       }
+    },
+    "antallRefusjonsperioder": {
+      "type": "number"
     }
   }
 }

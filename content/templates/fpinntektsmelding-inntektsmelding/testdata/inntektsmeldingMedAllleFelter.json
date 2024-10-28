@@ -13,7 +13,6 @@
   "startDato":"4. juni 2024",
   "månedInntekt": 56000.50,
   "opprettetTidspunkt": "31. mai 2024 kl.12.20",
-  "refusjonsbeløp": 56000.00,
   "refusjonsendringer": [
     {
       "fom": "30. november 2024",
@@ -37,5 +36,6 @@
       "beloep": 2001.99,
       "erBortfalt": false
     }
-  ]
+  ],
+  "antallRefusjonsperioder": 1
 }
