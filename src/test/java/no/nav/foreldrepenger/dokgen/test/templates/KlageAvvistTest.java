@@ -44,12 +44,12 @@ class KlageAvvistTest {
     @Test
     void klage_avvist_påklagd_vedtak() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_paklagd_vedtak");
-        assertThat(content).contains("NAV har avvist klagen din på vedtaket om foreldrepenger");
+        assertThat(content).contains("Nav har avvist klagen din på vedtaket om foreldrepenger");
     }
 
     @Test
     void klage_avvist_ikke_påklagd_vedtak() {
         var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_ikke_paklagd_vedtak");
-        assertThat(content).contains("NAV har avvist klagen din på foreldrepenger");
+        assertThat(content).contains("Nav har avvist klagen din på foreldrepenger");
     }
 }

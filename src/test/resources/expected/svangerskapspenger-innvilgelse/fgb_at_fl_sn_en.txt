@@ -4,9 +4,9 @@ Date: 4. mai 2021
 <br>
 <br>
 <br>
-# NAV has approved your application for pregnancy benefit
+# Nav has approved your application for pregnancy benefit
 <p style="color:gray">
-NAV's case number: 123456789
+Nav's case number: 123456789
 <br/>
 Name: Dolly Duck
 <br/>
@@ -54,7 +54,7 @@ Your pregnancy benefit are calculated to 600 000 kroner a year, which is six ti
 The calculation is performed according to the National Insurance Act § 14-4.
 <br/>
 ##### You must notify any changes
-You must notify NAV immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt).
+You must notify Nav immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
 <br/>
 ##### You have the right to appeal
@@ -77,5 +77,5 @@ If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekda
 <br/>
 Yours sincerely,
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 </div>

@@ -6,7 +6,7 @@ Dato: 4. mai 2021
 <br>
 # Du har ikke lenger rett til svangerskapspenger
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Navn: Dolly Duck
 <br/>
@@ -14,7 +14,7 @@ Fødselsnummer: 300220 12345
 <br/>
 </p>
 Vi har fått opplysninger om at du har mottatt sykepenger i en periode du allerede har mottatt svangerskapspenger. Svangerskapspengene dine stanser derfor fra 10. mai 2021.
-Dersom det blir aktuelt med svangerskapspenger fra en senere dato må du sende ny søknad om svangerskapspenger og din arbeidsgiver må sende ny inntektsmelding til NAV.
+Dersom det blir aktuelt med svangerskapspenger fra en senere dato må du sende ny søknad om svangerskapspenger og din arbeidsgiver må sende ny inntektsmelding til Nav.
 Vedtaket er gjort etter folketrygdloven § 14-4 og § forvaltningsloven § 35.
 <br/>
 ##### Du har rett til å klage
@@ -37,7 +37,7 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
 </div>

@@ -2,11 +2,11 @@
 <br/>
 <br/>
 {{#if (eq behandlingResultatType "INNVILGET")}}
-{{#if endretDekningsgrad}}# NAV has approved your application for parental benefit{{else}}# NAV has approved your application for {{dekningsgrad}} per cent parental benefit{{/if}}
+{{#if endretDekningsgrad}}# Nav has approved your application for parental benefit{{else}}# Nav has approved your application for {{dekningsgrad}} per cent parental benefit{{/if}}
 {{else if (and (eq behandlingResultatType "FORELDREPENGER_ENDRET") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
-# NAV has recalculated your parental benefit
+# Nav has recalculated your parental benefit
 {{else}}
-# NAV has changed your parental benefit period
+# Nav has changed your parental benefit period
 {{/if}}
 {{> brukerdetaljer_en }}
 
@@ -121,7 +121,7 @@ If you are paid an excess amount of parental benefit, your payment for the follo
 <br/>
 
 ##### You must notify any changes
-You must notify NAV immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt) for more detailed information.
+You must notify Nav immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt) for more detailed information.
 <br/>
 <br/>
 {{/gt}}

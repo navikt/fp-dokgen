@@ -25,5 +25,5 @@ Spørsmål knyttet til koden eller prosjektet kan stilles til:
 * Anja Gøtesen Aalerud (anja.gotesen.aalerud@nav.no)
 * Michal Sladek (michal.sladek@nav.no)
 
-## For NAV-ansatte
+## For Nav-ansatte
 Interne henvendelser kan stilles på Slack-kanalen #teamforeldrepenger

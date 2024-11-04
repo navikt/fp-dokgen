@@ -4,16 +4,16 @@ Dato: 4. mai 2021
 <br>
 <br>
 <br>
-# NAV Klageinstans har avslått klagen din på tilbakebetaling av foreldrepenger
+# Nav Klageinstans har avslått klagen din på tilbakebetaling av foreldrepenger
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Navn: Dolly Duck
 <br/>
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Vi er enige i avgjørelsen til NAV Familie- og pensjonsytelser. Derfor har vi ikke endret vedtaket du klaget på.
+Vi er enige i avgjørelsen til Nav Familie- og pensjonsytelser. Derfor har vi ikke endret vedtaket du klaget på.
 ##### Dette har vi lagt vekt på i vurderingen vår
 FRITEKST
 <br/>
@@ -37,5 +37,5 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 </div>

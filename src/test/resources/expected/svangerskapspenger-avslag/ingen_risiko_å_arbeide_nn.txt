@@ -4,9 +4,9 @@ Dato: 4. mai 2021
 <br>
 <br>
 <br>
-# NAV har avslått søknaden din om svangerskapspengar
+# Nav har avslått søknaden din om svangerskapspengar
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Namn: Dolly Duck
 <br/>
@@ -37,7 +37,7 @@ Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvar
 <br/>
 Med vennleg helsing
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandla av fagsystemet vårt. Det er derfor ingen saksbehandlar som har underskrive vedtaksbrevet.
 </div>

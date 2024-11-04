@@ -8,9 +8,9 @@ Dato: 4. april 2020
 <br/>
 <br/>
 
-#  NAV har behandlet søknaden om engangsstønad
+#  Nav har behandlet søknaden om engangsstønad
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Navn: Dolly Duck
 <br/>
@@ -28,5 +28,5 @@ Vi sender dette brevet for å informere om at vi har innvilget søknaden om enga
 
 Med vennlig hilsen
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 

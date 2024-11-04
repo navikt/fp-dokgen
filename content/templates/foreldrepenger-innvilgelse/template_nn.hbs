@@ -2,11 +2,11 @@
 <br/>
 <br/>
 {{#if (eq behandlingResultatType "INNVILGET")}}
-{{#if endretDekningsgrad}}# NAV har innvilga søknaden din om foreldrepengar{{else}}# NAV har innvilga søknaden din om {{dekningsgrad}} prosent foreldrepengar{{/if}}
+{{#if endretDekningsgrad}}# Nav har innvilga søknaden din om foreldrepengar{{else}}# Nav har innvilga søknaden din om {{dekningsgrad}} prosent foreldrepengar{{/if}}
 {{else if (and (eq behandlingResultatType "FORELDREPENGER_ENDRET") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
-# NAV har berekna foreldrepengane dine på nytt
+# Nav har berekna foreldrepengane dine på nytt
 {{else}}
-# NAV har endra foreldrepengeperioden din
+# Nav har endra foreldrepengeperioden din
 {{/if}}
 {{> brukerdetaljer_nn }}
 
@@ -121,7 +121,7 @@ Dersom du får utbetalt for mykje i foreldrepengar, kan utbetalinga di bli redus
 <br/>
 
 ##### Du må melde frå om endringar
-Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til NAV med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til Nav med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
 <br/>
 {{/gt}}

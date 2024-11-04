@@ -6,9 +6,9 @@ Dato: 9. juli 2021
 <br>
 <br/>
 <br/>
-# NAV har endret foreldrepengeperioden din
+# Nav har endret foreldrepengeperioden din
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Navn: Langbein
 <br/>
@@ -40,5 +40,5 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 </div>

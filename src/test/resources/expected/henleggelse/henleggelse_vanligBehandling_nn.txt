@@ -5,9 +5,9 @@ Dato: 4. april 2020
 <br>
 <br>
 
-# NAV har avslutta saka di om foreldrepengar
+# Nav har avslutta saka di om foreldrepengar
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Namn: Dolly Duck
 <br/>
@@ -29,5 +29,5 @@ Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvar
 <br/>
 Med vennleg helsing
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 

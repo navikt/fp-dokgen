@@ -6,7 +6,7 @@ Date: 4. mai 2021
 <br>
 # You are no longer entitled to pregnancy benefit
 <p style="color:gray">
-NAV's case number: 123456789
+Nav's case number: 123456789
 <br/>
 Name: Dolly Duck
 <br/>
@@ -14,7 +14,7 @@ National identity number: 300220 12345
 <br/>
 </p>
 We have received information that you have received sickness benefits for a period when you already received pregnancy benefit. Your pregnancy benefit therefore stops from 10. mai 2021.
-If pregnancy benefit becomes relevant from a later date, you must send a new application for pregnancy benefit, and your employer must send a new income report to NAV.
+If pregnancy benefit becomes relevant from a later date, you must send a new application for pregnancy benefit, and your employer must send a new income report to Nav.
 The decision has been made in accordance with the National Insurance Act section § 14-4 og § forvaltningsloven § 35.
 <br/>
 ##### You have the right to appeal
@@ -37,7 +37,7 @@ If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekda
 <br/>
 Yours sincerely,
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 <br/><br/>
 This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
 </div>

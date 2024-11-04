@@ -6,9 +6,9 @@ Dato: 12. august 2021
 <br>
 <br/>
 <br/>
-# NAV har innvilget søknaden din om 80 prosent foreldrepenger
+# Nav har innvilget søknaden din om 80 prosent foreldrepenger
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Navn: HOL ANONYMISERT
 <br/>
@@ -39,7 +39,7 @@ Fordi du har valgt 80 prosent foreldrepenger, får du mindre utbetalt i måneden
 Hvis du har fått utbetalt foreldrepenger samtidig som du har jobbet eller utsatt dager fordi du har hatt ferie, har du fått utbetalt for mye i foreldrepenger. Det betyr at utbetalingen i neste måned kan bli redusert med det du har fått utbetalt for mye.
 <br/>
 ##### Du må melde fra om endringer
-Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
 <br/>
 ##### Du har rett til å klage
@@ -62,7 +62,7 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
 <br/><br/>

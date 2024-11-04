@@ -4,9 +4,9 @@ Date: 4. mai 2021
 <br>
 <br>
 <br>
-#  NAV has changed your parental benefit
+#  Nav has changed your parental benefit
 <p style="color:gray">
-NAV's case number: 123456789
+Nav's case number: 123456789
 <br/>
 Name: Dolly Duck
 <br/>
@@ -36,7 +36,7 @@ If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekda
 <br/>
 Yours sincerely,
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 <br/><br/>
 This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
 </div>

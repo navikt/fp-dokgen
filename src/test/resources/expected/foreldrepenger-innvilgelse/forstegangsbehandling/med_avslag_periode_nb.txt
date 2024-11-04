@@ -7,10 +7,10 @@ Dato: 4. mai 2021
 <br/>
 <br/>
 
-# NAV har innvilget søknaden din om 100 prosent foreldrepenger
+# Nav har innvilget søknaden din om 100 prosent foreldrepenger
 
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Navn: Herman Duck
 <br/>
@@ -21,7 +21,7 @@ Fødselsnummer: 300220 12345
 
 Du får 1 618 kroner per dag før skatt fra og med 4. juni 2022. Dette er i gjennomsnitt 35 056 kroner i måneden. Den siste dagen du får foreldrepenger er 4. november 2022.
 
-Arbeidsgiverne dine betaler deg lønn mens du har permisjon. Resten av foreldrepengene får du utbetalt fra NAV innen den 25. hver måned. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
+Arbeidsgiverne dine betaler deg lønn mens du har permisjon. Resten av foreldrepengene får du utbetalt fra Nav innen den 25. hver måned. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
 
 <br/>
 
@@ -74,7 +74,7 @@ Beregningen er gjort etter folketrygdloven §§ 14-7 og 8-30.
 <br/>
 
 ##### Du må melde fra om endringer
-Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
 <br/>
 ##### Du har rett til å klage
@@ -98,7 +98,7 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 
 <br/><br/>
 

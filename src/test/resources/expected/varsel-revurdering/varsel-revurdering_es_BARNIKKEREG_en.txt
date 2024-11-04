@@ -5,10 +5,10 @@ Date: 4. april 2020
 <br>
 <br>
 
-# NAV considers reprocessing your case regarding entitlement to a lump-sum grant
+# Nav considers reprocessing your case regarding entitlement to a lump-sum grant
 
 <p style="color:gray">
-NAV's case number: 123456789
+Nav's case number: 123456789
 <br/>
 Name: Dolly Duck
 <br/>
@@ -48,7 +48,7 @@ If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekda
 <br/>
 Yours sincerely,
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 
 </div>
 

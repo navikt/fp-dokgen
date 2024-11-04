@@ -2,12 +2,12 @@
 
 
 
-{{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}# NAV har gjort om vedtaket ditt om tilbakebetaling av eingongsstønad
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}# NAV har gjort om vedtaket ditt om tilbakebetaling av foreldrepengar
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}# NAV har gjort om vedtaket ditt om tilbakebetaling av svangerskapspengar
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "ES"))}}# NAV har gjort om vedtaket ditt om eingongsstønad
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}# NAV har gjort om vedtaket ditt om foreldrepengar
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}# NAV har gjort om vedtaket ditt om svangerskapspengar
+{{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}# Nav har gjort om vedtaket ditt om tilbakebetaling av eingongsstønad
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}# Nav har gjort om vedtaket ditt om tilbakebetaling av foreldrepengar
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}# Nav har gjort om vedtaket ditt om tilbakebetaling av svangerskapspengar
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "ES"))}}# Nav har gjort om vedtaket ditt om eingongsstønad
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}# Nav har gjort om vedtaket ditt om foreldrepengar
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}# Nav har gjort om vedtaket ditt om svangerskapspengar
 {{/if}}
 {{> brukerdetaljer_nn }}
 
@@ -18,16 +18,16 @@ Etter at du klaga, har vi vurdert saka di på nytt. Vi har kome fram til at vedt
 <br/>
 
 ##### Du må melde frå om endringar
-Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til NAV med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til Nav med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 
 {{#eq gjelderTilbakekreving true}}
 
 ##### Skatt
-Beløpet du skal betale tilbake, er redusert med den skatten som blei trekt då du fekk utbetalinga. NAV får skatten tilbake gjennom eit oppgjer med Skatteetaten.
-NAV gjev opplysningar til Skatteetaten. Skatteetaten vil vurdere om det er grunnlag for å endre skatteoppgjer.
+Beløpet du skal betale tilbake, er redusert med den skatten som blei trekt då du fekk utbetalinga. Nav får skatten tilbake gjennom eit oppgjer med Skatteetaten.
+Nav gjev opplysningar til Skatteetaten. Skatteetaten vil vurdere om det er grunnlag for å endre skatteoppgjer.
 
 ##### Korleis betale tilbake pengane du skuldar
-NAV Innkrevjing vil korrigere beløpet du skal betale tilbake. Du finn meir informasjon på [nav.no/innbetaling](https://nav.no/innbetaling).
+Nav Innkrevjing vil korrigere beløpet du skal betale tilbake. Du finn meir informasjon på [nav.no/innbetaling](https://nav.no/innbetaling).
 {{/eq}}
 
 <br/>

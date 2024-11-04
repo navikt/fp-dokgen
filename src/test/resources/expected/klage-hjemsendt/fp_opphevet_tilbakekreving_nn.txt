@@ -4,16 +4,16 @@ Dato: 4. mai 2021
 <br>
 <br>
 <br>
-# NAV skal behandle saka om tilbakebetaling av foreldrepengar på nytt
+# Nav skal behandle saka om tilbakebetaling av foreldrepengar på nytt
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Namn: Dolly Duck
 <br/>
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Vi kan ikkje vurdere saka om tilbakebetaling av foreldrepengar fordi vi manglar opplysningar. Derfor har vi oppheva vedtaket og sendt saka di tilbake til NAV Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
+Vi kan ikkje vurdere saka om tilbakebetaling av foreldrepengar fordi vi manglar opplysningar. Derfor har vi oppheva vedtaket og sendt saka di tilbake til Nav Familie- og pensjonsytelser. Dei skal behandle søknaden på nytt.
 Informasjon om saksbehandlingstid finn du på nav.no.
 ##### Dette har vi lagt vekt på i vurderinga vår
 FRITEKST
@@ -37,5 +37,5 @@ Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvar
 <br/>
 Med vennleg helsing
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 </div>

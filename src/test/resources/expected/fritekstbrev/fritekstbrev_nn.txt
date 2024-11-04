@@ -6,7 +6,7 @@ Dato: 4. april 2020
 <br>
 # Overskrift i brevet
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Namn: Dolly Duck
 <br/>

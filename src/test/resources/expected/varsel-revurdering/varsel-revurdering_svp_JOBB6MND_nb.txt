@@ -5,9 +5,9 @@ Dato: 4. april 2020
 <br>
 <br>
 
-# NAV vurderer retten din til svangerskapspenger på nytt
+# Nav vurderer retten din til svangerskapspenger på nytt
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Navn: Dolly Duck
 <br/>
@@ -43,7 +43,7 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 
 </div>
 
