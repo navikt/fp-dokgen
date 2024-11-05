@@ -6,9 +6,9 @@ Date: 12. august 2021
 <br>
 <br/>
 <br/>
-# NAV has approved your application for 80 per cent parental benefit
+# Nav has approved your application for 80 per cent parental benefit
 <p style="color:gray">
-NAV's case number: 123456789
+Nav's case number: 123456789
 <br/>
 Name: HOL ANONYMISERT
 <br/>
@@ -39,7 +39,7 @@ Because you have chosen 80 per cent parental benefit, you will be paid less per 
 If you have been paid the parental benefit at the same time as you have worked or postponed days because you have taken holidays, you have been paid an excess amount of parental benefit. This means that the payment for the next month can be reduced by the excess amount you received.
 <br/>
 ##### You must notify any changes
-You must notify NAV immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt) for more detailed information.
+You must notify Nav immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt) for more detailed information.
 <br/>
 <br/>
 ##### You have the right to appeal
@@ -62,7 +62,7 @@ If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekda
 <br/>
 Yours sincerely,
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 <br/><br/>
 This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
 <br/><br/>

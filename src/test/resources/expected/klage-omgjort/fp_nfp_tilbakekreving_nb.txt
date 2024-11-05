@@ -4,9 +4,9 @@ Dato: 4. mai 2021
 <br>
 <br>
 <br>
-# NAV har omgjort vedtaket ditt om tilbakebetaling av foreldrepenger
+# Nav har omgjort vedtaket ditt om tilbakebetaling av foreldrepenger
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Navn: Dolly Duck
 <br/>
@@ -18,12 +18,12 @@ Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at 
 FRITEKST
 <br/>
 ##### Du må melde fra om endringer
-Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 ##### Skatt
-Beløpet du skal betale tilbake er redusert med den skatten som ble trukket da du fikk utbetalingen. NAV får skatten tilbake gjennom et oppgjør med Skatteetaten.
-NAV gir opplysninger til Skatteetaten. Skatteetaten vil vurdere om det er grunnlag for å endre skatteoppgjør.
+Beløpet du skal betale tilbake er redusert med den skatten som ble trukket da du fikk utbetalingen. Nav får skatten tilbake gjennom et oppgjør med Skatteetaten.
+Nav gir opplysninger til Skatteetaten. Skatteetaten vil vurdere om det er grunnlag for å endre skatteoppgjør.
 ##### Hvordan betale tilbake pengene du skylder
-NAV Innkreving vil korrigere beløpet du skal betale tilbake. Du finner mer informasjon på [nav.no/innbetaling](https://nav.no/innbetaling).
+Nav Innkreving vil korrigere beløpet du skal betale tilbake. Du finner mer informasjon på [nav.no/innbetaling](https://nav.no/innbetaling).
 <br/>
 ##### Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
@@ -45,5 +45,5 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 </div>

@@ -1,9 +1,9 @@
 {{> header }}
 
 
-{{#eq felles.ytelseType "ES" }}# NAV vurderer retten din til eingongsstønad på nytt
-{{else}}{{#eq felles.ytelseType "FP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søkje om å endre foreldrepengeperioden din{{else}}# NAV vurderer retten din til foreldrepengar på nytt{{/eq}}
-{{else}}{{#eq felles.ytelseType "SVP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søkje om å endre svangerskapspengeperioden din{{else}}# NAV vurderer retten din til svangerskapspengar på nytt{{/eq}}{{/eq}}{{/eq}}{{/eq}}
+{{#eq felles.ytelseType "ES" }}# Nav vurderer retten din til eingongsstønad på nytt
+{{else}}{{#eq felles.ytelseType "FP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søkje om å endre foreldrepengeperioden din{{else}}# Nav vurderer retten din til foreldrepengar på nytt{{/eq}}
+{{else}}{{#eq felles.ytelseType "SVP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søkje om å endre svangerskapspengeperioden din{{else}}# Nav vurderer retten din til svangerskapspengar på nytt{{/eq}}{{/eq}}{{/eq}}{{/eq}}
 {{> brukerdetaljer_nn }}
 
 {{#eq advarselKode "BARNIKKEREG" }}

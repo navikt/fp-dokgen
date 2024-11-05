@@ -6,7 +6,7 @@ Dato: 4. mai 2021
 <br>
 # Du har ikkje lenger rett til svangerskapspengar
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Namn: Dolly Duck
 <br/>
@@ -14,7 +14,7 @@ Fødselsnummer: 300220 12345
 <br/>
 </p>
 Vi har fått opplysningar om at du har motteke sjukepengar i en periode du allereie fekk svangerskapspengar. Svangerskapspengane dine stansar derfor frå 10. mai 2021.
-Dersom det blir aktuelt med svangerskapspengar frå en seinare dato må du sende ny søknad om svangerskapspengar, og din arbeidsgivar må sende ny inntektsmelding til NAV.
+Dersom det blir aktuelt med svangerskapspengar frå en seinare dato må du sende ny søknad om svangerskapspengar, og din arbeidsgivar må sende ny inntektsmelding til Nav.
 Vedtaket er gjort etter folketrygdlova  § 14-4 og § forvaltningsloven § 35.
 <br/>
 ##### Du har rett til å klage
@@ -37,7 +37,7 @@ Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvar
 <br/>
 Med vennleg helsing
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandla av fagsystemet vårt. Det er derfor ingen saksbehandlar som har underskrive vedtaksbrevet.
 </div>

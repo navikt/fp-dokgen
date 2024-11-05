@@ -85,7 +85,7 @@
 {{>punkt}}Du får {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} prosent foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi du jobber {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} prosent hos {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. I denne perioden får du {{thousand-seperator periodeDagsats}} kroner per dag før skatt.
 {{#each arbeidsforholdsliste}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0) (lt this.stillingsprosent 100.0) (eq this.gradering false) (or (eq delvisRefusjon true) (eq fullRefusjon true)))}}
-  Du jobber ikke i hele deltidsstillingen din hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepenger både fra arbeidsgiveren din og NAV.
+  Du jobber ikke i hele deltidsstillingen din hos {{this.arbeidsgiverNavn}}, og får derfor foreldrepenger både fra arbeidsgiveren din og Nav.
 {{/if}}{{/if}}
 {{/each}}
 {{/if}}

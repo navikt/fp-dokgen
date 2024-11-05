@@ -1,9 +1,9 @@
 {{> header_en }}
 
 
-{{#eq felles.ytelseType "ES" }}# NAV considers reprocessing your case regarding entitlement to a lump-sum grant
-{{else}}{{#eq felles.ytelseType "FP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søke om å endre foreldrepengeperioden din{{else}}# NAV vurderer retten din til foreldrepenger på nytt{{/eq}}
-{{else}}{{#eq felles.ytelseType "SVP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søke om å endre svangerskapspengeperioden din{{else}}# NAV vurderer retten din til svangerskapspenger på nytt{{/eq}}{{/eq}}{{/eq}}{{/eq}}
+{{#eq felles.ytelseType "ES" }}# Nav considers reprocessing your case regarding entitlement to a lump-sum grant
+{{else}}{{#eq felles.ytelseType "FP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søke om å endre foreldrepengeperioden din{{else}}# Nav vurderer retten din til foreldrepenger på nytt{{/eq}}
+{{else}}{{#eq felles.ytelseType "SVP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søke om å endre svangerskapspengeperioden din{{else}}# Nav vurderer retten din til svangerskapspenger på nytt{{/eq}}{{/eq}}{{/eq}}{{/eq}}
 {{> brukerdetaljer_en }}
 
 {{#eq advarselKode "BARNIKKEREG" }}
@@ -69,7 +69,7 @@ Du kan søke om å endre perioden din på [nav.no](https://nav.no/). Ønsker du 
 This is a notice.
 Do you have further information or do you wish to come with a statement, you will have to do this before {{fristDato}}.
 
-You can send us your statement by logging in  and choose «Skriv til oss» (Send message to NAV) [nav.no/skriv-til-oss](https://www.nav.no/skriv-til-oss). You can also send information at [nav.no/ettersendelse](https://nav.no/ettersendelse).
+You can send us your statement by logging in  and choose «Skriv til oss» (Send message to Nav) [nav.no/skriv-til-oss](https://www.nav.no/skriv-til-oss). You can also send information at [nav.no/ettersendelse](https://nav.no/ettersendelse).
 {{/if}}
 {{#eq advarselKode "JOBBFULLTID" }}{{#eq felles.ytelseType "FP" }}
 Ønsker du å søke om å endre foreldrepengeperioden eller å uttale deg, må du gjøre dette innen {{fristDato}}.

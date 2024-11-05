@@ -4,21 +4,21 @@ Dato: 4. mai 2021
 <br>
 <br>
 <br>
-# Vi har sendt saken din til NAV Klageinstans
+# Vi har sendt saken din til Nav Klageinstans
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Navn: Dolly Duck
 <br/>
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Vi har mottatt klagen din på vedtaket om svangerskapspenger 3. mai 2021, og kommet fram til at det ikke endres. NAV Klageinstans skal derfor vurdere saken din på nytt.
+Vi har mottatt klagen din på vedtaket om svangerskapspenger 3. mai 2021, og kommet fram til at det ikke endres. Nav Klageinstans skal derfor vurdere saken din på nytt.
 Informasjon om saksbehandlingstid finner du på nav.no.
 ##### Vurderingen vår
 FRITEKST
 <br/>
-Har du nye opplysninger eller ønsker å uttale deg, kan du sende dette via [nav.no/klage](https://nav.no/klage). Velg NAV-enhet: NAV Klageinstans Midt-Norge.
+Har du nye opplysninger eller ønsker å uttale deg, kan du sende dette via [nav.no/klage](https://nav.no/klage). Velg Nav-enhet: Nav Klageinstans Midt-Norge.
 <br/>
 ##### Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
@@ -36,5 +36,5 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 </div>

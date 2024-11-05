@@ -4,9 +4,9 @@ Dato: 4. mai 2021
 <br>
 <br>
 <br>
-# NAV har endret svangerskapspengene dine
+# Nav har endret svangerskapspengene dine
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Navn: Dolly Duck
 <br/>
@@ -33,7 +33,7 @@ Dette er gjennomsnittet av inntekten du har hatt som arbeidstaker og frilanser d
 Beregningen er gjort etter folketrygdloven § 14-4.
 <br/>
 ##### Du må melde fra om endringer
-Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
 <br/>
 ##### Du har rett til å klage
@@ -56,5 +56,5 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 </div>

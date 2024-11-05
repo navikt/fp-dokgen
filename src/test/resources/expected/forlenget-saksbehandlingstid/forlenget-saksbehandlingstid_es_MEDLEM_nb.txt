@@ -8,7 +8,7 @@ Dato: 4. april 2020
 # Vi trenger mer tid til å behandle søknaden om engangsstønad
 
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Navn: Dolly Duck
 <br/>
@@ -46,7 +46,7 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 
 </div>
 

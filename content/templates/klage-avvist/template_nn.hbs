@@ -2,12 +2,12 @@
 
 
 
-{{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}# NAV har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av eingongsstønad
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}# NAV har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av foreldrepengar
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}# NAV har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av svangerskapspengar
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "ES"))}}# NAV har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}eingongsstønad
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}# NAV har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}foreldrepengar
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}# NAV har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}svangerskapspengar
+{{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}# Nav har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av eingongsstønad
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}# Nav har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av foreldrepengar
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}# Nav har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av svangerskapspengar
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "ES"))}}# Nav har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}eingongsstønad
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}# Nav har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}foreldrepengar
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}# Nav har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}svangerskapspengar
 {{/if}}
 {{> brukerdetaljer_nn }}
 

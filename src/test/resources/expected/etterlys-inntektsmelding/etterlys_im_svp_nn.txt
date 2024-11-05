@@ -6,7 +6,7 @@ Dato: 4. april 2020
 <br>
 # Vi treng opplysningar frå arbeidsgivaren din
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Namn: Dolly Duck
 <br/>
@@ -14,7 +14,7 @@ Fødselsnummer: 300220 12345
 <br/>
 </p>
 Vi fekk søknaden din om svangerskapspengar 1. april 2020, men manglar opplysningar for å behandle saka.
-Du må be Andeby Bank AS med organisasjonsnummer 123456789 senda inntektsmelding til NAV slik at vi får behandla saka di.
+Du må be Andeby Bank AS med organisasjonsnummer 123456789 senda inntektsmelding til Nav slik at vi får behandla saka di.
 Dersom arbeidsgivar allereie har sendt inntektsmelding, kan du sjå bort frå denne førespurnaden.
 Vi har fått inntektsmelding fra Andeby Vaktmester AS med organisasjonsnummer 99999998.
 Vi kan ikkje behandle søknaden din om svangerskapspengar før vi har fått inntektsmeldinga frå arbeidsgivaren din.
@@ -33,5 +33,5 @@ Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvar
 <br/>
 Med vennleg helsing
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 </div>

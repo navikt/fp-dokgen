@@ -7,11 +7,11 @@ We have got your application for {{>ytelse_navn_en}} {{søknadDato}}, but we hav
 {{#eq antallIkkeMottattIM 1}}
 {{#each inntektsmeldingerStatus}}
 {{#eq erInntektsmeldingMottatt false}}
-You must ask {{arbeidsgiverNavn}} with company number {{arbeidsgiverIdent}} to submit an income report to NAV so that we can process your case.
+You must ask {{arbeidsgiverNavn}} with company number {{arbeidsgiverIdent}} to submit an income report to Nav so that we can process your case.
 {{/eq}}
 {{/each}}
 {{else}}
-You must ask these employers to submit an income report to NAV:
+You must ask these employers to submit an income report to Nav:
 {{#each inntektsmeldingerStatus}}
 {{#eq erInntektsmeldingMottatt false}}
 * {{arbeidsgiverNavn}} with company number {{arbeidsgiverIdent}} and where you work {{trim-decimal stillingsprosent}} percent.

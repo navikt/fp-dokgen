@@ -86,7 +86,7 @@
 {{>punkt}}You will receive {{trim-decimal arbeidsforholdsliste.0.utbetalingsgrad}} per cent parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are working {{trim-decimal arbeidsforholdsliste.0.prosentArbeid}} per cent at {{arbeidsforholdsliste.0.arbeidsgiverNavn}}. In this period you will receive {{thousand-seperator periodeDagsats}} kroner per day before taxes.
 {{#each arbeidsforholdsliste}}
 {{#if arbeidsforholdsliste.0.gradering}} {{#if (and (lt this.prosentArbeid this.stillingsprosent) (gt this.prosentArbeid 0.0) (lt this.stillingsprosent 100.0) (eq this.gradering false) (or (eq delvisRefusjon true) (eq fullRefusjon true)))}}
-  You are not working in your entire part-time position at {{this.arbeidsgiverNavn}}, and will therefore receive parental benefit from both your employer and NAV.
+  You are not working in your entire part-time position at {{this.arbeidsgiverNavn}}, and will therefore receive parental benefit from both your employer and Nav.
 {{/if}}{{/if}}
 {{/each}}
 {{/if}}

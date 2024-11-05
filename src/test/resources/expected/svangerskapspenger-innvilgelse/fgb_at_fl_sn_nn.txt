@@ -4,9 +4,9 @@ Dato: 4. mai 2021
 <br>
 <br>
 <br>
-# NAV har innvilga søknaden din om svangerskapspengar
+# Nav har innvilga søknaden din om svangerskapspengar
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Namn: Dolly Duck
 <br/>
@@ -54,7 +54,7 @@ Svangerskapspengane dine er fastsette til 600 000 kroner i året, som er seks g
 Berekninga er gjort etter folketrygdlova § 14-4.
 <br/>
 ##### Du må melde frå om endringar
-Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til NAV med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til Nav med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
 <br/>
 ##### Du har rett til å klage
@@ -77,5 +77,5 @@ Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvar
 <br/>
 Med vennleg helsing
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 </div>

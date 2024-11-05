@@ -6,9 +6,9 @@ Dato: 18. mars 2022
 <br>
 <br/>
 <br/>
-# NAV har innvilget søknaden din om 100 prosent foreldrepenger
+# Nav har innvilget søknaden din om 100 prosent foreldrepenger
 <p style="color:gray">
-Saksnummer i NAV: 152001008
+Saksnummer i Nav: 152001008
 <br/>
 Navn: SØKER NAVN
 <br/>
@@ -30,7 +30,7 @@ Foreldrepengene dine er fastsatt til 638 394 kroner i året, som er seks ganger
 Beregningen er gjort etter folketrygdloven §§ 14-7 og 8-30.
 <br/>
 ##### Du må melde fra om endringer
-Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til NAV. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
 <br/>
 ##### Du har rett til å klage
@@ -53,5 +53,5 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 <br/>
 Med vennlig hilsen
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 </div>

@@ -4,21 +4,21 @@ Dato: 4. mai 2021
 <br>
 <br>
 <br>
-# Vi har sendt saka di til NAV Klageinstans
+# Vi har sendt saka di til Nav Klageinstans
 <p style="color:gray">
-Saksnummer i NAV: 123456789
+Saksnummer i Nav: 123456789
 <br/>
 Namn: Dolly Duck
 <br/>
 Fødselsnummer: 300220 12345
 <br/>
 </p>
-Vi har fått klaga di på vedtaket om tilbakebetaling av foreldrepengar 3. mai 2021, og kome fram til at det ikkje blir endra. NAV Klageinstans skal derfor vurdere saka di på nytt.
+Vi har fått klaga di på vedtaket om tilbakebetaling av foreldrepengar 3. mai 2021, og kome fram til at det ikkje blir endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
 Informasjon om saksbehandlingstid finn du på nav.no.
 ##### Vurderinga vår
 FRITEKST
 <br/>
-Har du nye opplysningar eller ønskjer å uttale deg, kan du sende dette via [nav.no/klage](https://nav.no/klage). Vel NAV-eining: NAV Klageinstans Midt-Noreg.
+Har du nye opplysningar eller ønskjer å uttale deg, kan du sende dette via [nav.no/klage](https://nav.no/klage). Vel Nav-eining: Nav Klageinstans Midt-Noreg.
 <br/>
 ##### Du har rett til innsyn
 For å sjå dokumenta i saka di, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
@@ -36,5 +36,5 @@ Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvar
 <br/>
 Med vennleg helsing
 <br/>
-NAV Familie- og pensjonsytelser
+Nav Familie- og pensjonsytelser
 </div>
