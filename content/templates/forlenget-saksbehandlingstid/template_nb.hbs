@@ -29,11 +29,13 @@ Dokumentasjon kan for eksempel være:
 * Har du barn som går på skole eller barnehage kan vi få bekreftelse på dette
 
 * Eventuell annen dokumentasjon som viser at du oppholder deg i Norge fast
+{{else}}{{#eq variantType "MEDLEM_FORUTGÅENDE"}}
+For å ha rett til engangsstønad må du ha vært sammenhengende medlem av folketrygden de siste 12 månedene før terminen for fødsel. Du har ikke vært medlem i 12 måneder per i dag, og vi må derfor vente med å behandle saken din til nærmere termindatoen.
 {{else}}{{#eq variantType "KLAGE"}}
 Vi regner med å behandle klagen din innen {{behandlingsfristUker}} uker.
 {{else}}{{#eq variantType "FORTIDLIG"}}
 Vi kan tidligst behandle søknaden din når det er fire uker igjen til perioden med {{> ytelse_navn_nb}} starter.
-{{/eq}}{{/eq}}{{/eq}}{{/eq}}{{/if}}
+{{/eq}}{{/eq}}{{/eq}}{{/eq}}{{/eq}}{{/if}}
 
 <br/>
 
