@@ -1,6 +1,6 @@
 {{> header }}
 
-# Vi treng opplysningar frå {{#gt antallIkkeMottattIM 1}}arbeidsgivarane dine{{else}}arbeidsgivaren din{{/gt}}
+# Vi har bedt om opplysningar frå {{#gt antallIkkeMottattIM 1}}arbeidsgivarane dine{{else}}arbeidsgivaren din{{/gt}}
 {{> brukerdetaljer_nn }}
 
 Vi fekk søknaden din om {{>ytelse_navn_nn}} {{søknadDato}}, men manglar opplysningar for å behandle saka.
@@ -8,11 +8,11 @@ Vi fekk søknaden din om {{>ytelse_navn_nn}} {{søknadDato}}, men manglar opplys
 {{#eq antallIkkeMottattIM 1}}
 {{#each inntektsmeldingerStatus}}
 {{#eq erInntektsmeldingMottatt false}}
-Du må be {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} senda inntektsmelding til Nav slik at vi får behandla saka di.
+Vi har bedt {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} senda inntektsmelding til Nav slik at vi får behandla saka di.
 {{/eq}}
 {{/each}}
 {{else}}
-Du må be desse arbeidsgivarane om å senda inntektsmelding:
+Vi har bedt desse arbeidsgivarane om å senda inntektsmelding:
 {{#each inntektsmeldingerStatus}}
 {{#eq erInntektsmeldingMottatt false}}
 * {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} i stillinga du jobbar {{trim-decimal stillingsprosent}} prosent.
@@ -39,6 +39,7 @@ Vi har fått inntektsmelding frå desse arbeidsgivarane:
 
 Vi kan ikkje behandle søknaden din om {{>ytelse_navn_nn}} før vi har fått inntektsmeldinga frå {{#gt antallIkkeMottattIM 1}}arbeidsgivarane dine{{else}}arbeidsgivaren din{{/gt}}.
 
+{{#gt antallIkkeMottattIM 1}}Arbeidsgivarane dine{{else}}Arbeidsgivaren din{{/gt}} kan logge seg på [nav.no/arbeidsgiver] (https://www.nav.no/arbeidsgiver) og sende inntektsmelding derfrå.
 
 <br/>
 
