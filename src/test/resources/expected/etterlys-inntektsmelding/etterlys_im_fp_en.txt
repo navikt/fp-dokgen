@@ -4,7 +4,7 @@ Date: 4. april 2020
 <br>
 <br>
 <br>
-# We need information from your employers
+# We have requested your employers to submit an income report to Nav
 <p style="color:gray">
 Nav's case number: 123456789
 <br/>
@@ -14,7 +14,7 @@ National identity number: 300220 12345
 <br/>
 </p>
 We have got your application for parental benefit 1. april 2020, but we have not received all the information we need to process it.
-You must ask these employers to submit an income report to Nav:
+We have requested these employers to submit an income report to Nav:
 * Andeby Bank AS with company number 123456789 and where you work 80 percent.
 * Andeby Vask AS with company number 99999999 and where you work 10 percent.
 If the income report already has been sent from the employer, you can disregard this inquiry.
@@ -22,6 +22,7 @@ We have received the income report from these employers:
 * Andeby Vaktmester AS with company number 99999998 and where you work 5 percent.
 * Andeby Service AS with company number 99999997 and where you work 5 percent.
 We will not be able to process your application for parental benefit until we have received an income report from your employers.
+Your employers can log in to [nav.no/arbeidsgiver] (https://www.nav.no/arbeidsgiver) and submit the income report from there.
 <br/>
 ##### You have right of access
 Log into [foreldrepenger.nav.no](https://foreldrepenger.nav.no/) to see the documents in your case.
