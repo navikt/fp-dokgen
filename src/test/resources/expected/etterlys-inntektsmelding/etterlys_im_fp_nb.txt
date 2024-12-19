@@ -18,11 +18,11 @@ Vi har bedt disse arbeidsgiverne om å sende inntektsmelding:
 * Andeby Bank AS med organisasjonsnummer 123456789 i stillingen du jobber 80 prosent.
 * Andeby Vask AS med organisasjonsnummer 99999999 i stillingen du jobber 10 prosent.
 Hvis arbeidsgiver allerede har sendt inntektsmelding, kan du se bort fra denne henvendelsen.
-Vi har mottatt inntektsmelding fra disse arbeidsgiverne:
+Vi har mottatt inntektsmelding fra:
 * Andeby Vaktmester AS med organisasjonsnummer 99999998 i stillingen du jobber 5 prosent.
 * Andeby Service AS med organisasjonsnummer 99999997 i stillingen du jobber 5 prosent.
 Vi kan ikke behandle søknaden din om foreldrepenger før vi har mottatt inntektsmelding fra arbeidsgiverne dine.
-Arbeidsgiverne dine kan logge seg på [nav.no/arbeidsgiver] (https://www.nav.no/arbeidsgiver) og sende inntektsmelding derfra.
+Arbeidsgiverne dine kan logge seg på [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) og sende inntektsmelding derfra.
 <br/>
 ##### Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).

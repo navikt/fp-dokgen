@@ -14,11 +14,13 @@ Fødselsnummer: 300220 12345
 <br/>
 </p>
 Vi fikk søknaden din om svangerskapspenger 1. april 2020, men mangler opplysninger for å behandle den.
-Vi har bedt Andeby Bank AS med organisasjonsnummer 123456789 om å sende inntektsmelding til Nav slik at vi får behandlet saken din.
+Vi har bedt denne arbeidsgiveren om å sende inntektsmelding:
+* Andeby Bank AS med organisasjonsnummer 123456789 i stillingen du jobber 80 prosent.
 Hvis arbeidsgiver allerede har sendt inntektsmelding, kan du se bort fra denne henvendelsen.
-Vi har mottatt inntektsmelding fra Andeby Vaktmester AS med organisasjonsnummer 99999998.
+Vi har mottatt inntektsmelding fra:
+* Andeby Vaktmester AS med organisasjonsnummer 99999998 i stillingen du jobber 20 prosent.
 Vi kan ikke behandle søknaden din om svangerskapspenger før vi har mottatt inntektsmelding fra arbeidsgiveren din.
-Arbeidsgiveren din kan logge seg på [nav.no/arbeidsgiver] (https://www.nav.no/arbeidsgiver) og sende inntektsmelding derfra.
+Arbeidsgiveren din kan logge seg på [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) og sende inntektsmelding derfra.
 <br/>
 ##### Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).

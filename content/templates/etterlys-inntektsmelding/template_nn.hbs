@@ -5,41 +5,25 @@
 
 Vi fekk søknaden din om {{>ytelse_navn_nn}} {{søknadDato}}, men manglar opplysningar for å behandle saka.
 
-{{#eq antallIkkeMottattIM 1}}
-{{#each inntektsmeldingerStatus}}
-{{#eq erInntektsmeldingMottatt false}}
-Vi har bedt {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} senda inntektsmelding til Nav slik at vi får behandla saka di.
-{{/eq}}
-{{/each}}
-{{else}}
-Vi har bedt desse arbeidsgivarane om å senda inntektsmelding:
+{{#gt antallIkkeMottattIM 0}}Vi har bedt {{#gt antallIkkeMottattIM 1}}desse arbeidsgivarane{{else}}denne arbeidsgivaren{{/gt}} om å senda inntektsmelding:{{/gt}}
 {{#each inntektsmeldingerStatus}}
 {{#eq erInntektsmeldingMottatt false}}
 * {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} i stillinga du jobbar {{trim-decimal stillingsprosent}} prosent.
 {{/eq}}
 {{/each}}
-{{/eq}}
 
 Dersom arbeidsgivar allereie har sendt inntektsmelding, kan du sjå bort frå denne førespurnaden.
 
-{{#eq antallMottattIM 1}}
+{{#gt antallMottattIM 0}}Vi har fått inntektsmelding frå:{{/gt}}
 {{#each inntektsmeldingerStatus}}
-{{#if erInntektsmeldingMottatt }}
-Vi har fått inntektsmelding fra {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}}.
-{{/if}}
-{{/each}}
-{{else}}
-Vi har fått inntektsmelding frå desse arbeidsgivarane:
-{{#each inntektsmeldingerStatus}}
-{{#if erInntektsmeldingMottatt }}
+{{#eq erInntektsmeldingMottatt true}}
 * {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} i stillinga du jobbar {{trim-decimal stillingsprosent}} prosent.
-{{/if}}
-{{/each}}
 {{/eq}}
+{{/each}}
 
 Vi kan ikkje behandle søknaden din om {{>ytelse_navn_nn}} før vi har fått inntektsmeldinga frå {{#gt antallIkkeMottattIM 1}}arbeidsgivarane dine{{else}}arbeidsgivaren din{{/gt}}.
 
-{{#gt antallIkkeMottattIM 1}}Arbeidsgivarane dine{{else}}Arbeidsgivaren din{{/gt}} kan logge seg på [nav.no/arbeidsgiver] (https://www.nav.no/arbeidsgiver) og sende inntektsmelding derfrå.
+{{#gt antallIkkeMottattIM 1}}Arbeidsgivarane dine{{else}}Arbeidsgivaren din{{/gt}} kan logge seg på [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) og sende inntektsmelding derfrå.
 
 <br/>
 
