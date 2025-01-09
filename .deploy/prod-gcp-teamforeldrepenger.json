@@ -11,11 +11,6 @@
       "app": "fpinntektsmelding",
       "namespace": "teamforeldrepenger",
       "cluster": "prod-gcp"
-    },
-    {
-      "app": "k9-inntektsmelding",
-      "namespace": "k9saksbehandling",
-      "cluster": "prod-gcp"
     }
   ]
 }
