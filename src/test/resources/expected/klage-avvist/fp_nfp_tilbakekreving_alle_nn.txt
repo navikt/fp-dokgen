@@ -19,6 +19,7 @@ Vi har avvist klaga di fordi
 * det du har klaga på, ikkje er eit vedtak.
 * du har klaga på eit vedtak som ikkje gjeld deg.
 * du ikkje har sagt kva det er du klagar på.
+Tester at fritekst kommer dersom angitt for en avvist klage<br/>
 Vedtaket er gjort etter folketrygdloven § 21-12 og forvaltningsloven §§ 28, 31, 32 og 34.
 <br/>
 ##### Du har rett til å klage
