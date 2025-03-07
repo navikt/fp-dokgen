@@ -1,21 +1,24 @@
-<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
-        <td style="text-align: left; width: 150px">Name:</td>
-        <td style="text-align: left;">Dolly Duck</td>
-        <td style="text-align: left;"></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr><tr>
-        <td style="text-align: left; width: 150px">National identity number:</td>
-        <td style="text-align: left;">300220 12345</td>
-        <td></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    <tr>
-        <td style="text-align: left; width: 150px">Nav's case number:</td>
-        <td style="text-align: left;">123456789</td>
-        <td></td> <!-- Empty column -->
-        <td style="text-align: right;">4. mai 2021</td>
-    </tr>
-</table>
+<div id="header">
+    <table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+            <td style="text-align: left; width: 150px">Name:</td>
+            <td style="text-align: left;">Dolly Duck</td>
+            <td style="text-align: left;"></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr><tr>
+            <td style="text-align: left; width: 150px">National identity number:</td>
+            <td style="text-align: left;">300220 12345</td>
+            <td></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 150px">Nav's case number:</td>
+            <td style="text-align: left;">123456789</td>
+            <td></td> <!-- Empty column -->
+            <td style="text-align: right;">4. mai 2021</td>
+        </tr>
+    </table>
+</div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # Nav has approved your application for pregnancy benefit
 We pay pregnancy benefit to your employers because you get paid while you are away from work.
 ## You will receive pregnancy benefit in these periods
@@ -58,6 +61,8 @@ Your pregnancy benefit are calculated to 600 000 kroner a year, which is six ti
 The calculation is performed according to the National Insurance Act § 14-4.
 ## You must notify any changes
 You must notify Nav immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt).
+</div>
+<div id="readonly-innhold">
 ## You have the right to appeal
 You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 ## You have right of access
@@ -73,4 +78,5 @@ If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekda
 Yours sincerely,
 <br/>
 Nav Familie- og pensjonsytelser
+</div>
 </div>

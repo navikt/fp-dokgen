@@ -1,21 +1,23 @@
-<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
-        <td style="text-align: left; width: 150px">Name:</td>
-        <td style="text-align: left;">Dolly Duck</td>
-        <td style="text-align: left;"></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr><tr>
-        <td style="text-align: left; width: 150px">National identity number:</td>
-        <td style="text-align: left;">300220 12345</td>
-        <td></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    <tr>
-        <td style="text-align: left; width: 150px">Nav's case number:</td>
-        <td style="text-align: left;">123456789</td>
-        <td></td> <!-- Empty column -->
-        <td style="text-align: right;">4. april 2020</td>
-    </tr>
-</table>
+<div id="header">
+    <table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+            <td style="text-align: left; width: 150px">Name:</td>
+            <td style="text-align: left;">Dolly Duck</td>
+            <td style="text-align: left;"></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr><tr>
+            <td style="text-align: left; width: 150px">National identity number:</td>
+            <td style="text-align: left;">300220 12345</td>
+            <td></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 150px">Nav's case number:</td>
+            <td style="text-align: left;">123456789</td>
+            <td></td> <!-- Empty column -->
+            <td style="text-align: right;">4. april 2020</td>
+        </tr>
+    </table>
+</div>
 # Nav has rejected your request for access to your case regarding pregnancy benefit
 You have requested access to your case, but we cannot send you the documents we have.
 Vi kan kun gi deg delvis innsyn fordi

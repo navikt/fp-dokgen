@@ -1,22 +1,25 @@
-<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
-        <td style="text-align: left; width: 150px">Navn:</td>
-        <td style="text-align: left;">SØKER NAVN</td>
-        <td style="text-align: left;"></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr><tr>
-        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
-        <td style="text-align: left;">111111 11111</td>
-        <td></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    <tr>
-        <td style="text-align: left; width: 150px">Saksnummer:</td>
-        <td style="text-align: left;">152001008</td>
-        <td></td> <!-- Empty column -->
-        <td style="text-align: right;">18. mars 2022</td>
-    </tr>
-</table>
-<p class="draft_text">UTKAST</p>
+<div id="header">
+    <table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+            <td style="text-align: left; width: 150px">Navn:</td>
+            <td style="text-align: left;">SØKER NAVN</td>
+            <td style="text-align: left;"></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr><tr>
+            <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+            <td style="text-align: left;">111111 11111</td>
+            <td></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 150px">Saksnummer:</td>
+            <td style="text-align: left;">152001008</td>
+            <td></td> <!-- Empty column -->
+            <td style="text-align: right;">18. mars 2022</td>
+        </tr>
+    </table>
+    <p class="draft_text">UTKAST</p>
+</div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # Nav har innvilget søknaden din om 100 prosent foreldrepenger
 Du får 2 455 kroner per dag før skatt fra og med 30. mars 2022. Dette er i gjennomsnitt 53 191 kroner i måneden. Den siste dagen du får foreldrepenger er 20. september 2022.
 Foreldrepengene blir utbetalt for alle dager, unntatt lørdag og søndag. Fordi det ikke er like mange dager i hver måned, vil de månedlige utbetalingene dine variere.
@@ -30,6 +33,8 @@ Foreldrepengene dine er fastsatt til 638 394 kroner i året, som er seks ganger
 Beregningen er gjort etter folketrygdloven §§ 14-7 og 8-30.
 ## Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+</div>
+<div id="readonly-innhold">
 ## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 ## Du har rett til innsyn
@@ -45,4 +50,5 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 Med vennlig hilsen
 <br/>
 Nav Familie- og pensjonsytelser
+</div>
 </div>

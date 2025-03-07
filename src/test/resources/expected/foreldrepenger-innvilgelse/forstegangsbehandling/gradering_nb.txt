@@ -1,21 +1,24 @@
-<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
-        <td style="text-align: left; width: 150px">Navn:</td>
-        <td style="text-align: left;">Dolly Duck</td>
-        <td style="text-align: left;"></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr><tr>
-        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
-        <td style="text-align: left;">300220 12345</td>
-        <td></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    <tr>
-        <td style="text-align: left; width: 150px">Saksnummer:</td>
-        <td style="text-align: left;">123456789</td>
-        <td></td> <!-- Empty column -->
-        <td style="text-align: right;">3. juni 2021</td>
-    </tr>
-</table>
+<div id="header">
+    <table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+            <td style="text-align: left; width: 150px">Navn:</td>
+            <td style="text-align: left;">Dolly Duck</td>
+            <td style="text-align: left;"></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr><tr>
+            <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+            <td style="text-align: left;">300220 12345</td>
+            <td></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 150px">Saksnummer:</td>
+            <td style="text-align: left;">123456789</td>
+            <td></td> <!-- Empty column -->
+            <td style="text-align: right;">3. juni 2021</td>
+        </tr>
+    </table>
+</div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # Nav har innvilget søknaden din om 100 prosent foreldrepenger
 Du får 1 356 kroner per dag før skatt fra og med 19. mai 2021. Dette er i gjennomsnitt 29 380 kroner i måneden. Den siste dagen du får foreldrepenger er 14. desember 2021.
 Foreldrepengene blir utbetalt for alle dager, unntatt lørdag og søndag. Fordi det ikke er like mange dager i hver måned, vil de månedlige utbetalingene dine variere.
@@ -36,6 +39,8 @@ Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du net
 Hvis du får utbetalt for mye i foreldrepenger, kan utbetalingen din bli redusert i neste måned.
 ## Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+</div>
+<div id="readonly-innhold">
 ## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 ## Du har rett til innsyn
@@ -53,4 +58,5 @@ Med vennlig hilsen
 Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
+</div>
 </div>

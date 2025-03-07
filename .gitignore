@@ -16,5 +16,4 @@
 *.iml
 target
 
-content/formats/html/style.css
 docker-compose-local.yml

@@ -1,4 +1,5 @@
 {{> header_en }}
+{{#> utils/redigerbart_innhold}}
 {{#if (eq behandlingResultatType "INNVILGET")}}
 {{#if endretDekningsgrad}}# Nav has approved your application for parental benefit{{else}}# Nav has approved your application for {{dekningsgrad}} per cent parental benefit{{/if}}
 {{else if (and (eq behandlingResultatType "FORELDREPENGER_ENDRET") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
@@ -118,8 +119,13 @@ If you are paid an excess amount of parental benefit, your payment for the follo
 ## You must notify any changes
 You must notify Nav immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt) for more detailed information.
 {{/gt}}
+{{/utils/redigerbart_innhold}}
 
+
+{{#> utils/readonly_innhold}}
 ## You have the right to appeal
 You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 
 {{> footer_en }}
+
+{{/utils/readonly_innhold}}

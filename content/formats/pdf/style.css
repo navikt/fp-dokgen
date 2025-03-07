@@ -70,7 +70,7 @@ h4 {
     margin-bottom: 6pt;
 }
 
-p, li, td, th{
+body, p, li, td, th{
     font-size: 11pt;
     line-height: 16pt;
     font-weight: normal;

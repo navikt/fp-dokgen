@@ -1,21 +1,24 @@
-<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
-        <td style="text-align: left; width: 150px">Navn:</td>
-        <td style="text-align: left;">CAR ANONYMISERT</td>
-        <td style="text-align: left;"></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr><tr>
-        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
-        <td style="text-align: left;">123456 78901</td>
-        <td></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    <tr>
-        <td style="text-align: left; width: 150px">Saksnummer:</td>
-        <td style="text-align: left;">141081123</td>
-        <td></td> <!-- Empty column -->
-        <td style="text-align: right;">10. august 2021</td>
-    </tr>
-</table>
+<div id="header">
+    <table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+            <td style="text-align: left; width: 150px">Navn:</td>
+            <td style="text-align: left;">CAR ANONYMISERT</td>
+            <td style="text-align: left;"></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr><tr>
+            <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+            <td style="text-align: left;">123456 78901</td>
+            <td></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 150px">Saksnummer:</td>
+            <td style="text-align: left;">141081123</td>
+            <td></td> <!-- Empty column -->
+            <td style="text-align: right;">10. august 2021</td>
+        </tr>
+    </table>
+</div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # Nav har endret foreldrepengeperioden din
 ## Dette har vi innvilget
 Du får foreldrepenger fra og med 30. juni 2020 til og med 21. september 2020. I denne perioden får du 1 871 kroner per dag før skatt.
@@ -29,6 +32,8 @@ Vedtaket er gjort etter folketrygdloven §§ 14-9, 14-10 og 14-12.
 Tester at fritekst kommer etter vedtakshjemler når endring i uttak
 ## Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+</div>
+<div id="readonly-innhold">
 ## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 ## Du har rett til innsyn
@@ -46,4 +51,5 @@ Med vennlig hilsen
 Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
+</div>
 </div>

@@ -1,10 +1,8 @@
 {{> header_en }}
-
+{{#> utils/redigerbart_innhold}}
 {{#if revurdering true}}# Nav has changed your pregnancy benefit
 {{else}}# Nav has approved your application for pregnancy benefit
 {{/if}}
-
-
 
 {{#if endretFraAvslag}}
 We have reconsidered your case, and you are entitled to pregnancy benefit. We have therefore changed the decision you previously have received.
@@ -35,8 +33,12 @@ The decision was made in accordance with the National Insurance Act § 14-4.
 
 ## You must notify any changes
 You must notify Nav immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt).
+{{/utils/redigerbart_innhold}}
 
+
+{{#> utils/readonly_innhold}}
 ## You have the right to appeal
 You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 
 {{> footer_en }}
+{{/utils/readonly_innhold}}

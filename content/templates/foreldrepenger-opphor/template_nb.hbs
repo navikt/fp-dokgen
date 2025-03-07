@@ -1,5 +1,5 @@
 {{> header_nb }}
-
+{{#> utils/redigerbart_innhold}}
 {{#eq erSøkerDød true}}
 # Foreldrepengene til {{capitalize felles.søkerNavn fully=true}} er stanset
 
@@ -98,4 +98,9 @@ Vedtaket er gjort etter folketrygdloven {{lovhjemmelForAvslag}} og forvaltningsl
 ## Du har rett til å klage
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 {{/eq}}
+{{/utils/redigerbart_innhold}}
+
+
+{{#> utils/readonly_innhold}}
 {{> footer_nb }}
+{{/utils/readonly_innhold}}

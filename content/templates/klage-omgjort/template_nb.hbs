@@ -1,7 +1,5 @@
 {{> header_nb }}
-
-
-
+{{#> utils/redigerbart_innhold}}
 {{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}# Nav har omgjort vedtaket ditt om tilbakebetaling av engangsstønad
 {{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}# Nav har omgjort vedtaket ditt om tilbakebetaling av foreldrepenger
 {{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}# Nav har omgjort vedtaket ditt om tilbakebetaling av svangerskapspenger
@@ -28,6 +26,10 @@ Nav gir opplysninger til Skatteetaten. Skatteetaten vil vurdere om det er grunnl
 Nav Innkreving vil korrigere beløpet du skal betale tilbake. Du finner mer informasjon på [nav.no/innbetaling](https://nav.no/innbetaling).
 {{/eq}}
 
+{{/utils/redigerbart_innhold}}
+
+
+{{#> utils/readonly_innhold}}
 ## Du har rett til å klage
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 {{#eq gjelderTilbakekreving true}}
@@ -35,3 +37,4 @@ Du må som hovedregel begynne å betale beløpet tilbake, selv om du klager på 
 {{/eq}}
 
 {{> footer_nb }}
+{{/utils/readonly_innhold}}

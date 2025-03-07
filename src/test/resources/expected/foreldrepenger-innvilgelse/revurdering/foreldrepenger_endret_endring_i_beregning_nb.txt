@@ -1,21 +1,24 @@
-<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
-        <td style="text-align: left; width: 150px">Navn:</td>
-        <td style="text-align: left;">ING ANONYMISERT</td>
-        <td style="text-align: left;"></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr><tr>
-        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
-        <td style="text-align: left;">11111 11111</td>
-        <td></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    <tr>
-        <td style="text-align: left; width: 150px">Saksnummer:</td>
-        <td style="text-align: left;">222222222</td>
-        <td></td> <!-- Empty column -->
-        <td style="text-align: right;">13. august 2021</td>
-    </tr>
-</table>
+<div id="header">
+    <table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+            <td style="text-align: left; width: 150px">Navn:</td>
+            <td style="text-align: left;">ING ANONYMISERT</td>
+            <td style="text-align: left;"></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr><tr>
+            <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+            <td style="text-align: left;">11111 11111</td>
+            <td></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 150px">Saksnummer:</td>
+            <td style="text-align: left;">222222222</td>
+            <td></td> <!-- Empty column -->
+            <td style="text-align: right;">13. august 2021</td>
+        </tr>
+    </table>
+</div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # Nav har beregnet foreldrepengene dine på nytt
 Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.
 Du får 1 436 kroner per dag før skatt. Dette er i gjennomsnitt 31 113 kroner i måneden. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
@@ -26,6 +29,8 @@ Beregningen er gjort etter folketrygdloven §§ 14-7 og 8-30 og forvaltningslove
 Hvis arbeidsgiver kommer med nye opplysninger om inntekten du hadde før du startet foreldrepengeperioden, får du et nytt vedtak med ny beregning.
 ## Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+</div>
+<div id="readonly-innhold">
 ## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 ## Du har rett til innsyn
@@ -43,4 +48,5 @@ Med vennlig hilsen
 Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
+</div>
 </div>

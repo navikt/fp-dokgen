@@ -1,27 +1,32 @@
-<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
-        <td style="text-align: left; width: 150px">Name:</td>
-        <td style="text-align: left;">Dolly Duck</td>
-        <td style="text-align: left;"></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr><tr>
-        <td style="text-align: left; width: 150px">National identity number:</td>
-        <td style="text-align: left;">300220 12345</td>
-        <td></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    <tr>
-        <td style="text-align: left; width: 150px">Nav's case number:</td>
-        <td style="text-align: left;">123456789</td>
-        <td></td> <!-- Empty column -->
-        <td style="text-align: right;">4. mai 2021</td>
-    </tr>
-</table>
+<div id="header">
+    <table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+            <td style="text-align: left; width: 150px">Name:</td>
+            <td style="text-align: left;">Dolly Duck</td>
+            <td style="text-align: left;"></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr><tr>
+            <td style="text-align: left; width: 150px">National identity number:</td>
+            <td style="text-align: left;">300220 12345</td>
+            <td></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 150px">Nav's case number:</td>
+            <td style="text-align: left;">123456789</td>
+            <td></td> <!-- Empty column -->
+            <td style="text-align: right;">4. mai 2021</td>
+        </tr>
+    </table>
+</div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # You are no longer entitled to pregnancy benefit
 We have received information that you have received sickness benefits for a period when you already received pregnancy benefit. Your pregnancy benefit therefore stops from 10. mai 2021.
 If pregnancy benefit becomes relevant from a later date, you must send a new application for pregnancy benefit, and your employer must send a new income report to Nav.
 The decision has been made in accordance with the National Insurance Act section § 14-4 og § forvaltningsloven § 35.
 ## You have the right to appeal
 You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
+</div>
+<div id="readonly-innhold">
 ## You have right of access
 Log into [foreldrepenger.nav.no](https://foreldrepenger.nav.no/) to see the documents in your case.
 <div style="break-inside: avoid; page-break-inside: avoid">
@@ -37,4 +42,5 @@ Yours sincerely,
 Nav Familie- og pensjonsytelser
 <br/><br/>
 This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
+</div>
 </div>

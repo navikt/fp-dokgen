@@ -1,7 +1,5 @@
 {{> header_nb }}
-
-
-
+{{#> utils/redigerbart_innhold}}
 {{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}# Nav har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av engangsstønad
 {{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}# Nav har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av foreldrepenger
 {{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}# Nav har avvist klagen din på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av svangerskapspenger
@@ -46,8 +44,12 @@ Vi har avvist klagen din fordi{{/gt}}
 {{/if}}
 
 Vedtaket er gjort etter {{lovhjemler}}.
+{{/utils/redigerbart_innhold}}
 
+
+{{#> utils/readonly_innhold}}
 ## Du har rett til å klage
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 
 {{> footer_nb }}
+{{/utils/readonly_innhold}}

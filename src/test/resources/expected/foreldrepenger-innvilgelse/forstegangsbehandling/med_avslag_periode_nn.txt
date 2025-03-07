@@ -1,21 +1,24 @@
-<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
-        <td style="text-align: left; width: 150px">Namn:</td>
-        <td style="text-align: left;">Herman Duck</td>
-        <td style="text-align: left;"></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr><tr>
-        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
-        <td style="text-align: left;">300220 12345</td>
-        <td></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    <tr>
-        <td style="text-align: left; width: 150px">Saksnummer:</td>
-        <td style="text-align: left;">123456789</td>
-        <td></td> <!-- Empty column -->
-        <td style="text-align: right;">4. mai 2021</td>
-    </tr>
-</table>
+<div id="header">
+    <table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+            <td style="text-align: left; width: 150px">Namn:</td>
+            <td style="text-align: left;">Herman Duck</td>
+            <td style="text-align: left;"></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr><tr>
+            <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+            <td style="text-align: left;">300220 12345</td>
+            <td></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 150px">Saksnummer:</td>
+            <td style="text-align: left;">123456789</td>
+            <td></td> <!-- Empty column -->
+            <td style="text-align: right;">4. mai 2021</td>
+        </tr>
+    </table>
+</div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # Nav har innvilga søknaden din om 100 prosent foreldrepengar
 Du får 1 618 kroner per dag før skatt frå og med 4. juni 2022. Dette er i gjennomsnitt 35 056 kroner i månaden. Den siste dagen du får foreldrepengar er 4. november 2022.
 Arbeidsgivarane dine betaler deg lønn mens du har permisjon. Resten av foreldrepengane får du utbetalt frå Nav innan den 25. kvar månad. Sjekk utbetalingane dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
@@ -42,6 +45,8 @@ Dette er gjennomsnittet av inntekta di frå dei siste tre månadene. Dersom du n
 Berekninga er gjort etter folketrygdlova §§ 14-7 og 8-30.
 ## Du må melde frå om endringar
 Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til Nav med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+</div>
+<div id="readonly-innhold">
 ## Du har rett til å klage
 Du kan klage innan 6 veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 ## Du har rett til innsyn
@@ -59,4 +64,5 @@ Med vennleg helsing
 Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandla av fagsystemet vårt. Det er derfor ingen saksbehandlar som har underskrive vedtaksbrevet.
+</div>
 </div>

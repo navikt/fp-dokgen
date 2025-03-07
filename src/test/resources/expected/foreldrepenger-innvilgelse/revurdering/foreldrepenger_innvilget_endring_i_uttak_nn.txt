@@ -1,21 +1,24 @@
-<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
-        <td style="text-align: left; width: 150px">Namn:</td>
-        <td style="text-align: left;">HOL ANONYMISERT</td>
-        <td style="text-align: left;"></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr><tr>
-        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
-        <td style="text-align: left;">123456 12345</td>
-        <td></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    <tr>
-        <td style="text-align: left; width: 150px">Saksnummer:</td>
-        <td style="text-align: left;">123456789</td>
-        <td></td> <!-- Empty column -->
-        <td style="text-align: right;">12. august 2021</td>
-    </tr>
-</table>
+<div id="header">
+    <table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+            <td style="text-align: left; width: 150px">Namn:</td>
+            <td style="text-align: left;">HOL ANONYMISERT</td>
+            <td style="text-align: left;"></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr><tr>
+            <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+            <td style="text-align: left;">123456 12345</td>
+            <td></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 150px">Saksnummer:</td>
+            <td style="text-align: left;">123456789</td>
+            <td></td> <!-- Empty column -->
+            <td style="text-align: right;">12. august 2021</td>
+        </tr>
+    </table>
+</div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # Nav har innvilga søknaden din om 80 prosent foreldrepengar
 Vi har vurdert saka di på nytt, og du har rett til foreldrepengar. Vi har derfor endra vedtaket du har fått tidlegare.
 Du får 1 871 kroner per dag før skatt frå og med 18. juni 2020. Dette er i gjennomsnitt 40 538 kroner i månaden. Den siste dagen du får foreldrepengar er 13. august 2021.
@@ -40,6 +43,8 @@ Fordi du har valt 80 prosent foreldrepengar, får du mindre utbetalt i månaden.
 Dersom du har fått utbetalt foreldrepengar samtidig som du har jobba eller hatt ferie, har du fått utbetalt for mykje i foreldrepengar. Det betyr at utbetalinga i neste månad kan bli redusert med det du har fått utbetalt for mykje.
 ## Du må melde frå om endringar
 Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til Nav med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+</div>
+<div id="readonly-innhold">
 ## Du har rett til å klage
 Du kan klage innan 6 veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 ## Du har rett til innsyn
@@ -58,4 +63,5 @@ Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandla av fagsystemet vårt. Det er derfor ingen saksbehandlar som har underskrive vedtaksbrevet.
 ## Dette er ein kopi, orginal er sendt til verje.
+</div>
 </div>
