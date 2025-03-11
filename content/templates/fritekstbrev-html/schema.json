@@ -5,15 +5,11 @@
   "type": "object",
   "required": [
     "felles",
-    "overskrift",
     "html"
   ],
   "properties": {
     "felles": {
       "$ref": "file:content/templates/schema_felles.json"
-    },
-    "overskrift": {
-      "type": "string"
     },
     "html": {
       "type": "string"
