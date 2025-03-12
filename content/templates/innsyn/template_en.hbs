@@ -2,7 +2,6 @@
 {{#eq innsynResultat "AVVIST"}}
 
 # Nav has rejected your request for access to your case regarding {{>ytelse_navn_en}}
-{{> brukerdetaljer_en }}
 
 You have requested access to your case, but we cannot send you the documents we have.
 
@@ -12,7 +11,6 @@ This is pursuant to section 18 of the Public Administration Act.
 {{else}}
 
 # Nav sends you the documents in your case
-{{> brukerdetaljer_en }}
 {{/eq}}
 
 {{#eq innsynResultat "INNV"}}
@@ -30,15 +28,13 @@ You have requested access to your case, but we cannot send you all the documents
 
 This is pursuant to section 18 of the Public Administration Act.
 {{/eq}}
-<br/>
 
-##### You have the right to appeal
+## You have the right to appeal
 You may appeal within {{klagefrist}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 
 The right to appeal regarding access is pursuant to section 21 of the Public Administration Act.
-<br/>
-<br/>
-##### Do you have questions?
+
+## Do you have questions?
 You can find more information at [nav.no/barn](https://nav.no/barn).
 
 You can chat or write to us at [nav.no/contact](https://nav.no/contact).

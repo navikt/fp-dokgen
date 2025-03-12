@@ -24,7 +24,7 @@ FRITEKST LINJE 2</p>
 
 Your duty to give information is according to sections 21‑3 og 21‑4 of the National Insurance Act.
 <br/>
-##### The decision about your lump-sum grant can be reversed
+#### The decision about your lump-sum grant can be reversed
 We will consider your case again after the deadline has been reached. If you are not entitled to the lump-sum grant, you can be asked to repay the money back.
 
 You can send us information at [nav.no/ettersendelser](https://nav.no/ettersendelser).

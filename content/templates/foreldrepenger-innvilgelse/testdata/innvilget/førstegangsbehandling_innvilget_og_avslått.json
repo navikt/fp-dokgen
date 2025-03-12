@@ -83,5 +83,7 @@
   "beregningsgrunnlagregler": [],
   "klagefristUker": 6,
   "inkludereInnvilget": true,
-  "inkludereAvslag": true
+  "inkludereAvslag": true,
+  "endretDekningsgrad": false,
+  "morKanSøkeOmDagerFørFødsel": false
 }

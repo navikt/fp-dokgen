@@ -1,4 +1,4 @@
-{{> header }}
+{{> header_nn }}
 
 {{#eq variantType "FORTIDLIG"}}
 # Vi har fått søknaden din om {{> ytelse_navn_nn}}
@@ -8,7 +8,6 @@
 # Vi treng meir tid til å behandle søknaden om {{> ytelse_navn_nn}}
 {{/eq}}{{/eq}}
 
-{{> brukerdetaljer_nn }}
 
 {{#if død}}{{#eq variantType "KLAGE"}}
 Vi reknar med å behandle klagen til {{felles.søkerNavn}}, innan {{behandlingsfristUker}} veker.

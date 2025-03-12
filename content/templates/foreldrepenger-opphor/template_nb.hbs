@@ -1,8 +1,7 @@
-{{> header }}
+{{> header_nb }}
 
 {{#eq erSøkerDød true}}
 # Foreldrepengene til {{capitalize felles.søkerNavn fully=true}} er stanset
-{{> brukerdetaljer_nb }}
 
 Vi har fått melding om at {{felles.søkerNavn}}, som mottok foreldrepenger fra og med {{fomStønadsdato}}, er død.
 
@@ -19,14 +18,12 @@ Klagefristen er {{klagefristUker}} uker fra den datoen dødsboet fikk brevet.
 {{else}}
 {{#if barnDødsdato }}
 # Nav har endret foreldrepengeperioden din
-{{> brukerdetaljer_nb }}
 
-##### Dette har vi endret
+## Dette har vi endret
 {{else}}
 # Du har ikke lenger rett til foreldrepenger
-{{> brukerdetaljer_nb }}
 
-##### Dette har vi avslått
+## Dette har vi avslått
 {{/if}}
 {{~#each avslagÅrsaker}}
 {{~#switch this}}
@@ -98,7 +95,7 @@ Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden p�
 
 Vedtaket er gjort etter folketrygdloven {{lovhjemmelForAvslag}} og forvaltningsloven § 35.
 
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>

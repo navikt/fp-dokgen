@@ -2,7 +2,6 @@
 
 {{#eq erSøkerDød true}}
 # Parental benefit for {{capitalize felles.søkerNavn fully=true}} is stopped
-{{> brukerdetaljer_en }}
 
 We have been notified that {{felles.søkerNavn}}, who received parental benefit from and including {{fomStønadsdato}}, is dead.
 
@@ -19,14 +18,12 @@ You may appeal within {{klagefristUker}} weeks from the date the estate received
 {{else}}
 {{#if barnDødsdato }}
 #  Nav has changed your parental benefit
-{{> brukerdetaljer_en }}
 
-##### We have changed the following
+## We have changed the following
 {{else}}
 # You are no longer entitled to parental benefit
-{{> brukerdetaljer_en }}
 
-##### We have denied the following
+## We have denied the following
 {{/if}}
 {{~#each avslagÅrsaker}}
 {{~#switch this}}
@@ -98,7 +95,7 @@ You were not entitled to parental benefit, because you were not a member of the 
 
 The decision has been made in accordance with the National Insurance Act section {{lovhjemmelForAvslag}} and Public Administration Act section 35.
 
-##### You have the right to appeal
+## You have the right to appeal
 You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>

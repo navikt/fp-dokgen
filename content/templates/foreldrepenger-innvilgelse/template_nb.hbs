@@ -1,6 +1,5 @@
-{{> header }}
-<br/>
-<br/>
+{{> header_nb }}
+
 {{#if (eq behandlingResultatType "INNVILGET")}}
 {{#if endretDekningsgrad}}# Nav har innvilget søknaden din om foreldrepenger{{else}}# Nav har innvilget søknaden din om {{dekningsgrad}} prosent foreldrepenger{{/if}}
 {{else if (and (eq behandlingResultatType "FORELDREPENGER_ENDRET") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
@@ -8,7 +7,19 @@
 {{else}}
 # Nav har endret foreldrepengeperioden din
 {{/if}}
-{{> brukerdetaljer_nb }}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 {{#gt antallDødeBarn 0}}
 {{> foreldrepenger-innvilgelse/dodt_barn_nb }}
@@ -59,7 +70,7 @@ Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dager{{/eq}} igj
 {{~#each arbeidsforholdsliste}}
 {{#if @..first}}
 {{#if this.gradering}}
-##### Du har flere arbeidsgivere
+## Du har flere arbeidsgivere
 
 Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere foreldrepenger med arbeid hos én arbeidsgiver om gangen. Det betyr at det bare er perioden din hos {{this.arbeidsgiverNavn}} som blir forlenget.
 {{/if}}{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
@@ -107,27 +118,22 @@ Hvis arbeidsgiver kommer med nye opplysninger om inntekten du hadde før du star
 {{/if}}
 
 {{#if (or (eq forMyeUtbetalt "FERIE")(eq forMyeUtbetalt "JOBB"))}}
-##### Hva skjer hvis du får utbetalt foreldrepenger og lønn for samme periode?
+## Hva skjer hvis du får utbetalt foreldrepenger og lønn for samme periode?
 
 Hvis du har fått utbetalt foreldrepenger samtidig som du har jobbet eller utsatt dager fordi du har hatt ferie, har du fått utbetalt for mye i foreldrepenger. Det betyr at utbetalingen i neste måned kan bli redusert med det du har fått utbetalt for mye.
 {{/if}}
 
 {{#eq forMyeUtbetalt "GENERELL"}}
-##### Hva skjer hvis du får utbetalt foreldrepenger og lønn for samme periode?
+## Hva skjer hvis du får utbetalt foreldrepenger og lønn for samme periode?
 
 Hvis du får utbetalt for mye i foreldrepenger, kan utbetalingen din bli redusert i neste måned.
 {{/eq}}
 
-<br/>
-
-##### Du må melde fra om endringer
+## Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
-<br/>
-<br/>
 {{/gt}}
 
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
+
 {{> footer_nb }}

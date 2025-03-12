@@ -1,4 +1,4 @@
-{{> header }}
+{{> header_nb }}
 
 
 
@@ -9,35 +9,29 @@
 {{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}# Nav har omgjort vedtaket ditt om foreldrepenger
 {{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}# Nav har omgjort vedtaket ditt om svangerskapspenger
 {{/if}}
-{{> brukerdetaljer_nb }}
 
 Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at vedtaket ditt må gjøres om.
 
-##### Dette har vi lagt vekt på i vurderingen vår
+## Dette har vi lagt vekt på i vurderingen vår
 {{felles.fritekst}}
-<br/>
 
-##### Du må melde fra om endringer
+## Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 
 {{#eq gjelderTilbakekreving true}}
 
-##### Skatt
+## Skatt
 Beløpet du skal betale tilbake er redusert med den skatten som ble trukket da du fikk utbetalingen. Nav får skatten tilbake gjennom et oppgjør med Skatteetaten.
 Nav gir opplysninger til Skatteetaten. Skatteetaten vil vurdere om det er grunnlag for å endre skatteoppgjør.
 
-##### Hvordan betale tilbake pengene du skylder
+## Hvordan betale tilbake pengene du skylder
 Nav Innkreving vil korrigere beløpet du skal betale tilbake. Du finner mer informasjon på [nav.no/innbetaling](https://nav.no/innbetaling).
 {{/eq}}
 
-<br/>
-
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 {{#eq gjelderTilbakekreving true}}
 Du må som hovedregel begynne å betale beløpet tilbake, selv om du klager på dette vedtaket. Dette følger av forvaltningsloven § 42. Vi vil betale tilbake pengene du har betalt inn, om du får vedtak om at du ikke trengte å betale tilbake hele eller deler av beløpet du skyldte.
 {{/eq}}
-
-<br/>
 
 {{> footer_nb }}

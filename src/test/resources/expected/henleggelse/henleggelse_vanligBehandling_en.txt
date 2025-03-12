@@ -18,7 +18,7 @@ National identity number: 300220 12345
 
 We have been notified that you withdraw the application for parental benefit. Your case will therefore be closed.<br/><br/>
 
-##### Do you have questions?
+#### Do you have questions?
 You can find more information at [nav.no/barn](https://nav.no/barn).
 
 You can chat or write to us at [nav.no/contact](https://nav.no/contact).

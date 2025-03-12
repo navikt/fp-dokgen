@@ -1,11 +1,8 @@
 {{> header_en }}
 
-
-
 #  Nav has denied your application for parental benefit
-{{> brukerdetaljer_en }}
 
-##### We have denied the following
+## We have denied the following
 
 {{~#* inline "punkt" ~}}
 {{~#gt (size avslåttePerioder) 1}}* {{/gt}}
@@ -388,10 +385,7 @@ Even if you are not entitled to parental benefits, you may still be eligible for
 
 The decision has been made in accordance with the National Insurance Act Section {{lovhjemmelForAvslag}}.
 
-<br/>
-
-##### You have the right to appeal
+## You have the right to appeal
 You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
+
 {{> footer_en }}

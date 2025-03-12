@@ -14,27 +14,27 @@ Fødselsnummer: 300220 12345
 <br/>
 </p>
 Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at vedtaket ditt må gjøres om.
-##### Dette har vi lagt vekt på i vurderingen vår
+#### Dette har vi lagt vekt på i vurderingen vår
 FRITEKST
 <br/>
-##### Du må melde fra om endringer
+#### Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
-##### Skatt
+#### Skatt
 Beløpet du skal betale tilbake er redusert med den skatten som ble trukket da du fikk utbetalingen. Nav får skatten tilbake gjennom et oppgjør med Skatteetaten.
 Nav gir opplysninger til Skatteetaten. Skatteetaten vil vurdere om det er grunnlag for å endre skatteoppgjør.
-##### Hvordan betale tilbake pengene du skylder
+#### Hvordan betale tilbake pengene du skylder
 Nav Innkreving vil korrigere beløpet du skal betale tilbake. Du finner mer informasjon på [nav.no/innbetaling](https://nav.no/innbetaling).
 <br/>
-##### Du har rett til å klage
+#### Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 Du må som hovedregel begynne å betale beløpet tilbake, selv om du klager på dette vedtaket. Dette følger av forvaltningsloven § 42. Vi vil betale tilbake pengene du har betalt inn, om du får vedtak om at du ikke trengte å betale tilbake hele eller deler av beløpet du skyldte.
 <br/>
-##### Du har rett til innsyn
+#### Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-##### Har du spørsmål?
+#### Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
 
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.

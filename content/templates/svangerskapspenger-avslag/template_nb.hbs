@@ -1,8 +1,7 @@
-{{> header }}
+{{> header_nb }}
 
 {{#eq erSøkerDød true}}
 # Søknaden om svangerskapspenger for {{capitalize felles.søkerNavn fully=true}} er trukket
-{{> brukerdetaljer_nb }}
 
 Vi har fått melding om at {{felles.søkerNavn}} er død.
 
@@ -16,7 +15,6 @@ Klagefristen er {{klagefristUker}} uker fra den datoen dødsboet fikk brevet.
 
 {{else}}
 # Nav har avslått søknaden din om svangerskapspenger
-{{> brukerdetaljer_nb }}
 
 {{#eq årsak "1019" }}
 Vi har avslått søknaden din om svangerskapspenger som vi mottok {{mottattDato}} fordi vi ikke har mottatt dokumentasjonen vi har bedt om.
@@ -98,7 +96,7 @@ Du må søke senest tre måneder etter at perioden med svangerskapspenger har st
 Vedtaket er gjort etter folketrygdloven {{lovhjemmel}}.
 
 
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>

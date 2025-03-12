@@ -14,7 +14,7 @@ Fødselsnummer: 300220 12345
 <br/>
 </p>
 Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at vedtaket ditt må gjøres om.
-##### Dette har vi lagt vekt på i vurderingen vår
+#### Dette har vi lagt vekt på i vurderingen vår
 FRITEKST
 <br/>
 ##### Du må melde fra om endringer

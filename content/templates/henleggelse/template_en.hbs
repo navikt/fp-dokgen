@@ -2,30 +2,26 @@
 {{#if vanligBehandling}}
 
 # Nav has closed your case on {{>ytelse_navn_en}}
-{{> brukerdetaljer_en }}
 
-We have been notified that you withdraw the application for {{>ytelse_navn_en}}. Your case will therefore be closed.<br/><br/>
-    {{else if klage}}
+We have been notified that you withdraw the application for {{>ytelse_navn_en}}. Your case will therefore be closed.
+{{else if klage}}
 
 # Nav has closed your complaint on {{>ytelse_navn_en}}
-{{> brukerdetaljer_en }}
 
-We have been notified that you withdraw your complaint on {{>ytelse_navn_en}}. Your case will therefore be closed.<br/><br/>
+We have been notified that you withdraw your complaint on {{>ytelse_navn_en}}. Your case will therefore be closed.
 {{else if anke}}
 
 # Nav Klageinstans has closed your appeal on {{>ytelse_navn_en}}
-{{> brukerdetaljer_en }}
 
-We have been notified that you withdraw your appeal on {{>ytelse_navn_en}}. Your appeal will therefore be closed.<br/><br/>
+We have been notified that you withdraw your appeal on {{>ytelse_navn_en}}. Your appeal will therefore be closed.
 {{else if innsyn}}
 
 # Nav has closed your request of access to the case of {{>ytelse_navn_en}}
-{{> brukerdetaljer_en }}
 
-We have been notified that you withdraw your request of access of your case. Nav will therefore end further processing of your inquiry.<br/><br/>
+We have been notified that you withdraw your request of access of your case. Nav will therefore end further processing of your inquiry.
 {{/if}}
 
-##### Do you have questions?
+## Do you have questions?
 You can find more information at [nav.no/barn](https://nav.no/barn).
 
 You can chat or write to us at [nav.no/contact](https://nav.no/contact).

@@ -24,7 +24,7 @@ FRITEKST LINJE 2</p>
 
 Opplysningsplikten går fram av folketrygdloven §§ 21-3 og 21-4.
 <br/>
-##### Vedtaket ditt om engangsstønad kan bli omgjort
+#### Vedtaket ditt om engangsstønad kan bli omgjort
 Vi vil vurdere saken din på nytt når fristen er gått ut. Dersom du ikke har hatt rett til engangsstønad, kan du bli nødt til å betale tilbake pengene.
 
 Du sender dokumentasjonen til oss på [nav.no/ettersendelser](https://nav.no/ettersendelser).

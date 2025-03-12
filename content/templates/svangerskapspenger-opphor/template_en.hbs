@@ -2,7 +2,6 @@
 
 {{#eq erSøkerDød true}}
 # Pregnancy benefit for {{capitalize felles.søkerNavn fully=true}} is stopped
-{{> brukerdetaljer_en }}
 {{#eq opphørtPeriode.årsak "8304" }}
 We have been notified that {{felles.søkerNavn}}, who received pregnancy benefit from and including {{opphørtPeriode.stønadsperiodeFom}}, is dead.
 
@@ -21,7 +20,6 @@ You may appeal within {{klagefristUker}} weeks from the date the estate received
 {{else}}
 # You are no longer entitled to pregnancy benefit
 {{/eq}}
-{{> brukerdetaljer_en }}
 
 {{#in-array (array "1020" "1021" "1023" "1024" "1025" "8306") opphørtPeriode.årsak}}
 {{#neq opphørtPeriode.årsak "1024"}}
@@ -109,7 +107,7 @@ The decision has been made in accordance with the National Insurance Act section
 
 <br/>
 
-##### You have the right to appeal
+## You have the right to appeal
 You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>

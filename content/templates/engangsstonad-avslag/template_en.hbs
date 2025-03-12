@@ -4,7 +4,6 @@
 {{else}}
 # Nav has reversed its decision regarding a lump-sum grant
 {{/if}}
-{{>brukerdetaljer_en}}
 {{#if avslagMedlemskap}}
     {{#eq avslagMedlemskap "IKKE_MEDL_FØR_STP"}}
 You are not entitled to a lump-sum grant because you are not a member of the National Insurance Scheme.
@@ -118,10 +117,8 @@ This decision has been made pursuant to section 14-17 of the National Insurance 
 This decision has been made pursuant to section 21-3 of the National Insurance Act.
     {{/eq}}
 {{/each}}
-<br/>
 
-##### You have the right to appeal
+## You have the right to appeal
 You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
+
 {{> footer_en }}
