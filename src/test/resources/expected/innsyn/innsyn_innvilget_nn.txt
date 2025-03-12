@@ -1,40 +1,34 @@
-<p align="right">
-Dato: 4. april 2020
-</p>
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Namn:</td>
+        <td style="text-align: left;">Dolly Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Saksnummer:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. april 2020</td>
+    </tr>
+</table>
 <br>
 <br>
 <br>
-
 # Nav sender deg dokumenta i saka di
-<p style="color:gray">
-Saksnummer i Nav: 123456789
-<br/>
-Namn: Dolly Duck
-<br/>
-Fødselsnummer: 300220 12345
-<br/>
-
-</p>
-
 Du har bedt om innsyn i saka di, og vi sender deg alle dokumenta vi har.
-
 Dette går fram av forvaltningslova § 18.
-
 Dersom du ikkje har fått all opplysningane du har bedt om, kan du kontakte oss.
-
-<br/>
-
-#### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innan 6 veker frå den datoen du fekk brevet. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage)
-
 Retten til å klage på innsyn går fram av forvaltningslova § 21.
-<br/>
-<br/>
-#### Har du spørsmål?
+## Har du spørsmål?
 Du finn meir informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvardagar 09.00-15.00.
 <br/>
 <br/>
@@ -42,4 +36,3 @@ Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvar
 Med vennleg helsing
 <br/>
 Nav Familie- og pensjonsytelser
-

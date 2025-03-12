@@ -1,46 +1,40 @@
-<p align="right">
-Dato: 4. april 2020
-</p>
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Namn:</td>
+        <td style="text-align: left;">Dolly Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Saksnummer:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. april 2020</td>
+    </tr>
+</table>
 <br>
 <br>
 <br>
-
 #  Vi trenger fleire opplysningar
-<p style="color:gray">
-Saksnummer i Nav: 123456789
-<br/>
-Namn: Dolly Duck
-<br/>
-Fødselsnummer: 300220 12345
-<br/>
-
-</p>
-
 Vi fekk søknaden din om foreldrepengar 1. april 2020, men manglar opplysningar for å kunne behandle den.
-
-##### Du må sende oss
+## Du må sende oss
 Tekst
 - Attest
 - Bekreftelse
 Mer tekst
-<br/>
-##### Søknaden kan bli avslått
+## Søknaden kan bli avslått
 Dersom vi ikkje får opplysningane innan 24. mai 2020, kan søknaden bli avslått.
-
 Dette går fram av folketrygdlova § 21-3.
-<br/>
-<br/>
-##### Du har rett til innsyn
+## Du har rett til innsyn
 For å sjå dokumenta i saka di, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
-<br/>
-<br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-
-##### Har du spørsmål?
+## Har du spørsmål?
 Du finn meir informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvardagar 09.00-15.00.
 <br/>
 <br/>
@@ -48,6 +42,4 @@ Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvar
 Med vennleg helsing
 <br/>
 Nav Familie- og pensjonsytelser
-
 </div>
-

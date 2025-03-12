@@ -1,40 +1,34 @@
-<p align="right">
-Date: 4. april 2020
-</p>
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Name:</td>
+        <td style="text-align: left;">Dolly Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">National identity number:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Nav's case number:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. april 2020</td>
+    </tr>
+</table>
 <br>
 <br>
 <br>
-
 # Nav sends you the documents in your case
-<p style="color:gray">
-Nav's case number: 123456789
-<br/>
-Name: Dolly Duck
-<br/>
-National identity number: 300220 12345
-<br/>
-
-</p>
-
 You have requested access to your case, but we cannot send you all the documents we have.
-
 Vi kan kun gi deg delvis innsyn fordi
-
 This is pursuant to section 18 of the Public Administration Act.
-
-<br/>
-
-#### You have the right to appeal
+## You have the right to appeal
 You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
-
 The right to appeal regarding access is pursuant to section 21 of the Public Administration Act.
-<br/>
-<br/>
-#### Do you have questions?
+## Do you have questions?
 You can find more information at [nav.no/barn](https://nav.no/barn).
-
 You can chat or write to us at [nav.no/contact](https://nav.no/contact).
-
 If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekdays 09:00-15:00.
 <br/>
 <br/>
@@ -42,4 +36,3 @@ If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekda
 Yours sincerely,
 <br/>
 Nav Familie- og pensjonsytelser
-

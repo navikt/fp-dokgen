@@ -1,35 +1,37 @@
-<p align="right">
-Dato: 4. mai 2021
-</p>
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Namn:</td>
+        <td style="text-align: left;">Dolly Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Saksnummer:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. mai 2021</td>
+    </tr>
+</table>
 <br>
 <br>
 <br>
 # Vi har sendt saka di til Nav Klageinstans
-<p style="color:gray">
-Saksnummer i Nav: 123456789
-<br/>
-Namn: Dolly Duck
-<br/>
-Fødselsnummer: 300220 12345
-<br/>
-</p>
 Vi har fått klaga di på vedtaket om tilbakebetaling av foreldrepengar 3. mai 2021, og kome fram til at det ikkje blir endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
 Informasjon om saksbehandlingstid finn du på nav.no.
-#### Vurderinga vår
+## Vurderinga vår
 FRITEKST
 <br/>
 Har du nye opplysningar eller ønskjer å uttale deg, kan du sende dette via [nav.no/klage](https://nav.no/klage). Vel Nav-eining: Nav Klageinstans Midt-Noreg.
-<br/>
-#### Du har rett til innsyn
+## Du har rett til innsyn
 For å sjå dokumenta i saka di, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
-<br/>
-<br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-#### Har du spørsmål?
+## Har du spørsmål?
 Du finn meir informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvardagar 09.00-15.00.
 <br/>
 <br/>

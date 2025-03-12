@@ -1,97 +1,59 @@
-<p align="right">
-Dato: 4. mai 2021
-</p>
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Navn:</td>
+        <td style="text-align: left;">Herman Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Saksnummer:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. mai 2021</td>
+    </tr>
+</table>
 <br>
 <br>
 <br>
-<br/>
-<br/>
-
 # Nav har innvilget søknaden din om 100 prosent foreldrepenger
-
-<p style="color:gray">
-Saksnummer i Nav: 123456789
-<br/>
-Navn: Herman Duck
-<br/>
-Fødselsnummer: 300220 12345
-<br/>
-
-</p>
-
 Du får 1 618 kroner per dag før skatt fra og med 4. juni 2022. Dette er i gjennomsnitt 35 056 kroner i måneden. Den siste dagen du får foreldrepenger er 4. november 2022.
-
 Arbeidsgiverne dine betaler deg lønn mens du har permisjon. Resten av foreldrepengene får du utbetalt fra Nav innen den 25. hver måned. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
-
-<br/>
-
-##### Dette har vi innvilget
-
+## Dette har vi innvilget
 * Du får 20 prosent foreldrepenger fra og med 24. februar 2021 til og med 26. mars 2021 fordi du jobber 80 prosent hos ARBEIDSGIVER 1. I denne perioden får du 1 618 kroner per dag før skatt.
-
 * Du får foreldrepenger fra og med 29. mars 2021 til og med 05. mai 2020. I denne perioden får du 1 939 kroner per dag før skatt.
-
 * Du får 20 prosent foreldrepenger fra og med 06. april 2021 til og med 06. juni 2021 fordi du jobber 80 prosent hos ARBEIDSGIVER 1. I denne perioden får du 1 618 kroner per dag før skatt.
-
 * Du får 20 prosent foreldrepenger fra og med 09. juni 2021 til og med 18. juni 2021 fordi du jobber 80 prosent hos ARBEIDSGIVER 1. I denne perioden får du 80 kroner per dag før skatt.
-
 * Du får foreldrepenger fra og med 21. juni 2021 til og med 10. august 2021. I denne perioden får du 401 kroner per dag før skatt.
-
 * Du får 20 prosent foreldrepenger fra og med 18. august 2021 til og med 05. desember 2021 fordi du jobber 80 prosent hos ARBEIDSGIVER 1. I denne perioden får du 80 kroner per dag før skatt.
-
 I periodene du kombinerer arbeid og foreldrepenger, får du utbetalt fulle foreldrepenger der du ikke jobber.
-
 Det er 0 dager igjen av kvoten din, og 10 dager som begge kan ta ut. Disse dagene må være tatt ut innen barnet fyller tre år eller innen en ny foreldrepengeperiode for et nytt barn starter.
-
-##### Du har flere arbeidsgivere
-
+## Du har flere arbeidsgivere
 Du jobber hos flere arbeidsgivere i samme periode. Det er kun mulig å kombinere foreldrepenger med arbeid hos én arbeidsgiver om gangen. Det betyr at det bare er perioden din hos ARBEIDSGIVER 1 som blir forlenget.
-
-<br/>
-
-##### Dette har vi avslått
-
+## Dette har vi avslått
 Du har ikke rett til foreldrepenger fra og med 06. desember 2021 til og med 07. desember 2021 fordi det ikke er flere dager igjen av foreldrepengeperioden.
-
 Vedtaket er gjort etter folketrygdloven §§ 14-9, 14-12 og 14-16.
-
 <br/>
-
-##### Inntekt vi har brukt i beregningen
-
+## Inntekt vi har brukt i beregningen
 Vi har brukt 504 360 kroner i året før skatt i beregningen av foreldrepengene dine.
-
 Inntekten din hos ARBEIDSGIVER 1 er 8 697 kroner i måneden.
-
 Inntekten din hos ARBEIDSGIVER 2 er 33 333 kroner i måneden.
-
 Arbeidsgiverne dine har gitt oss disse opplysningene.
-
 Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.
-
 Beregningen er gjort etter folketrygdloven §§ 14-7 og 8-30.
-
-<br/>
-
-##### Du må melde fra om endringer
+## Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
-<br/>
-<br/>
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
-##### Du har rett til innsyn
+## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
-<br/>
-<br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-
-##### Har du spørsmål?
+## Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hverdager 09.00-15.00.
 <br/>
 <br/>
@@ -99,10 +61,6 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 Med vennlig hilsen
 <br/>
 Nav Familie- og pensjonsytelser
-
 <br/><br/>
-
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
-
 </div>
-

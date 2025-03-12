@@ -11,7 +11,7 @@ Vedtaket er gjort etter folketrygdloven §§ 14-9, 14-10 og 14-12.
 
 <br/>
 
-##### Inntekt vi har brukt i beregningen
+## Inntekt vi har brukt i beregningen
 Inntekten din hos ADVOKATEN AS er 75 000 kroner i måneden. Arbeidsgiveren din har gitt oss disse opplysningene.
 
 Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.

@@ -23,26 +23,26 @@ Den andre forelderen har ikke rett til foreldrepenger. Derfor får du hele forel
 Det er 75 dager igjen av perioden med foreldrepenger. Mor må være i aktivitet for at du skal kunne ta ut disse dagene. I perioder mor ikke er i aktivitet vil du miste dager, selv om du ikke tar ut foreldrepenger. Disse dagene må være tatt ut innen barnet fyller tre år, eller innen en ny foreldrepengeperiode for et nytt barn starter.
 Vedtaket er gjort etter folketrygdloven §§ 14-13 og 14-14.
 <br/>
-##### Inntekt vi har brukt i beregningen
+## Inntekt vi har brukt i beregningen
 Inntekten din hos BEDRIFT AS er 60 000 kroner i måneden. Arbeidsgiveren din har gitt oss disse opplysningene.
 Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.
 Foreldrepengene dine er fastsatt til 638 394 kroner i året, som er seks ganger grunnbeløpet i folketrygden. Du tjener mer enn dette, men du får ikke foreldrepenger for den delen av inntekten som overstiger seks ganger grunnbeløpet.
 Beregningen er gjort etter folketrygdloven §§ 14-7 og 8-30.
 <br/>
-##### Du må melde fra om endringer
+## Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 <br/>
 <br/>
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 <br/>
 <br/>
-##### Du har rett til innsyn
+## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <br/>
 <br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-##### Har du spørsmål?
+## Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
 
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.

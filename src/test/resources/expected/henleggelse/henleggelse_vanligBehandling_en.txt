@@ -1,28 +1,29 @@
-<p align="right">
-Date: 4. april 2020
-</p>
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Name:</td>
+        <td style="text-align: left;">Dolly Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">National identity number:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Nav's case number:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. april 2020</td>
+    </tr>
+</table>
 <br>
 <br>
 <br>
-
 # Nav has closed your case on parental benefit
-<p style="color:gray">
-Nav's case number: 123456789
-<br/>
-Name: Dolly Duck
-<br/>
-National identity number: 300220 12345
-<br/>
-
-</p>
-
-We have been notified that you withdraw the application for parental benefit. Your case will therefore be closed.<br/><br/>
-
-#### Do you have questions?
+We have been notified that you withdraw the application for parental benefit. Your case will therefore be closed.
+## Do you have questions?
 You can find more information at [nav.no/barn](https://nav.no/barn).
-
 You can chat or write to us at [nav.no/contact](https://nav.no/contact).
-
 If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekdays 09:00-15:00.
 <br/>
 <br/>
@@ -30,4 +31,3 @@ If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekda
 Yours sincerely,
 <br/>
 Nav Familie- og pensjonsytelser
-
