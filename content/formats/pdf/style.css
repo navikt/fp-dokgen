@@ -34,15 +34,6 @@ html {
     margin-top: 48px;
 }
 
-.block {
-    width: 100%;
-    margin-top: 0;
-}
-
-.inline {
-    display: inline-block;
-}
-
 h1 {
     font-size: 16px;
     line-height: 20px;
@@ -79,7 +70,7 @@ h4 {
     margin-bottom: 6px;
 }
 
-p, tr {
+p, li, td, th{
     font-size: 11px;
     line-height: 16px;
     font-weight: normal;
@@ -90,25 +81,17 @@ table {
     width: 100%;
 }
 
-.td01 {
-  width: 110px;
-  font-size: 12px;
+.block {
+    width: 100%;
+    margin-top: 0;
 }
 
-.td02 {
-  width: 150px;
-}
-
-.bold {
-    font-weight: 700;
+.inline {
+    display: inline-block;
 }
 
 .new_page {
     page-break-before: always;
-}
-
-li {
-    font-size: 14px;
 }
 
 .draft_text {
