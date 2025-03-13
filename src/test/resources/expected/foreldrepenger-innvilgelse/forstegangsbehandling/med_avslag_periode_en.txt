@@ -36,7 +36,6 @@ You are working for several employers during the same period. It is only possibl
 ## We have denied the following
 You are not entitled to parental benefit from 06. desember 2021 up to and including 07. desember 2021 because there are no more days left of the parental benefit period.
 The decision has been made in accordance with the National Insurance Act §§ 14-9, 14-12 og 14-16.
-<br/>
 ## Income we have used in the calculation
 We have used the income figure of 504 360 kroner a year before taxes to calculate your parental benefit.
 Your income at ARBEIDSGIVER 1 is 8 697 kroner per month.
@@ -44,15 +43,10 @@ Your income at ARBEIDSGIVER 2 is 33 333 kroner per month.
 Your employers have provided us with this information.
 This is the average of your income from the last three months before the start of the parental benefit period. If you have just started working, changed your employment situation or your pay has changed, we have used your monthly income after the change took place.
 The calculation has been made in accordance with the National Insurance Act Sections §§ 14-7 og 8-30.
-<br/>
 ## You must notify any changes
 You must notify Nav immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt) for more detailed information.
-<br/>
-<br/>
 ## You have the right to appeal
 You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
 ## You have right of access
 Log into [foreldrepenger.nav.no](https://foreldrepenger.nav.no/) to see the documents in your case.
 <div style="break-inside: avoid; page-break-inside: avoid">
