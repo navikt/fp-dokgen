@@ -38,8 +38,8 @@ public enum Brevmal {
     SELVBETJENING_TILSVAR_TILBAKEBETALINGVARSEL("selvbetjening-tilsvar-tilbakebetalingvarsel"),
 
     //Fpinntektsmelding
-    FP_INNTEKTSMELDING("fpinntektsmelding-inntektsmelding")
-    ;
+    FP_INNTEKTSMELDING("fpinntektsmelding-inntektsmelding"),
+    FP_INNTEKTSMELDING_REFUSJONSKRAV("fpinntektsmelding-refusjonskrav");
 
     private String navn;
 
