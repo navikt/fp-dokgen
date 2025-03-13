@@ -7,7 +7,7 @@
 }
 
 @page {
-    size: A4;
+    size: 595px 842px;
     margin: 64px 64px 74px 64px;
 
     @bottom-right {
@@ -83,6 +83,7 @@ p, tr {
     font-size: 11px;
     line-height: 16px;
     font-weight: normal;
+    margin-top: 0;
 }
 
 table {
