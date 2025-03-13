@@ -1,223 +1,126 @@
-<p align="right">
-Dato: 4. mai 2021
-</p>
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Navn:</td>
+        <td style="text-align: left;">Dolly Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Saksnummer:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. mai 2021</td>
+    </tr>
+</table>
 <br>
 <br>
 <br>
-
 #  Nav har avslått søknaden din om foreldrepenger
-<p style="color:gray">
-Saksnummer i Nav: 123456789
-<br/>
-Navn: Dolly Duck
-<br/>
-Fødselsnummer: 300220 12345
-<br/>
-
-</p>
-
 ## Dette har vi avslått
-
 * Du har ikke rett til foreldrepenger, fordi du ikke har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i seks av de siste ti månedene før foreldrepengeperioden starter.
-
 * Du har ikke rett til foreldrepenger, fordi inntekten din er lavere enn 50 000 kroner i året før skatt.
-
 * Du har ikke rett til foreldrepenger fordi du har søkt for tidlig. Du kan søke når du er i svangerskapsuke 22.
-
 * Du har ikke rett til foreldrepenger fordi barnet ditt var fylt 15 år da du overtok omsorgen.
-
 * Du har ikke rett til foreldrepenger fordi barnet ditt var fylt 15 år da du overtok omsorgen.
-
 * Du har ikke rett til foreldrepenger fordi vi ikke har opplysninger om at barnet er født.
-
 * Du har ikke rett til foreldrepenger fordi du adopterte barnet til ektefellen eller samboeren din etter at foreldrepengeperioden var avsluttet.
-
 * Du har ikke rett til foreldrepenger fra og med 16. april 2021 til og med 17. april 2021 fordi det ikke er flere dager igjen av foreldrepengeperioden.
-
 * Du har allerede fått utbetalt engangsstønad. Derfor er søknaden din avslått.
-
 * Du har allerede fått utbetalt engangsstønad. Derfor er søknaden din avslått.
-
 * Du har ikke rett til foreldrepenger fordi du ikke er registrert som medmor til barnet.
-
 * Du har ikke rett til foreldrepenger fordi du ikke er registrert som medmor til barnet.
-
 * Du har ikke rett til foreldrepenger fra og med 26. april 2021 til og med 27. april 2021 fordi du ikke har omsorgen for barnet.
-
 * Du har ikke rett til foreldrepenger fra og med 28. april 2021 til og med 29. april 2021 fordi du ikke har omsorgen for barnet.
-
 * Du har ikke rett til foreldrepenger fordi du har hatt samvær med barnet minst en dag i uken og annenhver helg.
-
 * Du har ikke rett til foreldrepenger fordi du ikke har foreldreansvar for barnet ditt.
-
 * Du har ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet barnet ditt ble født.
-
 * Du er omfattet av trygdeordningen i et annet land.
-
 * Du har ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet barnet ditt ble født.
-
 * Ifølge folkeregisteret har du flyttet fra Norge.
-
 * Du har ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet barnet ditt ble født.
-
 * Du har ikke oppholdstillatelse i Norge.
-
 * Du har ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet barnet ditt ble født.
-
 * Vi har ikke opplysninger om at du jobber eller har familie som forsørger deg i Norge. Det er derfor ikke dokumentert at du har rett til opphold etter EØS-avtalen.
-
 * Du har ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet barnet ditt ble født.
-
 * Du regnes ikke som medlem fordi du oppholder deg mer i utlandet enn i Norge.
-
 * Du har ikke rett til foreldrepenger fra og med 14. mai 2021 til og med 15. mai 2021. Du må søke senest tre måneder etter at perioden med foreldrepenger har startet. Du søkte 4. mai 2021.
-
 * Du kan ikke overta kvoten fra og med 16. mai 2021 til og med 17. mai 2021 fordi den andre forelderen ikke er innlagt i helseinstitusjon.
-
 * Du kan ikke overta kvoten fra og med 18. mai 2021 til og med 19. mai 2021 fordi den andre forelderen har rett til foreldrepenger. Hvis dette endrer seg kan du søke på nytt.
-
 * Du kan ikke overta kvoten til den andre forelderen fra og med 20. mai 2021 til og med 21. mai 2021.
-
   For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av barnet på grunn av egen sykdom. Legeerklæringen viser ikke dette.
-
 * Du kan ikke overta kvoten til den andre forelderen fra og med 22. mai 2021 til og med 23. mai 2021.
-
   For at du skal kunne overta kvoten, må den andre forelderen være helt avhengig av hjelp til å ta seg av barnet på grunn av egen sykdom. Legeerklæringen viser ikke dette.
-
 * Du har ikke rett til foreldrepenger fra og med 24. mai 2021 til og med 25. mai 2021 fordi mor ikke er i jobb.
-
 * Du har ikke rett til foreldrepenger fra og med 26. mai 2021 til og med 27. mai 2021 fordi mor ikke tar godkjent utdanning på heltid.
-
 * Du har ikke rett til foreldrepenger fra og med 28. mai 2021 til og med 29. mai 2021 fordi mor ikke tar godkjent utdanning i kombinasjon med arbeid som til sammen blir heltid.
-
 * Du har ikke rett til foreldrepenger fra og med 30. mai 2021 til og med 31. mai 2021.
-
   For at du skal kunne overta foreldrepengene, må mor være helt avhengig av hjelp til å ta seg av barnet på grunn av egen sykdom. Legeerklæringen hennes viser ikke dette.
-
 * Du har ikke rett til foreldrepenger fra og med 1. juni 2021 til og med 2. juni 2021 fordi mor ikke er innlagt i helseinstitusjon.
-
 * Du har ikke rett til foreldrepenger fra og med 3. juni 2021 til og med 4. juni 2021 fordi mor ikke deltar på heltid i introduksjonsprogrammet for nyankomne innvandrere, ifølge integreringsloven kapittel 4.
-
 * Du har ikke rett til foreldrepenger fra og med 5. juni 2021 til og med 6. juni 2021 fordi mor ikke deltar på heltid i kvalifiseringsprogrammet.
-
 * Du kan ikke ta ut foreldrepenger fra og med 7. juni 2021 til og med 8. juni 2021 fordi mor ikke har søkt om eller ikke har rett til foreldrepenger.
-
 * Hvis mor søker om foreldrepenger og i tillegg arbeider, studerer eller er i annen aktivitet, kan du ha rett til foreldrepenger. Dette kan du lese mer om på [nav.no/familie](https://nav.no/familie).
-
 * Du har ikke rett til foreldrepenger fra og med 11. juni 2021 til og med 12. juni 2021 fordi mor ikke mottar uføretrygd. Hvis dette endrer seg senere, kan du søke på nytt.
-
 * Vi har avslått søknaden din fordi vi ikke har mottatt dokumentasjonen vi har bedt om.
-
   Hvis du sender oss dokumentasjonen innen seks uker, behandler vi saken din på nytt. Du trenger ikke sende ny søknad.
-
 * Det er ikke søkt om foreldrepenger eller utsettelse fra og med 15. juni 2021 til og med 16. juni 2021. Derfor er 1 dag tapt.
-
 * Du kan ikke utsette foreldrepengene fra og med 17. juni 2021 til og med 18. juni 2021 fordi du ikke har avtalt ferien med arbeidsgiveren din.
-
 * Du kan ikke utsette foreldrepengene fra og med 19. juni 2021 til og med 20. juni 2021 fordi du ikke kan ta ut ferie på helligdager.
-
 * Du kan ikke utsette foreldrepengene fra og med 21. juni 2021 til og med 22. juni 2021 fordi det er kun arbeidstakere som har rett til ferie etter ferieloven.
-
 * Du kan ikke utsette foreldrepengene fra og med 23. juni 2021 til og med 24. juni 2021 fordi barnet ditt ikke er innlagt i helseinstitusjon.
-
 * Du kan ikke utsette foreldrepengene fra og med 25. juni 2021 til og med 26. juni 2021 fordi du ikke er innlagt i helseinstitusjon.
-
 * Du kan ikke utsette foreldrepengene fra og med 27. juni 2021 til og med 28. juni 2021 fordi du ikke jobber heltid.
-
 * Du kan ikke utsette foreldrepengene fra og med 29. juni 2021 til og med 30. juni 2021 fordi det ikke har gått seks uker siden barnet ditt ble født. Du vil få utbetalt foreldrepenger i perioden.
-
 * Du kan ikke utsette foreldrepengene fra og med 1. juli 2021 til og med 2. juli 2021 fordi det ikke har gått seks uker siden barnet ditt ble født. Du vil få utbetalt foreldrepenger i perioden.
-
 * Du kan ikke utsette foreldrepengene fra og med 3. juli 2021 til og med 4. juli 2021.
-
   For å kunne utsette foreldrepengene på grunn av sykdom, må du være er helt avhengig av hjelp til å ta deg av barnet. Legeerklæringen viser ikke dette.
-
 * Du kan ikke utsette foreldrepengene fra og med 5. juli 2021 til og med 6. juli 2021 fordi du har søkt for sent.
-
   For å ha rett til å utsette foreldrepengene må du søke før du begynner å jobbe.
-
 * Du kan ikke kombinere foreldrepengene med arbeid fra og med 7. juli 2021 til og med 8. juli 2021.
-
   Foreldrepengene dine kan først kombineres med arbeid seks uker etter fødselen.
-
 * Du kan ikke kombinere foreldrepengene med arbeid fra og med 9. juli 2021 til og med 10. juli 2021.
-
   Fordi du jobber 100 prosent eller mer kan du ikke ta ut foreldrepenger ved siden av arbeidet.
-
 * Du kan ikke kombinere foreldrepengene med arbeid fra og med 11. juli 2021 til og med 12. juli 2021 fordi du har søkt for sent.
-
   For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du begynner å jobbe. Vi har derfor redusert foreldrepengene dine fordi du jobber.
-
 * Du kan ikke kombinere foreldrepengene med arbeid fra og med 13. juli 2021 til og med 14. juli 2021 fordi du har søkt for sent.
-
   For å ha rett til å kombinere foreldrepengene med arbeid må du søke før du begynner å jobbe. Vi har derfor redusert foreldrepengene dine fordi du jobber.
-
 * Du kan ikke kombinere foreldrepengene med arbeid fra og med 15. juli 2021 til og med 16. juli 2021 fordi du ikke er i jobb.
-
 * Du kan ikke ta ut foreldrepenger fra og med 17. juli 2021 til og med 18. juli 2021 fordi den andre forelderen tar ut foreldrepenger i samme periode.
-
 * Du kan ikke ta ut foreldrepenger fra og med 19. juli 2021 til og med 20. juli 2021 fordi den andre forelderen tar ut foreldrepenger i samme periode.
-
 * Du kan ikke ta ut foreldrepenger fra og med 21. juli 2021 til og med 22. juli 2021 fordi den andre forelderen utsetter foreldrepengene i samme periode.
-
 * Du kan ikke overta kvoten fra og med 23. juli 2021 til og med 24. juli 2021 fordi du ikke har aleneomsorgen for barnet. Hvis dette endrer seg kan du søke på nytt.
-
 * Du har søkt om å utsette foreldrepengene fra og med 25. juli 2021 til og med 26. juli 2021, men du har ikke sendt oss dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å utsette.
-
 * Du har søkt om å utsette foreldrepengene fra og med 27. juli 2021 til og med 28. juli 2021, men du har ikke sendt oss dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å utsette.
-
 * Du har søkt om å utsette foreldrepengene fra og med 29. juli 2021 til og med 30. juli 2021, men du har ikke sendt oss dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å utsette.
-
 * Du har søkt om å utsette foreldrepengene fra og med 31. juli 2021 til og med 1. august 2021, men du har ikke sendt oss dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å utsette.
-
 * Du har søkt om å utsette foreldrepengene fra og med 2. august 2021 til og med 3. august 2021, men du har ikke sendt oss dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å utsette.
-
 * Du har søkt om å kombinere foreldrepengene med arbeid fra og med 4. august 2021 til og med 5. august 2021, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å kombinere foreldrepengene med arbeid.
-
 * Du har søkt om å kombinere foreldrepengene med arbeid fra og med 6. august 2021 til og med 7. august 2021, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å kombinere foreldrepengene med arbeid.
-
 * Du har søkt om å overta kvoten til den andre forelderen fra og med 8. august 2021 til og med 9. august 2021, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å overta kvoten.
-
 * Du har søkt om foreldrepenger fra og med 10. august 2021 til og med 11. august 2021, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til foreldrepenger i denne perioden.
-
 * Du har søkt om foreldrepenger fra og med 12. august 2021 til og med 13. august 2021, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til foreldrepenger i denne perioden.
-
 * Du har søkt om foreldrepenger fra og med 14. august 2021 til og med 15. august 2021, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til foreldrepenger i denne perioden.
-
 * Du har søkt om foreldrepenger fra og med 16. august 2021 til og med 17. august 2021, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til foreldrepenger i denne perioden.
-
 * Du har søkt om foreldrepenger fra og med 18. august 2021 til og med 19. august 2021, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til foreldrepenger i denne perioden.
-
 * Du har søkt om foreldrepenger fra og med 20. august 2021 til og med 21. august 2021, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til foreldrepenger i denne perioden.
-
 * Du har søkt om foreldrepenger fra og med 22. august 2021 til og med 23. august 2021, men du har ikke sendt inn dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til foreldrepenger i denne perioden.
-
 * Du har ikke rett til foreldrepenger fra og med 24. august 2021 til og med 25. august 2021 fordi du tidligst kan starte foreldrepengeperioden 12 uker før termin.
-
 * Du har ikke rett til foreldrepenger fra og med 26. august 2021 til og med 27. august 2021 fordi barnet ditt er fylt tre år.
-
 * Du kan ikke utsette foreldrepengene fra og med 28. august 2021 til og med 29. august 2021 fordi det ikke er flere dager igjen av foreldrepengeperioden.
-
 * Du kan ikke utsette foreldrepengene fra og med 30. august 2021 til og med 31. august 2021.
-
   Du kan bare utsette når mor jobber, studerer eller er i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
-
 * Du har ikke rett til foreldrepenger fra og med 1. september 2021 til og med 2. september 2021.
-
   For at du skal få flere dager med foreldrepenger, må den andre forelderen jobbe, studere eller være i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
-
 * Du har ikke rett til foreldrepenger fra og med 3. september 2021 til og med 4. september 2021.
-
   For at du skal få flere dager med foreldrepenger, må den andre forelderen jobbe, studere eller være i en annen aktivitet. Du kan lese mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
-
 * Du har ikke rett til foreldrepenger fra og med 5. september 2021 til og med 6. september 2021.
-
   Foreldrepengene du har søkt om kan ikke kombineres med det den andre forelderen har søkt om for samme periode. Dere kan bare ta ut foreldrepenger samtidig når den ene av dere tar ut 100 prosent kvote og den andre tar ut opptil 50 prosent fellesperiode.
-
 * Du kan ikke utsette foreldrepengene fra og med 7. september 2021 til og med 8. september 2021 fordi du har søkt for sent.
-
   For å ha rett til å utsette foreldrepengene må du søke før ferien starter.
-
 * Du har ikke rett til foreldrepenger fra og med 9. september 2021 til og med 10. september 2021 fordi du tidligst kan få foreldrepenger fra den dagen du overtar omsorgen for barnet.
 * Du har søkt om å utsette foreldrepengene fra og med 11. september 2021 til og med 12. september 2021, men du har ikke sendt oss dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å utsette.
 * Du har søkt om å utsette foreldrepengene fra og med 13. september 2021 til og med 14. september 2021, men du har ikke sendt oss dokumentasjonen vi har bedt om. Derfor har vi ikke nok opplysninger til å vurdere om du har rett til å utsette.
@@ -232,26 +135,15 @@ Fødselsnummer: 300220 12345
 * Du har ikke rett til foreldrepenger fra og med 25. september 2021 til og med 26. september 2021 fordi foreldrepenger for nytt barn har startet.
 Selv om du ikke har rett til foreldrepenger, kan det være at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)<br/><br/>
 Selv om du ikke har rett til foreldrepenger, kan det være at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)<br/><br/>
-
 Vedtaket er gjort etter folketrygdloven § forvaltningsloven § 35.
-
-<br/>
-
 ## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
 ## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
-<br/>
-<br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-
 ## Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hverdager 09.00-15.00.
 <br/>
 <br/>
@@ -259,9 +151,6 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 Med vennlig hilsen
 <br/>
 Nav Familie- og pensjonsytelser
-
 <br/><br/>
-
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
-
 </div>

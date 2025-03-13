@@ -1,46 +1,37 @@
-<p align="right">
-Dato: 4. april 2020
-</p>
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Navn:</td>
+        <td style="text-align: left;">Dolly Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Saksnummer:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. april 2020</td>
+    </tr>
+</table>
 <br>
 <br>
 <br>
-
 # Nav har gjort om på vedtaket ditt om engangsstønad
-
-<p style="color:gray">
-Saksnummer i Nav: 123456789
-<br/>
-Navn: Dolly Duck
-<br/>
-Fødselsnummer: 300220 12345
-<br/>
-
-</p>
-
 Du har ikke rett til engangsstønad fordi du ikke var medlem i folketrygden på det tidspunktet barna dine ble født.
-
 Du har ikke rett til engangsstønad og vi har derfor avslått søknaden din.
-
 Du har kun rett til engangsstønad som far hvis du overtar omsorgen for barna når mor dør i forbindelse med fødselen.
-
 Vedtaket er gjort etter folketrygdloven § 22-13.
-
-
 ## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
 ## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
-<br/>
-<br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-
 ## Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hverdager 09.00-15.00.
 <br/>
 <br/>
@@ -48,6 +39,4 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 Med vennlig hilsen
 <br/>
 Nav Familie- og pensjonsytelser
-
 </div>
-
