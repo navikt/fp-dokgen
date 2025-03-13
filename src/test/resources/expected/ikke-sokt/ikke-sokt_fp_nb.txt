@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. april 2020</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Du har ikke søkt om foreldrepenger
 Vi fikk inntektsopplysninger fra Arbeidsplassen AS 1. mai 2020, men vi har ikke fått søknad om foreldrepenger fra deg.
 Vi kan ikke vurdere om du har rett til foreldrepenger før du har søkt. Dette gjør du på [nav.no/familie](https://nav.no/familie). For å unngå å miste dager og utbetaling, må du søke senest tre måneder etter at foreldrepengeperioden din startet.

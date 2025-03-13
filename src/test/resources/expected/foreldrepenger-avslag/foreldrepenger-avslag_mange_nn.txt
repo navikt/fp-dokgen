@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. mai 2021</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 #  Nav har avslått søknaden din om foreldrepengar
 ## Dette har vi avslått
 * Du har ikkje rett til foreldrepengar fordi du ikkje har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i seks av dei siste ti månadene før foreldrepengeperioden startar.

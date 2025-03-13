@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. mai 2021</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Nav has approved your application for 100 per cent parental benefit
 You will receive 1 618 kroner per day before taxes starting from 4. juni 2022. This is 35 056 kroner on average per month. The last day you will receive parental benefit is 4. november 2022.
 Your employers pays pays you wages while you are on leave. The remainder of the parental benefit will be paid by Nav within the 25th of each month. Check your payments at [nav.no/utbetalinger](https://nav.no/utbetalinger).

@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. mai 2021</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Nav har avvist klagen din på tilbakebetaling av foreldrepenger
 Vi har avvist klagen din fordi
 * du har klaget for sent. Du har ikke oppgitt en grunn til at du klaget for sent som gjør at vi kan behandle klagen.

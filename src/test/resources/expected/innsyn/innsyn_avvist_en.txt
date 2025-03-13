@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. april 2020</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Nav has rejected your request for access to your case regarding pregnancy benefit
 You have requested access to your case, but we cannot send you the documents we have.
 Vi kan kun gi deg delvis innsyn fordi

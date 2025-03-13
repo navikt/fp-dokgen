@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. mai 2021</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Nav har avslått søknaden din om svangerskapspenger
 Du har ikke rett til svangerskapspenger fordi du ikke har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i minst fire uker før du måtte slutte å jobbe.
 Vedtaket er gjort etter folketrygdloven § 14-4.

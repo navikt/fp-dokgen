@@ -16,9 +16,6 @@
         <td style="text-align: right;">13. august 2021</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Nav har beregnet foreldrepengene dine på nytt
 Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.
 Du får 1 436 kroner per dag før skatt. Dette er i gjennomsnitt 31 113 kroner i måneden. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).

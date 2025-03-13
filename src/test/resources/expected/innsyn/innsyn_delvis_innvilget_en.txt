@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. april 2020</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Nav sends you the documents in your case
 You have requested access to your case, but we cannot send you all the documents we have.
 Vi kan kun gi deg delvis innsyn fordi

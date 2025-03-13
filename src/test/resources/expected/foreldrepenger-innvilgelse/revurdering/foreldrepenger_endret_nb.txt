@@ -16,9 +16,6 @@
         <td style="text-align: right;">10. august 2021</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Nav har endret foreldrepengeperioden din
 ## Dette har vi innvilget
 Du får foreldrepenger fra og med 30. juni 2020 til og med 21. september 2020. I denne perioden får du 1 871 kroner per dag før skatt.

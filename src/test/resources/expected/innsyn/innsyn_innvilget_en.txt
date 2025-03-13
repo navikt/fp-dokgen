@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. april 2020</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Nav sends you the documents in your case
 You have requested access to your case, and we are sending you all the documents we have.
 This is pursuant to section 18 of the Public Administration Act.

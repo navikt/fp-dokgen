@@ -22,9 +22,6 @@
         <td style="text-align: right;">4. april 2020</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Nav har avslått søknaden din om engangsstønad
 Du har ikke rett til engangsstønad fordi du søkte for sent. Du må søke innen seks måneder etter omsorgsovertakelsen.
 Du har ikke gitt dokumentasjon om hvorfor du søkte for sent

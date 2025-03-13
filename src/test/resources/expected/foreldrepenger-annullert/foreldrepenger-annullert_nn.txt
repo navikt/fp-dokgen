@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. mai 2021</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 #  Nav har endra foreldrepengane dine
 Du har valt å ikkje ta ut din tidlegare innvilga periode med foreldrepengar.
 Du tek ikkje ut foreldrepengar før 1. april 2022.

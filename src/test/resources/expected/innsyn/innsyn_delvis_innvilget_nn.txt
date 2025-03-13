@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. april 2020</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Nav sender deg dokumenta i saka di
 Du har bedt om innsyn i saka di, men vi kan ikkje sende deg alle dokumenta vi har.
 Vi kan kun gi deg delvis innsyn fordi

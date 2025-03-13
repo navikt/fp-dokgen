@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. april 2020</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 #  Vi trenger fleire opplysningar
 Vi har fått nye opplysningar i saka om eingongsstønad, men manglar dokumentasjon for å kunne behandle den på nytt.
 ## Du må sende oss

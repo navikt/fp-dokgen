@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. mai 2021</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 #  Nav has changed your parental benefit
 You have chosen not to withdraw your previously granted period of parental benefit.
 You are not withdrawing your parental benefit before 1. april 2022.

@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. april 2020</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Nav has closed your case on parental benefit
 We have been notified that you withdraw the application for parental benefit. Your case will therefore be closed.
 ## Do you have questions?

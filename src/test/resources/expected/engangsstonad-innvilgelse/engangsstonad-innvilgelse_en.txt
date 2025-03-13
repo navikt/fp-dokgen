@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. april 2020</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 #  Nav has granted your application for a lump-sum grant
 You are entitled to a lump-sum grant and will receive NOK 85 000 within one week.<br/>
 The lump-sum grant is not liable to tax, and you can check your payment at [nav.no](https://nav.no/).<br/>

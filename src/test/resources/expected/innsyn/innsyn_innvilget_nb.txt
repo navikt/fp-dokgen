@@ -16,9 +16,6 @@
         <td style="text-align: right;">4. april 2020</td>
     </tr>
 </table>
-<br>
-<br>
-<br>
 # Nav sender deg dokumentene i saken din
 Du har bedt om å få innsyn i saken din, og vi sender deg alle dokumentene vi har.
 Dette går fram av forvaltningsloven § 18.
