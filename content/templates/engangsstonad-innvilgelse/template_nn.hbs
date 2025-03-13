@@ -1,14 +1,15 @@
-{{> header }}
+{{> header_nn }}
 {{#if død}}
-<br/>
-<br/>
 
 #  Nav har behandla søknaden om eingongsstønad
-{{>brukerdetaljer_nn}}
 
-Vi sender dette brevet for å informere om at vi har innvilga søknaden om eingongsstønad til {{felles.søkerNavn}}. Det blir utbetalt {{innvilgetBeløp}} kroner innan ei veke. Stønaden er skattefri.<br/>
-<br/>Vedtaket er gjort etter folketrygdlova § 14-17.<br/>
-<br/>Dersom du har spørsmål om vedtaket eller ønskjer å klage, må du gjerne kontakte oss på telefon 55 55 33 33. Fristen for å klage er seks veker frå den datoen dødsbuet fekk brevet.<br/>
+Vi sender dette brevet for å informere om at vi har innvilga søknaden om eingongsstønad til {{felles.søkerNavn}}. Det blir utbetalt {{innvilgetBeløp}} kroner innan ei veke. Stønaden er skattefri.
+<br/>
+<br/>
+Vedtaket er gjort etter folketrygdlova § 14-17.
+<br/>
+<br/>
+Dersom du har spørsmål om vedtaket eller ønskjer å klage, må du gjerne kontakte oss på telefon 55 55 33 33. Fristen for å klage er seks veker frå den datoen dødsbuet fekk brevet.
 <br/>
 <br/>
 <br/>
@@ -17,27 +18,26 @@ Vi sender dette brevet for å informere om at vi har innvilga søknaden om eingo
 {{else}}
 
 #  Nav har innvilga søknaden din om eingongsstønad
-{{>brukerdetaljer_nn}}
 {{#if førstegangsbehandling}}
-Du har rett til eingongsstønad og får utbetalt {{innvilgetBeløp}} kroner innan ei veke.<br/>
+Du har rett til eingongsstønad og får utbetalt {{innvilgetBeløp}} kroner innan ei veke.
 {{else if medhold}}
-Etter at du klaga, har vi vurdert saka di på nytt. Vi har kome fram til at du har rett til eingongsstønad. Du får utbetalt {{innvilgetBeløp}} kroner innan ei veke.<br/>
+Etter at du klaga, har vi vurdert saka di på nytt. Vi har kome fram til at du har rett til eingongsstønad. Du får utbetalt {{innvilgetBeløp}} kroner innan ei veke.
 {{else if erEndretSats}}
-Vi har behandla saka di på nytt fordi beløpet på eingongsstønaden har auka. Vi vil betale ut det resterande beløpet på {{innvilgetBeløp}} kroner innan ei veke.<br/>
+Vi har behandla saka di på nytt fordi beløpet på eingongsstønaden har auka. Vi vil betale ut det resterande beløpet på {{innvilgetBeløp}} kroner innan ei veke.
 {{else if revurdering}}
-Vi har behandla saka di på nytt, og du har rett til eingongsstønad. Vi har endret vedtaket du fekk tidligare. Du får utbetalt {{innvilgetBeløp}} kroner innan ei veke.<br/>
+Vi har behandla saka di på nytt, og du har rett til eingongsstønad. Vi har endret vedtaket du fekk tidligare. Du får utbetalt {{innvilgetBeløp}} kroner innan ei veke.
 {{/if}}
-Stønaden er skattefri, og du kan sjekke utbetalinga di ved å logge inn på [nav.no](https://nav.no/).<br/>
-{{#if fbEllerMedhold}}
-Vedtaket er gjort etter folketrygdlova § 14-17.<br/>
-{{else}}
-Vedtaket er gjort etter folketrygdlova § 14-17 og forvaltingslova § 35.<br/>
-{{/if}}
-<br/>
 
-##### Du har rett til å klage
+Stønaden er skattefri, og du kan sjekke utbetalinga di ved å logge inn på [nav.no](https://nav.no/).
+
+{{#if fbEllerMedhold}}
+Vedtaket er gjort etter folketrygdlova § 14-17.
+{{else}}
+Vedtaket er gjort etter folketrygdlova § 14-17 og forvaltingslova § 35.
+{{/if}}
+
+## Du har rett til å klage
 Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
+
 {{> footer_nn }}
 {{/if}}

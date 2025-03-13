@@ -1,35 +1,34 @@
-<p align="right">
-Dato: 4. mai 2021
-</p>
-<br>
-<br>
-<br>
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Navn:</td>
+        <td style="text-align: left;">Dolly Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Saksnummer:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. mai 2021</td>
+    </tr>
+</table>
 # Vi har sendt saken din til Nav Klageinstans
-<p style="color:gray">
-Saksnummer i Nav: 123456789
-<br/>
-Navn: Dolly Duck
-<br/>
-Fødselsnummer: 300220 12345
-<br/>
-</p>
 Vi har mottatt klagen din på vedtaket om svangerskapspenger 3. mai 2021, og kommet fram til at det ikke endres. Nav Klageinstans skal derfor vurdere saken din på nytt.
 Informasjon om saksbehandlingstid finner du på nav.no.
-##### Vurderingen vår
+## Vurderingen vår
 FRITEKST
 <br/>
 Har du nye opplysninger eller ønsker å uttale deg, kan du sende dette via [nav.no/klage](https://nav.no/klage). Velg Nav-enhet: Nav Klageinstans Midt-Norge.
-<br/>
-##### Du har rett til innsyn
+## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
-<br/>
-<br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-##### Har du spørsmål?
+## Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hverdager 09.00-15.00.
 <br/>
 <br/>

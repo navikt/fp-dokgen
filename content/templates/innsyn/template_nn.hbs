@@ -1,8 +1,7 @@
-{{> header }}
+{{> header_nn }}
 {{#eq innsynResultat "AVVIST"}}
 
 # Nav har avslått førespurnaden din om innsyn i saka om {{>ytelse_navn_nn}}
-{{> brukerdetaljer_nn }}
 
 Du har bedt om innsyn i saka, men vi kan ikkje sende deg dokumenta vi har.
 
@@ -12,7 +11,6 @@ Dette går fram av forvaltningslova § 18.
 {{else}}
 
 # Nav sender deg dokumenta i saka di
-{{> brukerdetaljer_nn }}
 {{/eq}}
 
 {{#eq innsynResultat "INNV"}}
@@ -30,15 +28,12 @@ Du har bedt om innsyn i saka di, men vi kan ikkje sende deg alle dokumenta vi ha
 
 Dette går fram av forvaltningslova § 18.
 {{/eq}}
-<br/>
 
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innan {{klagefrist}} veker frå den datoen du fekk brevet. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage)
 
 Retten til å klage på innsyn går fram av forvaltningslova § 21.
-<br/>
-<br/>
-##### Har du spørsmål?
+## Har du spørsmål?
 Du finn meir informasjon på [nav.no/barn](https://nav.no/barn).
 
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.

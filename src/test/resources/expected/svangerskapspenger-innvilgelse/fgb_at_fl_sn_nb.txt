@@ -1,20 +1,24 @@
-<p align="right">
-Dato: 4. mai 2021
-</p>
-<br>
-<br>
-<br>
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Navn:</td>
+        <td style="text-align: left;">Dolly Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Saksnummer:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. mai 2021</td>
+    </tr>
+</table>
 # Nav har innvilget søknaden din om svangerskapspenger
-<p style="color:gray">
-Saksnummer i Nav: 123456789
-<br/>
-Navn: Dolly Duck
-<br/>
-Fødselsnummer: 300220 12345
-<br/>
-</p>
 Vi utbetaler svangerskapspengene til arbeidsgiverne dine fordi du får lønn mens du er borte fra jobb.
-##### I disse periodene får du svangerskapspenger
+## I disse periodene får du svangerskapspenger
 Arbeidsgiver 1 AS:
 * Fra og med 1. juli 2021 til og med 12. juli 2021 får du 50 prosent svangerskapspenger fordi du jobber delvis. Du får utbetalt 500 kroner per dag før skatt. Av dette blir 200 kroner per dag betalt direkte til deg.
 * Fra og med 15. juli 2021 til og med 19. juli 2021 får du 50 prosent svangerskapspenger fordi du jobber delvis. Du får utbetalt 700 kroner per dag før skatt.
@@ -25,13 +29,13 @@ Arbeidsgiver 2 AS:
 * Du får ikke svangerskapspenger som selvstendig næringsdrivende fordi du kan gjøre arbeidsoppgavene uten at det er fare for å skade barnet eller barna du venter.
 * Du får ikke svangerskapspenger fordi det er mindre enn tre uker til du har termin.
   Du kan ha rett til foreldrepenger eller engangsstønad. Se [nav.no/foreldrepenger](https://nav.no/foreldrepenger) for mer informasjon og hvordan du kan søke.
-##### I disse periodene får du ikke svangerskapspenger
+## I disse periodene får du ikke svangerskapspenger
 * Fra og med 1. mai 2021 til og med 12. mai 2021 har du ikke rett til svangerskapspenger fordi du har søkt for sent. Du må søke senest tre måneder etter at perioden med svangerskapspenger har startet. Du søkte 1. juli 2021.
 * Fra og med 1. mai 2021 til og med 12. mai 2021 får du ikke svangerskapspenger fra Arbeidsgiver 3 fordi du får sykepenger.
 * Fra og med 1. mai 2021 til og med 12. mai 2021 får du ikke svangerskapspenger fra frilansinntekten din fordi du får sykepenger.
 * Fra og med 15. juni 2021 til og med 25. juni 2021 får du ikke svangerskapspenger fra næringsvirksomheten din fordi du har ferie.
 Vedtaket er gjort etter folketrygdloven § 14-4.
-##### Inntekt vi har brukt i beregningen
+## Inntekt vi har brukt i beregningen
 Vi har brukt 789 000 kroner i året før skatt i beregningen av svangerskapspengene dine.
 <!-- AT -->
 Inntekten din hos Arbeidsgiver 1 AS er 15 003 kroner i måneden.
@@ -52,25 +56,16 @@ Fra og med 12. juli 2021 får du 1 000 kroner per dag før skatt fordi du miste
 Vi har fastsatt svangerskapspengene dine til to ganger grunnbeløpet fordi du har vært i militæret eller sivilforsvaret.
 Svangerskapspengene dine er fastsatt til 600 000 kroner i året, som er seks ganger grunnbeløpet i folketrygden. Du tjener mer enn dette, men du får ikke svangerskapspenger for den delen av inntekten som overstiger seks ganger grunnbeløpet.
 Beregningen er gjort etter folketrygdloven § 14-4.
-<br/>
-##### Du må melde fra om endringer
+## Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
-<br/>
-<br/>
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
-##### Du har rett til innsyn
+## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
-<br/>
-<br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-##### Har du spørsmål?
+## Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hverdager 09.00-15.00.
 <br/>
 <br/>

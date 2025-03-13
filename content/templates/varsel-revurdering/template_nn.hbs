@@ -1,10 +1,9 @@
-{{> header }}
+{{> header_nn }}
 
 
 {{#eq felles.ytelseType "ES" }}# Nav vurderer retten din til eingongsstønad på nytt
 {{else}}{{#eq felles.ytelseType "FP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søkje om å endre foreldrepengeperioden din{{else}}# Nav vurderer retten din til foreldrepengar på nytt{{/eq}}
 {{else}}{{#eq felles.ytelseType "SVP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søkje om å endre svangerskapspengeperioden din{{else}}# Nav vurderer retten din til svangerskapspengar på nytt{{/eq}}{{/eq}}{{/eq}}{{/eq}}
-{{> brukerdetaljer_nn }}
 
 {{#eq advarselKode "BARNIKKEREG" }}
 Du hadde termin {{terminDato}}, men {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}} er ikkje {{#eq antallBarn 1}}registrert{{else}}registrerte{{/eq}} i folkeregisteret. Du må derfor sende oss fødselsattesten innan {{fristDato}}.
@@ -77,13 +76,10 @@ Du kan søkje om å endre perioden din på [nav.no](https://nav.no/). Ønskjer d
 {{/eq}}{{/eq}}
 
 Opplysningsplikta går fram av folketrygdlova §§ 21-3 og 21-4.
-<br/>
 
-##### Vedtaket ditt om {{> ytelse_navn_nn}} kan bli gjort om
+## Vedtaket ditt om {{> ytelse_navn_nn}} kan bli gjort om
 Vi vil vurdere saka di på nytt når fristen er gått ut. Dersom du ikkje har hatt rett til {{> ytelse_navn_nn}}, kan du bli nøydd til å betale tilbake pengane.
 
 Du sender dokumentasjonen til oss på [nav.no/ettersendelser](https://nav.no/ettersendelser).
-<br/>
-<br/>
 {{> footer_nn }}
 

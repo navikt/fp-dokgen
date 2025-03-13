@@ -1,10 +1,9 @@
-{{> header }}
+{{> header_nb }}
 {{#if førstegangsbehandling}}
 # Nav har avslått søknaden din om engangsstønad
 {{else}}
 # Nav har gjort om på vedtaket ditt om engangsstønad
 {{/if}}
-{{>brukerdetaljer_nb}}
 {{#if avslagMedlemskap}}
     {{#eq avslagMedlemskap "IKKE_MEDL_FØR_STP"}}
 Du har ikke rett til engangsstønad fordi du ikke er medlem i folketrygden.
@@ -122,8 +121,7 @@ Vedtaket er gjort etter folketrygdloven § 21-3.
     {{/eq}}
 {{/each}}
 
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
+
 {{> footer_nb }}

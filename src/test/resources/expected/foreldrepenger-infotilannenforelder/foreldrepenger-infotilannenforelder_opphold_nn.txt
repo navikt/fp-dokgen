@@ -1,30 +1,26 @@
-<p align="right">
-Dato: 4. april 2020
-</p>
-<br>
-<br>
-<br>
-
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Namn:</td>
+        <td style="text-align: left;">Dolly Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Saksnummer:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. april 2020</td>
+    </tr>
+</table>
 # Du må søkje om foreldrepengar i tide
-<p style="color:gray">
-Saksnummer i Nav: 123456789
-<br/>
-Namn: Dolly Duck
-<br/>
-Fødselsnummer: 300220 12345
-<br/>
-
-</p>
-
 Du kan ha rett til foreldrepengar. Den andre forelderen har opplyst at du skal ha foreldrepengar i ein periode som du ikkje har søkt om. For at disse dagane ikkje skal gå tapt må den som skal vere heime søkje om desse dagane. Dersom ingen av dykk skal vere heime må ein av dykk søkje om utsetjing av foreldrepengane.
-
-<br/>
-
-##### Har du spørsmål?
+## Har du spørsmål?
 Du finn meir informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvardagar 09.00-15.00.
 <br/>
 <br/>
@@ -32,4 +28,3 @@ Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvar
 Med vennleg helsing
 <br/>
 Nav Familie- og pensjonsytelser
-

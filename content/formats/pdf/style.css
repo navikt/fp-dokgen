@@ -6,51 +6,79 @@
     border-spacing: 0;
 }
 
+@page {
+    size: 595px 842px;
+    margin: 64px 64px 74px 64px;
+
+    @bottom-right {
+        content: "side " counter(page) " av " counter(pages);
+        font-family: "Source Sans Pro", sans-serif !important;
+        font-size: 9px;
+        line-height: 16px;
+        color: #555;
+        padding-bottom: 10mm;
+    }
+}
+
 html {
     height:100%;
 }
 
-body {
-    padding:10mm;
-    margin:0;
-    position: relative;
+#ny_nav_logo {
+    height: 16px;
+    width: auto;
 }
 
+/* Content er alt under logo og til og med siste side, ikke hver enkel side. Se @page */
 #content {
-    padding-top: 20mm;
-    padding-bottom: 0;
-    margin: 1rem;
+    margin-top: 48px;
 }
 
-#header {
-    margin-bottom: 0;
+h1 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    margin-top: 48px;
+    margin-bottom: 26px;
 }
 
-#footer {
-    position: fixed;
-    margin-right: 5mm;
-    bottom: -19mm;
+h2 {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+    margin-top: 26px;
+    margin-bottom: 6px;
+}
+
+h3 {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    margin-top: 26px;
+    margin-bottom: 6px;
+}
+
+h4 {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    margin-top: 26px;
+    margin-bottom: 6px;
+}
+
+p, li, td, th{
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+table {
     width: 100%;
-    height: 25mm;
-    text-align: right;
-    font-size: 10px;
-}
-
-#nav_logo {
-    width: 30mm;
-    height: 23.1mm;
-    margin: auto;
-    padding: 0 0 10mm 0;
-    position: absolute;
-    right: 10mm;
-}
-
-#pagenumber:before {
-    content: counter(page);
-}
-
-#pagecount:before {
-    content: counter(pages);
 }
 
 .block {
@@ -62,57 +90,8 @@ body {
     display: inline-block;
 }
 
-h1 {
-    font-size: 25px;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 22px;
-    margin: 10mm 0 1.5mm 0;
-}
-
-h3 {
-    font-size: 18px;
-    margin: 10mm 0 1.5mm 0;
-}
-
-h5 {
-    margin-bottom: -2.5mm;
-}
-
-p {
-    font-size: 14px;
-    margin: 3mm 0 2mm 0;
-}
-
-tr {
-    font-size: 14px;
-}
-
-table {
-    width: 100%;
-}
-
-.td01 {
-  width: 110px;
-  font-size: 12px;
-}
-
-.td02 {
-  width: 150px;
-}
-
-.bold {
-    font-weight: 700;
-}
-
 .new_page {
     page-break-before: always;
-}
-
-li {
-    font-size: 14px;
 }
 
 .draft_text {

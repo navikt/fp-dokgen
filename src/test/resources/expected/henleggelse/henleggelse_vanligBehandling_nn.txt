@@ -1,28 +1,28 @@
-<p align="right">
-Dato: 4. april 2020
-</p>
-<br>
-<br>
-<br>
-
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Namn:</td>
+        <td style="text-align: left;">Dolly Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Saksnummer:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. april 2020</td>
+    </tr>
+</table>
 # Nav har avslutta saka di om foreldrepengar
-<p style="color:gray">
-Saksnummer i Nav: 123456789
-<br/>
-Namn: Dolly Duck
-<br/>
-Fødselsnummer: 300220 12345
-<br/>
-
-</p>
-
-Vi har fått beskjed om at du trekkjer søknaden om foreldrepengar, og avsluttar derfor saka di.<br/><br/>
-
-##### Har du spørsmål?
+Vi har fått beskjed om at du trekkjer søknaden om foreldrepengar, og avsluttar derfor saka di.
+# Nav har avslutta klagesaka di på foreldrepengar
+Vi har fått beskjed om at du trekkjer klagen på foreldrepengar, og avslutter derfor klagesaka di.
+## Har du spørsmål?
 Du finn meir informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvardagar 09.00-15.00.
 <br/>
 <br/>
@@ -30,4 +30,3 @@ Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvar
 Med vennleg helsing
 <br/>
 Nav Familie- og pensjonsytelser
-

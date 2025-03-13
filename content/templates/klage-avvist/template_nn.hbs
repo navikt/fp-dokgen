@@ -1,4 +1,4 @@
-{{> header }}
+{{> header_nn }}
 
 
 
@@ -9,7 +9,6 @@
 {{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}# Nav har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}foreldrepengar
 {{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}# Nav har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}svangerskapspengar
 {{/if}}
-{{> brukerdetaljer_nn }}
 
 {{~#* inline "punkt" ~}}
 {{~#gt (size avvistGrunner) 1}}* {{else}}Vi har avvist klaga di fordi {{/gt}}
@@ -48,10 +47,7 @@ Vi har avvist klaga di fordi{{/gt}}
 
 Vedtaket er gjort etter {{lovhjemler}}.
 
-<br/>
-
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
+
 {{> footer_nn }}

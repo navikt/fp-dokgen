@@ -1,42 +1,33 @@
-<p align="right">
-Dato: 4. april 2020
-</p>
-<br>
-<br>
-<br>
-
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Navn:</td>
+        <td style="text-align: left;">Dolly Duck</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+        <td style="text-align: left;">300220 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Saksnummer:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">4. april 2020</td>
+    </tr>
+</table>
 # Nav vurderer retten din til svangerskapspenger på nytt
-<p style="color:gray">
-Saksnummer i Nav: 123456789
-<br/>
-Navn: Dolly Duck
-<br/>
-Fødselsnummer: 300220 12345
-<br/>
-
-</p>
-
 Vi har fått nye opplysninger som viser at du ikke har jobbet fire uker før du fikk svangerskapspenger. Derfor vurderer vi å stanse svangerskapspengene dine.
-
 Opplysningsplikten går fram av folketrygdloven §§ 21-3 og 21-4.
-<br/>
-##### Vedtaket ditt om svangerskapspenger kan bli omgjort
+## Vedtaket ditt om svangerskapspenger kan bli omgjort
 Vi vil vurdere saken din på nytt når fristen er gått ut. Dersom du ikke har hatt rett til svangerskapspenger, kan du bli nødt til å betale tilbake pengene.
-
 Du sender dokumentasjonen til oss på [nav.no/ettersendelser](https://nav.no/ettersendelser).
-<br/>
-<br/>
-##### Du har rett til innsyn
+## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
-<br/>
-<br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-
-##### Har du spørsmål?
+## Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hverdager 09.00-15.00.
 <br/>
 <br/>
@@ -44,6 +35,4 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 Med vennlig hilsen
 <br/>
 Nav Familie- og pensjonsytelser
-
 </div>
-

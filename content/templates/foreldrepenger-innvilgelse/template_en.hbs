@@ -1,6 +1,4 @@
 {{> header_en }}
-<br/>
-<br/>
 {{#if (eq behandlingResultatType "INNVILGET")}}
 {{#if endretDekningsgrad}}# Nav has approved your application for parental benefit{{else}}# Nav has approved your application for {{dekningsgrad}} per cent parental benefit{{/if}}
 {{else if (and (eq behandlingResultatType "FORELDREPENGER_ENDRET") (eq konsekvensForInnvilgetYtelse "ENDRING_I_BEREGNING"))}}
@@ -8,7 +6,6 @@
 {{else}}
 # Nav has changed your parental benefit period
 {{/if}}
-{{> brukerdetaljer_en }}
 
 {{#gt antallDødeBarn 0}}
 {{> foreldrepenger-innvilgelse/dodt_barn_en }}
@@ -59,7 +56,7 @@ There are {{disponibleDager}}{{#eq disponibleDager 1}} day{{else}} days{{/eq}} l
 {{~#each arbeidsforholdsliste}}
 {{#if @..first}}
 {{#if this.gradering}}
-##### You have more than one employer
+## You have more than one employer
 
 You are working for several employers during the same period. It is only possible to combine parental benefit with work at one employer at a time. This means that it is only your period at {{this.arbeidsgiverNavn}} that will be extended.
 {{/if}}{{/if}}{{/each}}{{/if}}{{/each}}{{/gt}}
@@ -107,27 +104,22 @@ If your employer provides new information about the income you had before you st
 {{/if}}
 
 {{#if (or (eq forMyeUtbetalt "FERIE")(eq forMyeUtbetalt "JOBB"))}}
-##### What happens if you receive parental benefit and salary for the same period?
+## What happens if you receive parental benefit and salary for the same period?
 
 If you have been paid the parental benefit at the same time as you have worked or postponed days because you have taken holidays, you have been paid an excess amount of parental benefit. This means that the payment for the next month can be reduced by the excess amount you received.
 {{/if}}
 
 {{#eq forMyeUtbetalt "GENERELL"}}
-##### What happens if you receive parental benefit and salary for the same period?
+## What happens if you receive parental benefit and salary for the same period?
 
 If you are paid an excess amount of parental benefit, your payment for the following month may be reduced.
 {{/eq}}
 
-<br/>
-
-##### You must notify any changes
+## You must notify any changes
 You must notify Nav immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt) for more detailed information.
-<br/>
-<br/>
 {{/gt}}
 
-##### You have the right to appeal
+## You have the right to appeal
 You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
+
 {{> footer_en }}

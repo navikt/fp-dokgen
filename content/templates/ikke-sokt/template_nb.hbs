@@ -1,13 +1,9 @@
-{{> header }}
+{{> header_nb }}
 
 # Du har ikke søkt om {{> ytelse_navn_nb}}
-
-{{> brukerdetaljer_nb }}
 
 Vi fikk inntektsopplysninger fra {{arbeidsgiverNavn}} {{mottattDato}}, men vi har ikke fått søknad om {{> ytelse_navn_nb}} fra deg.
 
 Vi kan ikke vurdere om du har rett til {{> ytelse_navn_nb}} før du har søkt. Dette gjør du på [nav.no/familie](https://nav.no/familie). For å unngå å miste dager og utbetaling, må du søke senest tre måneder etter at {{#eq felles.ytelseType "FP" }}foreldrepengeperioden{{else}}{{#eq felles.ytelseType "SVP" }}svangerskapspengeperioden{{/eq}}{{/eq}} din startet.
-
-<br/>
 
 {{> footer_nb }}

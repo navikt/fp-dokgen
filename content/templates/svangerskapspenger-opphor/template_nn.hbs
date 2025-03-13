@@ -1,8 +1,7 @@
-{{> header }}
+{{> header_nn }}
 
 {{#eq erSøkerDød true}}
 # Svangerskapspengane til {{capitalize felles.søkerNavn fully=true}} er stansa
-{{> brukerdetaljer_nn }}
 {{#eq opphørtPeriode.årsak "8304" }}
 Vi har fått melding om at {{felles.søkerNavn}}, som fekk svangerskapspengar frå og med {{opphørtPeriode.stønadsperiodeFom}}, er død.
 
@@ -21,7 +20,6 @@ Klagefristen er {{klagefristUker}} veker frå den datoen dødsbuet fekk brevet.
 {{else}}
 # Du har ikkje lenger rett til svangerskapspengar
 {{/eq}}
-{{> brukerdetaljer_nn }}
 
 {{#in-array (array "1020" "1021" "1023" "1024" "1025" "8306") opphørtPeriode.årsak}}
 {{#neq opphørtPeriode.årsak "1024"}}
@@ -109,11 +107,8 @@ Du har ikkje lenger rett til svangerskapspengar frå {{opphørsdato}} fordi du f
 
 Vedtaket er gjort etter folketrygdlova  {{lovhjemmel}}.
 
-<br/>
-
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
+
 {{/eq}}
 {{> footer_nn }}

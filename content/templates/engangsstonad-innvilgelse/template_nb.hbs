@@ -1,14 +1,15 @@
-{{> header }}
+{{> header_nb }}
 {{#if død}}
-<br/>
-<br/>
 
 #  Nav har behandlet søknaden om engangsstønad
-{{> brukerdetaljer_nb }}
 
-Vi sender dette brevet for å informere om at vi har innvilget søknaden om engangsstønad til {{felles.søkerNavn}}. Det blir utbetalt {{innvilgetBeløp}} kroner innen en uke. Stønaden er skattefri.<br/>
-<br/>Vedtaket er gjort etter folketrygdloven § 14-17.<br/>
-<br/>Hvis du har spørsmål om vedtaket eller ønsker å klage, må du gjerne kontakte oss på telefon 55 55 33 33. Klagefristen er seks uker fra den datoen dødsboet fikk brevet.<br/>
+Vi sender dette brevet for å informere om at vi har innvilget søknaden om engangsstønad til {{felles.søkerNavn}}. Det blir utbetalt {{innvilgetBeløp}} kroner innen en uke. Stønaden er skattefri.
+<br/>
+<br/>
+Vedtaket er gjort etter folketrygdloven § 14-17.
+<br/>
+<br/>
+Hvis du har spørsmål om vedtaket eller ønsker å klage, må du gjerne kontakte oss på telefon 55 55 33 33. Klagefristen er seks uker fra den datoen dødsboet fikk brevet.
 <br/>
 <br/>
 <br/>
@@ -17,27 +18,26 @@ Vi sender dette brevet for å informere om at vi har innvilget søknaden om enga
 {{else}}
 
 #  Nav har innvilget søknaden din om engangsstønad
-{{> brukerdetaljer_nb }}
 {{#if førstegangsbehandling}}
-Du har rett til engangsstønad og får utbetalt {{innvilgetBeløp}} kroner innen en uke.<br/>
+Du har rett til engangsstønad og får utbetalt {{innvilgetBeløp}} kroner innen en uke.
 {{else if medhold}}
-Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at du har rett til engangsstønad. Du får utbetalt {{innvilgetBeløp}} kroner innen en uke.<br/>
+Etter at du klaget har vi vurdert saken din på nytt. Vi har kommet fram til at du har rett til engangsstønad. Du får utbetalt {{innvilgetBeløp}} kroner innen en uke.
 {{else if erEndretSats}}
-Vi har behandlet saken din på nytt fordi beløpet på engangsstønad har økt. Vi vil utbetale det resterende beløpet på {{innvilgetBeløp}} kroner innen en uke.<br/>
+Vi har behandlet saken din på nytt fordi beløpet på engangsstønad har økt. Vi vil utbetale det resterende beløpet på {{innvilgetBeløp}} kroner innen en uke.
 {{else if revurdering}}
-Vi har vurdert saken din på nytt, og du har rett til engangsstønad. Vi har endret vedtaket du har fått tidligere. Du får utbetalt {{innvilgetBeløp}} kroner innen en uke.<br/>
+Vi har vurdert saken din på nytt, og du har rett til engangsstønad. Vi har endret vedtaket du har fått tidligere. Du får utbetalt {{innvilgetBeløp}} kroner innen en uke.
 {{/if}}
-Stønaden er skattefri, og du kan sjekke utbetalingen din ved å logge inn på [nav.no](https://nav.no/).<br/>
-{{#if fbEllerMedhold}}
-Vedtaket er gjort etter folketrygdloven § 14-17.<br/>
-{{else}}
-Vedtaket er gjort etter folketrygdloven § 14-17 og forvaltningsloven § 35.<br/>
-{{/if}}
-<br/>
 
-##### Du har rett til å klage
+Stønaden er skattefri, og du kan sjekke utbetalingen din ved å logge inn på [nav.no](https://nav.no/).
+
+{{#if fbEllerMedhold}}
+Vedtaket er gjort etter folketrygdloven § 14-17.
+{{else}}
+Vedtaket er gjort etter folketrygdloven § 14-17 og forvaltningsloven § 35.
+{{/if}}
+
+## Du har rett til å klage
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
+
 {{> footer_nb }}
 {{/if}}

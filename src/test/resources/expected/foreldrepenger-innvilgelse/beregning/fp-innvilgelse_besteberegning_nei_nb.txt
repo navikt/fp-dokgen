@@ -1,6 +1,4 @@
-<br/>
-
-##### Inntekt vi har brukt i beregningen
+## Inntekt vi har brukt i beregningen
 
 Når du har mottatt dagpenger i forkant av foreldrepenger kan du få beregnet foreldrepenger ut i fra de 6 beste av de 10 siste månedene med inntekt, eller etter ordinære beregningsregler avhengig av hva som gir deg best resultat.
 Vi har beregnet dine foreldrepenger ut i fra ordinære beregningsregler:

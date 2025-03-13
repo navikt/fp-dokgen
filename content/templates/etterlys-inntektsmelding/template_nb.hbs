@@ -1,7 +1,6 @@
-{{> header }}
+{{> header_nb }}
 
 # Vi har bedt om opplysninger fra {{#gt antallIkkeMottattIM 1}}arbeidsgiverne dine{{else}}arbeidsgiveren din{{/gt}}
-{{> brukerdetaljer_nb }}
 
 Vi fikk søknaden din om {{> ytelse_navn_nb}} {{søknadDato}}, men mangler opplysninger for å behandle den.
 
@@ -24,6 +23,5 @@ Hvis arbeidsgiver allerede har sendt inntektsmelding, kan du se bort fra denne h
 Vi kan ikke behandle søknaden din om {{> ytelse_navn_nb}} før vi har mottatt inntektsmelding fra {{#gt antallIkkeMottattIM 1}}arbeidsgiverne dine{{else}}arbeidsgiveren din{{/gt}}.
 
 {{#gt antallIkkeMottattIM 1}}Arbeidsgiverne dine{{else}}Arbeidsgiveren din{{/gt}} kan logge seg på [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) og sende inntektsmelding derfra.
-<br/>
 
 {{> footer_nb }}

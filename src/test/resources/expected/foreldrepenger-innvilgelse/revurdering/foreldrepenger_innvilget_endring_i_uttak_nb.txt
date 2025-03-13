@@ -1,24 +1,25 @@
-<p align="right">
-Dato: 12. august 2021
-</p>
-<br>
-<br>
-<br>
-<br/>
-<br/>
+<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+        <td style="text-align: left; width: 150px">Navn:</td>
+        <td style="text-align: left;">HOL ANONYMISERT</td>
+        <td style="text-align: left;"></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr><tr>
+        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+        <td style="text-align: left;">123456 12345</td>
+        <td></td> <!-- Empty column -->
+        <td></td> <!-- Keeping alignment -->
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">Saksnummer:</td>
+        <td style="text-align: left;">123456789</td>
+        <td></td> <!-- Empty column -->
+        <td style="text-align: right;">12. august 2021</td>
+    </tr>
+</table>
 # Nav har innvilget søknaden din om 80 prosent foreldrepenger
-<p style="color:gray">
-Saksnummer i Nav: 123456789
-<br/>
-Navn: HOL ANONYMISERT
-<br/>
-Fødselsnummer: 123456 12345
-<br/>
-</p>
 Vi har vurdert saken din på nytt, og du har rett til foreldrepenger. Vi har derfor endret vedtaket du har fått tidligere.
 Du får 1 871 kroner per dag før skatt fra og med 18. juni 2020. Dette er i gjennomsnitt 40 538 kroner i måneden. Den siste dagen du får foreldrepenger er 13. august 2021.
-<br/>
-##### Dette har vi innvilget
+## Dette har vi innvilget
 * Du får utsatt foreldrepengene fra og med 18. juni 2020 til og med 21. juli 2020 fordi du jobber heltid.
 * Du får foreldrepenger fra og med 22. juli 2020 til og med 14. august 2020. I denne perioden får du 1 871 kroner per dag før skatt.
 * Du får utsatt foreldrepengene fra og med 17. august 2020 til og med 22. september 2020 fordi du jobber heltid.
@@ -35,27 +36,18 @@ Foreldrepengene utgjør det samme som tidligere. Sjekk utbetalingene dine på [n
 Den siste dagen med foreldrepenger er 13. august 2021.
 Vedtaket er gjort etter folketrygdloven §§ 14-11, 14-12 og forvaltningsloven § 35.
 Fordi du har valgt 80 prosent foreldrepenger, får du mindre utbetalt i måneden.
-##### Hva skjer hvis du får utbetalt foreldrepenger og lønn for samme periode?
+## Hva skjer hvis du får utbetalt foreldrepenger og lønn for samme periode?
 Hvis du har fått utbetalt foreldrepenger samtidig som du har jobbet eller utsatt dager fordi du har hatt ferie, har du fått utbetalt for mye i foreldrepenger. Det betyr at utbetalingen i neste måned kan bli redusert med det du har fått utbetalt for mye.
-<br/>
-##### Du må melde fra om endringer
+## Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
-<br/>
-<br/>
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
-##### Du har rett til innsyn
+## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
-<br/>
-<br/>
 <div style="break-inside: avoid; page-break-inside: avoid">
-##### Har du spørsmål?
+## Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
-
 På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
-
 Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hverdager 09.00-15.00.
 <br/>
 <br/>
@@ -65,6 +57,5 @@ Med vennlig hilsen
 Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
-<br/><br/>
-##### Dette er en kopi, orginal er sendt til verge.
+## Dette er en kopi, orginal er sendt til verge.
 </div>

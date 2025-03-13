@@ -1,5 +1,4 @@
-<br/>
-##### Income we have used in the calculation
+## Income we have used in the calculation
 We have used the income figure of 574 548 kroner a year before taxes to calculate your parental benefit.
 Your income at ARBEIDSGIVER 1 is 47 879 kroner per month.
 Your income at ARBEIDSGIVER 2 is 54 321 kroner per month.

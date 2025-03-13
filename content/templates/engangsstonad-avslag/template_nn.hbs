@@ -1,10 +1,9 @@
-{{> header }}
+{{> header_nn }}
 {{#if førstegangsbehandling}}
 # Nav har avslått søknaden din om eingongsstønad
 {{else}}
 # Nav har gjort om vedtaket ditt om eingongsstønad
 {{/if}}
-{{>brukerdetaljer_nn}}
 {{#if avslagMedlemskap}}
     {{#eq avslagMedlemskap "IKKE_MEDL_FØR_STP"}}
 Du har ikkje rett til eingongsstønad fordi du ikkje er medlem i folketrygda.
@@ -118,10 +117,8 @@ Vedtaket er gjort etter folketrygdlova § 14-17 og forvaltningslova § 35.
 Vedtaket er gjort etter folketrygdlova § 21-3.
     {{/eq}}
 {{/each}}
-<br/>
 
-##### Du har rett til å klage
+## Du har rett til å klage
 Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
+
 {{> footer_nn }}

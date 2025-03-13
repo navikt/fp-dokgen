@@ -1,9 +1,8 @@
-{{> header }}
+{{> header_nb }}
 
 
 
 #  Vi trenger flere opplysninger
-{{> brukerdetaljer_nb }}
 
 {{#if endringssøknad}}
     {{#eq felles.ytelseType "FP" }}
@@ -28,16 +27,14 @@ Vi fikk klagen din på {{> ytelse_navn_nb}} {{søknadDato}}, men mangler opplysn
     {{/if}}
 {{/if}}{{/if}}
 
-##### Du må sende oss
+## Du må sende oss
 {{felles.fritekst}}
-<br/>
 
-##### Søknaden kan bli avslått
+## Søknaden kan bli avslått
 {{#if førstegangsbehandling}}Hvis vi ikke får opplysningene innen {{fristDato}}, kan søknaden bli avslått.
 {{else}}Hvis du ikke sender oss dette innen {{fristDato}}, behandler vi saken med de opplysningene vi har.
 {{/if}}
 Dette går fram av folketrygdloven § 21-3.
-<br/>
-<br/>
+
 {{> footer_nb }}
 
