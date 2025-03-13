@@ -22,7 +22,6 @@
 # Nav har beregnet foreldrepengene dine på nytt
 Vi har fått nye inntektsopplysninger. Derfor har vi endret det du får utbetalt.
 Du får 1 436 kroner per dag før skatt. Dette er i gjennomsnitt 31 113 kroner i måneden. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
-<br/>
 ## Inntekt vi har brukt i beregningen
 Inntekten din hos FIRMA AS er 38 904 kroner i måneden. Arbeidsgiveren din har gitt oss disse opplysningene.
 Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.

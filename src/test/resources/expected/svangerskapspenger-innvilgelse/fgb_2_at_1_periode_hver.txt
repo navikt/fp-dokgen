@@ -27,15 +27,10 @@ Arbeidsgiver 1 AS:
 Arbeidsgiver 2 AS:
 * Fra og med 20. juli 2021 til og med 31. juli 2021 får du 100 prosent svangerskapspenger. Du får utbetalt 1 000 kroner per dag før skatt. Av dette blir 600 kroner per dag betalt direkte til deg.
 Vedtaket er gjort etter folketrygdloven § 14-4.
-<br/>
 ## Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
-<br/>
-<br/>
 ## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
 ## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <div style="break-inside: avoid; page-break-inside: avoid">
