@@ -17,9 +17,9 @@
     </tr>
 </table>
 #  Nav has granted your application for a lump-sum grant
-You are entitled to a lump-sum grant and will receive NOK 85 000 within one week.<br/>
-The lump-sum grant is not liable to tax, and you can check your payment at [nav.no](https://nav.no/).<br/>
-The decision has been made pursuant to section 14-17 of the National Insurance Act.<br/>
+You are entitled to a lump-sum grant and will receive NOK 85 000 within one week.
+The lump-sum grant is not liable to tax, and you can check your payment at [nav.no](https://nav.no/).
+The decision has been made pursuant to section 14-17 of the National Insurance Act.
 ## You have the right to appeal
 You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 ## You have right of access

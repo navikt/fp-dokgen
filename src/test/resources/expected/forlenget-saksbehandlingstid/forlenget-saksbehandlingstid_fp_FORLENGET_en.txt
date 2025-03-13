@@ -18,7 +18,6 @@
 </table>
 # We need more time to process your application for parental benefit
 We expect to be able to process your application within 5 weeks.
-<br/>
 ## You have right of access
 Log into [foreldrepenger.nav.no](https://foreldrepenger.nav.no/) to see the documents in your case.
 <div style="break-inside: avoid; page-break-inside: avoid">

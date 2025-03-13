@@ -24,7 +24,6 @@ Dokumentasjon kan for eksempel være:
 * Går du på skole eller kurs kan du sende en bekreftelse fra lærestedet
 * Har du barn som går på skole eller barnehage kan vi få bekreftelse på dette
 * Eventuell annen dokumentasjon som viser at du oppholder deg i Norge fast
-<br/>
 ## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <div style="break-inside: avoid; page-break-inside: avoid">

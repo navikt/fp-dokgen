@@ -17,14 +17,11 @@
     </tr>
 </table>
 #  Nav har innvilget søknaden din om engangsstønad
-Vi har behandlet saken din på nytt fordi beløpet på engangsstønad har økt. Vi vil utbetale det resterende beløpet på 1 580 kroner innen en uke.<br/>
-Stønaden er skattefri, og du kan sjekke utbetalingen din ved å logge inn på [nav.no](https://nav.no/).<br/>
-Vedtaket er gjort etter folketrygdloven § 14-17.<br/>
-<br/>
+Vi har behandlet saken din på nytt fordi beløpet på engangsstønad har økt. Vi vil utbetale det resterende beløpet på 1 580 kroner innen en uke.
+Stønaden er skattefri, og du kan sjekke utbetalingen din ved å logge inn på [nav.no](https://nav.no/).
+Vedtaket er gjort etter folketrygdloven § 14-17.
 ## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
-<br/>
-<br/>
 ## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <div style="break-inside: avoid; page-break-inside: avoid">

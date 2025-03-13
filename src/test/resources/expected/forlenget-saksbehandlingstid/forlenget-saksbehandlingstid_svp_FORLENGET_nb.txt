@@ -18,7 +18,6 @@
 </table>
 # Vi trenger mer tid til å behandle søknaden om svangerskapspenger
 Vi regner med å behandle søknaden din innen 5 uker.
-<br/>
 ## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <div style="break-inside: avoid; page-break-inside: avoid">

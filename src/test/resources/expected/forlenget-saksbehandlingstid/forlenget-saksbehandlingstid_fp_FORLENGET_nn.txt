@@ -18,7 +18,6 @@
 </table>
 # Vi treng meir tid til å behandle søknaden om foreldrepengar
 Vi reknar med å behandle søknaden din innan 5 veker.
-<br/>
 ## Du har rett til innsyn
 For å sjå dokumenta i saka di, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <div style="break-inside: avoid; page-break-inside: avoid">

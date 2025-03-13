@@ -17,9 +17,6 @@
     </tr>
 </table>
 <p class="draft_text">UTKAST</p>
-<br>
-<br>
-<br>
 # Nav har innvilget søknaden din om 100 prosent foreldrepenger
 Du får 2 455 kroner per dag før skatt fra og med 30. mars 2022. Dette er i gjennomsnitt 53 191 kroner i måneden. Den siste dagen du får foreldrepenger er 20. september 2022.
 Foreldrepengene blir utbetalt for alle dager, unntatt lørdag og søndag. Fordi det ikke er like mange dager i hver måned, vil de månedlige utbetalingene dine variere.

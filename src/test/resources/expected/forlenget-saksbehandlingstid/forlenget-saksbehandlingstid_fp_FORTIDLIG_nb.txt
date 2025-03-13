@@ -18,7 +18,6 @@
 </table>
 # Vi har fått søknaden din om foreldrepenger
 Vi kan tidligst behandle søknaden din når det er fire uker igjen til perioden med foreldrepenger starter.
-<br/>
 ## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <div style="break-inside: avoid; page-break-inside: avoid">

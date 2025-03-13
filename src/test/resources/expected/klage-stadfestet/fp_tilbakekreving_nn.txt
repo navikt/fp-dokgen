@@ -20,7 +20,6 @@ FRITEKST
 ## Du har rett til å anke
 Du kan anke vedtaket til Trygderetten. Fristen er 6 veker frå den datoen vedtaket kom fram til deg.
 Klagerettane dine og skjema for klage/anke finn du på [nav.no/klage](https://nav.no/klage).
-<br/>
 ## Du har rett til innsyn
 For å sjå dokumenta i saka di, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <br/>

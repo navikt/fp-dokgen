@@ -17,9 +17,6 @@
     </tr>
 </table>
 <p class="draft_text">UTKAST</p>
-<br>
-<br>
-<br>
 #  Vi trenger flere opplysninger
 Vi fikk søknaden din om engangsstønad 1. april 2020, men mangler opplysninger for å kunne behandle den.
 ## Du må sende oss
