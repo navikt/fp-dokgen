@@ -2,7 +2,9 @@
 <br>
 <br>
 <br>
-# Refusjonskrav for nyansatt med foreldrepenger
+<br>
+<br>
+# Refusjon for nyansatt med foreldrepenger
 **Arbeidsgiver**
 <br>Arbeidsgiver 1, org.nr. *****4556
 **Den ansatte**
@@ -13,6 +15,6 @@
 ## Første dag med refusjon
 4. juni 2024
 <hr>
-## Utbetaling og refusjon
+## Refusjon i perioden
 **Betaler dere den ansatte lønn under fraværet og krever refusjon**?
 <br>Ja, likt beløp i hele perioden<br><br>**Refusjonsbeløp dere krever per måned**<br>45 000kr
