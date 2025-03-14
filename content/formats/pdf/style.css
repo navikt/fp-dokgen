@@ -7,14 +7,14 @@
 }
 
 @page {
-    size: 595px 842px;
-    margin: 64px 64px 74px 64px;
+    size: 595pt 842pt;
+    margin: 64pt 64pt 74pt 64pt;
 
     @bottom-right {
         content: "side " counter(page) " av " counter(pages);
         font-family: "Source Sans Pro", sans-serif !important;
-        font-size: 9px;
-        line-height: 16px;
+        font-size: 9pt;
+        line-height: 16pt;
         color: #555;
         padding-bottom: 10mm;
     }
@@ -25,54 +25,54 @@ html {
 }
 
 #ny_nav_logo {
-    height: 16px;
+    height: 16pt;
     width: auto;
 }
 
 /* Content er alt under logo og til og med siste side, ikke hver enkel side. Se @page */
 #content {
-    margin-top: 48px;
+    margin-top: 48pt;
 }
 
 h1 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 16pt;
+    line-height: 20pt;
     font-weight: bold;
-    letter-spacing: 0.3px;
-    margin-top: 48px;
-    margin-bottom: 26px;
+    letter-spacing: 0.3pt;
+    margin-top: 48pt;
+    margin-bottom: 26pt;
 }
 
 h2 {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 13pt;
+    line-height: 16pt;
     font-weight: bold;
-    letter-spacing: 0.25px;
-    margin-top: 26px;
-    margin-bottom: 6px;
+    letter-spacing: 0.25pt;
+    margin-top: 26pt;
+    margin-bottom: 6pt;
 }
 
 h3 {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 12pt;
+    line-height: 16pt;
     font-weight: bold;
-    letter-spacing: 0.2px;
-    margin-top: 26px;
-    margin-bottom: 6px;
+    letter-spacing: 0.2pt;
+    margin-top: 26pt;
+    margin-bottom: 6pt;
 }
 
 h4 {
-    font-size: 11px;
-    line-height: 16px;
+    font-size: 11pt;
+    line-height: 16pt;
     font-weight: bold;
-    letter-spacing: 0.1px;
-    margin-top: 26px;
-    margin-bottom: 6px;
+    letter-spacing: 0.1pt;
+    margin-top: 26pt;
+    margin-bottom: 6pt;
 }
 
 p, li, td, th{
-    font-size: 11px;
-    line-height: 16px;
+    font-size: 11pt;
+    line-height: 16pt;
     font-weight: normal;
     margin-top: 0;
 }
@@ -96,10 +96,16 @@ table {
 
 .draft_text {
     transform: rotate(45deg);
-    transform-origin: right top;
-    position: absolute;
-    top: 600px;
-    color: #dcdcdc;
-    font-size: 200px;
+    transform-origin: top left;
+    position: fixed;
+    text-align: center;
+    white-space: nowrap;
     z-index: -1;
+    top: 350pt;
+    left: -50pt;
+    width: 100%;
+    font-size: 170pt;
+    color: #dcdcdc;
+    font-weight: bold;
+    opacity: 0.3;
 }
