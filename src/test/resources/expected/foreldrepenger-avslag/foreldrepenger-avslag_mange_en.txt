@@ -18,6 +18,7 @@
         </tr>
     </table>
 </div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 #  Nav has denied your application for parental benefit
 ## We have denied the following
 * You are not entitled to parental benefit, because you have not had earned income or income equivalent to earned income in six of the past ten months before the start of the parental benefit period.
@@ -134,6 +135,8 @@
 Even if you are not entitled to parental benefits, you may still be eligible for a lump-sum grant. You can read more at [nav.no/engangsstonad](https://www.nav.no/engangsstonad)<br/><br/>
 Even if you are not entitled to parental benefits, you may still be eligible for a lump-sum grant. You can read more at [nav.no/engangsstonad](https://www.nav.no/engangsstonad)<br/><br/>
 The decision has been made in accordance with the National Insurance Act Section § forvaltningsloven § 35.
+</div>
+<div id="readonly-innhold">
 ## You have the right to appeal
 You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 ## You have right of access
@@ -151,4 +154,5 @@ Yours sincerely,
 Nav Familie- og pensjonsytelser
 <br/><br/>
 This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
+</div>
 </div>

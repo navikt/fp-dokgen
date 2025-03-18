@@ -18,6 +18,7 @@
         </tr>
     </table>
 </div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 #  Nav har avslått søknaden din om foreldrepengar
 ## Dette har vi avslått
 * Du har ikkje rett til foreldrepengar fordi du ikkje har hatt arbeidsinntekt eller inntekt som er likestilt med lønn i seks av dei siste ti månadene før foreldrepengeperioden startar.
@@ -135,6 +136,8 @@
 Sjølv om du ikkje har rett til foreldrepengar, kan det vere at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)<br/><br/>
 Sjølv om du ikkje har rett til foreldrepengar, kan det vere at du har rett til engangsstønad. Les mer på [nav.no/engangsstonad](https://www.nav.no/engangsstonad)<br/><br/>
 Vedtaket er gjort etter folketrygdlova § forvaltningsloven § 35.
+</div>
+<div id="readonly-innhold">
 ## Du har rett til å klage
 Du kan klage innan 6 veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 ## Du har rett til innsyn
@@ -152,4 +155,5 @@ Med vennleg helsing
 Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandla av fagsystemet vårt. Det er derfor ingen saksbehandlar som har underskrive vedtaksbrevet.
+</div>
 </div>

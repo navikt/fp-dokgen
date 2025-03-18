@@ -1,4 +1,5 @@
 {{> header_nb }}
+{{#> utils/redigerbart_innhold}}
 {{#if førstegangsbehandling}}
 # Nav har avslått søknaden din om engangsstønad
 {{else}}
@@ -120,8 +121,12 @@ Vedtaket er gjort etter folketrygdloven § 14-17 og forvaltningsloven § 35.
 Vedtaket er gjort etter folketrygdloven § 21-3.
     {{/eq}}
 {{/each}}
+{{/utils/redigerbart_innhold}}
 
+
+{{#> utils/readonly_innhold}}
 ## Du har rett til å klage
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 
 {{> footer_nb }}
+{{/utils/readonly_innhold}}

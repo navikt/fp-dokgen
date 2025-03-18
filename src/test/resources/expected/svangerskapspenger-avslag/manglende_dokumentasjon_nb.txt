@@ -18,12 +18,15 @@
         </tr>
     </table>
 </div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # Nav har avslått søknaden din om svangerskapspenger
 Vi har avslått søknaden din om svangerskapspenger som vi mottok 23. mars 2021 fordi vi ikke har mottatt dokumentasjonen vi har bedt om.
 Hvis du sender oss dokumentasjonen innen seks uker fra du fikk dette vedtaket, behandler vi saken din på nytt. Da trenger du ikke sende ny søknad.
 Vedtaket er gjort etter folketrygdloven § 14-4.
 ## Du har rett til å klage
 Du kan klage innen 6 uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+</div>
+<div id="readonly-innhold">
 ## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <div style="break-inside: avoid; page-break-inside: avoid">
@@ -39,4 +42,5 @@ Med vennlig hilsen
 Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
+</div>
 </div>
