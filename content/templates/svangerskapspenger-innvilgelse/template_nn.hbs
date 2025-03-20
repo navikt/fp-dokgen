@@ -1,5 +1,5 @@
 {{> header_nn }}
-
+{{#> utils/redigerbart_innhold}}
 {{#if revurdering true}}# Nav har endra svangerskapspengane dine
 {{else}}# Nav har innvilga søknaden din om svangerskapspengar
 {{/if}}
@@ -34,8 +34,12 @@ Vedtaket er gjort etter folketrygdlova § 14-4.
 
 ## Du må melde frå om endringar
 Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til Nav med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+{{/utils/redigerbart_innhold}}
 
+
+{{#> utils/readonly_innhold}}
 ## Du har rett til å klage
 Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 
 {{> footer_nn }}
+{{/utils/readonly_innhold}}

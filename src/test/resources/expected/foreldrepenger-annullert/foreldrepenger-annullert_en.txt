@@ -1,27 +1,32 @@
-<table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
-        <td style="text-align: left; width: 150px">Name:</td>
-        <td style="text-align: left;">Dolly Duck</td>
-        <td style="text-align: left;"></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr><tr>
-        <td style="text-align: left; width: 150px">National identity number:</td>
-        <td style="text-align: left;">300220 12345</td>
-        <td></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    <tr>
-        <td style="text-align: left; width: 150px">Nav's case number:</td>
-        <td style="text-align: left;">123456789</td>
-        <td></td> <!-- Empty column -->
-        <td style="text-align: right;">4. mai 2021</td>
-    </tr>
-</table>
+<div id="header">
+    <table style="color:gray; width: 100%; border-collapse: collapse;"><tr>
+            <td style="text-align: left; width: 150px">Name:</td>
+            <td style="text-align: left;">Dolly Duck</td>
+            <td style="text-align: left;"></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr><tr>
+            <td style="text-align: left; width: 150px">National identity number:</td>
+            <td style="text-align: left;">300220 12345</td>
+            <td></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 150px">Nav's case number:</td>
+            <td style="text-align: left;">123456789</td>
+            <td></td> <!-- Empty column -->
+            <td style="text-align: right;">4. mai 2021</td>
+        </tr>
+    </table>
+</div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 #  Nav has changed your parental benefit
 You have chosen not to withdraw your previously granted period of parental benefit.
 You are not withdrawing your parental benefit before 1. april 2022.
 Your application for parental benefit from and including 1. april 2022 can not be processed before 1. mars 2021 because parental benefit should be calculated based on the income you have when you start your withdrawal. It must also be considered whether you have earned the right to parental benefit when your period starts. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 When there are 4 weeks left until you are to withdraw your parental benefit, your employer must submit a new income report.
 The decision has been made pursuant to section 14-6, 14-7, 14-9, 14-10, 14-11 and 14-12 of the National Insurance Act.
+</div>
+<div id="readonly-innhold">
 ## You have the right to appeal
 You may appeal within 6 weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 ## You have right of access
@@ -39,4 +44,5 @@ Yours sincerely,
 Nav Familie- og pensjonsytelser
 <br/><br/>
 This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
+</div>
 </div>

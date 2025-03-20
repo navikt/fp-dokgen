@@ -1,5 +1,5 @@
 {{> header_nn }}
-
+{{#> utils/redigerbart_innhold}}
 #  Nav har avslått søknaden din om foreldrepengar
 
 ## Dette har vi avslått
@@ -383,8 +383,12 @@ Sjølv om du ikkje har rett til foreldrepengar, kan det vere at du har rett til 
 {{/each}}
 
 Vedtaket er gjort etter folketrygdlova {{lovhjemmelForAvslag}}.
+{{/utils/redigerbart_innhold}}
 
+
+{{#> utils/readonly_innhold}}
 ## Du har rett til å klage
 Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 
 {{> footer_nn }}
+{{/utils/readonly_innhold}}

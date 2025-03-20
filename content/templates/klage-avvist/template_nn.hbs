@@ -1,6 +1,5 @@
 {{> header_nn }}
-
-
+{{#> utils/redigerbart_innhold}}
 
 {{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}# Nav har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av eingongsstønad
 {{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}# Nav har avvist klaga di på {{#if påklagdVedtak}}vedtaket om {{/if}}tilbakebetaling av foreldrepengar
@@ -46,8 +45,12 @@ Vi har avvist klaga di fordi{{/gt}}
 {{/if}}
 
 Vedtaket er gjort etter {{lovhjemler}}.
+{{/utils/redigerbart_innhold}}
 
+
+{{#> utils/readonly_innhold}}
 ## Du har rett til å klage
 Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 
 {{> footer_nn }}
+{{/utils/readonly_innhold}}

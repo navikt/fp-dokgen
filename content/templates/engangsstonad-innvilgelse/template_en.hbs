@@ -1,6 +1,7 @@
 {{> header_en }}
-{{#if død}}
 
+{{#if død}}
+{{#> utils/redigerbart_innhold}}
 #  Nav has processed the application for a lump-sum grant
 
 This letter is to inform you that we have approved {{felles.søkerNavn}}’s application for a lump-sum grant. We will issue a payment of NOK {{innvilgetBeløp}} within one week. The lump-sum grant is not liable to taxes.
@@ -13,10 +14,15 @@ If you have any questions about the decision or wish to lodge an appeal, please 
 <br/>
 <br/>
 <br/>
+{{/utils/redigerbart_innhold}}
 
+
+{{#> utils/readonly_innhold}}
 {{> hilsen_en }}
-{{else}}
+{{/utils/readonly_innhold}}
 
+{{else}}
+{{#> utils/redigerbart_innhold}}
 #  Nav has granted your application for a lump-sum grant
 
 {{#if førstegangsbehandling}}
@@ -36,9 +42,13 @@ The decision has been made pursuant to section 14-17 of the National Insurance A
 {{else}}
 The decision has been made pursuant to section 14-17 of the National Insurance Act and section 35 of the Public Administration Act.
 {{/if}}
+{{/utils/redigerbart_innhold}}
 
+
+{{#> utils/readonly_innhold}}
 ## You have the right to appeal
 You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 
 {{> footer_en }}
+{{/utils/readonly_innhold}}
 {{/if}}

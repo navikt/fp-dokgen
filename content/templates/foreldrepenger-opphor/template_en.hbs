@@ -1,5 +1,5 @@
 {{> header_en }}
-
+{{#> utils/redigerbart_innhold}}
 {{#eq erSøkerDød true}}
 # Parental benefit for {{capitalize felles.søkerNavn fully=true}} is stopped
 
@@ -98,4 +98,9 @@ The decision has been made in accordance with the National Insurance Act section
 ## You have the right to appeal
 You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 {{/eq}}
+{{/utils/redigerbart_innhold}}
+
+
+{{#> utils/readonly_innhold}}
 {{> footer_en }}
+{{/utils/readonly_innhold}}

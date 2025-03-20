@@ -1,5 +1,5 @@
 {{> header_nn }}
-
+{{#> utils/redigerbart_innhold}}
 {{#eq erSøkerDød true}}
 # Svangerskapspengane til {{capitalize felles.søkerNavn fully=true}} er stansa
 {{#eq opphørtPeriode.årsak "8304" }}
@@ -111,4 +111,9 @@ Vedtaket er gjort etter folketrygdlova  {{lovhjemmel}}.
 Du kan klage innan {{klagefristUker}} veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 
 {{/eq}}
+{{/utils/redigerbart_innhold}}
+
+
+{{#> utils/readonly_innhold}}
 {{> footer_nn }}
+{{/utils/readonly_innhold}}

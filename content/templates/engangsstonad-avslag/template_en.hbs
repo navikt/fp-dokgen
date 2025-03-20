@@ -1,4 +1,5 @@
 {{> header_en }}
+{{#> utils/redigerbart_innhold}}
 {{#if førstegangsbehandling}}
 # Nav has turned down your application for a lump-sum grant
 {{else}}
@@ -117,8 +118,12 @@ This decision has been made pursuant to section 14-17 of the National Insurance 
 This decision has been made pursuant to section 21-3 of the National Insurance Act.
     {{/eq}}
 {{/each}}
+{{/utils/redigerbart_innhold}}
 
+
+{{#> utils/readonly_innhold}}
 ## You have the right to appeal
 You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the relevant form and information at [nav.no/klage](https://nav.no/klage).
 
 {{> footer_en }}
+{{/utils/readonly_innhold}}

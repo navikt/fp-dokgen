@@ -1,8 +1,8 @@
 {{> header_nb }}
+
 {{#if død}}
-
+{{#> utils/redigerbart_innhold}}
 #  Nav har behandlet søknaden om engangsstønad
-
 Vi sender dette brevet for å informere om at vi har innvilget søknaden om engangsstønad til {{felles.søkerNavn}}. Det blir utbetalt {{innvilgetBeløp}} kroner innen en uke. Stønaden er skattefri.
 <br/>
 <br/>
@@ -13,10 +13,15 @@ Hvis du har spørsmål om vedtaket eller ønsker å klage, må du gjerne kontakt
 <br/>
 <br/>
 <br/>
+{{/utils/redigerbart_innhold}}
 
+
+{{#> utils/readonly_innhold}}
 {{> hilsen_nb }}
-{{else}}
+{{/utils/readonly_innhold}}
 
+{{else}}
+{{#> utils/redigerbart_innhold}}
 #  Nav har innvilget søknaden din om engangsstønad
 {{#if førstegangsbehandling}}
 Du har rett til engangsstønad og får utbetalt {{innvilgetBeløp}} kroner innen en uke.
@@ -35,9 +40,13 @@ Vedtaket er gjort etter folketrygdloven § 14-17.
 {{else}}
 Vedtaket er gjort etter folketrygdloven § 14-17 og forvaltningsloven § 35.
 {{/if}}
+{{/utils/redigerbart_innhold}}
 
+
+{{#> utils/readonly_innhold}}
 ## Du har rett til å klage
 Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du finner skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 
 {{> footer_nb }}
+{{/utils/readonly_innhold}}
 {{/if}}

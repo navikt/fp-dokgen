@@ -1,36 +1,38 @@
-<table style="color:gray; width: 100%; border-collapse: collapse;">
-    {{~#if felles.mottakerNavn~}}
-    <tr>
-        <td style="text-align: left; width: 150px">Verge:</td>
-        <td style="text-align: left;">{{felles.mottakerNavn}}</td>
-        <td></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    <tr>
-        <td style="text-align: left; width: 150px">Saken gjelder:</td>
-        <td style="text-align: left;">{{felles.søkerNavn}}</td>
-        <td style="text-align: left;"></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    {{~else~}}
-    <tr>
-        <td style="text-align: left; width: 150px">Namn:</td>
-        <td style="text-align: left;">{{felles.søkerNavn}}</td>
-        <td style="text-align: left;"></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    {{~/if~}}
-    <tr>
-        <td style="text-align: left; width: 150px">Fødselsnummer:</td>
-        <td style="text-align: left;">{{felles.søkerPersonnummer}}</td>
-        <td></td> <!-- Empty column -->
-        <td></td> <!-- Keeping alignment -->
-    </tr>
-    <tr>
-        <td style="text-align: left; width: 150px">Saksnummer:</td>
-        <td style="text-align: left;">{{felles.saksnummer}}</td>
-        <td></td> <!-- Empty column -->
-        <td style="text-align: right;">{{felles.brevDato}}</td>
-    </tr>
-</table>
-{{#if felles.erUtkast}}<p class="draft_text">UTKAST</p>{{/if}}
+<div id="header">
+    <table style="color:gray; width: 100%; border-collapse: collapse;">
+        {{~#if felles.mottakerNavn~}}
+        <tr>
+            <td style="text-align: left; width: 150px">Verge:</td>
+            <td style="text-align: left;">{{felles.mottakerNavn}}</td>
+            <td></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 150px">Saken gjelder:</td>
+            <td style="text-align: left;">{{felles.søkerNavn}}</td>
+            <td style="text-align: left;"></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        {{~else~}}
+        <tr>
+            <td style="text-align: left; width: 150px">Namn:</td>
+            <td style="text-align: left;">{{felles.søkerNavn}}</td>
+            <td style="text-align: left;"></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        {{~/if~}}
+        <tr>
+            <td style="text-align: left; width: 150px">Fødselsnummer:</td>
+            <td style="text-align: left;">{{felles.søkerPersonnummer}}</td>
+            <td></td> <!-- Empty column -->
+            <td></td> <!-- Keeping alignment -->
+        </tr>
+        <tr>
+            <td style="text-align: left; width: 150px">Saksnummer:</td>
+            <td style="text-align: left;">{{felles.saksnummer}}</td>
+            <td></td> <!-- Empty column -->
+            <td style="text-align: right;">{{felles.brevDato}}</td>
+        </tr>
+    </table>
+    {{#if felles.erUtkast}}<p class="draft_text">UTKAST</p>{{/if}}
+</div>
