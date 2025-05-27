@@ -47,6 +47,10 @@ spec:
         - id: elastic
   {{#if consumers}}
   accessPolicy:
+    outbound:
+      rules:
+        - application: logging
+          namespace: nais-system
     inbound:
       rules:
       {{#each consumers}}
