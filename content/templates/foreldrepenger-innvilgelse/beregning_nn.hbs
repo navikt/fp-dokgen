@@ -38,6 +38,17 @@ Vi har brukt {{thousand-seperator this.månedsinntekt}} kroner i månaden før s
 {{/eq}}
 {{/each}}
 
+{{~#in-array (array "ARBEID_UNDER_AAP") regelStatus }}
+{{~#each andelListe}}
+{{#if this.arbeidsgiverNavn}}Inntekta di hos {{this.arbeidsgiverNavn}} er {{thousand-seperator this.månedsinntekt}} kroner i månaden. Arbeidsgivaren din har gitt oss desse opplysningane.
+{{else}}
+{{~#gt this.månedsinntekt 0}}
+Vi har fastsett ein inntekt på {{thousand-seperator this.månedsinntekt}} kroner i måneden. Dette er som hovudregel gjennomsnittet av arbeids -eller frilansinntekta di frå dei siste tre månadene før du fekk innvilga full ytelse av arbeidsavklaringspengar.
+{{/gt}}
+{{/if}}
+{{/each}}
+{{/in-array}}
+
 {{~#if (or (eq regelStatus "ARBEIDSTAKER") (eq regelStatus "KOMBINERT_AT_FL_SN")  (eq regelStatus "KOMBINERT_AT_SN"))}}
 Dette er gjennomsnittet av inntekta di frå dei siste tre månadene. Dersom du nettopp har begynt å arbeide, har bytta arbeidsforhold, eller dersom lønna di har endra seg, har vi brukt månadsinntektene etter at endringa skjedde.
 {{/if}}
