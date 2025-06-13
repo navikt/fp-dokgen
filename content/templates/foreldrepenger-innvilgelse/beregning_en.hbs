@@ -43,7 +43,7 @@ We have used {{thousand-seperator this.månedsinntekt}} kroner per month before 
 {{#if this.arbeidsgiverNavn}}Your income at {{this.arbeidsgiverNavn}} is {{thousand-seperator this.månedsinntekt}} kroner per month. Your employer has provided us with this information.
 {{else}}
 {{~#gt this.månedsinntekt 0}}
-We have calculated {{thousand-seperator this.månedsinntekt}} kroner per month. This amount represents the average income you earned during the three months before receiving full unemployment benefit.
+You have received full unemployment benefit prior to the parental benefit. In addition, you have had income from work and/or freelance work in the last three months. We have therefore calculated an income of {{thousand-seperator this.månedsinntekt}} per month. This is generally the average income from work and/or freelance work the last three months before the start of the parental benefit period.
 {{/gt}}
 {{/if}}
 {{/each}}

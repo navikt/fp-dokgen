@@ -43,7 +43,7 @@ Vi har brukt {{thousand-seperator this.månedsinntekt}} kroner i måneden før s
 {{#if this.arbeidsgiverNavn}}Inntekten din hos {{this.arbeidsgiverNavn}} er {{thousand-seperator this.månedsinntekt}} kroner i måneden. Arbeidsgiveren din har gitt oss disse opplysningene.
 {{else}}
 {{~#gt this.månedsinntekt 0}}
-Vi har fastsatt en inntekt på {{thousand-seperator this.månedsinntekt}} kroner i måneden. Dette er som hovedregel gjennomsnittet av arbeids -eller frilansinntekten du har hatt i de siste tre månedene før du fikk full ytelse av arbeidsavklaringspenger.
+Du har mottatt full ytelse med arbeidsavklaringspenger før foreldrepengene. I tillegg har du hatt arbeids -og/eller frilansinntekt i de siste tre månedene før foreldrepengene. Vi har derfor fastsatt en inntekt på {{thousand-seperator this.månedsinntekt}} kroner i måneden. Dette er som hovedregel gjennomsnittet av arbeids -og/eller frilansinntekt du har hatt i de siste tre månedene før du går ut i foreldrepenger
 {{/gt}}
 {{/if}}
 {{/each}}
