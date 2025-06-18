@@ -38,6 +38,17 @@ Vi har brukt {{thousand-seperator this.månedsinntekt}} kroner i måneden før s
 {{/eq}}
 {{/each}}
 
+{{~#in-array (array "ARBEID_UNDER_AAP") regelStatus }}
+{{~#each andelListe}}
+{{#if this.arbeidsgiverNavn}}Inntekten din hos {{this.arbeidsgiverNavn}} er {{thousand-seperator this.månedsinntekt}} kroner i måneden. Arbeidsgiveren din har gitt oss disse opplysningene.
+{{else}}
+{{~#gt this.månedsinntekt 0}}
+Du har arbeidsavklaringspenger i forkant av foreldrepengene. I tillegg har du hatt arbeids -og/eller frilansinntekt i de siste tre månedene før foreldrepengene. Vi har derfor fastsatt en inntekt på {{thousand-seperator this.månedsinntekt}} kroner i måneden. Dette er som hovedregel gjennomsnittet av arbeids -og/eller frilansinntekten din fra de siste tre månedene.
+{{/gt}}
+{{/if}}
+{{/each}}
+{{/in-array}}
+
 {{~#in-array (array "ARBEIDSTAKER" "KOMBINERT_AT_FL_SN" "KOMBINERT_AT_SN") regelStatus }}
 Dette er gjennomsnittet av inntekten din fra de siste tre månedene. Hvis du nettopp har begynt å arbeide, byttet arbeidsforhold eller lønnen din har endret seg, har vi brukt månedsinntektene etter at endringen skjedde.
 {{/in-array}}

@@ -80,4 +80,11 @@ class ForeldrepengerInnvilgelseBeregningTest {
         var expected = getExpected(BREVMAL, UNDERMAL, "fp-innvilgelse_besteberegning_nei_DP_AT_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+
+    @Test
+    void undermal_beregning_fulle_aap_og_inntekt_nb() {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegangsbehandling_fulle_aap_og_inntekt");
+        var expected = getExpected(BREVMAL, UNDERMAL, "fp-innvilgelse_full_aap_med_inntekt_nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
 }

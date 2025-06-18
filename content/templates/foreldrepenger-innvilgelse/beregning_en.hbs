@@ -38,6 +38,17 @@ We have used {{thousand-seperator this.månedsinntekt}} kroner per month before 
 {{/eq}}
 {{/each}}
 
+{{~#in-array (array "ARBEID_UNDER_AAP") regelStatus }}
+{{~#each andelListe}}
+{{#if this.arbeidsgiverNavn}}Your income at {{this.arbeidsgiverNavn}} is {{thousand-seperator this.månedsinntekt}} kroner per month. Your employer has provided us with this information.
+{{else}}
+{{~#gt this.månedsinntekt 0}}
+You have received unemployment benefit prior to the parental benefit. In addition, you have had income from work and/or freelance work in the last three months. We have therefore calculated an income of {{thousand-seperator this.månedsinntekt}} per month. This is generally the average of your income from work or freelance work from the past three months.
+{{/gt}}
+{{/if}}
+{{/each}}
+{{/in-array}}
+
 {{~#in-array (array "ARBEIDSTAKER" "KOMBINERT_AT_FL_SN" "KOMBINERT_AT_SN") regelStatus }}
 This is the average of your income from the last three months before the start of the parental benefit period. If you have just started working, changed your employment situation or your pay has changed, we have used your monthly income after the change took place.
 {{/in-array}}
