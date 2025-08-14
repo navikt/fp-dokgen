@@ -48,9 +48,6 @@
     "barnErFødt": {
       "type": "boolean"
     },
-    "annenForelderHarRett": {
-      "type": "boolean"
-    },
     "antallBarn": {
       "type": "number"
     },

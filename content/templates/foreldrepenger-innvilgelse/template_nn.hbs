@@ -26,15 +26,13 @@
 {{#not avslagBarnOver3år}}
 {{~#if sisteDagAvSistePeriode}}
     {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
-        {{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))~}}
-            {{~#if annenForelderRettEØS}}
+        {{~#eq rettigheter.gjeldende "BEGGE_RETT_EØS"~}}
 Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dagar{{/eq}} igjen av kvoten din. Det står{{~#gt disponibleDager 0}} også{{/gt}} att {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dagar{{/eq}} med foreldrepengar som du kan ta ut dersom den andre forelderen {{#eq gjelderMor false}}er i aktivitet, og {{/eq}}ikkje har tatt ut desse i eit anna EØS-land.
-            {{~else}}
+        {{~else if (eq rettigheter.gjeldende "BEGGE_RETT")}}
 Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dagar{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dagar{{/eq}} som begge kan ta ut.
-            {{~/if}}
         {{~else}}
             {{~#gt disponibleDager 0}}Det er {{disponibleDager}}{{#gt disponibleDager 1}} dagar{{else}} dag{{/gt}} igjen av perioden med foreldrepengar.{{/gt}}
-        {{~/if}}
+        {{~/eq}}
         {{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}} Mor må vere i aktivitet for at du skal kunne ta ut {{disponibleDagerMedAktivitetskrav}} av desse dagane. I periodar mor ikkje er i aktivitet vil du miste dagar, sjølv om du ikkje tar ut foreldrepengar. {{~#gt disponibleDagerUtenAktivitetskrav 1}} Dei resterande {{disponibleDagerUtenAktivitetskrav}} dagane{{~else}} Den resterande dagen {{/gt}} kan du ta ut utan at mor er i aktivitet.
             {{~#eq disponibleDager 1}}<br/>Den resterande dagen{{~else}}<br/>Alle {{disponibleDager}} dagane{{/eq}} må vere tatt ut{{~#eq utenMinsterett false}} innan barnet fyller tre år{{~else}} før barnet er {{#eq dekningsgrad 80}}56{{else}}46{{/eq}} veker gamalt{{/eq}}, eller innan ein ny foreldrepengeperiode for eit nytt barn startar.
         {{~/if}}

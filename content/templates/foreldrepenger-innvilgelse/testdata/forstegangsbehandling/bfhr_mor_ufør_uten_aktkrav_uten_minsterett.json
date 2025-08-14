@@ -20,10 +20,10 @@
   "seksG": 638394,
   "inntektOverSeksG": true,
   "inntektMottattArbeidsgiver": false,
-  "annenForelderHarRett": false,
-  "annenForelderRettEØS": false,
-  "annenForelderHarRettVurdert": "NEI",
-  "aleneomsorgKode": "IKKE_VURDERT",
+  "rettigheter": {
+    "opprinnelig": "BARE_FAR_RETT_MOR_UFØR",
+    "gjeldende": "BARE_FAR_RETT_MOR_UFØR"
+  },
   "ikkeOmsorg": false,
   "barnErFødt": true,
   "årsakErFødselshendelse": false,

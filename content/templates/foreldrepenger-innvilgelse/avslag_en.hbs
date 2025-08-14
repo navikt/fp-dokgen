@@ -23,11 +23,7 @@
 
   You must apply no later than three months after the period of parental benefit started. You applied on {{tidligstMottattDato}}. You will therefore have {{antallTapteDager}} {{#gt antallTapteDager 1}}fewer days{{else}}day less{{/gt}} with parental benefit.{{/gt}}{{/case}}
 {{#case "4005"}}
-{{#if annenForelderHarRett}}
 {{>punkt}}No application has been submitted for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. Therefore, {{antallTapteDager}} {{#gt antallTapteDager 1}}days have{{else}}day has{{/gt}} been lost.
-{{else}}
-{{#gt antallTapteDager 0}}{{>punkt}}You have not applied for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.{{/gt}}
-{{/if}}
 {{/case}}
 {{#case "4102"}}
 {{>punkt}}You have not applied for parental benefit from {{periodeFom}} up to and including {{periodeTom}}, nor have you informed us that the other parent is working, studying or is in any other approved activity. You have therefore lost {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.

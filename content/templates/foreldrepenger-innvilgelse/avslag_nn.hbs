@@ -23,11 +23,7 @@
 
   Du må søkje seinast tre månader etter at perioden med foreldrepengar starta. Du søkte {{tidligstMottattDato}}. Derfor får du {{antallTapteDager}} {{#gt antallTapteDager 1}}færre dagar{{else}}dag mindre{{/gt}} med foreldrepengar.{{/gt}}{{/case}}
 {{#case "4005"}}
-{{#if annenForelderHarRett}}
 {{>punkt}}Det er ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar tapte{{else}}dag tapt{{/gt}}.
-{{else}}
-{{>punkt}}Du har ikkje søkt om foreldrepengar eller utsetjing frå og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mista {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar{{else}}dag{{/gt}}.
-{{/if}}
 {{/case}}
 {{#case "4102"}}
 {{#gt antallTapteDager 0}}{{>punkt}}Du har ikkje søkt om foreldrepengar frå og med {{periodeFom}} til og med {{periodeTom}}. Du har heller ikkje oppgitt at mor jobbar, studerer eller er i annan aktivitet i denne perioden. Derfor har du mista {{antallTapteDager}} {{#gt antallTapteDager 1}}dagar{{else}}dag{{/gt}}.{{/gt}}
