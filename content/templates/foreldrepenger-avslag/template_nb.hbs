@@ -365,6 +365,8 @@
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi foreldrepenger for nytt barn har startet.
 {{/eq}}
 
+{{#eq avslagsårsak "4108" }}
+{{>punkt}}Du kan ikke ta ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen tar ut en pengestøtte tilsvarende foreldrepenger i et annet EØS-land i samme periode.{{/eq}}
 {{/each}}
 
 {{~#if felles.fritekst}}
