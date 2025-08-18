@@ -351,6 +351,9 @@
     "disponibleDagerMedAktivitetskrav": {
       "type": "number"
     },
+    "maksukerUtenAktivitetskrav": {
+      "type": "number"
+    },
     "disponibleFellesDager": {
       "type": "number"
     },
