@@ -28,7 +28,7 @@
 {{~#if sisteDagAvSistePeriode}}
     {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
         {{~#eq rettigheter.gjeldende "BEGGE_RETT_EØS"~}}
-Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dager{{/eq}} igjen av kvoten din. Det gjenstår{{~#gt disponibleDager 0}} også{{/gt}} {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dager{{/eq}} med foreldrepenger som du kan ta ut hvis den andre forelderen {{#eq gjelderMor false}}er i aktivitet, og {{/eq}}ikke har tatt ut disse i et annet EØS-land.
+Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dager{{/eq}} igjen av kvoten din. Det gjenstår{{~#gt disponibleDager 0}} også{{/gt}} {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dager{{/eq}} med foreldrepenger som du kan ta ut hvis den andre forelderen {{#eq gjelderMor false}}er i aktivitet, og {{/eq}}ikke har tatt ut disse i et annet EU/EØS-land.
         {{~else if (eq rettigheter.gjeldende "BEGGE_RETT")}}
 Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dager{{/eq}} som begge kan ta ut.
         {{~else}}
