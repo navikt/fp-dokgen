@@ -1,0 +1,66 @@
+{{#if (and (eq behandlingType "FØRSTEGANGSSØKNAD") (eq rettigheter.opprinnelig "ALENEOMSORG") (eq rettigheter.gjeldende "ALENEOMSORG"))}}
+Du har aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}, og får derfor hele foreldrepengeperioden.
+{{else if (and (eq behandlingType "FØRSTEGANGSSØKNAD") (eq rettigheter.opprinnelig "BARE_SØKER_RETT") (eq rettigheter.gjeldende "BARE_SØKER_RETT"))}}
+Den andre forelderen har ikke rett til foreldrepenger. Derfor får du hele foreldrepengeperioden.
+{{else if (and (eq behandlingType "FØRSTEGANGSSØKNAD") (eq rettigheter.opprinnelig "BARE_FAR_RETT_MOR_UFØR") (eq rettigheter.gjeldende "BARE_FAR_RETT_MOR_UFØR"))}}
+Den andre forelderen har ikke rett til foreldrepenger. Derfor får du hele foreldrepengeperioden.
+{{else if (and (eq behandlingType "FØRSTEGANGSSØKNAD") (eq rettigheter.opprinnelig "BEGGE_RETT_EØS") (eq rettigheter.gjeldende "BEGGE_RETT_EØS"))}}
+Den andre forelderen har rett til en pengestøtte i et annet EU/EØS-land som tilsvarer foreldrepenger i Norge. Når begge foreldrene har opptjent rett til foreldrepenger, deles perioden inn i kvoter og en fellesperiode. Det samme gjelder også om en av foreldrene har mottatt en utbetaling som tilsvarer foreldrepenger i et annet EU/EØS-land. Den andre forelderens dager med utbetaling i EU/EØS-landet kan påvirke lengden på fellesperioden i Norge.
+
+{{#if rettigheter.eøsUttak}}{{#gt rettigheter.eøsUttak.forbruktFellesperiode 0}} Vi har fått opplyst at den andre forelderen har tatt ut en pengestøtte som tilsvarer foreldrepenger for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Mellom {{rettigheter.eøsUttak.fom}} og {{rettigheter.eøsUttak.tom}} har den andre forelderen tatt ut {{rettigheter.eøsUttak.forbruktFellesperiode}} dager som tilsvarer fellesperiode, som fører til en reduksjon i dine stønadsdager med fellesperiode i Norge. Du har derfor krav på {{#eq relasjonsRolleType "FARA"}}fedrekvoten{{else if (eq relasjonsRolleType "MMOR")}}medmorkvoten{{else}}mødrekvoten{{/eq}} og {{rettigheter.eøsUttak.fellesperiodeINorge}} dager av fellesperioden.{{/gt}}{{/if}}
+{{else if (and (eq rettigheter.opprinnelig "ALENEOMSORG") (eq rettigheter.gjeldende "BEGGE_RETT"))}}
+Du har ikke aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}, og får derfor ikke hele foreldrepengeperioden.
+{{else if (and (eq rettigheter.opprinnelig "ALENEOMSORG") (eq rettigheter.gjeldende "BEGGE_RETT_EØS"))}}
+Du har ikke aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Den andre forelderen har rett til en pengestøtte i et annet EU/EØS-land som tilsvarer foreldrepenger i Norge. Når begge foreldrene har opptjent rett til foreldrepenger, deles perioden inn i kvoter og en fellesperiode. Det samme gjelder også om en av foreldrene har mottatt en utbetaling som tilsvarer foreldrepenger i et annet EU/EØS-land. Den andre forelderens dager med utbetaling i EU/EØS-landet kan påvirke lengden på fellesperioden i Norge.
+
+{{#if rettigheter.eøsUttak}}{{#gt rettigheter.eøsUttak.forbruktFellesperiode 0}} Vi har fått opplyst at den andre forelderen har tatt ut en pengestøtte som tilsvarer foreldrepenger for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Mellom {{rettigheter.eøsUttak.fom}} og {{rettigheter.eøsUttak.tom}} har den andre forelderen tatt ut {{rettigheter.eøsUttak.forbruktFellesperiode}} dager som tilsvarer fellesperiode, som fører til en reduksjon i dine stønadsdager med fellesperiode i Norge. Du har derfor krav på {{#eq relasjonsRolleType "FARA"}}fedrekvoten{{else if (eq relasjonsRolleType "MMOR")}}medmorkvoten{{else}}mødrekvoten{{/eq}} og {{rettigheter.eøsUttak.fellesperiodeINorge}} dager av fellesperioden.{{/gt}}{{/if}}
+{{else if (and (eq rettigheter.opprinnelig "ALENEOMSORG") (eq rettigheter.gjeldende "BARE_SØKER_RETT"))}}
+{{#eq relasjonsRolleType "MORA"}}
+Du har ikke aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}, men fordi den andre forelderen ikke har rett til foreldrepenger får du hele foreldrepengeperioden.
+{{else}}
+Du har ikke aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}, men fordi den andre forelderen ikke har rett til foreldrepenger får du hele foreldrepengeperioden. Hvis du skal ta ut mer enn {{maksukerUtenAktivitetskrav}} uker, må mor være i aktivitet. Les mer om aktivitetskravet på [nav.no/foreldrepenger](https://nav.no/foreldrepenger)
+{{/eq}}
+{{else if (and (eq rettigheter.opprinnelig "ALENEOMSORG") (eq rettigheter.gjeldende "BARE_FAR_RETT_MOR_UFØR"))}}
+{{#eq relasjonsRolleType "MORA"}}
+Du har ikke aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}, men fordi den andre forelderen ikke har rett til foreldrepenger får du hele foreldrepengeperioden.
+{{else}}
+Du har ikke aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}, men fordi den andre forelderen ikke har rett til foreldrepenger får du hele foreldrepengeperioden. Hvis du skal ta ut mer enn {{maksukerUtenAktivitetskrav}} uker, må mor være i aktivitet. Les mer om aktivitetskravet på [nav.no/foreldrepenger](https://nav.no/foreldrepenger)
+{{/eq}}
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT") (eq rettigheter.gjeldende "ALENEOMSORG"))}}
+Du har aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}, og får derfor hele foreldrepengeperioden.
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT") (eq rettigheter.gjeldende "BEGGE_RETT_EØS"))}}
+Den andre forelderen har rett til en pengestøtte i et annet EU/EØS-land som tilsvarer foreldrepenger i Norge. Når begge foreldrene har opptjent rett til foreldrepenger, deles perioden inn i kvoter og en fellesperiode. Det samme gjelder også om en av foreldrene har mottatt en utbetaling som tilsvarer foreldrepenger i et annet EU/EØS-land. Den andre forelderens dager med utbetaling i EU/EØS-landet kan påvirke lengden på fellesperioden i Norge.
+
+{{#if rettigheter.eøsUttak}}{{#gt rettigheter.eøsUttak.forbruktFellesperiode 0}} Vi har fått opplyst at den andre forelderen har tatt ut en pengestøtte som tilsvarer foreldrepenger for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Mellom {{rettigheter.eøsUttak.fom}} og {{rettigheter.eøsUttak.tom}} har den andre forelderen tatt ut {{rettigheter.eøsUttak.forbruktFellesperiode}} dager som tilsvarer fellesperiode, som fører til en reduksjon i dine stønadsdager med fellesperiode i Norge. Du har derfor krav på {{#eq relasjonsRolleType "FARA"}}fedrekvoten{{else if (eq relasjonsRolleType "MMOR")}}medmorkvoten{{else}}mødrekvoten{{/eq}} og {{rettigheter.eøsUttak.fellesperiodeINorge}} dager av fellesperioden.{{/gt}}{{/if}}
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT") (eq rettigheter.gjeldende "BARE_SØKER_RETT"))}}
+Den andre forelderen har ikke rett til foreldrepenger. Derfor får du hele foreldrepengeperioden.
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT") (eq rettigheter.gjeldende "BARE_FAR_RETT_MOR_UFØR"))}}
+Den andre forelderen har ikke rett til foreldrepenger. Derfor får du hele foreldrepengeperioden.
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT_EØS") (eq rettigheter.gjeldende "ALENEOMSORG"))}}
+Du har aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}, og får derfor hele foreldrepengeperioden.
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT_EØS") (eq rettigheter.gjeldende "BEGGE_RETT"))}}
+Den andre forelderen har ikke rett til en pengestøtte i et annet EU/EØS-land som tilsvarer foreldrepenger i Norge.
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT_EØS") (eq rettigheter.gjeldende "BARE_SØKER_RETT"))}}
+Den andre forelderen har ikke rett til en pengestøtte i et annet EU/EØS-land som tilsvarer foreldrepenger i Norge. Derfor får du hele foreldrepengeperioden.
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT_EØS") (eq rettigheter.gjeldende "BARE_FAR_RETT_MOR_UFØR"))}}
+Den andre forelderen har ikke rett til en pengestøtte i et annet EU/EØS-land som tilsvarer foreldrepenger i Norge. Derfor får du hele foreldrepengeperioden.
+{{else if (and (eq rettigheter.opprinnelig "BARE_SØKER_RETT") (eq rettigheter.gjeldende "ALENEOMSORG"))}}
+Du har aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}, og får derfor hele foreldrepengeperioden.
+{{else if (and (eq rettigheter.opprinnelig "BARE_SØKER_RETT") (eq rettigheter.gjeldende "BEGGE_RETT"))}}
+Den andre forelderen kan ha rett til foreldrepenger. Derfor får du ikke hele foreldrepengeperioden.
+{{else if (and (eq rettigheter.opprinnelig "BARE_SØKER_RETT") (eq rettigheter.gjeldende "BEGGE_RETT_EØS"))}}
+Den andre forelderen har rett til en pengestøtte i et annet EU/EØS-land som tilsvarer foreldrepenger i Norge. Når begge foreldrene har opptjent rett til foreldrepenger, deles perioden inn i kvoter og en fellesperiode. Det samme gjelder også om en av foreldrene har mottatt en utbetaling som tilsvarer foreldrepenger i et annet EU/EØS-land. Den andre forelderens dager med utbetaling i EU/EØS-landet kan påvirke lengden på fellesperioden i Norge.
+
+{{#if rettigheter.eøsUttak}}{{#gt rettigheter.eøsUttak.forbruktFellesperiode 0}} Vi har fått opplyst at den andre forelderen har tatt ut en pengestøtte som tilsvarer foreldrepenger for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Mellom {{rettigheter.eøsUttak.fom}} og {{rettigheter.eøsUttak.tom}} har den andre forelderen tatt ut {{rettigheter.eøsUttak.forbruktFellesperiode}} dager som tilsvarer fellesperiode, som fører til en reduksjon i dine stønadsdager med fellesperiode i Norge. Du har derfor krav på {{#eq relasjonsRolleType "FARA"}}fedrekvoten{{else if (eq relasjonsRolleType "MMOR")}}medmorkvoten{{else}}mødrekvoten{{/eq}} og {{rettigheter.eøsUttak.fellesperiodeINorge}} dager av fellesperioden.{{/gt}}{{/if}}
+{{else if (and (eq rettigheter.opprinnelig "BARE_SØKER_RETT") (eq rettigheter.gjeldende "BARE_FAR_RETT_MOR_UFØR"))}}
+{{else if (and (eq rettigheter.opprinnelig "BARE_FAR_RETT_MOR_UFØR") (eq rettigheter.gjeldende "ALENEOMSORG"))}}
+Du har aleneomsorgen for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}, og får derfor hele foreldrepengeperioden.
+{{else if (and (eq rettigheter.opprinnelig "BARE_FAR_RETT_MOR_UFØR") (eq rettigheter.gjeldende "BEGGE_RETT"))}}
+Den andre forelderen kan ha rett til foreldrepenger. Derfor får du ikke hele foreldrepengeperioden.
+{{else if (and (eq rettigheter.opprinnelig "BARE_FAR_RETT_MOR_UFØR") (eq rettigheter.gjeldende "BEGGE_RETT_EØS"))}}
+Den andre forelderen har rett til en pengestøtte i et annet EU/EØS-land som tilsvarer foreldrepenger i Norge. Når begge foreldrene har opptjent rett til foreldrepenger, deles perioden inn i kvoter og en fellesperiode. Det samme gjelder også om en av foreldrene har mottatt en utbetaling som tilsvarer foreldrepenger i et annet EU/EØS-land. Den andre forelderens dager med utbetaling i EU/EØS-landet kan påvirke lengden på fellesperioden i Norge.
+
+{{#if rettigheter.eøsUttak}}{{#gt rettigheter.eøsUttak.forbruktFellesperiode 0}} Vi har fått opplyst at den andre forelderen har tatt ut en pengestøtte som tilsvarer foreldrepenger for {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}}. Mellom {{rettigheter.eøsUttak.fom}} og {{rettigheter.eøsUttak.tom}} har den andre forelderen tatt ut {{rettigheter.eøsUttak.forbruktFellesperiode}} dager som tilsvarer fellesperiode, som fører til en reduksjon i dine stønadsdager med fellesperiode i Norge. Du har derfor krav på {{#eq relasjonsRolleType "FARA"}}fedrekvoten{{else if (eq relasjonsRolleType "MMOR")}}medmorkvoten{{else}}mødrekvoten{{/eq}} og {{rettigheter.eøsUttak.fellesperiodeINorge}} dager av fellesperioden.{{/gt}}{{/if}}
+{{else if (and (eq rettigheter.opprinnelig "BARE_FAR_RETT_MOR_UFØR") (eq rettigheter.gjeldende "BARE_SØKER_RETT"))}}
+Mor mottar ikke uføretrygd. Du har derfor rett på {{maksukerUtenAktivitetskrav}} uker uten at mor er i aktivitet.
+{{/if}}

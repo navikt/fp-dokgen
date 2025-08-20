@@ -18,10 +18,10 @@
   "inntektOverSeksG": false,
   "forMyeUtbetalt": false,
   "inntektMottattArbeidsgiver": false,
-  "annenForelderHarRett": true,
-  "annenForelderRettEØS": false,
-  "annenForelderHarRettVurdert": "IKKE_VURDERT",
-  "aleneomsorgKode": "JA",
+  "rettigheter": {
+    "opprinnelig": "ALENEOMSORG",
+    "gjeldende": "ALENEOMSORG"
+  },
   "ikkeOmsorg": false,
   "barnErFødt": false,
   "årsakErFødselshendelse": false,

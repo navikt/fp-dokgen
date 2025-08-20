@@ -20,13 +20,12 @@
   "seksG": 638394,
   "inntektOverSeksG": true,
   "inntektMottattArbeidsgiver": false,
-  "annenForelderHarRett": true,
-  "annenForelderRettEØS": true,
-  "oppgittAnnenForelderRettEØS": true,
-  "annenForelderHarRettVurdert": "JA",
-  "aleneomsorgKode": "IKKE_VURDERT",
   "ikkeOmsorg": false,
   "barnErFødt": true,
+  "rettigheter": {
+    "opprinnelig": "BEGGE_RETT_EØS",
+    "gjeldende": "BEGGE_RETT_EØS"
+  },
   "årsakErFødselshendelse": false,
   "gjelderMor": false,
   "gjelderFødsel": true,

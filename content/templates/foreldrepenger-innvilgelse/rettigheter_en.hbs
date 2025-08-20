@@ -1,0 +1,66 @@
+{{#if (and (eq behandlingType "FØRSTEGANGSSØKNAD") (eq rettigheter.opprinnelig "ALENEOMSORG") (eq rettigheter.gjeldende "ALENEOMSORG"))}}
+Since you have sole custody of the{{#gt antallBarn 1}}children{{else}}child{{/gt}}, you are entitled to the full parental benefit period.
+{{else if (and (eq behandlingType "FØRSTEGANGSSØKNAD") (eq rettigheter.opprinnelig "BARE_SØKER_RETT") (eq rettigheter.gjeldende "BARE_SØKER_RETT"))}}
+Since the other parent is not entitled to parental benefit, you will receive the entire parental benefit period.
+{{else if (and (eq behandlingType "FØRSTEGANGSSØKNAD") (eq rettigheter.opprinnelig "BARE_FAR_RETT_MOR_UFØR") (eq rettigheter.gjeldende "BARE_FAR_RETT_MOR_UFØR"))}}
+Since the other parent is not entitled to parental benefit, you will receive the entire parental benefit period.
+{{else if (and (eq behandlingType "FØRSTEGANGSSØKNAD") (eq rettigheter.opprinnelig "BEGGE_RETT_EØS") (eq rettigheter.gjeldende "BEGGE_RETT_EØS"))}}
+The other parent is entitled to a cash benefit in another EU/EEA country that corresponds to parental benefit in Norway. When both parents have earned the right to parental benefit, the period is divided into quotas and a joint period. The same also applies if one of the parents has received a payment that corresponds to parental benefit in another EU/EEA country. The other parent's days of payment in the EU/EEA country may affect the length of the joint period in Norway.
+
+{{#if rettigheter.eøsUttak}}{{#gt rettigheter.eøsUttak.forbruktFellesperiode 0}}We have been informed that the other parent has had a cash benefit that corresponds to parental benefit for the {{#gt antallBarn 1}}children{{else}}child{{/gt}}. Between {{rettigheter.eøsUttak.fom}} and {{rettigheter.eøsUttak.tom}}, the other parent has had {{rettigheter.eøsUttak.forbruktFellesperiode}} days that correspond to the joint period, which leads to a reduction in your benefit days of the joint period in Norway. You are therefore entitled to the {{#eq relasjonsRolleType "FARA"}}father's quota{{else if (eq relasjonsRolleType "MMOR")}}co-mother's quota{{else}}mother's quota{{/eq}} and {{rettigheter.eøsUttak.fellesperiodeINorge}} days of the joint period.{{/gt}}{{/if}}
+{{else if (and (eq rettigheter.opprinnelig "ALENEOMSORG") (eq rettigheter.gjeldende "BEGGE_RETT"))}}
+You do not have sole custody of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}, and therefore do not receive the entire parental benefit period.
+{{else if (and (eq rettigheter.opprinnelig "ALENEOMSORG") (eq rettigheter.gjeldende "BEGGE_RETT_EØS"))}}
+You do not have sole custody of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}. The other parent is entitled to a cash benefit in another EU/EEA country that corresponds to parental benefit in Norway. When both parents have earned the right to parental benefit, the period is divided into quotas and a joint period. The same also applies if one of the parents has received a payment that corresponds to parental benefit in another EU/EEA country. The other parent's days of payment in the EU/EEA country may affect the length of the joint period in Norway.
+
+{{#if rettigheter.eøsUttak}}{{#gt rettigheter.eøsUttak.forbruktFellesperiode 0}}We have been informed that the other parent has had a cash benefit that corresponds to parental benefit for the {{#gt antallBarn 1}}children{{else}}child{{/gt}}. Between {{rettigheter.eøsUttak.fom}} and {{rettigheter.eøsUttak.tom}}, the other parent has had {{rettigheter.eøsUttak.forbruktFellesperiode}} days that correspond to the joint period, which leads to a reduction in your benefit days of the joint period in Norway. You are therefore entitled to the {{#eq relasjonsRolleType "FARA"}}father's quota{{else if (eq relasjonsRolleType "MMOR")}}co-mother's quota{{else}}mother's quota{{/eq}} and {{rettigheter.eøsUttak.fellesperiodeINorge}} days of the joint period.{{/gt}}{{/if}}
+{{else if (and (eq rettigheter.opprinnelig "ALENEOMSORG") (eq rettigheter.gjeldende "BARE_SØKER_RETT"))}}
+{{#eq relasjonsRolleType "MORA"}}
+You do not have sole custody of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}, and therefore do not receive the entire parental benefit period.
+{{else}}
+You do not have sole custody of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}, and therefore do not receive the entire parental benefit period. If you are going to have more than {{maksukerUtenAktivitetskrav}} weeks, the mother must be in activity. Read more about the activity requirement at [nav.no/foreldrepenger](https://nav.no/foreldrepenger)
+{{/eq}}
+{{else if (and (eq rettigheter.opprinnelig "ALENEOMSORG") (eq rettigheter.gjeldende "BARE_FAR_RETT_MOR_UFØR"))}}
+{{#eq relasjonsRolleType "MORA"}}
+You do not have sole custody of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}, and therefore do not receive the entire parental benefit period.
+{{else}}
+You do not have sole custody of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}, and therefore do not receive the entire parental benefit period. If you are going to have more than {{maksukerUtenAktivitetskrav}} weeks, the mother must be in activity. Read more about the activity requirement at [nav.no/foreldrepenger](https://nav.no/foreldrepenger)
+{{/eq}}
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT") (eq rettigheter.gjeldende "ALENEOMSORG"))}}
+Since you have sole custody of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}, you are entitled to the full parental benefit period.
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT") (eq rettigheter.gjeldende "BEGGE_RETT_EØS"))}}
+The other parent is entitled to a cash benefit in another EU/EEA country that corresponds to parental benefit in Norway. When both parents have earned the right to parental benefit, the period is divided into quotas and a joint period. The same also applies if one of the parents has received a payment that corresponds to parental benefit in another EU/EEA country. The other parent's days of payment in the EU/EEA country may affect the length of the joint period in Norway.
+
+{{#if rettigheter.eøsUttak}}{{#gt rettigheter.eøsUttak.forbruktFellesperiode 0}}We have been informed that the other parent has had a cash benefit that corresponds to parental benefit for the {{#gt antallBarn 1}}children{{else}}child{{/gt}}. Between {{rettigheter.eøsUttak.fom}} and {{rettigheter.eøsUttak.tom}}, the other parent has had {{rettigheter.eøsUttak.forbruktFellesperiode}} days that correspond to the joint period, which leads to a reduction in your benefit days of the joint period in Norway. You are therefore entitled to the {{#eq relasjonsRolleType "FARA"}}father's quota{{else if (eq relasjonsRolleType "MMOR")}}co-mother's quota{{else}}mother's quota{{/eq}} and {{rettigheter.eøsUttak.fellesperiodeINorge}} days of the joint period.{{/gt}}{{/if}}
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT") (eq rettigheter.gjeldende "BARE_SØKER_RETT"))}}
+Since the other parent is not entitled to parental benefit, you will receive the entire parental benefit period.
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT") (eq rettigheter.gjeldende "BARE_FAR_RETT_MOR_UFØR"))}}
+Since the other parent is not entitled to parental benefit, you will receive the entire parental benefit period.
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT_EØS") (eq rettigheter.gjeldende "ALENEOMSORG"))}}
+Since you have sole custody of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}, you are entitled to the full parental benefit period.
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT_EØS") (eq rettigheter.gjeldende "BEGGE_RETT"))}}
+The other parent is not entitled to a cash benefit in another EU/EEA country that corresponds to parental benefit in Norway.
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT_EØS") (eq rettigheter.gjeldende "BARE_SØKER_RETT"))}}
+The other parent is not entitled to a cash benefit in another EU/EEA country that corresponds to parental benefit in Norway. Therefore, you will receive the entire parental benefit period.
+{{else if (and (eq rettigheter.opprinnelig "BEGGE_RETT_EØS") (eq rettigheter.gjeldende "BARE_FAR_RETT_MOR_UFØR"))}}
+The other parent is not entitled to a cash benefit in another EU/EEA country that corresponds to parental benefit in Norway. Therefore, you will receive the entire parental benefit period.
+{{else if (and (eq rettigheter.opprinnelig "BARE_SØKER_RETT") (eq rettigheter.gjeldende "ALENEOMSORG"))}}
+Since you have sole custody of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}, you are entitled to the full parental benefit period.
+{{else if (and (eq rettigheter.opprinnelig "BARE_SØKER_RETT") (eq rettigheter.gjeldende "BEGGE_RETT"))}}
+The other parent may be entitled to parental benefit. Therefore, you will not receive the entire parental benefit period.
+{{else if (and (eq rettigheter.opprinnelig "BARE_SØKER_RETT") (eq rettigheter.gjeldende "BEGGE_RETT_EØS"))}}
+The other parent is entitled to a cash benefit in another EU/EEA country that corresponds to parental benefit in Norway. When both parents have earned the right to parental benefit, the period is divided into quotas and a joint period. The same also applies if one of the parents has received a payment that corresponds to parental benefit in another EU/EEA country. The other parent's days of payment in the EU/EEA country may affect the length of the joint period in Norway.
+
+{{#if rettigheter.eøsUttak}}{{#gt rettigheter.eøsUttak.forbruktFellesperiode 0}}We have been informed that the other parent has had a cash benefit that corresponds to parental benefit for the {{#gt antallBarn 1}}children{{else}}child{{/gt}}. Between {{rettigheter.eøsUttak.fom}} and {{rettigheter.eøsUttak.tom}}, the other parent has had {{rettigheter.eøsUttak.forbruktFellesperiode}} days that correspond to the joint period, which leads to a reduction in your benefit days of the joint period in Norway. You are therefore entitled to the {{#eq relasjonsRolleType "FARA"}}father's quota{{else if (eq relasjonsRolleType "MMOR")}}co-mother's quota{{else}}mother's quota{{/eq}} and {{rettigheter.eøsUttak.fellesperiodeINorge}} days of the joint period.{{/gt}}{{/if}}
+{{else if (and (eq rettigheter.opprinnelig "BARE_SØKER_RETT") (eq rettigheter.gjeldende "BARE_FAR_RETT_MOR_UFØR"))}}
+{{else if (and (eq rettigheter.opprinnelig "BARE_FAR_RETT_MOR_UFØR") (eq rettigheter.gjeldende "ALENEOMSORG"))}}
+Since you have sole custody of the {{#gt antallBarn 1}}children{{else}}child{{/gt}}, you are entitled to the full parental benefit period.
+{{else if (and (eq rettigheter.opprinnelig "BARE_FAR_RETT_MOR_UFØR") (eq rettigheter.gjeldende "BEGGE_RETT"))}}
+The other parent may be entitled to parental benefit. Therefore, you will not receive the entire parental benefit period.
+{{else if (and (eq rettigheter.opprinnelig "BARE_FAR_RETT_MOR_UFØR") (eq rettigheter.gjeldende "BEGGE_RETT_EØS"))}}
+The other parent is entitled to a cash benefit in another EU/EEA country that corresponds to parental benefit in Norway. When both parents have earned the right to parental benefit, the period is divided into quotas and a joint period. The same also applies if one of the parents has received a payment that corresponds to parental benefit in another EU/EEA country. The other parent's days of payment in the EU/EEA country may affect the length of the joint period in Norway.
+
+{{#if rettigheter.eøsUttak}}{{#gt rettigheter.eøsUttak.forbruktFellesperiode 0}}We have been informed that the other parent has had a cash benefit that corresponds to parental benefit for the {{#gt antallBarn 1}}children{{else}}child{{/gt}}. Between {{rettigheter.eøsUttak.fom}} and {{rettigheter.eøsUttak.tom}}, the other parent has had {{rettigheter.eøsUttak.forbruktFellesperiode}} days that correspond to the joint period, which leads to a reduction in your benefit days of the joint period in Norway. You are therefore entitled to the {{#eq relasjonsRolleType "FARA"}}father's quota{{else if (eq relasjonsRolleType "MMOR")}}co-mother's quota{{else}}mother's quota{{/eq}} and {{rettigheter.eøsUttak.fellesperiodeINorge}} days of the joint period.{{/gt}}{{/if}}
+{{else if (and (eq rettigheter.opprinnelig "BARE_FAR_RETT_MOR_UFØR") (eq rettigheter.gjeldende "BARE_SØKER_RETT"))}}
+The mother does not receive disability benefit. You are therefore entitled to {{maksukerUtenAktivitetskrav}} weeks without the mother in activity.
+{{/if}}

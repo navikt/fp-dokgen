@@ -15,10 +15,6 @@
     "seksG",
     "inntektOverSeksG",
     "inntektMottattArbeidsgiver",
-    "annenForelderHarRett",
-    "annenForelderRettEØS",
-    "annenForelderHarRettVurdert",
-    "aleneomsorgKode",
     "ikkeOmsorg",
     "barnErFødt",
     "årsakErFødselshendelse",
@@ -79,7 +75,11 @@
         },
         "naturalytelseEndringType": {
           "type": "string",
-          "enum": [ "START", "STOPP", "INGEN_ENDRING" ]
+          "enum": [
+            "START",
+            "STOPP",
+            "INGEN_ENDRING"
+          ]
         },
         "naturalytelseEndringDato": {
           "type": "string"
@@ -167,12 +167,18 @@
         },
         "arbeidsforholdsliste": {
           "type": "array",
-          "items": { "$ref": "#/$defs/arbeidsforhold" }
+          "items": {
+            "$ref": "#/$defs/arbeidsforhold"
+          }
         },
-        "næring": { "$ref": "#/$defs/næring" },
+        "næring": {
+          "$ref": "#/$defs/næring"
+        },
         "annenAktivitetsliste": {
           "type": "array",
-          "items": { "$ref": "#/$defs/annenAktivitet" }
+          "items": {
+            "$ref": "#/$defs/annenAktivitet"
+          }
         },
         "tidligstMottattDato": {
           "type": "string"
@@ -233,7 +239,9 @@
         },
         "andelListe": {
           "type": "array",
-          "items": { "$ref": "#/$defs/beregningsgrunnlagAndel" }
+          "items": {
+            "$ref": "#/$defs/beregningsgrunnlagAndel"
+          }
         }
       }
     }
@@ -280,24 +288,14 @@
     },
     "forMyeUtbetalt": {
       "type": "string",
-      "enum": [ "FERIE", "JOBB", "GENERELL" ]
+      "enum": [
+        "FERIE",
+        "JOBB",
+        "GENERELL"
+      ]
     },
     "inntektMottattArbeidsgiver": {
       "type": "boolean"
-    },
-    "annenForelderHarRett": {
-      "type": "boolean"
-    },
-    "annenForelderRettEØS": {
-      "type": "boolean"
-    },
-    "annenForelderHarRettVurdert": {
-      "type": "string",
-      "enum": [ "JA", "NEI", "IKKE_VURDERT" ]
-    },
-    "aleneomsorgKode": {
-      "type": "string",
-      "enum": [ "JA", "NEI", "IKKE_VURDERT" ]
     },
     "ikkeOmsorg": {
       "type": "boolean"
@@ -353,6 +351,9 @@
     "disponibleDagerMedAktivitetskrav": {
       "type": "number"
     },
+    "maksukerUtenAktivitetskrav": {
+      "type": "number"
+    },
     "disponibleFellesDager": {
       "type": "number"
     },
@@ -397,14 +398,18 @@
     },
     "perioder": {
       "type": "array",
-      "items": { "$ref": "#/$defs/vedtaksperiode" }
+      "items": {
+        "$ref": "#/$defs/vedtaksperiode"
+      }
     },
     "harBruktBruttoBeregningsgrunnlag": {
       "type": "boolean"
     },
     "beregningsgrunnlagregler": {
       "type": "array",
-      "items": { "$ref": "#/$defs/beregningsgrunnlagRegel" }
+      "items": {
+        "$ref": "#/$defs/beregningsgrunnlagRegel"
+      }
     },
     "klagefristUker": {
       "type": "number"
@@ -429,6 +434,66 @@
     },
     "medlemskapOpphørsårsak": {
       "type": "string"
+    },
+    "relasjonsRolleType": {
+      "type": "string",
+      "enum": [
+        "MORA",
+        "FARA",
+        "MMOR"
+      ]
+    },
+    "rettigheter": {
+      "type": "object",
+      "required": [
+        "opprinnelig",
+        "gjeldende"
+      ],
+      "properties": {
+        "opprinnelig": {
+          "type": "string",
+          "enum": [
+            "ALENEOMSORG",
+            "BEGGE_RETT",
+            "BEGGE_RETT_EØS",
+            "BARE_SØKER_RETT",
+            "BARE_FAR_RETT_MOR_UFØR"
+          ]
+        },
+        "gjeldende": {
+          "type": "string",
+          "enum": [
+            "ALENEOMSORG",
+            "BEGGE_RETT",
+            "BEGGE_RETT_EØS",
+            "BARE_SØKER_RETT",
+            "BARE_FAR_RETT_MOR_UFØR"
+          ]
+        },
+        "eøsUttak": {
+          "type": "object",
+          "required": [
+            "fom",
+            "tom",
+            "forbruktFellesperiode",
+            "fellesperiodeINorge"
+          ],
+          "properties": {
+            "fom": {
+              "type": "string"
+            },
+            "tom": {
+              "type": "string"
+            },
+            "forbruktFellesperiode": {
+              "type": "number"
+            },
+            "fellesperiodeINorge": {
+              "type": "number"
+            }
+          }
+        }
+      }
     }
   }
 }

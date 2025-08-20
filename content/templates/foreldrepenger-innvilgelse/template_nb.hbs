@@ -21,20 +21,19 @@
 {{#gt dagsats 0}}Du får {{thousand-seperator dagsats}} kroner per dag før skatt. Dette er i gjennomsnitt {{thousand-seperator månedsbeløp}} kroner i måneden. Sjekk utbetalingene dine på [nav.no/utbetalinger](https://nav.no/utbetalinger).
 {{/gt}}{{/eq}}
 
+{{> foreldrepenger-innvilgelse/rettigheter_nb }}
 {{#if inkludereInnvilget}}{{> foreldrepenger-innvilgelse/innvilget_nb }}{{/if}}
 
 {{#not avslagBarnOver3år}}
 {{~#if sisteDagAvSistePeriode}}
     {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
-        {{~#if (and (eq annenForelderHarRett true) (neq aleneomsorgKode "JA"))~}}
-            {{~#if annenForelderRettEØS}}
-Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dager{{/eq}} igjen av kvoten din. Det gjenstår{{~#gt disponibleDager 0}} også{{/gt}} {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dager{{/eq}} med foreldrepenger som du kan ta ut hvis den andre forelderen {{#eq gjelderMor false}}er i aktivitet, og {{/eq}}ikke har tatt ut disse i et annet EØS-land.
-            {{~else}}
+        {{~#eq rettigheter.gjeldende "BEGGE_RETT_EØS"~}}
+Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dager{{/eq}} igjen av kvoten din. Det gjenstår{{~#gt disponibleDager 0}} også{{/gt}} {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dager{{/eq}} med foreldrepenger som du kan ta ut hvis den andre forelderen {{#eq gjelderMor false}}er i aktivitet, og {{/eq}}ikke har tatt ut disse i et annet EU/EØS-land.
+        {{~else if (eq rettigheter.gjeldende "BEGGE_RETT")}}
 Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dager{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dager{{/eq}} som begge kan ta ut.
-            {{~/if}}
         {{~else}}
             {{~#gt disponibleDager 0}}Det er {{disponibleDager}}{{#gt disponibleDager 1}} dager{{else}} dag{{/gt}} igjen av perioden med foreldrepenger.{{/gt}}
-        {{~/if}}
+        {{~/eq}}
         {{~#if (and (gt disponibleDagerUtenAktivitetskrav 0) (gt disponibleDagerMedAktivitetskrav 0))}} Mor må være i aktivitet for at du skal kunne ta ut {{disponibleDagerMedAktivitetskrav}} av disse dagene. I perioder mor ikke er i aktivitet vil du miste dager, selv om du ikke tar ut foreldrepenger. {{#gt disponibleDagerUtenAktivitetskrav 1}}De resterende {{disponibleDagerUtenAktivitetskrav}} dagene{{else}}Den resterende dagen {{/gt}} kan du ta ut uten at mor er i aktivitet.
             {{~#eq disponibleDager 1}}<br/>Den resterende dagen{{~else}}<br/>Alle {{disponibleDager}} dagene{{/eq}} må være tatt ut{{~#eq utenMinsterett false}} innen barnet fyller tre år{{~else}} før barnet er {{#eq dekningsgrad 80}}56{{else}}46{{/eq}} uker gammelt{{/eq}}, eller innen en ny foreldrepengeperiode for et nytt barn starter.
         {{~/if}}

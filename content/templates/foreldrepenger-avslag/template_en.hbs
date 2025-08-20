@@ -192,12 +192,8 @@
 
 
 {{#eq avslagsårsak "4005"}}
-{{#eq annenForelderHarRett true}}
 {{>punkt}}No application has been submitted for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. Therefore, {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}} have been lost.
 {{/eq}}
-{{#eq annenForelderHarRett false}}
-{{>punkt}}You have not applied for parental benefit or postponement from {{periodeFom}} up to and including {{periodeTom}}. You have therefore lost, {{antallTapteDager}} {{#gt antallTapteDager 1}}days{{else}}day{{/gt}}.
-{{/eq}}{{/eq}}
 
 
 {{#eq avslagsårsak "4102"}}

@@ -20,11 +20,10 @@
   "seksG": 668862,
   "inntektOverSeksG": false,
   "inntektMottattArbeidsgiver": false,
-  "annenForelderHarRett": true,
-  "annenForelderRettEØS": false,
-  "oppgittAnnenForelderRettEØS": false,
-  "annenForelderHarRettVurdert": "IKKE_VURDERT",
-  "aleneomsorgKode": "IKKE_VURDERT",
+  "rettigheter": {
+    "opprinnelig": "BEGGE_RETT",
+    "gjeldende": "BEGGE_RETT"
+  },
   "ikkeOmsorg": false,
   "barnErFødt": true,
   "årsakErFødselshendelse": false,

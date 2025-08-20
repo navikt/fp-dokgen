@@ -17,10 +17,10 @@
   "inntektOverSeksG": false,
   "forMyeUtbetalt": false,
   "inntektMottattArbeidsgiver": false,
-  "annenForelderHarRett": true,
-  "annenForelderRettEØS": false,
-  "annenForelderHarRettVurdert": "JA",
-  "aleneomsorgKode": "NEI",
+  "rettigheter": {
+    "opprinnelig": "BEGGE_RETT",
+    "gjeldende": "BEGGE_RETT"
+  },
   "ikkeOmsorg": false,
   "barnErFødt": true,
   "årsakErFødselshendelse": false,

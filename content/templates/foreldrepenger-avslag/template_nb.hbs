@@ -190,12 +190,8 @@
 
 
 {{#eq avslagsårsak "4005"}}
-{{#eq annenForelderHarRett true}}
 {{>punkt}}Det er ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor er {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}} tapt.
 {{/eq}}
-{{#eq annenForelderHarRett false}}
-{{>punkt}}Du har ikke søkt om foreldrepenger eller utsettelse fra og med {{periodeFom}} til og med {{periodeTom}}. Derfor har du mistet {{antallTapteDager}} {{#gt antallTapteDager 1}}dager{{else}}dag{{/gt}}.
-{{/eq}}{{/eq}}
 
 
 {{#eq avslagsårsak "4102"}}
@@ -369,6 +365,8 @@
 {{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi foreldrepenger for nytt barn har startet.
 {{/eq}}
 
+{{#eq avslagsårsak "4108" }}
+{{>punkt}}Du kan ikke ta ut foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}} fordi den andre forelderen tar ut en pengestøtte tilsvarende foreldrepenger i et annet EU/EØS-land i samme periode.{{/eq}}
 {{/each}}
 
 {{~#if felles.fritekst}}
