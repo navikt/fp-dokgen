@@ -4,12 +4,12 @@
 
 # Vi har sendt saken din til Nav Klageinstans
 
-{{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}Vi mottok {{mottattDato}} klagen din på vedtaket om tilbakebetaling av engangsstønad. Vedtaket endres ikke. Nav Klageinstans vil derfor vurdere saken din på nytt.
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}Vi mottok {{mottattDato}} klagen din på vedtaket om tilbakebetaling av foreldrepenger. Vedtaket endres ikke. Nav Klageinstans vil derfor vurdere saken din på nytt.
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}Vi mottok {{mottattDato}} klagen din på vedtaket om tilbakebetaling av svangerskapspenger. Vedtaket endres ikke. Nav Klageinstans vil derfor vurdere saken din på nytt.
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "ES"))}}Vi mottok {{mottattDato}} klagen din på vedtaket om engangsstønad. Vedtaket endres ikke. Nav Klageinstans vil derfor vurdere saken din på nytt.
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}Vi mottok {{mottattDato}} klagen din på vedtaket om foreldrepenger. Vedtaket endres ikke. Nav Klageinstans vil derfor vurdere saken din på nytt.
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}Vi mottok {{mottattDato}} klagen din på vedtaket om svangerskapspenger. Vedtaket endres ikke. Nav Klageinstans vil derfor vurdere saken din på nytt.
+{{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}Vi mottok {{mottattDato}} klagen din på vedtaket om tilbakebetaling av engangsstønad. Vedtaket endres ikke. Nav Klageinstans skal derfor vurdere saken din på nytt.
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}Vi mottok {{mottattDato}} klagen din på vedtaket om tilbakebetaling av foreldrepenger. Vedtaket endres ikke. Nav Klageinstans skal derfor vurdere saken din på nytt.
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}Vi mottok {{mottattDato}} klagen din på vedtaket om tilbakebetaling av svangerskapspenger. Vedtaket endres ikke. Nav Klageinstans skal derfor vurdere saken din på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "ES"))}}Vi mottok {{mottattDato}} klagen din på vedtaket om engangsstønad. Vedtaket endres ikke. Nav Klageinstans skal derfor vurdere saken din på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}Vi mottok {{mottattDato}} klagen din på vedtaket om foreldrepenger. Vedtaket endres ikke. Nav Klageinstans skal derfor vurdere saken din på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}Vi mottok {{mottattDato}} klagen din på vedtaket om svangerskapspenger. Vedtaket endres ikke. Nav Klageinstans skal derfor vurdere saken din på nytt.
 {{/if}}
 
 Informasjon om saksbehandlingstid finner du på nav.no.
