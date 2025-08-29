@@ -4,12 +4,12 @@
 
 # Vi har sendt saka di til Nav Klageinstans
 
-{{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}Vi har fått klaga di på vedtaket om tilbakebetaling av eingongsstønad {{mottattDato}}, og kome fram til at det ikkje blir endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}Vi har fått klaga di på vedtaket om tilbakebetaling av foreldrepengar {{mottattDato}}, og kome fram til at det ikkje blir endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
-{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}Vi har fått klaga di på vedtaket om tilbakebetaling av svangerskapspengar {{mottattDato}}, og kome fram til at det ikkje blir endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "ES"))}}Vi har fått klaga di på vedtaket om eingongsstønad {{mottattDato}}, og kome fram til at det ikkje blir endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}Vi har fått klaga di på vedtaket om foreldrepengar {{mottattDato}}, og kome fram til at det ikkje blir endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
-{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}Vi har fått klaga di på vedtaket om svangerskapspengar {{mottattDato}}, og kome fram til at det ikkje blir endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
+{{#if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "ES"))}}Vi fikk {{mottattDato}} klaga di på vedtaket om tilbakebetaling av eingongsstønad. Vedtaket blir ikkje endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "FP"))}}Vi fikk {{mottattDato}} klaga di på vedtaket om tilbakebetaling av foreldrepengar. Vedtaket blir ikkje endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
+{{else if (and (eq gjelderTilbakekreving true)(eq felles.ytelseType "SVP"))}}Vi fikk {{mottattDato}} klaga di på vedtaket om tilbakebetaling av svangerskapspengar. Vedtaket blir ikkje endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "ES"))}}Vi fikk {{mottattDato}} klaga di på vedtaket om eingongsstønad. Vedtaket blir ikkje endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "FP"))}}Vi fikk {{mottattDato}} klaga di på vedtaket om foreldrepengar. Vedtaket blir ikkje endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
+{{else if (and (eq gjelderTilbakekreving false)(eq felles.ytelseType "SVP"))}}Vi fikk {{mottattDato}} klaga di på vedtaket om svangerskapspengar. Vedtaket blir ikkje endra. Nav Klageinstans skal derfor vurdere saka di på nytt.
 {{/if}}
 
 Informasjon om saksbehandlingstid finn du på nav.no.
