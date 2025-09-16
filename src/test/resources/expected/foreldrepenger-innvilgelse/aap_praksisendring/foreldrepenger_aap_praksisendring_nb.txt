@@ -1,3 +1,4 @@
+<div id="redigerbart-innhold" data-editable="data-editable">
 # Nav har beregnet foreldrepengene dine på nytt
 Nav har hatt feil praksis for å beregne foreldrepengene for de som har mottatt arbeidsavklaringspenger samtidig som de har jobbet. Derfor er saken din nå behandlet på nytt, jf. forvaltningsloven § 35 c.
 Du får 1 436 kroner per dag før skatt fra og med 20. januar 2022. Dette er i gjennomsnitt 31 113 kroner i måneden.
@@ -14,6 +15,8 @@ Etterbetaling av foreldrepenger er sendt til deg i dag.
 Du får også renter på etterbetalingen, etter reglene i folketrygdloven § 22-17 jf. §§ 22-13 og 22-14. Rentene blir beregnet og utbetalt fra Nav Økonomi stønad og rapportert til Skatteetaten som renteinntekt. Rentene er skattepliktige, men Nav trekker ikke skatt av rentene. Du kan ta kontakt med Skatteetaten for å sjekke om skattekortet ditt er riktig. Hvis du har for lavt skattetrekk, kan det føre til at du får restskatt.
 Kontakt Skatteetaten hvis du har spørsmål om skatt på etterbetaling og renter.
 Etterbetalingen av renter kan ta noe tid. Du vil få en melding på [nav.no/min-side](https://www.nav.no/min-side) når rentene er utbetalt.
+</div>
+<div id="readonly-innhold">
 ## Du må melde fra om endringer
 Dersom det skjer endringer som kan ha betydning for stønaden du får utbetalt, må du straks melde fra til Nav. Du finner mer informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 ## Du har rett til å klage
@@ -33,4 +36,5 @@ Med vennlig hilsen
 Nav Familie- og pensjonsytelser
 <br/><br/>
 Vedtaket har blitt automatisk saksbehandlet av vårt fagsystem. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
+</div>
 </div>
