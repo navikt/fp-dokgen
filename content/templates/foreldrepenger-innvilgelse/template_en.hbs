@@ -1,4 +1,7 @@
 {{> header_en }}
+{{#eq konsekvensForInnvilgetYtelse "ENDRING_AAP_PRAKSISENDRING"}}
+{{foreldrepenger-innvilgelse/aap_praksisendring_nb}}
+{{else}}
 {{#> utils/redigerbart_innhold}}
 {{#if (eq behandlingResultatType "INNVILGET")}}
 {{#if endretDekningsgrad}}# Nav has approved your application for parental benefit{{else}}# Nav has approved your application for {{dekningsgrad}} per cent parental benefit{{/if}}
@@ -128,3 +131,4 @@ You may appeal within {{klagefristUker}} weeks from the date you received the de
 {{> footer_en }}
 
 {{/utils/readonly_innhold}}
+{{/eq}}

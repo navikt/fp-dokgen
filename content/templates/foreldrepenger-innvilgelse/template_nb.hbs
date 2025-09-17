@@ -1,4 +1,7 @@
 {{> header_nb }}
+{{#eq konsekvensForInnvilgetYtelse "ENDRING_AAP_PRAKSISENDRING"}}
+{{> foreldrepenger-innvilgelse/aap_praksisendring_nb}}
+{{else}}
 {{#> utils/redigerbart_innhold}}
 {{#if (eq behandlingResultatType "INNVILGET")}}
 {{#if endretDekningsgrad}}# Nav har innvilget søknaden din om foreldrepenger{{else}}# Nav har innvilget søknaden din om {{dekningsgrad}} prosent foreldrepenger{{/if}}
@@ -127,3 +130,4 @@ Du kan klage innen {{klagefristUker}} uker fra den datoen du mottok vedtaket. Du
 
 {{> footer_nb }}
 {{/utils/readonly_innhold}}
+{{/eq}}
