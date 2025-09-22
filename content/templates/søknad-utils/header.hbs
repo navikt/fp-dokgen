@@ -1,0 +1,8 @@
+Navn: {{tilleggsinformasjon.søker.navn}}<br/>
+Fødselsnummer: {{tilleggsinformasjon.søker.fnr}}<br/>
+{{~#if søknad.saksnummer~}}
+Mottatt: {{norwegian-date søknad.mottattdato}}<br/>
+Saksnummer: {{søknad.saksnummer}}
+{{~else~}}
+Mottatt: {{norwegian-date søknad.mottattdato}}<br/>
+{{~/if~}}
