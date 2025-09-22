@@ -40,11 +40,7 @@ public enum Brevmal {
 
     //Fpinntektsmelding
     FP_INNTEKTSMELDING("fpinntektsmelding-inntektsmelding"),
-    FP_INNTEKTSMELDING_REFUSJONSKRAV("fpinntektsmelding-refusjonskrav"),
-
-    // Søknader
-    ENGANGSSTØNAD_SØKNAD("søknad-engangsstønad"),
-    ;
+    FP_INNTEKTSMELDING_REFUSJONSKRAV("fpinntektsmelding-refusjonskrav");
 
     private String navn;
 

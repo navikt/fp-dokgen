@@ -63,7 +63,6 @@ public final class TemplateTestService {
         HANDLEBARS.registerHelper("trim-decimal", new TrimDecimalHelper());
         HANDLEBARS.registerHelper("size", new SizeHelper());
         HANDLEBARS.registerHelper("norwegian-datetime", new NorwegianDatetimeHelper());
-        HANDLEBARS.registerHelper("country", new NorwegianDatetimeHelper());
         HANDLEBARS.registerHelpers(StringHelpers.class);
     }
 
