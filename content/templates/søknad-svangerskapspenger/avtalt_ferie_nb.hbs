@@ -1,0 +1,15 @@
+{{#if avtaltFerie}}
+## Informasjon om ferie
+
+{{#each avtaltFerie}}
+{{#with arbeidsforhold}}
+- Jeg har avtalt ferie hos
+{{#switch type}}
+    {{~#case "virksomhet"}}organisasjon {{id}}{{~/case~}}
+    {{~#case "privat"}}privat arbeidsgiver {{id}}{{~/case~}}
+    {{~#case "selvstendig"}}næring{{~/case~}}
+    {{~#case "frilanser"~}}frilans{{~/case~}}
+{{/switch}}
+{{/with}} i perioden {{norwegian-date ferieFom}} - {{norwegian-date ferieTom}}
+{{/each}}
+{{/if}}

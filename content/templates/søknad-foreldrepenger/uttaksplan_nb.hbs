@@ -1,0 +1,65 @@
+<div class="no-page-break">
+
+## Din uttaksplan
+{{#if dekningsgrad}}Du har søkt om {{dekningsgrad}} prosent dekningsgrad for foreldrepenger.{{/if}}
+{{#if ønskerJustertUttakVedFødsel}}Jeg ønsker at perioden som starter på termin blir endret til å starte fra fødselsdato når barnet blir født: {{#eq ønskerJustertUttakVedFødsel true}}Ja{{else}}Nei{{/eq}}{{/if}}
+{{#if saksnummer}}Jeg har søkt om endring av foreldrepenger fra og med {{norwegian-date uttaksplan.uttaksperioder.0.fom}}. Perioder som du har søkt om tidligere, før dette, vil ikke bli endret.{{/if}}
+{{#with uttaksplan}}
+{{#each uttaksperioder}}
+<div class="no-page-break">
+
+### Periode av type {{type}} {{norwegian-date fom}} - {{norwegian-date tom}}:
+{{#if konto}}- Hvilken del av foreldrepengene tas ut: {{konto}} {{#if morsAktivitetIPerioden}}MED AKTIVITETSKRAV{{/if}}{{/if}} <!-- Ikke satt for  opphold og utsettelse -->
+
+<!-- Uttaksperiode spesifikke attributter -->
+{{#if morsAktivitetIPerioden}}- Mors aktivitet i perioden: {{morsAktivitetIPerioden}}{{/if}}
+{{#if ønskerSamtidigUttak}}- Skal annen forelder ha foreldrepenger i samme periode: {{#eq ønskerSamtidigUttak true}}Ja{{else}}Nei{{/eq}}{{/if}}
+{{#if samtidigUttakProsent}}- Samtidig uttaksprosent: {{samtidigUttakProsent}}{{/if}}
+{{#if ønskerFlerbarnsdager}}- Skal bruke flerbarnsdager: {{#eq ønskerFlerbarnsdager true}}Ja{{else}}Nei{{/eq}}{{/if}}
+
+<!-- Gradering -->
+- Skal kombinere foreldrepengene med delvis arbeid: {{#if gradering}}Ja{{else}}Nei{{/if}}
+{{#with gradering}}
+{{#eq erArbeidstaker true}}{{#each orgnumre}}- Arbeider hos: {{#with (lookup ../tilleggsinformasjon/arbeidsforhold this)}}{{navn}}{{/with}} ({{this}}){{/each}}{{/eq}}<!-- TODO: Alltid orgnumre.[0] også.. -->
+{{#eq erFrilanser true}}- Jobber som: Frilanser{{/eq}}
+{{#eq erSelvstendig true}}- Jobber som: Selvstendig næringsdrivende{{/eq}}
+- Stillingsprosent: {{trim-decimal stillingsprosent}}
+{{/with}}
+
+<!-- Overføring -->
+{{#eq type "overføring"}}
+- Årsak til overføring av kvote: {{#switch årsak}}
+{{~#case "INSTITUSJONSOPPHOLD_ANNEN_FORELDER"~}}Annen forelder er innlagt på helseinstitusjon{{~/case~}}
+{{~#case "SYKDOM_ANNEN_FORELDER"~}}Annen forelder er for syk til å ta seg av barnet{{~/case~}}
+{{/switch}}
+{{/eq}}
+
+<!-- Opphold -->
+{{#eq type "opphold"}} <!-- TODO: Når brukes dette egentlig?? -->
+- Årsak til opphold: {{#switch årsak}}
+    {{~#case "INGEN"~}}Ingen hva da?{{~/case~}} <!-- TODO: -->
+    {{~#case "UTTAK_MØDREKVOTE_ANNEN_FORELDER"~}}Den andre forelderen skal ta ut egen kvote{{~/case~}}
+    {{~#case "UTTAK_FEDREKVOTE_ANNEN_FORELDER"~}}Den andre forelderen skal ta ut egen kvote{{~/case~}}
+    {{~#case "UTTAK_FORELDREPENGER_ANNEN_FORELDER"~}}Den andre forelderen skal ta foreldrepenger{{~/case~}}
+    {{~#case "UTTAK_FELLESP_ANNEN_FORELDER"~}}Den andre forelderen skal ta ut fellesperiode{{~/case~}}
+{{/switch}}
+{{/eq}}
+
+<!-- Utsettelse -->
+{{#eq type "utsettelse"}}
+- Årsak til utsettelse: {{#switch årsak}}
+    {{~#case "FRI"~}}Fri{{~/case~}} <!-- TODO: Skille fri ut? in-array bruk for FRI?-->
+    {{~#case "ARBEID"~}}Arbeid{{~/case~}}
+    {{~#case "LOVBESTEMT_FERIE"~}}Lovbestemt ferie{{~/case~}}
+    {{~#case "SYKDOM"~}}Er for syk til å ta av meg barnet{{~/case~}}
+    {{~#case "INSTITUSJONSOPPHOLD_SØKER"~}}Jeg er innlagt på helseinstitusjon{{~/case~}}
+    {{~#case "INSTITUSJONSOPPHOLD_BARNET"~}}Barnet er innlagt på helseinstitusjon{{~/case~}}
+    {{~#case "HV_OVELSE"~}}Øvelse i Heimevernet{{~/case~}}
+    {{~#case "NAV_TILTAK"~}}Tiltakspenger Nav{{~/case~}}
+{{/switch}}
+{{#eq årsak "LOVBESTEMT_FERIE"}}- Skal jobbe som arbeidstaker: {{#eq erArbeidstaker true}}Ja{{else}}Nei{{/eq}}{{/eq}}
+{{/eq}}
+</div>
+{{/each}}
+{{/with}}
+</div>

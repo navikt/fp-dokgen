@@ -1,0 +1,15 @@
+### Arbeidsforhold
+{{#mapHasContent ../tilleggsinformasjon/arbeidsforhold}}
+{{#each ../tilleggsinformasjon/arbeidsforhold}}
+{{navn}} ({{@key}})
+- Periode: {{norwegian-date fom}} - {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}
+- Stillingsprosent: {{stillingsprosent}}%
+{{/each}}
+{{else}}
+Du er ikke registrert med noen arbeidsforhold.
+{{/mapHasContent}}
+
+### Andre inntektskilder
+- Har du jobbet og hatt inntekt som frilanser de siste 10 månedene? {{#if frilans}}Ja{{else}}Nei{{/if}}
+- Har du jobbet og hatt inntekt som selvstendig næringsdrivende de siste 10 månedene? {{#if egenNæring}}Ja{{else}}Nei{{/if}}
+- Har du hatt andre inntektskilder de siste 10 månedene? {{#if andreInntekterSiste10Mnd}}Ja{{else}}Nei{{/if}}
