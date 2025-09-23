@@ -2,16 +2,17 @@
 
 ## Opplysninger om barnet eller barna
 {{#with barn}}
-
-{{#if fødselsdato}}* Fødselsdato: {{norwegian-date fødselsdato}}{{/if}}
-{{#if termindato}}* Termindato: {{norwegian-date termindato}}{{/if}}
-{{#if terminbekreftelseDato}}* Terminbekreftelse er datert: {{norwegian-date terminbekreftelseDato}}{{/if}}
-{{#if fødselsdatoer.length}}{{#if (eq fødselsdatoer.length 1)}}* Fødselsdato: {{norwegian-date fødselsdatoer.[0]}}{{else}}* Fødselsdatoer:{{#each fødselsdatoer}}{{norwegian-date this}}{{#unless @last}}, {{/unless}}{{/each}}{{/if}}{{/if}}
-{{#if adopsjonsdato}}* Adopsjonsdato: {{norwegian-date ankomstdato}}{{/if}}
-{{#if ankomstdato}}* Ankomstdato: {{norwegian-date ankomstdato}}{{/if}}
-{{#if adopsjonAvEktefellesBarn}}* Adopsjon av ektefellens barn: {{#if adopsjonAvEktefellesBarn}}Ja{{else}}Nei{{/if}}{{/if}}
-{{#if søkerAdopsjonAlene}}* Søker adopsjon alene: {{#if søkerAdopsjonAlene}}Ja{{else}}Nei{{/if}}{{/if}}
-{{#if foreldreansvarsdato}}* Foreldreansvar dato: {{norwegian-date foreldreansvarsdato}}{{/if}}
-{{#if antallBarn}}* Antall barn: {{antallBarn}}{{/if}}
+<ul>
+    <li>{{#if fødselsdato}}Fødselsdato: {{norwegian-date fødselsdato}}{{/if}}</li>
+    <li>{{#if termindato}}Termindato: {{norwegian-date termindato}}{{/if}}</li>
+    <li>{{#if terminbekreftelseDato}}Terminbekreftelse er datert: {{norwegian-date terminbekreftelseDato}}{{/if}}</li>
+    <li>{{#if fødselsdatoer.length}}{{#if (eq fødselsdatoer.length 1)}}Fødselsdato: {{norwegian-date fødselsdatoer.[0]}}{{else}}Fødselsdatoer:{{#each fødselsdatoer}}{{norwegian-date this}}{{#unless @last}}, {{/unless}}{{/each}}{{/if}}{{/if}}</li>
+    <li>{{#if adopsjonsdato}}Adopsjonsdato: {{norwegian-date ankomstdato}}{{/if}}</li>
+    <li>{{#if ankomstdato}}Ankomstdato: {{norwegian-date ankomstdato}}{{/if}}</li>
+    <li>{{#if adopsjonAvEktefellesBarn}}Adopsjon av ektefellens barn: {{#if adopsjonAvEktefellesBarn}}Ja{{else}}Nei{{/if}}{{/if}}</li>
+    <li>{{#if søkerAdopsjonAlene}}Søker adopsjon alene: {{#if søkerAdopsjonAlene}}Ja{{else}}Nei{{/if}}{{/if}}</li>
+    <li>{{#if foreldreansvarsdato}}Foreldreansvar dato: {{norwegian-date foreldreansvarsdato}}{{/if}}</li>
+    <li>{{#if antallBarn}}Antall barn: {{antallBarn}}{{/if}}</li>
+</ul>
 {{/with}}
 </div>

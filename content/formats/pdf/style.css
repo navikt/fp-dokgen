@@ -34,7 +34,7 @@ html {
     margin-top: 48pt;
 }
 
-body, li, td, th{
+body, p, li, td, th{
     font-size: 11pt;
     line-height: 16pt;
     font-weight: normal;
@@ -63,18 +63,6 @@ h3 {
     font-size: 12pt;
     line-height: 16pt;
     font-weight: bold;
-    letter-spacing: 0.2pt;
-    margin-top: 26pt;
-    margin-bottom: 6pt;
-}
-
-h4 {
-    font-size: 11pt;
-    line-height: 16pt;
-    font-weight: bold;
-    letter-spacing: 0.1pt;
-    margin-top: 26pt;
-    margin-bottom: 6pt;
 }
 
 table {

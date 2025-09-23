@@ -1,10 +1,8 @@
-{{> søknad-utils/header}}
-{{#with søknad}}
-
 # Søknad om engangsstønad
+Mottatt: {{norwegian-date søknad.mottattdato}}
+{{> søknad-utils/søker}}
 
-Dette er kvittering på innsendt søknad.
-
+{{#with søknad}}
 {{> søknad-utils/barn}}
 {{> søknad-utils/utenlandsopphold}}
 {{> søknad-utils/vedlegg}}

@@ -1,13 +1,11 @@
-{{> søknad-utils/header}}
-{{#with søknad}}
-
 # Søknad om svangerskapspenger
+Mottatt: {{norwegian-date søknad.mottattdato}}
+{{> søknad-utils/søker}}
 
-Dette er kvittering på innsendt søknad.
-
+{{#with søknad}}
 {{> søknad-utils/barn}}
-{{> søknad-utils/arbeidsforhold_og_inntekt_nb}}
 {{> søknad-utils/utenlandsopphold}}
+{{> søknad-utils/arbeidsforhold_og_inntekt_nb}}
 {{> søknad-utils/frilans}}
 {{> søknad-utils/næring}}
 {{> søknad-utils/andreInntekter}}

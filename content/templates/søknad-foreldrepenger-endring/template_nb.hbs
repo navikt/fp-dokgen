@@ -1,10 +1,9 @@
-{{> søknad-utils/header}}
-{{#with søknad}}
-
 # Søknad om endring av foreldrepenger
+Mottatt: {{norwegian-date søknad.mottattdato}}</br>
+Saksnummer: {{søknad.saksnummer}}
+{{> søknad-utils/søker rolle=søknad.rolle}}
 
-Dette er kvittering på innsendt søknad.
-
+{{#with søknad}}
 {{> søknad-utils/barn}}
 {{> søknad-foreldrepenger/annenforelder_nb}}
 {{> søknad-foreldrepenger/uttaksplan_nb}}

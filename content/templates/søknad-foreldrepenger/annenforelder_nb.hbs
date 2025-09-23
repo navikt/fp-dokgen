@@ -1,16 +1,23 @@
+<div class="no-page-break">
+
 ## Informasjon om annen forelder og rettigheter
 {{#with annenForelder}}
-- Navn: {{fornavn}} {{mellomnavn}} {{etternavn}}
-- Fødselsnummer{{#eq type "utenlandsk"}} eller D-nummer{{/eq}}: {{fnr}}
-{{#if bostedsland}}- Hvor bor den andre forelderen: {{land-norsk bostedsland}}{{/if}}
-{{#with rettigheter}}
-{{#unless (eq erAleneOmOmsorg undefined)}}- Har søker aleneomsorg for barnet: {{#eq erAleneOmOmsorg true}}Ja{{else}}Nei{{/eq}}{{/unless}}
-{{#unless (eq harRettPåForeldrepenger undefined)}}- Har den andre forelderen rett til foreldrepenger: {{#eq harRettPåForeldrepenger true}}Ja{{else}}Nei{{/eq}}{{/unless}}
-{{#unless (eq harAnnenForelderTilsvarendeRettEØS undefined)}}- Har den andre forelderen rett til pengestøtte i et annet EØS-land som tilsvarer foreldrepenger i Norge: {{#eq harAnnenForelderTilsvarendeRettEØS true}}Ja{{else}}Nei{{/eq}}{{/unless}}
-{{#unless (eq harAnnenForelderOppholdtSegIEØS undefined)}}- Har den andre forelderen oppholdt seg fast i et annet EØS-land enn Norge ett år får barnet ble født: {{#eq harAnnenForelderOppholdtSegIEØS true}}Ja{{else}}Nei{{/eq}}{{/unless}}
-{{#unless (eq harMorUføretrygd undefined)}}- Har mor uføretrygd: {{#eq harMorUføretrygd true}}Ja{{else}}Nei{{/eq}}{{/unless}}
-{{#unless (eq erInformertOmSøknaden undefined)}}- Har orientert den andre forelderen om søknaden: {{#eq erInformertOmSøknaden true}}Ja{{else}}Nei{{/eq}}{{/unless}}
-{{/with}}
+
+<ul>
+    <li>Navn: {{fornavn}} {{mellomnavn}} {{etternavn}}</li>
+    <li>Fødselsnummer{{#eq type "utenlandsk"}} eller D-nummer{{/eq}}: {{fnr}}</li>
+    <li>{{#if bostedsland}}Den andre forelderens fødselsnummer er ikke fra Norge{{/if}}</li>
+    <li>{{#if bostedsland}}Hvor bor den andre forelderen: {{land-norsk bostedsland}}{{/if}}</li>
+{{~#with rettigheter~}}
+    <li>{{#unless (eq erAleneOmOmsorg undefined)}}Er dere sammen om omsorgen for barnet: {{#eq erAleneOmOmsorg true}}Ja{{else}}Nei, jeg har aleneomsorg{{/eq}}{{/unless}}</li>
+    <li>{{#unless (eq harRettPåForeldrepenger undefined)}}Har den andre forelderen rett til foreldrepenger: {{#eq harRettPåForeldrepenger true}}Ja{{else}}Nei{{/eq}}{{/unless}}</li>
+    <li>{{#unless (eq harAnnenForelderTilsvarendeRettEØS undefined)}}Har den andre forelderen rett til pengestøtte i et annet EØS-land som tilsvarer foreldrepenger i Norge: {{#eq harAnnenForelderTilsvarendeRettEØS true}}Ja{{else}}Nei{{/eq}}{{/unless}}</li>
+    <li>{{#unless (eq harAnnenForelderOppholdtSegIEØS undefined)}}Har den andre forelderen oppholdt seg fast i et annet EØS-land enn Norge ett år får barnet ble født: {{#eq harAnnenForelderOppholdtSegIEØS true}}Ja{{else}}Nei{{/eq}}{{/unless}}</li>
+    <li>{{#unless (eq harMorUføretrygd undefined)}}Har mor uføretrygd: {{#eq harMorUføretrygd true}}Ja{{else}}Nei{{/eq}}{{/unless}}</li>
+    <li>{{#unless (eq erInformertOmSøknaden undefined)}}Har orientert den andre forelderen om søknaden: {{#eq erInformertOmSøknaden true}}Ja{{else}}Nei{{/eq}}{{/unless}}</li>
+{{~/with~}}
+</ul>
 {{else}}
 Jeg kan ikke oppgi den andre forelderen.
 {{/with}}
+</div>
