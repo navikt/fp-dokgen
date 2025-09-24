@@ -7,7 +7,7 @@
 
 {{#with arbeidsforhold}}
     Tilretteleggingsbehov for {{#switch type}}
-        {{~#case "virksomhet"}}{{#with (lookup ../tilleggsinformasjon/arbeidsforhold id)}}{{navn}} ({{@../id}}){{/with}}{{~/case~}}
+        {{~#case "virksomhet"}}{{#with (lookup ../tilleggsinformasjon/arbeidsforhold id)}}{{{navn}}} ({{@../id}}){{/with}}{{~/case~}}
         {{~#case "privat"}}privat arbeidsgiver {{id}}{{~/case~}}
         {{~#case "selvstendig"}}næring{{~/case~}}
         {{~#case "frilanser"~}}frilans{{~/case~}}

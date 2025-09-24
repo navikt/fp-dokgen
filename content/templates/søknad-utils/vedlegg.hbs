@@ -48,13 +48,13 @@
     {{~#case "I000060"~}}Annet{{~/case~}}
     {{/switch}}
     {{~#with dokumenterer.arbeidsforhold}}
-        {{#eq type "virksomhet"}}hos {{#with (lookup ../tilleggsinformasjon/arbeidsforhold id)}}{{navn}} ({{@../id}}){{/with}}{{/eq}}
+        {{#eq type "virksomhet"}}hos {{#with (lookup ../tilleggsinformasjon/arbeidsforhold id)}}{{{navn}}} ({{@../id}}){{/with}}{{/eq}}
     {{/with~}}
-    ({{#switch innsendingsType}}
-    {{~#case "LASTET_OPP"~}}Lastet opp{{~/case~}}
-    {{~#case "SEND_SENERE"~}}Sendes senere{{~/case~}}
-    {{~#case "AUTOMATISK"~}}Opplysninger innhentes automatisk{{~/case~}}
-    {{/switch~}})
+    {{#switch innsendingsType}}
+    {{~#case "LASTET_OPP"}} (Lastet opp){{/case~}}
+    {{~#case "SEND_SENERE"}} (Sendes senere){{/case~}}
+    {{~#case "AUTOMATISK"}} (Opplysninger om mors arbeid innhentes fra Arbeidsgiver- og arbeidstakerregisteret){{/case~}}
+    {{/switch~}}
 </li>
 {{/each}}
 </ul>
