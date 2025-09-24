@@ -4,15 +4,11 @@
 ## Informasjon om opphold i utlandet
 {{#if utenlandsopphold}}
 <table style="color:gray; width: 100%; border-collapse: collapse;">
-    <!--    <tr>
-            <td style="text-align: left; width: 150px">Land</td>
-            <td style="text-align: left;">Periode</td>
-        </tr> -->
     {{~#each utenlandsopphold~}}
-        <tr>
-            <td style="text-align: left; width: 150px">{{land-norsk land}}</td>
-            <td style="text-align: left;">{{norwegian-date fom}} - {{norwegian-date tom}}</td>
-        </tr>
+    <tr>
+        <td style="text-align: left; width: 150px">{{land-norsk land}}</td>
+        <td style="text-align: left;">{{norwegian-date fom}} - {{norwegian-date tom}}</td>
+    </tr>
     {{~/each~}}
 </table>
 {{else}}
