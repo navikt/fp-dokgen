@@ -2,8 +2,8 @@
 
 ## Mine arbeidsforhold
 Vi har hentet arbeidsforhold fra Arbeidsgiver- og arbeidstakerregisteret.
-{{#mapHasContent ../tilleggsinformasjon/arbeidsforhold}}
-{{#each ../tilleggsinformasjon/arbeidsforhold}}
+{{#if søkerinfo/arbeidsforhold}}
+{{#each søkerinfo/arbeidsforhold}}
 ### {{navn}} ({{@key}})
 <ul>
     <li>Periode: {{norwegian-date fom}} - {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
@@ -12,7 +12,7 @@ Vi har hentet arbeidsforhold fra Arbeidsgiver- og arbeidstakerregisteret.
 {{/each}}
 {{else}}
 Du er ikke registrert med noen arbeidsforhold.
-{{/mapHasContent}}
+{{/if}}
 </div>
 <div class="no-page-break">
 

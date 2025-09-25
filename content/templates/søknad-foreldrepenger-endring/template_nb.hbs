@@ -1,11 +1,8 @@
 # Søknad om endring av foreldrepenger
-Mottatt: {{norwegian-date søknad.mottattdato}}</br>
-Saksnummer: {{søknad.saksnummer}}
-{{> søknad-utils/søker rolle=søknad.rolle}}
-
-{{#with søknad}}
+Mottatt: {{norwegian-date mottattdato}}</br>
+Saksnummer: {{saksnummer}}
+{{> søknad-utils/søker rolle=rolle}}
 {{> søknad-utils/barn}}
 {{> søknad-foreldrepenger/annenforelder_nb}}
 {{> søknad-foreldrepenger/uttaksplan_nb}}
 {{> søknad-utils/vedlegg}}
-{{/with}}

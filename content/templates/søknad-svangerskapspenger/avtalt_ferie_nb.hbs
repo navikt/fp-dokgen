@@ -8,7 +8,7 @@
         {{~#with arbeidsforhold}}
         Jeg har avtalt ferie hos
         {{#switch type}}
-            {{~#case "virksomhet"}}{{#with (lookup ../tilleggsinformasjon/arbeidsforhold id)}}{{{navn}}} ({{@../id}}){{/with}}{{~/case~}}
+            {{~#case "virksomhet"}}{{#arbeidsforhold-fra-orgnummer id ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{~/case~}}
             {{~#case "privat"}}privat arbeidsgiver med identifkasjon {{id}}{{~/case~}}
             {{~#case "selvstendig"}}næring{{~/case~}}
             {{~#case "frilanser"~}}frilans{{~/case~}}

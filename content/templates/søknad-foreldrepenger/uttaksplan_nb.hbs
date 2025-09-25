@@ -24,7 +24,7 @@
     <li>{{#if ønskerFlerbarnsdager}}Skal bruke flerbarnsdager: {{#eq ønskerFlerbarnsdager true}}Ja{{else}}Nei{{/eq}}{{/if}}</li>
     <!-- Gradering -->
     <li>{{#with gradering}}Skal kombinere foreldrepengene med delvis arbeid: {{#if gradering}}Ja{{else}}Nei{{/if}}{{/with}}</li>
-    <li>{{#with gradering}}{{#eq erArbeidstaker true}}{{#each orgnumre}}Arbeider hos: {{#with (lookup ../tilleggsinformasjon/arbeidsforhold this)}}{{{navn}}}{{/with}} ({{this}}){{/each}}{{/eq}}{{/with}}</li><!-- TODO: Alltid orgnumre.[0] også.. -->
+    <li>{{#with gradering}}{{#eq erArbeidstaker true}}{{#each orgnumre}}Arbeider hos: {{#arbeidsforhold-fra-orgnummer this ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{/each}}{{/eq}}{{/with}}</li><!-- TODO: Alltid orgnumre.[0] også.. -->
     <li>{{#with gradering}}{{#eq erFrilanser true}}Jobber som: Frilanser{{/eq}}{{/with}}</li>
     <li>{{#with gradering}}{{#eq erSelvstendig true}}Jobber som: Selvstendig næringsdrivende{{/eq}}{{/with}}</li>
     <li>{{#with gradering}}Stillingsprosent: {{trim-decimal stillingsprosent}}{{/with}}</li>
