@@ -12,6 +12,5 @@
   },
   "variantType": "MEDLEM",
   "død": false,
-  "behandlingsfristUker": 5,
-  "antallBarn": 1
+  "behandlingsfristUker": 5
 }
