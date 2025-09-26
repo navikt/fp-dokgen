@@ -1,0 +1,24 @@
+{{#unless (eq utenlandsopphold undefined)}}
+<div class="no-page-break">
+
+## Informasjon om opphold i utlandet
+{{#if utenlandsopphold}}
+<table style="color:gray; width: 100%; border-collapse: collapse;">
+    {{~#each utenlandsopphold~}}
+    <tr>
+        <td style="text-align: left; width: 150px">{{land-norsk landkode}}</td>
+        <td style="text-align: left;">{{norwegian-date fom}} - {{norwegian-date tom}}</td>
+    </tr>
+    {{~/each~}}
+</table>
+{{else}}
+De siste 12 månedene bodde du i Norge<br/>
+De neste 12 månedene skal du bo i Norge
+{{/if}}
+</div>
+{{/unless}}
+
+
+
+
+

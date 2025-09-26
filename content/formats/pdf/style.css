@@ -63,17 +63,6 @@ h3 {
     font-size: 12pt;
     line-height: 16pt;
     font-weight: bold;
-    letter-spacing: 0.2pt;
-    margin-top: 26pt;
-    margin-bottom: 6pt;
-}
-
-h4 {
-    font-size: 11pt;
-    line-height: 16pt;
-    font-weight: bold;
-    letter-spacing: 0.1pt;
-    margin-top: 26pt;
     margin-bottom: 6pt;
 }
 
@@ -108,4 +97,8 @@ table {
     color: #dcdcdc;
     font-weight: bold;
     opacity: 0.3;
+}
+
+.no-page-break {
+    page-break-inside: avoid;
 }
