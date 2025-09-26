@@ -51,9 +51,9 @@
         {{#eq type "virksomhet"}}hos {{#arbeidsforhold-fra-orgnummer id ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{/eq}}
     {{/with~}}
     {{#switch innsendingsType}}
-    {{~#case "LASTET_OPP"}} (Lastet opp){{/case~}}
-    {{~#case "SEND_SENERE"}} (Sendes senere){{/case~}}
-    {{~#case "AUTOMATISK"}} (Opplysninger om mors arbeid innhentes fra Arbeidsgiver- og arbeidstakerregisteret){{/case~}}
+    {{~#case "LASTET_OPP"}} (lastet opp){{/case~}}
+    {{~#case "SEND_SENERE"}} (sendes senere){{/case~}}
+    {{~#case "AUTOMATISK"}} (opplysninger om mors arbeid innhentes fra Arbeidsgiver- og arbeidstakerregisteret){{/case~}}
     {{/switch~}}
 </li>
 {{/each}}

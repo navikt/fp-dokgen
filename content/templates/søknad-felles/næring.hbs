@@ -14,17 +14,17 @@
             {{~#case "ANNEN"~}}Annen{{~/case~}}
         {{/switch}}
     </li>
-    <li>{{#if tom}}Jeg startet egennæring {{norwegian-date fom}} og sluttet {{norwegian-date tom}}{{else}}Jeg startet egennæring {{norwegian-date fom}} og har forsatt virksomheten{{/if}}</li>
+    <li>Du startet som selvstendig næringsdrivende {{norwegian-date fom}}{{#if tom}} og sluttet {{norwegian-date tom}}.{{else}} og har forsatt virksomheten.{{/if}}</li>
     {{~#eq hattVarigEndringAvNæringsinntektSiste4Kalenderår true~}}
     <li>Varig endring i virksomheten eller arbeidssituasjonen min de siste fire årene: Ja</li>
-    <li>Fra {{norwegian-date varigEndringDato}} har jeg varig endring i næringsinntekten, hvor nye næringsinntekt er {{varigEndringInntektEtterEndring}}.</li>
+    <li>Fra {{norwegian-date varigEndringDato}} har du varig endring i næringsinntekten, hvor nye næringsinntekt er: {{varigEndringInntektEtterEndring}}.</li>
     <li>Årsak til varig endring: {{varigEndringBeskrivelse}}</li>
     {{~else~}}
     <li>Varig endring i virksomheten eller arbeidssituasjonen min de siste fire årene: Nei</li>
     <li>Næringsinntekt: {{næringsinntekt}}</li>
     {{~/eq~}}
     <li>{{#if oppstartsdato}}Virksomheten ble startet: {{norwegian-date oppstartsdato}}{{/if}}</li>
-    <li>Er ny i arbeidslivet: {{#if harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene}}Ja{{else}}Nei{{/if}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Er ny i arbeidslivet"}}</li>
 </ul>
 </div>
 {{/with}}

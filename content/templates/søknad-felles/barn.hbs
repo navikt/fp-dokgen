@@ -9,8 +9,8 @@
     <li>{{#if fødselsdatoer.length}}{{#if (eq fødselsdatoer.length 1)}}Fødselsdato: {{norwegian-date fødselsdatoer.[0]}}{{else}}Fødselsdatoer:{{#each fødselsdatoer}}{{norwegian-date this}}{{#unless @last}}, {{/unless}}{{/each}}{{/if}}{{/if}}</li>
     <li>{{#if adopsjonsdato}}Adopsjonsdato: {{norwegian-date ankomstdato}}{{/if}}</li>
     <li>{{#if ankomstdato}}Ankomstdato: {{norwegian-date ankomstdato}}{{/if}}</li>
-    <li>{{#if adopsjonAvEktefellesBarn}}Adopsjon av ektefellens barn: {{#if adopsjonAvEktefellesBarn}}Ja{{else}}Nei{{/if}}{{/if}}</li>
-    <li>{{#if søkerAdopsjonAlene}}Søker adopsjon alene: {{#if søkerAdopsjonAlene}}Ja{{else}}Nei{{/if}}{{/if}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=adopsjonAvEktefellesBarn label="Adopsjon av ektefellens barn"}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=søkerAdopsjonAlene label="Søker adopsjon alene"}}</li>
     <li>{{#if foreldreansvarsdato}}Foreldreansvar dato: {{norwegian-date foreldreansvarsdato}}{{/if}}</li>
     <li>{{#if antallBarn}}Antall barn: {{antallBarn}}{{/if}}</li>
 </ul>
