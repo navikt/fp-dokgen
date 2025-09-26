@@ -7,8 +7,7 @@
     "felles",
     "variantType",
     "død",
-    "behandlingsfristUker",
-    "antallBarn"
+    "behandlingsfristUker"
   ],
   "properties": {
     "felles": {
@@ -21,9 +20,6 @@
       "type": "boolean"
     },
     "behandlingsfristUker": {
-      "type": "number"
-    },
-    "antallBarn": {
       "type": "number"
     }
   }
