@@ -9,7 +9,7 @@ import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.comp
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SøknadKvitteringTest {
+class SøknadKvitteringTest {
 
     @Test
     void svp_utenalandsopphold_avtalt_ferie_test() {
