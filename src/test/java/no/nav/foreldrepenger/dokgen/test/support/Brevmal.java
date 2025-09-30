@@ -44,6 +44,9 @@ public enum Brevmal {
 
     // Søknader
     ENGANGSSTØNAD_SØKNAD("søknad-engangsstønad"),
+    SVANGESKAPSPENGER_SØKNAD("søknad-svangerskapspenger"),
+    FORELDREPENGER_SØKNAD("søknad-foreldrepenger"),
+    FORELDREPNGER_ENDRING_SØKNAD("søknad-foreldrepenger-endring"),
     ;
 
     private String navn;

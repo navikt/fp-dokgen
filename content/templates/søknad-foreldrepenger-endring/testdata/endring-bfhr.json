@@ -1,0 +1,80 @@
+{
+  "mottattdato": "2025-09-19T10:15:30+01:00",
+  "saksnummer": "107",
+  "rolle": "FAR",
+  "språkkode": "NB",
+  "søkerinfo": {
+    "navn": "fornavn mellomnavn etternavn",
+    "fnr": "3456789"
+  },
+  "barn": {
+    "type": "fødsel",
+    "antallBarn": 1,
+    "fødselsdato": "2025-08-29",
+    "termindato": "2025-08-29"
+  },
+  "annenForelder": {
+    "type": "norsk",
+    "fnr": "27487816634",
+    "fornavn": "Fornavn annenforelder",
+    "etternavn": "Etternavn annenforelder",
+    "rettigheter": {
+      "harRettPåForeldrepenger": false,
+      "erInformertOmSøknaden": false,
+      "harAnnenForelderRett": false
+    }
+  },
+  "uttaksplan": {
+    "uttaksperioder": [
+      {
+        "type": "utsettelse",
+        "fom": "2025-08-15",
+        "tom": "2025-08-18",
+        "årsak": "FRI",
+        "erArbeidstaker": true
+      },
+      {
+        "type": "uttak",
+        "fom": "2026-03-27",
+        "tom": "2026-09-24",
+        "konto": "FORELDREPENGER",
+        "morsAktivitetIPerioden": "ARBEID"
+      },
+      {
+        "type": "uttak",
+        "fom": "2026-03-27",
+        "tom": "2026-09-24",
+        "konto": "FORELDREPENGER",
+        "morsAktivitetIPerioden": "ARBEID"
+      },
+      {
+        "type": "uttak",
+        "fom": "2026-03-27",
+        "tom": "2026-09-24",
+        "konto": "FORELDREPENGER"
+      },
+      {
+        "type": "uttak",
+        "fom": "2026-03-27",
+        "tom": "2026-09-24",
+        "konto": "FORELDREPENGER",
+        "morsAktivitetIPerioden": "ARBEID"
+      },
+      {
+        "type": "uttak",
+        "fom": "2026-03-27",
+        "tom": "2026-09-24",
+        "konto": "FORELDREPENGER",
+        "morsAktivitetIPerioden": "ARBEID"
+      },
+      {
+        "type": "uttak",
+        "fom": "2026-03-27",
+        "tom": "2026-09-24",
+        "konto": "FORELDREPENGER",
+        "morsAktivitetIPerioden": "ARBEID"
+      }
+    ]
+  },
+  "vedlegg": []
+}

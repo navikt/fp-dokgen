@@ -1,0 +1,180 @@
+# Søknad om endring av foreldrepenger
+Mottatt: 19.09.2025 10:15</br>
+Saksnummer: 107
+## Opplsyninger om søker
+Navn: fornavn mellomnavn etternavn</br>
+Fødselsnummer: 3456789</br>
+Hva søker du som: Far
+<div class="no-page-break">
+## Opplysninger om barnet eller barna
+<ul>
+    <li>Fødselsdato: 29.08.2025</li>
+    <li>Termindato: 29.08.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>
+</li>
+    <li>
+</li>
+    <li></li>
+    <li>Antall barn: 1</li>
+</ul>
+</div>
+<div class="no-page-break">
+## Informasjon om annen forelder og rettigheter
+<ul>
+    <li>Navn: Fornavn annenforelder  Etternavn annenforelder</li>
+    <li>Fødselsnummer: 27487816634</li>
+    <li></li>
+    <li></li><li>
+</li>
+    <li>Har den andre forelderen rett til foreldrepenger: <strong>Nei</strong>
+</li>
+    <li>
+</li>
+    <li>
+</li>
+    <li>
+</li>
+    <li>Har orientert den andre forelderen om søknaden: <strong>Nei</strong>
+</li></ul>
+</div>
+<div class="no-page-break">
+## Din plan
+Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
+</div>
+<div class="no-page-break">
+### Periode uten uttak 15.08.2025 - 18.08.2025
+<ul style="margin-top: 0;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li></li>
+    <li></li>
+    <li>
+</li>
+    <li></li>
+    <li>
+</li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+### Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)
+<ul style="margin-top: 0;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
+    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>
+</li>
+    <li></li>
+    <li>
+</li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+### Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)
+<ul style="margin-top: 0;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
+    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>
+</li>
+    <li></li>
+    <li>
+</li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+### Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)
+<ul style="margin-top: 0;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li></li>
+    <li></li>
+    <li>
+</li>
+    <li></li>
+    <li>
+</li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+### Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)
+<ul style="margin-top: 0;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
+    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>
+</li>
+    <li></li>
+    <li>
+</li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+### Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)
+<ul style="margin-top: 0;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
+    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>
+</li>
+    <li></li>
+    <li>
+</li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+### Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)
+<ul style="margin-top: 0;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
+    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>
+</li>
+    <li></li>
+    <li>
+</li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>

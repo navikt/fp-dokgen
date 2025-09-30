@@ -1,0 +1,15 @@
+{
+  "mottattdato": "2025-09-30T10:15:30+01:00",
+  "språkkode": "NB",
+  "barn":
+  {
+    "type": "termin",
+    "antallBarn": 1,
+    "termindato": "2025-10-21",
+    "terminbekreftelseDato": "2025-09-21"
+  },
+  "utenlandsopphold":
+  [],
+  "vedlegg":
+  []
+}

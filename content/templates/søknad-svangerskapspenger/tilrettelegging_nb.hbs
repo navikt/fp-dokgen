@@ -6,12 +6,12 @@
 <div class="no-page-break">
 
 {{#with arbeidsforhold}}
-    Tilretteleggingsbehov for {{#switch type}}
-        {{~#case "virksomhet"}}{{#arbeidsforhold-fra-orgnummer id ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{~/case~}}
-        {{~#case "privat"}}privat arbeidsgiver {{id}}{{~/case~}}
-        {{~#case "selvstendig"}}næring{{~/case~}}
-        {{~#case "frilanser"~}}frilans{{~/case~}}
-    {{/switch}}
+Tilretteleggingsbehov for {{#switch type}}
+    {{~#case "virksomhet"}}{{#arbeidsforhold-fra-orgnummer id ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{~/case~}}
+    {{~#case "privat"}}privat arbeidsgiver {{id}}{{~/case~}}
+    {{~#case "selvstendig"}}næring{{~/case~}}
+    {{~#case "frilanser"~}}frilans{{~/case~}}
+{{/switch}}
 {{/with}}
 <ul>
     <li>Jeg har behov for tilrettelegging fra og med {{norwegian-date behovForTilretteleggingFom}}</li>

@@ -1,0 +1,115 @@
+{
+  "mottattdato": "2011-12-03T10:15:30+01:00",
+  "rolle": "FAR",
+  "språkkode": "NB",
+  "søkerinfo": {
+    "navn": "Per Sykelig Oppblåst",
+    "fnr": "17519633574",
+    "arbeidsforhold": [
+      {
+        "navn": "NAV Familie og Pensjonsytelser Oslo",
+        "orgnummer": "123456789",
+        "fom": "2024-01-11",
+        "stillingsprosent": 44
+      },
+      {
+        "navn": "Kåre og Anne-Ma's snekker og dryss AS",
+        "orgnummer": "12312312",
+        "fom": "2025-02-01",
+        "tom": "2025-03-07",
+        "stillingsprosent": 13
+      }
+    ]
+  },
+  "frilans": {
+    "oppstart": "2025-09-01",
+    "jobberFremdelesSomFrilans": true
+  },
+  "barn": {
+    "type": "termin",
+    "antallBarn": 1,
+    "termindato": "2025-09-08",
+    "terminbekreftelseDato": "2025-08-08"
+  },
+  "annenForelder": {
+    "type": "norsk",
+    "fnr": "04479417895",
+    "fornavn": "Fornavn annenforelder",
+    "etternavn": "Etternavn annenforelder",
+    "rettigheter": {
+      "harRettPåForeldrepenger": true,
+      "erInformertOmSøknaden": true,
+      "erAleneOmOmsorg": false
+    }
+  },
+  "uttaksplan": {
+    "uttaksperioder": [
+      {
+        "type": "utsettelse",
+        "fom": "2025-09-01",
+        "tom": "2025-09-19",
+        "årsak": "FRI",
+        "morsAktivitetIPerioden": "ARBEID",
+        "erArbeidstaker": true
+      },
+      {
+        "type": "utsettelse",
+        "fom": "2025-09-01",
+        "tom": "2025-09-19",
+        "årsak": "FRI",
+        "erArbeidstaker": true
+      },
+      {
+        "type": "uttak",
+        "fom": "2025-09-15",
+        "tom": "2025-09-26",
+        "konto": "FEDREKVOTE",
+        "ønskerSamtidigUttak": false,
+        "ønskerFlerbarnsdager": false,
+        "samtidigUttakProsent": 100.0
+      },
+      {
+        "type": "uttak",
+        "fom": "2025-09-15",
+        "tom": "2025-09-26",
+        "konto": "FELLESPERIODE",
+        "morsAktivitetIPerioden": "ARBEID"
+      },
+      {
+        "type": "uttak",
+        "fom": "2025-09-15",
+        "tom": "2025-09-26",
+        "konto": "FELLESPERIODE"
+      },
+      {
+        "type": "uttak",
+        "fom": "2025-09-26",
+        "tom": "2026-01-15",
+        "konto": "FELLESPERIODE",
+        "morsAktivitetIPerioden": "ARBEID",
+        "gradering": {
+          "stillingsprosent": 50.0,
+          "erArbeidstaker": true,
+          "orgnumre": [
+            "12312312"
+          ]
+        }
+      },
+      {
+        "type": "uttak",
+        "fom": "2026-03-20",
+        "tom": "2026-10-15",
+        "konto": "FORELDREPENGER_FØR_FØDSEL",
+        "gradering": {
+          "stillingsprosent": 50.0,
+          "erArbeidstaker": true,
+          "orgnumre": [
+            "987654321"
+          ]
+        }
+      }
+    ]
+  },
+  "saksnummer": "314",
+  "vedlegg": []
+}
