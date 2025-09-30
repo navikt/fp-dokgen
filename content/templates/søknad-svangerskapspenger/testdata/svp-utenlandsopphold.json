@@ -1,0 +1,77 @@
+{
+  "mottattdato": "2025-09-24T10:15:30+01:00",
+  "søkerinfo": {
+    "navn": "Per Sykelig Oppblåst",
+    "fnr": "17519633574",
+    "arbeidsforhold": [
+      {
+        "navn": "NAV Familie og Pensjonsytelser Oslo",
+        "orgnummer": "987654321",
+        "fom": "2024-01-11",
+        "stillingsprosent": 44
+      },
+      {
+        "navn": "Kåre og Anne-Ma's snekker og dryss AS",
+        "orgnummer": "12312312",
+        "fom": "2025-02-01",
+        "tom": "2025-03-07",
+        "stillingsprosent": 13
+      }
+    ]
+  },
+  "barn": {
+    "termindato": "2025-12-24"
+  },
+  "rolle": "MOR",
+  "språkkode": "NB",
+  "andreInntekterSiste10Mnd": [],
+  "utenlandsopphold": [
+    {
+      "landkode": "VE",
+      "fom": "2024-02-01",
+      "tom": "2025-03-07"
+    }
+  ],
+  "tilretteleggingsbehov": [
+    {
+      "arbeidsforhold": {
+        "type": "virksomhet",
+        "id": "987654321"
+      },
+      "behovForTilretteleggingFom": "2025-09-24",
+      "tilrettelegginger": [
+        {
+          "type": "delvis",
+          "fom": "2025-09-24",
+          "stillingsprosent": 40.0
+        }
+      ],
+      "risikofaktorerOgTilretteleggingtiltakSattForNæringFrilans": true
+    }
+  ],
+  "avtaltFerie": [
+    {
+      "arbeidsforhold": {
+        "type": "virksomhet",
+        "id": "987654321"
+      },
+      "fom": "2025-11-24",
+      "tom": "2025-12-01",
+      "arbeidsforholdVirksomhet": true
+    }
+  ],
+  "vedlegg": [
+    {
+      "uuid": "7149b6e2-a81b-4469-b685-2ce6ac9e603e",
+      "skjemanummer": "I000109",
+      "innsendingsType": "LASTET_OPP",
+      "dokumenterer": {
+        "type": "TILRETTELEGGING",
+        "arbeidsforhold": {
+          "type": "virksomhet",
+          "id": "987654321"
+        }
+      }
+    }
+  ]
+}

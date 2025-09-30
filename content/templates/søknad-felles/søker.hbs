@@ -1,0 +1,8 @@
+## Opplsyninger om søker
+Navn: {{{søkerinfo.navn}}}</br>
+Fødselsnummer: {{søkerinfo.fnr}}</br>
+{{#if rolle}}Hva søker du som: {{#switch rolle}}
+    {{~#case "MOR"~}}Mor{{~/case~}}
+    {{~#case "FAR"~}}Far{{~/case~}}
+    {{~#case "MEDMOR"~}}Medmor{{~/case~}}
+{{/switch}}{{/if}}

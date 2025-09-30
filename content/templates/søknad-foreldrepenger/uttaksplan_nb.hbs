@@ -1,0 +1,88 @@
+<div class="no-page-break">
+
+## Din plan
+{{#if saksnummer~}}
+Du har søkt om endring fra og med {{norwegian-date uttaksplan.uttaksperioder.0.fom}}{{#if dekningsgrad}} og har {{dekningsgrad}} prosent dekningsgrad{{/if}}. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
+{{~else~}}
+{{#if dekningsgrad}}Du har søkt om {{dekningsgrad}} prosent dekningsgrad for foreldrepenger.{{/if}}
+{{~/if}}
+{{#if ønskerJustertUttakVedFødsel}}Perioden som starter på termin blir endret til å starte fra fødselsdato når barnet blir født: {{#eq ønskerJustertUttakVedFødsel true}}Ja{{else}}Nei{{/eq}}{{/if}}
+</div>
+
+{{~#*inline "konto-label"~}}
+    {{#switch konto}}
+        {{~#case "MØDREKVOTE"~}}Mødrekvote{{~/case~}}
+        {{~#case "FEDREKVOTE"~}}Fedrekvote{{~/case~}}
+        {{~#case "FELLESPERIODE"~}}Fellesperiode{{~/case~}}
+        {{~#case "FORELDREPENGER"~}}Foreldrepenger{{~/case~}}
+        {{~#case "FORELDREPENGER_FØR_FØDSEL"~}}Foreldrepenger før fødsel{{~/case~}}
+    {{/switch}}
+{{~/inline~}}
+
+{{#with uttaksplan}}
+{{#each uttaksperioder}}
+<div class="no-page-break">
+{{#if (and (eq type "utsettelse") (eq årsak "FRI") (eq morsAktivitetIPerioden undefined))}}
+### Periode uten uttak {{norwegian-date fom}} - {{norwegian-date tom}}
+{{else if konto}}
+### {{> konto-label}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} virkedager)
+{{else}}
+### Utsettelse {{norwegian-date fom}} - {{norwegian-date tom}}
+{{/if}}
+
+<ul style="margin-top: 0;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>{{#if (and konto morsAktivitetIPerioden)}}Hvilken del av foreldrepengene tas ut: {{konto}} MED AKTIVITETSKRAV{{/if}}</li>
+    <li>{{#if morsAktivitetIPerioden}}Mors aktivitet i perioden: {{morsAktivitetIPerioden}}{{/if}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=ønskerSamtidigUttak label="Skal annen forelder ha foreldrepenger i samme periode"}}</li>
+    <li>{{#if samtidigUttakProsent}}Samtidig uttaksprosent: {{samtidigUttakProsent}}{{/if}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=ønskerFlerbarnsdager label="Skal bruke flerbarnsdager"}}</li>
+{{~#with gradering}} <!-- Gradering -->
+    <li>{{> utils/sporsmal-svar-ja-nei value=gradering label="Skal kombinere foreldrepengene med delvis arbeid"}}</li>
+    <li>{{#eq erArbeidstaker true}}{{#each orgnumre}}Hvor skal du jobbe: {{#arbeidsforhold-fra-orgnummer this ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{/each}}{{/eq}}</li><!-- TODO: Alltid orgnumre.[0] også.. -->
+    <li>{{#eq erFrilanser true}}Jobber som: Frilanser{{/eq}}</li>
+    <li>{{#eq erSelvstendig true}}Jobber som: Selvstendig næringsdrivende{{/eq}}</li>
+    <li>{{#if stillingsprosent}}Oppgitt prosent i arbeid: {{trim-decimal stillingsprosent}}{{/if}}</li>
+{{/with~}}
+    <!-- Overføring -->
+    <li>
+        {{~#eq type "overføring"}}
+        Årsak til overføring av kvote: {{#switch årsak}}
+        {{~#case "INSTITUSJONSOPPHOLD_ANNEN_FORELDER"~}}Annen forelder er innlagt på helseinstitusjon{{~/case~}}
+        {{~#case "SYKDOM_ANNEN_FORELDER"~}}Annen forelder er for syk til å ta seg av barnet{{~/case~}}
+        {{/switch}}
+        {{/eq~}}
+    </li>
+    <!-- Opphold -->
+    <li>
+        {{~#eq type "opphold"}} <!-- TODO: Når brukes dette egentlig?? -->
+        Årsak til opphold: {{#switch årsak}}
+        {{~#case "INGEN"~}}Ingen hva da?{{~/case~}} <!-- TODO: -->
+        {{~#case "UTTAK_MØDREKVOTE_ANNEN_FORELDER"~}}Den andre forelderen skal ta ut egen kvote{{~/case~}}
+        {{~#case "UTTAK_FEDREKVOTE_ANNEN_FORELDER"~}}Den andre forelderen skal ta ut egen kvote{{~/case~}}
+        {{~#case "UTTAK_FORELDREPENGER_ANNEN_FORELDER"~}}Den andre forelderen skal ta foreldrepenger{{~/case~}}
+        {{~#case "UTTAK_FELLESP_ANNEN_FORELDER"~}}Den andre forelderen skal ta ut fellesperiode{{~/case~}}
+        {{/switch}}
+        {{/eq~}}
+    </li>
+    <!-- Utsettelse -->
+    <li>
+        {{~#if (and (eq type "utsettelse") (neq årsak "FRI"))}}
+        Årsak til utsettelse: {{#switch årsak}}
+            {{~#case "ARBEID"~}}Arbeid{{~/case~}}
+            {{~#case "LOVBESTEMT_FERIE"~}}Lovbestemt ferie{{~/case~}}
+            {{~#case "SYKDOM"~}}Er for syk til å ta av meg barnet{{~/case~}}
+            {{~#case "INSTITUSJONSOPPHOLD_SØKER"~}}Jeg er innlagt på helseinstitusjon{{~/case~}}
+            {{~#case "INSTITUSJONSOPPHOLD_BARNET"~}}Barnet er innlagt på helseinstitusjon{{~/case~}}
+            {{~#case "HV_OVELSE"~}}Øvelse i Heimevernet{{~/case~}}
+            {{~#case "NAV_TILTAK"~}}Tiltakspenger Nav{{~/case~}}
+        {{/switch}}
+        {{/if~}}
+    </li>
+    <li>
+        {{~#if (and (eq årsak "LOVBESTEMT_FERIE") (eq type "utsettelse"))}}Skal jobbe som arbeidstaker: <strong>{{#eq erArbeidstaker true}}Ja{{else}}Nei{{/eq}}</strong>{{/if~}}
+    </li>
+</ul>
+</div>
+{{/each}}
+{{/with}}

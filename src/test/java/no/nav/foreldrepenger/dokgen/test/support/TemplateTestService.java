@@ -23,11 +23,15 @@ import com.github.jknack.handlebars.io.FileTemplateLoader;
 import com.github.jknack.handlebars.jackson.JsonNodeValueResolver;
 
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.AdditionHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.AntallVirkedagerMellomToDatoer;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.ArbeidsforholdLookupHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.ArrayHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.CaseHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.CountryCodeHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.DivideHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.FormatKronerHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.InArrayHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.NorwegianDateHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.NorwegianDatetimeHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.SizeHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.SwitchHelper;
@@ -62,7 +66,12 @@ public final class TemplateTestService {
         HANDLEBARS.registerHelper("thousand-seperator-double", new ThousandSeperatorHelperDouble());
         HANDLEBARS.registerHelper("trim-decimal", new TrimDecimalHelper());
         HANDLEBARS.registerHelper("size", new SizeHelper());
+        HANDLEBARS.registerHelper("norwegian-date", new NorwegianDateHelper());
         HANDLEBARS.registerHelper("norwegian-datetime", new NorwegianDatetimeHelper());
+        HANDLEBARS.registerHelper("country", new NorwegianDatetimeHelper());
+        HANDLEBARS.registerHelper("land-norsk", new CountryCodeHelper());
+        HANDLEBARS.registerHelper("arbeidsforhold-fra-orgnummer", new ArbeidsforholdLookupHelper());
+        HANDLEBARS.registerHelper("antall-virkedager", new AntallVirkedagerMellomToDatoer());
         HANDLEBARS.registerHelpers(StringHelpers.class);
     }
 
