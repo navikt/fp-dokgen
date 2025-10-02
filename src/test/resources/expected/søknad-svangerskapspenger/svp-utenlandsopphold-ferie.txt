@@ -31,15 +31,15 @@ Hva søker du som: Mor
 <div class="no-page-break">
 ## Mine arbeidsforhold
 Nav har hentet informasjonen fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Denne informasjonen ble vist i søknaden når du sendte den. Nav sjekker AA-registeret igjen når arbeidsgiver skal sende inntektsmelding.
-### NAV Familie og Pensjonsytelser Oslo (0)
+### NAV Familie og Pensjonsytelser Oslo (987654321)
 <ul>
     <li>Periode: 11.01.2024 - Pågående</li>
-    <li>Stillingsprosent: 44%</li>
+    <li>Stillingsprosent: 44 %</li>
 </ul>
-### Kåre og Anne-Ma&#x27;s snekker og dryss AS (1)
+### Kåre og Anne-Ma&#x27;s snekker og dryss AS (12312312)
 <ul>
     <li>Periode: 01.02.2025 - 07.03.2025</li>
-    <li>Stillingsprosent: 13%</li>
+    <li>Stillingsprosent: 13 %</li>
 </ul>
 </div>
 <div class="no-page-break">

@@ -24,15 +24,15 @@ Hva søker du som: Far
 <div class="no-page-break">
 ## Mine arbeidsforhold
 Nav har hentet informasjonen fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Denne informasjonen ble vist i søknaden når du sendte den. Nav sjekker AA-registeret igjen når arbeidsgiver skal sende inntektsmelding.
-### NAV Familie og Pensjonsytelser Oslo (0)
+### NAV Familie og Pensjonsytelser Oslo (123456789)
 <ul>
     <li>Periode: 11.01.2024 - Pågående</li>
-    <li>Stillingsprosent: 44%</li>
+    <li>Stillingsprosent: 44 %</li>
 </ul>
-### Kåre og Anne-Ma&#x27;s snekker og dryss AS (1)
+### Kåre og Anne-Ma&#x27;s snekker og dryss AS (12312312)
 <ul>
     <li>Periode: 01.02.2025 - 07.03.2025</li>
-    <li>Stillingsprosent: 13%</li>
+    <li>Stillingsprosent: 13 %</li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -120,7 +120,7 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
     <li></li>
     <li>Skal annen forelder ha foreldrepenger i samme periode: <strong>Nei</strong>
 </li>
-    <li>Samtidig uttaksprosent: 100.0</li>
+    <li>Din prosent med foreldrepenger: 100.0</li>
     <li>Skal bruke flerbarnsdager: <strong>Nei</strong>
 </li><!-- Overføring -->
     <li></li>

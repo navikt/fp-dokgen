@@ -8,14 +8,14 @@
         "navn": "NAV Familie og Pensjonsytelser Oslo",
         "orgnummer": "987654321",
         "fom": "2024-01-11",
-        "stillingsprosent": 44
+        "stillingsprosent": 44.0
       },
       {
         "navn": "Kåre og Anne-Ma's snekker og dryss AS",
         "orgnummer": "12312312",
         "fom": "2025-02-01",
         "tom": "2025-03-07",
-        "stillingsprosent": 13
+        "stillingsprosent": 13.0
       }
     ]
   },
