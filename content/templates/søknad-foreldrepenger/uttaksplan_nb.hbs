@@ -4,7 +4,7 @@
 {{#if saksnummer~}}
 Du har søkt om endring fra og med {{norwegian-date uttaksplan.uttaksperioder.0.fom}}{{#if dekningsgrad}} og har {{dekningsgrad}} prosent dekningsgrad{{/if}}. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
 {{~else~}}
-{{#if dekningsgrad}}Du har søkt om {{dekningsgrad}} prosent dekningsgrad for foreldrepenger.{{/if}}
+{{#if dekningsgrad}}Du har søkt om {{dekningsgrad}} prosent utbetaling for foreldrepenger.{{/if}}
 {{~/if}}
 {{#if ønskerJustertUttakVedFødsel}}Perioden som starter på termin blir endret til å starte fra fødselsdato når barnet blir født: {{#eq ønskerJustertUttakVedFødsel true}}Ja{{else}}Nei{{/eq}}{{/if}}
 </div>
@@ -35,7 +35,7 @@ Du har søkt om endring fra og med {{norwegian-date uttaksplan.uttaksperioder.0.
     <li>{{#if (and konto morsAktivitetIPerioden)}}Hvilken del av foreldrepengene tas ut: {{konto}} MED AKTIVITETSKRAV{{/if}}</li>
     <li>{{#if morsAktivitetIPerioden}}Mors aktivitet i perioden: {{morsAktivitetIPerioden}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerSamtidigUttak label="Skal annen forelder ha foreldrepenger i samme periode"}}</li>
-    <li>{{#if samtidigUttakProsent}}Samtidig uttaksprosent: {{samtidigUttakProsent}}{{/if}}</li>
+    <li>{{#if samtidigUttakProsent}}Din prosent med foreldrepenger: {{samtidigUttakProsent}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerFlerbarnsdager label="Skal bruke flerbarnsdager"}}</li>
 {{~#with gradering}} <!-- Gradering -->
     <li>{{> utils/sporsmal-svar-ja-nei value=gradering label="Skal kombinere foreldrepengene med delvis arbeid"}}</li>
@@ -71,7 +71,7 @@ Du har søkt om endring fra og med {{norwegian-date uttaksplan.uttaksperioder.0.
         Årsak til utsettelse: {{#switch årsak}}
             {{~#case "ARBEID"~}}Arbeid{{~/case~}}
             {{~#case "LOVBESTEMT_FERIE"~}}Lovbestemt ferie{{~/case~}}
-            {{~#case "SYKDOM"~}}Er for syk til å ta av meg barnet{{~/case~}}
+            {{~#case "SYKDOM"~}}Jeg er for syk til å ta av meg barnet{{~/case~}}
             {{~#case "INSTITUSJONSOPPHOLD_SØKER"~}}Jeg er innlagt på helseinstitusjon{{~/case~}}
             {{~#case "INSTITUSJONSOPPHOLD_BARNET"~}}Barnet er innlagt på helseinstitusjon{{~/case~}}
             {{~#case "HV_OVELSE"~}}Øvelse i Heimevernet{{~/case~}}
