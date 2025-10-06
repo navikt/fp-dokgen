@@ -1,9 +1,9 @@
 # Kvittering på søknad om foreldrepenger
 Mottatt: 03.12.2011 10:15
-## Opplsyninger om søker
+## Opplysninger om søker
 Navn: Per Sykelig Oppblåst</br>
 Fødselsnummer: 17519633574</br>
-Hva søker du som: Far
+Hva søker du som: Mor
 <div class="no-page-break">
 ## Opplysninger om barnet eller barna
 <ul>
@@ -23,15 +23,15 @@ Hva søker du som: Far
 </div>
 <div class="no-page-break">
 ## Mine arbeidsforhold
-Nav har hentet informasjonen fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Denne informasjonen ble vist i søknaden når du sendte den. Nav sjekker AA-registeret igjen når arbeidsgiver skal sende inntektsmelding.
+Nav har hentet opplysninger fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse opplysningene ble vist i søknaden da du sendte den inn. Nav henter informasjon fra registeret på nytt når arbeidsgiver sender inntektsmeldingen.
 ### NAV Familie og Pensjonsytelser Oslo (123456789)
 <ul>
-    <li>Periode: 11.01.2024 - Pågående</li>
+    <li>Periode: 11.01.2024 – Pågående</li>
     <li>Stillingsprosent: 44 %</li>
 </ul>
 ### Kåre og Anne-Ma&#x27;s snekker og dryss AS (12312312)
 <ul>
-    <li>Periode: 01.02.2025 - 07.03.2025</li>
+    <li>Periode: 01.02.2025 – 07.03.2025</li>
     <li>Stillingsprosent: 13 %</li>
 </ul>
 </div>
@@ -52,7 +52,7 @@ Nav har hentet informasjonen fra Arbeidsgiver- og arbeidstakerregisteret (AA-reg
 </ul>
 </div>
 <div class="no-page-break">
-## Informasjon om annen forelder og rettigheter
+## Informasjon om annen forelder
 <ul>
     <li>Navn: Fornavn annenforelder  Etternavn annenforelder</li>
     <li>Fødselsnummer: 04479417895</li>
@@ -79,7 +79,7 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
 <ul style="margin-top: 0;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
-    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
     <li>
 </li>
     <li></li>
@@ -136,7 +136,7 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
 <ul style="margin-top: 0;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FELLESPERIODE MED AKTIVITETSKRAV</li>
-    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
     <li>
 </li>
     <li></li>
@@ -174,7 +174,7 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
 <ul style="margin-top: 0;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FELLESPERIODE MED AKTIVITETSKRAV</li>
-    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
     <li>
 </li>
     <li></li>

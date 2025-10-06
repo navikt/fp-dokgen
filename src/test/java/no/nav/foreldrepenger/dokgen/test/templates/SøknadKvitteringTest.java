@@ -26,8 +26,8 @@ class SøknadKvitteringTest {
     }
 
     @Test
-    void foreldrepenger_far_2af_frilans_gradering_utsettelse() {
-        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "far-2af-frilans");
+    void foreldrepenger_mor_2af_frilans_gradering_utsettelse() {
+        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-2af-frilans");
         var expected = getExpected(Brevmal.FORELDREPENGER_SØKNAD, "foreldrepenger.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }

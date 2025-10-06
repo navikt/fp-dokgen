@@ -1,6 +1,6 @@
 # Kvittering på søknad om engangsstønad
 Mottatt: 30.09.2025 10:15
-## Opplsyninger om søker
+## Opplysninger om søker
 Navn: </br>
 Fødselsnummer: </br>
 <div class="no-page-break">
@@ -22,6 +22,7 @@ Fødselsnummer: </br>
 </div>
 <div class="no-page-break">
 ## Informasjon om opphold i utlandet
-De siste 12 månedene bodde du i Norge<br/>
-De neste 12 månedene skal du bo i Norge
+<ul>
+<li>De siste 12 månedene bodde du i Norge</li>
+<li>De neste 12 månedene skal du bo i Norge</li></ul>
 </div>

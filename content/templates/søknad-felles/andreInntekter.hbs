@@ -17,7 +17,7 @@
 {{/switch}}
 <ul>
     <li>{{#if arbeidsgiverNavn}}Arbeidsgiver: {{{arbeidsgiverNavn}}}{{/if}}</li>
-    <li>Periode: {{norwegian-date fom}} - {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
+    <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
     <li>{{#if land}}Landet virksomheten er registrert i: {{land-norsk land}}{{/if}}</li> <!-- TODO: Map til land med ny helper-->
 </ul>
 {{/each}}

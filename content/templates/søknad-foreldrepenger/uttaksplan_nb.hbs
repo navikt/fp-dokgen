@@ -4,7 +4,7 @@
 {{#if saksnummer~}}
 Du har søkt om endring fra og med {{norwegian-date uttaksplan.uttaksperioder.0.fom}}{{#if dekningsgrad}} og har {{dekningsgrad}} prosent dekningsgrad{{/if}}. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
 {{~else~}}
-{{#if dekningsgrad}}Du har søkt om {{dekningsgrad}} prosent utbetaling for foreldrepenger.{{/if}}
+{{#if dekningsgrad}}Du har søkt om {{dekningsgrad}} prosent foreldrepenger.{{/if}}
 {{~/if}}
 {{#if ønskerJustertUttakVedFødsel}}Perioden som starter på termin blir endret til å starte fra fødselsdato når barnet blir født: {{#eq ønskerJustertUttakVedFødsel true}}Ja{{else}}Nei{{/eq}}{{/if}}
 </div>
@@ -16,6 +16,20 @@ Du har søkt om endring fra og med {{norwegian-date uttaksplan.uttaksperioder.0.
         {{~#case "FELLESPERIODE"~}}Fellesperiode{{~/case~}}
         {{~#case "FORELDREPENGER"~}}Foreldrepenger{{~/case~}}
         {{~#case "FORELDREPENGER_FØR_FØDSEL"~}}Foreldrepenger før fødsel{{~/case~}}
+    {{/switch}}
+{{~/inline~}}
+
+{{~#*inline "mors-aktivitet"~}}
+    {{#switch morsAktivitetIPerioden}}
+        {{~#case "ARBEID"~}}Arbeid{{~/case~}}
+        {{~#case "UTDANNING"~}}Utdanning{{~/case~}}
+        {{~#case "KVALPROG"~}}Kvalifiseringsprogram{{~/case~}}
+        {{~#case "INTROPROG"~}}Introduksjonsprogram{{~/case~}}
+        {{~#case "TRENGER_HJELP"~}}Trenger hjelp{{~/case~}}
+        {{~#case "INNLAGT"~}}Innlagt på helseinstitusjon{{~/case~}}
+        {{~#case "ARBEID_OG_UTDANNING"~}}Arbeid og utdanning{{~/case~}}
+        {{~#case "UFØRE"~}}uføretrygdet{{~/case~}}
+        {{~#case "IKKE_OPPGITT"~}}Ikke oppgitt{{~/case~}}
     {{/switch}}
 {{~/inline~}}
 
@@ -33,7 +47,7 @@ Du har søkt om endring fra og med {{norwegian-date uttaksplan.uttaksperioder.0.
 <ul style="margin-top: 0;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>{{#if (and konto morsAktivitetIPerioden)}}Hvilken del av foreldrepengene tas ut: {{konto}} MED AKTIVITETSKRAV{{/if}}</li>
-    <li>{{#if morsAktivitetIPerioden}}Mors aktivitet i perioden: {{morsAktivitetIPerioden}}{{/if}}</li>
+    <li>{{#if morsAktivitetIPerioden}}Mors aktivitet i perioden: {{> mors-aktivitet}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerSamtidigUttak label="Skal annen forelder ha foreldrepenger i samme periode"}}</li>
     <li>{{#if samtidigUttakProsent}}Din prosent med foreldrepenger: {{samtidigUttakProsent}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerFlerbarnsdager label="Skal bruke flerbarnsdager"}}</li>
