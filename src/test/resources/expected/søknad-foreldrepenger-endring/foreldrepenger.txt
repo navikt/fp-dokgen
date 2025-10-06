@@ -1,10 +1,9 @@
 # Kvittering på søknad om endring av foreldrepenger
 Mottatt: 19.09.2025 10:15</br>
 Saksnummer: 107
-## Opplsyninger om søker
+## Opplysninger om søker
 Navn: fornavn mellomnavn etternavn</br>
 Fødselsnummer: 3456789</br>
-Hva søker du som: Far
 <div class="no-page-break">
 ## Opplysninger om barnet eller barna
 <ul>
@@ -23,7 +22,7 @@ Hva søker du som: Far
 </ul>
 </div>
 <div class="no-page-break">
-## Informasjon om annen forelder og rettigheter
+## Informasjon om annen forelder
 <ul>
     <li>Navn: Fornavn annenforelder  Etternavn annenforelder</li>
     <li>Fødselsnummer: 27487816634</li>
@@ -69,7 +68,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <ul style="margin-top: 0;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
-    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
     <li>
 </li>
     <li></li>
@@ -88,7 +87,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <ul style="margin-top: 0;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
-    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
     <li>
 </li>
     <li></li>
@@ -126,7 +125,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <ul style="margin-top: 0;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
-    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
     <li>
 </li>
     <li></li>
@@ -145,7 +144,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <ul style="margin-top: 0;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
-    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
     <li>
 </li>
     <li></li>
@@ -164,7 +163,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <ul style="margin-top: 0;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
-    <li>Mors aktivitet i perioden: ARBEID</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
     <li>
 </li>
     <li></li>

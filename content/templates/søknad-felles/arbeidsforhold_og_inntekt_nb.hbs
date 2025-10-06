@@ -1,12 +1,12 @@
 <div class="no-page-break">
 
 ## Mine arbeidsforhold
-Nav har hentet informasjonen fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Denne informasjonen ble vist i søknaden når du sendte den. Nav sjekker AA-registeret igjen når arbeidsgiver skal sende inntektsmelding.
+Nav har hentet opplysninger fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse opplysningene ble vist i søknaden da du sendte den inn. Nav henter informasjon fra registeret på nytt når arbeidsgiver sender inntektsmeldingen.
 {{#if søkerinfo/arbeidsforhold}}
 {{#each søkerinfo/arbeidsforhold}}
 ### {{navn}} ({{orgnummer}})
 <ul>
-    <li>Periode: {{norwegian-date fom}} - {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
+    <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
     <li>Stillingsprosent: {{trim-decimal stillingsprosent}} %</li>
 </ul>
 {{/each}}
