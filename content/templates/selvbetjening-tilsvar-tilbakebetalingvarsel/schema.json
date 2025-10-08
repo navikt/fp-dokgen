@@ -4,7 +4,6 @@
   "description": "schema for tilsvar til varsel om tilbakebetaling",
   "type": "object",
   "required": [
-    "navn",
     "fnr",
     "saksnummer",
     "ytelse",
