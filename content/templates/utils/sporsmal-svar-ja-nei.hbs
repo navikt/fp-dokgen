@@ -1,1 +1,7 @@
-{{~#unless (eq value undefined)}}{{~label~}}: <strong>{{~#if value~}}Ja{{~else~}}{{~#if altNei~}}{{altNei}}{{else}}Nei{{/if}}{{~/if~}}</strong>{{/unless~}}
+{{~#unless (eq value undefined)~}}
+    {{~#eq reversed true~}}
+        {{~label~}}: <strong>{{~#if value~}}{{~#if altNei~}}{{altNei}}{{else}}Nei{{/if}}{{~else~}}Ja{{~/if~}}</strong>
+    {{~else~}}
+        {{~label~}}: <strong>{{~#if value~}}Ja{{~else~}}{{~#if altNei~}}{{altNei}}{{else}}Nei{{/if}}{{~/if~}}</strong>
+    {{~/eq~}}
+{{~/unless~}}
