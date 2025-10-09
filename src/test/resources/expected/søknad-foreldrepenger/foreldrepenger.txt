@@ -54,7 +54,7 @@ Nav har hentet opplysninger fra Arbeidsgiver- og arbeidstakerregisteret (AA-regi
     <li>Navn: Fornavn annenforelder  Etternavn annenforelder</li>
     <li>Fødselsnummer: 04479417895</li>
     <li></li>
-    <li></li><li>Er dere sammen om omsorgen for barnet: <strong>Nei, jeg har aleneomsorg</strong></li>
+    <li></li><li>Er dere sammen om omsorgen for barnet: <strong>Ja</strong></li>
     <li>Har den andre forelderen rett til foreldrepenger: <strong>Ja</strong></li>
     <li></li>
     <li></li>
