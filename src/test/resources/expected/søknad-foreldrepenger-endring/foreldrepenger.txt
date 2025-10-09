@@ -13,10 +13,8 @@ Fødselsnummer: 3456789</br>
     <li></li>
     <li></li>
     <li></li>
-    <li>
-</li>
-    <li>
-</li>
+    <li></li>
+    <li></li>
     <li></li>
     <li>Antall barn: 1</li>
 </ul>
@@ -27,34 +25,26 @@ Fødselsnummer: 3456789</br>
     <li>Navn: Fornavn annenforelder  Etternavn annenforelder</li>
     <li>Fødselsnummer: 27487816634</li>
     <li></li>
-    <li></li><li>
-</li>
-    <li>Har den andre forelderen rett til foreldrepenger: <strong>Nei</strong>
-</li>
-    <li>
-</li>
-    <li>
-</li>
-    <li>
-</li>
-    <li>Har orientert den andre forelderen om søknaden: <strong>Nei</strong>
-</li></ul>
+    <li></li><li></li>
+    <li>Har den andre forelderen rett til foreldrepenger: <strong>Nei</strong></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>Har orientert den andre forelderen om søknaden: <strong>Nei</strong></li></ul>
 </div>
 <div class="no-page-break">
 ## Din plan
 Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
 </div>
 <div class="no-page-break">
-### Periode uten uttak 15.08.2025 - 18.08.2025
-<ul style="margin-top: 0;">
+<strong>Periode uten uttak 15.08.2025 - 18.08.2025</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
     <li></li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li><!-- Overføring -->
+    <li></li>
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -64,16 +54,14 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-### Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)
-<ul style="margin-top: 0;">
+<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li><!-- Overføring -->
+    <li></li>
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -83,16 +71,14 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-### Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)
-<ul style="margin-top: 0;">
+<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li><!-- Overføring -->
+    <li></li>
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -102,16 +88,14 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-### Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)
-<ul style="margin-top: 0;">
+<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
     <li></li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li><!-- Overføring -->
+    <li></li>
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -121,16 +105,14 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-### Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)
-<ul style="margin-top: 0;">
+<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li><!-- Overføring -->
+    <li></li>
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -140,16 +122,14 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-### Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)
-<ul style="margin-top: 0;">
+<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li><!-- Overføring -->
+    <li></li>
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -159,16 +139,14 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-### Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)
-<ul style="margin-top: 0;">
+<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li><!-- Overføring -->
+    <li></li>
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
