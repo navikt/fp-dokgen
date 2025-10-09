@@ -37,14 +37,13 @@ Du har søkt om endring fra og med {{norwegian-date uttaksplan.uttaksperioder.0.
 {{#each uttaksperioder}}
 <div class="no-page-break">
 {{#if (and (eq type "utsettelse") (eq årsak "FRI") (eq morsAktivitetIPerioden undefined))}}
-### Periode uten uttak {{norwegian-date fom}} - {{norwegian-date tom}}
+<strong>Periode uten uttak {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
 {{else if konto}}
-### {{> konto-label}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} virkedager)
+<strong>{{> konto-label}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} virkedager)</strong>
 {{else}}
-### Utsettelse {{norwegian-date fom}} - {{norwegian-date tom}}
+<strong>Utsettelse {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
 {{/if}}
-
-<ul style="margin-top: 0;">
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>{{#if (and konto morsAktivitetIPerioden)}}Hvilken del av foreldrepengene tas ut: {{konto}} MED AKTIVITETSKRAV{{/if}}</li>
     <li>{{#if morsAktivitetIPerioden}}Mors aktivitet i perioden: {{> mors-aktivitet}}{{/if}}</li>

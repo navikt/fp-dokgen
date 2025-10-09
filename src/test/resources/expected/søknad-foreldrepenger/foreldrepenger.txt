@@ -13,10 +13,8 @@ Hva søker du som: Mor
     <li></li>
     <li></li>
     <li></li>
-    <li>
-</li>
-    <li>
-</li>
+    <li></li>
+    <li></li>
     <li></li>
     <li>Antall barn: 1</li>
 </ul>
@@ -47,8 +45,7 @@ Nav har hentet opplysninger fra Arbeidsgiver- og arbeidstakerregisteret (AA-regi
 ## Informasjon om frilansoppdrag
 <ul>
     <li>Startet som frilanser: 01.09.2025</li>
-    <li>Jobber fortsatt som frilanser: <strong>Ja</strong>
-</li>
+    <li>Jobber fortsatt som frilanser: <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -57,34 +54,26 @@ Nav har hentet opplysninger fra Arbeidsgiver- og arbeidstakerregisteret (AA-regi
     <li>Navn: Fornavn annenforelder  Etternavn annenforelder</li>
     <li>Fødselsnummer: 04479417895</li>
     <li></li>
-    <li></li><li>Er dere sammen om omsorgen for barnet: <strong>Nei, jeg har aleneomsorg</strong>
-</li>
-    <li>Har den andre forelderen rett til foreldrepenger: <strong>Ja</strong>
-</li>
-    <li>
-</li>
-    <li>
-</li>
-    <li>
-</li>
-    <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong>
-</li></ul>
+    <li></li><li>Er dere sammen om omsorgen for barnet: <strong>Nei, jeg har aleneomsorg</strong></li>
+    <li>Har den andre forelderen rett til foreldrepenger: <strong>Ja</strong></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li></ul>
 </div>
 <div class="no-page-break">
 ## Din plan
 Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
 </div>
 <div class="no-page-break">
-### Utsettelse 01.09.2025 - 19.09.2025
-<ul style="margin-top: 0;">
+<strong>Utsettelse 01.09.2025 - 19.09.2025</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
     <li>Mors aktivitet i perioden: Arbeid</li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li><!-- Overføring -->
+    <li></li>
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -94,16 +83,14 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-### Periode uten uttak 01.09.2025 - 19.09.2025
-<ul style="margin-top: 0;">
+<strong>Periode uten uttak 01.09.2025 - 19.09.2025</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
     <li></li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li><!-- Overføring -->
+    <li></li>
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -113,16 +100,14 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-### Fedrekvote 15.09.2025 - 26.09.2025 (10 virkedager)
-<ul style="margin-top: 0;">
+<strong>Fedrekvote 15.09.2025 - 26.09.2025 (10 virkedager)</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
     <li></li>
-    <li>Skal annen forelder ha foreldrepenger i samme periode: <strong>Nei</strong>
-</li>
+    <li>Skal annen forelder ha foreldrepenger i samme periode: <strong>Nei</strong></li>
     <li>Din prosent med foreldrepenger: 100.0</li>
-    <li>Skal bruke flerbarnsdager: <strong>Nei</strong>
-</li><!-- Overføring -->
+    <li>Skal bruke flerbarnsdager: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -132,16 +117,14 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-### Fellesperiode 15.09.2025 - 26.09.2025 (10 virkedager)
-<ul style="margin-top: 0;">
+<strong>Fellesperiode 15.09.2025 - 26.09.2025 (10 virkedager)</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FELLESPERIODE MED AKTIVITETSKRAV</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li><!-- Overføring -->
+    <li></li>
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -151,16 +134,14 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-### Fellesperiode 15.09.2025 - 26.09.2025 (10 virkedager)
-<ul style="margin-top: 0;">
+<strong>Fellesperiode 15.09.2025 - 26.09.2025 (10 virkedager)</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
     <li></li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li><!-- Overføring -->
+    <li></li>
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -170,18 +151,15 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-### Fellesperiode 26.09.2025 - 15.01.2026 (80 virkedager)
-<ul style="margin-top: 0;">
+<strong>Fellesperiode 26.09.2025 - 15.01.2026 (80 virkedager)</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Hvilken del av foreldrepengene tas ut: FELLESPERIODE MED AKTIVITETSKRAV</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li> <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med delvis arbeid: <strong>Ja</strong>
-</li>
+    <li></li>
+    <li></li> <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med delvis arbeid: <strong>Ja</strong></li>
     <li>Hvor skal du jobbe: Kåre og Anne-Ma&#x27;s snekker og dryss AS (12312312)</li><!-- TODO: Alltid orgnumre.[0] også.. -->
     <li></li>
     <li></li>
@@ -196,18 +174,15 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-### Foreldrepenger før fødsel 20.03.2026 - 15.10.2026 (150 virkedager)
-<ul style="margin-top: 0;">
+<strong>Foreldrepenger før fødsel 20.03.2026 - 15.10.2026 (150 virkedager)</strong>
+<ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
     <li></li>
-    <li>
-</li>
     <li></li>
-    <li>
-</li> <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med delvis arbeid: <strong>Ja</strong>
-</li>
+    <li></li>
+    <li></li> <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med delvis arbeid: <strong>Ja</strong></li>
     <li>Hvor skal du jobbe: (987654321)</li><!-- TODO: Alltid orgnumre.[0] også.. -->
     <li></li>
     <li></li>

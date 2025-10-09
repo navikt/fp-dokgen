@@ -3,15 +3,15 @@
 ## Opplysninger om barnet eller barna
 {{#with barn}}
 <ul>
-    <li>{{#if fødselsdato}}Fødselsdato: {{norwegian-date fødselsdato}}{{/if}}</li>
-    <li>{{#if termindato}}Termindato: {{norwegian-date termindato}}{{/if}}</li>
-    <li>{{#if terminbekreftelseDato}}Terminbekreftelse er datert: {{norwegian-date terminbekreftelseDato}}{{/if}}</li>
+    <li>{{> utils/tekst-dato-svar value=fødselsdato label="Fødselsdato"}}</li>
+    <li>{{> utils/tekst-dato-svar value=termindato label="Termindato"}}</li>
+    <li>{{> utils/tekst-dato-svar value=terminbekreftelseDato label="Terminbekreftelse er datert"}}</li>
     <li>{{#if fødselsdatoer.length}}{{#if (eq fødselsdatoer.length 1)}}Fødselsdato: {{norwegian-date fødselsdatoer.[0]}}{{else}}Fødselsdatoer:{{#each fødselsdatoer}}{{norwegian-date this}}{{#unless @last}}, {{/unless}}{{/each}}{{/if}}{{/if}}</li>
-    <li>{{#if adopsjonsdato}}Adopsjonsdato: {{norwegian-date ankomstdato}}{{/if}}</li>
-    <li>{{#if ankomstdato}}Ankomstdato: {{norwegian-date ankomstdato}}{{/if}}</li>
+    <li>{{> utils/tekst-dato-svar value=adopsjonsdato label="Adopsjonsdato"}}</li>
+    <li>{{> utils/tekst-dato-svar value=ankomstdato label="Ankomstdato"}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=adopsjonAvEktefellesBarn label="Adopsjon av ektefellens barn"}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=søkerAdopsjonAlene label="Søker adopsjon alene"}}</li>
-    <li>{{#if foreldreansvarsdato}}Foreldreansvar dato: {{norwegian-date foreldreansvarsdato}}{{/if}}</li>
+    <li>{{> utils/tekst-dato-svar value=foreldreansvarsdato label="Foreldreansvar dato"}}</li>
     <li>{{#if antallBarn}}Antall barn: {{antallBarn}}{{/if}}</li>
 </ul>
 {{/with}}
