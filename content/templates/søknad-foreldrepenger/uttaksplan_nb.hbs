@@ -12,7 +12,7 @@ Du har søkt om endring fra og med {{norwegian-date uttaksplan.uttaksperioder.0.
 {{~#*inline "konto-label"~}}
     {{#switch konto}}
         {{~#case "MØDREKVOTE"~}}Mødrekvote{{~/case~}}
-        {{~#case "FEDREKVOTE"~}}Fedrekvote{{~/case~}}
+        {{~#case "FEDREKVOTE"~}}{{#if (and (eq useMedmorFilter true) (eq ../rolle "MEDMOR"))}}Medmorkvote{{else}}Fedrekvote{{/if}}{{~/case~}}
         {{~#case "FELLESPERIODE"~}}Fellesperiode{{~/case~}}
         {{~#case "FORELDREPENGER"~}}Foreldrepenger{{~/case~}}
         {{~#case "FORELDREPENGER_FØR_FØDSEL"~}}Foreldrepenger før fødsel{{~/case~}}
@@ -38,17 +38,19 @@ Du har søkt om endring fra og med {{norwegian-date uttaksplan.uttaksperioder.0.
 <div class="no-page-break">
 {{#if (and (eq type "utsettelse") (eq årsak "FRI") (eq morsAktivitetIPerioden undefined))}}
 <strong>Periode uten uttak {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
+{{else if (and konto (eq type "overføring"))}}
+<strong>Overføring av {{> konto-label useMedmorFilter=false}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} virkedager)</strong>
 {{else if konto}}
-<strong>{{> konto-label}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} virkedager)</strong>
+<strong>{{> konto-label useMedmorFilter=true}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} virkedager)</strong>
 {{else}}
 <strong>Utsettelse {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
 {{/if}}
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>{{#if (and konto morsAktivitetIPerioden)}}Hvilken del av foreldrepengene tas ut: {{konto}} MED AKTIVITETSKRAV{{/if}}</li>
-    <li>{{#if morsAktivitetIPerioden}}Mors aktivitet i perioden: {{> mors-aktivitet}}{{/if}}</li>
+    <li>{{#if (and konto morsAktivitetIPerioden)}}Hvilken del av foreldrepengene tas ut: {{konto}} {{#eq morsAktivitetIPerioden "IKKE_OPPGITT"}}UTEN{{else}}MED{{/eq}} AKTIVITETSKRAV{{/if}}</li>
+    <li>{{#if (and morsAktivitetIPerioden (neq morsAktivitetIPerioden "IKKE_OPPGITT"))}}Mors aktivitet i perioden: {{> mors-aktivitet}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerSamtidigUttak label="Skal annen forelder ha foreldrepenger i samme periode"}}</li>
-    <li>{{#if samtidigUttakProsent}}Din prosent med foreldrepenger: {{samtidigUttakProsent}}{{/if}}</li>
+    <li>{{#if samtidigUttakProsent}}Din prosent med foreldrepenger: {{trim-decimal samtidigUttakProsent}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerFlerbarnsdager label="Skal bruke flerbarnsdager"}}</li>
 {{~#with gradering}} <!-- Gradering -->
     <li>{{> utils/sporsmal-svar-ja-nei value=gradering label="Skal kombinere foreldrepengene med delvis arbeid"}}</li>
