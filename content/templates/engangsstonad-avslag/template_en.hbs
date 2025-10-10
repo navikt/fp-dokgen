@@ -15,6 +15,9 @@ You are not entitled to a lump-sum grant because you were not a member of the Na
     {{#eq avslagMedlemskap  "IKKE_MEDL_ETTER_OVERTAGELSE"}}
 You are not entitled to a lump-sum grant because you were not a member of the National Insurance Scheme at the time when you assumed care of your {{#eq antallBarn 1}}child{{else}}children{{/eq}}.
     {{/eq}}
+    {{#eq avslagMedlemskap  "IKKE_MEDL_FORUTGÅENDE"}}
+You are not entitled to a lump-sum grant because you have not been a member of the National Insurance Scheme for 12 months before{{#gjelderFødsel}} the due date{{else}} the care takeover{{/gjelderFødsel}}.
+    {{/eq}}
 {{/if}}
 {{~#switch avslagÅrsak}}
     {{#case "SØKER_ER_UTVANDRET"}}
@@ -35,7 +38,7 @@ There is no information that indicates that you work or have family who support 
 You are not considered a member of the National Insurance Scheme, because the periods you stay abroad are longer than the periods you stay in Norway.
     {{/case}}
     {{#case "SØKER_INNFLYTTET_FOR_SENT"}}
-You have not been a member of the National Insurance Scheme for the required 12 months.
+{{#if medlemskapFom}}We have information that you moved to Norway on {{medlemskapFom}}.{{else}}We have information that you moved to Norway during the period.{{/if}}
     {{/case}}
     {{#case "IKKE_ALENEOMSORG"}}
 You are not entitled to a lump-sum grant because you do not have sole care of your {{#eq antallBarn 1}}child{{else}}children{{/eq}}.
