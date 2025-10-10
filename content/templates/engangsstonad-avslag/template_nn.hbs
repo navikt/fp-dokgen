@@ -15,6 +15,9 @@ Du har ikkje rett til eingongsstønad fordi du ikkje var medlem i folketrygda p�
     {{#eq avslagMedlemskap  "IKKE_MEDL_ETTER_OVERTAGELSE"}}
 Du har ikkje rett til eingongsstønad fordi du ikkje var medlem i folketrygda på det tidspunktet då du tok over omsorga for {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}}.
     {{/eq}}
+    {{#eq avslagMedlemskap  "IKKE_MEDL_FORUTGÅENDE"}}
+Du har ikkje rett til eingongsstønad fordi du ikkje har vore medlem av folketrygda i 12 månader før {{#gjelderFødsel}} termindato{{else}} omsorgsovertakinga{{/gjelderFødsel}}.
+    {{/eq}}
 {{/if}}
 {{~#switch avslagÅrsak}}
     {{#case "SØKER_ER_UTVANDRET"}}
@@ -35,7 +38,7 @@ Vi har ikkje opplysningar om at du arbeider eller har familie som forsørgjer de
 Du blir ikkje rekna som medlem fordi du bur meir i utlandet enn i Noreg.
     {{/case}}
     {{#case "SØKER_INNFLYTTET_FOR_SENT"}}
-Du har ikkje rett til eingongsstønad fordi du ikkje har vært medlem av folketrygda i 12 måneder.
+{{#if medlemskapFom}}Vi har opplysningar om at du flytta til Noreg {{medlemskapFom}}.{{else}}Vi har opplysningar om at du flytta til Noreg i perioden.{{/if}}
     {{/case}}
     {{#case "IKKE_ALENEOMSORG"}}
 Du har ikkje rett til eingongsstønad fordi du ikkje har åleineomsorga for {{#eq antallBarn 1}}barnet ditt{{else}}barna dine{{/eq}}.
