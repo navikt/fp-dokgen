@@ -12,10 +12,8 @@ Fødselsnummer: 17519633574</br>
     <li></li>
     <li></li>
     <li></li>
-    <li>
-</li>
-    <li>
-</li>
+    <li></li>
+    <li></li>
     <li></li>
     <li></li>
 </ul>
@@ -28,7 +26,7 @@ Fødselsnummer: 17519633574</br>
 </div>
 <div class="no-page-break">
 ## Mine arbeidsforhold
-Nav har hentet opplysninger fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse opplysningene ble vist i søknaden da du sendte den inn. Nav henter informasjon fra registeret på nytt når arbeidsgiver sender inntektsmeldingen.
+Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden.
 ### NAV Familie og Pensjonsytelser Oslo (987654321)
 <ul>
     <li>Periode: 11.01.2024 – Pågående</li>
@@ -51,7 +49,7 @@ Nav har hentet opplysninger fra Arbeidsgiver- og arbeidstakerregisteret (AA-regi
 <div class="no-page-break">
 ## Tilretteleggingsbehov
 <div class="no-page-break">
-Tilretteleggingsbehov for NAV Familie og Pensjonsytelser Oslo (987654321)
+Tilretteleggingsbehov hos NAV Familie og Pensjonsytelser Oslo (987654321)
 <ul>
     <li>Jeg har behov for tilrettelegging fra og med 24.09.2025</li><li>Arbeidsgiver kan tilrettelegge fra 24.09.2025. Jeg kan jobbe i 40 prosent stilling.</li><li></li>
     <li></li>
