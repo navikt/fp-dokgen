@@ -20,19 +20,6 @@ Fødselsnummer: 3456789</br>
 </ul>
 </div>
 <div class="no-page-break">
-## Informasjon om annen forelder
-<ul>
-    <li>Navn: Fornavn annenforelder  Etternavn annenforelder</li>
-    <li>Fødselsnummer: 27487816634</li>
-    <li></li>
-    <li></li><li></li>
-    <li>Har den andre forelderen rett til foreldrepenger: <strong>Nei</strong></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li>Har orientert den andre forelderen om søknaden: <strong>Nei</strong></li></ul>
-</div>
-<div class="no-page-break">
 ## Din plan
 Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
 </div>
