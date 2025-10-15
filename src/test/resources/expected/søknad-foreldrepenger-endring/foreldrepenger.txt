@@ -57,7 +57,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
+    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
@@ -74,7 +74,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
+    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
@@ -108,7 +108,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
+    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
@@ -125,7 +125,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
+    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
@@ -142,7 +142,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: FORELDREPENGER MED AKTIVITETSKRAV</li>
+    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
