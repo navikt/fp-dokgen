@@ -4,7 +4,7 @@
 {{#with annenForelder}}
 
 <ul>
-    <li>Navn: {{{fornavn}}} {{{mellomnavn}}} {{{etternavn}}}</li>
+    <li>Navn: {{{format-text fornavn toLower=true capitalizeFirst=true}}} {{{format-text mellomnavn toLower=true capitalizeFirst=true}}} {{{format-text etternavn toLower=true capitalizeFirst=true}}}</li>
     <li>Fødselsnummer{{#eq type "utenlandsk"}} eller D-nummer{{/eq}}: {{fnr}}</li>
     <li>{{#if bostedsland}}Den andre forelderens fødselsnummer er ikke fra Norge{{/if}}</li>
     <li>{{#if bostedsland}}Hvor bor den andre forelderen: {{land-norsk bostedsland}}{{/if}}</li>

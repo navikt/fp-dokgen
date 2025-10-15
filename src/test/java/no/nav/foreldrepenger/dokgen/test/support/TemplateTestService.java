@@ -30,6 +30,7 @@ import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.CaseHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.CountryCodeHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.DivideHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.FormatKronerHelper;
+import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.FormatTextHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.InArrayHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.NorwegianDateHelper;
 import no.nav.foreldrepenger.dokgen.test.handlebarshelpers.NorwegianDatetimeHelper;
@@ -62,6 +63,7 @@ public final class TemplateTestService {
         HANDLEBARS.registerHelper("in-array", new InArrayHelper());
         HANDLEBARS.registerHelper("divide", new DivideHelper());
         HANDLEBARS.registerHelper("format-kroner", new FormatKronerHelper());
+        HANDLEBARS.registerHelper("format-text", new FormatTextHelper());
         HANDLEBARS.registerHelper("thousand-seperator", new ThousandSeperatorHelper());
         HANDLEBARS.registerHelper("thousand-seperator-double", new ThousandSeperatorHelperDouble());
         HANDLEBARS.registerHelper("trim-decimal", new TrimDecimalHelper());
