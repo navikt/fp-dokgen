@@ -1,6 +1,13 @@
 {
   "mottattdato": "2025-09-30T10:15:30+01:00",
   "språkkode": "NB",
+  "søkerinfo": {
+    "navn": {
+      "fornavn": "Per",
+      "etternavn": "Oppblåst"
+    },
+    "fnr": "987654321"
+  },
   "barn":
   {
     "type": "termin",

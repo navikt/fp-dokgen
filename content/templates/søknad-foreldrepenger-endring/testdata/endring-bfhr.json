@@ -4,7 +4,11 @@
   "rolle": "FAR",
   "språkkode": "NB",
   "søkerinfo": {
-    "navn": "fornavn mellomnavn etternavn",
+    "navn": {
+      "fornavn": "Per",
+      "mellomnavn": "Sykelig",
+      "etternavn": "Oppblåst"
+    },
     "fnr": "3456789"
   },
   "barn": {

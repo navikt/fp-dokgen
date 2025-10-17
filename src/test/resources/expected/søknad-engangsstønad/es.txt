@@ -1,8 +1,8 @@
 # Kvittering på søknad om engangsstønad
 Mottatt: 30.09.2025 10:15
 ## Opplysninger om søker
-Navn: </br>
-Fødselsnummer: </br>
+Navn: Per Sykelig Oppblåst</br>
+Fødselsnummer: 987654321</br>
 <div class="no-page-break">
 ## Opplysninger om barnet eller barna
 <ul>
@@ -12,10 +12,8 @@ Fødselsnummer: </br>
     <li></li>
     <li></li>
     <li></li>
-    <li>
-</li>
-    <li>
-</li>
+    <li></li>
+    <li></li>
     <li></li>
     <li>Antall barn: 1</li>
 </ul>
@@ -24,5 +22,6 @@ Fødselsnummer: </br>
 ## Informasjon om opphold i utlandet
 <ul>
 <li>De siste 12 månedene bodde du i Norge</li>
-<li>De neste 12 månedene skal du bo i Norge</li></ul>
+<li>De neste 12 månedene skal du bo i Norge</li>
+</ul>
 </div>

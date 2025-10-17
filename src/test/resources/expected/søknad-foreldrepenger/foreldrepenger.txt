@@ -2,7 +2,7 @@
 Mottatt: 03.12.2011 10:15
 ## Opplysninger om søker
 Navn: Per Sykelig Oppblåst</br>
-Fødselsnummer: 17519633574</br>
+Fødselsnummer: 987654321</br>
 Hva søker du som: Mor
 <div class="no-page-break">
 ## Opplysninger om barnet eller barna
