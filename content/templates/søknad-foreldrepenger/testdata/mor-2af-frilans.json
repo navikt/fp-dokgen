@@ -3,8 +3,12 @@
   "rolle": "MOR",
   "språkkode": "NB",
   "søkerinfo": {
-    "navn": "Per Sykelig Oppblåst",
-    "fnr": "17519633574",
+    "navn": {
+      "fornavn": "Per",
+      "mellomnavn": "Sykelig",
+      "etternavn": "Oppblåst"
+    },
+    "fnr": "987654321",
     "arbeidsforhold": [
       {
         "navn": "NAV Familie og Pensjonsytelser Oslo",
