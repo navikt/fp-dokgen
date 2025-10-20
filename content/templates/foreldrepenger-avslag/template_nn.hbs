@@ -44,10 +44,53 @@
 {{/eq}}
 
 
-{{#in-array (array "1031" "1033") avslagsårsak}}
+{{#eq avslagsårsak "1031"}}
+{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{>punkt}}Den andre forelderen har allereie fått utbetalt eingongsstønad. Derfor er søknaden din avslått.
+{{/in-array}}
+{{#eq relasjonskode "MOR"}}
+{{>punkt}}Du har allereie fått utbetalt eingongsstønad. Derfor er søknaden din avslått.
+{{/eq}}
+{{else}}
+{{>punkt}}Du har allereie fått utbetalt eingongsstønad. Derfor er søknaden din avslått.
+{{/if}}
+{{/eq}}
+
+{{#eq avslagsårsak "1033"}}
+{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
 {{>punkt}}Du har allereie fått utbetalt eingongsstønad. Derfor er søknaden din avslått.
 {{/in-array}}
+{{#eq relasjonskode "MOR"}}
+{{>punkt}}Den andre forelderen har allereie fått utbetalt eingongsstønad. Derfor er søknaden din avslått.
+{{/eq}}
+{{else}}
+{{>punkt}}Den andre forelderen har allereie fått utbetalt eingongsstønad. Derfor er søknaden din avslått.
+{{/if}}
+{{/eq}}
 
+{{#eq avslagsårsak "1032"}}
+{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{>punkt}}Den andre forelderen har allereie fått utbetalt foreldrepengar. Derfor er søknaden din avslått.
+{{/in-array}}
+{{#eq relasjonskode "MOR"}}
+{{>punkt}}Du har allereie fått utbetalt foreldrepengar. Derfor er søknaden din avslått.
+{{/eq}}
+{{else}}
+{{>punkt}}Du har allereie fått utbetalt foreldrepengar. Derfor er søknaden din avslått.
+{{/if}}
+{{/eq}}
+
+{{#eq avslagsårsak "1034"}}
+{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{>punkt}}Du har allereie fått utbetalt foreldrepengar. Derfor er søknaden din avslått.
+{{/in-array}}
+{{#eq relasjonskode "MOR"}}
+{{>punkt}}Den andre forelderen har allereie fått utbetalt foreldrepengar. Derfor er søknaden din avslått.
+{{/eq}}
+{{else}}
+{{>punkt}}Den andre forelderen har allereie fått utbetalt foreldrepengar. Derfor er søknaden din avslått.
+{{/if}}
+{{/eq}}
 
 {{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}{{#in-array (array "1027" "1029") avslagsårsak}}
 {{>punkt}}Du har ikkje rett til foreldrepengar fordi du ikkje er registrert som {{#eq relasjonskode "FAR"}}far{{/eq}}{{#eq relasjonskode "MEDMOR"}}medmor{{/eq}} til {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}}.

@@ -29,8 +29,10 @@
 * Du har ikke rett til foreldrepenger fordi vi ikke har opplysninger om at barnet er født.
 * Du har ikke rett til foreldrepenger fordi du adopterte barnet til ektefellen eller samboeren din etter at foreldrepengeperioden var avsluttet.
 * Du har ikke rett til foreldrepenger fra og med 16. april 2021 til og med 17. april 2021 fordi det ikke er flere dager igjen av foreldrepengeperioden.
+* Den andre forelderen har allerede fått utbetalt engangsstønad. Derfor er søknaden din avslått.
 * Du har allerede fått utbetalt engangsstønad. Derfor er søknaden din avslått.
-* Du har allerede fått utbetalt engangsstønad. Derfor er søknaden din avslått.
+* Den andre forelderen har allerede fått utbetalt foreldrepenger. Derfor er søknaden din avslått.
+* Du har allerede fått utbetalt foreldrepenger. Derfor er søknaden din avslått.
 * Du har ikke rett til foreldrepenger fordi du ikke er registrert som medmor til barnet.
 * Du har ikke rett til foreldrepenger fordi du ikke er registrert som medmor til barnet.
 * Du har ikke rett til foreldrepenger fra og med 26. april 2021 til og med 27. april 2021 fordi du ikke har omsorgen for barnet.
