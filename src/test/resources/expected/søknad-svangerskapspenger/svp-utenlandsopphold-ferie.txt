@@ -69,8 +69,6 @@ Tilretteleggingsbehov hos NAV Familie og Pensjonsytelser Oslo (987654321)
 <div class="no-page-break">
 ## Dokumentasjon
 <ul>
-<li>Skjema for tilrettelegging og omplassering ved graviditet
-        hos NAV Familie og Pensjonsytelser Oslo (987654321)
-     (lastet opp)</li>
+<li>Skjema for tilrettelegging og omplassering ved graviditet hos NAV Familie og Pensjonsytelser Oslo (987654321) (lastet opp)</li>
 </ul>
 </div>
