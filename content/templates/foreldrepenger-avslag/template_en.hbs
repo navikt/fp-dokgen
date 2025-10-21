@@ -45,10 +45,53 @@
 {{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}, because there are no more days left of the parental benefit period.
 {{/eq}}
 
+{{#eq avslagsårsak "1031"}}
+{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{>punkt}}The other parent has already received a lump-sum grant. Your application has therefore been denied.
+{{/in-array}}
+{{#eq relasjonskode "MOR"}}
+{{>punkt}}You have already received a lump-sum grant. Your application has therefore been denied.
+{{/eq}}
+{{else}}
+{{>punkt}}You have already received a lump-sum grant. Your application has therefore been denied.
+{{/if}}
+{{/eq}}
 
-{{#in-array (array "1031" "1033") avslagsårsak}}
+{{#eq avslagsårsak "1033"}}
+{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
 {{>punkt}}You have already received a lump-sum grant. Your application has therefore been denied.
 {{/in-array}}
+{{#eq relasjonskode "MOR"}}
+{{>punkt}}The other parent has already received a lump-sum grant. Your application has therefore been denied.
+{{/eq}}
+{{else}}
+{{>punkt}}The other parent has already received a lump-sum grant. Your application has therefore been denied.
+{{/if}}
+{{/eq}}
+
+{{#eq avslagsårsak "1032"}}
+{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{>punkt}}The other parent has already received parental benefit. Your application has therefore been denied.
+{{/in-array}}
+{{#eq relasjonskode "MOR"}}
+{{>punkt}}You have already received parental benefit. Your application has therefore been denied.
+{{/eq}}
+{{else}}
+{{>punkt}}You have already received parental benefit. Your application has therefore been denied.
+{{/if}}
+{{/eq}}
+
+{{#eq avslagsårsak "1034"}}
+{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{>punkt}}You have already received parental benefit. Your application has therefore been denied.
+{{/in-array}}
+{{#eq relasjonskode "MOR"}}
+{{>punkt}}The other parent has already received parental benefit. Your application has therefore been denied.
+{{/eq}}
+{{else}}
+{{>punkt}}The other parent has already received parental benefit. Your application has therefore been denied.
+{{/if}}
+{{/eq}}
 
 
 {{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}{{#in-array (array "1027" "1029") avslagsårsak}}
