@@ -1,0 +1,105 @@
+{
+  "søkerinfo": {
+    "fnr": "09470682830",
+    "navn": {
+      "fornavn": "Veldig",
+      "etternavn": "Innsjø"
+    },
+    "arbeidsforhold": [
+      {
+        "navn": "NAV Familie og Pensjonsytelser Oslo",
+        "orgnummer": "123456789",
+        "fom": "2024-01-11",
+        "stillingsprosent": 44.0
+      }
+    ]
+  },
+  "mottattdato": "2011-12-03T10:15:30+01:00",
+  "rolle": "MEDMOR",
+  "språkkode": "NB",
+  "barn": {
+    "type": "fødsel",
+    "antallBarn": 2,
+    "fødselsdato": "2025-06-01",
+    "termindato": "2025-07-31"
+  },
+  "annenForelder": {
+    "type": "norsk",
+    "fnr": "987654321",
+    "fornavn": "Smal",
+    "etternavn": "Julepresang",
+    "rettigheter": {
+      "harRettPåForeldrepenger": true,
+      "erInformertOmSøknaden": true,
+      "erAleneOmOmsorg": false
+    }
+  },
+  "dekningsgrad": "80",
+  "uttaksplan": {
+    "uttaksperioder": [
+      {
+        "type": "uttak",
+        "fom": "2025-09-18",
+        "tom": "2025-12-12",
+        "konto": "FEDREKVOTE",
+        "ønskerSamtidigUttak": false,
+        "ønskerFlerbarnsdager": true
+      },
+      {
+        "type": "uttak",
+        "fom": "2025-12-15",
+        "tom": "2025-12-31",
+        "konto": "FELLESPERIODE",
+        "morsAktivitetIPerioden": "ARBEID",
+        "ønskerSamtidigUttak": false,
+        "ønskerFlerbarnsdager": false
+      }
+    ]
+  },
+  "utenlandsopphold": [],
+  "vedlegg": [
+    {
+      "id": "V987704821629015839144354031808106500",
+      "file": {
+        "name": ""
+      },
+      "filename": "",
+      "uploaded": false,
+      "pending": false,
+      "type": "morsaktivitetdokumentasjon",
+      "skjemanummer": "I000132",
+      "innsendingsType": "AUTOMATISK",
+      "dokumenterer": {
+        "type": "UTTAK",
+        "perioder": [
+          {
+            "fom": "2025-12-15",
+            "tom": "2025-12-31"
+          }
+        ]
+      }
+    },
+    {
+      "id": "V21150728100107209382236066462898726334",
+      "file": {
+        "name": ""
+      },
+      "filename": "",
+      "uploaded": false,
+      "pending": false,
+      "type": "anneninntektDokumentasjon",
+      "skjemanummer": "I000044",
+      "innsendingsType": "SEND_SENERE",
+      "dokumenterer": {
+        "type": "OPPTJENING",
+        "perioder": [
+          {
+            "type": "ETTERLØNN_SLUTTPAKKE",
+            "fom": "2025-10-01",
+            "tom": "2025-11-01"
+          }
+        ]
+      }
+    }
+  ]
+}

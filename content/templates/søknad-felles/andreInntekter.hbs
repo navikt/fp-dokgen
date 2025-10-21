@@ -4,7 +4,7 @@
 ## Andre inntekter siste 10 måneder
 
 {{#each andreInntekterSiste10Mnd}}
-### {{#switch type}}
+<strong>{{~#switch type~}}
 {{~#case "ETTERLØNN_SLUTTPAKKE"~}}Etterlønn sluttpakke{{~/case~}}
 {{~#case "ETTERLØNN_ARBEIDSGIVER"~}}Etterlønn arbeidsgiver{{~/case~}}
 {{~#case "JOBB_I_UTLANDET"~}}Jobb i utlandet{{~/case~}}
@@ -14,11 +14,11 @@
 {{~#case "VENTELØNN_VARTPENGER"~}}Ventelønn vartepenger{{~/case~}}
 {{~#case "VENTELØNN"~}}Ventelønn{{~/case~}}
 {{~#case "VARTPENGER"~}}Vartpenger{{~/case~}}
-{{/switch}}
+{{~/switch~}}</strong>
 <ul>
     <li>{{#if arbeidsgiverNavn}}Arbeidsgiver: {{{arbeidsgiverNavn}}}{{/if}}</li>
     <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
-    <li>{{#if land}}Landet virksomheten er registrert i: {{land-norsk land}}{{/if}}</li> <!-- TODO: Map til land med ny helper-->
+    <li>{{#if land}}Landet virksomheten er registrert i: {{land-norsk land}}{{/if}}</li>
 </ul>
 {{/each}}
 </div>

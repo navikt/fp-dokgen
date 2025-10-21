@@ -27,7 +27,14 @@ class SøknadKvitteringTest {
 
     @Test
     void foreldrepenger_mor_2af_frilans_gradering_utsettelse() {
-        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-2af-frilans");
+        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-termin-2af-frilans-næring-andre-inntekter");
+        var expected = getExpected(Brevmal.FORELDREPENGER_SØKNAD, "foreldrepenger-fl-sn-andre.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    void foreldrepenger_mor_af() {
+        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-1-AF-fødsel");
         var expected = getExpected(Brevmal.FORELDREPENGER_SØKNAD, "foreldrepenger.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }

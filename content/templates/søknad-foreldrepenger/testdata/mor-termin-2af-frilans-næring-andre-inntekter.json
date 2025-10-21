@@ -25,10 +25,26 @@
       }
     ]
   },
+  "egenNæring": {
+    "næringstype": "FISKE",
+    "registrertILand": "SE",
+    "fom": "2025-10-01",
+    "næringsinntekt": "329000",
+    "harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene": true,
+    "tom": "2025-10-31",
+    "oppstartsdato": "2023-11-01"
+  },
   "frilans": {
     "oppstart": "2025-09-01",
     "jobberFremdelesSomFrilans": true
   },
+  "andreInntekterSiste10Mnd": [
+    {
+      "type": "ETTERLØNN_SLUTTPAKKE",
+      "fom": "2025-10-01",
+      "tom": "2025-11-01"
+    }
+  ],
   "barn": {
     "type": "termin",
     "antallBarn": 1,

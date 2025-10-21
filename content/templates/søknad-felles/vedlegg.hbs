@@ -47,8 +47,14 @@
     {{~#case "I000146"~}}Dokumentasjon på inntekt{{~/case~}}
     {{~#case "I000060"~}}Annet{{~/case~}}
     {{/switch}}
+
     {{~#with dokumenterer.arbeidsforhold}}
-        {{#eq type "virksomhet"}}hos {{#arbeidsforhold-fra-orgnummer id ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{/eq}}
+        {{~#switch type~}}
+            {{~#case "virksomhet"}} hos {{#arbeidsforhold-fra-orgnummer id ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{~/case~}}
+            {{~#case "privat"}} hos privat arbeidsgiver med identifikator {{id}}{{~/case~}}
+            {{~#case "selvstendig"}} hos næringsvirksomheten{{~/case~}}
+            {{~#case "frilanser"}} hos frilansoppdraget{{~/case~}}
+        {{~/switch~}}
     {{/with~}}
     {{#switch innsendingsType}}
     {{~#case "LASTET_OPP"}} (lastet opp){{/case~}}
