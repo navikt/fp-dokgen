@@ -13,7 +13,7 @@
             {{~#case "ANNEN"~}}Annen{{~/case~}}
         {{~/switch~}}
     </li>
-    <li>Du startet som selvstendig næringsdrivende {{norwegian-date fom}}{{#if tom}} og sluttet {{norwegian-date tom}}.{{else}} og har forsatt virksomheten.{{/if}}</li>
+    <li>Du startet som selvstendig næringsdrivende {{norwegian-date fom}}{{#if tom}} og sluttet {{norwegian-date tom}}.{{else}} og jobber der fortsatt.{{/if}}</li>
     {{~#eq hattVarigEndringAvNæringsinntektSiste4Kalenderår true~}}
     <li>Varig endring i virksomheten eller arbeidssituasjonen min de siste fire årene: <strong>Ja</strong></li>
     <li>Fra {{norwegian-date varigEndringDato}} har du varig endring i næringsinntekten, hvor nye næringsinntekt er: {{varigEndringInntektEtterEndring}}.</li>
@@ -23,7 +23,7 @@
     <li>{{#if næringsinntekt}}Næringsinntekt: {{næringsinntekt}}{{/if}}</li>
     {{~/eq~}}
     <li>{{#if oppstartsdato}}Virksomheten ble startet: {{norwegian-date oppstartsdato}}{{/if}}</li>
-    <li>{{> utils/sporsmal-svar-ja-nei value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Er ny i arbeidslivet"}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Har du begynt å jobbe i løpet av de tre siste ferdigliknede årene"}}</li>
 </ul>
 </div>
 {{/with}}

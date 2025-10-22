@@ -64,7 +64,7 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
     <li>Virksomhetstype: Fisker</li>
     <li>Du startet som selvstendig næringsdrivende 01.10.2025 og sluttet 31.10.2025.</li><li>Varig endring i virksomheten eller arbeidssituasjonen min de siste fire årene: <strong>Nei</strong></li>
     <li>Næringsinntekt: 329000</li><li>Virksomheten ble startet: 01.11.2023</li>
-    <li>Er ny i arbeidslivet: <strong>Ja</strong></li>
+    <li>Har du begynt å jobbe i løpet av de tre siste ferdigliknede årene: <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
