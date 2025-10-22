@@ -83,7 +83,7 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
     <li>Fødselsnummer: 04479417895</li>
     <li></li>
     <li></li><li>Er dere sammen om omsorgen for barnet: <strong>Ja</strong></li>
-    <li>Har den andre forelderen rett til foreldrepenger: <strong>Ja</strong></li>
+    <li>Har den andre forelderen rett til foreldrepenger i Norge: <strong>Ja</strong></li>
     <li></li>
     <li></li>
     <li></li>
