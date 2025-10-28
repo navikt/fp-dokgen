@@ -46,13 +46,14 @@ Du har søkt om endring fra og med {{norwegian-date uttaksplan.uttaksperioder.0.
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerSamtidigUttak label="Skal annen forelder ha foreldrepenger i samme periode"}}</li>
     <li>{{#if samtidigUttakProsent}}Din prosent med foreldrepenger: {{trim-decimal samtidigUttakProsent}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerFlerbarnsdager label="Skal bruke flerbarnsdager"}}</li>
-{{~#with gradering}} <!-- Gradering -->
-    <li>{{> utils/sporsmal-svar-ja-nei value=gradering label="Skal kombinere foreldrepengene med delvis arbeid"}}</li>
+    <!-- Gradering -->
+    <li>{{> utils/sporsmal-svar-ja-nei value=ønskerGradering label="Skal kombinere foreldrepengene med arbeid"}}</li>
+{{#with gradering}}
     <li>{{#eq erArbeidstaker true}}{{#each orgnumre}}Hvor skal du jobbe: {{#arbeidsforhold-fra-orgnummer this ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{/each}}{{/eq}}</li><!-- TODO: Alltid orgnumre.[0] også.. -->
     <li>{{#eq erFrilanser true}}Jobber som: Frilanser{{/eq}}</li>
     <li>{{#eq erSelvstendig true}}Jobber som: Selvstendig næringsdrivende{{/eq}}</li>
     <li>{{#if stillingsprosent}}Oppgitt prosent i arbeid: {{trim-decimal stillingsprosent}}{{/if}}</li>
-{{/with~}}
+{{/with}}
     <!-- Overføring -->
     <li>
         {{~#eq type "overføring"}}
