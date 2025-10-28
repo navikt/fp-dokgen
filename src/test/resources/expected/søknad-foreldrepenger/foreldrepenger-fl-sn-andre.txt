@@ -91,17 +91,40 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
 </div>
 <div class="no-page-break">
 ## Din plan
-Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
+Du har søkt om endring fra og med 23.08.2025. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
 </div>
 <div class="no-page-break">
-<strong>Utsettelse 01.09.2025 - 19.09.2025</strong>
+<strong>Foreldrepenger før fødsel 23.08.2025 - 07.09.2025 (10 virkedager)</strong>
+<ul style="margin-top: -10px;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <!-- Gradering -->
+    <li></li>
+    <!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+<strong>Utsettelse 08.09.2025 - 19.09.2025</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
-    <li></li><!-- Overføring -->
+    <li></li>
+    <!-- Gradering -->
+    <li></li>
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -118,7 +141,10 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <li></li>
-    <li></li><!-- Overføring -->
+    <li></li>
+    <!-- Gradering -->
+    <li></li>
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -135,7 +161,10 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
     <li></li>
     <li>Skal annen forelder ha foreldrepenger i samme periode: <strong>Nei</strong></li>
     <li>Din prosent med foreldrepenger: 100</li>
-    <li>Skal bruke flerbarnsdager: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Skal bruke flerbarnsdager: <strong>Nei</strong></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -152,7 +181,10 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
-    <li></li><!-- Overføring -->
+    <li></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -169,7 +201,10 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <li></li>
-    <li></li><!-- Overføring -->
+    <li></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -186,13 +221,14 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
-    <li></li> <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med delvis arbeid: <strong>Ja</strong></li>
+    <li></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Ja</strong></li>
     <li>Hvor skal du jobbe: Kåre og Anne-Ma&#x27;s snekker og dryss AS (12312312)</li><!-- TODO: Alltid orgnumre.[0] også.. -->
     <li></li>
     <li></li>
     <li>Oppgitt prosent i arbeid: 50</li>
-<!-- Overføring -->
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -202,20 +238,21 @@ Du har søkt om endring fra og med 01.09.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger før fødsel 20.03.2026 - 15.10.2026 (150 virkedager)</strong>
+<strong>Fedrekvote 20.03.2026 - 15.10.2026 (150 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
     <li></li>
     <li></li>
     <li></li>
-    <li></li> <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med delvis arbeid: <strong>Ja</strong></li>
+    <li></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Ja</strong></li>
     <li>Hvor skal du jobbe: (987654321)</li><!-- TODO: Alltid orgnumre.[0] også.. -->
     <li></li>
     <li></li>
     <li>Oppgitt prosent i arbeid: 50</li>
-<!-- Overføring -->
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>

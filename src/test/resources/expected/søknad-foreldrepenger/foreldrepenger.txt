@@ -68,7 +68,10 @@ Du har søkt om 80 prosent foreldrepenger.
     <li></li>
     <li>Skal annen forelder ha foreldrepenger i samme periode: <strong>Nei</strong></li>
     <li></li>
-    <li>Skal bruke flerbarnsdager: <strong>Ja</strong></li><!-- Overføring -->
+    <li>Skal bruke flerbarnsdager: <strong>Ja</strong></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -85,7 +88,10 @@ Du har søkt om 80 prosent foreldrepenger.
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li>Skal annen forelder ha foreldrepenger i samme periode: <strong>Nei</strong></li>
     <li></li>
-    <li>Skal bruke flerbarnsdager: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Skal bruke flerbarnsdager: <strong>Nei</strong></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>

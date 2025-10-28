@@ -43,7 +43,8 @@
         "tom": "2025-12-12",
         "konto": "FEDREKVOTE",
         "ønskerSamtidigUttak": false,
-        "ønskerFlerbarnsdager": true
+        "ønskerFlerbarnsdager": true,
+        "ønskerGradering": false
       },
       {
         "type": "uttak",
@@ -52,7 +53,8 @@
         "konto": "FELLESPERIODE",
         "morsAktivitetIPerioden": "ARBEID",
         "ønskerSamtidigUttak": false,
-        "ønskerFlerbarnsdager": false
+        "ønskerFlerbarnsdager": false,
+        "ønskerGradering": false
       }
     ]
   },

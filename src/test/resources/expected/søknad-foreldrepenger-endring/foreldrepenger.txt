@@ -31,7 +31,10 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <li></li>
-    <li></li><!-- Overføring -->
+    <li></li>
+    <!-- Gradering -->
+    <li></li>
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -48,7 +51,10 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
-    <li></li><!-- Overføring -->
+    <li></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -65,7 +71,10 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
-    <li></li><!-- Overføring -->
+    <li></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -82,41 +91,10 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <li></li>
-    <li></li><!-- Overføring -->
     <li></li>
-    <!-- Opphold -->
-    <li></li>
-    <!-- Utsettelse -->
-    <li></li>
-    <li></li>
-</ul>
-</div>
-<div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
-<ul style="margin-top: -10px;">
-    <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
-    <li></li>
-    <li></li>
-    <li></li><!-- Overføring -->
-    <li></li>
-    <!-- Opphold -->
-    <li></li>
-    <!-- Utsettelse -->
-    <li></li>
-    <li></li>
-</ul>
-</div>
-<div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
-<ul style="margin-top: -10px;">
-    <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
-    <li></li>
-    <li></li>
-    <li></li><!-- Overføring -->
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -133,7 +111,50 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
-    <li></li><!-- Overføring -->
+    <li></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
+    <!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<ul style="margin-top: -10px;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
+    <!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<ul style="margin-top: -10px;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
+    <!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>

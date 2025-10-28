@@ -42,41 +42,47 @@
         "fom": "2026-03-27",
         "tom": "2026-09-24",
         "konto": "FORELDREPENGER",
-        "morsAktivitetIPerioden": "ARBEID"
+        "morsAktivitetIPerioden": "ARBEID",
+        "ønskerGradering": false
       },
       {
         "type": "uttak",
         "fom": "2026-03-27",
         "tom": "2026-09-24",
         "konto": "FORELDREPENGER",
-        "morsAktivitetIPerioden": "ARBEID"
-      },
-      {
-        "type": "uttak",
-        "fom": "2026-03-27",
-        "tom": "2026-09-24",
-        "konto": "FORELDREPENGER"
-      },
-      {
-        "type": "uttak",
-        "fom": "2026-03-27",
-        "tom": "2026-09-24",
-        "konto": "FORELDREPENGER",
-        "morsAktivitetIPerioden": "ARBEID"
+        "morsAktivitetIPerioden": "ARBEID",
+        "ønskerGradering": false
       },
       {
         "type": "uttak",
         "fom": "2026-03-27",
         "tom": "2026-09-24",
         "konto": "FORELDREPENGER",
-        "morsAktivitetIPerioden": "ARBEID"
+        "ønskerGradering": false
       },
       {
         "type": "uttak",
         "fom": "2026-03-27",
         "tom": "2026-09-24",
         "konto": "FORELDREPENGER",
-        "morsAktivitetIPerioden": "ARBEID"
+        "morsAktivitetIPerioden": "ARBEID",
+        "ønskerGradering": false
+      },
+      {
+        "type": "uttak",
+        "fom": "2026-03-27",
+        "tom": "2026-09-24",
+        "konto": "FORELDREPENGER",
+        "morsAktivitetIPerioden": "ARBEID",
+        "ønskerGradering": false
+      },
+      {
+        "type": "uttak",
+        "fom": "2026-03-27",
+        "tom": "2026-09-24",
+        "konto": "FORELDREPENGER",
+        "morsAktivitetIPerioden": "ARBEID",
+        "ønskerGradering": false
       }
     ]
   },

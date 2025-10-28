@@ -65,8 +65,14 @@
   "uttaksplan": {
     "uttaksperioder": [
       {
+        "type": "uttak",
+        "fom": "2025-08-23",
+        "tom": "2025-09-07",
+        "konto": "FORELDREPENGER_FØR_FØDSEL"
+      },
+      {
         "type": "utsettelse",
-        "fom": "2025-09-01",
+        "fom": "2025-09-08",
         "tom": "2025-09-19",
         "årsak": "FRI",
         "morsAktivitetIPerioden": "ARBEID",
@@ -86,20 +92,23 @@
         "konto": "FEDREKVOTE",
         "ønskerSamtidigUttak": false,
         "ønskerFlerbarnsdager": false,
-        "samtidigUttakProsent": 100.0
+        "samtidigUttakProsent": 100.0,
+        "ønskerGradering": false
       },
       {
         "type": "uttak",
         "fom": "2025-09-15",
         "tom": "2025-09-26",
         "konto": "FELLESPERIODE",
-        "morsAktivitetIPerioden": "ARBEID"
+        "morsAktivitetIPerioden": "ARBEID",
+        "ønskerGradering": false
       },
       {
         "type": "uttak",
         "fom": "2025-09-15",
         "tom": "2025-09-26",
-        "konto": "FELLESPERIODE"
+        "konto": "FELLESPERIODE",
+        "ønskerGradering": false
       },
       {
         "type": "uttak",
@@ -107,6 +116,7 @@
         "tom": "2026-01-15",
         "konto": "FELLESPERIODE",
         "morsAktivitetIPerioden": "ARBEID",
+        "ønskerGradering": true,
         "gradering": {
           "stillingsprosent": 50.0,
           "erArbeidstaker": true,
@@ -119,7 +129,8 @@
         "type": "uttak",
         "fom": "2026-03-20",
         "tom": "2026-10-15",
-        "konto": "FORELDREPENGER_FØR_FØDSEL",
+        "konto": "FEDREKVOTE",
+        "ønskerGradering": true,
         "gradering": {
           "stillingsprosent": 50.0,
           "erArbeidstaker": true,
