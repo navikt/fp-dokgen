@@ -103,8 +103,7 @@ Du har søkt om endring fra og med 23.08.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li></li>
-    <!-- Overføring -->
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -123,8 +122,7 @@ Du har søkt om endring fra og med 23.08.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li></li>
-    <!-- Overføring -->
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -143,8 +141,7 @@ Du har søkt om endring fra og med 23.08.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li></li>
-    <!-- Overføring -->
+    <li></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -163,8 +160,7 @@ Du har søkt om endring fra og med 23.08.2025. Planen viser kun endringene du ha
     <li>Din prosent med foreldrepenger: 100</li>
     <li>Skal bruke flerbarnsdager: <strong>Nei</strong></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
-    <!-- Overføring -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -183,8 +179,7 @@ Du har søkt om endring fra og med 23.08.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
-    <!-- Overføring -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -203,8 +198,7 @@ Du har søkt om endring fra og med 23.08.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li>
-    <!-- Overføring -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -228,7 +222,7 @@ Du har søkt om endring fra og med 23.08.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <li>Oppgitt prosent i arbeid: 50</li>
-    <!-- Overføring -->
+<!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -252,7 +246,7 @@ Du har søkt om endring fra og med 23.08.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <li>Oppgitt prosent i arbeid: 50</li>
-    <!-- Overføring -->
+<!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
