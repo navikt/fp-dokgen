@@ -45,10 +45,10 @@
 
 
 {{#eq avslagsårsak "1031"}}
-{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
 {{>punkt}}Den andre forelderen har allereie fått utbetalt eingongsstønad. Derfor er søknaden din avslått.
 {{/in-array}}
-{{#eq relasjonskode "MOR"}}
+{{#eq relasjonsRolleType "MORA"}}
 {{>punkt}}Du har allereie fått utbetalt eingongsstønad. Derfor er søknaden din avslått.
 {{/eq}}
 {{else}}
@@ -57,10 +57,10 @@
 {{/eq}}
 
 {{#eq avslagsårsak "1033"}}
-{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
 {{>punkt}}Du har allereie fått utbetalt eingongsstønad. Derfor er søknaden din avslått.
 {{/in-array}}
-{{#eq relasjonskode "MOR"}}
+{{#eq relasjonsRolleType "MORA"}}
 {{>punkt}}Den andre forelderen har allereie fått utbetalt eingongsstønad. Derfor er søknaden din avslått.
 {{/eq}}
 {{else}}
@@ -69,10 +69,10 @@
 {{/eq}}
 
 {{#eq avslagsårsak "1032"}}
-{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
 {{>punkt}}Den andre forelderen har allereie fått utbetalt foreldrepengar. Derfor er søknaden din avslått.
 {{/in-array}}
-{{#eq relasjonskode "MOR"}}
+{{#eq relasjonsRolleType "MORA"}}
 {{>punkt}}Du har allereie fått utbetalt foreldrepengar. Derfor er søknaden din avslått.
 {{/eq}}
 {{else}}
@@ -81,10 +81,10 @@
 {{/eq}}
 
 {{#eq avslagsårsak "1034"}}
-{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
 {{>punkt}}Du har allereie fått utbetalt foreldrepengar. Derfor er søknaden din avslått.
 {{/in-array}}
-{{#eq relasjonskode "MOR"}}
+{{#eq relasjonsRolleType "MORA"}}
 {{>punkt}}Den andre forelderen har allereie fått utbetalt foreldrepengar. Derfor er søknaden din avslått.
 {{/eq}}
 {{else}}
@@ -92,8 +92,8 @@
 {{/if}}
 {{/eq}}
 
-{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}{{#in-array (array "1027" "1029") avslagsårsak}}
-{{>punkt}}Du har ikkje rett til foreldrepengar fordi du ikkje er registrert som {{#eq relasjonskode "FAR"}}far{{/eq}}{{#eq relasjonskode "MEDMOR"}}medmor{{/eq}} til {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}}.
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}{{#in-array (array "1027" "1029") avslagsårsak}}
+{{>punkt}}Du har ikkje rett til foreldrepengar fordi du ikkje er registrert som {{#eq relasjonsRolleType "FARA"}}far{{/eq}}{{#eq relasjonsRolleType "MMOR"}}medmor{{/eq}} til {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}}.
 {{/in-array}}{{/in-array}}{{/if}}
 
 

@@ -48,8 +48,8 @@ Du hadde ikke rett til foreldrepenger fordi du adopterte {{#gt antallBarn 1}}bar
 {{/case}}
 
 {{#case (array "1027" "1029") }}
-{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
-Du hadde ikke rett til foreldrepenger fordi du ikke var registrert som {{#eq relasjonskode "FAR"}}far{{/eq}}{{#eq relasjonskode "MEDMOR"}}medmor{{/eq}} til {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}}.
+{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
+Du hadde ikke rett til foreldrepenger fordi du ikke var registrert som {{#eq relasjonsRolleType "FARA"}}far{{/eq}}{{#eq relasjonsRolleType "MMOR"}}medmor{{/eq}} til {{#eq antallBarn 1}}barnet{{/eq}}{{#eq antallBarn 0}}barnet eller barna{{/eq}}{{#gt antallBarn 1}}barna{{/gt}}.
 {{/in-array}}
 {{/case}}
 

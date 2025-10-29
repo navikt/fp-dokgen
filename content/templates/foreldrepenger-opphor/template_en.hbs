@@ -48,8 +48,8 @@ You are not entitled to parental benefit, because you adopted your spouse’s or
 {{/case}}
 
 {{#case (array "1027" "1029") }}
-{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
-You are not entitled to parental benefit, because you are not registered as the {{#eq antallBarn 1}}child’s{{/eq}}{{#eq antallBarn 0}}child’s or the children’s{{/eq}}{{#gt antallBarn 1}}children’s{{/gt}} {{#eq relasjonskode "FAR"}}father{{/eq}}{{#eq relasjonskode "MEDMOR"}}co-mother{{/eq}}.
+{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
+You are not entitled to parental benefit, because you are not registered as the {{#eq antallBarn 1}}child’s{{/eq}}{{#eq antallBarn 0}}child’s or the children’s{{/eq}}{{#gt antallBarn 1}}children’s{{/gt}} {{#eq relasjonsRolleType "FARA"}}father{{/eq}}{{#eq relasjonsRolleType "MMOR"}}co-mother{{/eq}}.
 {{/in-array}}
 {{/case}}
 

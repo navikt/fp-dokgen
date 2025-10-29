@@ -9,7 +9,7 @@
   },
   "fomStønadsdato": "01. januar 2021",
   "tomStønadsdato": "24. mai 2021",
-  "relasjonskode": "MEDMOR",
+  "relasjonsRolleType": "MMOR",
   "opphørDato": "24. mai 2021",
   "barnDødsdato": "10. mai 2021",
   "erSøkerDød": false,

@@ -46,10 +46,10 @@
 {{/eq}}
 
 {{#eq avslagsårsak "1031"}}
-{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
 {{>punkt}}The other parent has already received a lump-sum grant. Your application has therefore been denied.
 {{/in-array}}
-{{#eq relasjonskode "MOR"}}
+{{#eq relasjonsRolleType "MORA"}}
 {{>punkt}}You have already received a lump-sum grant. Your application has therefore been denied.
 {{/eq}}
 {{else}}
@@ -58,10 +58,10 @@
 {{/eq}}
 
 {{#eq avslagsårsak "1033"}}
-{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
 {{>punkt}}You have already received a lump-sum grant. Your application has therefore been denied.
 {{/in-array}}
-{{#eq relasjonskode "MOR"}}
+{{#eq relasjonsRolleType "MORA"}}
 {{>punkt}}The other parent has already received a lump-sum grant. Your application has therefore been denied.
 {{/eq}}
 {{else}}
@@ -70,10 +70,10 @@
 {{/eq}}
 
 {{#eq avslagsårsak "1032"}}
-{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
 {{>punkt}}The other parent has already received parental benefit. Your application has therefore been denied.
 {{/in-array}}
-{{#eq relasjonskode "MOR"}}
+{{#eq relasjonsRolleType "MORA"}}
 {{>punkt}}You have already received parental benefit. Your application has therefore been denied.
 {{/eq}}
 {{else}}
@@ -82,10 +82,10 @@
 {{/eq}}
 
 {{#eq avslagsårsak "1034"}}
-{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
 {{>punkt}}You have already received parental benefit. Your application has therefore been denied.
 {{/in-array}}
-{{#eq relasjonskode "MOR"}}
+{{#eq relasjonsRolleType "MORA"}}
 {{>punkt}}The other parent has already received parental benefit. Your application has therefore been denied.
 {{/eq}}
 {{else}}
@@ -94,8 +94,8 @@
 {{/eq}}
 
 
-{{#if relasjonskode}}{{#in-array (array "FAR" "MEDMOR") relasjonskode}}{{#in-array (array "1027" "1029") avslagsårsak}}
-{{>punkt}}You are not entitled to parental benefit, because you are not registered as the {{#eq antallBarn 1}}child’s{{/eq}}{{#eq antallBarn 0}}child’s or the children’s{{/eq}}{{#gt antallBarn 1}}children’s{{/gt}} {{#eq relasjonskode "FAR"}}father{{/eq}}{{#eq relasjonskode "MEDMOR"}}co-mother{{/eq}}.
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}{{#in-array (array "1027" "1029") avslagsårsak}}
+{{>punkt}}You are not entitled to parental benefit, because you are not registered as the {{#eq antallBarn 1}}child’s{{/eq}}{{#eq antallBarn 0}}child’s or the children’s{{/eq}}{{#gt antallBarn 1}}children’s{{/gt}} {{#eq relasjonsRolleType "FARA"}}father{{/eq}}{{#eq relasjonsRolleType "MMOR"}}co-mother{{/eq}}.
 {{/in-array}}{{/in-array}}{{/if}}
 
 
