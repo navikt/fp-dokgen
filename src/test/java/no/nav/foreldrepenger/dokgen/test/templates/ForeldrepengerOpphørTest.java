@@ -24,7 +24,7 @@ class ForeldrepengerOpphørTest {
     protected static final String AVSLAG_ÅRSAKER_LISTE = "avslagÅrsaker";
     protected static final String ER_SØKER_DØD = "erSøkerDød";
     protected static final String ANTALL_BARN = "antallBarn";
-    protected static final String RELASJONSKODE = "relasjonskode";
+    protected static final String RELASJONS_ROLLE_TYPE = "relasjonsRolleType";
 
     @Test
     void skal_generere_foreldrepenger_opphør_brevet_med_de_fleste_avslagsårsakene_på_bokmål() {
@@ -102,7 +102,7 @@ class ForeldrepengerOpphørTest {
     void test_kode_søker_1027_medmor_1_barn() {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1027");
-        testData.put(RELASJONSKODE, "MEDMOR");
+        testData.put(RELASJONS_ROLLE_TYPE, "MMOR");
         testData.put(ANTALL_BARN, 1);
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
@@ -113,7 +113,7 @@ class ForeldrepengerOpphørTest {
     void test_kode_søker_1027_far_2_barn() {
         var testData = opprettTestData();
         opprettÅrsaker(testData, "1027");
-        testData.put(RELASJONSKODE, "FAR");
+        testData.put(RELASJONS_ROLLE_TYPE, "FARA");
         testData.put(ANTALL_BARN, 2);
 
         var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
@@ -156,7 +156,7 @@ class ForeldrepengerOpphørTest {
         opprettFelles(testData);
         testData.put(ER_SØKER_DØD, false);
         testData.put(ANTALL_BARN, 2);
-        testData.put(RELASJONSKODE, "MEDMOR");
+        testData.put(RELASJONS_ROLLE_TYPE, "MMOR");
         testData.put("fomStønadsdato", STØNADSDATO_FOM);
         testData.put("tomStønadsdato", STØNADSDATO_TOM);
         testData.put("opphørDato", STØNADSDATO_TOM);

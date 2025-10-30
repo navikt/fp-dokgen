@@ -36,9 +36,6 @@
     "felles": {
       "$ref": "file:content/templates/schema_felles.json"
     },
-    "relasjonskode": {
-      "type": "string"
-    },
     "mottattDato": {
       "type": "string"
     },
@@ -66,6 +63,14 @@
     "avslåttePerioder": {
       "type": "array",
       "items": { "$ref": "#/$defs/avslåttPeriode" }
+    },
+    "relasjonsRolleType": {
+      "type": "string",
+      "enum": [
+        "MORA",
+        "FARA",
+        "MMOR"
+      ]
     }
   }
 }

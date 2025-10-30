@@ -7,7 +7,7 @@
     "saksnummer": "123456789",
     "erUtkast": false
   },
-  "relasjonskode": "MEDMOR",
+  "relasjonsRolleType": "MMOR",
   "mottattDato": "4. mai 2021",
   "gjelderFødsel": true,
   "barnErFødt": true,

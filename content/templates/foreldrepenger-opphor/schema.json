@@ -6,7 +6,7 @@
   "required": [
     "felles",
     "erSøkerDød",
-    "relasjonskode",
+    "relasjonsRolleType",
     "antallBarn",
     "avslagÅrsaker",
     "klagefristUker",
@@ -18,9 +18,6 @@
     },
     "erSøkerDød": {
       "type": "boolean"
-    },
-    "relasjonskode": {
-      "type": "string"
     },
     "fomStønadsdato": {
       "type": "string"
@@ -55,6 +52,14 @@
     },
     "lovhjemmelForAvslag": {
       "type": "string"
+    },
+    "relasjonsRolleType": {
+      "type": "string",
+      "enum": [
+        "MORA",
+        "FARA",
+        "MMOR"
+      ]
     }
   }
 }
