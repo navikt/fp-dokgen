@@ -1,0 +1,68 @@
+{{#if vedlegg}}
+<div class="no-page-break">
+
+## Dokumentasjon
+<ul>
+{{#each vedlegg}}
+<li>
+    {{~#switch skjemanummer}}
+    {{~#case "I000007"~}}Inntektsopplysningar om sjølvstendig næringsdrivande og/eller frilansarar som skal ha foreldrepengar eller svangerskapspengar{{~/case~}}
+    {{~#case "I000023"~}}Legeerklæring{{~/case~}}
+    {{~#case "I000032"~}}Resultatrekneskap{{~/case~}}
+    {{~#case "I000036"~}}Dokumentasjon av ferie{{~/case~}}
+    {{~#case "I000037"~}}Dokumentasjon av innlegging i helseinstitusjon{{~/case~}}
+    {{~#case "I000038"~}}Dokumentasjon av mors utdanning, arbeid eller sjukdom{{~/case~}}
+    {{~#case "I000039"~}}Dokumentasjon av militær- eller siviltjeneste{{~/case~}}
+    {{~#case "I000042"~}}Dokumentasjon av dato for overtakelse av omsorg{{~/case~}}
+    {{~#case "I000044"~}}Dokumentasjon av etterlønn/sluttvederlag{{~/case~}}
+    {{~#case "I000051"~}}Bekrefting på deltaking i kvalifiseringsprogrammet{{~/case~}}
+    {{~#case "I000061"~}}Bekrefting frå studiested/skule{{~/case~}}
+    {{~#case "I000062"~}}Bekrefting på venta fødselsdato{{~/case~}}
+    {{~#case "I000063"~}}Fødselsattest{{~/case~}}
+    {{~#case "I000066"~}}Kopi av likningsattest eller sjølvangivelse{{~/case~}}
+    {{~#case "I000065"~}}Bekrefting frå arbeidsgivar{{~/case~}}
+    {{~#case "I000109"~}}Skjema for tilrettelegging og omplassering ved graviditet{{~/case~}}
+    {{~#case "I000110"~}}Dokumentasjon av åleineomsorg{{~/case~}}
+    {{~#case "I000111"~}}Dokumentasjon av grunn for kvifor ein søkjer tilbake i tid{{~/case~}}
+    {{~#case "I000112"~}}Dokumentasjon av deltaking i introduksjonsprogrammet{{~/case~}}
+    {{~#case "I000114"~}}Uttale om tilbakekreving{{~/case~}}
+    {{~#case "I000116"~}}Bekrefting på øving eller teneste i Forsvaret eller Sivilforsvaret{{~/case~}}
+    {{~#case "I000117"~}}Bekrefting på tiltak i regi av Arbeids- og velferdsetaten{{~/case~}}
+    {{~#case "I000118"~}}Grunngjeving for sein søknad{{~/case~}}
+    {{~#case "I000119"~}}Uttale om tilbakebetaling{{~/case~}}
+    {{~#case "I000120"~}}Dokumentasjon på at mor er innlagd på sjukehus{{~/case~}}
+    {{~#case "I000121"~}}Dokumentasjon på at mor er sjuk{{~/case~}}
+    {{~#case "I000122"~}}Dokumentasjon på at far/medmor er innlagd på sjukehus{{~/case~}}
+    {{~#case "I000123"~}}Dokumentasjon på at far/medmor er sjuk{{~/case~}}
+    {{~#case "I000124"~}}Dokumentasjon på at barnet er innlagd på sjukehus{{~/case~}}
+    {{~#case "I000130"~}}Dokumentasjon på at mor kombinerer studium med arbeid, som til saman blir fulltid{{~/case~}}
+    {{~#case "I000131"~}}Dokumentasjon på at mor studerer på fulltid{{~/case~}}
+    {{~#case "I000132"~}}Dokumentasjon på at mor er i arbeid{{~/case~}}
+    {{~#case "I000133"~}}Dokumentasjon av mors deltaking i kvalifiseringsprogrammet{{~/case~}}
+    {{~#case "I000140"~}}Skattemelding{{~/case~}}
+    {{~#case "I000141"~}}Terminbekrefting{{~/case~}}
+    {{~#case "I000143"~}}Dokumentasjon på opphaldstillatelse{{~/case~}}
+    {{~#case "I000144"~}}Dokumentasjon på reiser til og frå Noreg{{~/case~}}
+    {{~#case "I000145"~}}Dokumentasjon på oppfølging i svangerskapet{{~/case~}}
+    {{~#case "I000146"~}}Dokumentasjon på inntekt{{~/case~}}
+    {{~#case "I000060"~}}Anna{{~/case~}}
+    {{/switch}}
+
+    {{~#with dokumenterer.arbeidsforhold}}
+        {{~#switch type~}}
+            {{~#case "virksomhet"}} hos {{#arbeidsforhold-fra-orgnummer id ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{~/case~}}
+            {{~#case "privat"}} hos privat arbeidsgivar med identifikator {{id}}{{~/case~}}
+            {{~#case "selvstendig"}} hos næringsverksemda{{~/case~}}
+            {{~#case "frilanser"}} hos frilansoppdraget{{~/case~}}
+        {{~/switch~}}
+    {{/with~}}
+    {{#switch innsendingsType}}
+    {{~#case "LASTET_OPP"}} (lasta opp){{/case~}}
+    {{~#case "SEND_SENERE"}} (sendast seinare){{/case~}}
+    {{~#case "AUTOMATISK"}} (opplysningar om mors arbeid blir henta frå Arbeidsgivar- og arbeidstakarregisteret){{/case~}}
+    {{/switch~}}
+</li>
+{{/each}}
+</ul>
+</div>
+{{/if}}

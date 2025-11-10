@@ -1,0 +1,9 @@
+## Information about the applicant
+{{#with søkerinfo}}
+Name: {{> søknad-felles/navn fornavn=navn.fornavn mellomnavn=navn.mellomnavn etternavn=navn.etternavn}}<br/>
+National identity number: {{fnr}}<br/>
+{{#if (and (eq inkluderRolle true) (neq ../rolle "FAR"))}}Applying as: {{#switch ../rolle}}
+    {{~#case "MOR"~}}Mother{{~/case~}}
+    {{~#case "MEDMOR"~}}Co-mother{{~/case~}}
+{{/switch}}{{/if}}
+{{/with}}

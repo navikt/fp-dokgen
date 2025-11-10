@@ -1,0 +1,32 @@
+<div class="no-page-break">
+
+## Tilretteleggingsbehov
+
+{{#each tilretteleggingsbehov}}
+<div class="no-page-break">
+
+{{#with arbeidsforhold}}
+Tilretteleggingsbehov hos {{#switch type}}
+    {{~#case "virksomhet"}}{{#arbeidsforhold-fra-orgnummer id ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{~/case~}}
+    {{~#case "privat"}}privat arbeidsgjevar {{id}}{{~/case~}}
+    {{~#case "selvstendig"}}næring{{~/case~}}
+    {{~#case "frilanser"~}}frilans{{~/case~}}
+{{/switch}}
+{{/with}}
+<ul>
+    <li>Eg har behov for tilrettelegging frå og med {{norwegian-date behovForTilretteleggingFom}}</li>
+    {{~#each tilrettelegginger~}}
+    <li>
+        {{~#switch type}}
+            {{~#case "hel"~}}Arbeidsgjevar kan tilretteleggje frå {{norwegian-date fom}}. Eg kan jobbe i opprinneleg stillingsprosent.{{~/case~}}
+            {{~#case "delvis"~}}Arbeidsgjevar kan tilretteleggje frå {{norwegian-date fom}}. Eg kan jobbe i {{trim-decimal stillingsprosent}} prosent stilling.{{~/case~}}
+            {{~#case "ingen"~}}Eg kan ikkje jobbe i stillinga mi og arbeidsgjevar kan ikkje tilretteleggje frå {{norwegian-date fom}}.{{~/case~}}
+        {{/switch~}}
+    </li>
+    {{~/each~}}
+    <li>{{#if risikofaktorer}}Risikofaktorar: {{risikofaktorer}}{{/if}}</li>
+    <li>{{#if tilretteleggingstiltak}}Tilretteleggingstiltak: {{tilretteleggingstiltak}}{{/if}}</li>
+</ul>
+</div>
+{{/each}}
+</div>

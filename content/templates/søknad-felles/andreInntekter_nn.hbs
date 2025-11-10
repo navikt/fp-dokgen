@@ -1,0 +1,25 @@
+{{#if andreInntekterSiste10Mnd}}
+<div class="no-page-break">
+
+## Andre inntekter siste 10 månader
+
+{{#each andreInntekterSiste10Mnd}}
+<strong>{{~#switch type~}}
+{{~#case "ETTERLØNN_SLUTTPAKKE"~}}Etterlønn sluttpakke{{~/case~}}
+{{~#case "ETTERLØNN_ARBEIDSGIVER"~}}Etterlønn arbeidsgivar{{~/case~}}
+{{~#case "JOBB_I_UTLANDET"~}}Jobb i utlandet{{~/case~}}
+{{~#case "LØNN_UNDER_UTDANNING"~}}Løn under utdanning{{~/case~}}
+{{~#case "MILITÆR_ELLER_SIVILTJENESTE"~}}Militær- eller siviltjeneste{{~/case~}}
+{{~#case "SLUTTPAKKE"~}}Sluttpakke{{~/case~}}
+{{~#case "VENTELØNN_VARTPENGER"~}}Venteløn vartpengar{{~/case~}}
+{{~#case "VENTELØNN"~}}Venteløn{{~/case~}}
+{{~#case "VARTPENGER"~}}Vartpengar{{~/case~}}
+{{~/switch~}}</strong>
+<ul>
+    <li>{{#if arbeidsgiverNavn}}Arbeidsgivar: {{{arbeidsgiverNavn}}}{{/if}}</li>
+    <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågåande{{/if}}</li>
+    <li>{{#if land}}Landet verksemda er registrert i: {{land-norsk land}}{{/if}}</li>
+</ul>
+{{/each}}
+</div>
+{{/if}}

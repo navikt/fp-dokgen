@@ -1,0 +1,158 @@
+# Receipt of application for change of parental benefit
+Received: 19.09.2025 10:15</br>
+Case number: 107
+## Information about the applicant
+Name: Per Sykelig Oppblåst<br/>
+National identity number: 3456789<br/>
+<div class="no-page-break">
+## Information about the child or children
+<ul>
+    <li>Date of birth: 29.08.2025</li>
+    <li>Due date: 29.08.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>Number of children: 1</li>
+</ul>
+</div>
+<div class="no-page-break">
+## Your plan
+You applied for a change from 15.08.2025. The plan shows only the changes you have applied for and not what you were previously granted.
+</div>
+<div class="no-page-break">
+<strong>Period without withdrawal 15.08.2025 - 18.08.2025</strong>
+<ul style="margin-top: -10px;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <!-- Gradering -->
+    <li></li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+<strong>Parental benefit 27.03.2026 - 24.09.2026 (130 business days)</strong>
+<ul style="margin-top: -10px;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Which part of the parental benefit is taken out: Parental benefit with activity requirement</li>
+    <li>Mother's activity during the period: Work</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <!-- Gradering -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+<strong>Parental benefit 27.03.2026 - 24.09.2026 (130 business days)</strong>
+<ul style="margin-top: -10px;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Which part of the parental benefit is taken out: Parental benefit with activity requirement</li>
+    <li>Mother's activity during the period: Work</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <!-- Gradering -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+<strong>Parental benefit 27.03.2026 - 24.09.2026 (130 business days)</strong>
+<ul style="margin-top: -10px;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <!-- Gradering -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+<strong>Parental benefit 27.03.2026 - 24.09.2026 (130 business days)</strong>
+<ul style="margin-top: -10px;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Which part of the parental benefit is taken out: Parental benefit with activity requirement</li>
+    <li>Mother's activity during the period: Work</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <!-- Gradering -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+<strong>Parental benefit 27.03.2026 - 24.09.2026 (130 business days)</strong>
+<ul style="margin-top: -10px;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Which part of the parental benefit is taken out: Parental benefit with activity requirement</li>
+    <li>Mother's activity during the period: Work</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <!-- Gradering -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+<strong>Parental benefit 27.03.2026 - 24.09.2026 (130 business days)</strong>
+<ul style="margin-top: -10px;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Which part of the parental benefit is taken out: Parental benefit with activity requirement</li>
+    <li>Mother's activity during the period: Work</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <!-- Gradering -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>

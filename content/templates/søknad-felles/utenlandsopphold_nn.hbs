@@ -1,0 +1,14 @@
+<div class="no-page-break">
+
+## Informasjon om opphald i utlandet
+<ul>
+{{#if utenlandsopphold}}
+{{~#each utenlandsopphold~}}
+<li>{{land-norsk landkode}}: {{norwegian-date fom}} - {{norwegian-date tom}}</li>
+{{~/each~}}
+{{~else~}}
+<li>Dei siste 12 månadene budde du i Noreg</li>
+<li>Dei neste 12 månadene skal du bu i Noreg</li>
+{{~/if}}
+</ul>
+</div>

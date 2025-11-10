@@ -1,0 +1,32 @@
+<div class="no-page-break">
+
+## Work accommodation needs
+
+{{#each tilretteleggingsbehov}}
+<div class="no-page-break">
+
+{{#with arbeidsforhold}}
+Work accommodation need at {{#switch type}}
+    {{~#case "virksomhet"}}{{#arbeidsforhold-fra-orgnummer id ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{~/case~}}
+    {{~#case "privat"}}private employer {{id}}{{~/case~}}
+    {{~#case "selvstendig"}}self-employed business{{~/case~}}
+    {{~#case "frilanser"~}}freelance{{~/case~}}
+{{/switch}}
+{{/with}}
+<ul>
+    <li>I have accommodation needs from {{norwegian-date behovForTilretteleggingFom}}</li>
+    {{~#each tilrettelegginger~}}
+    <li>
+        {{~#switch type}}
+            {{~#case "hel"~}}Employer can provide accommodation from {{norwegian-date fom}}. I can work in my original employment percentage.{{~/case~}}
+            {{~#case "delvis"~}}Employer can provide accommodation from {{norwegian-date fom}}. I can work {{trim-decimal stillingsprosent}} per cent of my position.{{~/case~}}
+            {{~#case "ingen"~}}I cannot work in my position and the employer cannot provide accommodation from {{norwegian-date fom}}.{{~/case~}}
+        {{/switch~}}
+    </li>
+    {{~/each~}}
+    <li>{{#if risikofaktorer}}Risk factors: {{risikofaktorer}}{{/if}}</li>
+    <li>{{#if tilretteleggingstiltak}}Accommodation measures: {{tilretteleggingstiltak}}{{/if}}</li>
+</ul>
+</div>
+{{/each}}
+</div>

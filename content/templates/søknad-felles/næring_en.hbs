@@ -1,0 +1,29 @@
+{{#with egenNæring}}
+<div class="no-page-break">
+
+## Self-employed business
+<ul>
+    <li>{{#if navnPåNæringen}}Business name: {{{navnPåNæringen}}}{{/if}}</li>
+    <li>{{#if organisasjonsnummer}}Organisation number: {{organisasjonsnummer}}{{/if}}</li>
+    <li>{{#if registrertINorge}}Registered in country: Norway{{else if registrertILand}}Registered in country: {{land-norsk registrertILand}}{{/if}}</li>
+    <li>Type of business: {{#switch næringstype~}}
+            {{~#case "DAGMAMMA"~}}Daycare provider{{~/case~}}
+            {{~#case "FISKE"~}}Fisher{{~/case~}}
+            {{~#case "JORDBRUK_SKOGBRUK"~}}Agriculture/forestry{{~/case~}}
+            {{~#case "ANNEN"~}}Other{{~/case~}}
+        {{~/switch~}}
+    </li>
+    <li>You started as self-employed {{norwegian-date fom}}{{#if tom}} and ended {{norwegian-date tom}}.{{else}} and still work there.{{/if}}</li>
+    {{~#eq hattVarigEndringAvNæringsinntektSiste4Kalenderår true~}}
+    <li>Permanent change in business or work situation over the last four years: <strong>Yes</strong></li>
+    <li>From {{norwegian-date varigEndringDato}} you have a permanent change in business income, where the new income is: {{varigEndringInntektEtterEndring}}.</li>
+    <li>Reason for permanent change: {{varigEndringBeskrivelse}}</li>
+    {{~else~}}
+    <li>Permanent change in business or work situation over the last four years: <strong>No</strong></li>
+    <li>{{#if næringsinntekt}}Business income: {{næringsinntekt}}{{/if}}</li>
+    {{~/eq~}}
+    <li>{{#if oppstartsdato}}Business started: {{norwegian-date oppstartsdato}}{{/if}}</li>
+    <li>{{> utils/sporsmal-svar-yes-no value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Have you started working during the last three completed years"}}</li>
+</ul>
+</div>
+{{/with}}

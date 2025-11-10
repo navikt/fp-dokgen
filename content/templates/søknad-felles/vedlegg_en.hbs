@@ -1,0 +1,68 @@
+{{#if vedlegg}}
+<div class="no-page-break">
+
+## Documentation
+<ul>
+{{#each vedlegg}}
+<li>
+    {{~#switch skjemanummer}}
+    {{~#case "I000007"~}}Income information about self-employed and/or freelancers entitled to parental benefit or pregnancy benefit{{~/case~}}
+    {{~#case "I000023"~}}Medical certificate{{~/case~}}
+    {{~#case "I000032"~}}Income statement{{~/case~}}
+    {{~#case "I000036"~}}Vacation documentation{{~/case~}}
+    {{~#case "I000037"~}}Hospitalisation documentation{{~/case~}}
+    {{~#case "I000038"~}}Mother’s education, work or illness documentation{{~/case~}}
+    {{~#case "I000039"~}}Military/civilian service documentation{{~/case~}}
+    {{~#case "I000042"~}}Custody transfer date documentation{{~/case~}}
+    {{~#case "I000044"~}}Documentation of severance pay{{~/case~}}
+    {{~#case "I000051"~}}Qualification programme participation confirmation{{~/case~}}
+    {{~#case "I000061"~}}School confirmation{{~/case~}}
+    {{~#case "I000062"~}}Expected birth date confirmation{{~/case~}}
+    {{~#case "I000063"~}}Birth certificate{{~/case~}}
+    {{~#case "I000066"~}}Copy of tax certificate or tax return{{~/case~}}
+    {{~#case "I000065"~}}Confirmation from employer{{~/case~}}
+    {{~#case "I000109"~}}Form for facilitation and relocation during pregnancy{{~/case~}}
+    {{~#case "I000110"~}}Documentation of sole custody{{~/case~}}
+    {{~#case "I000111"~}}Documentation of reason for applying retroactively{{~/case~}}
+    {{~#case "I000112"~}}Documentation of participation in introduction programme{{~/case~}}
+    {{~#case "I000114"~}}Statement regarding repayment{{~/case~}}
+    {{~#case "I000116"~}}Confirmation of exercise or service in the Armed Forces or Civil Defence{{~/case~}}
+    {{~#case "I000117"~}}Confirmation of measures by the Norwegian Labour and Welfare Administration{{~/case~}}
+    {{~#case "I000118"~}}Reason for late application{{~/case~}}
+    {{~#case "I000119"~}}Statement regarding repayment{{~/case~}}
+    {{~#case "I000120"~}}Documentation that mother is hospitalised{{~/case~}}
+    {{~#case "I000121"~}}Documentation that mother is ill{{~/case~}}
+    {{~#case "I000122"~}}Documentation that father/co-mother is hospitalised{{~/case~}}
+    {{~#case "I000123"~}}Documentation that father/co-mother is ill{{~/case~}}
+    {{~#case "I000124"~}}Documentation that the child is hospitalised{{~/case~}}
+    {{~#case "I000130"~}}Documentation that mother combines study and work, totaling full-time{{~/case~}}
+    {{~#case "I000131"~}}Documentation that mother studies full-time{{~/case~}}
+    {{~#case "I000132"~}}Documentation that mother is working{{~/case~}}
+    {{~#case "I000133"~}}Documentation of mother’s participation in the qualification programme{{~/case~}}
+    {{~#case "I000140"~}}Tax return{{~/case~}}
+    {{~#case "I000141"~}}Due date confirmation{{~/case~}}
+    {{~#case "I000143"~}}Residence permit documentation{{~/case~}}
+    {{~#case "I000144"~}}Travel to/from Norway documentation{{~/case~}}
+    {{~#case "I000145"~}}Pregnancy follow-up documentation{{~/case~}}
+    {{~#case "I000146"~}}Income documentation{{~/case~}}
+    {{~#case "I000060"~}}Other{{~/case~}}
+    {{/switch}}
+
+    {{~#with dokumenterer.arbeidsforhold}}
+        {{~#switch type~}}
+            {{~#case "virksomhet"}} at {{#arbeidsforhold-fra-orgnummer id ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{~/case~}}
+            {{~#case "privat"}} at private employer {{id}}{{~/case~}}
+            {{~#case "selvstendig"}} at the business{{~/case~}}
+            {{~#case "frilanser"}} at the freelance assignment{{~/case~}}
+        {{~/switch~}}
+    {{/with~}}
+    {{#switch innsendingsType}}
+    {{~#case "LASTET_OPP"}} (uploaded){{/case~}}
+    {{~#case "SEND_SENERE"}} (to be sent later){{/case~}}
+    {{~#case "AUTOMATISK"}} (information about mother’s work is retrieved from the State Register of Employers and Employees (the Aa Register)){{/case~}}
+    {{/switch~}}
+</li>
+{{/each}}
+</ul>
+</div>
+{{/if}}

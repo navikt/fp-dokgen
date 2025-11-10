@@ -1,0 +1,21 @@
+{{#if avtaltFerie}}
+<div class="no-page-break">
+
+## Informasjon om ferie
+<ul>
+{{~#each avtaltFerie}}
+    <li>
+        {{~#with arbeidsforhold}}
+        Eg har avtalt ferie hos
+        {{#switch type}}
+            {{~#case "virksomhet"}}{{#arbeidsforhold-fra-orgnummer id ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{~/case~}}
+            {{~#case "privat"}}privat arbeidsgjevar med identifikasjon {{id}}{{~/case~}}
+            {{~#case "selvstendig"}}næring{{~/case~}}
+            {{~#case "frilanser"~}}frilans{{~/case~}}
+        {{/switch}}
+        {{/with}} i perioden {{norwegian-date fom}} - {{norwegian-date tom}}
+    </li>
+{{/each~}}
+</ul>
+</div>
+{{/if}}
