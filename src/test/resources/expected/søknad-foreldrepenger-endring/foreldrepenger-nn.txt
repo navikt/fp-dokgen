@@ -1,11 +1,11 @@
-# Kvittering på søknad om endring av foreldrepenger
+# Kvittering på søknad om endring av foreldrepengar
 Mottatt: 19.09.2025 10:15</br>
 Saksnummer: 107
-## Opplysninger om søker
-Navn: Per Sykelig Oppblåst</br>
+## Opplysningar om søkjar
+Namn: Per Sykelig Oppblåst</br>
 Fødselsnummer: 3456789</br>
 <div class="no-page-break">
-## Opplysninger om barnet eller barna
+## Opplysningar om barnet eller barna
 <ul>
     <li>Fødselsdato: 29.08.2025</li>
     <li>Termindato: 29.08.2025</li>
@@ -16,15 +16,15 @@ Fødselsnummer: 3456789</br>
     <li></li>
     <li></li>
     <li></li>
-    <li>Antall barn: 1</li>
+    <li>Tal på barn: 1</li>
 </ul>
 </div>
 <div class="no-page-break">
 ## Din plan
-Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
+Du har søkt om endring frå og med 15.08.2025. Planen viser berre endringane du har søkt og ikkje det du er innvilga tidlegare.
 </div>
 <div class="no-page-break">
-<strong>Periode uten uttak 15.08.2025 - 18.08.2025</strong>
+<strong>Periode utan uttak 15.08.2025 - 18.08.2025</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
@@ -46,13 +46,13 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
+    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepenger med aktivitetskrav</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Skal kombinere foreldrepengane med arbeid: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -65,13 +65,13 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
+    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepenger med aktivitetskrav</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Skal kombinere foreldrepengane med arbeid: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -90,7 +90,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Skal kombinere foreldrepengane med arbeid: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -103,13 +103,13 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
+    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepenger med aktivitetskrav</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Skal kombinere foreldrepengane med arbeid: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -122,13 +122,13 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
+    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepenger med aktivitetskrav</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Skal kombinere foreldrepengane med arbeid: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -141,13 +141,13 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 <strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
+    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepenger med aktivitetskrav</li>
     <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Skal kombinere foreldrepengane med arbeid: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>

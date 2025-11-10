@@ -1,8 +1,8 @@
-## Opplysninger om søker
+## Opplysningar om søkjar
 {{#with søkerinfo}}
-Navn: {{> søknad-felles/navn fornavn=navn.fornavn mellomnavn=navn.mellomnavn etternavn=navn.etternavn}}</br>
+Namn: {{> søknad-felles/navn fornavn=navn.fornavn mellomnavn=navn.mellomnavn etternavn=navn.etternavn}}</br>
 Fødselsnummer: {{fnr}}</br>
-{{#if (and (eq inkluderRolle true) (neq ../rolle "FAR"))}}Hva søker du som: {{#switch ../rolle}}
+{{#if (and (eq inkluderRolle true) (neq ../rolle "FAR"))}}Kva søkjer du som: {{#switch ../rolle}}
     {{~#case "MOR"~}}Mor{{~/case~}}
     {{~#case "MEDMOR"~}}Medmor{{~/case~}}
 {{/switch}}{{/if}}

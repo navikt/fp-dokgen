@@ -1,14 +1,14 @@
-# Kvittering på søknad om endring av foreldrepenger
-Mottatt: 19.09.2025 10:15</br>
-Saksnummer: 107
-## Opplysninger om søker
-Navn: Per Sykelig Oppblåst</br>
-Fødselsnummer: 3456789</br>
+# Receipt of application for change of parental benefit
+Received: 19.09.2025 10:15</br>
+Case number: 107
+## Information about the applicant
+Name: Per Sykelig Oppblåst<br/>
+National identity number: 3456789<br/>
 <div class="no-page-break">
-## Opplysninger om barnet eller barna
+## Information about the child or children
 <ul>
-    <li>Fødselsdato: 29.08.2025</li>
-    <li>Termindato: 29.08.2025</li>
+    <li>Date of birth: 29.08.2025</li>
+    <li>Due date: 29.08.2025</li>
     <li></li>
     <li></li>
     <li></li>
@@ -16,15 +16,15 @@ Fødselsnummer: 3456789</br>
     <li></li>
     <li></li>
     <li></li>
-    <li>Antall barn: 1</li>
+    <li>Number of children: 1</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Din plan
-Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
+## Your plan
+You applied for a change from 15.08.2025. The plan shows only the changes you have applied for and not what you were previously granted.
 </div>
 <div class="no-page-break">
-<strong>Periode uten uttak 15.08.2025 - 18.08.2025</strong>
+<strong>Period without withdrawal 15.08.2025 - 18.08.2025</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
@@ -43,16 +43,16 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<strong>Parental benefit 27.03.2026 - 24.09.2026 (130 business days)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Which part of the parental benefit is taken out: Parental benefit with activity requirement</li>
+    <li>Mother's activity during the period: Work</li>
     <li></li>
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -62,16 +62,16 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<strong>Parental benefit 27.03.2026 - 24.09.2026 (130 business days)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Which part of the parental benefit is taken out: Parental benefit with activity requirement</li>
+    <li>Mother's activity during the period: Work</li>
     <li></li>
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -81,7 +81,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<strong>Parental benefit 27.03.2026 - 24.09.2026 (130 business days)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
@@ -90,7 +90,7 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -100,16 +100,16 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<strong>Parental benefit 27.03.2026 - 24.09.2026 (130 business days)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Which part of the parental benefit is taken out: Parental benefit with activity requirement</li>
+    <li>Mother's activity during the period: Work</li>
     <li></li>
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -119,16 +119,16 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<strong>Parental benefit 27.03.2026 - 24.09.2026 (130 business days)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Which part of the parental benefit is taken out: Parental benefit with activity requirement</li>
+    <li>Mother's activity during the period: Work</li>
     <li></li>
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -138,16 +138,16 @@ Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du ha
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<strong>Parental benefit 27.03.2026 - 24.09.2026 (130 business days)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Foreldrepenger med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Which part of the parental benefit is taken out: Parental benefit with activity requirement</li>
+    <li>Mother's activity during the period: Work</li>
     <li></li>
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>

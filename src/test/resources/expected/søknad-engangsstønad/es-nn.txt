@@ -1,27 +1,27 @@
-# Kvittering på søknad om engangsstønad
+# Kvittering på søknad om eingongsstønad
 Mottatt: 30.09.2025 10:15
-## Opplysninger om søker
-Navn: Per Oppblåst</br>
+## Opplysningar om søkjar
+Namn: Per Oppblåst</br>
 Fødselsnummer: 987654321</br>
 <div class="no-page-break">
-## Opplysninger om barnet eller barna
+## Opplysningar om barnet eller barna
 <ul>
     <li></li>
     <li>Termindato: 21.10.2025</li>
-    <li>Terminbekreftelse er datert: 21.09.2025</li>
+    <li>Terminbekrefting er datert: 21.09.2025</li>
     <li></li>
     <li></li>
     <li></li>
     <li></li>
     <li></li>
     <li></li>
-    <li>Antall barn: 1</li>
+    <li>Tal på barn: 1</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Informasjon om opphold i utlandet
+## Informasjon om opphald i utlandet
 <ul>
-<li>De siste 12 månedene bodde du i Norge</li>
-<li>De neste 12 månedene skal du bo i Norge</li>
+<li>Dei siste 12 månadene budde du i Noreg</li>
+<li>Dei neste 12 månadene skal du bu i Noreg</li>
 </ul>
 </div>
