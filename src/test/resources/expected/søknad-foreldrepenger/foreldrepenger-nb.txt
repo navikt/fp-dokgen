@@ -1,0 +1,107 @@
+# Kvittering på søknad om foreldrepenger
+Mottatt: 03.12.2011 10:15
+## Opplysninger om søker
+Navn: Veldig Innsjø</br>
+Fødselsnummer: 09470682830</br>
+Hva søker du som: Medmor
+<div class="no-page-break">
+## Opplysninger om barnet eller barna
+<ul>
+    <li>Fødselsdato: 01.06.2025</li>
+    <li>Termindato: 31.07.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>Antall barn: 2</li>
+</ul>
+</div>
+<div class="no-page-break">
+## Informasjon om opphold i utlandet
+<ul>
+<li>De siste 12 månedene bodde du i Norge</li>
+<li>De neste 12 månedene skal du bo i Norge</li>
+</ul>
+</div>
+<div class="no-page-break">
+## Mine arbeidsforhold
+Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden. Nav sjekker AA-registeret igjen når arbeidsgiver kan sende inntektsmeldingen.
+### NAV Familie og Pensjonsytelser Oslo (123456789)
+<ul>
+    <li>Periode: 11.01.2024 – Pågående</li>
+    <li>Stillingsprosent: 44 %</li>
+</ul>
+</div>
+<div class="no-page-break">
+## Andre inntektskilder
+<ul>
+    <li>Har du jobbet og hatt inntekt som frilanser de siste 10 månedene? <strong>Nei</strong></li>
+    <li>Har du jobbet og hatt inntekt som selvstendig næringsdrivende de siste 10 månedene? <strong>Nei</strong></li>
+    <li>Har du hatt andre inntektskilder de siste 10 månedene? <strong>Nei</strong></li>
+</ul>
+</div>
+<div class="no-page-break">
+## Informasjon om annen forelder
+<ul>
+    <li>Navn: Smal Julepresang</li>
+    <li>Fødselsnummer: 987654321</li>
+    <li></li>
+    <li></li><li>Er dere sammen om omsorgen for barnet: <strong>Ja</strong></li>
+    <li>Har den andre forelderen rett til foreldrepenger i Norge: <strong>Ja</strong></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li></ul>
+</div>
+<div class="no-page-break">
+## Din plan
+Du har søkt om 80 prosent foreldrepenger.
+</div>
+<div class="no-page-break">
+<strong>Medmorkvote 18.09.2025 - 12.12.2025 (62 virkedager)</strong>
+<ul style="margin-top: -10px;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li></li>
+    <li></li>
+    <li>Skal annen forelder ha foreldrepenger i samme periode: <strong>Nei</strong></li>
+    <li></li>
+    <li>Skal bruke flerbarnsdager: <strong>Ja</strong></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+<strong>Fellesperiode 15.12.2025 - 31.12.2025 (13 virkedager)</strong>
+<ul style="margin-top: -10px;">
+    <!-- Uttaksperiode spesifikke attributter -->
+    <li>Hvilken del av foreldrepengene tas ut: Fellesperiode med aktivitetskrav</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Skal annen forelder ha foreldrepenger i samme periode: <strong>Nei</strong></li>
+    <li></li>
+    <li>Skal bruke flerbarnsdager: <strong>Nei</strong></li>
+    <!-- Gradering -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li></li>
+    <!-- Opphold -->
+    <li></li>
+    <!-- Utsettelse -->
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+## Dokumentasjon
+<ul>
+<li>Dokumentasjon på at mor er i arbeid (opplysninger om mors arbeid innhentes fra Arbeidsgiver- og arbeidstakerregisteret)</li>
+<li>Dokumentasjon av etterlønn/sluttvederlag (sendes senere)</li>
+</ul>
+</div>

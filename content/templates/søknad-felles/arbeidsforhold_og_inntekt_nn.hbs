@@ -1,0 +1,25 @@
+<div class="no-page-break">
+
+## Mine arbeidsforhold
+Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden.{{#if hvisInfoIM}} Nav sjekker AA-registeret igjen når arbeidsgiver kan sende inntektsmeldingen.{{/if}}
+{{#if søkerinfo/arbeidsforhold}}
+{{#each søkerinfo/arbeidsforhold}}
+### {{navn}} ({{orgnummer}})
+<ul>
+    <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
+    <li>Stillingsprosent: {{trim-decimal stillingsprosent}} %</li>
+</ul>
+{{/each}}
+{{else}}
+Du er ikke registrert med noen arbeidsforhold.
+{{/if}}
+</div>
+<div class="no-page-break">
+
+## Andre inntektskilder
+<ul>
+    <li>Har du jobbet og hatt inntekt som frilanser de siste 10 månedene? <strong>{{#if frilans}}Ja{{else}}Nei{{/if}}</strong></li>
+    <li>Har du jobbet og hatt inntekt som selvstendig næringsdrivende de siste 10 månedene? <strong>{{#if egenNæring}}Ja{{else}}Nei{{/if}}</strong></li>
+    <li>Har du hatt andre inntektskilder de siste 10 månedene? <strong>{{#if andreInntekterSiste10Mnd}}Ja{{else}}Nei{{/if}}</strong></li>
+</ul>
+</div>
