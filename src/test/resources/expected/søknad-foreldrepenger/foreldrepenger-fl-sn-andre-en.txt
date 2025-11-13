@@ -60,7 +60,7 @@ Information is retrieved from the State Register of Employers and Employees (the
 <ul>
     <li></li>
     <li></li>
-    <li>Registered in country: Sverige</li>
+    <li>Registered in country: Sweden</li>
     <li>Type of business: Fisher</li>
     <li>You started as self-employed 01.10.2025 and ended 31.10.2025.</li><li>Permanent change in business or work situation over the last four years: <strong>No</strong></li>
     <li>Business income: 329000</li><li>Business started: 01.11.2023</li>
