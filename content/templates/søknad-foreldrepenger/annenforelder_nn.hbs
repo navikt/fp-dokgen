@@ -7,7 +7,7 @@
     <li>Namn: {{> søknad-felles/navn fornavn=fornavn mellomnavn=mellomnavn etternavn=etternavn}}</li>
     <li>Fødselsnummer{{#eq type "utenlandsk"}} eller D-nummer{{/eq}}: {{fnr}}</li>
     <li>{{#if bostedsland}}Den andre forelderens fødselsnummer er ikkje frå Noreg{{/if}}</li>
-    <li>{{#if bostedsland}}Kvar bur den andre forelderen: {{land-norsk bostedsland}}{{/if}}</li>
+    <li>{{#if bostedsland}}Kvar bur den andre forelderen: {{land-norsk bostedsland lang="nn"}}{{/if}}</li>
 {{~#with rettigheter~}}
     <li>{{> utils/sporsmal-svar-ja-nei value=erAleneOmOmsorg label="Er de saman om omsorga for barnet" altNei="Nei, eg har aleineomsorg" reversed=true}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=harRettPåForeldrepenger label="Har den andre forelderen rett til foreldrepengar i Noreg"}}</li>

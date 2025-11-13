@@ -16,7 +16,7 @@ You applied for a change from {{norwegian-date uttaksplan.uttaksperioder.0.fom}}
   {{~#case "FELLESPERIODE"~}}Shared period{{~/case~}}
   {{~#case "FORELDREPENGER_FØR_FØDSEL"~}}Parental benefit before birth{{~/case~}}
   {{~#case "FORELDREPENGER"~}}Parental benefit{{~/case~}}
-  {{~#default~}}{{format-text konto toLower=true replaceUnderscore=true capitalizeFirst=true}}{{~/default~}}
+  {{~#default~}}Parental benefit{{~/default~}}
 {{/switch}}
 {{~/inline~}}
 
@@ -40,7 +40,7 @@ You applied for a change from {{norwegian-date uttaksplan.uttaksperioder.0.fom}}
 {{#if (and (eq type "utsettelse") (eq årsak "FRI") (eq morsAktivitetIPerioden undefined))}}
 <strong>Period without withdrawal {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
 {{else if (and konto (eq type "overføring"))}}
-<strong>Transfer of {{format-text konto toLower=true}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} business days)</strong>
+<strong>Transfer of {{> konto-medmorkvote}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} business days)</strong>
 {{else if konto}}
 <strong>{{> konto-medmorkvote}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} business days)</strong>
 {{else}}

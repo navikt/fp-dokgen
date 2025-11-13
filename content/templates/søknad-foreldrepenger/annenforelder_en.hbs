@@ -7,7 +7,7 @@
     <li>Name: {{> søknad-felles/navn fornavn=fornavn mellomnavn=mellomnavn etternavn=etternavn}}</li>
     <li>National identity number{{#eq type "utenlandsk"}} or D-number{{/eq}}: {{fnr}}</li>
     <li>{{#if bostedsland}}The other parent’s national ID number is not from Norway{{/if}}</li>
-    <li>{{#if bostedsland}}Where the other parent lives: {{land-norsk bostedsland}}{{/if}}</li>
+    <li>{{#if bostedsland}}Where the other parent lives: {{land-norsk bostedsland lang="en"}}{{/if}}</li>
 {{~#with rettigheter~}}
     <li>{{> utils/sporsmal-svar-yes-no value=erAleneOmOmsorg label="Are you sharing custody of the child" altNei="No, I have sole custody" reversed=true}}</li>
     <li>{{> utils/sporsmal-svar-yes-no value=harRettPåForeldrepenger label="Is the other parent entitled to parental benefit in Norway"}}</li>
