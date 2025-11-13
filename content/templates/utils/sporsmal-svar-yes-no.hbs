@@ -1,0 +1,7 @@
+{{~#unless (eq value undefined)~}}
+    {{~#eq reversed true~}}
+        {{~label~}}: <strong>{{~#if value~}}{{~#if altNei~}}{{altNei}}{{else}}No{{/if}}{{~else~}}Yes{{~/if~}}</strong>
+    {{~else~}}
+        {{~label~}}: <strong>{{~#if value~}}Yes{{~else~}}{{~#if altNei~}}{{altNei}}{{else}}No{{/if}}{{~/if~}}</strong>
+    {{~/eq~}}
+{{~/unless~}}

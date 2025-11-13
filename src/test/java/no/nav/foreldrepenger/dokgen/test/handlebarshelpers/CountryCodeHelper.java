@@ -24,11 +24,13 @@ public class CountryCodeHelper implements Helper<Object> {
             return code; // fallback if not found
         }
 
+        var lang = options.hash("lang");
+        var språk = lang != null ? lang.toString() : "no";
         var locale = new Locale.Builder()
-                .setLanguage("no")
+                .setLanguage(språk)
                 .setRegion(country.getAlpha2())
                 .build();
 
-        return locale.getDisplayCountry(Locale.forLanguageTag("no"));
+        return locale.getDisplayCountry(Locale.forLanguageTag(språk));
     }
 }

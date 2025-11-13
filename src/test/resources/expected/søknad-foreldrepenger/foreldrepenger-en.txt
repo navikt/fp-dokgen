@@ -1,14 +1,14 @@
-# Kvittering på søknad om foreldrepenger
-Mottatt: 03.12.2011 10:15
-## Opplysninger om søker
-Navn: Veldig Innsjø</br>
-Fødselsnummer: 09470682830</br>
-Hva søker du som: Medmor
+# Receipt of application for parental benefit
+Received: 03.12.2011 10:15
+## Information about the applicant
+Name: Veldig Innsjø<br/>
+National identity number: 09470682830<br/>
+Applying as: Co-mother
 <div class="no-page-break">
-## Opplysninger om barnet eller barna
+## Information about the child or children
 <ul>
-    <li>Fødselsdato: 01.06.2025</li>
-    <li>Termindato: 31.07.2025</li>
+    <li>Date of birth: 01.06.2025</li>
+    <li>Due date: 31.07.2025</li>
     <li></li>
     <li></li>
     <li></li>
@@ -16,61 +16,61 @@ Hva søker du som: Medmor
     <li></li>
     <li></li>
     <li></li>
-    <li>Antall barn: 2</li>
+    <li>Number of children: 2</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Informasjon om opphold i utlandet
+## Information about stay abroad
 <ul>
-<li>De siste 12 månedene bodde du i Norge</li>
-<li>De neste 12 månedene skal du bo i Norge</li>
+<li>During the last 12 months, you lived in Norway</li>
+<li>During the next 12 months, you will live in Norway</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Mine arbeidsforhold
-Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden. Nav sjekker AA-registeret igjen når arbeidsgiver kan sende inntektsmeldingen.
+## Employment
+Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application. Nav will check the Aa Register again when the employer can submit the income report.
 ### NAV Familie og Pensjonsytelser Oslo (123456789)
 <ul>
-    <li>Periode: 11.01.2024 – Pågående</li>
-    <li>Stillingsprosent: 44 %</li>
+    <li>Period: 11.01.2024 – Ongoing</li>
+    <li>Employment percentage: 44 %</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Andre inntektskilder
+## Other sources of income
 <ul>
-    <li>Har du jobbet og hatt inntekt som frilanser de siste 10 månedene? <strong>Nei</strong></li>
-    <li>Har du jobbet og hatt inntekt som selvstendig næringsdrivende de siste 10 månedene? <strong>Nei</strong></li>
-    <li>Har du hatt andre inntektskilder de siste 10 månedene? <strong>Nei</strong></li>
+    <li>Have you worked and earned income as a freelancer in the last 10 months? <strong>No</strong></li>
+    <li>Have you worked and earned income as self-employed in the last 10 months? <strong>No</strong></li>
+    <li>Have you had other sources of income in the last 10 months? <strong>No</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-## Informasjon om annen forelder
+## Information about the other parent
 <ul>
-    <li>Navn: Smal Julepresang</li>
-    <li>Fødselsnummer: 987654321</li>
+    <li>Name: Smal Julepresang</li>
+    <li>National identity number: 987654321</li>
     <li></li>
-    <li></li><li>Er dere sammen om omsorgen for barnet: <strong>Ja</strong></li>
-    <li>Har den andre forelderen rett til foreldrepenger i Norge: <strong>Ja</strong></li>
+    <li></li><li>Are you sharing custody of the child: <strong>Yes</strong></li>
+    <li>Is the other parent entitled to parental benefit in Norway: <strong>Yes</strong></li>
     <li></li>
     <li></li>
     <li></li>
-    <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li></ul>
+    <li>Has the other parent been informed about the application: <strong>Yes</strong></li></ul>
 </div>
 <div class="no-page-break">
-## Din plan
-Du har søkt om 80 prosent foreldrepenger.
+## Your plan
+You applied for 80 per cent parental benefit.
 </div>
 <div class="no-page-break">
-<strong>Medmorkvote 18.09.2025 - 12.12.2025 (62 virkedager)</strong>
+<strong>Co-mother quota 18.09.2025 - 12.12.2025 (62 business days)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
     <li></li>
-    <li>Skal annen forelder ha foreldrepenger i samme periode: <strong>Nei</strong></li>
+    <li>Should the other parent receive parental benefit in the same period: <strong>No</strong></li>
     <li></li>
-    <li>Skal bruke flerbarnsdager: <strong>Ja</strong></li>
+    <li>Should use multiple-child days: <strong>Yes</strong></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -80,16 +80,16 @@ Du har søkt om 80 prosent foreldrepenger.
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Fellesperiode 15.12.2025 - 31.12.2025 (13 virkedager)</strong>
+<strong>Shared period 15.12.2025 - 31.12.2025 (13 business days)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Hvilken del av foreldrepengene tas ut: Fellesperiode med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
-    <li>Skal annen forelder ha foreldrepenger i samme periode: <strong>Nei</strong></li>
+    <li>Which part of the parental benefit is taken out: Shared period with activity requirement</li>
+    <li>Mother's activity during the period: Work</li>
+    <li>Should the other parent receive parental benefit in the same period: <strong>No</strong></li>
     <li></li>
-    <li>Skal bruke flerbarnsdager: <strong>Nei</strong></li>
+    <li>Should use multiple-child days: <strong>No</strong></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -99,9 +99,9 @@ Du har søkt om 80 prosent foreldrepenger.
 </ul>
 </div>
 <div class="no-page-break">
-## Dokumentasjon
+## Documentation
 <ul>
-<li>Dokumentasjon på at mor er i arbeid (opplysninger om mors arbeid innhentes fra Arbeidsgiver- og arbeidstakerregisteret)</li>
-<li>Dokumentasjon av etterlønn/sluttvederlag (sendes senere)</li>
+<li>Documentation that mother is working (information about mother’s work is retrieved from the State Register of Employers and Employees (the Aa Register))</li>
+<li>Documentation of severance pay (to be sent later)</li>
 </ul>
 </div>

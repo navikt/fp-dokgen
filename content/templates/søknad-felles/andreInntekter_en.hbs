@@ -1,24 +1,24 @@
 {{#if andreInntekterSiste10Mnd}}
 <div class="no-page-break">
 
-## Andre inntekter siste 10 måneder
+## Other income in the last 10 months
 
 {{#each andreInntekterSiste10Mnd}}
 <strong>{{~#switch type~}}
-{{~#case "ETTERLØNN_SLUTTPAKKE"~}}Etterlønn sluttpakke{{~/case~}}
-{{~#case "ETTERLØNN_ARBEIDSGIVER"~}}Etterlønn arbeidsgiver{{~/case~}}
-{{~#case "JOBB_I_UTLANDET"~}}Jobb i utlandet{{~/case~}}
-{{~#case "LØNN_UNDER_UTDANNING"~}}Lønn under utdanning{{~/case~}}
-{{~#case "MILITÆR_ELLER_SIVILTJENESTE"~}}Militær- eller siviltjeneste{{~/case~}}
-{{~#case "SLUTTPAKKE"~}}Sluttpakke{{~/case~}}
-{{~#case "VENTELØNN_VARTPENGER"~}}Ventelønn vartepenger{{~/case~}}
-{{~#case "VENTELØNN"~}}Ventelønn{{~/case~}}
-{{~#case "VARTPENGER"~}}Vartpenger{{~/case~}}
+{{~#case "ETTERLØNN_SLUTTPAKKE"~}}Severance pay package{{~/case~}}
+{{~#case "ETTERLØNN_ARBEIDSGIVER"~}}Severance pay from employer{{~/case~}}
+{{~#case "JOBB_I_UTLANDET"~}}Job abroad{{~/case~}}
+{{~#case "LØNN_UNDER_UTDANNING"~}}Salary during education{{~/case~}}
+{{~#case "MILITÆR_ELLER_SIVILTJENESTE"~}}Military or civilian service{{~/case~}}
+{{~#case "SLUTTPAKKE"~}}Severance package{{~/case~}}
+{{~#case "VENTELØNN_VARTPENGER"~}}Waiting salary or severance benefits{{~/case~}}
+{{~#case "VENTELØNN"~}}Waiting salary{{~/case~}}
+{{~#case "VARTPENGER"~}}Severance benefits{{~/case~}}
 {{~/switch~}}</strong>
 <ul>
-    <li>{{#if arbeidsgiverNavn}}Arbeidsgiver: {{{arbeidsgiverNavn}}}{{/if}}</li>
-    <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
-    <li>{{#if land}}Landet virksomheten er registrert i: {{land-norsk land}}{{/if}}</li>
+    <li>{{#if arbeidsgiverNavn}}Employer: {{{arbeidsgiverNavn}}}{{/if}}</li>
+    <li>Period: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}</li>
+    <li>{{#if land}}Country where the business is registered: {{land-norsk land lang="en"}}{{/if}}</li>
 </ul>
 {{/each}}
 </div>

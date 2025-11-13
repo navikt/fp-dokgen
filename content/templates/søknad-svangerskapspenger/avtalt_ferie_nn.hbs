@@ -6,10 +6,10 @@
 {{~#each avtaltFerie}}
     <li>
         {{~#with arbeidsforhold}}
-        Jeg har avtalt ferie hos
+        Eg har avtalt ferie hos
         {{#switch type}}
             {{~#case "virksomhet"}}{{#arbeidsforhold-fra-orgnummer id ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{~/case~}}
-            {{~#case "privat"}}privat arbeidsgiver med identifkasjon {{id}}{{~/case~}}
+            {{~#case "privat"}}privat arbeidsgjevar med identifikasjon {{id}}{{~/case~}}
             {{~#case "selvstendig"}}næring{{~/case~}}
             {{~#case "frilanser"~}}frilans{{~/case~}}
         {{/switch}}

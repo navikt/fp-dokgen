@@ -20,14 +20,14 @@ class SøknadKvitteringTest {
 
     @Test
     void svp_utenalandsopphold_avtalt_ferie_nn_test() {
-        var content = compileContent(Brevmal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-utenlandsopphold");
+        var content = compileContent(Brevmal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-utenlandsopphold");
         var expected = getExpected(Brevmal.SVANGESKAPSPENGER_SØKNAD, "svp-utenlandsopphold-ferie-nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void svp_utenalandsopphold_avtalt_ferie_en_test() {
-        var content = compileContent(Brevmal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-utenlandsopphold");
+        var content = compileContent(Brevmal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-utenlandsopphold");
         var expected = getExpected(Brevmal.SVANGESKAPSPENGER_SØKNAD, "svp-utenlandsopphold-ferie-en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
@@ -41,13 +41,13 @@ class SøknadKvitteringTest {
 
     @Test
     void engangsstønad_nn_test() {
-        var content = compileContent(Brevmal.ENGANGSSTØNAD_SØKNAD, Språk.BOKMÅL, "es");
+        var content = compileContent(Brevmal.ENGANGSSTØNAD_SØKNAD, Språk.NYNORSK, "es");
         var expected = getExpected(Brevmal.ENGANGSSTØNAD_SØKNAD, "es-nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
     @Test
     void engangsstønad_en_test() {
-        var content = compileContent(Brevmal.ENGANGSSTØNAD_SØKNAD, Språk.BOKMÅL, "es");
+        var content = compileContent(Brevmal.ENGANGSSTØNAD_SØKNAD, Språk.ENGELSK, "es");
         var expected = getExpected(Brevmal.ENGANGSSTØNAD_SØKNAD, "es-en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
@@ -61,14 +61,14 @@ class SøknadKvitteringTest {
 
     @Test
     void foreldrepenger_mor_2af_frilans_gradering_utsettelse_nn() {
-        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-termin-2af-frilans-næring-andre-inntekter");
+        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.NYNORSK, "mor-termin-2af-frilans-næring-andre-inntekter");
         var expected = getExpected(Brevmal.FORELDREPENGER_SØKNAD, "foreldrepenger-fl-sn-andre-nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void foreldrepenger_mor_2af_frilans_gradering_utsettelse_en() {
-        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-termin-2af-frilans-næring-andre-inntekter");
+        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.ENGELSK, "mor-termin-2af-frilans-næring-andre-inntekter");
         var expected = getExpected(Brevmal.FORELDREPENGER_SØKNAD, "foreldrepenger-fl-sn-andre-en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
@@ -82,14 +82,14 @@ class SøknadKvitteringTest {
 
     @Test
     void foreldrepenger_mor_af_nn() {
-        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-1-AF-fødsel");
+        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.NYNORSK, "mor-1-AF-fødsel");
         var expected = getExpected(Brevmal.FORELDREPENGER_SØKNAD, "foreldrepenger-nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void foreldrepenger_mor_af_en() {
-        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-1-AF-fødsel");
+        var content = compileContent(Brevmal.FORELDREPENGER_SØKNAD, Språk.ENGELSK, "mor-1-AF-fødsel");
         var expected = getExpected(Brevmal.FORELDREPENGER_SØKNAD, "foreldrepenger-en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
@@ -103,14 +103,14 @@ class SøknadKvitteringTest {
 
     @Test
     void endringsøsknad_bfhr_nn() {
-        var content = compileContent(Brevmal.FORELDREPNGER_ENDRING_SØKNAD, Språk.BOKMÅL, "endring-bfhr");
+        var content = compileContent(Brevmal.FORELDREPNGER_ENDRING_SØKNAD, Språk.NYNORSK, "endring-bfhr");
         var expected = getExpected(Brevmal.FORELDREPNGER_ENDRING_SØKNAD, "foreldrepenger-nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void endringsøsknad_bfhr_en() {
-        var content = compileContent(Brevmal.FORELDREPNGER_ENDRING_SØKNAD, Språk.BOKMÅL, "endring-bfhr");
+        var content = compileContent(Brevmal.FORELDREPNGER_ENDRING_SØKNAD, Språk.ENGELSK, "endring-bfhr");
         var expected = getExpected(Brevmal.FORELDREPNGER_ENDRING_SØKNAD, "foreldrepenger-en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }

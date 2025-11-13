@@ -1,25 +1,25 @@
 <div class="no-page-break">
 
-## Mine arbeidsforhold
-Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden.{{#if hvisInfoIM}} Nav sjekker AA-registeret igjen når arbeidsgiver kan sende inntektsmeldingen.{{/if}}
+## Employment
+Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application.{{#if hvisInfoIM}} Nav will check the Aa Register again when the employer can submit the income report.{{/if}}
 {{#if søkerinfo/arbeidsforhold}}
 {{#each søkerinfo/arbeidsforhold}}
 ### {{navn}} ({{orgnummer}})
 <ul>
-    <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
-    <li>Stillingsprosent: {{trim-decimal stillingsprosent}} %</li>
+    <li>Period: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}</li>
+    <li>Employment percentage: {{trim-decimal stillingsprosent}} %</li>
 </ul>
 {{/each}}
 {{else}}
-Du er ikke registrert med noen arbeidsforhold.
+You are not registered with any employment relationships.
 {{/if}}
 </div>
 <div class="no-page-break">
 
-## Andre inntektskilder
+## Other sources of income
 <ul>
-    <li>Har du jobbet og hatt inntekt som frilanser de siste 10 månedene? <strong>{{#if frilans}}Ja{{else}}Nei{{/if}}</strong></li>
-    <li>Har du jobbet og hatt inntekt som selvstendig næringsdrivende de siste 10 månedene? <strong>{{#if egenNæring}}Ja{{else}}Nei{{/if}}</strong></li>
-    <li>Har du hatt andre inntektskilder de siste 10 månedene? <strong>{{#if andreInntekterSiste10Mnd}}Ja{{else}}Nei{{/if}}</strong></li>
+    <li>Have you worked and earned income as a freelancer in the last 10 months? <strong>{{#if frilans}}Yes{{else}}No{{/if}}</strong></li>
+    <li>Have you worked and earned income as self-employed in the last 10 months? <strong>{{#if egenNæring}}Yes{{else}}No{{/if}}</strong></li>
+    <li>Have you had other sources of income in the last 10 months? <strong>{{#if andreInntekterSiste10Mnd}}Yes{{else}}No{{/if}}</strong></li>
 </ul>
 </div>
