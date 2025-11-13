@@ -1,0 +1,29 @@
+{{#with egenNæring}}
+<div class="no-page-break">
+
+## Egen næringsvirksomhet
+<ul>
+    <li>{{#if navnPåNæringen}}Navn på virksomheten: {{{navnPåNæringen}}}{{/if}}</li>
+    <li>{{#if organisasjonsnummer}}Organisasjonsnummer: {{organisasjonsnummer}}{{/if}}</li>
+    <li>{{#if registrertINorge}}Registrert i land: Norge{{else if registrertILand}}Registrert i land: {{land-norsk registrertILand}}{{/if}}</li>
+    <li>Virksomhetstype: {{#switch næringstype~}}
+            {{~#case "DAGMAMMA"~}}Dagmamma{{~/case~}}
+            {{~#case "FISKE"~}}Fisker{{~/case~}}
+            {{~#case "JORDBRUK_SKOGBRUK"~}}Jord-/skogsbruk{{~/case~}}
+            {{~#case "ANNEN"~}}Annen{{~/case~}}
+        {{~/switch~}}
+    </li>
+    <li>Du startet som selvstendig næringsdrivende {{norwegian-date fom}}{{#if tom}} og sluttet {{norwegian-date tom}}.{{else}} og jobber der fortsatt.{{/if}}</li>
+    {{~#eq hattVarigEndringAvNæringsinntektSiste4Kalenderår true~}}
+    <li>Varig endring i virksomheten eller arbeidssituasjonen min de siste fire årene: <strong>Ja</strong></li>
+    <li>Fra {{norwegian-date varigEndringDato}} har du varig endring i næringsinntekten, hvor nye næringsinntekt er: {{varigEndringInntektEtterEndring}}.</li>
+    <li>Årsak til varig endring: {{varigEndringBeskrivelse}}</li>
+    {{~else~}}
+    <li>Varig endring i virksomheten eller arbeidssituasjonen min de siste fire årene: <strong>Nei</strong></li>
+    <li>{{#if næringsinntekt}}Næringsinntekt: {{næringsinntekt}}{{/if}}</li>
+    {{~/eq~}}
+    <li>{{#if oppstartsdato}}Virksomheten ble startet: {{norwegian-date oppstartsdato}}{{/if}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Har du begynt å jobbe i løpet av de tre siste ferdigliknede årene"}}</li>
+</ul>
+</div>
+{{/with}}
