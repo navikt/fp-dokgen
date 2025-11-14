@@ -4,7 +4,7 @@ Received: 30.09.2025 10:15
 Name: Per Oppblåst<br/>
 National identity number: 987654321<br/>
 <div class="no-page-break">
-## Information about the child or children
+## Information about the child
 <ul>
     <li></li>
     <li>Due date: 21.10.2025</li>

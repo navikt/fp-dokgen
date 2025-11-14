@@ -5,7 +5,7 @@ Case number: 107
 Name: Per Sykelig Oppblåst<br/>
 National identity number: 3456789<br/>
 <div class="no-page-break">
-## Information about the child or children
+## Information about the child
 <ul>
     <li>Date of birth: 29.08.2025</li>
     <li>Due date: 29.08.2025</li>

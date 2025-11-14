@@ -4,7 +4,7 @@ Mottatt: 24.09.2025 10:15
 Namn: Per Sykelig Oppblåst</br>
 Fødselsnummer: 987654321</br>
 <div class="no-page-break">
-## Opplysningar om barnet eller barna
+## Opplysningar om barnet
 <ul>
     <li></li>
     <li>Termindato: 24.12.2025</li>

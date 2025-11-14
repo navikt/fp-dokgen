@@ -5,7 +5,7 @@ Name: Per Sykelig Oppblåst<br/>
 National identity number: 987654321<br/>
 Applying as: Mother
 <div class="no-page-break">
-## Information about the child or children
+## Information about the child
 <ul>
     <li></li>
     <li>Due date: 08.09.2025</li>
