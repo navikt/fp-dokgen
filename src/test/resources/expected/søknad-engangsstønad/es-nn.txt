@@ -4,7 +4,7 @@ Mottatt: 30.09.2025 10:15
 Namn: Per Oppblåst</br>
 Fødselsnummer: 987654321</br>
 <div class="no-page-break">
-## Opplysningar om barnet eller barna
+## Opplysningar om barnet
 <ul>
     <li></li>
     <li>Termindato: 21.10.2025</li>

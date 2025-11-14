@@ -1,7 +1,6 @@
 <div class="no-page-break">
-
-## Information about the child or children
 {{#with barn}}
+## Information about the {{#if antallBarn}}{{#gt antallBarn 1}}children{{else}}child{{/gt}}{{else}}child{{/if}}
 <ul>
     <li>{{> utils/tekst-dato-svar value=fødselsdato label="Date of birth"}}</li>
     <li>{{> utils/tekst-dato-svar value=termindato label="Due date"}}</li>

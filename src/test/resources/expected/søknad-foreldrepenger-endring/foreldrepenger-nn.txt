@@ -5,7 +5,7 @@ Saksnummer: 107
 Namn: Per Sykelig Oppblåst</br>
 Fødselsnummer: 3456789</br>
 <div class="no-page-break">
-## Opplysningar om barnet eller barna
+## Opplysningar om barnet
 <ul>
     <li>Fødselsdato: 29.08.2025</li>
     <li>Termindato: 29.08.2025</li>
