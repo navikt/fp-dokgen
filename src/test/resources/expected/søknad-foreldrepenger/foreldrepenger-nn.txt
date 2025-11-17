@@ -57,7 +57,7 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
     <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li></ul>
 </div>
 <div class="no-page-break">
-## Din plan
+## Planen din
 Du har søkt om 80 prosent foreldrepengar.
 </div>
 <div class="no-page-break">
@@ -84,7 +84,7 @@ Du har søkt om 80 prosent foreldrepengar.
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Kva del av foreldrepengane vert tatt ut: Fellesperiode med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Moras aktivitet i perioden: Arbeid</li>
     <li>Skal annan forelder ha foreldrepengar i same periode: <strong>Nei</strong></li>
     <li></li>
     <li>Skal bruke fleirbarnsdager: <strong>Nei</strong></li>

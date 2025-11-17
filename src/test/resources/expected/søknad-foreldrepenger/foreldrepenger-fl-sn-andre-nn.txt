@@ -90,11 +90,11 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
     <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li></ul>
 </div>
 <div class="no-page-break">
-## Din plan
+## Planen din
 Du har søkt om endring frå og med 23.08.2025. Planen viser berre endringane du har søkt og ikkje det du er innvilga tidlegare.
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger før fødsel 23.08.2025 - 07.09.2025 (10 virkedager)</strong>
+<strong>Foreldrepengar før fødsel 23.08.2025 - 07.09.2025 (10 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
@@ -117,7 +117,7 @@ Du har søkt om endring frå og med 23.08.2025. Planen viser berre endringane du
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Moras aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
@@ -174,7 +174,7 @@ Du har søkt om endring frå og med 23.08.2025. Planen viser berre endringane du
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Kva del av foreldrepengane vert tatt ut: Fellesperiode med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Moras aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
@@ -212,7 +212,7 @@ Du har søkt om endring frå og med 23.08.2025. Planen viser berre endringane du
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li>Kva del av foreldrepengane vert tatt ut: Fellesperiode med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Moras aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>

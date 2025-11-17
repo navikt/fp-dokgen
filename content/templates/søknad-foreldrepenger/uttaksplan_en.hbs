@@ -9,14 +9,13 @@ You applied for a change from {{norwegian-date uttaksplan.uttaksperioder.0.fom}}
 {{#if ønskerJustertUttakVedFødsel}}The period starting at the due date will be changed to start from the birth date when the child is born: {{#eq ønskerJustertUttakVedFødsel true}}Yes{{else}}No{{/eq}}{{/if}}
 </div>
 
-{{~#*inline "konto-medmorkvote"~}}
+{{~#*inline "konto-formater"~}}
 {{#switch konto}}
-  {{~#case "FEDREKVOTE"~}}{{#if (eq ../rolle "MEDMOR")}}Co-mother quota{{else}}Paternal quota{{/if}}{{~/case~}}
+  {{~#case "FEDREKVOTE"~}}{{#if (and (neq brukFedrekvote true) (eq ../rolle "MEDMOR"))}}Co-mother quota{{else}}Paternal quota{{/if}}{{~/case~}}
   {{~#case "MØDREKVOTE"~}}Maternal quota{{~/case~}}
   {{~#case "FELLESPERIODE"~}}Shared period{{~/case~}}
   {{~#case "FORELDREPENGER_FØR_FØDSEL"~}}Parental benefit before birth{{~/case~}}
   {{~#case "FORELDREPENGER"~}}Parental benefit{{~/case~}}
-  {{~#default~}}Parental benefit{{~/default~}}
 {{/switch}}
 {{~/inline~}}
 
@@ -40,15 +39,15 @@ You applied for a change from {{norwegian-date uttaksplan.uttaksperioder.0.fom}}
 {{#if (and (eq type "utsettelse") (eq årsak "FRI") (eq morsAktivitetIPerioden undefined))}}
 <strong>Period without withdrawal {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
 {{else if (and konto (eq type "overføring"))}}
-<strong>Transfer of {{> konto-medmorkvote}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} business days)</strong>
+<strong>Transfer of {{> konto-formater brukFedrekvote=true}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} business days)</strong>
 {{else if konto}}
-<strong>{{> konto-medmorkvote}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} business days)</strong>
+<strong>{{> konto-formater}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} business days)</strong>
 {{else}}
 <strong>Postponement {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
 {{/if}}
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>{{#if (and konto morsAktivitetIPerioden)}}Which part of the parental benefit is taken out: {{> konto-medmorkvote}} {{#eq morsAktivitetIPerioden "IKKE_OPPGITT"}}without{{else}}with{{/eq}} activity requirement{{/if}}</li>
+    <li>{{#if (and konto morsAktivitetIPerioden)}}Which part of the parental benefit is taken out: {{> konto-formater}} {{#eq morsAktivitetIPerioden "IKKE_OPPGITT"}}without{{else}}with{{/eq}} activity requirement{{/if}}</li>
     <li>{{#if (and morsAktivitetIPerioden (neq morsAktivitetIPerioden "IKKE_OPPGITT"))}}Mother's activity during the period: {{> mors-aktivitet}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-yes-no value=ønskerSamtidigUttak label="Should the other parent receive parental benefit in the same period"}}</li>
     <li>{{#if samtidigUttakProsent}}Your percentage of parental benefit: {{trim-decimal samtidigUttakProsent}}{{/if}}</li>
@@ -74,15 +73,14 @@ You applied for a change from {{norwegian-date uttaksplan.uttaksperioder.0.fom}}
     </li>
     <!-- Opphold -->
     <li>
-        {{~#eq type "opphold"}} <!-- TODO: When is this actually used?? -->
+        {{~#if (and (eq type "opphold") (neq årsak "INGEN"))}}
         Reason for stay: {{#switch årsak}}
-        {{~#case "INGEN"~}}None, then what?{{~/case~}} <!-- TODO: -->
-        {{~#case "UTTAK_MØDREKVOTE_ANNEN_FORELDER"~}}The other parent will take out their own quota{{~/case~}}
-        {{~#case "UTTAK_FEDREKVOTE_ANNEN_FORELDER"~}}The other parent will take out their own quota{{~/case~}}
-        {{~#case "UTTAK_FORELDREPENGER_ANNEN_FORELDER"~}}The other parent will take parental benefit{{~/case~}}
-        {{~#case "UTTAK_FELLESP_ANNEN_FORELDER"~}}The other parent will take the shared period{{~/case~}}
+            {{~#case "UTTAK_MØDREKVOTE_ANNEN_FORELDER"~}}The other parent will take out their own quota{{~/case~}}
+            {{~#case "UTTAK_FEDREKVOTE_ANNEN_FORELDER"~}}The other parent will take out their own quota{{~/case~}}
+            {{~#case "UTTAK_FORELDREPENGER_ANNEN_FORELDER"~}}The other parent will take parental benefit{{~/case~}}
+            {{~#case "UTTAK_FELLESP_ANNEN_FORELDER"~}}The other parent will take the shared period{{~/case~}}
         {{/switch}}
-        {{/eq~}}
+        {{/if~}}
     </li>
     <!-- Utsettelse -->
     <li>
@@ -94,7 +92,7 @@ You applied for a change from {{norwegian-date uttaksplan.uttaksperioder.0.fom}}
             {{~#case "INSTITUSJONSOPPHOLD_SØKER"~}}I am admitted to a healthcare institution{{~/case~}}
             {{~#case "INSTITUSJONSOPPHOLD_BARNET"~}}The child is admitted to a healthcare institution{{~/case~}}
             {{~#case "HV_OVELSE"~}}Exercise in the Home Guard{{~/case~}}
-            {{~#case "NAV_TILTAK"~}}Nav allowance{{~/case~}}
+            {{~#case "NAV_TILTAK"~}}Allowance from Nav{{~/case~}}
         {{/switch}}
         {{/if~}}
     </li>

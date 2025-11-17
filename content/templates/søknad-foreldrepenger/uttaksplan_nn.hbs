@@ -1,6 +1,6 @@
 <div class="no-page-break">
 
-## Din plan
+## Planen din
 {{#if saksnummer~}}
 Du har søkt om endring frå og med {{norwegian-date uttaksplan.uttaksperioder.0.fom}}{{#if dekningsgrad}} og har {{dekningsgrad}} prosent dekningsgrad{{/if}}. Planen viser berre endringane du har søkt og ikkje det du er innvilga tidlegare.
 {{~else~}}
@@ -9,8 +9,14 @@ Du har søkt om endring frå og med {{norwegian-date uttaksplan.uttaksperioder.0
 {{#if ønskerJustertUttakVedFødsel}}Perioden som startar på termin vert endra til å starte frå fødselsdato når barnet blir født: {{#eq ønskerJustertUttakVedFødsel true}}Ja{{else}}Nei{{/eq}}{{/if}}
 </div>
 
-{{~#*inline "konto-medmorkvote"~}}
-{{#if (and (eq ../rolle "MEDMOR") (eq konto "FEDREKVOTE"))}}Medmorkvote{{else}}{{format-text konto toLower=true replaceUnderscore=true capitalizeFirst=true}}{{/if}}
+{{~#*inline "konto-formater"~}}
+{{#switch konto}}
+    {{~#case "FEDREKVOTE"~}}{{#if (and (neq brukFedrekvote true) (eq ../rolle "MEDMOR"))~}}Medmorkvote{{~else~}}Fedrekvote{{~/if}}{{~/case~}}
+    {{~#case "MØDREKVOTE"~}}Mødrekvote{{~/case~}}
+    {{~#case "FELLESPERIODE"~}}Fellesperiode{{~/case~}}
+    {{~#case "FORELDREPENGER_FØR_FØDSEL"~}}Foreldrepengar før fødsel{{~/case~}}
+    {{~#case "FORELDREPENGER"~}}Foreldrepengar{{~/case~}}
+{{/switch}}
 {{~/inline~}}
 
 {{~#*inline "mors-aktivitet"~}}
@@ -33,16 +39,16 @@ Du har søkt om endring frå og med {{norwegian-date uttaksplan.uttaksperioder.0
 {{#if (and (eq type "utsettelse") (eq årsak "FRI") (eq morsAktivitetIPerioden undefined))}}
 <strong>Periode utan uttak {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
 {{else if (and konto (eq type "overføring"))}}
-<strong>Overføring av {{format-text konto toLower=true}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} virkedager)</strong>
+<strong>Overføring av {{> konto-formater brukFedrekvote=true}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} virkedager)</strong>
 {{else if konto}}
-<strong>{{> konto-medmorkvote}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} virkedager)</strong>
+<strong>{{> konto-formater}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} virkedager)</strong>
 {{else}}
 <strong>Utsettelse {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
 {{/if}}
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>{{#if (and konto morsAktivitetIPerioden)}}Kva del av foreldrepengane vert tatt ut: {{format-text konto toLower=true replaceUnderscore=true capitalizeFirst=true}} {{#eq morsAktivitetIPerioden "IKKE_OPPGITT"}}utan{{else}}med{{/eq}} aktivitetskrav{{/if}}</li>
-    <li>{{#if (and morsAktivitetIPerioden (neq morsAktivitetIPerioden "IKKE_OPPGITT"))}}Mors aktivitet i perioden: {{> mors-aktivitet}}{{/if}}</li>
+    <li>{{#if (and konto morsAktivitetIPerioden)}}Kva del av foreldrepengane vert tatt ut: {{> konto-formater}} {{#eq morsAktivitetIPerioden "IKKE_OPPGITT"}}utan{{else}}med{{/eq}} aktivitetskrav{{/if}}</li>
+    <li>{{#if (and morsAktivitetIPerioden (neq morsAktivitetIPerioden "IKKE_OPPGITT"))}}Moras aktivitet i perioden: {{> mors-aktivitet}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerSamtidigUttak label="Skal annan forelder ha foreldrepengar i same periode"}}</li>
     <li>{{#if samtidigUttakProsent}}Din prosent med foreldrepengar: {{trim-decimal samtidigUttakProsent}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerFlerbarnsdager label="Skal bruke fleirbarnsdager"}}</li>
@@ -51,7 +57,7 @@ Du har søkt om endring frå og med {{norwegian-date uttaksplan.uttaksperioder.0
 {{~#with gradering}}
     <li>{{#eq erArbeidstaker true}}{{#each orgnumre}}Kor skal du jobbe: {{#arbeidsforhold-fra-orgnummer this ../søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{/each}}{{/eq}}</li><!-- TODO: Alltid orgnumre.[0] også.. -->
     <li>{{#eq erFrilanser true}}Jobbar som: Frilansar{{/eq}}</li>
-    <li>{{#eq erSelvstendig true}}Jobbar som: Självstendig næringsdrivande{{/eq}}</li>
+    <li>{{#eq erSelvstendig true}}Jobbar som: Sjølvstendig næringsdrivande{{/eq}}</li>
     <li>{{#if stillingsprosent}}Oppgitt prosent i arbeid: {{trim-decimal stillingsprosent}}{{/if}}</li>
 {{/with~}}
     <!-- Overføring -->
@@ -67,15 +73,14 @@ Du har søkt om endring frå og med {{norwegian-date uttaksplan.uttaksperioder.0
     </li>
     <!-- Opphold -->
     <li>
-        {{~#eq type "opphold"}} <!-- TODO: Når brukes dette egentlig?? -->
+        {{~#if (and (eq type "opphold") (neq årsak "INGEN"))}}
         Årsak til opphald: {{#switch årsak}}
-        {{~#case "INGEN"~}}Ingen kva då?{{~/case~}} <!-- TODO: -->
-        {{~#case "UTTAK_MØDREKVOTE_ANNEN_FORELDER"~}}Den andre forelderen skal ta ut eigen kvote{{~/case~}}
-        {{~#case "UTTAK_FEDREKVOTE_ANNEN_FORELDER"~}}Den andre forelderen skal ta ut eigen kvote{{~/case~}}
-        {{~#case "UTTAK_FORELDREPENGER_ANNEN_FORELDER"~}}Den andre forelderen skal ta foreldrepengar{{~/case~}}
-        {{~#case "UTTAK_FELLESP_ANNEN_FORELDER"~}}Den andre forelderen skal ta ut fellesperiode{{~/case~}}
+            {{~#case "UTTAK_MØDREKVOTE_ANNEN_FORELDER"~}}Den andre forelderen skal ta ut eigen kvote{{~/case~}}
+            {{~#case "UTTAK_FEDREKVOTE_ANNEN_FORELDER"~}}Den andre forelderen skal ta ut eigen kvote{{~/case~}}
+            {{~#case "UTTAK_FORELDREPENGER_ANNEN_FORELDER"~}}Den andre forelderen skal ta foreldrepengar{{~/case~}}
+            {{~#case "UTTAK_FELLESP_ANNEN_FORELDER"~}}Den andre forelderen skal ta ut fellesperiode{{~/case~}}
         {{/switch}}
-        {{/eq~}}
+        {{/if~}}
     </li>
     <!-- Utsettelse -->
     <li>
