@@ -90,7 +90,7 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
     <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li></ul>
 </div>
 <div class="no-page-break">
-## Din plan
+## Planen din
 Du har søkt om endring fra og med 23.08.2025. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
 </div>
 <div class="no-page-break">

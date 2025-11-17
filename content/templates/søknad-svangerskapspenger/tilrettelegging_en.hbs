@@ -18,7 +18,7 @@ Work accommodation need at {{#switch type}}
     {{~#each tilrettelegginger~}}
     <li>
         {{~#switch type}}
-            {{~#case "hel"~}}Employer can provide accommodation from {{norwegian-date fom}}. I can work in my original employment percentage.{{~/case~}}
+            {{~#case "hel"~}}Employer can provide accommodation from {{norwegian-date fom}}. I can continue working my original employment percentage.{{~/case~}}
             {{~#case "delvis"~}}Employer can provide accommodation from {{norwegian-date fom}}. I can work {{trim-decimal stillingsprosent}} per cent of my position.{{~/case~}}
             {{~#case "ingen"~}}I cannot work in my position and the employer cannot provide accommodation from {{norwegian-date fom}}.{{~/case~}}
         {{/switch~}}

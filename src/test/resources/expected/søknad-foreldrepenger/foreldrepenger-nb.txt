@@ -57,7 +57,7 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
     <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li></ul>
 </div>
 <div class="no-page-break">
-## Din plan
+## Planen din
 Du har søkt om 80 prosent foreldrepenger.
 </div>
 <div class="no-page-break">

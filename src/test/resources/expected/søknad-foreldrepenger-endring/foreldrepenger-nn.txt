@@ -20,7 +20,7 @@ Fødselsnummer: 3456789</br>
 </ul>
 </div>
 <div class="no-page-break">
-## Din plan
+## Planen din
 Du har søkt om endring frå og med 15.08.2025. Planen viser berre endringane du har søkt og ikkje det du er innvilga tidlegare.
 </div>
 <div class="no-page-break">
@@ -43,11 +43,11 @@ Du har søkt om endring frå og med 15.08.2025. Planen viser berre endringane du
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<strong>Foreldrepengar 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepenger med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepengar med aktivitetskrav</li>
+    <li>Moras aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
@@ -62,11 +62,11 @@ Du har søkt om endring frå og med 15.08.2025. Planen viser berre endringane du
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<strong>Foreldrepengar 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepenger med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepengar med aktivitetskrav</li>
+    <li>Moras aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
@@ -81,7 +81,7 @@ Du har søkt om endring frå og med 15.08.2025. Planen viser berre endringane du
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<strong>Foreldrepengar 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
@@ -100,11 +100,11 @@ Du har søkt om endring frå og med 15.08.2025. Planen viser berre endringane du
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<strong>Foreldrepengar 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepenger med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepengar med aktivitetskrav</li>
+    <li>Moras aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
@@ -119,11 +119,11 @@ Du har søkt om endring frå og med 15.08.2025. Planen viser berre endringane du
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<strong>Foreldrepengar 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepenger med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepengar med aktivitetskrav</li>
+    <li>Moras aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
@@ -138,11 +138,11 @@ Du har søkt om endring frå og med 15.08.2025. Planen viser berre endringane du
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Foreldrepenger 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
+<strong>Foreldrepengar 27.03.2026 - 24.09.2026 (130 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepenger med aktivitetskrav</li>
-    <li>Mors aktivitet i perioden: Arbeid</li>
+    <li>Kva del av foreldrepengane vert tatt ut: Foreldrepengar med aktivitetskrav</li>
+    <li>Moras aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>

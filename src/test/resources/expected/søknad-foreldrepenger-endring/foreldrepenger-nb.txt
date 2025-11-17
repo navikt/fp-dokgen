@@ -20,7 +20,7 @@ Fødselsnummer: 3456789</br>
 </ul>
 </div>
 <div class="no-page-break">
-## Din plan
+## Planen din
 Du har søkt om endring fra og med 15.08.2025. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
 </div>
 <div class="no-page-break">
