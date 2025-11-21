@@ -89,7 +89,7 @@ Because your earned income is higher than the average of your earned income and 
 Because your income as a freelancer is higher than the average of your income as a freelancer and your income from self-employment, you will receive parental benefit from your income as a freelancer.
 {{/if}}
 {{~#if (eq @../regelStatus "KOMBINERT_AT_FL_SN")}}
-Therefore your earned income and income as a freelancer is higher than the average of your earned income, income as a freelancer and your income from self-employment, you will receive parental benefit from your earned income and income as a freelancer.
+Therefore your earned income and income as a freelancer are higher than the average of your earned income, income as a freelancer and your income from self-employment, you will receive parental benefit from your earned income and income as a freelancer.
 {{/if}}
 {{/if}}
 {{/each}}
@@ -101,7 +101,7 @@ Therefore your earned income and income as a freelancer is higher than the avera
 Your income is {{thousand-seperator this.bruttoInkludertBortfaltNaturalytelsePrAar}} kroner before tax starting from {{this.naturalytelseEndringDato}} because you are losing your payment in kind from {{this.arbeidsgiverNavn}}.
 {{/eq}}
 {{~#eq this.naturalytelseEndringType "START"}}
-You income is {{thousand-seperator this.bruttoInkludertBortfaltNaturalytelsePrAar}} kroner before tax starting from {{this.naturalytelseEndringDato}} because you are receiving payment in kind from {{this.arbeidsgiverNavn}}.
+Your income is {{thousand-seperator this.bruttoInkludertBortfaltNaturalytelsePrAar}} kroner before tax starting from {{this.naturalytelseEndringDato}} because you are receiving payment in kind from {{this.arbeidsgiverNavn}}.
 {{/eq}}
 {{/each}}
 {{/gt}}

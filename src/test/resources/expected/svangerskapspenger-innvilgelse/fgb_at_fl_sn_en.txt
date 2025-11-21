@@ -51,13 +51,13 @@ Your income as a freelancer is 1 000 kroner per month. Your client or clients h
 This is the average of your income you have had as an employee and as a freelancer, over the last three months before the start of the parental benefit period. If you have just started working, changed your employment situation or your pay has changed, we have used your monthly income after the change took place.
 <!-- SN -->
 Your income from self-employment has been set to 40 000 kroner a year. When we calculate pregnancy benefit based on your income from self-employment, we use the average of the income for the past three years as stated by the Norwegian Tax Administration. If you have just started working, we have used your income based on the information we have for the most recent year. This average may also include your earned income, which is deducted in the calculation of your income from self-employment.
-Because your earned income and income as a freelancer is higher than the average of your earned income, income as a freelancer and your income from self-employment, you will receive pregnancy benefit from your earned income and income as a freelancer.
+Because your earned income and income as a freelancer are higher than the average of your earned income, income as a freelancer and your income from self-employment, you will receive pregnancy benefit from your earned income and income as a freelancer.
 <!-- SN + AT -->
 <!-- SN + FL -->
 From and including 1. juli 2021, you will receive 1 100 kroner per day before tax because you are receiving payment in kind from Arbeidsgiver 1 AS.
 From and including 12. juli 2021, you will receive 1 000 kroner per day before tax because you are losing your payment in kind from Arbeidsgiver 2 AS.
 We have stipulated your pregnancy benefit to two times the national insurance basic amount because you have been doing military service, civil service or civil defence service.
-Your pregnancy benefit are calculated to 600 000 kroner a year, which is six times the national insurance basic amount. You earn more than this, but you will not receive pregnancy benefit for the part of your income that exceeds six times the national insurance basic amount.
+Your pregnancy benefit is calculated to 600 000 kroner a year, which is six times the national insurance basic amount. You earn more than this, but you will not receive pregnancy benefit for the part of your income that exceeds six times the national insurance basic amount.
 The calculation is performed according to the National Insurance Act § 14-4.
 ## You must notify any changes
 You must notify Nav immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt).
