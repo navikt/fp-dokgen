@@ -21,7 +21,7 @@
 <div id="redigerbart-innhold" data-editable="data-editable">
 # Du har ikkje lenger rett til svangerskapspengar
 Vi har fått opplysningar om at du har motteke sjukepengar i en periode du allereie fekk svangerskapspengar. Svangerskapspengane dine stansar derfor frå 10. mai 2021.
-Dersom det blir aktuelt med svangerskapspengar frå en seinare dato må du sende ny søknad om svangerskapspengar, og din arbeidsgivar må sende ny inntektsmelding til Nav.
+Viss det blir aktuelt med svangerskapspengar frå en seinare dato må du sende ny søknad om svangerskapspengar, og din arbeidsgivar må sende ny inntektsmelding til Nav.
 Vedtaket er gjort etter folketrygdlova  § 14-4 og § forvaltningsloven § 35.
 ## Du har rett til å klage
 Du kan klage innan 6 veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).

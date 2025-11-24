@@ -19,4 +19,18 @@ class ForeldrepengerInnvilgelseAapPraksisendringTest {
         var expected = getExpected(BREVMAL, UNDERMAL, "foreldrepenger_aap_praksisendring_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+
+    @Test
+    void skal_informere_om_aap_praksisk_endring_nn() {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.NYNORSK, "foreldrepenger_aap_praksisendring");
+        var expected = getExpected(BREVMAL, UNDERMAL, "foreldrepenger_aap_praksisendring_nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    void skal_informere_om_aap_praksisk_endring_en() {
+        var content = compileContent(BREVMAL, UNDERMAL, Språk.ENGELSK, "foreldrepenger_aap_praksisendring");
+        var expected = getExpected(BREVMAL, UNDERMAL, "foreldrepenger_aap_praksisendring_en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
 }

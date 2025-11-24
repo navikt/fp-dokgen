@@ -1,6 +1,6 @@
 {{> header_nn }}
 {{#eq konsekvensForInnvilgetYtelse "ENDRING_AAP_PRAKSISENDRING"}}
-{{foreldrepenger-innvilgelse/aap_praksisendring_nb}}
+{{> foreldrepenger-innvilgelse/aap_praksisendring_nn}}
 {{else}}
 {{#> utils/redigerbart_innhold}}
 {{#if (eq behandlingResultatType "INNVILGET")}}
@@ -31,7 +31,7 @@
 {{~#if sisteDagAvSistePeriode}}
     {{~#if (or (gt disponibleDager 0)(gt disponibleFellesDager 0))}}
         {{~#eq rettigheter.gjeldende "BEGGE_RETT_EØS"~}}
-Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dagar{{/eq}} igjen av kvoten din.{{~#gt disponibleFellesDager 0}} Det står{{~#gt disponibleDager 0}} også{{/gt}} att {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dagar{{/eq}} med foreldrepengar som du kan ta ut dersom den andre forelderen {{#eq gjelderMor false}}er i aktivitet, og {{/eq}}ikkje har tatt ut desse i eit anna EU/EØS-land.{{/gt}}
+Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dagar{{/eq}} igjen av kvoten din.{{~#gt disponibleFellesDager 0}} Det står{{~#gt disponibleDager 0}} også{{/gt}} att {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dagar{{/eq}} med foreldrepengar som du kan ta ut viss den andre forelderen {{#eq gjelderMor false}}er i aktivitet, og {{/eq}}ikkje har tatt ut desse i eit anna EU/EØS-land.{{/gt}}
         {{~else if (eq rettigheter.gjeldende "BEGGE_RETT")}}
 Det er {{disponibleDager}}{{#eq disponibleDager 1}} dag{{else}} dagar{{/eq}} igjen av kvoten din, og {{disponibleFellesDager}}{{#eq disponibleFellesDager 1}} dag{{else}} dagar{{/eq}} som begge kan ta ut.
         {{~else}}
@@ -103,23 +103,23 @@ Fordi du har valt 80 prosent foreldrepengar, får du mindre utbetalt i månaden.
 {{/if}}
 
 {{#if (and (eq inntektMottattArbeidsgiver true) (neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
-Dersom arbeidsgivar kjem med nye opplysningar om inntekta du hadde før foreldrepengeperioden din starta, får du nytt vedtak med ei ny berekning.
+Viss arbeidsgivar kjem med nye opplysningar om inntekta du hadde før foreldrepengeperioden din starta, får du nytt vedtak med ei ny berekning.
 {{/if}}
 
 {{#if (or (eq forMyeUtbetalt "FERIE")(eq forMyeUtbetalt "JOBB"))}}
-## Kva skjer dersom du får utbetalt foreldrepengar og løn for same periode?
+## Kva skjer viss du får utbetalt foreldrepengar og løn for same periode?
 
-Dersom du har fått utbetalt foreldrepengar samtidig som du har jobba eller hatt ferie, har du fått utbetalt for mykje i foreldrepengar. Det betyr at utbetalinga i neste månad kan bli redusert med det du har fått utbetalt for mykje.
+Viss du har fått utbetalt foreldrepengar samtidig som du har jobba eller hatt ferie, har du fått utbetalt for mykje i foreldrepengar. Det betyr at utbetalinga i neste månad kan bli redusert med det du har fått utbetalt for mykje.
 {{/if}}
 
 {{#eq forMyeUtbetalt "GENERELL"}}
-## Kva skjer dersom du får utbetalt foreldrepengar og løn for same periode?
+## Kva skjer viss du får utbetalt foreldrepengar og løn for same periode?
 
-Dersom du får utbetalt for mykje i foreldrepengar, kan utbetalinga di bli redusert i neste månad.
+Viss du får utbetalt for mykje i foreldrepengar, kan utbetalinga di bli redusert i neste månad.
 {{/eq}}
 
 ## Du må melde frå om endringar
-Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til Nav med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+Viss det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til Nav med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 {{/gt}}
 {{/utils/redigerbart_innhold}}
 

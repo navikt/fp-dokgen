@@ -21,7 +21,7 @@
 <div id="redigerbart-innhold" data-editable="data-editable">
 # Nav har avslått søknaden din om svangerskapspengar
 Vi har avslått søknaden din om svangerskapspengar som vi fekk 23. mars 2021 fordi vi ikkje har mottatt dokumentasjonen vi har bedt om.
-Hvis du sender oss dokumentasjonen innan seks veker frå du fekk dette vedtaket, behandlar vi saka di på nytt. Da trenger du ikkje sende ny søknad.
+Viss du sender oss dokumentasjonen innan seks veker frå du fekk dette vedtaket, behandlar vi saka di på nytt. Da trenger du ikkje sende ny søknad.
 Vedtaket er gjort etter folketrygdlova § 14-4.
 ## Du har rett til å klage
 Du kan klage innan 6 veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).

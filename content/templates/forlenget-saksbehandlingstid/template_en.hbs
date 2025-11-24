@@ -28,10 +28,12 @@ Documentation can be, for example:
 * If you have children who go to school or kindergarten, we can get confirmation of this
 
 * Any other documentation showing that you are staying in Norway permanently
+{{else}}{{#eq variantType "MEDLEM_FORUTGÅENDE"}}
+To be entitled to a lump-sum grant, you must have been a continuous member of the Norwegian National Insurance Scheme for the last 12 months before the due date. You have not been a member for 12 months as of today, and we must therefore wait to process your case until closer to the due date.
 {{else}}{{#eq variantType "KLAGE"}}
 We expect to be able to process your complaint within {{behandlingsfristUker}} weeks.
 {{else}}{{#eq variantType "FORTIDLIG"}}
 We can process your application at the earliest 4 weeks before the period of {{> ytelse_navn_en}} starts.
-{{/eq}}{{/eq}}{{/eq}}{{/eq}}{{/if}}
+{{/eq}}{{/eq}}{{/eq}}{{/eq}}{{/eq}}{{/if}}
 
 {{> footer_en }}

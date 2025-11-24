@@ -26,7 +26,7 @@ Tekst
 - Bekreftelse
 Mer tekst
 ## Søknaden kan bli avslått
-Dersom du ikkje sender oss dette innan 24. mai 2020, behandlar vi saka di med dei opplysningane vi har.
+Viss du ikkje sender oss dette innan 24. mai 2020, behandlar vi saka di med dei opplysningane vi har.
 Dette går fram av folketrygdlova § 21-3.
 ## Du har rett til innsyn
 For å sjå dokumenta i saka di, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).

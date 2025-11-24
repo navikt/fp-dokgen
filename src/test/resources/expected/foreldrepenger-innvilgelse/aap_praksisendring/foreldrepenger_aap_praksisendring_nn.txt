@@ -1,0 +1,40 @@
+<div id="redigerbart-innhold" data-editable="data-editable">
+# Nav har rekna ut foreldrepengane dine på nytt
+Nav har hatt feil praksis for å rekne ut foreldrepengane for dei som har motteke arbeidsavklaringspengar samstundes som dei har jobba. Derfor er saka di no behandla på nytt, jf. forvaltningslova § 35 c.
+Du får 1 436 kroner per dag før skatt frå og med 20. januar 2022. Dette er i gjennomsnitt 31 113 kroner i månaden.
+## Inntekt vi har brukt i berekninga
+Inntekta di hos FIRMA AS er 38 904 kroner i månaden. Arbeidsgivaren din har gitt oss desse opplysningane.
+Dette er gjennomsnittet av inntekta di frå dei siste tre månadene. Dersom du nettopp har begynt å arbeide, har bytta arbeidsforhold, eller dersom lønna di har endra seg, har vi brukt månadsinntektene etter at endringa skjedde.
+Berekninga er gjort etter folketrygdlova §§ 14-7 og 8-30 og forvaltningsloven § 35.
+## Utbetaling
+Vi etterbetaler til den kontoen du har registrert hos Nav, eller til arbeidsgjevar dersom du fekk løn under permisjonen. Du kan sjekke kva for kontonummer som er registrert på deg ved å logge deg inn på [nav.no/min-side](https://nav.no/min-side).
+Etterbetalinga blir registrert som inntekt for 2025, og kan påverke grunnlaget for skatten du skal betale dette året.
+Skatteetaten er ansvarleg for å vurdere om det løner seg for deg at utbetalinga blir skattlagd for inntekt på etterskot i staden for inntekt i utbetalingsåret. Du kan lese meir om skatt på etterbetalingar på Skatteetaten sine sider:
+[skatt på etterbetaling av pensjon og trygdeytelser – Skatteetaten](https://www.skatteetaten.no/person/skatt/skattekort/om-skattekortet/skatt-pa-etterbetalinger-av-pensjon-og-trygdeytelser)
+Etterbetalinga av foreldrepengar er sendt til deg i dag og vil vere på konto om 2-3 dagar.
+Du får også renter på etterbetalinga, etter reglane i folketrygdlova § 22-17 jf. §§ 22-13 og 22-14. Rentene blir rekna ut og utbetalt frå Nav Økonomi stønad og rapportert til Skatteetaten som renteinntekt. Rentene er skattepliktige, men Nav trekkjer ikkje skatt av rentene. Du kan ta kontakt med Skatteetaten for å sjekke om skattekortet ditt er riktig. Viss du har for lågt skattetrekk, kan det føre til at du får restskatt.
+Kontakt Skatteetaten viss du har spørsmål om skatt på etterbetaling og renter.
+Etterbetalinga av renter kan ta noko tid. Du vil få ei melding på [nav.no/min-side](https://www.nav.no/min-side) når rentene er utbetalte.
+</div>
+<div id="readonly-innhold">
+## Du må melde frå om endringar
+Viss det skjer endringar som kan ha betydning for stønaden du får utbetalt, må du straks melde frå til Nav. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+## Du har rett til å klage
+Du kan klage innan 6 veker frå den datoen du mottok vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+## Du har rett til innsyn
+For å sjå dokumenta i saka di, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
+<div style="break-inside: avoid; page-break-inside: avoid">
+## Har du spørsmål?
+Du finn meir informasjon på [nav.no/barn](https://nav.no/barn).
+På [nav.no/kontakt](https://nav.no/kontakt) kan du chatte eller skrive til oss.
+Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvardagar 09.00-15.00.
+<br/>
+<br/>
+<br/>
+Med vennleg helsing
+<br/>
+Nav Familie- og pensjonsytelser
+<br/><br/>
+Vedtaket har blitt automatisk saksbehandla av fagsystemet vårt. Det er derfor ingen saksbehandlar som har underskrive vedtaksbrevet.
+</div>
+</div>

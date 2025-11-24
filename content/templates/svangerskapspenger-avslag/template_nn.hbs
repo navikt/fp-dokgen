@@ -9,9 +9,9 @@ Vi sender dette brevet for å informere om at vi har trekt søknaden om svangers
 
 Vedtaket er gjort etter folketrygdlova {{lovhjemmel}}.
 
-Hvis dere har spørsmål om vedtaket eller ønskjer å klage, finn dere skjema og informasjon på [nav.no/klage](https://nav.no/klage).
+Viss du har spørsmål om vedtaket, kan du kontakte oss på telefon 55 55 33 33.
 
-Klagefristen er {{klagefristUker}} veker frå den datoen dødsbuet fekk brevet.
+Du kan klage innan {{klagefristUker}} veker frå den datoen dødsbuet fekk brevet. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 
 {{else}}
 # Nav har avslått søknaden din om svangerskapspengar
@@ -19,7 +19,7 @@ Klagefristen er {{klagefristUker}} veker frå den datoen dødsbuet fekk brevet.
 {{#eq årsak "1019" }}
 Vi har avslått søknaden din om svangerskapspengar som vi fekk {{mottattDato}} fordi vi ikkje har mottatt dokumentasjonen vi har bedt om.
 
-Hvis du sender oss dokumentasjonen innan seks veker frå du fekk dette vedtaket, behandlar vi saka di på nytt. Da trenger du ikkje sende ny søknad.
+Viss du sender oss dokumentasjonen innan seks veker frå du fekk dette vedtaket, behandlar vi saka di på nytt. Da trenger du ikkje sende ny søknad.
 {{/eq}}
 {{#in-array (array "1020" "1021" "1023" "1024" "1025") årsak}}
 {{#neq årsak "1024"}}
@@ -34,7 +34,7 @@ Du har ikkje rett til svangerskapspengar frå {{stønadsdatoFom}} fordi du ikkje
 Du er omfatta av trygdeordninga i eit anna land.{{/eq}}
 {{#eq årsak "1021"}}
 
-Ifølgje folkeregisteret har du flyttet frå Noreg.{{/eq}}
+Ifølgje folkeregisteret har du flytta frå Noreg.{{/eq}}
 {{#eq årsak "1023"}}
 
 Du har ikkje opphaldsløyve i Noreg.{{/eq}}
@@ -58,13 +58,13 @@ Du har ikkje rett til svangerskapspengar fordi det ikkje var dokumentert at du e
 {{#eq årsak "1062" }}
 Vi har fått opplysningar om at du er 100 prosent sjukemeldt i same periode som du søker svangerskapspengar. Du fyller dermed ikkje vilkåra for å ta i mot svangerskapspengar.
 
-Dersom du har behov for svangerskapspengar etter avslutta sjukemelding, må du sende inn en ny søknad og arbeidsgivar må sende inn en ny inntektsmelding.
+Viss du har behov for svangerskapspengar etter avslutta sjukemelding, må du sende inn en ny søknad og arbeidsgivar må sende inn en ny inntektsmelding.
 {{/eq}}
 
 {{#eq årsak "1063" }}
 Du har ikkje rett til svangerskapspengar fordi du kan gjere arbeidsoppgåvene hos {{#gt antallArbeidsgivere 1}}dine arbeidsgivarar{{else}}din arbeidsgivar{{/gt}} utan at det er fare for å skade barnet/barna du venter.
 
-Vi har ikkje mottatt opplysningar om at det er nødvending med tilpassingar, eller at du må endre arbeidsoppgåvene dine hos {{#gt antallArbeidsgivere 1}}dine arbeidsgivarar{{else}}din arbeidsgivar{{/gt}}. Dersom du ikkje kan jobbe fordi du er sjuk, kan du ha rett til sjukepengar.
+Vi har ikkje mottatt opplysningar om at det er nødvending med tilpassingar, eller at du må endre arbeidsoppgåvene dine hos {{#gt antallArbeidsgivere 1}}dine arbeidsgivarar{{else}}din arbeidsgivar{{/gt}}. Viss du ikkje kan jobbe fordi du er sjuk, kan du ha rett til sjukepengar.
 {{/eq}}
 
 {{#eq årsak "1064" }}

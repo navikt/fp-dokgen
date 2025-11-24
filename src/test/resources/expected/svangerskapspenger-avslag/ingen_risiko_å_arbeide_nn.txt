@@ -21,7 +21,7 @@
 <div id="redigerbart-innhold" data-editable="data-editable">
 # Nav har avslått søknaden din om svangerskapspengar
 Du har ikkje rett til svangerskapspengar fordi du kan gjere arbeidsoppgåvene hos dine arbeidsgivarar utan at det er fare for å skade barnet/barna du venter.
-Vi har ikkje mottatt opplysningar om at det er nødvending med tilpassingar, eller at du må endre arbeidsoppgåvene dine hos dine arbeidsgivarar. Dersom du ikkje kan jobbe fordi du er sjuk, kan du ha rett til sjukepengar.
+Vi har ikkje mottatt opplysningar om at det er nødvending med tilpassingar, eller at du må endre arbeidsoppgåvene dine hos dine arbeidsgivarar. Viss du ikkje kan jobbe fordi du er sjuk, kan du ha rett til sjukepengar.
 Vedtaket er gjort etter folketrygdlova § 14-4.
 ## Du har rett til å klage
 Du kan klage innan 6 veker frå den datoen du fekk vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
