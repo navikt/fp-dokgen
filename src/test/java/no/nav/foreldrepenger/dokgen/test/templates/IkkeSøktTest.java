@@ -29,7 +29,7 @@ class IkkeSøktTest {
     @Test
     void skal_generere_brev_for_ikke_søkt_FP_på_bokmål_for_engelsk_også() {
         var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fp");
-        var expected = getExpected(BREVMAL, "ikke-sokt_fp_nb.txt");
+        var expected = getExpected(BREVMAL, "ikke-sokt_fp_en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 

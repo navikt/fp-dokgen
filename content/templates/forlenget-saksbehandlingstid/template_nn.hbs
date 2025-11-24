@@ -28,10 +28,12 @@ Dokumentasjon kan til dømes vere:
 * Har du barn som går på skule eller barnehage kan vi få stadfesting på dette
 
 * Eventuell annan dokumentasjon som viser at du oppheld deg i Noreg fast
+{{else}}{{#eq variantType "MEDLEM_FORUTGÅENDE"}}
+For å ha rett til eingongsstønad må du ha vore samanhengande medlem av folketrygda dei siste 12 månadene før termin for fødsel. Du har ikkje vore medlem i 12 månader per i dag, og vi må derfor vente med å behandle saka di til nærare termindatoen.
 {{else}}{{#eq variantType "KLAGE"}}
 Vi reknar med å behandle klagen din innan {{behandlingsfristUker}} veker.
 {{else}}{{#eq variantType "FORTIDLIG"}}
 Vi kan tidlegast behandle søknaden din når det er fire veker igjen til perioden med {{> ytelse_navn_nn}} startar.
-{{/eq}}{{/eq}}{{/eq}}{{/eq}}{{/if}}
+{{/eq}}{{/eq}}{{/eq}}{{/eq}}{{/eq}}{{/if}}
 
 {{> footer_nn }}
