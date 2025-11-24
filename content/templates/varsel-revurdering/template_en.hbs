@@ -2,8 +2,8 @@
 
 
 {{#eq felles.ytelseType "ES" }}# Nav considers reprocessing your case regarding entitlement to a lump-sum grant
-{{else}}{{#eq felles.ytelseType "FP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søke om å endre foreldrepengeperioden din{{else}}# Nav vurderer retten din til foreldrepenger på nytt{{/eq}}
-{{else}}{{#eq felles.ytelseType "SVP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søke om å endre svangerskapspengeperioden din{{else}}# Nav vurderer retten din til svangerskapspenger på nytt{{/eq}}{{/eq}}{{/eq}}{{/eq}}
+{{else}}{{#eq felles.ytelseType "FP" }}{{#eq advarselKode "JOBBFULLTID" }}# You must apply to change your parental benefit period{{else}}# Nav considers reprocessing your case regarding entitlement to parental benefit{{/eq}}
+{{else}}{{#eq felles.ytelseType "SVP" }}{{#eq advarselKode "JOBBFULLTID" }}# You must apply to change your pregnancy benefit period{{else}}# Nav considers reprocessing your case regarding entitlement to pregnancy benefit{{/eq}}{{/eq}}{{/eq}}{{/eq}}
 
 {{#eq advarselKode "BARNIKKEREG" }}
 You were expecting {{terminDato}}, but {{#eq antallBarn 1}}your child is{{else}}your children are{{/eq}} not in the National Registry. You will have to send us a birth certificate before {{fristDato}}.
@@ -19,67 +19,66 @@ We have received new information that may influence the decision on your entitle
 
 {{#neq felles.ytelseType "ES" }}
 {{#eq advarselKode "JOBBFULLTID" }}
-Vi har fått opplysninger om at du jobber samtidig som du får {{> ytelse_navn_en}}. Derfor vurderer vi å stanse {{> ytelse_navn_f_nb}} dine.
+We have received information that you are working while receiving {{> ytelse_navn_en}}. We are therefore considering stopping your benefit payments.
 
-Du kan ikke jobbe heltid og samtidig få {{> ytelse_navn_en}}. Arbeider du deltid, kan du søke om å kombinere {{> ytelse_navn_f_nb}} med arbeid.
+You cannot work full-time while receiving {{> ytelse_navn_en}}. If you work part-time, you can apply to combine the benefit with work.
 {{/eq}}
 {{#eq advarselKode "IKKEOPPTJENT" }}
-Vi har fått opplysninger om at inntekten din var lavere enn et halvt grunnbeløp i året før skatt. Derfor vurderer vi å stanse {{> ytelse_navn_f_nb}} dine.
+We have received information that your income was lower than half the National Insurance basic amount per year before taxes. We are therefore considering stopping your benefit payments.
 {{/eq}}
 {{#eq advarselKode "UTVANDRET" }}
-Vi har fått opplysninger om at du har flyttet fra Norge. Derfor vurderer vi å stanse {{> ytelse_navn_f_nb}} dine.
+We have received information that you have moved from Norway. We are therefore considering stopping your benefit payments.
 {{/eq}}
 {{#eq advarselKode "JOBBUTLAND" }}
-Vi har fått opplysninger om at du jobber i et annet land. Derfor vurderer vi å stanse {{> ytelse_navn_f_nb}} dine.
+We have received information that you are working in another country. We are therefore considering stopping your benefit payments.
 {{/eq}}
 {{#eq advarselKode "IKKEOPPHOLD" }}
-Vi har fått opplysninger om at du ikke har lovlig opphold i Norge. Derfor vurderer vi å stanse {{> ytelse_navn_f_nb}} dine.
+We have received information that you do not have legal residence in Norway. We are therefore considering stopping your benefit payments.
 {{/eq}}{{/neq}}
 
 {{#eq felles.ytelseType "FP" }}
 {{#eq advarselKode "JOBB6MND" }}
-Vi har fått nye opplysninger som viser at du ikke har jobbet seks måneder før du fikk foreldrepenger. Derfor vurderer vi å stanse foreldrepengene dine.
+We have received new information showing that you have not worked for six months before you received parental benefit. We are therefore considering stopping your parental benefit.
 {{/eq}}
 {{#eq advarselKode "AKTIVITET" }}
-Vi har fått opplysninger om at moren til {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}} ikke lenger jobber. Derfor vurderer vi å stanse foreldrepengene dine.
+We have received information that the mother of {{#eq antallBarn 1}}the child{{else}}the children{{/eq}} is no longer working. We are therefore considering stopping your parental benefit.
 
-Du kan ha rett til foreldrepenger hvis mor:
+You may be entitled to parental benefit if the mother:
 <ul>
-    <li>begynner å jobbe igjen</li>
-    <li>studerer på heltid</li>
-    <li>deltar i kvalifiseringsprogrammet</li>
-    <li>deltar i introduksjonsprogrammet</li>
-    <li>er innlagt i helseinstitusjon</li>
-    <li>er helt avhengig av hjelp til å ta seg av {{#eq antallBarn 1}}barnet{{else}}barna{{/eq}}</li>
+    <li>starts working again</li>
+    <li>studies full-time</li>
+    <li>participates in a qualification programme</li>
+    <li>participates in an introduction programme</li>
+    <li>is admitted to a health care institution</li>
+    <li>is completely dependent on help to take care of {{#eq antallBarn 1}}the child{{else}}the children{{/eq}}</li>
 </ul>
 {{/eq}}{{/eq}}
 
 {{#eq felles.ytelseType "SVP" }}
 {{#eq advarselKode "JOBB6MND" }}
-Vi har fått nye opplysninger som viser at du ikke har jobbet fire uker før du fikk svangerskapspenger. Derfor vurderer vi å stanse svangerskapspengene dine.
+We have received new information showing that you have not worked for four weeks before you received pregnancy benefit. We are therefore considering stopping your pregnancy benefit.
 {{/eq}}
 {{#eq advarselKode "JOBBFULLTID" }}
-Ønsker du å søke om å endre svangerskapsperioden eller å uttale deg, må du gjøre dette innen {{fristDato}}.
+If you wish to apply to change your pregnancy benefit period or make a statement, you must do so before {{fristDato}}.
 
-Du kan søke om å endre perioden din på [nav.no](https://nav.no/). Ønsker du å uttale deg kan du gjøre det ved å logge deg inn og velge «Skriv til oss» på [nav.no/skriv-til-oss](https://www.nav.no/skriv-til-oss).
+You can apply to change your period at [nav.no](https://nav.no/). If you wish to make a statement, you can do so by logging in and choosing «Write to us» at [nav.no/skriv-til-oss](https://www.nav.no/skriv-til-oss).
 {{/eq}}{{/eq}}
 
 {{#if flereOpplysninger}}
-This is a notice.
-Do you have further information or do you wish to come with a statement, you will have to do this before {{fristDato}}.
+If you have further information or wish to make a statement, you must do so before {{fristDato}}.
 
-You can send us your statement by logging in  and choose «Skriv til oss» (Send message to Nav) [nav.no/skriv-til-oss](https://www.nav.no/skriv-til-oss). You can also send information at [nav.no/ettersendelse](https://nav.no/ettersendelse).
+You can make a statement by logging in and choosing «Write to us» at [nav.no/skriv-til-oss](https://www.nav.no/skriv-til-oss). You can send information at [nav.no/ettersendelser](https://nav.no/ettersendelser).
 {{/if}}
 {{#eq advarselKode "JOBBFULLTID" }}{{#eq felles.ytelseType "FP" }}
-Ønsker du å søke om å endre foreldrepengeperioden eller å uttale deg, må du gjøre dette innen {{fristDato}}.
+If you wish to apply to change your parental benefit period or make a statement, you must do so before {{fristDato}}.
 
-Du kan søke om å endre perioden din på [nav.no](https://nav.no/). Ønsker du å uttale deg kan du gjøre det ved å logge deg inn og velge «Skriv til oss» på [nav.no/skriv-til-oss](https://www.nav.no/skriv-til-oss).
+You can apply to change your period at [nav.no](https://nav.no/). If you wish to make a statement, you can do so by logging in and choosing «Write to us» at [nav.no/skriv-til-oss](https://www.nav.no/skriv-til-oss).
 {{/eq}}{{/eq}}
 
-Your duty to give information is according to sections 21‑3 og 21‑4 of the National Insurance Act.
+Your duty to give information is pursuant to sections 21‑3 and 21‑4 of the National Insurance Act.
 
 ## The decision about your {{> ytelse_navn_en}} can be reversed
-We will consider your case again after the deadline has been reached. If you are not entitled to the {{> ytelse_navn_en}}, you can be asked to repay the money back.
+We will consider your case again after the deadline has been reached. If you are not entitled to the {{> ytelse_navn_en}}, you may be required to repay the money.
 
 You can send us information at [nav.no/ettersendelser](https://nav.no/ettersendelser).
 

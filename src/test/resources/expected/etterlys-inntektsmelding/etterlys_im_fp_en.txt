@@ -19,16 +19,16 @@
     </table>
 </div>
 # We have requested your employers to submit an income report to Nav
-We have got your application for parental benefit 1. april 2020, but we have not received all the information we need to process it.
+We have received your application for parental benefit 1. april 2020, but we have not yet received all the information we need to process it.
 We have requested these employers to submit an income report to Nav:
-* Andeby Bank AS with company number 123456789 and where you work 80 percent.
-* Andeby Vask AS with company number 99999999 and where you work 10 percent.
-If the income report already has been sent from the employer, you can disregard this inquiry.
-We have received the income report from:
-* Andeby Vaktmester AS with company number 99999998 and where you work 5 percent.
-* Andeby Service AS with company number 99999997 and where you work 5 percent.
-We will not be able to process your application for parental benefit until we have received an income report from your employers.
-Your employers can log in to [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) and submit the income report from there.
+* Andeby Bank AS with organisation number 123456789, where you work 80 percent.
+* Andeby Vask AS with organisation number 99999999, where you work 10 percent.
+If the employer has already submitted the income report, you can disregard this letter.
+We have received an income report from:
+* Andeby Vaktmester AS with organisation number 99999998, where you work 5 percent.
+* Andeby Service AS with organisation number 99999997, where you work 5 percent.
+We cannot process your application for parental benefit until we have received an income report from your employers.
+Your employers can log in to [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) and submit the income report there.
 ## You have right of access
 Log into [foreldrepenger.nav.no](https://foreldrepenger.nav.no/) to see the documents in your case.
 <div style="break-inside: avoid; page-break-inside: avoid">

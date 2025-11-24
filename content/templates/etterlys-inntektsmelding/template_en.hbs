@@ -2,26 +2,26 @@
 
 # We have requested {{#gt antallIkkeMottattIM 1}}your employers{{else}}your employer{{/gt}} to submit an income report to Nav
 
-We have got your application for {{>ytelse_navn_en}} {{søknadDato}}, but we have not received all the information we need to process it.
+We have received your application for {{> ytelse_navn_en}} {{søknadDato}}, but we have not yet received all the information we need to process it.
 
 {{#gt antallIkkeMottattIM 0}}We have requested {{#gt antallIkkeMottattIM 1}}these employers{{else}}this employer{{/gt}} to submit an income report to Nav:{{/gt}}
 {{#each inntektsmeldingerStatus}}
 {{#eq erInntektsmeldingMottatt false}}
-* {{arbeidsgiverNavn}} with company number {{arbeidsgiverIdent}} and where you work {{trim-decimal stillingsprosent}} percent.
+* {{arbeidsgiverNavn}} with organisation number {{arbeidsgiverIdent}}, where you work {{trim-decimal stillingsprosent}} percent.
 {{/eq}}
 {{/each}}
 
-If the income report already has been sent from the employer, you can disregard this inquiry.
+If the employer has already submitted the income report, you can disregard this letter.
 
-{{#gt antallMottattIM 0}}We have received the income report from:{{/gt}}
+{{#gt antallMottattIM 0}}We have received an income report from:{{/gt}}
 {{#each inntektsmeldingerStatus}}
-{{#if erInntektsmeldingMottatt true}}
-* {{arbeidsgiverNavn}} with company number {{arbeidsgiverIdent}} and where you work {{trim-decimal stillingsprosent}} percent.
-{{/if}}
+{{#eq erInntektsmeldingMottatt true}}
+* {{arbeidsgiverNavn}} with organisation number {{arbeidsgiverIdent}}, where you work {{trim-decimal stillingsprosent}} percent.
+{{/eq}}
 {{/each}}
 
-We will not be able to process your application for {{>ytelse_navn_en}} until we have received an income report from {{#gt antallIkkeMottattIM 1}}your employers{{else}}your employer{{/gt}}.
+We cannot process your application for {{>ytelse_navn_en}} until we have received an income report from {{#gt antallIkkeMottattIM 1}}your employers{{else}}your employer{{/gt}}.
 
-{{#gt antallIkkeMottattIM 1}}Your employers{{else}}Your employer{{/gt}} can log in to [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) and submit the income report from there.
+{{#gt antallIkkeMottattIM 1}}Your employers{{else}}Your employer{{/gt}} can log in to [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) and submit the income report there.
 
 {{> footer_en }}
