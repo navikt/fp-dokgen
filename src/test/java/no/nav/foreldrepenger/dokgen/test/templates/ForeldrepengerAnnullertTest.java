@@ -4,7 +4,8 @@ import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.comp
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.EnumSource;
 
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
@@ -12,24 +13,19 @@ import no.nav.foreldrepenger.dokgen.test.support.Språk;
 class ForeldrepengerAnnullertTest {
     private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_ANNULLERT;
 
-    @Test
-    void skal_generere_foreldrepenger_annullert_på_bokmål() {
-        var content = compileContent(BREVMAL, Språk.BOKMÅL, "test_fp_annullert");
-        var expected = getExpected(BREVMAL, "foreldrepenger-annullert_nb.txt");
+    @ParameterizedTest
+    @EnumSource(Språk.class)
+    void skal_generere_foreldrepenger_annullert_pga_søknad_fra_bruker(Språk språk) {
+        var content = compileContent(BREVMAL, språk, "test_fp_annullert_pga_søknad_fra_bruker");
+        var expected = getExpected(BREVMAL, "foreldrepenger-annullert_pga_søknad_fra_bruker_%s.txt".formatted(språk.getKode()));
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
-    @Test
-    void skal_generere_foreldrepenger_annullert_på_nynorsk() {
-        var content = compileContent(BREVMAL, Språk.NYNORSK, "test_fp_annullert");
-        var expected = getExpected(BREVMAL, "foreldrepenger-annullert_nn.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void skal_generere_foreldrepenger_annullert_på_engelsk() {
-        var content = compileContent(BREVMAL, Språk.ENGELSK, "test_fp_annullert");
-        var expected = getExpected(BREVMAL, "foreldrepenger-annullert_en.txt");
+    @ParameterizedTest
+    @EnumSource(Språk.class)
+    void skal_generere_foreldrepenger_annullert_pga_innvilget_pleiepenger(Språk språk) {
+        var content = compileContent(BREVMAL, språk, "test_fp_annullert_pga_innvilget_pleiepenger");
+        var expected = getExpected(BREVMAL, "foreldrepenger-annullert_pga_innvilget_pleiepenger_%s.txt".formatted(språk.getKode()));
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 }
