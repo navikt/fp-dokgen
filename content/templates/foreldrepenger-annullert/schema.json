@@ -23,6 +23,9 @@
     },
     "klagefristUker": {
       "type": "number"
+    },
+    "mottarPleiepenger": {
+      "type": "boolean"
     }
   }
 }
