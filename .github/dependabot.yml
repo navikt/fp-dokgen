@@ -10,14 +10,18 @@ updates:
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
-      interval: daily
+      interval: weekly
+    cooldown:
+      default-days: 7
     open-pull-requests-limit: 10
   - package-ecosystem: maven
     directory: "/"
     registries:
       - maven-github
     schedule:
-      interval: daily
+      interval: weekly
+    cooldown:
+      default-days: 7
     open-pull-requests-limit: 20
     ignore:
       - dependency-name: "no.nav.vedtak.prosesstask:*"
@@ -29,5 +33,7 @@ updates:
   - package-ecosystem: docker
     directory: "/"
     schedule:
-      interval: daily
+      interval: weekly
+    cooldown:
+      default-days: 7
     open-pull-requests-limit: 10
