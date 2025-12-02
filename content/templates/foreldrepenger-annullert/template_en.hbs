@@ -1,18 +1,31 @@
+{{!-- @formatter:off --}}
 {{> header_en }}
 {{#> utils/redigerbart_innhold}}
 #  Nav has changed your parental benefit
 
+{{#if (or (eq annulleringÅrsak "BRUKER_HAR_SØKT_OM_NY_PERIODE") (eq annulleringÅrsak "BRUKER_MOTTAR_PLEIEPENGER")) }}
 You have chosen not to withdraw your previously granted period of parental benefit.
+{{else}}
+You have chosen not to withdraw your previously granted period of parental benefit.
+{{/if}}
 
 {{#if harSøktOmNyPeriode}}
 You are not withdrawing your parental benefit before {{planlagtOppstartDato}}.
 
 Your application for parental benefit from and including {{planlagtOppstartDato}} can not be processed before {{kanBehandlesDato}} because parental benefit should be calculated based on the income you have when you start your withdrawal. It must also be considered whether you have earned the right to parental benefit when your period starts. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{else}}
-{{#if mottarPleiepenger}}
+{{~#switch annulleringÅrsak }}
+{{~#case "BRUKER_HAR_SØKT_OM_NY_PERIODE"}}
+You are not withdrawing your parental benefit before {{planlagtOppstartDato}}.
+
+Your application for parental benefit from and including {{planlagtOppstartDato}} can not be processed before {{kanBehandlesDato}} because parental benefit should be calculated based on the income you have when you start your withdrawal. It must also be considered whether you have earned the right to parental benefit when your period starts. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+{{/case}}
+{{~#case "BRUKER_MOTTAR_PLEIEPENGER"}}
 You receive care benefit instead of parental benefit during the period you had been granted parental benefit. Therefore, your parental benefit has ended, but you do not lose any days.
-{{/if}}
+
 You must apply for a new parental benefit period at [nav.no/foreldrepenger](https://nav.no/foreldrepenger). The parental benefit must be withdrawn no later than the day before the new parental benefit period for a new child begins, or no later than the day before the child reaches the age of three.
+{{/case}}
+{{~/switch}}
 {{/if}}
 
 When there are 4 weeks left until you are to withdraw your parental benefit, your employer must submit a new income report.
@@ -27,3 +40,4 @@ You may appeal within {{klagefristUker}} weeks from the date you received the de
 
 {{> footer_en }}
 {{/utils/readonly_innhold}}
+{{!-- @formatter:on --}}
