@@ -10,6 +10,5 @@
   "harSøktOmNyPeriode": true,
   "planlagtOppstartDato": "1. april 2022",
   "kanBehandlesDato": "1. mars 2021",
-  "klagefristUker": 6,
-  "annulleringÅrsak": "BRUKER_HAR_SØKT_OM_NY_PERIODE"
+  "klagefristUker": 6
 }
