@@ -1,12 +1,12 @@
 {
   "felles": {
     "søkerNavn": "Navn Etternavn",
-    "søkerPersonnummer": "XXXXX 20696",
+    "søkerPersonnummer": "300220 12345",
     "brevDato": "21. april 2023",
     "erAutomatiskBehandlet": true,
     "erKopi": false,
     "harVerge": false,
-    "saksnummer": "152082877",
+    "saksnummer": "******",
     "ytelseType": "FP",
     "erUtkast": true
   },
