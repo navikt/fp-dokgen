@@ -3,11 +3,6 @@
   "maxReplicas": "2",
   "consumers": [
     {
-      "app": "foreldrepengesoknad-api",
-      "namespace": "teamforeldrepenger",
-      "cluster": "dev-gcp"
-    },
-    {
       "app": "fpinntektsmelding",
       "namespace": "teamforeldrepenger",
       "cluster": "dev-gcp"
