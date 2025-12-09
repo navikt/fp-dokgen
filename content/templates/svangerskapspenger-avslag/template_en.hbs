@@ -1,1 +1,102 @@
-{{> svangerskapspenger-avslag/template_nb }}
+{{> header_en }}
+{{#> utils/redigerbart_innhold}}
+{{#eq erSøkerDød true}}
+# The application for pregnancy benefit for {{capitalize felles.søkerNavn fully=true}} has been withdrawn
+
+We have received information that {{felles.søkerNavn}} is deceased.
+
+We send this letter to inform you that we have withdrawn the application for pregnancy benefit.
+
+The decision has been made pursuant to the National Insurance Act {{lovhjemmel}}.
+
+If you have questions about the decision, you can contact us on telephone 55 55 33 33.
+
+You may appeal within {{klagefristUker}} weeks from the date the estate received this letter. You will find the form and information at [nav.no/klage](https://nav.no/klage).
+
+{{else}}
+# Nav has turned down your application for pregnancy benefit
+
+{{#eq årsak "1019" }}
+We have turned down your application for pregnancy benefit which we received {{mottattDato}} because we have not received the documentation we requested.
+
+If you send us the documentation within six weeks from you received this decision, we will reconsider your case. You do not need to submit a new application.
+{{/eq}}
+{{#in-array (array "1020" "1021" "1023" "1024" "1025") årsak}}
+{{#neq årsak "1024"}}
+{{#if stønadsdatoFom}}
+You are not entitled to pregnancy benefit from {{stønadsdatoFom}} because you are no longer a member of the National Insurance Scheme.
+{{/if}}
+{{else}}
+{{#eq årsak "1024"}}We do not have information that you are working or have family supporting you in Norway. It is therefore not documented that you have the right of residence under the EEA Agreement.{{/eq}}
+{{/neq}}
+{{#eq årsak "1020"}}
+You are covered by the social security scheme of another country.{{/eq}}
+{{#eq årsak "1021"}}
+According to the National Registry you have moved from Norway.{{/eq}}
+{{#eq årsak "1023"}}
+You do not have a residence permit in Norway.{{/eq}}
+{{#eq årsak "1025"}}
+You are not considered a member because you stay more abroad than in Norway.{{/eq}}
+{{/in-array}}
+
+{{#in-array (array "1035" "1061") årsak}}
+You are not entitled to pregnancy benefit because you have not had employment income or income equal to salary for at least four weeks before you had to stop working.
+{{/in-array}}
+
+{{#eq årsak "1041" }}
+You are not entitled to pregnancy benefit because your income was lower than {{halvG}} kroner per year before taxes.
+{{/eq}}
+
+{{#eq årsak "1060" }}
+You are not entitled to pregnancy benefit because it was not documented that you are pregnant.
+{{/eq}}
+
+{{#eq årsak "1062" }}
+We have received information that you are 100 per cent on sick leave in the same period as you apply for pregnancy benefit. You therefore do not meet the conditions to receive pregnancy benefit.
+
+If you need pregnancy benefit after the sick leave has ended, you must submit a new application and your employer must submit a new income report.
+{{/eq}}
+
+{{#eq årsak "1063" }}
+You are not entitled to pregnancy benefit because you can carry out the tasks at {{#gt antallArbeidsgivere 1}}your employers{{else}}your employer{{/gt}} without risk of harming the child/children you are expecting.
+
+We have not received information that adaptations are necessary, or that you must change your tasks at {{#gt antallArbeidsgivere 1}}your employers{{else}}your employer{{/gt}}. If you cannot work because you are ill, you may be entitled to sickness benefit.
+{{/eq}}
+
+{{#eq årsak "1064" }}
+We have received information that {{#gt antallArbeidsgivere 1}}your employers{{else}}your employer{{/gt}} can adapt or change your tasks without the risk of harming the child/children you are expecting.
+{{/eq}}
+
+{{#eq årsak "1065" }}
+You were not entitled to pregnancy benefit because you could carry out the tasks as self-employed or freelancer without risk of harming the child/children you are expecting.
+{{/eq}}
+
+{{#eq årsak "1066"}}
+We have received information that as self-employed or freelancer you can adapt or change your tasks without the risk of harming the child/children you are expecting.
+{{/eq}}
+
+{{#eq årsak "8311"}}
+You will not receive pregnancy benefit from {{stønadsDatoFom}} up to and including {{stønadsDatoTom}} because you are on holiday.
+{{/eq}}
+
+{{#eq årsak "8308"}}
+You will not receive pregnancy benefit from {{stønadsDatoFom}} up to and including {{stønadsDatoTom}} because you applied too late.
+
+You must apply no later than three months after the period with pregnancy benefit has started. You applied {{mottattDato}}.
+{{/eq}}
+
+{{#if felles.fritekst}}
+{{felles.fritekst}}
+{{/if}}
+
+The decision has been made pursuant to the National Insurance Act {{lovhjemmel}}.
+
+## You have the right to appeal
+You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the form and information at [nav.no/klage](https://nav.no/klage).
+{{/eq}}
+{{/utils/redigerbart_innhold}}
+
+{{#> utils/readonly_innhold}}
+{{> footer_en }}
+{{/utils/readonly_innhold}}
+

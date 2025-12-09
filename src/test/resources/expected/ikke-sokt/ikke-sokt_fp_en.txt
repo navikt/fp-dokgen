@@ -18,14 +18,9 @@
         </tr>
     </table>
 </div>
-# Nav considers reprocessing your case regarding entitlement to a lump-sum grant
-We have received new information that may influence the decision on your entitlement to the lump-sum grant.
-<p style="white-space: pre-wrap">FRITEKST LINJE 1
-FRITEKST LINJE 2</p>
-Your duty to give information is pursuant to sections 21‑3 and 21‑4 of the National Insurance Act.
-## The decision about your lump-sum grant can be reversed
-We will consider your case again after the deadline has been reached. If you are not entitled to the lump-sum grant, you may be required to repay the money.
-You can send us information at [nav.no/ettersendelser](https://nav.no/ettersendelser).
+# You have not applied for parental benefit
+We have received income information from Arbeidsplassen AS 1. mai 2020, but we have not received an application for parental benefit from you.
+We cannot assess whether you are entitled to parental benefit until you have submitted an application. You can apply at [nav.no/familie](https://nav.no/familie). To avoid losing days and payments, you must apply no later than three months after your parental benefit period started.
 ## You have right of access
 Log into [foreldrepenger.nav.no](https://foreldrepenger.nav.no/) to see the documents in your case.
 <div style="break-inside: avoid; page-break-inside: avoid">

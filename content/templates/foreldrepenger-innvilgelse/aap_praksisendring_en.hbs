@@ -1,0 +1,43 @@
+{{#> utils/redigerbart_innhold}}
+# Nav has recalculated your parental benefit
+
+Nav has had an incorrect practice when calculating parental benefit for those who have received work assessment allowance (arbeidsavklaringspenger) while working. Therefore, your case has now been reconsidered pursuant to section 35(c) of the Public Administration Act.
+
+You will receive {{thousand-seperator dagsats}} kroner per day before taxes from and including {{utbetalingFom}}. This amounts on average to {{thousand-seperator månedsbeløp}} kroner per month.
+
+{{> foreldrepenger-innvilgelse/beregning_en}}
+
+{{#if inntektOverSeksG}}
+{{> foreldrepenger-innvilgelse/felles/over_seksG_en }}
+{{/if}}
+{{#if (and (neq lovhjemlerBeregning "")(neq konsekvensForInnvilgetYtelse "ENDRING_I_UTTAK"))}}
+{{> foreldrepenger-innvilgelse/felles/lovhjemler_beregning_en }}
+{{/if}}
+
+## Payment
+We will pay the arrears to the account number you have registered with Nav, or to your employer if you received salary while on leave. You can check which account number is registered to you by logging in at [nav.no/min-side](https://nav.no/min-side).
+
+The arrears are registered as income for 2025 and may affect the basis for the tax you must pay this year.
+
+The Norwegian Tax Administration (Skatteetaten) is responsible for assessing whether it is more advantageous for you that the payment is taxed as income in arrears rather than income in the year of payment. You can read more about tax on arrears on the Tax Administration's website:
+[Tax on arrears of pension and benefits – Skatteetaten](https://www.skatteetaten.no/person/skatt/skattekort/om-skattekortet/skatt-pa-etterbetalinger-av-pensjon-og-trygdeytelser)
+
+Payment of parental benefit arrears has been sent to you today and will be in your account within 2–3 days.
+
+You also receive interest on the arrears pursuant to sections 22-17 cf. 22-13 and 22-14 of the National Insurance Act. Interest is calculated and paid from Nav Økonomi stønader and reported to the Tax Administration as interest income. The interest is taxable, but Nav does not deduct tax from the interest. You can contact Skatteetaten to check whether your tax card is correct. If you have too low tax deductions, you may incur residual tax.
+
+Contact the Tax Administration if you have questions about tax on arrears and interest.
+
+Payment of interest may take some time. You will receive a message at [nav.no/min-side](https://www.nav.no/min-side) when the interest is paid.
+{{/utils/redigerbart_innhold}}
+
+{{#> utils/readonly_innhold}}
+## You must report changes
+If there are changes that may affect the benefit you receive, you must notify Nav immediately. See [nav.no/rettogplikt](https://nav.no/rettogplikt).
+
+## You have the right to appeal
+You may appeal within {{klagefristUker}} weeks from the date you received the decision. You will find the form and information at [nav.no/klage](https://nav.no/klage).
+
+{{> footer_en }}
+{{/utils/readonly_innhold}}
+

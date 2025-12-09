@@ -1,0 +1,40 @@
+<div id="redigerbart-innhold" data-editable="data-editable">
+# Nav has recalculated your parental benefit
+Nav has had an incorrect practice when calculating parental benefit for those who have received work assessment allowance (arbeidsavklaringspenger) while working. Therefore, your case has now been reconsidered pursuant to section 35(c) of the Public Administration Act.
+You will receive 1 436 kroner per day before taxes from and including 20. januar 2022. This amounts on average to 31 113 kroner per month.
+## Income we have used in the calculation
+Your income at FIRMA AS is 38 904 kroner per month. Your employer has provided us with this information.
+This is the average of your income from the last three months before the start of the parental benefit period. If you have just started working, changed your employment situation or your pay has changed, we have used your monthly income after the change took place.
+The calculation has been made in accordance with the National Insurance Act Sections §§ 14-7 og 8-30 og forvaltningsloven § 35.
+## Payment
+We will pay the arrears to the account number you have registered with Nav, or to your employer if you received salary while on leave. You can check which account number is registered to you by logging in at [nav.no/min-side](https://nav.no/min-side).
+The arrears are registered as income for 2025 and may affect the basis for the tax you must pay this year.
+The Norwegian Tax Administration (Skatteetaten) is responsible for assessing whether it is more advantageous for you that the payment is taxed as income in arrears rather than income in the year of payment. You can read more about tax on arrears on the Tax Administration's website:
+[Tax on arrears of pension and benefits – Skatteetaten](https://www.skatteetaten.no/person/skatt/skattekort/om-skattekortet/skatt-pa-etterbetalinger-av-pensjon-og-trygdeytelser)
+Payment of parental benefit arrears has been sent to you today and will be in your account within 2–3 days.
+You also receive interest on the arrears pursuant to sections 22-17 cf. 22-13 and 22-14 of the National Insurance Act. Interest is calculated and paid from Nav Økonomi stønader and reported to the Tax Administration as interest income. The interest is taxable, but Nav does not deduct tax from the interest. You can contact Skatteetaten to check whether your tax card is correct. If you have too low tax deductions, you may incur residual tax.
+Contact the Tax Administration if you have questions about tax on arrears and interest.
+Payment of interest may take some time. You will receive a message at [nav.no/min-side](https://www.nav.no/min-side) when the interest is paid.
+</div>
+<div id="readonly-innhold">
+## You must report changes
+If there are changes that may affect the benefit you receive, you must notify Nav immediately. See [nav.no/rettogplikt](https://nav.no/rettogplikt).
+## You have the right to appeal
+You may appeal within 6 weeks from the date you received the decision. You will find the form and information at [nav.no/klage](https://nav.no/klage).
+## You have right of access
+Log into [foreldrepenger.nav.no](https://foreldrepenger.nav.no/) to see the documents in your case.
+<div style="break-inside: avoid; page-break-inside: avoid">
+## Do you have questions?
+You can find more information at [nav.no/barn](https://nav.no/barn).
+You can chat or write to us at [nav.no/contact](https://nav.no/contact).
+If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekdays 09:00-15:00.
+<br/>
+<br/>
+<br/>
+Yours sincerely,
+<br/>
+Nav Familie- og pensjonsytelser
+<br/><br/>
+This case has been electronically processed by our administration system, which means that this letter has not been signed by a case worker.
+</div>
+</div>

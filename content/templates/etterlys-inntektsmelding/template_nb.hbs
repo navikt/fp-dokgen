@@ -15,9 +15,9 @@ Hvis arbeidsgiver allerede har sendt inntektsmelding, kan du se bort fra denne h
 
 {{#gt antallMottattIM 0}}Vi har mottatt inntektsmelding fra:{{/gt}}
 {{#each inntektsmeldingerStatus}}
-{{#if erInntektsmeldingMottatt }}
+{{#eq erInntektsmeldingMottatt true}}
 * {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} i stillingen du jobber {{trim-decimal stillingsprosent}} prosent.
-{{/if}}
+{{/eq}}
 {{/each}}
 
 Vi kan ikke behandle søknaden din om {{> ytelse_navn_nb}} før vi har mottatt inntektsmelding fra {{#gt antallIkkeMottattIM 1}}arbeidsgiverne dine{{else}}arbeidsgiveren din{{/gt}}.

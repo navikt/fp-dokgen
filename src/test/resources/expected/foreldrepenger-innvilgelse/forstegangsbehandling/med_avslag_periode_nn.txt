@@ -44,7 +44,7 @@ Arbeidsgivarane dine har gitt oss desse opplysningane.
 Dette er gjennomsnittet av inntekta di frå dei siste tre månadene. Dersom du nettopp har begynt å arbeide, har bytta arbeidsforhold, eller dersom lønna di har endra seg, har vi brukt månadsinntektene etter at endringa skjedde.
 Berekninga er gjort etter folketrygdlova §§ 14-7 og 8-30.
 ## Du må melde frå om endringar
-Dersom det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til Nav med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
+Viss det skjer endringar som kan få følgjer for stønaden du får betalt ut, må du melde frå til Nav med ein gong. Du finn meir informasjon på [nav.no/rettogplikt](https://nav.no/rettogplikt).
 </div>
 <div id="readonly-innhold">
 ## Du har rett til å klage
