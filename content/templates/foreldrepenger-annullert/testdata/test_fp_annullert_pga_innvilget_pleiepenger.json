@@ -1,0 +1,13 @@
+{
+  "felles": {
+    "søkerNavn": "Dolly Duck",
+    "søkerPersonnummer": "300220 12345",
+    "brevDato": "4. mai 2021",
+    "erAutomatiskBehandlet": true,
+    "saksnummer": "123456789",
+    "erUtkast": false
+  },
+  "harSøktOmNyPeriode": false,
+  "klagefristUker": 6,
+  "annulleringÅrsak": "BRUKER_MOTTAR_PLEIEPENGER"
+}
