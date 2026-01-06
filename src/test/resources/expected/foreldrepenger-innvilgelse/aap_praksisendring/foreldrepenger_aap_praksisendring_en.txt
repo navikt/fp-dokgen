@@ -8,7 +8,7 @@ This is the average of your income from the last three months before the start o
 The calculation has been made in accordance with the National Insurance Act Sections §§ 14-7 og 8-30 og forvaltningsloven § 35.
 ## Payment
 We will pay the arrears to the account number you have registered with Nav, or to your employer if you received salary while on leave. You can check which account number is registered to you by logging in at [nav.no/min-side](https://nav.no/min-side).
-The arrears are registered as income for 2025 and may affect the basis for the tax you must pay this year.
+The arrears are registered as income for 2026 and may affect the basis for the tax you must pay this year.
 The Norwegian Tax Administration (Skatteetaten) is responsible for assessing whether it is more advantageous for you that the payment is taxed as income in arrears rather than income in the year of payment. You can read more about tax on arrears on the Tax Administration's website:
 [Tax on arrears of pension and benefits – Skatteetaten](https://www.skatteetaten.no/person/skatt/skattekort/om-skattekortet/skatt-pa-etterbetalinger-av-pensjon-og-trygdeytelser)
 Payment of parental benefit arrears has been sent to you today and will be in your account within 2–3 days.
