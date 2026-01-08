@@ -50,7 +50,7 @@ You applied for a change from {{norwegian-date uttaksplan.uttaksperioder.0.fom}}
     <li>{{#if (and konto morsAktivitetIPerioden)}}Which part of the parental benefit is taken out: {{> konto-formater}} {{#eq morsAktivitetIPerioden "IKKE_OPPGITT"}}without{{else}}with{{/eq}} activity requirement{{/if}}</li>
     <li>{{#if (and morsAktivitetIPerioden (neq morsAktivitetIPerioden "IKKE_OPPGITT"))}}Mother's activity during the period: {{> mors-aktivitet}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-yes-no value=ønskerSamtidigUttak label="Should the other parent receive parental benefit in the same period"}}</li>
-    <li>{{#if samtidigUttakProsent}}Your percentage of parental benefit: {{trim-decimal samtidigUttakProsent}}{{/if}}</li>
+    <li>{{#if (and (eq ønskerSamtidigUttak true) samtidigUttakProsent)}}Your percentage of parental benefit: {{trim-decimal samtidigUttakProsent}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-yes-no value=ønskerFlerbarnsdager label="Should use multiple-child days"}}</li>
     <!-- Gradering -->
     <li>{{> utils/sporsmal-svar-yes-no value=ønskerGradering label="Should combine parental benefit with work"}}</li>

@@ -50,7 +50,7 @@ Du har søkt om endring fra og med {{norwegian-date uttaksplan.uttaksperioder.0.
     <li>{{#if (and konto morsAktivitetIPerioden)}}Hvilken del av foreldrepengene tas ut: {{> konto-formater}} {{#eq morsAktivitetIPerioden "IKKE_OPPGITT"}}uten{{else}}med{{/eq}} aktivitetskrav{{/if}}</li>
     <li>{{#if (and morsAktivitetIPerioden (neq morsAktivitetIPerioden "IKKE_OPPGITT"))}}Mors aktivitet i perioden: {{> mors-aktivitet}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerSamtidigUttak label="Skal annen forelder ha foreldrepenger i samme periode"}}</li>
-    <li>{{#if samtidigUttakProsent}}Din prosent med foreldrepenger: {{trim-decimal samtidigUttakProsent}}{{/if}}</li>
+    <li>{{#if (and (eq ønskerSamtidigUttak true) samtidigUttakProsent)}}Din prosent med foreldrepenger: {{trim-decimal samtidigUttakProsent}}{{/if}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerFlerbarnsdager label="Skal bruke flerbarnsdager"}}</li>
     <!-- Gradering -->
     <li>{{> utils/sporsmal-svar-ja-nei value=ønskerGradering label="Skal kombinere foreldrepengene med arbeid"}}</li>
