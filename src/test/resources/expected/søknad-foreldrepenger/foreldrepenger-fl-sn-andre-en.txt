@@ -157,7 +157,7 @@ You applied for a change from 23.08.2025. The plan shows only the changes you ha
     <li></li>
     <li></li>
     <li>Should the other parent receive parental benefit in the same period: <strong>No</strong></li>
-    <li>Your percentage of parental benefit: 100</li>
+    <li></li>
     <li>Should use multiple-child days: <strong>No</strong></li>
     <!-- Gradering -->
     <li>Should combine parental benefit with work: <strong>No</strong></li><!-- Overføring -->

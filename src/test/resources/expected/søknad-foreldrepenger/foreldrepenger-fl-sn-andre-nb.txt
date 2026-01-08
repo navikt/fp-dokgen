@@ -157,7 +157,7 @@ Du har søkt om endring fra og med 23.08.2025. Planen viser kun endringene du ha
     <li></li>
     <li></li>
     <li>Skal annen forelder ha foreldrepenger i samme periode: <strong>Nei</strong></li>
-    <li>Din prosent med foreldrepenger: 100</li>
+    <li></li>
     <li>Skal bruke flerbarnsdager: <strong>Nei</strong></li>
     <!-- Gradering -->
     <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
