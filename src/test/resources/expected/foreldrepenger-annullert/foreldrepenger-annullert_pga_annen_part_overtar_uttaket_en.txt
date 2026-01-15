@@ -21,7 +21,7 @@
 <div id="redigerbart-innhold" data-editable="data-editable">
 #  Nav has changed your parental benefit
 The previously granted period of parental benefit has been annulled.
-The mother has applied to take over the previously granted period. Therefore, your parental benefit has ended, but you do not lose any days.
+The mother has applied to take over your previously granted parental benefit period. Therefore, your parental benefit has ended, but you do not lose any days.
 You must apply for a new parental benefit period at [nav.no/foreldrepenger](https://nav.no/foreldrepenger). The parental benefit must be withdrawn no later than the day before the new parental benefit period for a new child begins, or no later than the day before the child reaches the age of three.
 When there are 4 weeks left until you are to withdraw your parental benefit, your employer must submit a new income report.
 The decision has been made pursuant to section 14-6, 14-7, 14-9, 14-10, 14-11 and 14-12 of the National Insurance Act.
