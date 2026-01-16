@@ -4,8 +4,10 @@
 #  Nav har endret foreldrepengene dine
 
 {{#if annulleringÅrsak}}
-{{#if (or (eq annulleringÅrsak "BRUKER_HAR_SØKT_OM_NY_PERIODE") (eq annulleringÅrsak "BRUKER_MOTTAR_PLEIEPENGER")) }}
+{{#if (or (eq annulleringÅrsak "BRUKER_HAR_SØKT_OM_NY_PERIODE") (eq annulleringÅrsak "BRUKER_MOTTAR_PLEIEPENGER") (eq annulleringÅrsak "MANUELL_SAKSBEHANDLING")) }}
 Du har valgt å ikke ta ut din tidligere innvilgede periode med foreldrepenger.
+{{else}}
+Den tidlegare innvilga perioden din med foreldrepengar vart annullert.
 {{/if}}
 
 {{~#switch annulleringÅrsak }}
@@ -17,9 +19,16 @@ Søknaden din om foreldrepenger fra og med {{planlagtOppstartDato}} kan ikke beh
 {{~#case "BRUKER_MOTTAR_PLEIEPENGER"}}
 Du mottar pleiepenger istedenfor foreldrepenger i perioden du hadde fått innvilget foreldrepenger. Derfor er foreldrepengene dine opphørt, men du mister ikke dager.
 
-Du må søke om ny foreldrepengeperiode på [nav.no/foreldrepenger](https://nav.no/foreldrepenger). Foreldrepengene må være tatt ut senest dagen før ny foreldrepengeperiode for nytt barn starter, eller senest dagen før barnet fyller tre år.
+{{/case}}
+{{~#case "ANNEN_PART_OVERTAR_UTTAKET"}}
+Mor har søkt om overtakelse av din tidligere innvilgede periode med foreldrepenger. Derfor er foreldrepengene dine opphørt, men du mister ikke dager.
+
 {{/case}}
 {{~/switch}}
+{{#if (or (eq annulleringÅrsak "BRUKER_MOTTAR_PLEIEPENGER") (eq annulleringÅrsak "MANUELL_SAKSBEHANDLING") (eq annulleringÅrsak "ANNEN_PART_OVERTAR_UTTAKET")) }}
+Du må søke om ny foreldrepengeperiode på [nav.no/foreldrepenger](https://nav.no/foreldrepenger). Foreldrepengene må være tatt ut senest dagen før ny foreldrepengeperiode for nytt barn starter, eller senest dagen før barnet fyller tre år.
+{{/if}}
+
 {{else}}
 Du har valgt å ikke ta ut din tidligere innvilgede periode med foreldrepenger.
 
