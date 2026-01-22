@@ -20,7 +20,7 @@
 </div>
 <div id="redigerbart-innhold" data-editable="data-editable">
 #  Nav har endra foreldrepengane dine
-Din tidligere innvilgede periode med foreldrepenger ble annullert.
+Den tidlegare innvilga perioden din med foreldrepengar vart annullert.
 Mor har søkt om overtaking av din tidlegare innvilga perioden med foreldrapengar. Difor er foreldrepengane dine avslutta, men du mistar ikkje dagar.
 Du må søkje om ny foreldrepengeperiode på [nav.no/foreldrepenger](https://nav.no/foreldrepenger). Foreldrepengane må vere tatt ut seinast dagen før ny foreldrepengeperiode for nytt barn startar, eller seinast dagen før barnet fyller tre år.
 Når det er 4 veker igjen til du skal ta ut foreldrepengar, må arbeidsgivaren din sende inn ny inntektsmelding.
