@@ -1,0 +1,6 @@
+{
+  "$id": "urn:no:nav:fpdokgen:søknad-engangsstønad",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Søknad om engangsstønad",
+  "type": "object"
+}

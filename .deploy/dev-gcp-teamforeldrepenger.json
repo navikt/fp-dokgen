@@ -1,16 +1,7 @@
 {
   "minReplicas": "1",
   "maxReplicas": "2",
-  "consumers": [
-    {
-      "app": "fpinntektsmelding",
-      "namespace": "teamforeldrepenger",
-      "cluster": "dev-gcp"
-    },
-    {
-      "app": "fpsoknad",
-      "namespace": "teamforeldrepenger",
-      "cluster": "dev-gcp"
-    }
+  "ingresses": [
+    "https://fpdokgen.intern.dev.nav.no"
   ]
 }

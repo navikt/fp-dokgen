@@ -4,8 +4,8 @@ import java.nio.file.Path;
 
 class FileStructureUtil {
 
-    private static final Path CONTENT_ROOT = Path.of("./content/");
-    private static final Path EXPECTED_ROOT = Path.of("src/test/resources/expected/");
+    private static final Path CONTENT_ROOT = Path.of("/content/");
+    private static final Path EXPECTED_ROOT = Path.of("/expected/");
 
     static Path getTemplatePath(Brevmal brevmal) {
         return CONTENT_ROOT.resolve(String.format("templates/%s/template.hbs", brevmal.getNavn()));

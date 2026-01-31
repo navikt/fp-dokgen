@@ -8,10 +8,12 @@ on:
       - '**.md'
       - '**.MD'
       - '.gitignore'
+      - '.editorconfig'
       - 'LICENSE'
       - 'CODEOWNERS'
       - 'dokumentasjon/**'
       - 'lokalutvikling/**'
+      - '.github/*.yml'
 
 jobs:
   build-app:
@@ -49,21 +51,8 @@ jobs:
       build-version: ${{ needs.build-app.outputs.build-version }}
     secrets: inherit
 
-  deploy-dev-fss:
-    name: Deploy dev-fss
-    permissions:
-      id-token: write
-    if: github.ref_name == 'master'
-    needs: [build-app, verdikjede]
-    uses: navikt/fp-gha-workflows/.github/workflows/deploy.yml@main
-    with:
-      gar: true
-      image: ${{ needs.build-app.outputs.build-version }}
-      cluster: dev-fss
-    secrets: inherit
-
-  deploy-dev-gcp:
-    name: Deploy dev-gcp
+  deploy-dev:
+    name: Deploy dev
     permissions:
       id-token: write
     if: github.ref_name == 'master'
@@ -75,28 +64,41 @@ jobs:
       cluster: dev-gcp
     secrets: inherit
 
-  deploy-prod-fss:
-    name: Deploy prod-fss
+  deploy-prod:
+    name: Deploy prod
     permissions:
       id-token: write
     if: github.ref_name == 'master'
-    needs: [build-app, verdikjede, deploy-dev-fss]
-    uses: navikt/fp-gha-workflows/.github/workflows/deploy.yml@main
-    with:
-      gar: true
-      image: ${{ needs.build-app.outputs.build-version }}
-      cluster: prod-fss
-    secrets: inherit
-
-  deploy-prod-gcp:
-    name: Deploy prod-gcp
-    permissions:
-      id-token: write
-    if: github.ref_name == 'master'
-    needs: [build-app, verdikjede, deploy-dev-gcp]
+    needs: [build-app, verdikjede, deploy-dev]
     uses: navikt/fp-gha-workflows/.github/workflows/deploy.yml@main
     with:
       gar: true
       image: ${{ needs.build-app.outputs.build-version }}
       cluster: prod-gcp
     secrets: inherit
+
+    deploy-dev-fss:
+      name: Deploy dev-fss
+      permissions:
+        id-token: write
+      if: github.ref_name == 'master'
+      needs: [ build-app, verdikjede ]
+      uses: navikt/fp-gha-workflows/.github/workflows/deploy.yml@main
+      with:
+        gar: true
+        image: ${{ needs.build-app.outputs.build-version }}
+        cluster: dev-fss
+      secrets: inherit
+
+    deploy-prod-fss:
+      name: Deploy prod-fss
+      permissions:
+        id-token: write
+      if: github.ref_name == 'master'
+      needs: [ build-app, verdikjede, deploy-dev-fss ]
+      uses: navikt/fp-gha-workflows/.github/workflows/deploy.yml@main
+      with:
+        gar: true
+        image: ${{ needs.build-app.outputs.build-version }}
+        cluster: prod-fss
+      secrets: inherit

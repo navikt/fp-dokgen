@@ -1,0 +1,22 @@
+{
+  "$id": "urn:no:nav:fpdokgen:fritekst",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for Fritekstbrevet",
+  "type": "object",
+  "required": [
+    "felles",
+    "overskrift",
+    "brødtekst"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "overskrift": {
+      "type": "string"
+    },
+    "brødtekst": {
+      "type": "string"
+    }
+  }
+}

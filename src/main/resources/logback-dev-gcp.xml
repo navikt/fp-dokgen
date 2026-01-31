@@ -1,0 +1,5 @@
+<included>
+    <logger name="no.nav.foreldrepenger.dokgen" level="TRACE"/>
+    <logger name="no.nav.vedtak.sikkerhet" level="TRACE"/>
+    <logger name="no.nav.vedtak.felles.integrasjon.rest" level="DEBUG"/>
+</included>

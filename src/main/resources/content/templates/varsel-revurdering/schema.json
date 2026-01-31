@@ -1,0 +1,33 @@
+{
+  "$id": "urn:no:nav:fpdokgen:varsel-revurdering",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for brev Varsel revurdering",
+  "type": "object",
+  "required": [
+    "felles",
+    "fristDato",
+    "antallBarn",
+    "advarselKode",
+    "flereOpplysninger"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "terminDato": {
+      "type": "string"
+    },
+    "fristDato": {
+      "type": "string"
+    },
+    "antallBarn": {
+      "type": "integer"
+    },
+    "advarselKode": {
+      "type": "string"
+    },
+    "flereOpplysninger": {
+      "type": "boolean"
+    }
+  }
+}

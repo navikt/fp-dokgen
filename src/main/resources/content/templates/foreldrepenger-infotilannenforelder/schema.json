@@ -1,0 +1,21 @@
+{
+  "$id": "urn:no:nav:fpdokgen:foreldrepenger-infotilannenforelder",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for brev Foreldrepenger info til annen forelder",
+  "type": "object",
+  "required": [
+    "felles",
+    "behandlingsÅrsak"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "behandlingsÅrsak": {
+      "type": "string"
+    },
+    "sisteUttaksdagMor": {
+      "type": "string"
+    }
+  }
+}

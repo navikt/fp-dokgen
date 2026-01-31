@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
+import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 class InnhenteOpplysningerTest {
     private static final Brevmal BREVMAL = Brevmal.INNHENTE_OPPLYSNINGER;

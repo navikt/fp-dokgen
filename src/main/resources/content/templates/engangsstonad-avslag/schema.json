@@ -1,0 +1,51 @@
+{
+  "$id": "urn:no:nav:fpdokgen:engangsstonad-avslag",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for brev Engangsstønad avslag",
+  "type": "object",
+  "required": [
+    "felles",
+    "avslagÅrsak",
+    "førstegangsbehandling",
+    "antallBarn",
+    "relasjonsRolle",
+    "gjelderFødsel",
+    "vilkårTyper",
+    "klagefristUker"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "avslagÅrsak": {
+      "type": "string"
+    },
+    "førstegangsbehandling": {
+      "type": "boolean"
+    },
+    "antallBarn": {
+      "type": "number"
+    },
+    "relasjonsRolle": {
+      "type": "string"
+    },
+    "gjelderFødsel": {
+      "type": "boolean"
+    },
+    "vilkårTyper": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "klagefristUker": {
+      "type": "number"
+    },
+    "avslagMedlemskap": {
+      "type": "string"
+    },
+    "medlemskapFom": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "$id": "urn:no:nav:fpdokgen:søknad-foreldrepenger-endring",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Søknad om endring av foreldrepenger",
+  "type": "object"
+}

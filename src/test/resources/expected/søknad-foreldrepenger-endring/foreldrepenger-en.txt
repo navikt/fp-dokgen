@@ -1,5 +1,5 @@
 # Receipt of application for change of parental benefit
-Received: 19.09.2025 10:15</br>
+Received: 19.09.2025 10:15:30</br>
 Case number: 107
 ## Information about the applicant
 Name: Per Sykelig Oppblåst<br/>
