@@ -1,0 +1,25 @@
+{
+  "$id": "urn:no:nav:fpdokgen:test-mal-to",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for brev",
+  "type": "object",
+  "required": [
+    "felles",
+    "testProp1",
+    "testProp2"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "resultat": {
+      "type": "string"
+    },
+    "testProp1": {
+      "type": "number"
+    },
+    "testProp2": {
+      "type": "number"
+    }
+  }
+}

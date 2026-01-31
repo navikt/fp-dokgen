@@ -9,8 +9,6 @@ import org.junit.jupiter.api.Test;
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
-import java.io.PrintWriter;
-
 class SvangerskapspengerAvslagTest {
     private static final Brevmal BREVMAL = Brevmal.SVANGERSKAPSPENGER_AVSLAG;
 

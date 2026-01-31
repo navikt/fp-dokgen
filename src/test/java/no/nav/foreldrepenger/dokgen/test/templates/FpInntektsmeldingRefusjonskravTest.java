@@ -7,6 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;
 
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
+import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 class FpInntektsmeldingRefusjonskravTest {
     private static final Brevmal BREVMAL = Brevmal.FP_INNTEKTSMELDING_REFUSJONSKRAV;

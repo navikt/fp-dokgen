@@ -1,0 +1,35 @@
+{
+  "$id": "urn:no:nav:fpdokgen:klage-avvist",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for brev klage avvist",
+  "type": "object",
+  "required": [
+    "felles",
+    "gjelderTilbakekreving",
+    "lovhjemler",
+    "klagefristUker",
+    "avvistGrunner",
+    "påklagdVedtak"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "gjelderTilbakekreving": {
+      "type": "boolean"
+    },
+    "lovhjemler": {
+      "type": "string"
+    },
+    "klagefristUker": {
+      "type": "number"
+    },
+    "avvistGrunner": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "påklagdVedtak": {
+      "type": "boolean"
+    }
+  }
+}

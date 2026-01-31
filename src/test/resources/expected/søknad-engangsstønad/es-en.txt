@@ -1,5 +1,5 @@
 # Receipt of application for lump sum grant
-Received: 30.09.2025 10:15
+Received: 30.09.2025 10:15:30
 ## Information about the applicant
 Name: Per Oppblåst<br/>
 National identity number: 987654321<br/>

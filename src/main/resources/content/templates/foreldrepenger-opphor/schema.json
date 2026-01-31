@@ -1,0 +1,65 @@
+{
+  "$id": "urn:no:nav:fpdokgen:foreldrepenger-opphor",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Dokumentdata for brev Foreldrepenger Opphør",
+  "type": "object",
+  "required": [
+    "felles",
+    "erSøkerDød",
+    "relasjonsRolleType",
+    "antallBarn",
+    "avslagÅrsaker",
+    "klagefristUker",
+    "lovhjemmelForAvslag"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "erSøkerDød": {
+      "type": "boolean"
+    },
+    "fomStønadsdato": {
+      "type": "string"
+    },
+    "tomStønadsdato": {
+      "type": "string"
+    },
+    "opphørDato": {
+      "type": "string"
+    },
+    "barnDødsdato": {
+      "type": "string"
+    },
+    "gjelderFødsel": {
+      "type": "boolean"
+    },
+    "antallBarn": {
+      "type": "number"
+    },
+    "halvG": {
+      "type": "number"
+    },
+    "endretDekningsgrad": {
+      "type": "boolean"
+    },
+    "avslagÅrsaker": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "klagefristUker": {
+      "type": "number"
+    },
+    "lovhjemmelForAvslag": {
+      "type": "string"
+    },
+    "relasjonsRolleType": {
+      "type": "string",
+      "enum": [
+        "MORA",
+        "FARA",
+        "MMOR"
+      ]
+    }
+  }
+}

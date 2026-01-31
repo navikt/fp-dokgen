@@ -1,13 +1,13 @@
 package no.nav.foreldrepenger.dokgen.test.templates;
 
-import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
-import no.nav.foreldrepenger.dokgen.test.support.Språk;
-
-import org.junit.jupiter.api.Test;
-
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.compileContent;
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
+
+import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
+import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 class SøknadKvitteringTest {
 
@@ -45,6 +45,7 @@ class SøknadKvitteringTest {
         var expected = getExpected(Brevmal.ENGANGSSTØNAD_SØKNAD, "es-nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+
     @Test
     void engangsstønad_en_test() {
         var content = compileContent(Brevmal.ENGANGSSTØNAD_SØKNAD, Språk.ENGELSK, "es");

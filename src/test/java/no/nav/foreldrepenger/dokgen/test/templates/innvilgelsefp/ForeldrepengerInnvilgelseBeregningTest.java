@@ -4,10 +4,11 @@ import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.comp
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import no.nav.foreldrepenger.dokgen.test.support.Språk;
+
 import org.junit.jupiter.api.Test;
 
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
-import no.nav.foreldrepenger.dokgen.test.support.Språk;
 
 class ForeldrepengerInnvilgelseBeregningTest {
     private static final Brevmal BREVMAL = Brevmal.FORELDREPENGER_INNVILGELSE;
@@ -61,12 +62,14 @@ class ForeldrepengerInnvilgelseBeregningTest {
         var expected = getExpected(BREVMAL, UNDERMAL, "fp-innvilgelse_kun_ytelse_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+
     @Test
     void undermal_beregning_besteberegning_seks_av_de_ti_beste_nb() {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegang_besteberegning_seksAvDeTiBeste");
         var expected = getExpected(BREVMAL, UNDERMAL, "fp-innvilgelse_besteberegning_ja_nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+
     @Test
     void undermal_beregning_besteberegning_ordinærDP_nb() {
         var content = compileContent(BREVMAL, UNDERMAL, Språk.BOKMÅL, "førstegang_besteberegning_ordinær_kunDP");

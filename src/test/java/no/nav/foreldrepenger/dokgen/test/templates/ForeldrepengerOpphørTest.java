@@ -4,10 +4,12 @@ import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.comp
 import static no.nav.foreldrepenger.dokgen.test.support.TemplateTestService.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import no.nav.foreldrepenger.dokgen.test.support.Brevmal;
 import no.nav.foreldrepenger.dokgen.test.support.Språk;
@@ -143,16 +145,16 @@ class ForeldrepengerOpphørTest {
             "Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet barna dine ble født.\nVi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.");
     }
 
-    private void opprettÅrsaker(final ObjectNode testData, String... årsaker) {
+    private void opprettÅrsaker(final Map<String, Object> testData, String... årsaker) {
         var årsakArray = OBJECT_MAPPER.createArrayNode();
         for (var årsak : årsaker) {
             årsakArray.add(årsak);
         }
-        testData.set(AVSLAG_ÅRSAKER_LISTE, årsakArray);
+        testData.put(AVSLAG_ÅRSAKER_LISTE, årsakArray);
     }
 
-    private ObjectNode opprettTestData() {
-        var testData = OBJECT_MAPPER.createObjectNode();
+    private Map<String, Object> opprettTestData() {
+        var testData = new HashMap<String, Object>();
         opprettFelles(testData);
         testData.put(ER_SØKER_DØD, false);
         testData.put(ANTALL_BARN, 2);
@@ -167,15 +169,15 @@ class ForeldrepengerOpphørTest {
         return testData;
     }
 
-    private void opprettFelles(final ObjectNode testData) {
-        var felles = OBJECT_MAPPER.createObjectNode();
+    private void opprettFelles(final Map<String, Object> testData) {
+        var felles = new HashMap<String, Object>();
         felles.put("søkerNavn", BRUKER_NAVN);
         felles.put("søkerPersonnummer", "12345 66789");
         felles.put("brevDato", "4. mai 2021");
         felles.put("erAutomatiskBehandlet", true);
         felles.put("saksnummer", "123456789");
         felles.put("erUtkast", false);
-        testData.set("felles", felles);
+        testData.put("felles", felles);
     }
 
 }
