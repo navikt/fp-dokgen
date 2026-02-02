@@ -45,6 +45,7 @@ public class DokGeneratorTjeneste {
     }
 
     public byte[] createPdf(String malNavn, String dataFelter, DokSpråk språk, DokStyling styling) {
+        LOG.info("Genererer PDF for mal={} språk={} styling={}", malNavn, språk, styling);
         return createPdf(hentDokMal(malNavn, språk, styling), dataFelter);
     }
 

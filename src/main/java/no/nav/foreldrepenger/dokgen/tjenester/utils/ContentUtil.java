@@ -5,14 +5,18 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.util.Objects;
 
-import no.nav.foreldrepenger.dokgen.tjenester.generator.DokStyling;
 import no.nav.foreldrepenger.dokgen.tjenester.exceptions.DokgenNotFoundException;
+import no.nav.foreldrepenger.dokgen.tjenester.generator.DokStyling;
 
 public class ContentUtil {
 
-    private static final Path TEMPLATE_BASE_PATH = Path.of("/content/");
+    public static final Path TEMPLATE_BASE_PATH = Path.of("/content/");
 
     private ContentUtil() {
+    }
+
+    public static Path hentPathForMal(String malNavn) {
+        return TEMPLATE_BASE_PATH.resolve("templates/%s/template.hbs".formatted(malNavn));
     }
 
     public static Path hentPathForMal(String malNavn, String språkKode) {
