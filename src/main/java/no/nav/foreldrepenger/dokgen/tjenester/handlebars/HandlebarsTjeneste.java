@@ -82,24 +82,9 @@ public class HandlebarsTjeneste {
     }
 
     public Context contextOf(Map<String, Object> model) {
-        var myFieldValueResolver = new FieldValueResolver() {
-            @Override
-            protected Set<FieldWrapper> members(Class<?> clazz) {
-                var members = super.members(clazz);
-                return members.stream().filter(this::isValidField).collect(Collectors.toSet());
-            }
-
-            private boolean isValidField(FieldWrapper fw) {
-                if (fw instanceof AccessibleObject) {
-                    return isUseSetAccessible(fw);
-                }
-                return true;
-            }
-        };
         return Context.newBuilder(model)
             .resolver(JsonNodeValueResolver.INSTANCE,
                 JavaBeanValueResolver.INSTANCE,
-                myFieldValueResolver,
                 MapValueResolver.INSTANCE,
                 MethodValueResolver.INSTANCE)
             .build();
