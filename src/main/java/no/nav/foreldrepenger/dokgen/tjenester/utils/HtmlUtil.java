@@ -17,7 +17,7 @@ public class HtmlUtil {
     private HtmlUtil() {
     }
 
-    public static String utvidMedHtmlMetadataHeaderFooter(String htmlInnhold, DokStyling format) {
+    public static String utvidMedHtmlMetadataHeaderFooter(String htmlInnhold, DokStyling styling) {
         //nødvendig doctype for å støtte non-breaking space i openhtmltopdf
         return """
             <!DOCTYPE html PUBLIC "-//OPENHTMLTOPDF//DOC XHTML Character Entities Only 1.0//EN" "">
@@ -32,21 +32,21 @@ public class HtmlUtil {
             %s
             </body>
             </html>
-            """.formatted(hentCss(format), hentHeader(format), htmlInnhold, hentFooter(format));
+            """.formatted(hentCss(styling), hentHeader(styling), htmlInnhold, hentFooter(styling));
     }
 
-    private static String hentHeader(DokStyling format) {
-        var cacheKey = hentHeaderPathFor(format).toString();
+    private static String hentHeader(DokStyling styling) {
+        var cacheKey = hentHeaderPathFor(styling).toString();
         return HTML_CACHE.computeIfAbsent(cacheKey, key -> lesRessursSomString(Path.of(key)));
     }
 
-    private static String hentFooter(DokStyling format) {
-        var cacheKey = hentFooterPathFor(format).toString();
+    private static String hentFooter(DokStyling styling) {
+        var cacheKey = hentFooterPathFor(styling).toString();
         return HTML_CACHE.computeIfAbsent(cacheKey, key -> lesRessursSomString(Path.of(key)));
     }
 
-    private static String hentCss(DokStyling format) {
-        var cacheKey = hentCssPathFor(format).toString();
+    private static String hentCss(DokStyling styling) {
+        var cacheKey = hentCssPathFor(styling).toString();
         return HTML_CACHE.computeIfAbsent(cacheKey, key -> lesRessursSomString(Path.of(key)));
 
     }

@@ -44,13 +44,27 @@ public class DokGeneratorTjeneste {
         this.pdfGeneratorTjeneste = pdfGeneratorTjeneste;
     }
 
+    public String createHtml(String malNavn, String dataFelter, DokSpråk språk, DokStyling styling) {
+        LOG.info("Genererer HTML for mal={} språk={} styling={}", malNavn, språk, styling);
+        return createHtml(hentDokMal(malNavn, språk, styling), dataFelter);
+    }
+
+    private String createHtml(DokMal dokMal, String dataFelter) {
+        var jsonDataMap = validerDataMotSchema(dokMal.getNavn(), dataFelter);
+        return konverterTilHtml(dokMal, jsonDataMap);
+    }
+
     public byte[] createPdf(String malNavn, String dataFelter, DokSpråk språk, DokStyling styling) {
         LOG.info("Genererer PDF for mal={} språk={} styling={}", malNavn, språk, styling);
         return createPdf(hentDokMal(malNavn, språk, styling), dataFelter);
     }
 
     private DokMal hentDokMal(String malNavn, DokSpråk språk, DokStyling styling) {
-        return hentDokMal(malNavn, hentPathForMal(malNavn, språk.toString()), språk, styling);
+        var malInnhold = switch (språk) {
+            case BOKMÅL, NYNORSK, ENGELSK -> hentPathForMal(malNavn, språk.toString());
+            case null -> hentPathForMal(malNavn);
+        };
+        return hentDokMal(malNavn, malInnhold, språk, styling);
     }
 
     private DokMal hentDokMal(String malNavn, Path malPath, DokSpråk språk, DokStyling styling) {
@@ -64,24 +78,30 @@ public class DokGeneratorTjeneste {
     }
 
     private byte[] createPdf(DokMal dokMal, String dataFelter) {
-        var jsonDataMap = getJsonMapFromString(dataFelter);
-        jsonSchemaTjeneste.validerDataMotSchema(jsonDataMap, hentSchemaPathForMal(dokMal.getNavn()));
+        var jsonDataMap = validerDataMotSchema(dokMal.getNavn(), dataFelter);
         return konverterTilPdf(dokMal, jsonDataMap);
     }
 
+    private Map<String, Object> validerDataMotSchema(String malNavn, String dataFelter) {
+        LOG.info("Validerer data mot schema for mal={}", malNavn);
+        var jsonDataMap = getJsonMapFromString(dataFelter);
+        jsonSchemaTjeneste.validerDataMotSchema(jsonDataMap, hentSchemaPathForMal(malNavn));
+        return jsonDataMap;
+    }
+
     private byte[] konverterTilPdf(DokMal dokMal, Map<String, Object> dataMap) {
-        var markdownMedData = kombinerMalMedData(dokMal, dataMap);
-        var htmlMedStyling = konverterTilHtml(markdownMedData, dokMal.getStyling());
+        var htmlMedStyling = konverterTilHtml(dokMal, dataMap);
         return pdfGeneratorTjeneste.genererPdf(htmlMedStyling);
+    }
+
+    private String konverterTilHtml(DokMal dokMal, Map<String, Object> dataMap) {
+        var markdownMedData = kombinerMalMedData(dokMal, dataMap);
+        var innholdHtml = MarkdownUtil.konverterTilHtml(markdownMedData);
+        return HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innholdHtml, dokMal.getStyling());
     }
 
     private String kombinerMalMedData(DokMal dokMal, Map<String, Object> data) {
         return handlebarsTjeneste.genererDokumentInnhold(dokMal.getInnhold(), data);
-    }
-
-    private String konverterTilHtml(String markdownMedData, DokStyling format) {
-        var innholdHtml = MarkdownUtil.konverterTilHtml(markdownMedData);
-        return HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innholdHtml, format);
     }
 
 }
