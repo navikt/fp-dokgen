@@ -27,16 +27,16 @@ public class ContentUtil {
         return TEMPLATE_BASE_PATH.resolve("templates/%s/schema.json".formatted(malNavn));
     }
 
-    public static Path hentHeaderPathFor(DokStyling format) {
-        return TEMPLATE_BASE_PATH.resolve("formats/%s/header.html".formatted(format));
+    public static Path hentHeaderPathFor(DokStyling styling) {
+        return TEMPLATE_BASE_PATH.resolve("styling/%s/header.html".formatted(styling));
     }
 
-    public static Path hentFooterPathFor(DokStyling format) {
-        return TEMPLATE_BASE_PATH.resolve("formats/%s/footer.html".formatted(format));
+    public static Path hentFooterPathFor(DokStyling styling) {
+        return TEMPLATE_BASE_PATH.resolve("styling/%s/footer.html".formatted(styling));
     }
 
-    public static Path hentCssPathFor(DokStyling format) {
-        return TEMPLATE_BASE_PATH.resolve("formats/%s/style.css".formatted(format));
+    public static Path hentCssPathFor(DokStyling styling) {
+        return TEMPLATE_BASE_PATH.resolve("styling/%s/style.css".formatted(styling));
     }
 
     public static Path hentFontDirectoryPath() {

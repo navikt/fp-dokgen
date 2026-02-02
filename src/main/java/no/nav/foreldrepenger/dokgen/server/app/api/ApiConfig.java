@@ -29,6 +29,7 @@ public class ApiConfig extends ResourceConfig {
     public ApiConfig() {
         LOG.info("Initialiserer: {}", API_URI);
         // Sikkerhet
+        // TODO: 🙈 aktiver sikkerhet for forvaltnings-API
         //register(AuthenticationFilter.class);
         // REST
         registerClasses(getApplicationClasses());

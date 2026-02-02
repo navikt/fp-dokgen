@@ -30,7 +30,6 @@ public class ForvaltningAuthorizationFilter implements ContainerRequestFilter, C
 
     @Override
     public void filter(ContainerRequestContext req) {
-        AuthenticationFilterDelegate.validerSettKontekst(resourceinfo, req);
         if (!KontekstHolder.harKontekst() || !KontekstHolder.getKontekst().erAutentisert() || !(KontekstHolder.getKontekst() instanceof RequestKontekst kontekst)) {
             throw new WebApplicationException(Response.Status.FORBIDDEN);
         }
