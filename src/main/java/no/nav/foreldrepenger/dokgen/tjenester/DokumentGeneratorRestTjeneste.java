@@ -5,10 +5,13 @@ import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.Pattern;
 import jakarta.ws.rs.core.CacheControl;
 import no.nav.foreldrepenger.dokgen.tjenester.generator.DokGeneratorTjeneste;
 import no.nav.foreldrepenger.dokgen.tjenester.generator.DokSpråk;
 import no.nav.foreldrepenger.dokgen.tjenester.generator.DokStyling;
+import no.nav.vedtak.util.InputValideringRegex;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +30,7 @@ import jakarta.ws.rs.core.Response;
 
 @RequestScoped
 @Consumes(MediaType.APPLICATION_JSON)
+@Path("/dokument")
 public class DokumentGeneratorRestTjeneste {
 
     private static final Logger LOG = LoggerFactory.getLogger(DokumentGeneratorRestTjeneste.class);
@@ -43,14 +47,14 @@ public class DokumentGeneratorRestTjeneste {
     }
 
     @POST
-    @Path("/dokument/{navn}/generer")
+    @Path("/{navn}/generer")
     @Operation(
         summary = "Lager en PDF av flettefeltene og malen med angitt variation.",
         description = "PDF er av versjonen PDF/A"
     )
     public Response createPdf(
         @BeanParam @Valid GenererDokumentParams params,
-        @NotNull @RequestBody(description = "JSON-data som skal flettes inn i malen. Må validere mot malens skjema.") String data) {
+        @NotNull @Valid @Pattern(regexp = InputValideringRegex.FRITEKST) @RequestBody(description = "JSON-data som skal flettes inn i malen. Må validere mot malens skjema.") String data) {
 
         var pdf = dokGenTjeneste.createPdf(params.navn(), data, mapSpråk(params.språk()), mapFormat(params.styling()));
 
@@ -75,7 +79,7 @@ public class DokumentGeneratorRestTjeneste {
         private Språk språk;
 
         @QueryParam("styling")
-        @DefaultValue("PDF")
+        @DefaultValue("FOR_PDF")
         private Styling styling;
 
         public String navn() {
