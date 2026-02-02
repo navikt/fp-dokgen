@@ -56,7 +56,6 @@ public class HandlebarsTjeneste {
         handlebars.registerHelper("norwegian-date", new CustomHelpers.NorwegianDateHelper());
         handlebars.registerHelper("norwegian-datetime", new CustomHelpers.NorwegianDateTimeHelper());
         handlebars.registerHelper("divide", new CustomHelpers.DivideHelper());
-        handlebars.registerHelper("format-kroner", new CustomHelpers.FormatKronerHelper());
         handlebars.registerHelper("thousand-seperator", new CustomHelpers.ThousandSeperatorHelper());
         handlebars.registerHelper("thousand-seperator-double", new CustomHelpers.ThousandSeperatorHelperDouble());
         handlebars.registerHelper("trim-decimal", new CustomHelpers.TrimDecimalHelper());
