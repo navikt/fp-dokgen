@@ -29,7 +29,6 @@ public class PdfGeneratorTjeneste {
     private static final ConcurrentHashMap<String, TrueTypeFont> FONT_CACHE = new ConcurrentHashMap<>();
 
     private static final byte[] COLOR_PROFILE;
-    private static final String FONT_FAMILY = "Source Sans Pro";
 
     static {
         COLOR_PROFILE = lesRessursFra(Path.of("/sRGB2014.icc"));
@@ -50,10 +49,11 @@ public class PdfGeneratorTjeneste {
     private void genererPdf(String htmlInnhold, ByteArrayOutputStream outputStream) {
         try {
             if (outputStream != null) {
+                var fontFamily = "Source Sans Pro";
                 new PdfRendererBuilder()
-                    .useFont(fontSupplier("SourceSansPro-Regular.ttf"), FONT_FAMILY, 400, BaseRendererBuilder.FontStyle.NORMAL, true)
-                    .useFont(fontSupplier("SourceSansPro-Bold.ttf"), FONT_FAMILY, 700, BaseRendererBuilder.FontStyle.OBLIQUE, true)
-                    .useFont(fontSupplier("SourceSansPro-It.ttf"), FONT_FAMILY, 400, BaseRendererBuilder.FontStyle.ITALIC, true)
+                    .useFont(fontSupplier("SourceSansPro-Regular.ttf"), fontFamily, 400, BaseRendererBuilder.FontStyle.NORMAL, true)
+                    .useFont(fontSupplier("SourceSansPro-Bold.ttf"), fontFamily, 700, BaseRendererBuilder.FontStyle.OBLIQUE, true)
+                    .useFont(fontSupplier("SourceSansPro-It.ttf"), fontFamily, 400, BaseRendererBuilder.FontStyle.ITALIC, true)
                     .useColorProfile(COLOR_PROFILE)
                     .useSVGDrawer(new BatikSVGDrawer())
                     .usePdfAConformance(PdfRendererBuilder.PdfAConformance.PDFA_2_U)

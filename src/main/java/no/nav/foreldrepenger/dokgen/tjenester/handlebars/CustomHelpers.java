@@ -194,23 +194,6 @@ public final class CustomHelpers {
     }
 
     /**
-     * Format an int with thousand separator, ex: 10000 will be 10 000
-     *
-     * @deprecated Use ThousandSeperatorHelper instead
-     */
-    @Deprecated
-    public static class FormatKronerHelper implements Helper<Integer> {
-        @Override
-        public Object apply(Integer kroner, Options options) {
-            var formatter = (DecimalFormat) NumberFormat.getInstance(Locale.US);
-            var symbols = formatter.getDecimalFormatSymbols();
-            symbols.setGroupingSeparator(' ');
-            formatter.setDecimalFormatSymbols(symbols);
-            return formatter.format(kroner);
-        }
-    }
-
-    /**
      * Format an int with thousand separator and make the space not breakable to prevent line breaks within an amount,
      * ex: 10000 will be 10 000
      * The function does not handle decimals
