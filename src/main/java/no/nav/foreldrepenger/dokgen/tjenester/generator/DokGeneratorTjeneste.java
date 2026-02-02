@@ -48,22 +48,6 @@ public class DokGeneratorTjeneste {
         return createPdf(hentDokMal(malNavn, språk, styling), dataFelter);
     }
 
-    private byte[] createPdf(DokMal dokMal, String dataFelter) {
-        var jsonDataMap = getJsonMapFromString(dataFelter);
-        jsonSchemaTjeneste.validerDataMotSchema(jsonDataMap, hentSchemaPathForMal(dokMal.getNavn()));
-        return konverterTilPdf(dokMal, jsonDataMap);
-    }
-
-    private byte[] konverterTilPdf(DokMal dokMal, Map<String, Object> dataMap) {
-        var markdownMedData = kombinerMalMedData(dokMal, dataMap);
-        var htmlMesStyling = konverterTilHtml(markdownMedData, DokStyling.FOR_PDF);
-        return pdfGeneratorTjeneste.genererPdf(htmlMesStyling);
-    }
-
-    String kombinerMalMedData(DokMal dokMal, Map<String, Object> data) {
-        return handlebarsTjeneste.genererDokumentInnhold(dokMal.getInnhold(), data);
-    }
-
     private DokMal hentDokMal(String malNavn, DokSpråk språk, DokStyling styling) {
         return hentDokMal(malNavn, hentPathForMal(malNavn, språk.toString()), språk, styling);
     }
@@ -76,6 +60,22 @@ public class DokGeneratorTjeneste {
 
     private String cacheKey(Path malPath) {
         return malPath.toString();
+    }
+
+    private byte[] createPdf(DokMal dokMal, String dataFelter) {
+        var jsonDataMap = getJsonMapFromString(dataFelter);
+        jsonSchemaTjeneste.validerDataMotSchema(jsonDataMap, hentSchemaPathForMal(dokMal.getNavn()));
+        return konverterTilPdf(dokMal, jsonDataMap);
+    }
+
+    private byte[] konverterTilPdf(DokMal dokMal, Map<String, Object> dataMap) {
+        var markdownMedData = kombinerMalMedData(dokMal, dataMap);
+        var htmlMedStyling = konverterTilHtml(markdownMedData, dokMal.getStyling());
+        return pdfGeneratorTjeneste.genererPdf(htmlMedStyling);
+    }
+
+    private String kombinerMalMedData(DokMal dokMal, Map<String, Object> data) {
+        return handlebarsTjeneste.genererDokumentInnhold(dokMal.getInnhold(), data);
     }
 
     private String konverterTilHtml(String markdownMedData, DokStyling format) {
