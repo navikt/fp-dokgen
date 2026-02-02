@@ -44,7 +44,7 @@ public class DokMal {
         private String navn;
         private String innhold;
         private DokSpråk språk = DokSpråk.BOKMÅL;
-        private DokStyling styling = DokStyling.PDF;
+        private DokStyling styling = DokStyling.FOR_PDF;
 
         public Builder medNavn(String navn) {
             this.navn = navn;

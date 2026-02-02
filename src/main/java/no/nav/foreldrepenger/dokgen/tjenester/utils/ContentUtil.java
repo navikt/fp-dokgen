@@ -24,15 +24,15 @@ public class ContentUtil {
     }
 
     public static Path hentHeaderPathFor(DokStyling format) {
-        return TEMPLATE_BASE_PATH.resolve("formats/%s/header.html".formatted(format.name().toLowerCase()));
+        return TEMPLATE_BASE_PATH.resolve("formats/%s/header.html".formatted(format));
     }
 
     public static Path hentFooterPathFor(DokStyling format) {
-        return TEMPLATE_BASE_PATH.resolve("formats/%s/footer.html".formatted(format.name().toLowerCase()));
+        return TEMPLATE_BASE_PATH.resolve("formats/%s/footer.html".formatted(format));
     }
 
     public static Path hentCssPathFor(DokStyling format) {
-        return TEMPLATE_BASE_PATH.resolve("formats/%s/style.css".formatted(format.name().toLowerCase()));
+        return TEMPLATE_BASE_PATH.resolve("formats/%s/style.css".formatted(format));
     }
 
     public static Path hentFontDirectoryPath() {

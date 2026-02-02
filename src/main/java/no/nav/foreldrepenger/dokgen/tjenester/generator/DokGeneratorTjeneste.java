@@ -56,7 +56,7 @@ public class DokGeneratorTjeneste {
 
     private byte[] konverterTilPdf(DokMal dokMal, Map<String, Object> dataMap) {
         var markdownMedData = kombinerMalMedData(dokMal, dataMap);
-        var htmlMesStyling = konverterTilHtml(markdownMedData, DokStyling.PDF);
+        var htmlMesStyling = konverterTilHtml(markdownMedData, DokStyling.FOR_PDF);
         return pdfGeneratorTjeneste.genererPdf(htmlMesStyling);
     }
 
