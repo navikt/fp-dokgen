@@ -5,7 +5,6 @@ import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 
 import jakarta.validation.Valid;
-import jakarta.ws.rs.FormParam;
 import jakarta.ws.rs.core.CacheControl;
 import no.nav.foreldrepenger.dokgen.tjenester.generator.DokGeneratorTjeneste;
 import no.nav.foreldrepenger.dokgen.tjenester.generator.DokSpråk;
@@ -27,7 +26,6 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
 @RequestScoped
-@Path("/dokument")
 @Consumes(MediaType.APPLICATION_JSON)
 public class DokumentGeneratorRestTjeneste {
 
@@ -45,7 +43,7 @@ public class DokumentGeneratorRestTjeneste {
     }
 
     @POST
-    @Path("/{navn}/create-pdf")
+    @Path("/dokument/{navn}/generer")
     @Operation(
         summary = "Lager en PDF av flettefeltene og malen med angitt variation.",
         description = "PDF er av versjonen PDF/A"
@@ -99,15 +97,17 @@ public class DokumentGeneratorRestTjeneste {
         }
 
         public enum Styling {
-            PDF, HTML, PDFINNTEKTSMELDING
+            FOR_PDF,
+            FOR_HTML,
+            FOR_INNTEKTSMELDING_PDF
         }
     }
 
     private DokStyling mapFormat(GenererDokumentParams.Styling styling) {
         return switch (styling) {
-            case PDF -> DokStyling.PDF;
-            case HTML -> DokStyling.HTML;
-            case PDFINNTEKTSMELDING -> DokStyling.PDFINNTEKTSMELDING;
+            case FOR_PDF -> DokStyling.FOR_PDF;
+            case FOR_HTML -> DokStyling.FOR_HTML;
+            case FOR_INNTEKTSMELDING_PDF -> DokStyling.FOR_INNTEKTSMELDING_PDF;
         };
     }
 

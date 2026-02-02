@@ -76,7 +76,7 @@ class JsonSchemaTjenesteTest {
             // Act & Assert
             assertThatThrownBy(() -> jsonSchemaTjeneste.validerDataMotSchema(null, schemaPath))
                 .isInstanceOf(NullPointerException.class)
-                .hasMessageContaining("Ved validering av flettefelt-json");
+                .hasMessageContaining("Ved validering av data-json");
         }
 
         @Test

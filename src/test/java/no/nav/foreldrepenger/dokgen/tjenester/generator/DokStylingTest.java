@@ -14,17 +14,17 @@ class DokStylingTest {
 
         @Test
         void pdfSkalReturnePdf() {
-            assertThat(DokStyling.PDF).hasToString("pdf");
+            assertThat(DokStyling.FOR_PDF).hasToString("pdf");
         }
 
         @Test
         void htmlSkalReturneHtml() {
-            assertThat(DokStyling.HTML).hasToString("html");
+            assertThat(DokStyling.FOR_HTML).hasToString("html");
         }
 
         @Test
         void pdfInntektsmeldingSkalReturnePdfinntektsmelding() {
-            assertThat(DokStyling.PDFINNTEKTSMELDING).hasToString("pdfinntektsmelding");
+            assertThat(DokStyling.FOR_INNTEKTSMELDING_PDF).hasToString("inntektsmelding_pdf");
         }
     }
 
@@ -39,7 +39,7 @@ class DokStylingTest {
         @Test
         void skalInneholdeAlleStylingTyper() {
             assertThat(DokStyling.values())
-                .containsExactly(DokStyling.PDF, DokStyling.HTML, DokStyling.PDFINNTEKTSMELDING);
+                .containsExactly(DokStyling.FOR_PDF, DokStyling.FOR_HTML, DokStyling.FOR_INNTEKTSMELDING_PDF);
         }
 
         @ParameterizedTest
@@ -54,7 +54,7 @@ class DokStylingTest {
         @ParameterizedTest
         @EnumSource(DokStyling.class)
         void alleStylingTyperSkalHaGyldigVerdi(DokStyling styling) {
-            assertThat(styling.toString()).isIn("pdf", "html", "pdfinntektsmelding");
+            assertThat(styling.toString()).isIn("pdf", "html", "inntektsmelding_pdf");
         }
     }
 
@@ -63,17 +63,17 @@ class DokStylingTest {
 
         @Test
         void skalFinnePdfFraNavn() {
-            assertThat(DokStyling.valueOf("PDF")).isEqualTo(DokStyling.PDF);
+            assertThat(DokStyling.valueOf("FOR_PDF")).isEqualTo(DokStyling.FOR_PDF);
         }
 
         @Test
         void skalFinneHtmlFraNavn() {
-            assertThat(DokStyling.valueOf("HTML")).isEqualTo(DokStyling.HTML);
+            assertThat(DokStyling.valueOf("FOR_HTML")).isEqualTo(DokStyling.FOR_HTML);
         }
 
         @Test
         void skalFinnePdfInntektsmeldingFraNavn() {
-            assertThat(DokStyling.valueOf("PDFINNTEKTSMELDING")).isEqualTo(DokStyling.PDFINNTEKTSMELDING);
+            assertThat(DokStyling.valueOf("FOR_INNTEKTSMELDING_PDF")).isEqualTo(DokStyling.FOR_INNTEKTSMELDING_PDF);
         }
     }
 
@@ -82,17 +82,17 @@ class DokStylingTest {
 
         @Test
         void pdfSkalVaereForst() {
-            assertThat(DokStyling.PDF.ordinal()).isZero();
+            assertThat(DokStyling.FOR_PDF.ordinal()).isZero();
         }
 
         @Test
         void htmlSkalVaereAndre() {
-            assertThat(DokStyling.HTML.ordinal()).isEqualTo(1);
+            assertThat(DokStyling.FOR_HTML.ordinal()).isEqualTo(1);
         }
 
         @Test
         void pdfInntektsmeldingSkalVaereTredje() {
-            assertThat(DokStyling.PDFINNTEKTSMELDING.ordinal()).isEqualTo(2);
+            assertThat(DokStyling.FOR_INNTEKTSMELDING_PDF.ordinal()).isEqualTo(2);
         }
     }
 
@@ -109,7 +109,7 @@ class DokStylingTest {
         @ParameterizedTest
         @EnumSource(DokStyling.class)
         void toStringSkalIkkeInneholdeUnderscore(DokStyling styling) {
-            assertThat(styling.toString()).doesNotContain("_");
+            assertThat(styling.toString()).doesNotContain("for_");
         }
     }
 }
