@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import no.nav.foreldrepenger.dokgen.tjenester.generator.DokStyling;
+import no.nav.foreldrepenger.dokgen.tjenester.generator.DokCssStyling;
 
 class HtmlUtilTest {
 
@@ -16,7 +16,7 @@ class HtmlUtilTest {
         void skalPakkeInnholdIContentDiv() {
             var innhold = "<p>Test innhold</p>";
 
-            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokStyling.FOR_PDF);
+            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokCssStyling.FOR_PDF);
 
             assertThat(html)
                 .contains("<div id=\"content\">")
@@ -28,7 +28,7 @@ class HtmlUtilTest {
         void skalLeggesTilMetaCharsetUtf8() {
             var innhold = "<p>Test</p>";
 
-            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokStyling.FOR_PDF);
+            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokCssStyling.FOR_PDF);
 
             assertThat(html).contains("<meta charset=\"UTF-8\"");
         }
@@ -37,7 +37,7 @@ class HtmlUtilTest {
         void skalLeggesTilCssStyle() {
             var innhold = "<p>Test</p>";
 
-            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokStyling.FOR_PDF);
+            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokCssStyling.FOR_PDF);
 
             assertThat(html)
                 .contains("<style>")
@@ -48,7 +48,7 @@ class HtmlUtilTest {
         void skalBeholdeHtmlStruktur() {
             var innhold = "<h1>Overskrift</h1><p>Paragraf</p>";
 
-            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokStyling.FOR_PDF);
+            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokCssStyling.FOR_PDF);
 
             assertThat(html)
                 .contains("<h1>Overskrift</h1>")
@@ -59,7 +59,7 @@ class HtmlUtilTest {
         void skalHandtereNorskeTegn() {
             var innhold = "<p>Søknad om foreldrepenger for Æøå Åsen</p>";
 
-            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokStyling.FOR_PDF);
+            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokCssStyling.FOR_PDF);
 
             assertThat(html)
                 .contains("Søknad om foreldrepenger")
@@ -70,7 +70,7 @@ class HtmlUtilTest {
         void skalHandtereTomtInnhold() {
             var innhold = "";
 
-            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokStyling.FOR_PDF);
+            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokCssStyling.FOR_PDF);
 
             assertThat(html)
                 .contains("<div id=\"content\">")
@@ -92,7 +92,7 @@ class HtmlUtilTest {
                 </ul>
                 """;
 
-            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokStyling.FOR_PDF);
+            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokCssStyling.FOR_PDF);
 
             assertThat(html)
                 .contains("<h1>Vedtak om foreldrepenger</h1>")
@@ -106,7 +106,7 @@ class HtmlUtilTest {
         void skalHaGyldigHtmlStruktur() {
             var innhold = "<p>Test</p>";
 
-            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokStyling.FOR_PDF);
+            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokCssStyling.FOR_PDF);
 
             assertThat(html)
                 .contains("<html>")
@@ -119,7 +119,7 @@ class HtmlUtilTest {
         void skalPlassereStyleIHead() {
             var innhold = "<p>Test</p>";
 
-            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokStyling.FOR_PDF);
+            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokCssStyling.FOR_PDF);
 
             // Style skal være mellom <head> og </head>
             var headStart = html.indexOf("<head>");
@@ -135,7 +135,7 @@ class HtmlUtilTest {
         void skalPlassereInnholdIBody() {
             var innhold = "<p>Test innhold</p>";
 
-            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokStyling.FOR_PDF);
+            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokCssStyling.FOR_PDF);
 
             // Content div skal være mellom <body> og </body>
             var bodyStart = html.indexOf("<body>");
@@ -151,7 +151,7 @@ class HtmlUtilTest {
         void skalHaDoctypeForOpenhtmltopdf() {
             var innhold = "<p>Test</p>";
 
-            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokStyling.FOR_PDF);
+            var html = HtmlUtil.utvidMedHtmlMetadataHeaderFooter(innhold, DokCssStyling.FOR_PDF);
 
             assertThat(html)
                 .contains("<!DOCTYPE html PUBLIC")

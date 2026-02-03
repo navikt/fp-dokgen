@@ -1,6 +1,6 @@
 package no.nav.foreldrepenger.dokgen.tjenester.generator;
 
-public enum DokStyling {
+public enum DokCssStyling {
     FOR_PDF,
     FOR_HTML,
     FOR_INNTEKTSMELDING_PDF;

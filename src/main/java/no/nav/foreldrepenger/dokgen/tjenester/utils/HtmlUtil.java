@@ -8,7 +8,7 @@ import static no.nav.foreldrepenger.dokgen.tjenester.utils.ContentUtil.lesRessur
 import java.nio.file.Path;
 import java.util.concurrent.ConcurrentHashMap;
 
-import no.nav.foreldrepenger.dokgen.tjenester.generator.DokStyling;
+import no.nav.foreldrepenger.dokgen.tjenester.generator.DokCssStyling;
 
 public class HtmlUtil {
 
@@ -17,7 +17,7 @@ public class HtmlUtil {
     private HtmlUtil() {
     }
 
-    public static String utvidMedHtmlMetadataHeaderFooter(String htmlInnhold, DokStyling styling) {
+    public static String utvidMedHtmlMetadataHeaderFooter(String htmlInnhold, DokCssStyling styling) {
         //nødvendig doctype for å støtte non-breaking space i openhtmltopdf
         return """
             <!DOCTYPE html PUBLIC "-//OPENHTMLTOPDF//DOC XHTML Character Entities Only 1.0//EN" "">
@@ -35,17 +35,17 @@ public class HtmlUtil {
             """.formatted(hentCss(styling), hentHeader(styling), htmlInnhold, hentFooter(styling));
     }
 
-    private static String hentHeader(DokStyling styling) {
+    private static String hentHeader(DokCssStyling styling) {
         var cacheKey = hentHeaderPathFor(styling).toString();
         return HTML_CACHE.computeIfAbsent(cacheKey, key -> lesRessursSomString(Path.of(key)));
     }
 
-    private static String hentFooter(DokStyling styling) {
+    private static String hentFooter(DokCssStyling styling) {
         var cacheKey = hentFooterPathFor(styling).toString();
         return HTML_CACHE.computeIfAbsent(cacheKey, key -> lesRessursSomString(Path.of(key)));
     }
 
-    private static String hentCss(DokStyling styling) {
+    private static String hentCss(DokCssStyling styling) {
         var cacheKey = hentCssPathFor(styling).toString();
         return HTML_CACHE.computeIfAbsent(cacheKey, key -> lesRessursSomString(Path.of(key)));
 

@@ -11,7 +11,7 @@ public class DokMal {
     @NotNull
     private final DokSpråk språk;
     @NotNull
-    private final DokStyling styling;
+    private final DokCssStyling styling;
 
     private DokMal(Builder builder) {
         this.navn = builder.navn;
@@ -32,7 +32,7 @@ public class DokMal {
         return språk;
     }
 
-    public DokStyling getStyling() {
+    public DokCssStyling getStyling() {
         return styling;
     }
 
@@ -44,7 +44,7 @@ public class DokMal {
         private String navn;
         private String innhold;
         private DokSpråk språk = DokSpråk.BOKMÅL;
-        private DokStyling styling = DokStyling.FOR_PDF;
+        private DokCssStyling styling = DokCssStyling.FOR_PDF;
 
         public Builder medNavn(String navn) {
             this.navn = navn;
@@ -61,7 +61,7 @@ public class DokMal {
             return this;
         }
 
-        public Builder medStyling(DokStyling styling) {
+        public Builder medStyling(DokCssStyling styling) {
             this.styling = styling;
             return this;
         }

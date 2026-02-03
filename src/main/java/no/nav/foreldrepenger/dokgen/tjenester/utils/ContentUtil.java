@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.util.Objects;
 
 import no.nav.foreldrepenger.dokgen.tjenester.exceptions.DokgenNotFoundException;
-import no.nav.foreldrepenger.dokgen.tjenester.generator.DokStyling;
+import no.nav.foreldrepenger.dokgen.tjenester.generator.DokCssStyling;
 
 public class ContentUtil {
 
@@ -27,15 +27,15 @@ public class ContentUtil {
         return TEMPLATE_BASE_PATH.resolve("templates/%s/schema.json".formatted(malNavn));
     }
 
-    public static Path hentHeaderPathFor(DokStyling styling) {
+    public static Path hentHeaderPathFor(DokCssStyling styling) {
         return TEMPLATE_BASE_PATH.resolve("styling/%s/header.html".formatted(styling));
     }
 
-    public static Path hentFooterPathFor(DokStyling styling) {
+    public static Path hentFooterPathFor(DokCssStyling styling) {
         return TEMPLATE_BASE_PATH.resolve("styling/%s/footer.html".formatted(styling));
     }
 
-    public static Path hentCssPathFor(DokStyling styling) {
+    public static Path hentCssPathFor(DokCssStyling styling) {
         return TEMPLATE_BASE_PATH.resolve("styling/%s/style.css".formatted(styling));
     }
 

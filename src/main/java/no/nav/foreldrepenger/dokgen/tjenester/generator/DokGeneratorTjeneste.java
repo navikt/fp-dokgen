@@ -44,7 +44,7 @@ public class DokGeneratorTjeneste {
         this.pdfGeneratorTjeneste = pdfGeneratorTjeneste;
     }
 
-    public String createHtml(String malNavn, String dataFelter, DokSpråk språk, DokStyling styling) {
+    public String createHtml(String malNavn, String dataFelter, DokSpråk språk, DokCssStyling styling) {
         LOG.info("Genererer HTML for mal={} språk={} styling={}", malNavn, språk, styling);
         return createHtml(hentDokMal(malNavn, språk, styling), dataFelter);
     }
@@ -54,12 +54,12 @@ public class DokGeneratorTjeneste {
         return konverterTilHtml(dokMal, jsonDataMap);
     }
 
-    public byte[] createPdf(String malNavn, String dataFelter, DokSpråk språk, DokStyling styling) {
+    public byte[] createPdf(String malNavn, String dataFelter, DokSpråk språk, DokCssStyling styling) {
         LOG.info("Genererer PDF for mal={} språk={} styling={}", malNavn, språk, styling);
         return createPdf(hentDokMal(malNavn, språk, styling), dataFelter);
     }
 
-    private DokMal hentDokMal(String malNavn, DokSpråk språk, DokStyling styling) {
+    private DokMal hentDokMal(String malNavn, DokSpråk språk, DokCssStyling styling) {
         var malInnhold = switch (språk) {
             case BOKMÅL, NYNORSK, ENGELSK -> hentPathForMal(malNavn, språk.toString());
             case null -> hentPathForMal(malNavn);
@@ -67,7 +67,7 @@ public class DokGeneratorTjeneste {
         return hentDokMal(malNavn, malInnhold, språk, styling);
     }
 
-    private DokMal hentDokMal(String malNavn, Path malPath, DokSpråk språk, DokStyling styling) {
+    private DokMal hentDokMal(String malNavn, Path malPath, DokSpråk språk, DokCssStyling styling) {
         var cacheKey = cacheKey(malPath);
         var malInnhold = MAL_CACHE.computeIfAbsent(cacheKey, key -> lesRessursSomString(Path.of(key)));
         return DokMal.builder().medNavn(malNavn).medInnhold(malInnhold).medSpråk(språk).medStyling(styling).build();

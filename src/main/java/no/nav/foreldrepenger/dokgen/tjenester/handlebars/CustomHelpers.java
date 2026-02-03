@@ -22,7 +22,7 @@ import com.neovisionaries.i18n.CountryCode;
 /**
  * Custom Handlebars helpers for document generation.
  */
-public final class CustomHelpers {
+final class CustomHelpers {
 
     private CustomHelpers() {
         // Utility class
@@ -41,7 +41,7 @@ public final class CustomHelpers {
      * {{/case}}
      * {{/switch}}
      */
-    public static class SwitchHelper implements Helper<Object> {
+    static class SwitchHelper implements Helper<Object> {
 
         @Override
         public Object apply(Object variable, Options options) throws IOException {
@@ -65,7 +65,7 @@ public final class CustomHelpers {
     /**
      * @see SwitchHelper
      */
-    public static class CaseHelper implements Helper<Object> {
+    static class CaseHelper implements Helper<Object> {
         private static final String CONDITION_VARIABLE = "__condition_variable";
         private static final String CONDITION_FULFILLED = "__condition_fulfilled";
 
@@ -108,7 +108,7 @@ public final class CustomHelpers {
      * <p>
      * will render a table with two tr rows with two cells in each
      */
-    public static class TableHelper implements Helper<Object> {
+    static class TableHelper implements Helper<Object> {
 
         @Override
         public Object apply(Object context, Options options) throws IOException {
@@ -142,7 +142,7 @@ public final class CustomHelpers {
      * <p>
      * {{add 3 4}} prints 7 for example.
      */
-    public static class AdditionHelper implements Helper<Integer> {
+    static class AdditionHelper implements Helper<Integer> {
         @Override
         public Object apply(Integer leftOperand, Options options) {
             return leftOperand + options.<Integer>param(0);
@@ -154,7 +154,7 @@ public final class CustomHelpers {
      * <p>
      * {{norwegian-date 2020-02-01}} prints 01.02.2020
      */
-    public static class NorwegianDateHelper implements Helper<String> {
+    static class NorwegianDateHelper implements Helper<String> {
         @Override
         public Object apply(String isoFormattedDate, Options options) {
             var parts = isoFormattedDate.split("-");
@@ -168,7 +168,7 @@ public final class CustomHelpers {
      * {{norwegian-datetime 2019-08-19T15:54:01}} prints 19.08.2019 15:54
      * {{norwegian-datetime "2019-08-19T15:54:01" includeSeconds=true}} → 19.08.2019 15:54:01
      */
-    public static class NorwegianDateTimeHelper implements Helper<String> {
+    static class NorwegianDateTimeHelper implements Helper<String> {
         private static final DateTimeFormatter DATETIME_FORMAT = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
         private static final DateTimeFormatter DATETIME_SECOND_FORMAT = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm:ss");
 
@@ -183,7 +183,7 @@ public final class CustomHelpers {
     /**
      * Allows to divide a template parameter with a given number and round the result value to the nearest krone
      */
-    public static class DivideHelper implements Helper<Integer> {
+    static class DivideHelper implements Helper<Integer> {
         @Override
         public Object apply(Integer antall, Options options) {
             int beløp = options.param(0);
@@ -197,14 +197,14 @@ public final class CustomHelpers {
      * ex: 10000 will be 10 000
      * The function does not handle decimals
      */
-    public static class ThousandSeperatorHelper implements Helper<Integer> {
+    static class ThousandSeperatorHelper implements Helper<Integer> {
         @Override
         public Object apply(Integer kroner, Options options) {
             return String.format(Locale.forLanguageTag("NO"), "%,d", kroner);
         }
     }
 
-    public static class ThousandSeperatorHelperDouble implements Helper<Double> {
+    static class ThousandSeperatorHelperDouble implements Helper<Double> {
         @Override
         public Object apply(Double kroner, Options options) {
             return new DecimalFormat(",###.##", new DecimalFormatSymbols(Locale.of("NO"))).format(kroner);
@@ -214,7 +214,7 @@ public final class CustomHelpers {
     /**
      * Removes trailing zeroes from decimals, ex: 10.0 becomes 10 and 90.20 becomes 90.2, while 100.3 remains the same
      */
-    public static class TrimDecimalHelper implements Helper<Double> {
+    static class TrimDecimalHelper implements Helper<Double> {
         @Override
         public Object apply(Double decimal, Options options) {
             return BigDecimal.valueOf(decimal).stripTrailingZeros().toPlainString();
@@ -235,7 +235,7 @@ public final class CustomHelpers {
      * <!-- results in: 'bar' -->
      * ```
      */
-    public static class ArrayHelper implements Helper<Object> {
+    static class ArrayHelper implements Helper<Object> {
         @Override
         public Object apply(Object verdi, Options options) throws IOException {
             List<Object> verdier = new ArrayList<>();
@@ -263,7 +263,7 @@ public final class CustomHelpers {
      * <!-- results in: 'bar' -->
      * ```
      */
-    public static class InArrayHelper implements Helper<Object> {
+    static class InArrayHelper implements Helper<Object> {
         @Override
         public Object apply(Object caseArray, Options options) throws IOException {
             if (caseArray instanceof Iterable<?> iterable) {
@@ -280,7 +280,7 @@ public final class CustomHelpers {
     /**
      * Returns the size of an array
      */
-    public static class SizeHelper implements Helper<Object> {
+    static class SizeHelper implements Helper<Object> {
         @Override
         public Object apply(Object o, Options options) {
             if (o instanceof Iterable<?> iterable) {
@@ -301,7 +301,7 @@ public final class CustomHelpers {
      * Optionally, you can specify a language using the `lang` parameter to get the country name in a different language.
      * Example: {{countryCode "NO" lang="en"}} will return "Norway".
      */
-    public static class CountryCodeHelper implements Helper<Object> {
+    static class CountryCodeHelper implements Helper<Object> {
         @Override
         public Object apply(Object landKode, Options options) {
             if (!(landKode instanceof String code) || code.isBlank()) {
@@ -323,7 +323,7 @@ public final class CustomHelpers {
      * {{navn}} - {{stillingsprosent}} {{orgnummer}}
      * {{/arbeidsforholdLookup}}
      */
-    public static class ArbeidsforholdLookupHelper implements Helper<Object> {
+    static class ArbeidsforholdLookupHelper implements Helper<Object> {
         @Override
         public Object apply(Object context, Options options) throws IOException {
             if (!(context instanceof String orgnummer)) {
@@ -353,7 +353,7 @@ public final class CustomHelpers {
      * Example use: {{antallVirkedagerMellomToDatoer startDato sluttDato}}
      * DateTimeFormatter.ISO_LOCAL_DATE => "yyyy-MM-dd"
      */
-    public static class AntallVirkedagerMellomToDatoer implements Helper<String> {
+    static class AntallVirkedagerMellomToDatoer implements Helper<String> {
         @Override
         public Object apply(String dato1, Options options) {
             var start = LocalDate.parse(dato1);
@@ -387,7 +387,7 @@ public final class CustomHelpers {
      * {{format-text HELLO_WORLD toLower=true replaceUnderscore=true}} => "hello world"
      * {{format-text HELLO_WORLD toLower=true replaceUnderscore=true capitalizeFirst=true}} => "Hello world"
      */
-    public static class FormatText implements Helper<String> {
+    static class FormatText implements Helper<String> {
         @Override
         public Object apply(String tekst, Options options) {
             if (tekst == null) {

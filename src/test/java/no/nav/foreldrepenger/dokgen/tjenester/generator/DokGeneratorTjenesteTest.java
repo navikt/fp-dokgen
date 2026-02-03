@@ -51,7 +51,7 @@ class DokGeneratorTjenesteTest {
             when(pdfGeneratorTjeneste.genererPdf(any())).thenReturn(new byte[]{0x25, 0x50, 0x44, 0x46});
 
             // Act
-            dokGeneratorTjeneste.createPdf(malNavn, dataFelter, DokSpråk.BOKMÅL, DokStyling.FOR_PDF);
+            dokGeneratorTjeneste.createPdf(malNavn, dataFelter, DokSpråk.BOKMÅL, DokCssStyling.FOR_PDF);
 
             // Assert
             verify(jsonSchemaTjeneste).validerDataMotSchema(any(), any(Path.class));
@@ -65,7 +65,7 @@ class DokGeneratorTjenesteTest {
             var ugyldigJson = "ikke gyldig json";
 
             // Act & Assert
-            assertThatThrownBy(() -> dokGeneratorTjeneste.createPdf(malNavn, ugyldigJson, DokSpråk.BOKMÅL, DokStyling.FOR_PDF))
+            assertThatThrownBy(() -> dokGeneratorTjeneste.createPdf(malNavn, ugyldigJson, DokSpråk.BOKMÅL, DokCssStyling.FOR_PDF))
                 .isInstanceOf(IllegalArgumentException.class);
         }
 
@@ -82,13 +82,13 @@ class DokGeneratorTjenesteTest {
             when(pdfGeneratorTjeneste.genererPdf(any())).thenReturn(new byte[]{0x25, 0x50, 0x44, 0x46});
 
             // Act & Assert - skal ikke kaste exception
-            dokGeneratorTjeneste.createPdf(malNavn, dataFelter, språk, DokStyling.FOR_PDF);
+            dokGeneratorTjeneste.createPdf(malNavn, dataFelter, språk, DokCssStyling.FOR_PDF);
         }
 
         @ParameterizedTest
-        @EnumSource(DokStyling.class)
+        @EnumSource(DokCssStyling.class)
         @DisplayName("skal støtte alle styling-typer")
-        void skalStøtteAlleStylingTyper(DokStyling styling) {
+        void skalStøtteAlleStylingTyper(DokCssStyling styling) {
             // Arrange
             var malNavn = "test-mal";
             var dataFelter = """
@@ -127,24 +127,24 @@ class DokGeneratorTjenesteTest {
 
     @Nested
     @DisplayName("DokStyling enum")
-    class DokStylingTest {
+    class DokCssCssCssStylingTest {
 
         @Test
         @DisplayName("FOR_PDF skal returnere 'pdf'")
         void forPdfSkalReturnerePdf() {
-            assertThat(DokStyling.FOR_PDF.toString()).isEqualTo("pdf");
+            assertThat(DokCssStyling.FOR_PDF.toString()).isEqualTo("pdf");
         }
 
         @Test
         @DisplayName("FOR_HTML skal returnere 'html'")
         void forHtmlSkalReturnereHtml() {
-            assertThat(DokStyling.FOR_HTML.toString()).isEqualTo("html");
+            assertThat(DokCssStyling.FOR_HTML.toString()).isEqualTo("html");
         }
 
         @Test
         @DisplayName("FOR_INNTEKTSMELDING_PDF skal returnere 'inntektsmelding_pdf'")
         void forInntektsmeldingPdfSkalReturnereInntektsmeldingPdf() {
-            assertThat(DokStyling.FOR_INNTEKTSMELDING_PDF.toString()).isEqualTo("inntektsmelding_pdf");
+            assertThat(DokCssStyling.FOR_INNTEKTSMELDING_PDF.toString()).isEqualTo("inntektsmelding_pdf");
         }
     }
 
@@ -160,7 +160,7 @@ class DokGeneratorTjenesteTest {
                 .medNavn("test-mal")
                 .medInnhold("# Overskrift\nInnhold")
                 .medSpråk(DokSpråk.NYNORSK)
-                .medStyling(DokStyling.FOR_HTML)
+                .medStyling(DokCssStyling.FOR_HTML)
                 .build();
 
             // Assert
@@ -169,7 +169,7 @@ class DokGeneratorTjenesteTest {
                     assertThat(mal.getNavn()).isEqualTo("test-mal");
                     assertThat(mal.getInnhold()).isEqualTo("# Overskrift\nInnhold");
                     assertThat(mal.getSpråk()).isEqualTo(DokSpråk.NYNORSK);
-                    assertThat(mal.getStyling()).isEqualTo(DokStyling.FOR_HTML);
+                    assertThat(mal.getStyling()).isEqualTo(DokCssStyling.FOR_HTML);
                 });
         }
 
@@ -184,7 +184,7 @@ class DokGeneratorTjenesteTest {
 
             // Assert
             assertThat(dokMal.getSpråk()).isEqualTo(DokSpråk.BOKMÅL);
-            assertThat(dokMal.getStyling()).isEqualTo(DokStyling.FOR_PDF);
+            assertThat(dokMal.getStyling()).isEqualTo(DokCssStyling.FOR_PDF);
         }
     }
 }
