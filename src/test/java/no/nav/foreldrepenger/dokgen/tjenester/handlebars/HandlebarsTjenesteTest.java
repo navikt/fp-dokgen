@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.EnumSource;
 
 import no.nav.foreldrepenger.dokgen.tjenester.generator.DokMal;
 import no.nav.foreldrepenger.dokgen.tjenester.generator.DokSpråk;
-import no.nav.foreldrepenger.dokgen.tjenester.generator.DokStyling;
+import no.nav.foreldrepenger.dokgen.tjenester.generator.DokCssStyling;
 import no.nav.vedtak.mapper.json.DefaultJsonMapper;
 
 class HandlebarsTjenesteTest {
@@ -107,8 +107,8 @@ class HandlebarsTjenesteTest {
     }
 
     @ParameterizedTest
-    @EnumSource(DokStyling.class)
-    void skalStøtteAlleStylingTyper(DokStyling styling) {
+    @EnumSource(DokCssStyling.class)
+    void skalStøtteAlleStylingTyper(DokCssStyling styling) {
         // Assert
         assertThat(styling.toString()).isIn("pdf", "html", "inntektsmelding_pdf");
     }
@@ -116,13 +116,13 @@ class HandlebarsTjenesteTest {
     @Test
     void skalByggeGyldigDokMal() {
         // Arrange & Act
-        var dokMal = DokMal.builder().medNavn("test-mal").medInnhold("Innhold").medSpråk(DokSpråk.NYNORSK).medStyling(DokStyling.FOR_PDF).build();
+        var dokMal = DokMal.builder().medNavn("test-mal").medInnhold("Innhold").medSpråk(DokSpråk.NYNORSK).medStyling(DokCssStyling.FOR_PDF).build();
 
         // Assert
         assertThat(dokMal.getNavn()).isEqualTo("test-mal");
         assertThat(dokMal.getInnhold()).isEqualTo("Innhold");
         assertThat(dokMal.getSpråk()).isEqualTo(DokSpråk.NYNORSK);
-        assertThat(dokMal.getStyling()).isEqualTo(DokStyling.FOR_PDF);
+        assertThat(dokMal.getStyling()).isEqualTo(DokCssStyling.FOR_PDF);
     }
 
     @Test
@@ -132,6 +132,6 @@ class HandlebarsTjenesteTest {
 
         // Assert
         assertThat(dokMal.getSpråk()).isEqualTo(DokSpråk.BOKMÅL);
-        assertThat(dokMal.getStyling()).isEqualTo(DokStyling.FOR_PDF);
+        assertThat(dokMal.getStyling()).isEqualTo(DokCssStyling.FOR_PDF);
     }
 }

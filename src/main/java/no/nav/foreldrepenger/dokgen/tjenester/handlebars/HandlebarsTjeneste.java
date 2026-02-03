@@ -1,15 +1,11 @@
 package no.nav.foreldrepenger.dokgen.tjenester.handlebars;
 
 import java.io.IOException;
-import java.lang.reflect.AccessibleObject;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 import com.github.jknack.handlebars.Context;
 import com.github.jknack.handlebars.Handlebars;
-import com.github.jknack.handlebars.context.FieldValueResolver;
 import com.github.jknack.handlebars.context.JavaBeanValueResolver;
 import com.github.jknack.handlebars.context.MapValueResolver;
 import com.github.jknack.handlebars.context.MethodValueResolver;

@@ -16,7 +16,7 @@
 *.iml
 target
 
-content/styling/html/style.css
+content/cssStyling/html/style.css
 docker-compose-local.yml
 
 .java-version
