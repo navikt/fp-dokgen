@@ -1,7 +1,7 @@
 {
   "$id": "urn:no:nav:fpdokgen:test-mal",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "Dokumentdata for brev",
+  "description": "Test skjema for brev",
   "type": "object",
   "required": [
     "testProp1",

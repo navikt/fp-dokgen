@@ -51,7 +51,9 @@ class JsonSchemaTjenesteTest {
 
             // Act & Assert
             assertThatThrownBy(() -> jsonSchemaTjeneste.validerDataMotSchema(data, schemaPath))
-                .isInstanceOf(DokgenSchemaValidationException.class);
+                .isInstanceOf(DokgenSchemaValidationException.class)
+                .hasMessageContaining("testProp2")
+                .hasMessageNotContaining("testProp1");
         }
 
         @Test

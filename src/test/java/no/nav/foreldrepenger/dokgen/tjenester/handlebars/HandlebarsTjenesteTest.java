@@ -3,16 +3,17 @@ package no.nav.foreldrepenger.dokgen.tjenester.handlebars;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 
+import no.nav.foreldrepenger.dokgen.tjenester.generator.DokCssStyling;
 import no.nav.foreldrepenger.dokgen.tjenester.generator.DokMal;
 import no.nav.foreldrepenger.dokgen.tjenester.generator.DokSpråk;
-import no.nav.foreldrepenger.dokgen.tjenester.generator.DokCssStyling;
-import no.nav.vedtak.mapper.json.DefaultJsonMapper;
+import no.nav.foreldrepenger.dokgen.tjenester.utils.JacksonUtil;
 
 class HandlebarsTjenesteTest {
 
@@ -48,7 +49,7 @@ class HandlebarsTjenesteTest {
             }
             """;
 
-        Map<String, Object> jsonInput = DefaultJsonMapper.getJsonMapper().readValue(jsonString, Map.class);
+        Map<String, Object> jsonInput = JacksonUtil.JSON_MAPPER.readValue(jsonString, Map.class);
 
         // Act
         var resultat = handlebarsTjeneste.genererDokumentInnhold(malInnhold, jsonInput);
@@ -61,20 +62,20 @@ class HandlebarsTjenesteTest {
     void skalHåndtereNorskeTegn() {
         // Arrange
         var malInnhold = "Hei {{navn}}, du har fått innvilget {{beløp}} kroner i stønad.";
-        Map<String, Object> jsonInput = Map.of("navn", "Åse Ødegård", "beløp", "15000");
+        Map<String, Object> jsonInput = Map.of("navn", "Donald Duck", "beløp", "15000");
 
         // Act
         var resultat = handlebarsTjeneste.genererDokumentInnhold(malInnhold, jsonInput);
 
         // Assert
-        assertThat(resultat).contains("Åse Ødegård").contains("15000 kroner");
+        assertThat(resultat).contains("Donald Duck").contains("15000 kroner");
     }
 
     @Test
     void skalHåndtereListeData() {
         // Arrange
         var malInnhold = "Perioder:{{#each perioder}} {{this}}{{/each}}";
-        Map<String, Object> jsonInput = Map.of("perioder", java.util.List.of("jan", "feb", "mar"));
+        Map<String, Object> jsonInput = Map.of("perioder", List.of("jan", "feb", "mar"));
 
         // Act
         var resultat = handlebarsTjeneste.genererDokumentInnhold(malInnhold, jsonInput);
@@ -116,13 +117,13 @@ class HandlebarsTjenesteTest {
     @Test
     void skalByggeGyldigDokMal() {
         // Arrange & Act
-        var dokMal = DokMal.builder().medNavn("test-mal").medInnhold("Innhold").medSpråk(DokSpråk.NYNORSK).medStyling(DokCssStyling.FOR_PDF).build();
+        var dokMal = DokMal.builder().medNavn("test-mal").medInnhold("Innhold").medSpråk(DokSpråk.NYNORSK).medStyling(DokCssStyling.FOR_HTML).build();
 
         // Assert
         assertThat(dokMal.getNavn()).isEqualTo("test-mal");
         assertThat(dokMal.getInnhold()).isEqualTo("Innhold");
         assertThat(dokMal.getSpråk()).isEqualTo(DokSpråk.NYNORSK);
-        assertThat(dokMal.getStyling()).isEqualTo(DokCssStyling.FOR_PDF);
+        assertThat(dokMal.getStyling()).isEqualTo(DokCssStyling.FOR_HTML);
     }
 
     @Test

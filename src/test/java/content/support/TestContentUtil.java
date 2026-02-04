@@ -6,7 +6,7 @@ import java.nio.file.Path;
 
 final class TestContentUtil {
 
-    private static final Path CONTENT_ROOT = ContentUtil.TEMPLATE_BASE_PATH;
+    private static final Path CONTENT_ROOT = ContentUtil.CONTENT_BASE_PATH;
     private static final Path TESTDATA_ROOT = Path.of("/testdata/");
 
     static Path hentPathForMal(BrevMal brevMal, String underMal, Språk språk) {
