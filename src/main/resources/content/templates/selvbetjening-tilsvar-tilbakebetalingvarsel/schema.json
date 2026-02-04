@@ -1,6 +1,6 @@
 {
   "$id": "urn:no:nav:fpdokgen:selvbetjening-tilsvar-tilbakebetalingvarsel",
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "schema for tilsvar til varsel om tilbakebetaling",
   "type": "object",
   "required": [
