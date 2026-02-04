@@ -5,8 +5,4 @@ services:
     container_name: dokgen_dev
     image: dokgen_dev:latest
     ports:
-      - "8291:8080"
-    volumes:
-      - ./content:/app/content
-    environment:
-      SPRING_PROFILES_ACTIVE: dev
+      - "8012:8080"
