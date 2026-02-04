@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import no.nav.foreldrepenger.dokgen.tjenester.exceptions.DokgenValidationException;
+import no.nav.foreldrepenger.dokgen.tjenester.exceptions.DokgenSchemaValidationException;
 
 class JsonSchemaTjenesteTest {
 
@@ -51,7 +51,7 @@ class JsonSchemaTjenesteTest {
 
             // Act & Assert
             assertThatThrownBy(() -> jsonSchemaTjeneste.validerDataMotSchema(data, schemaPath))
-                .isInstanceOf(DokgenValidationException.class);
+                .isInstanceOf(DokgenSchemaValidationException.class);
         }
 
         @Test
@@ -65,7 +65,7 @@ class JsonSchemaTjenesteTest {
 
             // Act & Assert
             assertThatThrownBy(() -> jsonSchemaTjeneste.validerDataMotSchema(data, schemaPath))
-                .isInstanceOf(DokgenValidationException.class);
+                .isInstanceOf(DokgenSchemaValidationException.class);
         }
 
         @Test
@@ -119,9 +119,9 @@ class JsonSchemaTjenesteTest {
 
             // Act & Assert
             assertThatThrownBy(() -> jsonSchemaTjeneste.validerDataMotSchema(data, schemaPath))
-                .isInstanceOf(DokgenValidationException.class)
+                .isInstanceOf(DokgenSchemaValidationException.class)
                 .satisfies(exception -> {
-                    var dokgenException = (DokgenValidationException) exception;
+                    var dokgenException = (DokgenSchemaValidationException) exception;
                     assertThat(dokgenException.getMessage()).isNotBlank();
                 });
         }

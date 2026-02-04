@@ -3,6 +3,8 @@ package no.nav.foreldrepenger.dokgen.tjenester;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
+import jakarta.ws.rs.Produces;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -44,6 +46,7 @@ public class DokumentGeneratorRestTjeneste {
 
     @POST
     @Path("/generer/pdf")
+    @Produces("application/pdf")
     @Operation(
         tags = "generer-dokument",
         summary = "Genererer PDF/A dokument basert på angitt mal, språk og CSS-styling med JSON-datainnhold.",
@@ -73,6 +76,7 @@ public class DokumentGeneratorRestTjeneste {
 
     @POST
     @Path("/generer/html")
+    @Produces(MediaType.TEXT_HTML)
     @Operation(
         tags = "generer-dokument",
         summary = "Genererer HTML dokument basert på angitt mal, språk og CSS-styling med JSON-datainnhold.",

@@ -15,7 +15,7 @@ import com.networknt.schema.SpecVersion;
 import com.networknt.schema.ValidationMessage;
 
 import jakarta.enterprise.context.ApplicationScoped;
-import no.nav.foreldrepenger.dokgen.tjenester.exceptions.DokgenValidationException;
+import no.nav.foreldrepenger.dokgen.tjenester.exceptions.DokgenSchemaValidationException;
 import no.nav.vedtak.mapper.json.DefaultJsonMapper;
 
 @ApplicationScoped
@@ -39,9 +39,9 @@ public class JsonSchemaTjeneste {
                 var schemaErrors = failures.stream()
                     .collect(Collectors.toMap(f -> f.getInstanceLocation().toString(), ValidationMessage::getMessage,
                         (existing, replacement) -> existing + "; " + replacement));
-                throw new DokgenValidationException(schemaErrors, failures.toString(), null);
+                throw new DokgenSchemaValidationException(schemaErrors, failures.toString(), null);
             }
-        } catch (DokgenValidationException e) {
+        } catch (DokgenSchemaValidationException e) {
             throw e;
         } catch (Exception e) {
             throw new IllegalStateException("Feil ved validering av JSON mot schema: " + schemaPath, e);
@@ -50,8 +50,8 @@ public class JsonSchemaTjeneste {
 
     private JsonSchema hentSchema(Path schemaPath) {
         var cacheKey = cacheKey(schemaPath);
-        return JSON_SCHEMA_CACHE.computeIfAbsent(cacheKey, key -> {
-            var schemaString = lesRessursSomString(Path.of(key));
+        return JSON_SCHEMA_CACHE.computeIfAbsent(cacheKey, _ -> {
+            var schemaString = lesRessursSomString(schemaPath);
             return SCHEMA_FACTORY.getSchema(schemaString);
         });
     }
