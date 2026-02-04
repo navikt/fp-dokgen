@@ -6,13 +6,11 @@ import java.nio.file.Path;
 import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.networknt.schema.JsonSchema;
 import com.networknt.schema.JsonSchemaFactory;
 import com.networknt.schema.SpecVersion;
-import com.networknt.schema.ValidationMessage;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import no.nav.foreldrepenger.dokgen.tjenester.exceptions.DokgenSchemaValidationException;
@@ -22,7 +20,7 @@ import no.nav.vedtak.mapper.json.DefaultJsonMapper;
 public class JsonSchemaTjeneste {
 
     private static final ConcurrentHashMap<String, JsonSchema> JSON_SCHEMA_CACHE = new ConcurrentHashMap<>();
-    private static final JsonSchemaFactory SCHEMA_FACTORY = JsonSchemaFactory.getInstance(SpecVersion.VersionFlag.V202012);
+    private static final JsonSchemaFactory JSON_SCHEMA_FACTORY = JsonSchemaFactory.getInstance(SpecVersion.VersionFlag.V202012);
 
     JsonSchemaTjeneste() {
         // for CDI
@@ -32,19 +30,20 @@ public class JsonSchemaTjeneste {
         Objects.requireNonNull(data, "Ved validering av data-json");
         try {
             var schema = hentSchema(schemaPath);
-            var jsonNode = DefaultJsonMapper.getJsonMapper().convertValue(data, JsonNode.class);
-            var failures = schema.validate(jsonNode);
-
-            if (!failures.isEmpty()) {
-                var schemaErrors = failures.stream()
-                    .collect(Collectors.toMap(f -> f.getInstanceLocation().toString(), ValidationMessage::getMessage,
-                        (existing, replacement) -> existing + "; " + replacement));
-                throw new DokgenSchemaValidationException(schemaErrors, failures.toString(), null);
-            }
-        } catch (DokgenSchemaValidationException e) {
-            throw e;
+            validerDataMotSchema(data, schema);
+        } catch (DokgenSchemaValidationException ex) {
+            throw ex;
         } catch (Exception e) {
             throw new IllegalStateException("Feil ved validering av JSON mot schema: " + schemaPath, e);
+        }
+    }
+
+    void validerDataMotSchema(Map<String, Object> data, JsonSchema schema) {
+        var jsonNode = DefaultJsonMapper.getJsonMapper().convertValue(data, JsonNode.class);
+        var failures = schema.validate(jsonNode);
+
+        if (!failures.isEmpty()) {
+            throw new DokgenSchemaValidationException(failures.toString());
         }
     }
 
@@ -52,7 +51,7 @@ public class JsonSchemaTjeneste {
         var cacheKey = cacheKey(schemaPath);
         return JSON_SCHEMA_CACHE.computeIfAbsent(cacheKey, _ -> {
             var schemaString = lesRessursSomString(schemaPath);
-            return SCHEMA_FACTORY.getSchema(schemaString);
+            return JSON_SCHEMA_FACTORY.getSchema(schemaString);
         });
     }
 
