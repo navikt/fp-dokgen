@@ -1,6 +1,6 @@
 {
   "$id": "urn:no:nav:fpdokgen:klage-oversendt",
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "Dokumentdata for brev klage oversendt",
   "type": "object",
   "required": [
