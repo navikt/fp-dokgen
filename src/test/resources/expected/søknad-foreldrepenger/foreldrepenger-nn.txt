@@ -59,6 +59,7 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 <div class="no-page-break">
 ## Planen din
 Du har søkt om 80 prosent foreldrepengar.
+Perioden som startar på termin vert endra til å starte frå fødselsdato når barnet blir født: Ja
 </div>
 <div class="no-page-break">
 <strong>Medmorkvote 18.09.2025 - 12.12.2025 (62 virkedager)</strong>

@@ -59,6 +59,7 @@ Information is retrieved from the State Register of Employers and Employees (the
 <div class="no-page-break">
 ## Your plan
 You applied for 80 per cent parental benefit.
+The period starting at the due date will be changed to start from the birth date when the child is born: Yes
 </div>
 <div class="no-page-break">
 <strong>Co-mother quota 18.09.2025 - 12.12.2025 (62 business days)</strong>
