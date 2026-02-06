@@ -36,6 +36,7 @@
   },
   "dekningsgrad": "80",
   "uttaksplan": {
+    "ønskerJustertUttakVedFødsel": true,
     "uttaksperioder": [
       {
         "type": "uttak",
