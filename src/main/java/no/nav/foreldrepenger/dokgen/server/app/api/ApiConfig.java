@@ -31,8 +31,8 @@ public class ApiConfig extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         var classes = new HashSet<Class<?>>();
-        // TODO: 🙈 aktiver sikkerhet for forvaltnings-API
-        // classes.add(AuthenticationFilter.class);
+
+        classes.add(AuthenticationFilter.class);
         classes.add(JacksonJsonConfig.class);
         classes.addAll(registerExceptionMappers());
         classes.addAll(getApplicationClasses());

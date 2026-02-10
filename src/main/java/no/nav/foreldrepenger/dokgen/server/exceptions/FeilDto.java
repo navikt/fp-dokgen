@@ -12,6 +12,6 @@ public record FeilDto(FeilType type, String feilmelding) {
         GENERELL_FEIL,
         MANGLER_TILGANG_FEIL,
         VALIDERINGSFEIL,
-        JSON_FEIL,
+        JSON_PARSE_FEIL,
     }
 }

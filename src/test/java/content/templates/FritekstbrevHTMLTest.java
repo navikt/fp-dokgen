@@ -1,12 +1,13 @@
 package content.templates;
 
-import content.support.BrevMal;
-import content.support.Språk;
-import org.junit.jupiter.api.Test;
-
 import static content.support.TemplateTestUtil.compileContent;
 import static content.support.TemplateTestUtil.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
+
+import content.support.BrevMal;
+import content.support.Språk;
 
 class FritekstbrevHTMLTest {
 
