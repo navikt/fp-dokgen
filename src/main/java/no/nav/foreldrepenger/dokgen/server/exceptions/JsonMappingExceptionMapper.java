@@ -22,7 +22,7 @@ public class JsonMappingExceptionMapper implements ExceptionMapper<JsonMappingEx
         LOG.warn(feil);
         return Response
             .status(Response.Status.BAD_REQUEST)
-            .entity(new FeilDto(FeilDto.FeilType.JSON_PARSE_FEIL, feil))
+            .entity(new FeilDto(FeilDto.FeilType.JSON_FEIL, feil))
             .type(MediaType.APPLICATION_JSON)
             .build();
     }

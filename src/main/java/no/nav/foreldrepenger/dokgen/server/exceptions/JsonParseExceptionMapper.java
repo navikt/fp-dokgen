@@ -18,11 +18,11 @@ public class JsonParseExceptionMapper implements ExceptionMapper<JsonParseExcept
 
     @Override
     public Response toResponse(JsonParseException exception) {
-        var feil = String.format("FIM-299955: JSON-parsing feil: %s", exception.getMessage());
+        var feil = String.format("FPDOKGEN-299955: JSON-parsing feil: %s", exception.getMessage());
         LOG.warn(feil);
         return Response
             .status(Response.Status.BAD_REQUEST)
-            .entity(new FeilDto(FeilDto.FeilType.JSON_PARSE_FEIL, feil))
+            .entity(new FeilDto(FeilDto.FeilType.JSON_FEIL, feil))
             .type(MediaType.APPLICATION_JSON)
             .build();
     }

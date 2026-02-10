@@ -1,7 +1,5 @@
 package no.nav.foreldrepenger.dokgen.server;
 
-import no.nav.foreldrepenger.dokgen.server.app.forvaltning.ForvaltningApiConfig;
-
 import org.eclipse.jetty.ee11.cdi.CdiDecoratingListener;
 import org.eclipse.jetty.ee11.cdi.CdiServletContainerInitializer;
 import org.eclipse.jetty.ee11.servlet.DefaultServlet;
@@ -16,9 +14,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.bridge.SLF4JBridgeHandler;
 
-import no.nav.foreldrepenger.konfig.Environment;
 import no.nav.foreldrepenger.dokgen.server.app.api.ApiConfig;
 import no.nav.foreldrepenger.dokgen.server.app.internal.InternalApiConfig;
+import no.nav.foreldrepenger.konfig.Environment;
 
 public class JettyServer {
     private static final Logger LOG = LoggerFactory.getLogger(JettyServer.class);
@@ -67,7 +65,6 @@ public class JettyServer {
             registerDefaultServlet(context);
             registerServlet(context, 0, InternalApiConfig.API_URI, InternalApiConfig.class);
             registerServlet(context, 1, ApiConfig.API_URI, ApiConfig.class);
-            registerServlet(context, 2, ForvaltningApiConfig.API_URI, ForvaltningApiConfig.class);
 
             // Enable Weld + CDI
             context.setInitParameter(CdiServletContainerInitializer.CDI_INTEGRATION_ATTRIBUTE, CdiDecoratingListener.MODE);
@@ -101,7 +98,6 @@ public class JettyServer {
         handler.addConstraintMapping(pathConstraint(Constraint.ALLOWED, InternalApiConfig.API_URI + "/*"));
         // Slipp gjennom til autentisering i JaxRs / auth-filter
         handler.addConstraintMapping(pathConstraint(Constraint.ALLOWED, ApiConfig.API_URI + "/*"));
-        handler.addConstraintMapping(pathConstraint(Constraint.ALLOWED, ForvaltningApiConfig.API_URI + "/*"));
         // Alt annet av paths og metoder forbudt - 403
         handler.addConstraintMapping(pathConstraint(Constraint.FORBIDDEN, "/*"));
         return handler;

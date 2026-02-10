@@ -28,14 +28,8 @@ public class JsonSchemaTjeneste {
 
     public void validerDataMotSchema(Map<String, Object> data, Path schemaPath) {
         Objects.requireNonNull(data, "Ved validering av data-json");
-        try {
-            var schema = hentSchema(schemaPath);
-            validerDataMotSchema(data, schema);
-        } catch (DokgenSchemaValidationException ex) {
-            throw ex;
-        } catch (Exception e) {
-            throw new IllegalStateException("Feil ved validering av JSON mot schema: " + schemaPath, e);
-        }
+        Objects.requireNonNull(schemaPath, "schemaPath ved validering av data-json");
+        validerDataMotSchema(data, hentSchema(schemaPath));
     }
 
     void validerDataMotSchema(Map<String, Object> data, JsonSchema schema) {
