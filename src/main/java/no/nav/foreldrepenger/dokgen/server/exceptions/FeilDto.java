@@ -9,10 +9,9 @@ public record FeilDto(FeilType type, String feilmelding) {
     }
 
     public enum FeilType {
-        MANGLER_TILGANG_FEIL,
-        TOMT_RESULTAT_FEIL,
         GENERELL_FEIL,
+        MANGLER_TILGANG_FEIL,
         VALIDERINGSFEIL,
-        JSON_PARSE_FEIL,
+        JSON_FEIL,
     }
 }

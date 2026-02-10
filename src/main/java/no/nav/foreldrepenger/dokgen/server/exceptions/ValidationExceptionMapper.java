@@ -21,7 +21,6 @@ public class ValidationExceptionMapper implements ExceptionMapper<ConstraintViol
     private static final Logger LOG = LoggerFactory.getLogger(ValidationExceptionMapper.class);
     private static final Logger SECURE_LOG = LoggerFactory.getLogger("secureLogger");
 
-
     @Override
     public Response toResponse(ConstraintViolationException exception) {
         LOG.warn("Det oppstod en valideringsfeil: {}", constraints(exception));

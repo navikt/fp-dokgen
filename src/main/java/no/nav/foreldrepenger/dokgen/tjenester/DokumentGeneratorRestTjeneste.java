@@ -3,12 +3,9 @@ package no.nav.foreldrepenger.dokgen.tjenester;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
-import jakarta.ws.rs.Produces;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.swagger.v3.oas.annotations.Operation;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 import jakarta.validation.Valid;
@@ -19,6 +16,7 @@ import jakarta.ws.rs.DefaultValue;
 import jakarta.ws.rs.FormParam;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.CacheControl;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
@@ -47,13 +45,6 @@ public class DokumentGeneratorRestTjeneste {
     @POST
     @Path("/generer/pdf")
     @Produces("application/pdf")
-    @Operation(
-        tags = "generer-dokument",
-        summary = "Genererer PDF/A dokument basert på angitt mal, språk og CSS-styling med JSON-datainnhold.",
-        description = "Genererer et dokument ved å flette JSON-data inn i en Handlebars-mal. " +
-                      "Støtter output i PDF/A-format (for arkivering)." +
-                      "Malen velges via malNavn-parameter, og data må validere mot malens JSON-schema."
-    )
     public Response genererPdfDokument(@BeanParam @Valid DokumentGeneratorRestTjeneste.GenererDokumentRequest req) {
         Objects.requireNonNull(req.malNavn(), "malNavn");
         Objects.requireNonNull(req.cssStyling(), "cssStyling");
@@ -77,13 +68,6 @@ public class DokumentGeneratorRestTjeneste {
     @POST
     @Path("/generer/html")
     @Produces(MediaType.TEXT_HTML)
-    @Operation(
-        tags = "generer-dokument",
-        summary = "Genererer HTML dokument basert på angitt mal, språk og CSS-styling med JSON-datainnhold.",
-        description = "Genererer et dokument ved å flette JSON-data inn i en Handlebars-mal. " +
-            "Støtter output i HTML-format (for visning). " +
-            "Malen velges via malNavn-parameter, og data må validere mot malens JSON-schema."
-    )
     public Response genererHtmlDokument(@BeanParam @Valid DokumentGeneratorRestTjeneste.GenererDokumentRequest req) {
         Objects.requireNonNull(req.malNavn(), "malNavn");
         Objects.requireNonNull(req.cssStyling(), "cssStyling");
