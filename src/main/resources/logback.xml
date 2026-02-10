@@ -55,6 +55,8 @@
     <!-- denne logger passord på INFO nivå!-->
     <logger name="no.nav.modig.core.test.PropertySetter" level="WARN}"/>
 
+    <logger name="secureLogger" level="OFF" />
+
     <root level="${log.level.root:-INFO}">
         <appender-ref ref="stdoutConsoleLogger"/>
     </root>
