@@ -1,8 +1,8 @@
 package content.support;
 
-import no.nav.foreldrepenger.dokgen.tjenester.utils.ContentUtil;
-
 import java.nio.file.Path;
+
+import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.utils.ContentUtil;
 
 final class TestContentUtil {
 

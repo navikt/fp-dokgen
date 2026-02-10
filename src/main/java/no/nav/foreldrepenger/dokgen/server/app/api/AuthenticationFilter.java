@@ -40,7 +40,7 @@ public class AuthenticationFilter implements ContainerRequestFilter, ContainerRe
             throw new WebApplicationException(Response.Status.FORBIDDEN);
         }
         if (!kontekst.getIdentType().erSystem()) {
-            throw new WebApplicationException(Response.Status.FORBIDDEN);
+            throw new WebApplicationException("Kun systemkontekst er tillatt.", Response.Status.FORBIDDEN);
         }
     }
 
