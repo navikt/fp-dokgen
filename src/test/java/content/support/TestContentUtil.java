@@ -2,7 +2,7 @@ package content.support;
 
 import java.nio.file.Path;
 
-import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.utils.ContentUtil;
+import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.ContentUtil;
 
 final class TestContentUtil {
 
