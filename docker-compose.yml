@@ -5,4 +5,4 @@ services:
     container_name: dokgen_dev
     image: dokgen_dev:latest
     ports:
-      - "8012:8080"
+      - "8291:8080"
