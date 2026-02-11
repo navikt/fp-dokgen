@@ -1,8 +1,8 @@
 # Kvittering på søknad om svangerskapspengar
 Mottatt: 24.09.2025 10:15:30
 ## Opplysningar om søkjar
-Namn: Per Sykelig Oppblåst</br>
-Fødselsnummer: 987654321</br>
+Namn: Per Sykelig Oppblåst<br/>
+Fødselsnummer: 987654321<br/>
 <div class="no-page-break">
 ## Opplysningar om barnet
 <ul>

@@ -195,19 +195,16 @@ final class HandlebarsCustomHelpers {
     /**
      * Format an int with thousand separator and make the space not breakable to prevent line breaks within an amount,
      * ex: 10000 will be 10 000
+     * ex: 20000.45 will be 20 000.45
      * The function does not handle decimals
      */
-    static class ThousandSeperatorHelper implements Helper<Integer> {
+    static class ThousandSeperatorHelper implements Helper<Number> {
         @Override
-        public Object apply(Integer kroner, Options options) {
-            return String.format(Locale.forLanguageTag("NO"), "%,d", kroner);
-        }
-    }
-
-    static class ThousandSeperatorHelperDouble implements Helper<Double> {
-        @Override
-        public Object apply(Double kroner, Options options) {
-            return new DecimalFormat(",###.##", new DecimalFormatSymbols(Locale.of("NO"))).format(kroner);
+        public Object apply(Number tall, Options options) {
+            if (tall instanceof Integer kroner) {
+                return String.format(Locale.forLanguageTag("NO"), "%,d", kroner);
+            }
+            return new DecimalFormat(",###.##", new DecimalFormatSymbols(Locale.of("NO"))).format(tall);
         }
     }
 

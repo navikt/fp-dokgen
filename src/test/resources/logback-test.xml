@@ -14,7 +14,7 @@
         </encoder>
     </appender>
 
-    <logger name="no.nav" level="${log.level.no.nav:-INFO}" />
+    <logger name="no.nav" level="${log.level.no.nav:-DEBUG}" />
 
     <logger name="org.hibernate.SQL" level="${org.hibernate.SQL:-WARN}" />
     <logger name="com.zaxxer.hikari" level="${org.zaxxer.hikari:-WARN}" />

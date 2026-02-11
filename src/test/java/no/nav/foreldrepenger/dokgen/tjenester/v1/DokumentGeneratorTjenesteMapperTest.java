@@ -1,4 +1,4 @@
-package no.nav.foreldrepenger.dokgen.tjenester;
+package no.nav.foreldrepenger.dokgen.tjenester.v1;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
