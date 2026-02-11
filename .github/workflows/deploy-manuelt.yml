@@ -9,10 +9,8 @@ on:
       environment:
         required: true
         type: choice
-        description: 'Deploy to (dev|prod)-(fss|gcp)'
+        description: 'Deploy to (dev|prod)-gcp'
         options:
-          - dev-fss
-          - prod-fss
           - dev-gcp
           - prod-gcp
 
