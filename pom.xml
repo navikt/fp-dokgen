@@ -230,7 +230,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>no.nav.foreldrepenger.dokgen.server.JettyServer</mainClass>
+                            <mainClass>no.nav.foreldrepenger.fpdokgen.server.JettyServer</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

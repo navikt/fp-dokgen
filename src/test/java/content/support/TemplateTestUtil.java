@@ -3,9 +3,9 @@ package content.support;
 import java.nio.file.Path;
 import java.util.Map;
 
-import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.handlebars.HandlebarsTjeneste;
-import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.utils.ContentUtil;
-import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.utils.JacksonUtil;
+import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.handlebars.HandlebarsTjeneste;
+import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.ContentUtil;
+import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.JacksonUtil;
 
 public final class TemplateTestUtil {
 
