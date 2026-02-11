@@ -3,7 +3,6 @@ package no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.utils;
 import java.util.Map;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-
 import com.fasterxml.jackson.databind.json.JsonMapper;
 
 import no.nav.vedtak.mapper.json.DefaultJsonMapper;
