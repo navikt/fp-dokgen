@@ -23,9 +23,15 @@ import com.openhtmltopdf.util.XRLog;
 import jakarta.enterprise.context.Dependent;
 import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.utils.ContentUtil;
 
+import org.jsoup.Jsoup;
+import org.jsoup.helper.W3CDom;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Dependent
 public class PdfGeneratorTjeneste {
 
+    private static final Logger LOG = LoggerFactory.getLogger(PdfGeneratorTjeneste.class);
     private static final ConcurrentHashMap<String, TrueTypeFont> FONT_CACHE = new ConcurrentHashMap<>();
 
     private static final byte[] COLOR_PROFILE;
@@ -49,6 +55,10 @@ public class PdfGeneratorTjeneste {
     private void genererPdf(String htmlInnhold, ByteArrayOutputStream outputStream) {
         try {
             if (outputStream != null) {
+                // Jsoup korrigerer HTML-syntaks før PDF-generering.
+                // Eksempel: <br> uten avslutning blir <br/>, som kreves av XML-parseren (TRaX).
+                // Brev overstyring sender <br> også, ellers kunne man brukt htmlInnhold direkte.
+                var document = Jsoup.parse(htmlInnhold);
                 var fontFamily = "Source Sans Pro";
                 new PdfRendererBuilder().useFont(fontSupplier("SourceSansPro-Regular.ttf"), fontFamily, 400, BaseRendererBuilder.FontStyle.NORMAL,
                         true)
@@ -58,12 +68,12 @@ public class PdfGeneratorTjeneste {
                     .useSVGDrawer(new BatikSVGDrawer())
                     .usePdfAConformance(PdfRendererBuilder.PdfAConformance.PDFA_2_U)
                     .usePdfUaAccessibility(true)
-                    .withHtmlContent(htmlInnhold, "")
+                    .withW3cDocument(new W3CDom().fromJsoup(document), "")
                     .toStream(outputStream)
                     .run();
             }
         } catch (IOException e) {
-            throw new IllegalStateException("Feil ved generering av pdf", e);
+            throw new IllegalStateException("Feil ved generering av PDF", e);
         }
     }
 

@@ -1,7 +1,7 @@
-package no.nav.foreldrepenger.dokgen.tjenester;
+package no.nav.foreldrepenger.dokgen.tjenester.v1;
 
-import static no.nav.foreldrepenger.dokgen.tjenester.DokumentGeneratorTjenesteMapper.mapTilDokCssStyling;
-import static no.nav.foreldrepenger.dokgen.tjenester.DokumentGeneratorTjenesteMapper.mapTilDokSpråk;
+import static no.nav.foreldrepenger.dokgen.tjenester.v1.DokumentGeneratorTjenesteMapper.mapTilDokCssStyling;
+import static no.nav.foreldrepenger.dokgen.tjenester.v1.DokumentGeneratorTjenesteMapper.mapTilDokSpråk;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
@@ -12,7 +12,6 @@ import org.slf4j.LoggerFactory;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 import jakarta.validation.Valid;
-import jakarta.ws.rs.BeanParam;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
@@ -23,8 +22,8 @@ import jakarta.ws.rs.core.Response;
 import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.DokumentGeneratorTjeneste;
 
 @RequestScoped
-@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-@Path("/dokument")
+@Consumes(MediaType.APPLICATION_JSON)
+@Path("/v1/dokument/generer")
 public class DokumentGeneratorRestTjeneste {
 
     private static final Logger LOG = LoggerFactory.getLogger(DokumentGeneratorRestTjeneste.class);
@@ -41,17 +40,18 @@ public class DokumentGeneratorRestTjeneste {
     }
 
     @POST
-    @Path("/generer/pdf")
+    @Path("/pdf")
     @Produces("application/pdf")
-    public Response genererPdfDokument(@BeanParam @Valid DokumentGeneratorRequest req) {
+    public Response genererPdfDokument(@Valid DokumentGeneratorRequest req) {
         Objects.requireNonNull(req.malNavn(), "malNavn");
         Objects.requireNonNull(req.cssStyling(), "cssStyling");
         Objects.requireNonNull(req.inputData(), "inputData");
-        LOG.info("generer {} som PDF dokument i {} språk og {} CSS styling.", req.malNavn(), req.språk(), req.cssStyling());
+        LOG.info("Start PDF generering av ´{}´ som i ´{}´ språk og ´{}´ CSS styling.", req.malNavn(), req.språk(), req.cssStyling());
 
         var pdf = dokumentGeneratorTjeneste.byggPdf(req.malNavn(), req.inputData(), mapTilDokSpråk(req.språk()),
             mapTilDokCssStyling(req.cssStyling()));
 
+        LOG.info("Ferdig PDF generering for mal ´{}´: {} bytes", req.malNavn(), pdf.length);
         return Response.ok(pdf, "application/pdf")
             .header("Content-Disposition", "inline; filename=\"" + req.malNavn() + ".pdf\"")
             .cacheControl(getCacheControl())
@@ -59,17 +59,18 @@ public class DokumentGeneratorRestTjeneste {
     }
 
     @POST
-    @Path("/generer/html")
+    @Path("/html")
     @Produces(MediaType.TEXT_HTML)
-    public Response genererHtmlDokument(@BeanParam @Valid DokumentGeneratorRequest req) {
+    public Response genererHtmlDokument(@Valid DokumentGeneratorRequest req) {
         Objects.requireNonNull(req.malNavn(), "malNavn");
         Objects.requireNonNull(req.cssStyling(), "cssStyling");
         Objects.requireNonNull(req.inputData(), "inputData");
-        LOG.info("generer {} som HTML dokument i {} språk og {} CSS styling.", req.malNavn(), req.språk(), req.cssStyling());
+        LOG.info("Start HTML generering av ´{}´ som i ´{}´ språk og ´{}´ CSS styling.", req.malNavn(), req.språk(), req.cssStyling());
 
         var html = dokumentGeneratorTjeneste.byggHtml(req.malNavn(), req.inputData(), mapTilDokSpråk(req.språk()),
             mapTilDokCssStyling(req.cssStyling()));
 
+        LOG.info("Ferdig HTML generering for mal ´{}´: {} bytes", req.malNavn(), html.length());
         return Response.ok(html, MediaType.TEXT_HTML)
             .header("charset", StandardCharsets.UTF_8.toString())
             .cacheControl(getCacheControl())

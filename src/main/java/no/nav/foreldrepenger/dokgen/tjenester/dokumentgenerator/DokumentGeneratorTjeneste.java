@@ -80,13 +80,14 @@ public class DokumentGeneratorTjeneste {
     }
 
     private Map<String, Object> validerDataMotSchema(String malNavn, String dataFelter) {
-        LOG.info("Validerer data mot schema for mal={}", malNavn);
+        LOG.debug("Validerer data mot schema for mal={}", malNavn);
         var jsonDataMap = getJsonMapFromString(dataFelter);
         jsonSchemaTjeneste.validerDataMotSchema(jsonDataMap, hentSchemaPathForMal(malNavn));
         return jsonDataMap;
     }
 
     private byte[] konverterTilPdf(DokumentMal dokumentMal, Map<String, Object> dataMap) {
+        LOG.debug("Konverterer til HTML: {}", dokumentMal);
         var htmlMedStyling = konverterTilHtml(dokumentMal, dataMap);
         return pdfGeneratorTjeneste.genererPdf(htmlMedStyling);
     }

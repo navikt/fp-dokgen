@@ -3,6 +3,7 @@ package no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.handlebars;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
+import java.util.Map;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
@@ -109,25 +110,96 @@ class HandlebarsCustomHelpersTest {
     @Nested
     class ThousandSeperatorHelperTest {
 
+        private static final String NBSP = "\u00A0"; // Non-breaking space used by Norwegian locale
+
         @Test
         void skalFormatereMedTusenSkilletegn() throws IOException {
-            var template = handlebars.compileInline("{{thousand-seperator 10000}}");
-            var result = template.apply(null);
-            assertThat(result).contains("10").contains("000");
+            var context = Map.of("tall", 10000);
+            var template = handlebars.compileInline("{{thousand-seperator tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("10" + NBSP + "000");
         }
 
         @Test
         void skalIkkeEndreSmåTall() throws IOException {
-            var template = handlebars.compileInline("{{thousand-seperator 999}}");
-            var result = template.apply(null);
+            var context = Map.of("tall", 999);
+            var template = handlebars.compileInline("{{thousand-seperator tall}}");
+            var result = template.apply(context);
             assertThat(result).isEqualTo("999");
         }
 
         @Test
         void skalHåndtereStoreTall() throws IOException {
-            var template = handlebars.compileInline("{{thousand-seperator 1234567}}");
-            var result = template.apply(null);
-            assertThat(result).contains("1").contains("234").contains("567");
+            var context = Map.of("tall", 1234567);
+            var template = handlebars.compileInline("{{thousand-seperator tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("1" + NBSP + "234" + NBSP + "567");
+        }
+
+        @Test
+        void skalHåndtereNull() throws IOException {
+            var context = Map.of("tall", 0);
+            var template = handlebars.compileInline("{{thousand-seperator tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("0");
+        }
+
+        @Test
+        void skalFormatereMedNorskTusenSkilletegn_1000() throws IOException {
+            var context = Map.of("tall", 1000);
+            var template = handlebars.compileInline("{{thousand-seperator tall}}");
+            var result = template.apply(context);
+            // Norwegian locale uses non-breaking space as thousand separator
+            assertThat(result).isEqualTo("1" + NBSP + "000");
+        }
+
+        @Test
+        void skalFormatereMedNorskTusenSkilletegn_millioner() throws IOException {
+            var context = Map.of("tall", 1000000);
+            var template = handlebars.compileInline("{{thousand-seperator tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("1" + NBSP + "000" + NBSP + "000");
+        }
+
+        @Test
+        void skalFormatereDesimalMedKomma() throws IOException {
+            var context = Map.of("tall", 20000.45);
+            var template = handlebars.compileInline("{{thousand-seperator tall}}");
+            var result = template.apply(context);
+            // Norwegian locale uses comma as decimal separator and non-breaking space as thousand separator
+            assertThat(result).isEqualTo("20" + NBSP + "000,45");
+        }
+
+        @Test
+        void skalFormatereDesimalUtenUnnødigeDesimaler() throws IOException {
+            var context = Map.of("tall", 1000.0);
+            var template = handlebars.compileInline("{{thousand-seperator tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("1" + NBSP + "000");
+        }
+
+        @Test
+        void skalFormatereDesimalMedEnDesimal() throws IOException {
+            var context = Map.of("tall", 99.9);
+            var template = handlebars.compileInline("{{thousand-seperator tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("99,9");
+        }
+
+        @Test
+        void skalRundeAvTilToDesimaler() throws IOException {
+            var context = Map.of("tall", 1234.5678);
+            var template = handlebars.compileInline("{{thousand-seperator tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("1" + NBSP + "234,57");
+        }
+
+        @Test
+        void skalHåndtereNegativeTall() throws IOException {
+            var context = Map.of("tall", -5000);
+            var template = handlebars.compileInline("{{thousand-seperator tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("-5" + NBSP + "000");
         }
     }
 

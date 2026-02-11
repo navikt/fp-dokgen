@@ -1,4 +1,4 @@
-package no.nav.foreldrepenger.dokgen.tjenester;
+package no.nav.foreldrepenger.dokgen.tjenester.v1;
 
 import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.DokumentCssStyling;
 import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.DokumentSpråk;

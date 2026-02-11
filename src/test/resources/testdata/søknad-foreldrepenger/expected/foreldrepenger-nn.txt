@@ -1,8 +1,8 @@
 # Kvittering på søknad om foreldrepengar
 Mottatt: 03.12.2011 10:15:30
 ## Opplysningar om søkjar
-Namn: Veldig Innsjø</br>
-Fødselsnummer: 09470682830</br>
+Namn: Veldig Innsjø<br/>
+Fødselsnummer: 09470682830<br/>
 Kva søkjer du som: Medmor
 <div class="no-page-break">
 ## Opplysningar om barna

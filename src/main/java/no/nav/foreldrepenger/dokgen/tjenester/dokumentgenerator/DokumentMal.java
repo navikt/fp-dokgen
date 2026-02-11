@@ -70,4 +70,9 @@ class DokumentMal {
             return new DokumentMal(this);
         }
     }
+
+    @Override
+    public String toString() {
+        return "DokumentMal{" + "navn='" + navn + '\'' + ", språk=" + språk + ", styling=" + styling + '}';
+    }
 }

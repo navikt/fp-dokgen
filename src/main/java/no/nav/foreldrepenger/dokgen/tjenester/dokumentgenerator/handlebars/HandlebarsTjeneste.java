@@ -12,6 +12,7 @@ import com.github.jknack.handlebars.context.MethodValueResolver;
 import com.github.jknack.handlebars.helper.ConditionalHelpers;
 import com.github.jknack.handlebars.helper.StringHelpers;
 import com.github.jknack.handlebars.io.ClassPathTemplateLoader;
+
 import com.github.jknack.handlebars.jackson.JsonNodeValueResolver;
 
 import jakarta.enterprise.context.Dependent;
@@ -53,7 +54,6 @@ public class HandlebarsTjeneste {
         handlebars.registerHelper("norwegian-datetime", new HandlebarsCustomHelpers.NorwegianDateTimeHelper());
         handlebars.registerHelper("divide", new HandlebarsCustomHelpers.DivideHelper());
         handlebars.registerHelper("thousand-seperator", new HandlebarsCustomHelpers.ThousandSeperatorHelper());
-        handlebars.registerHelper("thousand-seperator-double", new HandlebarsCustomHelpers.ThousandSeperatorHelperDouble());
         handlebars.registerHelper("trim-decimal", new HandlebarsCustomHelpers.TrimDecimalHelper());
         handlebars.registerHelper("array", new HandlebarsCustomHelpers.ArrayHelper());
         handlebars.registerHelper("in-array", new HandlebarsCustomHelpers.InArrayHelper());

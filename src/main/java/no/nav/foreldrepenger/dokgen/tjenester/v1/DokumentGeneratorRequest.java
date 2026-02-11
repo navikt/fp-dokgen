@@ -1,24 +1,17 @@
-package no.nav.foreldrepenger.dokgen.tjenester;
+package no.nav.foreldrepenger.dokgen.tjenester.v1;
 
 import jakarta.validation.constraints.NotNull;
-import jakarta.ws.rs.DefaultValue;
-import jakarta.ws.rs.FormParam;
 
 public class DokumentGeneratorRequest {
     @NotNull
-    @FormParam("malNavn")
     private String malNavn;
 
-    @FormParam("språk")
     private Språk språk;
 
     @NotNull
-    @FormParam("cssStyling")
-    @DefaultValue("PDF")
     private DokumentGeneratorRequest.CssStyling cssStyling;
 
     @NotNull
-    @FormParam("inputData")
     private String inputData;
 
     public String malNavn() {

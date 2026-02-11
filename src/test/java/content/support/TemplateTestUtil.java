@@ -68,7 +68,6 @@ public final class TemplateTestUtil {
         return JacksonUtil.getJsonMapFromString(json);
     }
 
-
     private static String removeNewLines(String text) {
         return text.replaceAll("(?m)^[ \t]*\r?\n", "");
     }

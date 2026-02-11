@@ -1,7 +1,7 @@
 apiVersion: nais.io/v1alpha1
 kind: Application
 metadata:
-  name: fpdokgen
+  name: fp-dokgen
   namespace: teamforeldrepenger
   labels:
     team: teamforeldrepenger
@@ -66,4 +66,4 @@ spec:
       rules:
         - application: fpinntektsmelding
         - application: fpsoknad
-#        - application: fpformidling - etter denne er flyttet til GCP
+#        - application: fpformidling - etter flytting til GCP

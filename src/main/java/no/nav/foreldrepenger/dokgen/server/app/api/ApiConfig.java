@@ -16,7 +16,7 @@ import no.nav.foreldrepenger.dokgen.server.exceptions.JsonMappingExceptionMapper
 import no.nav.foreldrepenger.dokgen.server.exceptions.JsonParseExceptionMapper;
 import no.nav.foreldrepenger.dokgen.server.exceptions.ValidationExceptionMapper;
 import no.nav.foreldrepenger.dokgen.server.jackson.JacksonJsonConfig;
-import no.nav.foreldrepenger.dokgen.tjenester.DokumentGeneratorRestTjeneste;
+import no.nav.foreldrepenger.dokgen.tjenester.v1.DokumentGeneratorRestTjeneste;
 
 @ApplicationPath(ApiConfig.API_URI)
 public class ApiConfig extends Application {
