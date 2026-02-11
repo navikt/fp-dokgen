@@ -11,7 +11,6 @@ import jakarta.ws.rs.container.ResourceInfo;
 import jakarta.ws.rs.core.Context;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.ext.Provider;
-
 import no.nav.vedtak.sikkerhet.jaxrs.AuthenticationFilterDelegate;
 import no.nav.vedtak.sikkerhet.kontekst.KontekstHolder;
 import no.nav.vedtak.sikkerhet.kontekst.RequestKontekst;

@@ -12,6 +12,8 @@ import org.apache.fontbox.ttf.TrueTypeFont;
 import org.apache.pdfbox.io.RandomAccessReadBuffer;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.font.PDType0Font;
+import org.jsoup.Jsoup;
+import org.jsoup.helper.W3CDom;
 
 import com.openhtmltopdf.outputdevice.helper.BaseRendererBuilder;
 import com.openhtmltopdf.pdfboxout.PDFontSupplier;
@@ -23,15 +25,9 @@ import com.openhtmltopdf.util.XRLog;
 import jakarta.enterprise.context.Dependent;
 import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.utils.ContentUtil;
 
-import org.jsoup.Jsoup;
-import org.jsoup.helper.W3CDom;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 @Dependent
 public class PdfGeneratorTjeneste {
 
-    private static final Logger LOG = LoggerFactory.getLogger(PdfGeneratorTjeneste.class);
     private static final ConcurrentHashMap<String, TrueTypeFont> FONT_CACHE = new ConcurrentHashMap<>();
 
     private static final byte[] COLOR_PROFILE;

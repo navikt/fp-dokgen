@@ -5,8 +5,8 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.util.Objects;
 
-import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.exceptions.DokgenNotFoundException;
 import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.DokumentCssStyling;
+import no.nav.foreldrepenger.dokgen.tjenester.dokumentgenerator.exceptions.DokgenNotFoundException;
 
 public class ContentUtil {
 
