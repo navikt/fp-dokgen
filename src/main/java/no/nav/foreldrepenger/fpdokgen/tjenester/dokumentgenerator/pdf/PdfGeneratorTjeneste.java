@@ -28,7 +28,7 @@ import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.ContentU
 @Dependent
 public class PdfGeneratorTjeneste {
 
-    private static final ConcurrentHashMap<String, TrueTypeFont> FONT_CACHE = new ConcurrentHashMap<>();
+    private static final ConcurrentHashMap<String, PDFontSupplier> FONT_SUPPLIER_CACHE = new ConcurrentHashMap<>();
 
     private static final byte[] COLOR_PROFILE;
 
@@ -74,17 +74,17 @@ public class PdfGeneratorTjeneste {
     }
 
     private PDFontSupplier fontSupplier(String fontName) {
-        var font = FONT_CACHE.computeIfAbsent(fontName, name -> {
+        return FONT_SUPPLIER_CACHE.computeIfAbsent(fontName, name -> {
             try {
                 var ttf = new TTFParser().parse(new RandomAccessReadBuffer(lesRessursFra(ContentUtil.hentFontDirectoryPath().resolve(name))));
                 // Slå av GSUB for å unngå problemer med glyph substitution i noen fonter
                 ttf.setEnableGsub(false);
-                return ttf;
+
+                return pdfontSupplier(ttf);
             } catch (IOException e) {
                 throw new IllegalStateException("Kunne ikke laste font: " + name, e);
             }
         });
-        return pdfontSupplier(font);
     }
 
     private PDFontSupplier pdfontSupplier(TrueTypeFont font) {
