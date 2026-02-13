@@ -4,7 +4,6 @@ import static no.nav.foreldrepenger.fpdokgen.tjenester.v1.DokumentGeneratorTjene
 import static no.nav.foreldrepenger.fpdokgen.tjenester.v1.DokumentGeneratorTjenesteMapper.mapTilDokSpråk;
 
 import java.nio.charset.StandardCharsets;
-import java.util.Objects;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,9 +42,6 @@ public class DokumentGeneratorRestTjeneste {
     @Path("/pdf")
     @Produces("application/pdf")
     public Response genererPdfDokument(@Valid DokumentGeneratorRequest req) {
-        Objects.requireNonNull(req.malNavn(), "malNavn");
-        Objects.requireNonNull(req.cssStyling(), "cssStyling");
-        Objects.requireNonNull(req.inputData(), "inputData");
         LOG.info("Start PDF generering av ´{}´ som i ´{}´ språk og ´{}´ CSS styling.", req.malNavn(), req.språk(), req.cssStyling());
 
         var pdf = dokumentGeneratorTjeneste.byggPdf(req.malNavn(), req.inputData(), mapTilDokSpråk(req.språk()),
@@ -62,9 +58,6 @@ public class DokumentGeneratorRestTjeneste {
     @Path("/html")
     @Produces(MediaType.TEXT_HTML)
     public Response genererHtmlDokument(@Valid DokumentGeneratorRequest req) {
-        Objects.requireNonNull(req.malNavn(), "malNavn");
-        Objects.requireNonNull(req.cssStyling(), "cssStyling");
-        Objects.requireNonNull(req.inputData(), "inputData");
         LOG.info("Start HTML generering av ´{}´ som i ´{}´ språk og ´{}´ CSS styling.", req.malNavn(), req.språk(), req.cssStyling());
 
         var html = dokumentGeneratorTjeneste.byggHtml(req.malNavn(), req.inputData(), mapTilDokSpråk(req.språk()),
