@@ -8,7 +8,6 @@ import java.nio.file.Path;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.fontbox.ttf.TTFParser;
-import org.apache.fontbox.ttf.TrueTypeFont;
 import org.apache.pdfbox.io.RandomAccessReadBuffer;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.font.PDType0Font;
@@ -28,7 +27,7 @@ import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.ContentU
 @Dependent
 public class PdfGeneratorTjeneste {
 
-    private static final ConcurrentHashMap<String, PDFontSupplier> FONT_SUPPLIER_CACHE = new ConcurrentHashMap<>();
+    private static final ConcurrentHashMap<String, byte[]> FONT_BYTES_CACHE = new ConcurrentHashMap<>();
 
     private static final byte[] COLOR_PROFILE;
 
@@ -74,24 +73,15 @@ public class PdfGeneratorTjeneste {
     }
 
     private PDFontSupplier fontSupplier(String fontName) {
-        return FONT_SUPPLIER_CACHE.computeIfAbsent(fontName, name -> {
-            try {
-                var ttf = new TTFParser().parse(new RandomAccessReadBuffer(lesRessursFra(ContentUtil.hentFontDirectoryPath().resolve(name))));
-                // Slå av GSUB for å unngå problemer med glyph substitution i noen fonter
-                ttf.setEnableGsub(false);
-
-                return pdfontSupplier(ttf);
-            } catch (IOException e) {
-                throw new IllegalStateException("Kunne ikke laste font: " + name, e);
-            }
-        });
-    }
-
-    private PDFontSupplier pdfontSupplier(TrueTypeFont font) {
+        var fontBytes = FONT_BYTES_CACHE.computeIfAbsent(fontName,
+            name -> lesRessursFra(ContentUtil.hentFontDirectoryPath().resolve(name)));
         try {
-            return new PDFontSupplier(PDType0Font.load(new PDDocument(), font, true));
+            var ttf = new TTFParser().parse(new RandomAccessReadBuffer(fontBytes));
+            // Slå av GSUB for å unngå problemer med glyph substitution i noen fonter
+            ttf.setEnableGsub(false);
+            return new PDFontSupplier(PDType0Font.load(new PDDocument(), ttf, true));
         } catch (IOException e) {
-            throw new IllegalStateException("Kunne ikke laste font", e);
+            throw new IllegalStateException("Kunne ikke laste font: " + fontName, e);
         }
     }
 }
