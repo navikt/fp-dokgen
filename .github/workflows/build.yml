@@ -14,6 +14,7 @@ on:
       - 'dokumentasjon/**'
       - 'lokalutvikling/**'
       - '.github/*.yml'
+      - '.deploy/*.json'
 
 jobs:
   build-app:
