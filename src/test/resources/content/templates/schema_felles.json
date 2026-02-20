@@ -1,0 +1,17 @@
+{
+  "$id": "urn:no:nav:fpdokgen:felles-test",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Felles dokumentdata for bruk i alle brevene",
+  "type": "object",
+  "required": [
+    "søkerNavn"
+  ],
+  "properties": {
+    "søkerNavn": {
+      "type": "string"
+    },
+    "søkerEtternavn": {
+      "type": "string"
+    }
+  }
+}

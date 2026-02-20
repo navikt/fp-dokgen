@@ -1,0 +1,499 @@
+{
+  "$id": "urn:no:nav:fpdokgen:foreldrepenger-innvilgelse",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev Foreldrepenger innvilgelse",
+  "type": "object",
+  "required": [
+    "felles",
+    "behandlingType",
+    "behandlingResultatType",
+    "konsekvensForInnvilgetYtelse",
+    "dekningsgrad",
+    "endretDekningsgrad",
+    "dagsats",
+    "månedsbeløp",
+    "seksG",
+    "inntektOverSeksG",
+    "inntektMottattArbeidsgiver",
+    "ikkeOmsorg",
+    "barnErFødt",
+    "årsakErFødselshendelse",
+    "gjelderMor",
+    "gjelderFødsel",
+    "erBesteberegning",
+    "seksAvDeTiBeste",
+    "ingenRefusjon",
+    "delvisRefusjon",
+    "fullRefusjon",
+    "fbEllerRvInnvilget",
+    "antallInnvilgedePerioder",
+    "antallAvslåttePerioder",
+    "antallArbeidsgivere",
+    "dagerTaptFørTermin",
+    "disponibleDager",
+    "antallBarn",
+    "antallDødeBarn",
+    "morKanSøkeOmDagerFørFødsel",
+    "perioder",
+    "bruttoBeregningsgrunnlag",
+    "harBruktBruttoBeregningsgrunnlag",
+    "beregningsgrunnlagregler",
+    "klagefristUker",
+    "lovhjemlerUttak",
+    "inkludereInnvilget",
+    "inkludereAvslag",
+    "utenMinsterett",
+    "graderingOgFulltUttakIAnnenAktivitet",
+    "varierendeDagsats",
+    "starterMedFullUtbetaling"
+  ],
+  "$defs": {
+    "arbeidsforhold": {
+      "type": "object",
+      "required": [
+        "arbeidsgiverNavn",
+        "gradering",
+        "prosentArbeid",
+        "stillingsprosent",
+        "utbetalingsgrad"
+      ],
+      "properties": {
+        "arbeidsgiverNavn": {
+          "type": "string"
+        },
+        "gradering": {
+          "type": "boolean"
+        },
+        "prosentArbeid": {
+          "type": "number"
+        },
+        "stillingsprosent": {
+          "type": "number"
+        },
+        "utbetalingsgrad": {
+          "type": "number"
+        },
+        "naturalytelseEndringType": {
+          "type": "string",
+          "enum": [
+            "START",
+            "STOPP",
+            "INGEN_ENDRING"
+          ]
+        },
+        "naturalytelseEndringDato": {
+          "type": "string"
+        },
+        "bruttoInkludertBortfaltNaturalytelsePrAar": {
+          "type": "number"
+        }
+      }
+    },
+    "næring": {
+      "type": "object",
+      "required": [
+        "gradering",
+        "prosentArbeid",
+        "utbetalingsgrad"
+      ],
+      "properties": {
+        "gradering": {
+          "type": "boolean"
+        },
+        "utbetalingsgrad": {
+          "type": "number"
+        },
+        "prosentArbeid": {
+          "type": "number"
+        }
+      }
+    },
+    "annenAktivitet": {
+      "type": "object",
+      "required": [
+        "aktivitetStatus",
+        "gradering",
+        "utbetalingsgrad",
+        "prosentArbeid"
+      ],
+      "properties": {
+        "aktivitetStatus": {
+          "type": "string"
+        },
+        "gradering": {
+          "type": "boolean"
+        },
+        "utbetalingsgrad": {
+          "type": "number"
+        },
+        "prosentArbeid": {
+          "type": "number"
+        }
+      }
+    },
+    "vedtaksperiode": {
+      "type": "object",
+      "required": [
+        "innvilget",
+        "årsak",
+        "periodeFom",
+        "periodeTom",
+        "periodeDagsats",
+        "antallTapteDager",
+        "prioritertUtbetalingsgrad",
+        "erUtbetalingRedusertTilMorsStillingsprosent"
+      ],
+      "properties": {
+        "innvilget": {
+          "type": "boolean"
+        },
+        "årsak": {
+          "type": "string"
+        },
+        "periodeFom": {
+          "type": "string"
+        },
+        "periodeTom": {
+          "type": "string"
+        },
+        "periodeDagsats": {
+          "type": "number"
+        },
+        "antallTapteDager": {
+          "type": "number"
+        },
+        "prioritertUtbetalingsgrad": {
+          "type": "number"
+        },
+        "arbeidsforholdsliste": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/arbeidsforhold"
+          }
+        },
+        "næring": {
+          "$ref": "#/$defs/næring"
+        },
+        "annenAktivitetsliste": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/annenAktivitet"
+          }
+        },
+        "tidligstMottattDato": {
+          "type": "string"
+        },
+        "erUtbetalingRedusertTilMorsStillingsprosent": {
+          "type": "boolean"
+        }
+      }
+    },
+    "beregningsgrunnlagAndel": {
+      "type": "object",
+      "required": [
+        "aktivitetStatus",
+        "dagsats",
+        "månedsinntekt",
+        "årsinntekt"
+      ],
+      "properties": {
+        "aktivitetStatus": {
+          "type": "string"
+        },
+        "arbeidsgiverNavn": {
+          "type": "string"
+        },
+        "dagsats": {
+          "type": "number"
+        },
+        "månedsinntekt": {
+          "type": "number"
+        },
+        "årsinntekt": {
+          "type": "number"
+        },
+        "etterlønnSluttpakke": {
+          "type": "boolean"
+        },
+        "sistLignedeÅr": {
+          "type": "number"
+        }
+      }
+    },
+    "beregningsgrunnlagRegel": {
+      "type": "object",
+      "required": [
+        "regelStatus",
+        "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke",
+        "snNyoppstartet"
+      ],
+      "properties": {
+        "regelStatus": {
+          "type": "string"
+        },
+        "antallArbeidsgivereIBeregningUtenEtterlønnSluttpakke": {
+          "type": "number"
+        },
+        "snNyoppstartet": {
+          "type": "boolean"
+        },
+        "andelListe": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/beregningsgrunnlagAndel"
+          }
+        }
+      }
+    }
+  },
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "behandlingType": {
+      "type": "string"
+    },
+    "behandlingResultatType": {
+      "type": "string"
+    },
+    "konsekvensForInnvilgetYtelse": {
+      "type": "string"
+    },
+    "dekningsgrad": {
+      "type": "number"
+    },
+    "endretDekningsgrad": {
+      "type": "boolean"
+    },
+    "harUtbetaling": {
+      "type": "boolean"
+    },
+    "varierendeDagsats": {
+      "type": "boolean"
+    },
+    "starterMedFullUtbetaling": {
+      "type": "boolean"
+    },
+    "dagsats": {
+      "type": "number"
+    },
+    "månedsbeløp": {
+      "type": "number"
+    },
+    "seksG": {
+      "type": "number"
+    },
+    "inntektOverSeksG": {
+      "type": "boolean"
+    },
+    "forMyeUtbetalt": {
+      "type": "string",
+      "enum": [
+        "FERIE",
+        "JOBB",
+        "GENERELL"
+      ]
+    },
+    "inntektMottattArbeidsgiver": {
+      "type": "boolean"
+    },
+    "ikkeOmsorg": {
+      "type": "boolean"
+    },
+    "barnErFødt": {
+      "type": "boolean"
+    },
+    "avslagBarnOver3år": {
+      "type": "boolean"
+    },
+    "årsakErFødselshendelse": {
+      "type": "boolean"
+    },
+    "gjelderMor": {
+      "type": "boolean"
+    },
+    "gjelderFødsel": {
+      "type": "boolean"
+    },
+    "erBesteberegning": {
+      "type": "boolean"
+    },
+    "ingenRefusjon": {
+      "type": "boolean"
+    },
+    "delvisRefusjon": {
+      "type": "boolean"
+    },
+    "fullRefusjon": {
+      "type": "boolean"
+    },
+    "fbEllerRvInnvilget": {
+      "type": "boolean"
+    },
+    "antallInnvilgedePerioder": {
+      "type": "number"
+    },
+    "antallAvslåttePerioder": {
+      "type": "number"
+    },
+    "antallArbeidsgivere": {
+      "type": "number"
+    },
+    "dagerTaptFørTermin": {
+      "type": "number"
+    },
+    "disponibleDager": {
+      "type": "number"
+    },
+    "disponibleDagerUtenAktivitetskrav": {
+      "type": "number"
+    },
+    "disponibleDagerMedAktivitetskrav": {
+      "type": "number"
+    },
+    "maksukerUtenAktivitetskrav": {
+      "type": "number"
+    },
+    "disponibleFellesDager": {
+      "type": "number"
+    },
+    "sisteDagAvSistePeriode": {
+      "type": "string"
+    },
+    "innvilgetBeløp": {
+      "type": "string"
+    },
+    "stønadsperiodeFom": {
+      "type": "string"
+    },
+    "stønadsperiodeTom": {
+      "type": "string"
+    },
+    "utbetalingFom": {
+      "type": "string"
+    },
+    "flerbarnsdagerUtvidetUker": {
+      "type": "number"
+    },
+    "flerbarnsdagerUtvidetDager": {
+      "type": "number"
+    },
+    "antallBarn": {
+      "type": "number"
+    },
+    "prematurDager": {
+      "type": "number"
+    },
+    "antallDødeBarn": {
+      "type": "number"
+    },
+    "dødsdato": {
+      "type": "string"
+    },
+    "bruttoBeregningsgrunnlag": {
+      "type": "number"
+    },
+    "morKanSøkeOmDagerFørFødsel": {
+      "type": "boolean"
+    },
+    "perioder": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/vedtaksperiode"
+      }
+    },
+    "harBruktBruttoBeregningsgrunnlag": {
+      "type": "boolean"
+    },
+    "beregningsgrunnlagregler": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/beregningsgrunnlagRegel"
+      }
+    },
+    "klagefristUker": {
+      "type": "number"
+    },
+    "lovhjemlerUttak": {
+      "type": "string"
+    },
+    "lovhjemlerBeregning": {
+      "type": "string"
+    },
+    "inkludereInnvilget": {
+      "type": "boolean"
+    },
+    "inkludereAvslag": {
+      "type": "boolean"
+    },
+    "utenMinsterett": {
+      "type": "boolean"
+    },
+    "graderingOgFulltUttakIAnnenAktivitet": {
+      "type": "boolean"
+    },
+    "medlemskapOpphørsårsak": {
+      "type": "string"
+    },
+    "relasjonsRolleType": {
+      "type": "string",
+      "enum": [
+        "MORA",
+        "FARA",
+        "MMOR"
+      ]
+    },
+    "rettigheter": {
+      "type": "object",
+      "required": [
+        "opprinnelig",
+        "gjeldende"
+      ],
+      "properties": {
+        "opprinnelig": {
+          "type": "string",
+          "enum": [
+            "ALENEOMSORG",
+            "BEGGE_RETT",
+            "BEGGE_RETT_EØS",
+            "BARE_SØKER_RETT",
+            "BARE_FAR_RETT_MOR_UFØR"
+          ]
+        },
+        "gjeldende": {
+          "type": "string",
+          "enum": [
+            "ALENEOMSORG",
+            "BEGGE_RETT",
+            "BEGGE_RETT_EØS",
+            "BARE_SØKER_RETT",
+            "BARE_FAR_RETT_MOR_UFØR"
+          ]
+        },
+        "eøsUttak": {
+          "type": "object",
+          "required": [
+            "fom",
+            "tom",
+            "forbruktFellesperiode",
+            "fellesperiodeINorge"
+          ],
+          "properties": {
+            "fom": {
+              "type": "string"
+            },
+            "tom": {
+              "type": "string"
+            },
+            "forbruktFellesperiode": {
+              "type": "number"
+            },
+            "fellesperiodeINorge": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

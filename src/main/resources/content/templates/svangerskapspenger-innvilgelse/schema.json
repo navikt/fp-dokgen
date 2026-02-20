@@ -1,0 +1,281 @@
+{
+  "$id": "urn:no:nav:fpdokgen:svangerskapspenger-innvilgelse",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev svangerskapspenger innvilgelse",
+  "type": "object",
+  "required": [
+    "felles",
+    "revurdering",
+    "endretFraAvslag",
+    "utbetalingEndret",
+    "termindatoEndret",
+    "refusjonTilBruker",
+    "antallRefusjonerTilArbeidsgivere",
+    "månedsbeløp",
+    "klagefristUker",
+    "antallUtbetalingsperioder",
+    "aktiviteterOgUtbetalingsPerioder",
+    "inkludereBeregning"
+  ],
+  "$defs": {
+    "avslagsperiode": {
+      "type": "object",
+      "required": [
+        "periodeFom",
+        "periodeTom",
+        "årsak"
+      ],
+      "properties": {
+        "periodeFom": {
+          "type": "string"
+        },
+        "periodeTom": {
+          "type": "string"
+        },
+        "årsak": {
+          "type": "string"
+        },
+        "arbeidsforholdInformasjon": {
+          "type": "object",
+          "properties":{
+            "arbeidsgivernavn": {
+              "type": "string"
+            },
+            "aktivitetType": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "avslåttAktivitet": {
+      "type": "object",
+      "required": [
+        "årsak",
+        "erFL",
+        "erSN"
+      ],
+      "properties": {
+        "årsak": {
+          "type": "string"
+        },
+        "arbeidsgiverNavn": {
+          "type": "string"
+        },
+        "erFL": {
+          "type": "boolean"
+        },
+        "erSN": {
+          "type": "boolean"
+        }
+      }
+    },
+    "arbeidsforhold": {
+      "type": "object",
+      "required": [
+        "arbeidsgiverNavn",
+        "månedsinntekt"
+      ],
+      "properties": {
+        "arbeidsgiverNavn": {
+          "type": "string"
+        },
+        "månedsinntekt": {
+          "type": "number"
+        }
+      }
+    },
+    "selvstendigNæringsdrivende": {
+      "type": "object",
+      "required": [
+        "nyoppstartet",
+        "årsinntekt",
+        "sistLignedeÅr",
+        "inntektLavereATSN",
+        "inntektLavereATFLSN",
+        "inntektLavereFLSN"
+      ],
+      "properties": {
+        "nyoppstartet": {
+          "type": "boolean"
+        },
+        "årsinntekt": {
+          "type": "number"
+        },
+        "sistLignedeÅr": {
+          "type": "number"
+        },
+        "inntektLavereATSN": {
+          "type": "boolean"
+        },
+        "inntektLavereATFLSN": {
+          "type": "boolean"
+        },
+        "inntektLavereFLSN": {
+          "type": "boolean"
+        }
+      }
+    },
+    "frilanser": {
+      "type": "object",
+      "required": [
+        "månedsinntekt"
+      ],
+      "properties": {
+        "månedsinntekt": {
+          "type": "number"
+        }
+      }
+    },
+    "naturalytelse": {
+      "type": "object",
+      "required": [
+        "status",
+        "endringsdato",
+        "nyDagsats",
+        "arbeidsgiverNavn"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [ "TILKOMMER", "BORTFALLER" ]
+        },
+        "endringsdato": {
+          "type": "string"
+        },
+        "nyDagsats": {
+          "type": "number"
+        },
+        "arbeidsgiverNavn": {
+          "type": "string"
+        }
+      }
+    },
+    "aktiviteterOgUtbetalingsPerioder": {
+      "type": "object",
+      "required": [
+        "beskrivelse",
+        "utbetalingsperioder"
+      ],
+      "properties": {
+        "beskrivelse": {
+          "type": "string"
+        },
+        "utbetalingsperioder": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/utbetalingsperiode" }
+        }
+      }
+    },
+    "utbetalingsperiode": {
+      "type": "object",
+      "required":[
+        "periodeFom",
+        "periodeTom",
+        "dagsats",
+        "utbetalingsgrad",
+        "utbetaltTilSøker"
+      ],
+      "properties": {
+        "periodeFom": {
+          "type": "string"
+        },
+        "periodeTom": {
+          "type": "string"
+        },
+        "dagsats": {
+          "type": "number"
+        },
+        "utbetalingsgrad": {
+          "type": "number"
+        },
+        "utbetaltTilSøker": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "revurdering": {
+      "type": "boolean"
+    },
+    "endretFraAvslag": {
+      "type": "boolean"
+    },
+    "utbetalingEndret": {
+      "type": "boolean"
+    },
+    "termindatoEndret": {
+      "type": "boolean"
+    },
+    "refusjonTilBruker": {
+      "type": "boolean"
+    },
+    "antallRefusjonerTilArbeidsgivere": {
+      "type": "number"
+    },
+    "stønadsperiodeTom": {
+      "type": "string"
+    },
+    "månedsbeløp": {
+      "type": "number"
+    },
+    "mottattDato": {
+      "type": "string"
+    },
+    "klagefristUker": {
+      "type": "number"
+    },
+    "antallUtbetalingsperioder": {
+      "type": "number"
+    },
+    "avslagsperioder": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/avslagsperiode" }
+    },
+    "avslåtteAktiviteter": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/avslåttAktivitet" }
+    },
+    "inkludereBeregning": {
+      "type": "boolean"
+    },
+    "arbeidsforhold": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/arbeidsforhold" }
+    },
+    "selvstendigNæringsdrivende": {
+      "$ref": "#/$defs/selvstendigNæringsdrivende"
+    },
+    "frilanser": {
+      "$ref": "#/$defs/frilanser"
+    },
+    "naturalytelser": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/naturalytelse" }
+    },
+    "bruttoBeregningsgrunnlag": {
+      "type": "number"
+    },
+    "militærSivil": {
+      "type": "boolean"
+    },
+    "inntektOver6G": {
+      "type": "boolean"
+    },
+    "seksG": {
+      "type": "number"
+    },
+    "lovhjemmel": {
+      "type": "string"
+    },
+    "aktiviteterOgUtbetalingsPerioder": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/aktiviteterOgUtbetalingsPerioder" }
+    }
+  }
+}
+

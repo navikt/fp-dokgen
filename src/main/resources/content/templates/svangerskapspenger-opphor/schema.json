@@ -1,0 +1,65 @@
+{
+  "$id": "urn:no:nav:fpdokgen:svangerskapspenger-opphor",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev Svangerskapspenger Opphør",
+  "type": "object",
+  "required": [
+    "felles",
+    "lovhjemmel",
+    "erSøkerDød",
+    "opphørtPeriode"
+  ],
+  "$defs": {
+    "opphørPeriode": {
+      "type": "object",
+      "required": [
+        "årsak",
+        "antallArbeidsgivere"
+      ],
+      "properties": {
+        "årsak": {
+          "type": "string"
+        },
+        "stønadsperiodeFom": {
+          "type": "string"
+        },
+        "stønadsperiodeTom": {
+          "type": "string"
+        },
+        "antallArbeidsgivere": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "opphørsdato": {
+      "type": "string"
+    },
+    "erSøkerDød": {
+      "type": "boolean"
+    },
+    "dødsdatoBarn": {
+      "type": "string"
+    },
+    "fødselsdato": {
+      "type": "string"
+    },
+    "halvG": {
+      "type": "number"
+    },
+    "lovhjemmel": {
+      "type": "string"
+    },
+    "opphørtPeriode": {
+      "type": "object",
+      "items": { "$ref": "#/$defs/opphørPeriode" }
+    },
+    "klagefristUker": {
+      "type": "number"
+    }
+  }
+}
