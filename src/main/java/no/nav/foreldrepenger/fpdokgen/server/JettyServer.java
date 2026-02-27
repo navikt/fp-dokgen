@@ -9,6 +9,7 @@ import org.eclipse.jetty.ee11.servlet.security.ConstraintMapping;
 import org.eclipse.jetty.ee11.servlet.security.ConstraintSecurityHandler;
 import org.eclipse.jetty.security.Constraint;
 import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.server.ServerConnector;
 import org.glassfish.jersey.servlet.ServletContainer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +18,8 @@ import org.slf4j.bridge.SLF4JBridgeHandler;
 import no.nav.foreldrepenger.fpdokgen.server.app.api.ApiConfig;
 import no.nav.foreldrepenger.fpdokgen.server.app.internal.InternalApiConfig;
 import no.nav.foreldrepenger.konfig.Environment;
+
+import java.util.concurrent.TimeUnit;
 
 public class JettyServer {
     private static final Logger LOG = LoggerFactory.getLogger(JettyServer.class);
@@ -54,8 +57,13 @@ public class JettyServer {
     }
 
     private void start() throws Exception {
-            var server = new Server(getServerPort());
             LOG.info("Starter server");
+            var server = new Server();
+            var connector = new ServerConnector(server);
+            connector.setPort(getServerPort());
+            connector.setIdleTimeout(TimeUnit.MINUTES.toMillis(2));
+            server.addConnector(connector);
+
             var context = new ServletContextHandler(CONTEXT_PATH, ServletContextHandler.NO_SESSIONS);
 
             // Sikkerhet

@@ -66,4 +66,6 @@ spec:
       rules:
         - application: fpinntektsmelding
         - application: fpsoknad
-#        - application: fpformidling - etter flytting til GCP
+        - application: fpformidling
+          namespace: teamforeldrepenger
+          cluster: {{environment}}-fss
