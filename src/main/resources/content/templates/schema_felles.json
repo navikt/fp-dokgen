@@ -1,0 +1,51 @@
+{
+  "$id": "urn:no:nav:fpdokgen:felles",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Felles dokumentdata for bruk i alle brevene",
+  "type": "object",
+  "required": [
+    "søkerNavn",
+    "søkerPersonnummer",
+    "brevDato",
+    "erKopi",
+    "harVerge",
+    "saksnummer",
+    "ytelseType",
+    "erUtkast"
+  ],
+  "properties": {
+    "søkerNavn": {
+      "type": "string"
+    },
+    "søkerPersonnummer": {
+      "type": "string"
+    },
+    "fritekst": {
+      "type": "string"
+    },
+    "brevDato": {
+      "type": "string"
+    },
+    "erAutomatiskBehandlet": {
+      "type": "boolean"
+    },
+    "erKopi": {
+      "type": "boolean"
+    },
+    "harVerge": {
+      "type": "boolean"
+    },
+    "saksnummer": {
+      "type": "string"
+    },
+    "mottakerNavn": {
+      "type": "string"
+    },
+    "ytelseType": {
+      "type": "string"
+    },
+    "erUtkast": {
+      "type": "boolean"
+    }
+  }
+}

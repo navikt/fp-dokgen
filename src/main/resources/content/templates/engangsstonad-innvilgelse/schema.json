@@ -1,0 +1,46 @@
+{
+  "$id": "urn:no:nav:fpdokgen:engangsstonad-innvilgelse",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev Engangsstønad innvilgelse",
+  "type": "object",
+  "required": [
+    "felles",
+    "revurdering",
+    "førstegangsbehandling",
+    "medhold",
+    "innvilgetBeløp",
+    "klagefristUker",
+    "død",
+    "fbEllerMedhold",
+    "erEndretSats"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "revurdering": {
+      "type": "boolean"
+    },
+    "førstegangsbehandling": {
+      "type": "boolean"
+    },
+    "medhold": {
+      "type": "boolean"
+    },
+    "innvilgetBeløp": {
+      "type": "string"
+    },
+    "klagefristUker": {
+      "type": "number"
+    },
+    "død": {
+      "type": "boolean"
+    },
+    "fbEllerMedhold": {
+      "type": "boolean"
+    },
+    "erEndretSats": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$id": "urn:no:nav:fpdokgen:innhente-opplysninger",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev Innhente opplysninger",
+  "type": "object",
+  "required": [
+    "felles",
+    "førstegangsbehandling",
+    "revurdering",
+    "endringssøknad",
+    "død",
+    "klage"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "førstegangsbehandling": {
+      "type": "boolean"
+    },
+    "revurdering": {
+      "type": "boolean"
+    },
+    "endringssøknad": {
+      "type": "boolean"
+    },
+    "død": {
+      "type": "boolean"
+    },
+    "klage": {
+      "type": "boolean"
+    },
+    "søknadDato": {
+      "type": "string"
+    },
+    "fristDato": {
+      "type": "string"
+    }
+  }
+}

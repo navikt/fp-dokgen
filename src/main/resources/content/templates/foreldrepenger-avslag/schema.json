@@ -1,0 +1,76 @@
+{
+  "$id": "urn:no:nav:fpdokgen:foreldrepenger-avslag",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev Foreldrepenger avslag",
+  "type": "object",
+  "required": [
+    "felles",
+    "antallBarn",
+    "klagefristUker",
+    "lovhjemmelForAvslag",
+    "avslåttePerioder"
+  ],
+  "$defs": {
+    "avslåttPeriode": {
+      "type": "object",
+      "required": [
+        "avslagsårsak"
+      ],
+      "properties": {
+        "avslagsårsak": {
+          "type": "string"
+        },
+        "periodeFom": {
+          "type": "string"
+        },
+        "periodeTom": {
+          "type": "string"
+        },
+        "antallTapteDager": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "mottattDato": {
+      "type": "string"
+    },
+    "gjelderFødsel": {
+      "type": "boolean"
+    },
+    "barnErFødt": {
+      "type": "boolean"
+    },
+    "antallBarn": {
+      "type": "number"
+    },
+    "halvG": {
+      "type": "number"
+    },
+    "klagefristUker": {
+      "type": "number"
+    },
+    "lovhjemmelForAvslag": {
+      "type": "string"
+    },
+    "gjelderMor": {
+      "type": "boolean"
+    },
+    "avslåttePerioder": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/avslåttPeriode" }
+    },
+    "relasjonsRolleType": {
+      "type": "string",
+      "enum": [
+        "MORA",
+        "FARA",
+        "MMOR"
+      ]
+    }
+  }
+}

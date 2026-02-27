@@ -1,0 +1,6 @@
+{
+  "$id": "urn:no:nav:fpdokgen:søknad-foreldrepenger",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Søknad om foreldrepenger",
+  "type": "object"
+}

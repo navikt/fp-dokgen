@@ -1,0 +1,22 @@
+{
+  "$id": "urn:no:nav:fpdokgen:ikke-sokt",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev Ikke søkt",
+  "type": "object",
+  "required": [
+    "felles",
+    "arbeidsgiverNavn",
+    "mottattDato"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "arbeidsgiverNavn": {
+      "type": "string"
+    },
+    "mottattDato": {
+      "type": "string"
+    }
+  }
+}

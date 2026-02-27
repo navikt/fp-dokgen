@@ -1,16 +1,16 @@
 {
+  "environment": "dev",
   "minReplicas": "1",
   "maxReplicas": "2",
-  "consumers": [
-    {
-      "app": "fpinntektsmelding",
-      "namespace": "teamforeldrepenger",
-      "cluster": "dev-gcp"
-    },
-    {
-      "app": "fpsoknad",
-      "namespace": "teamforeldrepenger",
-      "cluster": "dev-gcp"
-    }
+  "limits": {
+    "cpu": "2",
+    "mem": "2048Mi"
+  },
+  "requests": {
+    "cpu": "200m",
+    "mem": "1024Mi"
+  },
+  "ingresses": [
+    "https://fpdokgen.intern.dev.nav.no"
   ]
 }

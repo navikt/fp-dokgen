@@ -1,16 +1,16 @@
 {
+  "environment": "prod",
   "minReplicas": "2",
   "maxReplicas": "3",
-  "consumers": [
-    {
-      "app": "fpinntektsmelding",
-      "namespace": "teamforeldrepenger",
-      "cluster": "prod-gcp"
-    },
-    {
-      "app": "fpsoknad",
-      "namespace": "teamforeldrepenger",
-      "cluster": "prod-gcp"
-    }
+  "limits": {
+    "cpu": "2",
+    "mem": "2048Mi"
+  },
+  "requests": {
+    "cpu": "500m",
+    "mem": "1024Mi"
+  },
+  "ingresses": [
+    "https://fpdokgen.intern.nav.no"
   ]
 }

@@ -1,0 +1,29 @@
+<div class="align"> <p> Innsendt: 31. mai 2024 kl.12.20</p></div>
+<br/>
+<br/>
+<br/>
+# Inntektsmelding foreldrepenger
+**Arbeidsgiver**
+<br/>Arbeidsgiver 1, org.nr. *****4556
+**Den ansatte**
+<br/>Gro Gror Testesen, f.nr. *********5298
+**Kontaktperson fra bedriften**
+<br/>Navn kontaktperson, tlf. 22 22 22 22
+<hr/>
+## Første dag med foreldrepenger
+4. juni 2024
+<hr/>
+## Beregnet månedslønn
+56 000,5 kr
+<hr/>
+## Utbetaling og refusjon
+**Betaler dere den ansatte lønn under fraværet og krever refusjon**?
+<br/>Ja, likt beløp i hele perioden<br/><br/>**Refusjonsbeløp dere krever per måned**<br/>45 000 kr
+<hr/>
+## Naturalytelser
+**Har den ansatte naturalytelser som faller bort ved fraværet?**<br/>Ja<br/><br/>**Naturalytelser som faller bort**
+* <span>Rentefordel lån, verdi 5 000 kr: fra og med 31. mai 2024</span>
+<br/>**Vil den ansatte ha naturalytelser som kommer tilbake i løpet av fraværet?**
+<br/>Ja
+<br/><br/>**Naturalytelser som kommer tilbake**
+* <span>Bolig, verdi 2 001,99 kr: fra og med 31. mai 2024</span>

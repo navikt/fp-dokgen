@@ -1,0 +1,22 @@
+{
+  "$id": "urn:no:nav:fpdokgen:klage-oversendt",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev klage oversendt",
+  "type": "object",
+  "required": [
+    "felles",
+    "gjelderTilbakekreving",
+    "mottattDato"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "gjelderTilbakekreving": {
+      "type": "boolean"
+    },
+    "mottattDato": {
+      "type": "string"
+    }
+  }
+}

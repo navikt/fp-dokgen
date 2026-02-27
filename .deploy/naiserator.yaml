@@ -1,37 +1,48 @@
 apiVersion: nais.io/v1alpha1
 kind: Application
 metadata:
-  name: fpdokgen
+  name: fp-dokgen
   namespace: teamforeldrepenger
   labels:
     team: teamforeldrepenger
 spec:
   image: {{image}}
   port: 8080
+  ingresses:
+    {{#each ingresses as |url|}}
+    - {{url}}
+    {{/each}}
+  liveness:
+    path: /fpdokgen/internal/health/isAlive
+    initialDelay: 10
+    periodSeconds: 10
+    failureThreshold: 20
+    timeout: 3
+  readiness:
+    path: /fpdokgen/internal/health/isReady
+    initialDelay: 10
+    periodSeconds: 10
+    failureThreshold: 20
+    timeout: 3
+  preStopHook:
+    http:
+      path: /fpdokgen/internal/health/preStop
+  prometheus:
+    enabled: true
+    path: /fpdokgen/internal/metrics/prometheus
   replicas:
     min: {{minReplicas}}
     max: {{maxReplicas}}
     scalingStrategy:
       cpu:
         thresholdPercentage: 80
-  liveness:
-    path: actuator/health
-    initialDelay: 10
-    timeout: 3
-  readiness:
-    path: actuator/info
-    initialDelay: 10
-    timeout: 3
-  prometheus:
-    enabled: true
-    path: actuator/prometheus
   resources:
     limits:
-      cpu: "1"
-      memory: "1024Mi"
+      cpu: "{{limits.cpu}}"
+      memory: "{{limits.mem}}"
     requests:
-      cpu: "200m"
-      memory: "512Mi"
+      cpu: "{{requests.cpu}}"
+      memory: "{{requests.mem}}"
   observability:
     autoInstrumentation:
       enabled: true
@@ -40,7 +51,12 @@ spec:
       destinations:
         - id: loki
         - id: elastic
-  {{#if consumers}}
+  azure:
+    application:
+      enabled: true
+      claims:
+        extra:
+          - "azp_name"
   accessPolicy:
     outbound:
       rules:
@@ -48,9 +64,8 @@ spec:
           namespace: nais-system
     inbound:
       rules:
-      {{#each consumers}}
-        - application: {{app}}
-          namespace: {{namespace}}
-          cluster: {{cluster}}
-      {{/each}}
-  {{/if}}
+        - application: fpinntektsmelding
+        - application: fpsoknad
+        - application: fpformidling
+          namespace: teamforeldrepenger
+          cluster: {{environment}}-fss
