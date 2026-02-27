@@ -240,6 +240,11 @@
 
     <repositories>
         <repository>
+            <id>github</id> <!-- OBS: Brukes også av fp-gha-workflows for action/setup-java -->
+            <name>Github Navikt Maven Packages</name>
+            <url>https://maven.pkg.github.com/navikt/fp-felles</url>
+        </repository>
+        <repository>
             <id>mavenCentral</id>
             <url>https://repo1.maven.org/maven2/</url>
         </repository>
