@@ -56,6 +56,7 @@ public class ApiConfig extends Application {
         // Ref Jersey doc
         properties.put(ServerProperties.BV_SEND_ERROR_IN_RESPONSE, true);
         properties.put(ServerProperties.PROCESSING_RESPONSE_ERRORS_ENABLED, true);
+        properties.put("jersey.config.server.wadl.disableWadl", true);
         return properties;
     }
 

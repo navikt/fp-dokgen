@@ -1,5 +1,7 @@
 package no.nav.foreldrepenger.fpdokgen.server.app.internal;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 import org.slf4j.Logger;
@@ -25,5 +27,12 @@ public class InternalApiConfig extends Application {
         var classes = Set.of(HealtCheckRest.class, PrometheusRestService.class);
         LOG.info("Ferdig med initialisering av {}", API_URI);
         return classes;
+    }
+
+    @Override
+    public Map<String, Object> getProperties() {
+        Map<String, Object> properties = new HashMap<>();
+        properties.put("jersey.config.server.wadl.disableWadl", true);
+        return properties;
     }
 }
