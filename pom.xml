@@ -21,8 +21,8 @@
 
         <felles.version>7.6.14</felles.version>
 
-        <openhtmltopdf.version>1.1.36</openhtmltopdf.version>
-        <commonmark.version>0.27.0</commonmark.version>
+        <openhtmltopdf.version>1.1.37</openhtmltopdf.version>
+        <commonmark.version>0.27.1</commonmark.version>
 
         <handlebar.version>4.5.0</handlebar.version>
         <nv-i18n.version>1.29</nv-i18n.version>
@@ -135,7 +135,7 @@
         <dependency>
             <groupId>com.networknt</groupId>
             <artifactId>json-schema-validator</artifactId>
-            <version>1.5.6</version>
+            <version>3.0.0</version>
         </dependency>
 
         <!-- Markdown to HTML conversion -->
