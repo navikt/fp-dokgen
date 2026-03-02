@@ -1,0 +1,18 @@
+{
+  "$id": "urn:no:nav:fpdokgen:fritekstbrev-html",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for Fritekstbrevet",
+  "type": "object",
+  "required": [
+    "felles",
+    "html"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "html": {
+      "type": "string"
+    }
+  }
+}

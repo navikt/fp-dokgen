@@ -1,0 +1,37 @@
+{
+  "$id": "urn:no:nav:fpdokgen:foreldrepenger-annullert",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev Foreldrepenger annullert",
+  "type": "object",
+  "required": [
+    "felles",
+    "harSøktOmNyPeriode",
+    "klagefristUker"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "harSøktOmNyPeriode": {
+      "type": "boolean"
+    },
+    "planlagtOppstartDato": {
+      "type": "string"
+    },
+    "kanBehandlesDato": {
+      "type": "string"
+    },
+    "annulleringÅrsak": {
+      "type": "string",
+      "enum": [
+        "BRUKER_HAR_SØKT_OM_NY_PERIODE",
+        "BRUKER_MOTTAR_PLEIEPENGER",
+        "ANNEN_PART_OVERTAR_UTTAKET",
+        "MANUELL_SAKSBEHANDLING"
+      ]
+    },
+    "klagefristUker": {
+      "type": "number"
+    }
+  }
+}

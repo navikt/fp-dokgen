@@ -1,0 +1,26 @@
+{
+  "$id": "urn:no:nav:fpdokgen:forlenget-saksbehandlingstid",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev Forlenget saksbehandlingstid",
+  "type": "object",
+  "required": [
+    "felles",
+    "variantType",
+    "død",
+    "behandlingsfristUker"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "variantType": {
+      "type": "string"
+    },
+    "død": {
+      "type": "boolean"
+    },
+    "behandlingsfristUker": {
+      "type": "number"
+    }
+  }
+}

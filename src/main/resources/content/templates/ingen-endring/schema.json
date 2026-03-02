@@ -1,0 +1,14 @@
+{
+  "$id": "urn:no:nav:fpdokgen:ingen-endring",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev Ingen endring",
+  "type": "object",
+  "required": [
+    "felles"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$id": "urn:no:nav:fpdokgen:henleggelse",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Dokumentdata for brev Henleggelse",
+  "type": "object",
+  "required": [
+    "felles",
+    "vanligBehandling",
+    "klage",
+    "anke",
+    "innsyn"
+  ],
+  "properties": {
+    "felles": {
+      "$ref": "classpath:content/templates/schema_felles.json"
+    },
+    "vanligBehandling": {
+      "type": "boolean"
+    },
+    "klage": {
+      "type": "boolean"
+    },
+    "anke": {
+      "type": "boolean"
+    },
+    "innsyn": {
+      "type": "boolean"
+    }
+  }
+}

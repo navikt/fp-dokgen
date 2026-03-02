@@ -1,0 +1,9 @@
+<included>
+    <logger name="no.nav.foreldrepenger.fpdokgen" level="TRACE"/>
+    <logger name="no.nav.vedtak.sikkerhet" level="TRACE"/>
+    <logger name="no.nav.vedtak.felles.integrasjon.rest" level="DEBUG"/>
+
+    <logger name="secureLogger" level="${log.level.secureLogger:-DEBUG}" additivity="false">
+        <appender-ref ref="teamLogger"/>
+    </logger>
+</included>
