@@ -34,11 +34,12 @@ public class AuthenticationFilter implements ContainerRequestFilter, ContainerRe
     @Override
     public void filter(ContainerRequestContext req) {
         AuthenticationFilterDelegate.validerSettKontekst(resourceinfo, req);
-
         if (!(KontekstHolder.getKontekst() instanceof RequestKontekst kontekst)) {
+            KontekstHolder.fjernKontekst();
             throw new WebApplicationException(Response.Status.FORBIDDEN);
         }
         if (!kontekst.getIdentType().erSystem()) {
+            KontekstHolder.fjernKontekst();
             throw new WebApplicationException("Kun systemkontekst er tillatt.", Response.Status.FORBIDDEN);
         }
     }
