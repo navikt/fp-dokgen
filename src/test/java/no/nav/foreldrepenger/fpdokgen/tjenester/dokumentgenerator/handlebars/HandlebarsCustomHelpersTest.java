@@ -226,6 +226,54 @@ class HandlebarsCustomHelpersTest {
             var result = template.apply(null);
             assertThat(result).isEqualTo("90.2");
         }
+
+        @Test
+        void skalHåndtereDoubleFraKontekst() throws IOException {
+            var context = Map.of("tall", 25.50);
+            var template = handlebars.compileInline("{{trim-decimal tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("25.5");
+        }
+
+        @Test
+        void skalHåndtereDoubleUtenDesimaler() throws IOException {
+            var context = Map.of("tall", 100.00);
+            var template = handlebars.compileInline("{{trim-decimal tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("100");
+        }
+
+        @Test
+        void skalHåndtereIntegerUendret() throws IOException {
+            var context = Map.of("tall", 42);
+            var template = handlebars.compileInline("{{trim-decimal tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("42");
+        }
+
+        @Test
+        void skalHåndtereNegativeDoubleTall() throws IOException {
+            var context = Map.of("tall", -15.0);
+            var template = handlebars.compileInline("{{trim-decimal tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("-15");
+        }
+
+        @Test
+        void skalHåndtereNegativeIntegerTall() throws IOException {
+            var context = Map.of("tall", -100);
+            var template = handlebars.compileInline("{{trim-decimal tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("-100");
+        }
+
+        @Test
+        void skalHåndtereStorDoubleMedFlereDesimaLer() throws IOException {
+            var context = Map.of("tall", 12345.6789);
+            var template = handlebars.compileInline("{{trim-decimal tall}}");
+            var result = template.apply(context);
+            assertThat(result).isEqualTo("12345.6789");
+        }
     }
 
     @Nested

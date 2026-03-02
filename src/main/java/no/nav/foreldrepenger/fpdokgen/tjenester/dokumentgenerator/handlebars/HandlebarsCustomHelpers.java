@@ -211,10 +211,13 @@ final class HandlebarsCustomHelpers {
     /**
      * Removes trailing zeroes from decimals, ex: 10.0 becomes 10 and 90.20 becomes 90.2, while 100.3 remains the same
      */
-    static class TrimDecimalHelper implements Helper<Double> {
+    static class TrimDecimalHelper implements Helper<Number> {
         @Override
-        public Object apply(Double decimal, Options options) {
-            return BigDecimal.valueOf(decimal).stripTrailingZeros().toPlainString();
+        public Object apply(Number tall, Options options) {
+            if (tall instanceof Double dble) {
+                return BigDecimal.valueOf(dble).stripTrailingZeros().toPlainString();
+            }
+            return tall;
         }
     }
 
