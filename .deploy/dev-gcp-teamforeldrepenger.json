@@ -3,7 +3,7 @@
   "minReplicas": "1",
   "maxReplicas": "2",
   "limits": {
-    "mem": "512Mi"
+    "mem": "576Mi"
   },
   "requests": {
     "cpu": "71m",
