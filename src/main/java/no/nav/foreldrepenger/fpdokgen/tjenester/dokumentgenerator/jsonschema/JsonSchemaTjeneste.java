@@ -8,9 +8,9 @@ import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.networknt.schema.JsonSchema;
-import com.networknt.schema.JsonSchemaFactory;
-import com.networknt.schema.SpecVersion;
+import com.networknt.schema.Schema;
+import com.networknt.schema.SchemaRegistry;
+import com.networknt.schema.SpecificationVersion;
 
 import jakarta.enterprise.context.Dependent;
 import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.exceptions.DokgenSchemaValidationException;
@@ -19,8 +19,8 @@ import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.JacksonU
 @Dependent
 public class JsonSchemaTjeneste {
 
-    private static final ConcurrentHashMap<String, JsonSchema> JSON_SCHEMA_CACHE = new ConcurrentHashMap<>();
-    private static final JsonSchemaFactory JSON_SCHEMA_FACTORY = JsonSchemaFactory.getInstance(SpecVersion.VersionFlag.V202012);
+    private static final ConcurrentHashMap<String, Schema> JSON_SCHEMA_CACHE = new ConcurrentHashMap<>();
+    private static final SchemaRegistry SCHEMA_REGISTRY = SchemaRegistry.withDefaultDialect(SpecificationVersion.DRAFT_2020_12);
 
     JsonSchemaTjeneste() {
         // for CDI
@@ -32,7 +32,7 @@ public class JsonSchemaTjeneste {
         validerDataMotSchema(data, hentSchema(schemaPath));
     }
 
-    void validerDataMotSchema(Map<String, Object> data, JsonSchema schema) {
+    void validerDataMotSchema(Map<String, Object> data, Schema schema) {
         var jsonNode = JacksonUtil.JSON_MAPPER.convertValue(data, JsonNode.class);
         var failures = schema.validate(jsonNode);
 
@@ -41,11 +41,11 @@ public class JsonSchemaTjeneste {
         }
     }
 
-    private JsonSchema hentSchema(Path schemaPath) {
+    private Schema hentSchema(Path schemaPath) {
         var cacheKey = cacheKey(schemaPath);
         return JSON_SCHEMA_CACHE.computeIfAbsent(cacheKey, _ -> {
             var schemaString = lesRessursSomString(schemaPath);
-            return JSON_SCHEMA_FACTORY.getSchema(schemaString);
+            return SCHEMA_REGISTRY.getSchema(schemaString);
         });
     }
 
