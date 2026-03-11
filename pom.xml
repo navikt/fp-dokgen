@@ -6,20 +6,20 @@
     <parent>
         <groupId>no.nav.foreldrepenger.felles</groupId>
         <artifactId>fp-parent-app</artifactId>
-        <version>5.2.4</version>
+        <version>5.3.1</version>
     </parent>
 
     <groupId>no.nav.foreldrepenger</groupId>
     <name>fp-dokgen</name>
     <version>1.0-SNAPSHOT</version>
-    <artifactId>fp-dokgen</artifactId>
+    <artifactId>fpdokgen</artifactId>
 
     <properties>
         <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
         <sonar.projectName>fp-dokgen</sonar.projectName>
         <sonar.projectKey>navikt_fp-dokgen</sonar.projectKey>
 
-        <felles.version>7.6.16</felles.version>
+        <felles.version>7.7.2</felles.version>
 
         <openhtmltopdf.version>1.1.37</openhtmltopdf.version>
         <commonmark.version>0.27.1</commonmark.version>
