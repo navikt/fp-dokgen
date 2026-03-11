@@ -19,7 +19,7 @@
         <sonar.projectName>fp-dokgen</sonar.projectName>
         <sonar.projectKey>navikt_fp-dokgen</sonar.projectKey>
 
-        <felles.version>7.7z.2</felles.version>
+        <felles.version>7.7.2</felles.version>
 
         <openhtmltopdf.version>1.1.37</openhtmltopdf.version>
         <commonmark.version>0.27.1</commonmark.version>
