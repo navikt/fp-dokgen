@@ -10,6 +10,7 @@
     "mem": "512Mi"
   },
   "ingresses": [
-    "https://fpdokgen.intern.nav.no"
+    "https://fpdokgen.intern.nav.no",
+    "https://fp-dokgen.intern.nav.no"
   ]
 }
