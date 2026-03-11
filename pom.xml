@@ -12,7 +12,7 @@
     <groupId>no.nav.foreldrepenger</groupId>
     <name>fp-dokgen</name>
     <version>1.0-SNAPSHOT</version>
-    <artifactId>fp-dokgen</artifactId>
+    <artifactId>fpdokgen</artifactId>
 
     <properties>
         <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
