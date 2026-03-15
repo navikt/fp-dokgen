@@ -11,12 +11,9 @@ import org.slf4j.LoggerFactory;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
-import no.nav.foreldrepenger.fpdokgen.server.exceptions.GeneralRestExceptionMapper;
-import no.nav.foreldrepenger.fpdokgen.server.exceptions.JsonMappingExceptionMapper;
-import no.nav.foreldrepenger.fpdokgen.server.exceptions.JsonParseExceptionMapper;
-import no.nav.foreldrepenger.fpdokgen.server.exceptions.ValidationExceptionMapper;
-import no.nav.foreldrepenger.fpdokgen.server.jackson.JacksonJsonConfig;
 import no.nav.foreldrepenger.fpdokgen.tjenester.v1.DokumentGeneratorRestTjeneste;
+import no.nav.vedtak.server.rest.FpRestJackson2Feature;
+import no.nav.vedtak.server.rest.GeneralRestExceptionMapper;
 
 @ApplicationPath(ApiConfig.API_URI)
 public class ApiConfig extends Application {
@@ -25,6 +22,7 @@ public class ApiConfig extends Application {
     private static final Logger LOG = LoggerFactory.getLogger(ApiConfig.class);
 
     public ApiConfig() {
+        GeneralRestExceptionMapper.setBrukerRettetApplikasjon(false);
         LOG.info("Initialiserer: {}", API_URI);
     }
 
@@ -32,9 +30,8 @@ public class ApiConfig extends Application {
     public Set<Class<?>> getClasses() {
         var classes = new HashSet<Class<?>>();
 
-        classes.add(AuthenticationFilter.class);
-        classes.add(JacksonJsonConfig.class);
-        classes.addAll(registerExceptionMappers());
+        classes.add(FpRestJackson2Feature.class);
+        classes.add(AuthorizationFilter.class);
         classes.addAll(getApplicationClasses());
 
         LOG.info("Ferdig med initialisering av {}", API_URI);
@@ -43,11 +40,6 @@ public class ApiConfig extends Application {
 
     private Set<Class<?>> getApplicationClasses() {
         return Set.of(DokumentGeneratorRestTjeneste.class);
-    }
-
-    Set<Class<?>> registerExceptionMappers() {
-        return Set.of(GeneralRestExceptionMapper.class, ValidationExceptionMapper.class, JsonMappingExceptionMapper.class,
-            JsonParseExceptionMapper.class);
     }
 
     @Override
