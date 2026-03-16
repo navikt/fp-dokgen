@@ -97,6 +97,7 @@ public class JettyServer {
         var servlet = new ServletHolder(new ServletContainer());
         servlet.setInitOrder(prioritet);
         servlet.setInitParameter(APPLICATION, appClass.getName());
+        servlet.setName(appClass.getName());
         context.addServlet(servlet, path + "/*");
     }
 
