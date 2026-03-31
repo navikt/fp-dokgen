@@ -3,11 +3,11 @@
   "minReplicas": "1",
   "maxReplicas": "2",
   "limits": {
-    "mem": "576Mi"
+    "mem": "800Mi"
   },
   "requests": {
-    "cpu": "71m",
-    "mem": "416Mi"
+    "cpu": "50m",
+    "mem": "640Mi"
   },
   "ingresses": [
     "https://fpdokgen.intern.dev.nav.no"
