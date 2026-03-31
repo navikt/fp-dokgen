@@ -69,6 +69,3 @@ spec:
         - application: fpformidling
           namespace: teamforeldrepenger
           cluster: {{environment}}-gcp
-        - application: fpformidling
-          namespace: teamforeldrepenger
-          cluster: {{environment}}-fss
