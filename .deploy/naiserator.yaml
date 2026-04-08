@@ -67,8 +67,3 @@ spec:
         - application: fpinntektsmelding
         - application: fpsoknad
         - application: fpformidling
-          namespace: teamforeldrepenger
-          cluster: {{environment}}-gcp
-        - application: fpformidling
-          namespace: teamforeldrepenger
-          cluster: {{environment}}-fss
