@@ -1,5 +1,6 @@
 {{> header_nb }}
 
+{{#> utils/redigerbart_innhold}}
 
 {{#eq felles.ytelseType "ES" }}# Nav vurderer retten din til engangsstønad på nytt
 {{else}}{{#eq felles.ytelseType "FP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søke om å endre foreldrepengeperioden din{{else}}# Nav vurderer retten din til foreldrepenger på nytt{{/eq}}
@@ -82,5 +83,8 @@ Vi vil vurdere saken din på nytt når fristen er gått ut. Dersom du ikke har h
 
 Du sender dokumentasjonen til oss på [nav.no/ettersendelser](https://nav.no/ettersendelser).
 
-{{> footer_nb }}
+{{/utils/redigerbart_innhold}}
 
+{{#> utils/readonly_innhold}}
+{{> footer_nb }}
+{{/utils/readonly_innhold}}

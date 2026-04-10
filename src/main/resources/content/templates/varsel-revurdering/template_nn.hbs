@@ -1,5 +1,6 @@
 {{> header_nn }}
 
+{{#> utils/redigerbart_innhold}}
 
 {{#eq felles.ytelseType "ES" }}# Nav vurderer retten din til eingongsstønad på nytt
 {{else}}{{#eq felles.ytelseType "FP" }}{{#eq advarselKode "JOBBFULLTID" }}# Du må søkje om å endre foreldrepengeperioden din{{else}}# Nav vurderer retten din til foreldrepengar på nytt{{/eq}}
@@ -81,5 +82,9 @@ Opplysningsplikta går fram av folketrygdlova §§ 21-3 og 21-4.
 Vi vil vurdere saka di på nytt når fristen er gått ut. Dersom du ikkje har hatt rett til {{> ytelse_navn_nn}}, kan du bli nøydd til å betale tilbake pengane.
 
 Du sender dokumentasjonen til oss på [nav.no/ettersendelser](https://nav.no/ettersendelser).
-{{> footer_nn }}
 
+{{/utils/redigerbart_innhold}}
+
+{{#> utils/readonly_innhold}}
+{{> footer_nn }}
+{{/utils/readonly_innhold}}

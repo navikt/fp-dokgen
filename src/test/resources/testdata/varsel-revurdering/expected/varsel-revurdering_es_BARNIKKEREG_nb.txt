@@ -18,6 +18,7 @@
         </tr>
     </table>
 </div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # Nav vurderer retten din til engangsstønad på nytt
 Du hadde termin 23. mai 2020, men barnet ditt er ikke registrert i folkeregisteret. Du må derfor sende oss fødselsattesten innen 24. mai 2020.
 Er barnet født i utlandet, må du opplyse om hvor lenge du har vært i utlandet og om du har planlagt å reise tilbake til Norge.
@@ -26,6 +27,8 @@ Opplysningsplikten går fram av folketrygdloven §§ 21-3 og 21-4.
 ## Vedtaket ditt om engangsstønad kan bli omgjort
 Vi vil vurdere saken din på nytt når fristen er gått ut. Dersom du ikke har hatt rett til engangsstønad, kan du bli nødt til å betale tilbake pengene.
 Du sender dokumentasjonen til oss på [nav.no/ettersendelser](https://nav.no/ettersendelser).
+</div>
+<div id="readonly-innhold">
 ## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <div style="break-inside: avoid; page-break-inside: avoid">
@@ -39,4 +42,5 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 Med vennlig hilsen
 <br/>
 Nav Familie- og pensjonsytelser
+</div>
 </div>
