@@ -18,6 +18,7 @@
         </tr>
     </table>
 </div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # Nav considers reprocessing your case regarding entitlement to a lump-sum grant
 We have received new information that may influence the decision on your entitlement to the lump-sum grant.
 <p style="white-space: pre-wrap">FRITEKST LINJE 1
@@ -26,6 +27,8 @@ Your duty to give information is pursuant to sections 21‑3 and 21‑4 of the N
 ## The decision about your lump-sum grant can be reversed
 We will consider your case again after the deadline has been reached. If you are not entitled to the lump-sum grant, you may be required to repay the money.
 You can send us information at [nav.no/ettersendelser](https://nav.no/ettersendelser).
+</div>
+<div id="readonly-innhold">
 ## You have right of access
 Log into [foreldrepenger.nav.no](https://foreldrepenger.nav.no/) to see the documents in your case.
 <div style="break-inside: avoid; page-break-inside: avoid">
@@ -39,4 +42,5 @@ If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekda
 Yours sincerely,
 <br/>
 Nav Familie- og pensjonsytelser
+</div>
 </div>
