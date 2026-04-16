@@ -44,7 +44,7 @@ Your employers have provided us with this information.
 This is the average of your income from the last three months before the start of the parental benefit period. If you have just started working, changed your employment situation or your pay has changed, we have used your monthly income after the change took place.
 The calculation has been made in accordance with the National Insurance Act Sections §§ 14-7 og 8-30.
 ## You must notify any changes
-You must notify Nav immediately of any changes that might affect benefits you receive. See [nav.no/rettogplikt](https://nav.no/rettogplikt) for more detailed information.
+You must notify Nav immediately of any changes that might affect the benefits you receive. If you start a new parental benefit period because you have a new child, you will lose any unused parental benefit days for the child this decision applies to. You can find more information at [nav.no/foreldrepenger#melde](https://nav.no/foreldrepenger#melde).
 </div>
 <div id="readonly-innhold">
 ## You have the right to appeal
