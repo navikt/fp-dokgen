@@ -18,6 +18,7 @@
         </tr>
     </table>
 </div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # Du må søkje om å endre svangerskapspengeperioden din
 Vi har fått opplysningar om at du jobbar samtidig som du får svangerskapspengar. Derfor vurderer vi å stanse svangerskapspengane dine.
 Du kan ikkje jobbe heiltid og samtidig få svangerskapspengar. Arbeider du deltid, kan du søkje om å kombinere svangerskapspengane med arbeid.
@@ -27,6 +28,8 @@ Opplysningsplikta går fram av folketrygdlova §§ 21-3 og 21-4.
 ## Vedtaket ditt om svangerskapspengar kan bli gjort om
 Vi vil vurdere saka di på nytt når fristen er gått ut. Dersom du ikkje har hatt rett til svangerskapspengar, kan du bli nøydd til å betale tilbake pengane.
 Du sender dokumentasjonen til oss på [nav.no/ettersendelser](https://nav.no/ettersendelser).
+</div>
+<div id="readonly-innhold">
 ## Du har rett til innsyn
 For å sjå dokumenta i saka di, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <div style="break-inside: avoid; page-break-inside: avoid">
@@ -40,4 +43,5 @@ Om du ikkje finn svar på nav.no, kan du ringe oss på telefon 55 55 33 33, kvar
 Med vennleg helsing
 <br/>
 Nav Familie- og pensjonsytelser
+</div>
 </div>

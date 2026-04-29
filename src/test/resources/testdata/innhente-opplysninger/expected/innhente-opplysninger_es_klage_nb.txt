@@ -18,6 +18,7 @@
         </tr>
     </table>
 </div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 #  Vi trenger flere opplysninger
 Vi fikk klagen din på engangsstønad 1. april 2020, men mangler opplysninger for å kunne behandle den.
 ## Du må sende oss
@@ -28,6 +29,8 @@ Mer tekst
 ## Søknaden kan bli avslått
 Hvis du ikke sender oss dette innen 24. mai 2020, behandler vi saken med de opplysningene vi har.
 Dette går fram av folketrygdloven § 21-3.
+</div>
+<div id="readonly-innhold">
 ## Du har rett til innsyn
 For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
 <div style="break-inside: avoid; page-break-inside: avoid">
@@ -41,4 +44,5 @@ Hvis du ikke finner svar på nav.no kan du ringe oss på telefon 55 55 33 33, hv
 Med vennlig hilsen
 <br/>
 Nav Familie- og pensjonsytelser
+</div>
 </div>

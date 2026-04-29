@@ -18,8 +18,11 @@
         </tr>
     </table>
 </div>
+<div id="redigerbart-innhold" data-editable="data-editable">
 # You get to keep your lump-sum grant
 We have received the requested information, and you are still entitled to lump-sum grant.
+</div>
+<div id="readonly-innhold">
 ## You have right of access
 Log into [foreldrepenger.nav.no](https://foreldrepenger.nav.no/) to see the documents in your case.
 <div style="break-inside: avoid; page-break-inside: avoid">
@@ -33,4 +36,5 @@ If you do not find the answer at nav.no, you can call us at: 55 55 33 33, weekda
 Yours sincerely,
 <br/>
 Nav Familie- og pensjonsytelser
+</div>
 </div>
