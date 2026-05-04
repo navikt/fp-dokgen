@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.networknt.schema.Schema;
 import com.networknt.schema.SchemaRegistry;
 import com.networknt.schema.SpecificationVersion;
@@ -15,6 +14,7 @@ import com.networknt.schema.SpecificationVersion;
 import jakarta.enterprise.context.Dependent;
 import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.exceptions.DokgenSchemaValidationException;
 import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.JacksonUtil;
+import tools.jackson.databind.JsonNode;
 
 @Dependent
 public class JsonSchemaTjeneste {

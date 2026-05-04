@@ -12,7 +12,6 @@ import com.github.jknack.handlebars.context.MethodValueResolver;
 import com.github.jknack.handlebars.helper.ConditionalHelpers;
 import com.github.jknack.handlebars.helper.StringHelpers;
 import com.github.jknack.handlebars.io.ClassPathTemplateLoader;
-import com.github.jknack.handlebars.jackson.JsonNodeValueResolver;
 
 import jakarta.enterprise.context.Dependent;
 
@@ -78,7 +77,7 @@ public class HandlebarsTjeneste {
 
     public Context contextOf(Map<String, Object> model) {
         return Context.newBuilder(model)
-            .resolver(JsonNodeValueResolver.INSTANCE, JavaBeanValueResolver.INSTANCE, MapValueResolver.INSTANCE, MethodValueResolver.INSTANCE)
+            .resolver(new JsonNodeValueResolver(), JavaBeanValueResolver.INSTANCE, MapValueResolver.INSTANCE, MethodValueResolver.INSTANCE)
             .build();
     }
 }

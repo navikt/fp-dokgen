@@ -10,7 +10,7 @@ import org.glassfish.jersey.server.ServerProperties;
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
 import no.nav.foreldrepenger.fpdokgen.tjenester.v1.DokumentGeneratorRestTjeneste;
-import no.nav.vedtak.server.rest.FpRestJackson2Feature;
+import no.nav.vedtak.server.rest.FpRestJackson3Feature;
 
 @ApplicationPath(ApiConfig.API_URI)
 public class ApiConfig extends Application {
@@ -21,7 +21,7 @@ public class ApiConfig extends Application {
     public Set<Class<?>> getClasses() {
         var classes = new HashSet<Class<?>>();
 
-        classes.add(FpRestJackson2Feature.class);
+        classes.add(FpRestJackson3Feature.class);
         classes.add(AuthorizationFilter.class);
         classes.addAll(getApplicationClasses());
 
