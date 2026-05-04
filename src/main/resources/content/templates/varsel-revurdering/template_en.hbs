@@ -1,5 +1,6 @@
 {{> header_en }}
 
+{{#> utils/redigerbart_innhold}}
 
 {{#eq felles.ytelseType "ES" }}# Nav considers reprocessing your case regarding entitlement to a lump-sum grant
 {{else}}{{#eq felles.ytelseType "FP" }}{{#eq advarselKode "JOBBFULLTID" }}# You must apply to change your parental benefit period{{else}}# Nav considers reprocessing your case regarding entitlement to parental benefit{{/eq}}
@@ -82,5 +83,8 @@ We will consider your case again after the deadline has been reached. If you are
 
 You can send us information at [nav.no/ettersendelser](https://nav.no/ettersendelser).
 
-{{> footer_en }}
+{{/utils/redigerbart_innhold}}
 
+{{#> utils/readonly_innhold}}
+{{> footer_en }}
+{{/utils/readonly_innhold}}
