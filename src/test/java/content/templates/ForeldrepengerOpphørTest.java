@@ -9,15 +9,13 @@ import java.util.Map;
 
 import org.junit.jupiter.api.Test;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import content.support.BrevMal;
 import content.support.Språk;
+import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.JacksonUtil;
 
 class ForeldrepengerOpphørTest {
     private static final BrevMal BREVMAL = BrevMal.FORELDREPENGER_OPPHØR;
 
-    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
     private static final String BRUKER_NAVN = "DONALD DUCK";
     private static final String STØNADSDATO_FOM = "01. januar 2021";
     private static final String STØNADSDATO_TOM = "24. mai 2021";
@@ -146,7 +144,7 @@ class ForeldrepengerOpphørTest {
     }
 
     private void opprettÅrsaker(final Map<String, Object> testData, String... årsaker) {
-        var årsakArray = OBJECT_MAPPER.createArrayNode();
+        var årsakArray = JacksonUtil.JSON_MAPPER.createArrayNode();
         for (var årsak : årsaker) {
             årsakArray.add(årsak);
         }

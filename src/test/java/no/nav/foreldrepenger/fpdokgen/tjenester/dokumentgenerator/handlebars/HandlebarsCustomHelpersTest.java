@@ -9,10 +9,14 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.jknack.handlebars.Handlebars;
 
+import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.JacksonUtil;
+import tools.jackson.databind.json.JsonMapper;
+
 class HandlebarsCustomHelpersTest {
+
+    private static final JsonMapper JSON_MAPPER = JacksonUtil.JSON_MAPPER;
 
     private Handlebars handlebars;
 
@@ -480,14 +484,14 @@ class HandlebarsCustomHelpersTest {
         void skalReturnereStørrelseAvArray() throws IOException {
             var template = handlebars.compileInline("{{size items}}");
             var result = template.apply(
-                java.util.Map.of("items", new com.fasterxml.jackson.databind.ObjectMapper().createArrayNode().add("a").add("b").add("c")));
+                java.util.Map.of("items", JSON_MAPPER.createArrayNode().add("a").add("b").add("c")));
             assertThat(result).isEqualTo("3");
         }
 
         @Test
         void skalReturnereNullForTomtArray() throws IOException {
             var template = handlebars.compileInline("{{size items}}");
-            var result = template.apply(java.util.Map.of("items", new com.fasterxml.jackson.databind.ObjectMapper().createArrayNode()));
+            var result = template.apply(java.util.Map.of("items", JSON_MAPPER.createArrayNode()));
             assertThat(result).isEqualTo("0");
         }
 
@@ -505,9 +509,8 @@ class HandlebarsCustomHelpersTest {
         @Test
         void skalReturnereBlockNårArrayHarMerEnnEttElement() throws IOException {
             var template = handlebars.compileInline("{{~#gt (size avvistGrunner) 1}}flere{{else}}en eller ingen{{/gt}}");
-            var jsonNodes = new ObjectMapper().createObjectNode().put("test", "value").put("test2", "value2");
-            var result = template.apply(java.util.Map.of("avvistGrunner",
-                new com.fasterxml.jackson.databind.ObjectMapper().createArrayNode().add(jsonNodes).add(jsonNodes).add(jsonNodes)));
+            var jsonNodes = JSON_MAPPER.createObjectNode().put("test", "value").put("test2", "value2");
+            var result = template.apply(java.util.Map.of("avvistGrunner", JSON_MAPPER.createArrayNode().add(jsonNodes).add(jsonNodes).add(jsonNodes)));
             assertThat(result).isEqualTo("flere");
         }
 
@@ -515,14 +518,14 @@ class HandlebarsCustomHelpersTest {
         void skalReturnereElseBlockNårArrayHarEttElement() throws IOException {
             var template = handlebars.compileInline("{{~#gt (size avvistGrunner) 1}}flere{{else}}en eller ingen{{/gt}}");
             var result = template.apply(
-                java.util.Map.of("avvistGrunner", new com.fasterxml.jackson.databind.ObjectMapper().createArrayNode().add("grunn1")));
+                java.util.Map.of("avvistGrunner", JSON_MAPPER.createArrayNode().add("grunn1")));
             assertThat(result).isEqualTo("en eller ingen");
         }
 
         @Test
         void skalReturnereElseBlockNårArrayErTomt() throws IOException {
             var template = handlebars.compileInline("{{~#gt (size avvistGrunner) 1}}flere{{else}}en eller ingen{{/gt}}");
-            var result = template.apply(java.util.Map.of("avvistGrunner", new com.fasterxml.jackson.databind.ObjectMapper().createArrayNode()));
+            var result = template.apply(java.util.Map.of("avvistGrunner", JSON_MAPPER.createArrayNode()));
             assertThat(result).isEqualTo("en eller ingen");
         }
     }
