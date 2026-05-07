@@ -26,17 +26,6 @@
         </encoder>
     </appender>
 
-    <!-- TeamLogs -->
-    <appender name="teamLogger" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <destination>team-logs.nais-system:5170</destination>
-        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
-            <customFields>
-                {"google_cloud_project":"${GOOGLE_CLOUD_PROJECT}","nais_namespace_name":"${NAIS_NAMESPACE}","nais_pod_name":"${HOSTNAME}","nais_container_name":"${NAIS_APP_NAME}"}
-            </customFields>
-            <includeContext>false</includeContext>
-        </encoder>
-    </appender>
-
     <logger name="no.nav" level="${log.level.no.nav:-INFO}"/>
     <logger name="no.nav.vault" level="${log.level.no.nav.vault:-WARN}"/>
 
@@ -54,8 +43,6 @@
 
     <!-- denne logger passord på INFO nivå!-->
     <logger name="no.nav.modig.core.test.PropertySetter" level="WARN}"/>
-
-    <logger name="secureLogger" level="OFF" />
 
     <root level="${log.level.root:-INFO}">
         <appender-ref ref="stdoutConsoleLogger"/>

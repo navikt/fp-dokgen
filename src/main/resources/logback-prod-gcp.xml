@@ -1,7 +1,3 @@
 <included>
     <logger name="no.nav.foreldrepenger.fpdokgen" level="INFO"/>
-
-    <logger name="secureLogger" level="${log.level.secureLogger:-INFO}" additivity="false">
-        <appender-ref ref="teamLogger"/>
-    </logger>
 </included>
