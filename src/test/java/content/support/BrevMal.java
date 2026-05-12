@@ -18,7 +18,6 @@ public enum BrevMal {
     SVANGERSKAPSPENGER_AVSLAG("svangerskapspenger-avslag"),
 
     //Støttebrev
-    FRITEKSTBREV("fritekstbrev"),
     FRITEKSTBREV_HTML("fritekstbrev-html"),
     INNHENTE_OPPLYSNINGER("innhente-opplysninger"),
     VARSEL_OM_REVURDERING("varsel-revurdering"),
