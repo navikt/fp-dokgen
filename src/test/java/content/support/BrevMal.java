@@ -29,13 +29,10 @@ public enum BrevMal {
     INGEN_ENDRING("ingen-endring"),
     FORLENGET_SAKSBEHANDLINGSTID("forlenget-saksbehandlingstid"),
     KLAGE_AVVIST("klage-avvist"),
-    KLAGE_HJEMSENDT("klage-hjemsendt"),
+
     KLAGE_OMGJORT("klage-omgjort"),
     KLAGE_OVERSENDT("klage-oversendt"),
-    KLAGE_STADFESTET("klage-stadfestet"),
     ETTERLYS_INNTEKTSMELDING("etterlys-inntektsmelding"),
-    ANKE_OMGJORT("anke-omgjort"),
-    ANKE_OPPHEVET("anke-opphevet"),
     SELVBETJENING_TILSVAR_TILBAKEBETALINGVARSEL("selvbetjening-tilsvar-tilbakebetalingvarsel"),
 
     //Fpinntektsmelding
