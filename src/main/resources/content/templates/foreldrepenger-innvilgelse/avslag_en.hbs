@@ -17,7 +17,7 @@
 {{#case "4077"}}
 {{>punkt}}You cannot postpone parental benefit from {{periodeFom}} up to and including {{periodeTom}} because you are receiving attendance allowance in this period.
 
-  Periods before due date cannot be postponed because you gave birth before 33rd week of pregnancy.
+  Periods before due date cannot be postponed when the {{#gt antallBarn 1}}children are{{else}}child is{{/gt}} born before the 33rd week of pregnancy.
 {{/case}}
 {{#case "4020"}}{{#gt antallTapteDager 0}}{{>punkt}}You are not entitled to parental benefit from {{periodeFom}} up to and including {{periodeTom}}.
 
