@@ -18,6 +18,11 @@ public final class TemplateTestUtil {
         return getJsonFromString(mergeFieldsJsonString);
     }
 
+    public static String compileContent(BrevMal brevmal, String undermal, Språk språk, Map<String, Object> testData) {
+        var templateContent = readContent(TestContentUtil.hentPathForMal(brevmal, undermal, språk));
+        return produceContent(testData, templateContent);
+    }
+
     public static String compileContent(BrevMal brevmal, String undermal, Språk språk, String testDataFilename) {
         var templateContent = readContent(TestContentUtil.hentPathForMal(brevmal, undermal, språk));
         var mergeFieldsJsonString = readContent(TestContentUtil.getTestDataPath(brevmal, undermal, testDataFilename));

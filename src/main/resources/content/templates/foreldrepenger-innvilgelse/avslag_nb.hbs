@@ -17,7 +17,7 @@
 {{#case "4077"}}
 {{>punkt}}Du kan ikke utsette foreldrepengene fra og med {{periodeFom}} til og med {{periodeTom}} fordi du får pleiepenger i denne perioden.
 
-  Perioder før termindato kan ikke utsettes fordi du fødte før svangerskapsuke 33.
+  Perioder før termindato kan ikke utsettes når {{#gt antallBarn 1}}barna{{else}}barnet{{/gt}} er født før svangerskapsuke 33.
 {{/case}}
 {{#case "4020"}}{{#gt antallTapteDager 0}}{{>punkt}}Du har ikke rett til foreldrepenger fra og med {{periodeFom}} til og med {{periodeTom}}.
 
