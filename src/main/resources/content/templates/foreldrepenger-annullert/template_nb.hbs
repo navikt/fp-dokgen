@@ -12,9 +12,9 @@ Din tidligere innvilgede periode med foreldrepenger ble annullert.
 
 {{~#switch annulleringÅrsak }}
 {{~#case "BRUKER_HAR_SØKT_OM_NY_PERIODE"}}
-Du tar ikke ut foreldrepenger før {{planlagtOppstartDato}}.
+Du tar ut foreldrepenger fra {{planlagtOppstartDato}}.
 
-Søknaden din om foreldrepenger fra og med {{planlagtOppstartDato}} kan ikke behandles før {{kanBehandlesDato}} fordi foreldrepenger skal beregnes ut fra den inntekten du har når du starter uttaket ditt. Det må også vurderes om du har tjent opp rett til foreldrepenger når perioden din starter. Les mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+Når den nye søknaden din behandles, blir foreldrepengene dine beregnet ut fra den inntekten du har når du starter uttaket ditt. Det må også vurderes om du har tjent opp rett til foreldrepenger når perioden din starter. Les mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{/case}}
 {{~#case "BRUKER_MOTTAR_PLEIEPENGER"}}
 Du mottar pleiepenger istedenfor foreldrepenger i perioden du hadde fått innvilget foreldrepenger. Derfor er foreldrepengene dine opphørt, men du mister ikke dager.
@@ -33,16 +33,16 @@ Du må søke om ny foreldrepengeperiode på [nav.no/foreldrepenger](https://nav.
 Du har valgt å ikke ta ut din tidligere innvilgede periode med foreldrepenger.
 
 {{#if harSøktOmNyPeriode}}
-Du tar ikke ut foreldrepenger før {{planlagtOppstartDato}}.
+Du tar ut foreldrepenger fra {{planlagtOppstartDato}}.
 
-Søknaden din om foreldrepenger fra og med {{planlagtOppstartDato}} kan ikke behandles før {{kanBehandlesDato}} fordi foreldrepenger skal beregnes ut fra den inntekten du har når du starter uttaket ditt. Det må også vurderes om du har tjent opp rett til foreldrepenger når perioden din starter. Les mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+Når den nye søknaden din behandles, blir foreldrepengene dine beregnet ut fra den inntekten du har når du starter uttaket ditt. Det må også vurderes om du har tjent opp rett til foreldrepenger når perioden din starter. Les mer om dette på [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{else}}
 
 Du må søke om ny foreldrepengeperiode på [nav.no/foreldrepenger](https://nav.no/foreldrepenger). Foreldrepengene må være tatt ut senest dagen før ny foreldrepengeperiode for nytt barn starter, eller senest dagen før barnet fyller tre år.
 {{/if}}
 {{/if}}
 
-Når det er 4 uker igjen til du skal ta ut foreldrepenger, må arbeidsgiveren din sende inn ny inntektsmelding.
+Når det er 4 uker eller mindre igjen til du skal ta ut foreldrepenger, må arbeidsgiveren din sende inn ny inntektsmelding.
 
 Vedtaket er gjort etter folketrygdloven §§ 14-6, 14-7, 14-9, 14-10, 14-11 og 14-12.
 {{/utils/redigerbart_innhold}}

@@ -18,9 +18,6 @@
     "planlagtOppstartDato": {
       "type": "string"
     },
-    "kanBehandlesDato": {
-      "type": "string"
-    },
     "annulleringÅrsak": {
       "type": "string",
       "enum": [

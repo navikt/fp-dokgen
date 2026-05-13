@@ -23,7 +23,7 @@
 Du har valgt å ikke ta ut din tidligere innvilgede periode med foreldrepenger.
 Du mottar pleiepenger istedenfor foreldrepenger i perioden du hadde fått innvilget foreldrepenger. Derfor er foreldrepengene dine opphørt, men du mister ikke dager.
 Du må søke om ny foreldrepengeperiode på [nav.no/foreldrepenger](https://nav.no/foreldrepenger). Foreldrepengene må være tatt ut senest dagen før ny foreldrepengeperiode for nytt barn starter, eller senest dagen før barnet fyller tre år.
-Når det er 4 uker igjen til du skal ta ut foreldrepenger, må arbeidsgiveren din sende inn ny inntektsmelding.
+Når det er 4 uker eller mindre igjen til du skal ta ut foreldrepenger, må arbeidsgiveren din sende inn ny inntektsmelding.
 Vedtaket er gjort etter folketrygdloven §§ 14-6, 14-7, 14-9, 14-10, 14-11 og 14-12.
 </div>
 <div id="readonly-innhold">

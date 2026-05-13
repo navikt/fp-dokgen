@@ -9,5 +9,6 @@
   },
   "harSøktOmNyPeriode": true,
   "planlagtOppstartDato": "1. april 2022",
-  "klagefristUker": 6
+  "klagefristUker": 6,
+  "annulleringÅrsak": "BRUKER_HAR_SØKT_OM_NY_PERIODE"
 }
