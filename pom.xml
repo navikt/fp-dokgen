@@ -24,7 +24,7 @@
         <openhtmltopdf.version>1.1.37</openhtmltopdf.version>
         <commonmark.version>0.28.0</commonmark.version>
 
-        <handlebar.version>4.5.0</handlebar.version>
+        <handlebar.version>4.5.1</handlebar.version>
         <nv-i18n.version>1.29</nv-i18n.version>
     </properties>
 
