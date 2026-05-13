@@ -12,9 +12,9 @@ The previously granted period of parental benefit has been annulled.
 
 {{~#switch annulleringÅrsak }}
 {{~#case "BRUKER_HAR_SØKT_OM_NY_PERIODE"}}
-You are not withdrawing your parental benefit before {{planlagtOppstartDato}}.
+You are withdrawing your parental benefit from {{planlagtOppstartDato}}.
 
-Your application for parental benefit from and including {{planlagtOppstartDato}} can not be processed before {{kanBehandlesDato}} because parental benefit should be calculated based on the income you have when you start your withdrawal. It must also be considered whether you have earned the right to parental benefit when your period starts. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+When your new application is processed, your parental benefit will be calculated based on the income you have when you start your withdrawal. It must also be considered whether you have earned the right to parental benefit when your period starts. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{/case}}
 {{~#case "BRUKER_MOTTAR_PLEIEPENGER"}}
 You receive care benefit instead of parental benefit during the period you had been granted parental benefit. Therefore, your parental benefit has ended, but you do not lose any days.
@@ -33,16 +33,16 @@ You must apply for a new parental benefit period at [nav.no/foreldrepenger](http
 You have chosen not to withdraw your previously granted period of parental benefit.
 
 {{#if harSøktOmNyPeriode}}
-You are not withdrawing your parental benefit before {{planlagtOppstartDato}}.
+You are withdrawing your parental benefit from {{planlagtOppstartDato}}.
 
-Your application for parental benefit from and including {{planlagtOppstartDato}} can not be processed before {{kanBehandlesDato}} because parental benefit should be calculated based on the income you have when you start your withdrawal. It must also be considered whether you have earned the right to parental benefit when your period starts. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
+When your new application is processed, your parental benefit will be calculated based on the income you have when you start your withdrawal. It must also be considered whether you have earned the right to parental benefit when your period starts. You can read more about this at [nav.no/foreldrepenger](https://nav.no/foreldrepenger).
 {{else}}
 
 You must apply for a new parental benefit period at [nav.no/foreldrepenger](https://nav.no/foreldrepenger). The parental benefit must be withdrawn no later than the day before the new parental benefit period for a new child begins, or no later than the day before the child reaches the age of three.
 {{/if}}
 {{/if}}
 
-When there are 4 weeks left until you are to withdraw your parental benefit, your employer must submit a new income report.
+When there are 4 weeks or less left until you are to withdraw your parental benefit, your employer must submit a new income report.
 
 The decision has been made pursuant to section 14-6, 14-7, 14-9, 14-10, 14-11 and 14-12 of the National Insurance Act.
 {{/utils/redigerbart_innhold}}

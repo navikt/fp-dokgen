@@ -36,4 +36,12 @@ class ForeldrepengerAnnullertTest {
         var expected = getExpected(BREVMAL, "foreldrepenger-annullert_pga_annen_part_overtar_uttaket_%s.txt".formatted(språk.getKode()));
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
+
+    @ParameterizedTest
+    @EnumSource(Språk.class)
+    void skal_generere_foreldrepenger_annullert_pga_søknad_ny_periode(Språk språk) {
+        var content = compileContent(BREVMAL, språk, "test_fp_annullert_pga_søknad_ny_periode");
+        var expected = getExpected(BREVMAL, "foreldrepenger-annullert_pga_søknad_ny_periode_%s.txt".formatted(språk.getKode()));
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
 }
