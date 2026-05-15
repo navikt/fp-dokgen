@@ -1,38 +1,50 @@
 package no.nav.foreldrepenger.fpdokgen.server.app.internal;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import jakarta.ws.rs.ApplicationPath;
-import jakarta.ws.rs.core.Application;
+import io.javalin.config.RoutesConfig;
+import io.javalin.http.HttpStatus;
+import jakarta.enterprise.inject.se.SeContainer;
 import no.nav.foreldrepenger.fpdokgen.server.app.internal.rest.HealtCheckRest;
 import no.nav.foreldrepenger.fpdokgen.server.app.internal.rest.PrometheusRestService;
 
-@ApplicationPath(InternalApiConfig.API_URI)
-public class InternalApiConfig extends Application {
+public final class InternalApiConfig {
+
     private static final Logger LOG = LoggerFactory.getLogger(InternalApiConfig.class);
     public static final String API_URI = "/internal";
 
-    public InternalApiConfig() {
+    private InternalApiConfig() {
+    }
+
+    public static void register(RoutesConfig routes, SeContainer container) {
         LOG.info("Initialiserer: {}", API_URI);
 
-    }
+        routes.get(API_URI + "/health/isAlive", ctx -> {
+            if (container.select(HealtCheckRest.class).get().isAlive()) {
+                ctx.status(HttpStatus.OK);
+            } else {
+                LOG.info("/isAlive NOK.");
+                ctx.status(HttpStatus.INTERNAL_SERVER_ERROR);
+            }
+        });
 
-    @Override
-    public Set<Class<?>> getClasses() {
-        var classes = Set.of(HealtCheckRest.class, PrometheusRestService.class);
+        routes.get(API_URI + "/health/isReady", ctx -> {
+            if (container.select(HealtCheckRest.class).get().isReady()) {
+                ctx.status(HttpStatus.OK);
+            } else {
+                LOG.info("/isReady NOK.");
+                ctx.status(HttpStatus.SERVICE_UNAVAILABLE);
+            }
+        });
+
+        routes.get(API_URI + "/health/preStop", ctx -> ctx.status(HttpStatus.OK));
+
+        routes.get(API_URI + "/metrics/prometheus", ctx -> {
+            ctx.contentType("text/plain");
+            ctx.result(container.select(PrometheusRestService.class).get().prometheus());
+        });
+
         LOG.info("Ferdig med initialisering av {}", API_URI);
-        return classes;
-    }
-
-    @Override
-    public Map<String, Object> getProperties() {
-        Map<String, Object> properties = new HashMap<>();
-        properties.put("jersey.config.server.wadl.disableWadl", true);
-        return properties;
     }
 }
