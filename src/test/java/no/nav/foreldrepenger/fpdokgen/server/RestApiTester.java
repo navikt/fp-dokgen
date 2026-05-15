@@ -6,12 +6,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.core.Application;
 import no.nav.foreldrepenger.fpdokgen.server.app.api.ApiConfig;
 
 public class RestApiTester {
-
 
     static Collection<Method> finnAlleRestMetoder() {
         List<Method> liste = new ArrayList<>();
@@ -26,12 +23,6 @@ public class RestApiTester {
     }
 
     static Collection<Class<?>> finnAlleRestTjenester() {
-        return new ArrayList<>(finnAlleRestTjenester(new ApiConfig()));
-    }
-
-    static Collection<Class<?>> finnAlleRestTjenester(Application config) {
-        return config.getClasses().stream()
-            .filter(c -> c.getAnnotation(Path.class) != null)
-            .toList();
+        return new ArrayList<>(ApiConfig.getEndpointClasses());
     }
 }
