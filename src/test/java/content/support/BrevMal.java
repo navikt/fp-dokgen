@@ -11,7 +11,6 @@ public enum BrevMal {
     FORELDREPENGER_OPPHØR("foreldrepenger-opphor"),
     FORELDREPENGER_ANNULLERT("foreldrepenger-annullert"),
     FORELDREPENGER_INFOBREV_TIL_ANNEN_FORELDER("foreldrepenger-infotilannenforelder"),
-    FORELDREPENGER_FEIL_PRAKSIS_UTSETTELSE_INFOBREV("foreldrepenger-feil-praksis-utsettelse-infobrev"),
 
     //Svangerskapspenger
     SVANGERSKAPSPENGER_INNVILGELSE("svangerskapspenger-innvilgelse"),
@@ -19,7 +18,6 @@ public enum BrevMal {
     SVANGERSKAPSPENGER_AVSLAG("svangerskapspenger-avslag"),
 
     //Støttebrev
-    FRITEKSTBREV("fritekstbrev"),
     FRITEKSTBREV_HTML("fritekstbrev-html"),
     INNHENTE_OPPLYSNINGER("innhente-opplysninger"),
     VARSEL_OM_REVURDERING("varsel-revurdering"),
@@ -29,13 +27,10 @@ public enum BrevMal {
     INGEN_ENDRING("ingen-endring"),
     FORLENGET_SAKSBEHANDLINGSTID("forlenget-saksbehandlingstid"),
     KLAGE_AVVIST("klage-avvist"),
-    KLAGE_HJEMSENDT("klage-hjemsendt"),
+
     KLAGE_OMGJORT("klage-omgjort"),
     KLAGE_OVERSENDT("klage-oversendt"),
-    KLAGE_STADFESTET("klage-stadfestet"),
     ETTERLYS_INNTEKTSMELDING("etterlys-inntektsmelding"),
-    ANKE_OMGJORT("anke-omgjort"),
-    ANKE_OPPHEVET("anke-opphevet"),
     SELVBETJENING_TILSVAR_TILBAKEBETALINGVARSEL("selvbetjening-tilsvar-tilbakebetalingvarsel"),
 
     //Fpinntektsmelding
