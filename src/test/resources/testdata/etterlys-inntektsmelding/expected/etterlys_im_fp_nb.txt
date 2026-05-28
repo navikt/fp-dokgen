@@ -30,7 +30,7 @@ Vi har mottatt inntektsmelding fra:
 Vi kan ikke behandle søknaden din om foreldrepenger før vi har mottatt inntektsmelding fra arbeidsgiverne dine.
 Arbeidsgiverne dine kan logge seg på [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) og sende inntektsmelding derfra.
 ## Du har rett til innsyn
-For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
+For å se dokumentene i saken din, logg inn på [nav.no/foreldrepenger/oversikt](https://www.nav.no/foreldrepenger/oversikt).
 <div style="break-inside: avoid; page-break-inside: avoid">
 ## Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
