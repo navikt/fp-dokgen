@@ -22,7 +22,7 @@ Viss det skjer endringar som kan ha betydning for stønaden du får utbetalt, m�
 ## Du har rett til å klage
 Du kan klage innan 6 veker frå den datoen du mottok vedtaket. Du finn skjema og informasjon på [nav.no/klage](https://nav.no/klage).
 ## Du har rett til innsyn
-For å sjå dokumenta i saka di, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
+For å sjå dokumenta i saka di, logg inn på [nav.no/foreldrepenger](https://www.nav.no/foreldrepenger/oversikt).
 <div style="break-inside: avoid; page-break-inside: avoid">
 ## Har du spørsmål?
 Du finn meir informasjon på [nav.no/barn](https://nav.no/barn).

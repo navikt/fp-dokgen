@@ -24,7 +24,7 @@ Vi har fått opplysningene vi har bedt om, og du har fremdeles rett til engangss
 </div>
 <div id="readonly-innhold">
 ## Du har rett til innsyn
-For å se dokumentene i saken din, logg inn på [foreldrepenger.nav.no](https://foreldrepenger.nav.no/).
+For å se dokumentene i saken din, logg inn på [nav.no/foreldrepenger](https://www.nav.no/foreldrepenger/oversikt).
 <div style="break-inside: avoid; page-break-inside: avoid">
 ## Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).
