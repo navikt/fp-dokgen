@@ -39,7 +39,7 @@ Du sender dokumentasjonen til oss på [nav.no/ettersendelser](https://nav.no/ett
 </div>
 <div id="readonly-innhold">
 ## Du har rett til innsyn
-For å sjå dokumenta i saka di, logg inn på [nav.no/foreldrepenger](https://www.nav.no/foreldrepenger/oversikt).
+For å sjå dokumenta i saka di, logg inn på [nav.no/foreldrepenger/oversikt](https://www.nav.no/foreldrepenger/oversikt).
 <div style="break-inside: avoid; page-break-inside: avoid">
 ## Har du spørsmål?
 Du finn meir informasjon på [nav.no/barn](https://nav.no/barn).

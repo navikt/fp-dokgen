@@ -26,7 +26,7 @@ FRITEKST
 <br/>
 Har du nye opplysninger eller ønsker å uttale deg, kan du sende dette via [nav.no/klage](https://nav.no/klage). Velg Nav-enhet: Nav Klageinstans Midt-Norge.
 ## Du har rett til innsyn
-For å se dokumentene i saken din, logg inn på [nav.no/foreldrepenger](https://www.nav.no/foreldrepenger/oversikt).
+For å se dokumentene i saken din, logg inn på [nav.no/foreldrepenger/oversikt](https://www.nav.no/foreldrepenger/oversikt).
 <div style="break-inside: avoid; page-break-inside: avoid">
 ## Har du spørsmål?
 Du finner mer informasjon på [nav.no/barn](https://nav.no/barn).

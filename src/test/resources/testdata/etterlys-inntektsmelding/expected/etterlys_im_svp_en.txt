@@ -28,7 +28,7 @@ We have received an income report from:
 We cannot process your application for pregnancy benefit until we have received an income report from your employer.
 Your employer can log in to [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) and submit the income report there.
 ## You have right of access
-Log into [nav.no/foreldrepenger](https://www.nav.no/foreldrepenger/oversikt) to see the documents in your case.
+Log into [nav.no/foreldrepenger/oversikt](https://www.nav.no/foreldrepenger/oversikt) to see the documents in your case.
 <div style="break-inside: avoid; page-break-inside: avoid">
 ## Do you have questions?
 You can find more information at [nav.no/barn](https://nav.no/barn).
