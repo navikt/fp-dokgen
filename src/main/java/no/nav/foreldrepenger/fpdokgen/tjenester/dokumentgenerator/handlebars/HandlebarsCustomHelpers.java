@@ -13,6 +13,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Properties;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import com.github.jknack.handlebars.Context;
 import com.github.jknack.handlebars.Helper;
@@ -415,6 +418,116 @@ final class HandlebarsCustomHelpers {
             }
 
             return result;
+        }
+    }
+
+    /**
+     * Concatenates the helper argument with all positional parameters into a single string.
+     * <p>
+     * Useful for building dynamic partial names, e.g. {{> (concat "header_" __språkKode)}}.
+     */
+    static class ConcatHelper implements Helper<Object> {
+        @Override
+        public Object apply(Object first, Options options) {
+            var sb = new StringBuilder();
+            if (first != null) {
+                sb.append(first);
+            }
+            for (var param : options.params) {
+                if (param != null) {
+                    sb.append(param);
+                }
+            }
+            return sb.toString();
+        }
+    }
+
+    /**
+     * Translates an i18n key using the bundle for the current template and language.
+     * <p>
+     * Context must contain {@code __malNavn} and {@code __språkKode}; the bundle is loaded
+     * from {@code /content/templates/<malNavn>/i18n_<språkKode>.properties} (classloader-based,
+     * jar-safe). Loaded bundles are cached for the lifetime of the helper instance.
+     * <p>
+     * Supported pattern syntax inside the resolved string:
+     * <ul>
+     *   <li>{@code {name}} — replaced with the value passed as a named hash parameter,
+     *       e.g. {@code {{t "key" name=value}}}.</li>
+     *   <li>{@code {name|one|other}} — pluralization. Renders {@code one} if the value
+     *       of {@code name} equals 1, otherwise {@code other}. Works for binary plural
+     *       languages (nb/nn/en). Replace with ICU MessageFormat if 3+ forms are needed.</li>
+     * </ul>
+     */
+    static class TranslateHelper implements Helper<String> {
+        private static final Pattern TOKEN = Pattern.compile("\\{([^{}|]+)(?:\\|([^{}|]*)\\|([^{}]*))?\\}");
+        private static final String MAL_NAVN = "__malNavn";
+        private static final String SPRAAK_KODE = "__språkKode";
+
+        private final java.util.concurrent.ConcurrentHashMap<String, Properties> bundleCache = new java.util.concurrent.ConcurrentHashMap<>();
+
+        @Override
+        public Object apply(String key, Options options) {
+            var malNavn = (String) options.context.get(MAL_NAVN);
+            var språkKode = (String) options.context.get(SPRAAK_KODE);
+            if (malNavn == null || språkKode == null) {
+                throw new IllegalStateException(
+                    "i18n helper 't' requires __malNavn and __språkKode in context (key=" + key + ")");
+            }
+            var bundleKey = malNavn + "_" + språkKode;
+            var bundle = bundleCache.computeIfAbsent(bundleKey, k -> lastBundle(malNavn, språkKode));
+            var pattern = bundle.getProperty(key);
+            if (pattern == null) {
+                throw new IllegalStateException("Missing i18n key '" + key + "' in bundle '" + bundleKey + "'");
+            }
+            return format(pattern, options.hash);
+        }
+
+        private Properties lastBundle(String malNavn, String språkKode) {
+            var path = "/content/templates/" + malNavn + "/i18n_" + språkKode + ".properties";
+            try (var is = TranslateHelper.class.getResourceAsStream(path)) {
+                if (is == null) {
+                    throw new IllegalStateException("Missing i18n bundle resource: " + path);
+                }
+                var props = new Properties();
+                props.load(new java.io.InputStreamReader(is, java.nio.charset.StandardCharsets.UTF_8));
+                return props;
+            } catch (IOException e) {
+                throw new IllegalStateException("Kunne ikke lese i18n bundle: " + path, e);
+            }
+        }
+
+        private String format(String pattern, Map<String, Object> params) {
+            var matcher = TOKEN.matcher(pattern);
+            var sb = new StringBuilder();
+            while (matcher.find()) {
+                var name = matcher.group(1);
+                var oneForm = matcher.group(2);
+                var otherForm = matcher.group(3);
+                var value = params.get(name);
+                String replacement;
+                if (oneForm != null) {
+                    replacement = isOne(value) ? oneForm : otherForm;
+                } else {
+                    replacement = value == null ? "" : value.toString();
+                }
+                matcher.appendReplacement(sb, Matcher.quoteReplacement(replacement));
+            }
+            matcher.appendTail(sb);
+            return sb.toString();
+        }
+
+        private boolean isOne(Object value) {
+            if (value instanceof Number n) {
+                return n.longValue() == 1L;
+            }
+            if (value instanceof String s) {
+                try {
+                    return Long.parseLong(s) == 1L;
+                } catch (NumberFormatException e) {
+                    return false;
+                }
+            }
+            return false;
         }
     }
 }

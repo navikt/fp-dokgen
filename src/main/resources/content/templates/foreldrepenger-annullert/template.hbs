@@ -1,0 +1,53 @@
+{{!-- @formatter:off --}}
+{{> (concat "header_" __språkKode) }}
+{{#> utils/redigerbart_innhold}}
+#  {{t "tittel"}}
+
+{{#if annulleringÅrsak}}
+{{#if (or (eq annulleringÅrsak "BRUKER_HAR_SØKT_OM_NY_PERIODE") (eq annulleringÅrsak "BRUKER_MOTTAR_PLEIEPENGER") (eq annulleringÅrsak "MANUELL_SAKSBEHANDLING")) }}
+{{t "intro.brukerValgte"}}
+{{else}}
+{{t "intro.annullert"}}
+{{/if}}
+
+{{~#switch annulleringÅrsak}}
+{{~#case "BRUKER_HAR_SØKT_OM_NY_PERIODE"}}
+{{t "nyPeriode" planlagtOppstartDato=planlagtOppstartDato}}
+{{/case}}
+{{~#case "BRUKER_MOTTAR_PLEIEPENGER"}}
+{{t "pleiepenger"}}
+
+{{/case}}
+{{~#case "ANNEN_PART_OVERTAR_UTTAKET"}}
+{{t "annenPartOvertar"}}
+
+{{/case}}
+{{~/switch}}
+{{#if (or (eq annulleringÅrsak "BRUKER_MOTTAR_PLEIEPENGER") (eq annulleringÅrsak "MANUELL_SAKSBEHANDLING") (eq annulleringÅrsak "ANNEN_PART_OVERTAR_UTTAKET")) }}
+{{t "måSøkePåNytt"}}
+{{/if}}
+
+{{else}}
+{{t "intro.brukerValgte"}}
+
+{{#if harSøktOmNyPeriode}}
+{{t "nyPeriode" planlagtOppstartDato=planlagtOppstartDato}}
+{{else}}
+
+{{t "måSøkePåNytt"}}
+{{/if}}
+{{/if}}
+
+{{t "inntektsmelding"}}
+
+{{t "lovhjemmel"}}
+{{/utils/redigerbart_innhold}}
+
+
+{{#> utils/readonly_innhold}}
+## {{t "klage.tittel"}}
+{{t "klage.tekst" klagefristUker=klagefristUker}}
+
+{{> (concat "footer_" __språkKode) }}
+{{/utils/readonly_innhold}}
+{{!-- @formatter:on --}}
