@@ -22,6 +22,8 @@ import com.github.jknack.handlebars.Helper;
 import com.github.jknack.handlebars.Options;
 import com.neovisionaries.i18n.CountryCode;
 
+import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.ContentUtil;
+
 /**
  * Custom Handlebars helpers for document generation.
  */
@@ -453,13 +455,14 @@ final class HandlebarsCustomHelpers {
      * <ul>
      *   <li>{@code {name}} — replaced with the value passed as a named hash parameter,
      *       e.g. {@code {{t "key" name=value}}}.</li>
-     *   <li>{@code {name|one|other}} — pluralization. Renders {@code one} if the value
-     *       of {@code name} equals 1, otherwise {@code other}. Works for binary plural
-     *       languages (nb/nn/en). Replace with ICU MessageFormat if 3+ forms are needed.</li>
+     *   <li>{@code {name|one|other}} — binary pluralization. Renders {@code one} if the
+     *       value of {@code name} equals 1, otherwise {@code other}.</li>
+     *   <li>{@code {name|zero|one|other}} — ternary pluralization. Renders {@code zero}
+     *       if the value is 0, {@code one} if 1, otherwise {@code other}.</li>
      * </ul>
      */
     static class TranslateHelper implements Helper<String> {
-        private static final Pattern TOKEN = Pattern.compile("\\{([^{}|]+)(?:\\|([^{}|]*)\\|([^{}]*))?\\}");
+        private static final Pattern TOKEN = Pattern.compile("\\{([^{}|]+)(?:\\|([^{}]*))?\\}");
         private static final String MAL_NAVN = "__malNavn";
         private static final String SPRAAK_KODE = "__språkKode";
 
@@ -483,8 +486,8 @@ final class HandlebarsCustomHelpers {
         }
 
         private Properties lastBundle(String malNavn, String språkKode) {
-            var path = "/content/templates/" + malNavn + "/i18n_" + språkKode + ".properties";
-            try (var is = TranslateHelper.class.getResourceAsStream(path)) {
+            var path = ContentUtil.hentPathForI18nProperties(malNavn, språkKode);
+            try (var is = TranslateHelper.class.getResourceAsStream(path.toString())) {
                 if (is == null) {
                     throw new IllegalStateException("Missing i18n bundle resource: " + path);
                 }
@@ -501,12 +504,12 @@ final class HandlebarsCustomHelpers {
             var sb = new StringBuilder();
             while (matcher.find()) {
                 var name = matcher.group(1);
-                var oneForm = matcher.group(2);
-                var otherForm = matcher.group(3);
+                var forms = matcher.group(2);
                 var value = params.get(name);
                 String replacement;
-                if (oneForm != null) {
-                    replacement = isOne(value) ? oneForm : otherForm;
+                if (forms != null) {
+                    var parts = forms.split("\\|", -1);
+                    replacement = selectPluralForm(value, parts);
                 } else {
                     replacement = value == null ? "" : value.toString();
                 }
@@ -516,18 +519,38 @@ final class HandlebarsCustomHelpers {
             return sb.toString();
         }
 
-        private boolean isOne(Object value) {
+        private String selectPluralForm(Object value, String[] parts) {
+            var number = asLong(value);
+            if (parts.length == 2) {
+                // {name|one|other}
+                return number != null && number == 1L ? parts[0] : parts[1];
+            }
+            if (parts.length == 3) {
+                // {name|zero|one|other}
+                if (number != null && number == 0L) {
+                    return parts[0];
+                }
+                if (number != null && number == 1L) {
+                    return parts[1];
+                }
+                return parts[2];
+            }
+            throw new IllegalStateException(
+                "Plural pattern must have 2 (one|other) or 3 (zero|one|other) forms, got " + parts.length);
+        }
+
+        private Long asLong(Object value) {
             if (value instanceof Number n) {
-                return n.longValue() == 1L;
+                return n.longValue();
             }
             if (value instanceof String s) {
                 try {
-                    return Long.parseLong(s) == 1L;
+                    return Long.parseLong(s);
                 } catch (NumberFormatException e) {
-                    return false;
+                    return null;
                 }
             }
-            return false;
+            return null;
         }
     }
 }

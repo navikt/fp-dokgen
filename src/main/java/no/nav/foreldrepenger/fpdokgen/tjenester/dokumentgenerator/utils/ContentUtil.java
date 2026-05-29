@@ -24,6 +24,10 @@ public class ContentUtil {
         return CONTENT_BASE_PATH.resolve("templates/%s/template_%s.hbs".formatted(malNavn, språkKode));
     }
 
+    public static Path hentPathForI18nProperties(String malNavn, String språkKode) {
+        return CONTENT_BASE_PATH.resolve("templates/%s/i18n_%s.properties".formatted(malNavn, språkKode));
+    }
+
     public static Path hentSchemaPathForMal(String malNavn) {
         return CONTENT_BASE_PATH.resolve("templates/%s/schema.json".formatted(malNavn));
     }

@@ -1,0 +1,354 @@
+{{> (concat "header_" __språkKode) }}
+
+{{#> utils/redigerbart_innhold}}
+#  {{t "tittel"}}
+
+## {{t "detteHarViAvslått"}}
+
+{{~#* inline "punkt" ~}}
+{{~#gt (size avslåttePerioder) 1}}* {{/gt}}
+{{~/inline~}}
+
+{{~#each avslåttePerioder}}
+
+{{#eq avslagsårsak "1035"}}
+{{>punkt}}{{t "avslag.1035"}}
+{{/eq}}
+
+{{#eq avslagsårsak "1041"}}
+{{>punkt}}{{t "avslag.1041" halvG=(thousand-seperator halvG)}}
+{{/eq}}
+
+{{#eq avslagsårsak "1001"}}
+{{>punkt}}{{t "avslag.1001"}}
+{{/eq}}
+
+{{#in-array (array "1004" "1013") avslagsårsak}}
+{{>punkt}}{{t "avslag.1004_1013" antallBarn=antallBarn}}
+{{/in-array}}
+
+{{#eq avslagsårsak "1026"}}
+{{>punkt}}{{t "avslag.1026" antallBarn=antallBarn}}
+{{/eq}}
+
+{{#eq avslagsårsak "1051"}}
+{{>punkt}}{{t "avslag.1051" antallBarn=antallBarn}}
+{{/eq}}
+
+{{#eq avslagsårsak "4002"}}
+{{>punkt}}{{t "avslag.4002" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "1031"}}
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
+{{>punkt}}{{t "engangsstønad.annenForelder"}}
+{{/in-array}}
+{{#eq relasjonsRolleType "MORA"}}
+{{>punkt}}{{t "engangsstønad.du"}}
+{{/eq}}
+{{else}}
+{{>punkt}}{{t "engangsstønad.du"}}
+{{/if}}
+{{/eq}}
+
+{{#eq avslagsårsak "1033"}}
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
+{{>punkt}}{{t "engangsstønad.du"}}
+{{/in-array}}
+{{#eq relasjonsRolleType "MORA"}}
+{{>punkt}}{{t "engangsstønad.annenForelder"}}
+{{/eq}}
+{{else}}
+{{>punkt}}{{t "engangsstønad.annenForelder"}}
+{{/if}}
+{{/eq}}
+
+{{#eq avslagsårsak "1032"}}
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
+{{>punkt}}{{t "foreldrepenger.fårUtbetalt.annenForelder"}}
+{{/in-array}}
+{{#eq relasjonsRolleType "MORA"}}
+{{>punkt}}{{t "foreldrepenger.fårUtbetalt.du"}}
+{{/eq}}
+{{else}}
+{{>punkt}}{{t "foreldrepenger.fårUtbetalt.du"}}
+{{/if}}
+{{/eq}}
+
+{{#eq avslagsårsak "1034"}}
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
+{{>punkt}}{{t "foreldrepenger.fårUtbetalt.du"}}
+{{/in-array}}
+{{#eq relasjonsRolleType "MORA"}}
+{{>punkt}}{{t "foreldrepenger.fårUtbetalt.annenForelder"}}
+{{/eq}}
+{{else}}
+{{>punkt}}{{t "foreldrepenger.fårUtbetalt.annenForelder"}}
+{{/if}}
+{{/eq}}
+
+{{#if relasjonsRolleType}}{{#in-array (array "FARA" "MMOR") relasjonsRolleType}}{{#in-array (array "1027" "1029") avslagsårsak}}
+{{#eq relasjonsRolleType "FARA"}}{{>punkt}}{{t "avslag.ikkeRegistrertSomForelder.far" antallBarn=antallBarn}}{{/eq}}
+{{#eq relasjonsRolleType "MMOR"}}{{>punkt}}{{t "avslag.ikkeRegistrertSomForelder.medmor" antallBarn=antallBarn}}{{/eq}}
+{{/in-array}}{{/in-array}}{{/if}}
+
+{{#in-array (array "4012" "4003") avslagsårsak}}
+{{>punkt}}{{t "avslag.4012_4003" periodeFom=periodeFom periodeTom=periodeTom antallBarn=antallBarn}}
+{{/in-array}}
+
+{{#eq avslagsårsak "1015"}}
+{{>punkt}}{{t "avslag.1015" antallBarn=antallBarn}}
+{{/eq}}
+
+{{#eq avslagsårsak "1014"}}
+{{>punkt}}{{t "avslag.1014" antallBarn=antallBarn}}
+{{/eq}}
+
+{{#in-array (array "1020" "1021" "1023" "1024" "1025") avslagsårsak}}
+{{#eq barnErFødt false}}
+{{>punkt}}{{t "medlemskap.barnIkkeFødt"}}
+{{/eq}}
+{{#eq barnErFødt true}}
+{{#eq gjelderFødsel true}}
+{{>punkt}}{{t "medlemskap.fødsel" antallBarn=antallBarn}}
+{{/eq}}
+{{#eq gjelderFødsel false}}
+{{>punkt}}{{t "medlemskap.omsorg" antallBarn=antallBarn}}
+{{/eq}}{{/eq}}
+{{/in-array}}
+
+{{#eq avslagsårsak "1021"}}
+{{>punkt}}{{t "avslag.1021"}}
+{{/eq}}
+
+{{#eq avslagsårsak "1020"}}
+{{>punkt}}{{t "avslag.1020"}}
+{{/eq}}
+
+{{#eq avslagsårsak "1023"}}
+{{>punkt}}{{t "avslag.1023"}}
+{{/eq}}
+
+{{#eq avslagsårsak "1024"}}
+{{>punkt}}{{t "avslag.1024"}}
+{{/eq}}
+
+{{#eq avslagsårsak "1025"}}
+{{>punkt}}{{t "avslag.1025"}}
+{{/eq}}
+
+{{#eq avslagsårsak "4020"}}
+{{>punkt}}{{t "avslag.4020" periodeFom=periodeFom periodeTom=periodeTom mottattDato=mottattDato}}
+{{/eq}}
+
+{{#eq avslagsårsak "4008"}}
+{{>punkt}}{{t "avslag.4008" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4076"}}
+{{>punkt}}{{t "avslag.4076" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#in-array (array "1028" "4007") avslagsårsak}}
+{{>punkt}}{{t "avslag.1028_4007" periodeFom=periodeFom periodeTom=periodeTom antallBarn=antallBarn}}
+{{/in-array}}
+
+{{#eq avslagsårsak "4050"}}
+{{>punkt}}{{t "avslag.4050" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4051"}}
+{{>punkt}}{{t "avslag.4051" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4052"}}
+{{>punkt}}{{t "avslag.4052" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4053"}}
+{{>punkt}}{{t "avslag.4053" periodeFom=periodeFom periodeTom=periodeTom antallBarn=antallBarn}}
+{{/eq}}
+
+{{#eq avslagsårsak "4054"}}
+{{>punkt}}{{t "avslag.4054" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4055"}}
+{{>punkt}}{{t "avslag.4055" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4056"}}
+{{>punkt}}{{t "avslag.4056" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4073"}}
+{{>punkt}}{{t "avslag.4073" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4075"}}
+{{>punkt}}{{t "avslag.4075"}}
+{{/eq}}
+
+{{#eq avslagsårsak "4057"}}
+{{>punkt}}{{t "avslag.4057" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "1019"}}
+{{>punkt}}{{t "avslag.1019"}}
+{{/eq}}
+
+{{#eq avslagsårsak "4005"}}
+{{>punkt}}{{t "avslag.4005" periodeFom=periodeFom periodeTom=periodeTom antallTapteDager=antallTapteDager}}
+{{/eq}}
+
+{{#eq avslagsårsak "4102"}}
+{{#gt antallTapteDager 0}}{{>punkt}}{{t "avslag.4102" periodeFom=periodeFom periodeTom=periodeTom antallTapteDager=antallTapteDager}}{{/gt}}
+{{/eq}}
+
+{{#eq avslagsårsak "4033"}}
+{{>punkt}}{{t "avslag.4033" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4041"}}
+{{>punkt}}{{t "avslag.4041" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4032"}}
+{{>punkt}}{{t "avslag.4032" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#in-array (array "4039" "4111") avslagsårsak}}
+{{>punkt}}{{t "avslag.4039_4111" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/in-array}}
+
+{{#in-array (array "4040" "4112") avslagsårsak}}
+{{>punkt}}{{t "avslag.4040_4112" periodeFom=periodeFom periodeTom=periodeTom antallBarn=antallBarn}}
+{{/in-array}}
+
+{{#eq avslagsårsak "4037"}}
+{{>punkt}}{{t "avslag.4037" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#in-array (array "4030" "4031") avslagsårsak}}
+{{>punkt}}{{t "avslag.4030_4031" periodeFom=periodeFom periodeTom=periodeTom antallBarn=antallBarn}}
+{{/in-array}}
+
+{{#in-array (array "4038" "4110") avslagsårsak}}
+{{>punkt}}{{t "avslag.4038_4110" periodeFom=periodeFom periodeTom=periodeTom antallBarn=antallBarn}}
+{{/in-array}}
+
+{{#eq avslagsårsak "4082"}}
+{{>punkt}}{{t "avslag.4082" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4504"}}
+{{>punkt}}{{t "avslag.4504" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4025"}}
+{{>punkt}}{{t "avslag.4025" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#in-array (array "4080" "4501") avslagsårsak}}
+{{>punkt}}{{t "avslag.4080_4501" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/in-array}}
+
+{{#eq avslagsårsak "4093"}}
+{{>punkt}}{{t "avslag.4093" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#in-array (array "4084" "4085") avslagsårsak}}
+{{>punkt}}{{t "avslag.4084_4085" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/in-array}}
+
+{{#eq avslagsårsak "4086"}}
+{{>punkt}}{{t "avslag.4086" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4092"}}
+{{>punkt}}{{t "avslag.4092" periodeFom=periodeFom periodeTom=periodeTom antallBarn=antallBarn}}
+{{/eq}}
+
+{{#in-array (array "4061" "4062" "4063" "4064" "4065" "4115" "4116" "4117") avslagsårsak}}
+{{>punkt}}{{t "avslag.4061_4115" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/in-array}}
+
+{{#in-array (array "4094" "4502") avslagsårsak}}
+{{>punkt}}{{t "avslag.4094_4502" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/in-array}}
+
+{{#eq avslagsårsak "4074"}}
+{{>punkt}}{{t "avslag.4074" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#in-array (array "4066" "4067" "4068" "4069" "4070" "4088" "4089") avslagsårsak}}
+{{>punkt}}{{t "avslag.4066_4089" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/in-array}}
+
+{{#eq avslagsårsak "4013"}}
+{{>punkt}}{{t "avslag.4013" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4022"}}
+{{>punkt}}{{t "avslag.4022" periodeFom=periodeFom periodeTom=periodeTom antallBarn=antallBarn}}
+{{/eq}}
+
+{{#eq avslagsårsak "4034"}}
+{{>punkt}}{{t "avslag.4034" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4035"}}
+{{>punkt}}{{t "avslag.4035" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#in-array (array "4058" "4059") avslagsårsak}}
+{{>punkt}}{{t "avslag.4058_4059" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/in-array}}
+
+{{#eq avslagsårsak "4060"}}
+{{>punkt}}{{t "avslag.4060" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4081"}}
+{{>punkt}}{{t "avslag.4081" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4100"}}
+{{>punkt}}{{t "avslag.4100" periodeFom=periodeFom periodeTom=periodeTom antallBarn=antallBarn}}
+{{/eq}}
+
+{{#eq avslagsårsak "4087"}}
+{{>punkt}}{{t "avslag.4087" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4104"}}
+{{>punkt}}{{t "avslag.4104" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+
+{{#eq avslagsårsak "4108"}}
+{{>punkt}}{{t "avslag.4108" periodeFom=periodeFom periodeTom=periodeTom}}
+{{/eq}}
+{{/each}}
+
+{{~#if felles.fritekst}}
+{{felles.fritekst}}
+{{/if~}}
+
+{{~#each avslåttePerioder}}
+{{#in-array (array "1035" "1041") avslagsårsak}}
+{{#if gjelderMor}}
+{{{t "engangsstønadMulighet"}}}
+{{/if}}
+{{/in-array}}
+{{/each}}
+
+{{t "lovhjemmel" lovhjemmelForAvslag=lovhjemmelForAvslag}}
+{{/utils/redigerbart_innhold}}
+
+
+{{#> utils/readonly_innhold}}
+## {{t "klage.tittel"}}
+{{t "klage.tekst" klagefristUker=klagefristUker}}
+
+{{> (concat "footer_" __språkKode) }}
+{{/utils/readonly_innhold}}
