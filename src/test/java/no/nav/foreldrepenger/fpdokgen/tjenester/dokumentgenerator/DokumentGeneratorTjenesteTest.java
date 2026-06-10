@@ -47,7 +47,7 @@ class DokumentGeneratorTjenesteTest {
             var dataFelter = """
                 {"testProp1": 1, "testProp2": 2}
                 """;
-            when(handlebarsTjeneste.genererDokumentInnhold(any(), any())).thenReturn("markdown");
+            when(handlebarsTjeneste.genererDokumentInnhold(any(), any(), any(), any())).thenReturn("markdown");
             when(pdfGeneratorTjeneste.genererPdf(any())).thenReturn(new byte[]{0x25, 0x50, 0x44, 0x46});
 
             // Act
@@ -78,7 +78,7 @@ class DokumentGeneratorTjenesteTest {
             var dataFelter = """
                 {"testProp1": 1, "testProp2": 2}
                 """;
-            when(handlebarsTjeneste.genererDokumentInnhold(any(), any())).thenReturn("markdown");
+            when(handlebarsTjeneste.genererDokumentInnhold(any(), any(), any(), any())).thenReturn("markdown");
             when(pdfGeneratorTjeneste.genererPdf(any())).thenReturn(new byte[]{0x25, 0x50, 0x44, 0x46});
 
             // Act & Assert - skal ikke kaste exception
@@ -94,7 +94,7 @@ class DokumentGeneratorTjenesteTest {
             var dataFelter = """
                 {"testProp1": 1, "testProp2": 2}
                 """;
-            when(handlebarsTjeneste.genererDokumentInnhold(any(), any())).thenReturn("markdown");
+            when(handlebarsTjeneste.genererDokumentInnhold(any(), any(), any(), any())).thenReturn("markdown");
             when(pdfGeneratorTjeneste.genererPdf(any())).thenReturn(new byte[]{0x25, 0x50, 0x44, 0x46});
 
             // Act & Assert - skal ikke kaste exception

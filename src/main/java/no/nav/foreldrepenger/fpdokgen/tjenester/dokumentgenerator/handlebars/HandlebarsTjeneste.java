@@ -2,6 +2,7 @@ package no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.handlebars;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
 import java.util.Map;
 
 import com.github.jknack.handlebars.Context;
@@ -14,6 +15,7 @@ import com.github.jknack.handlebars.helper.StringHelpers;
 import com.github.jknack.handlebars.io.ClassPathTemplateLoader;
 
 import jakarta.enterprise.context.Dependent;
+import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.DokumentSpråk;
 
 @Dependent
 public class HandlebarsTjeneste {
@@ -58,6 +60,8 @@ public class HandlebarsTjeneste {
         handlebars.registerHelper("format-text", new HandlebarsCustomHelpers.FormatText());
         handlebars.registerHelper("land-norsk", new HandlebarsCustomHelpers.CountryCodeHelper());
         handlebars.registerHelper("antall-virkedager", new HandlebarsCustomHelpers.AntallVirkedagerMellomToDatoer());
+        handlebars.registerHelper("concat", new HandlebarsCustomHelpers.ConcatHelper());
+        handlebars.registerHelper("t", new HandlebarsCustomHelpers.TranslateHelper());
 
         // String helpers
         handlebars.registerHelpers(StringHelpers.class);
@@ -73,6 +77,13 @@ public class HandlebarsTjeneste {
         } catch (IOException e) {
             throw new IllegalStateException("Kunne ikke kompilere mal", e);
         }
+    }
+
+    public String genererDokumentInnhold(String mal, Map<String, Object> data, String malNavn, DokumentSpråk språk) {
+        var beriket = new HashMap<>(data);
+        beriket.put("__malNavn", malNavn);
+        beriket.put("__språkKode", språk == null ? null : språk.toString());
+        return genererDokumentInnhold(mal, beriket);
     }
 
     public Context contextOf(Map<String, Object> model) {

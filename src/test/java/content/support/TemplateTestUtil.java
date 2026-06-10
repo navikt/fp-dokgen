@@ -40,6 +40,20 @@ public final class TemplateTestUtil {
         return produceContent(mergeFieldsJsonString, templateContent);
     }
 
+    public static String compileContentI18n(BrevMal brevmal, Språk språk, String testDataFilename) {
+        var templateContent = readContent(ContentUtil.hentPathForMal(brevmal.getNavn()));
+        var mergeFieldsJsonString = readContent(TestContentUtil.getTestDataPath(brevmal, testDataFilename));
+        var mergeFields = getJsonFromString(mergeFieldsJsonString);
+        var språkEnum = no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.DokumentSpråk
+            .valueOf(switch (språk) {
+                case BOKMÅL -> "BOKMÅL";
+                case NYNORSK -> "NYNORSK";
+                case ENGELSK -> "ENGELSK";
+            });
+        var handlebarsTjeneste = new HandlebarsTjeneste();
+        return removeNewLines(handlebarsTjeneste.genererDokumentInnhold(templateContent, mergeFields, brevmal.getNavn(), språkEnum));
+    }
+
     public static String compileContent(BrevMal brevmal, Språk språk, Map<String, Object> testData) {
         var templateContent = readContent(ContentUtil.hentPathForMal(brevmal.getNavn(), språk.getKode()));
         return produceContent(testData, templateContent);

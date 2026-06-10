@@ -1,6 +1,7 @@
 package no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.handlebars;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 
 import java.io.IOException;
 import java.util.Map;
@@ -500,6 +501,188 @@ class HandlebarsCustomHelpersTest {
             var template = handlebars.compileInline("{{size items}}");
             var result = template.apply(java.util.Map.of("items", "not an array"));
             assertThat(result).isEqualTo("0");
+        }
+    }
+
+    @Nested
+    class ConcatHelperTest {
+
+        @Test
+        void skalSetteSammenToStrenger() throws IOException {
+            var template = handlebars.compileInline("{{concat \"header_\" \"nb\"}}");
+            var result = template.apply(null);
+            assertThat(result).isEqualTo("header_nb");
+        }
+
+        @Test
+        void skalSetteSammenFlereStrenger() throws IOException {
+            var template = handlebars.compileInline("{{concat \"a\" \"b\" \"c\" \"d\"}}");
+            var result = template.apply(null);
+            assertThat(result).isEqualTo("abcd");
+        }
+
+        @Test
+        void skalBrukeKontekstVerdi() throws IOException {
+            var template = handlebars.compileInline("{{concat \"header_\" språkKode}}");
+            var result = template.apply(Map.of("språkKode", "nn"));
+            assertThat(result).isEqualTo("header_nn");
+        }
+
+        @Test
+        void skalIgnorereNullParametre() throws IOException {
+            var template = handlebars.compileInline("{{concat \"prefix-\" mangler}}");
+            var result = template.apply(Map.of());
+            assertThat(result).isEqualTo("prefix-");
+        }
+
+        @Test
+        void skalHåndtereTall() throws IOException {
+            var template = handlebars.compileInline("{{concat \"v\" versjon}}");
+            var result = template.apply(Map.of("versjon", 42));
+            assertThat(result).isEqualTo("v42");
+        }
+    }
+
+    @Nested
+    class TranslateHelperTest {
+
+        private Map<String, Object> kontekstMed(Map<String, Object> extras) {
+            var map = new java.util.HashMap<String, Object>();
+            map.put("__malNavn", "test-i18n");
+            map.put("__språkKode", "nb");
+            map.putAll(extras);
+            return map;
+        }
+
+        @Test
+        void skalSlåOppEnkelNøkkel() throws IOException {
+            var template = handlebars.compileInline("{{t \"enkel\"}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).isEqualTo("Hei verden");
+        }
+
+        @Test
+        void skalSubstituereNamedParameter() throws IOException {
+            var template = handlebars.compileInline("{{t \"medParameter\" navn=\"Dolly\"}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).isEqualTo("Hei Dolly");
+        }
+
+        @Test
+        void skalSubstituereFlereParametre() throws IOException {
+            var template = handlebars.compileInline("{{t \"medFlereParametre\" hilsen=\"Hei\" navn=\"Dolly\" alder=30}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).isEqualTo("Hei Dolly, du er 30 år");
+        }
+
+        @Test
+        void skalVelgeEntallVedBinaerPlural() throws IOException {
+            var template = handlebars.compileInline("{{t \"binaerPlural\" antall=1}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).isEqualTo("Du har en sak");
+        }
+
+        @Test
+        void skalVelgeFlertallVedBinaerPlural() throws IOException {
+            var template = handlebars.compileInline("{{t \"binaerPlural\" antall=5}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).isEqualTo("Du har flere saker");
+        }
+
+        @Test
+        void skalVelgeFlertallVedNullForBinaerPlural() throws IOException {
+            var template = handlebars.compileInline("{{t \"binaerPlural\" antall=0}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).isEqualTo("Du har flere saker");
+        }
+
+        @Test
+        void skalVelgeZeroFormVedTernaerPlural() throws IOException {
+            var template = handlebars.compileInline("{{t \"ternaerPlural\" antall=0}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).isEqualTo("Du har ingen barn");
+        }
+
+        @Test
+        void skalVelgeEntallVedTernaerPlural() throws IOException {
+            var template = handlebars.compileInline("{{t \"ternaerPlural\" antall=1}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).isEqualTo("Du har ett barn");
+        }
+
+        @Test
+        void skalVelgeFlertallVedTernaerPlural() throws IOException {
+            var template = handlebars.compileInline("{{t \"ternaerPlural\" antall=3}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).isEqualTo("Du har flere barn");
+        }
+
+        @Test
+        void skalKombinereSubstitusjonOgPluralForSammeVariabel() throws IOException {
+            var binding = handlebars.compileInline("{{t \"pluralMedTekst\" antall=1}}");
+            assertThat(binding.apply(kontekstMed(Map.of()))).isEqualTo("1 dag");
+            var binding2 = handlebars.compileInline("{{t \"pluralMedTekst\" antall=7}}");
+            assertThat(binding2.apply(kontekstMed(Map.of()))).isEqualTo("7 dager");
+        }
+
+        @Test
+        void skalParseStringverdiSomTallForPlural() throws IOException {
+            var template = handlebars.compileInline("{{t \"binaerPlural\" antall=\"1\"}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).isEqualTo("Du har en sak");
+        }
+
+        @Test
+        void skalSubstituereTomtNårParameterMangler() throws IOException {
+            var template = handlebars.compileInline("{{t \"manglerParameter\"}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).isEqualTo("Hei ");
+        }
+
+        @Test
+        void skalRendreHtmlNårTripleStashBrukes() throws IOException {
+            var template = handlebars.compileInline("{{{t \"medHtml\"}}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).isEqualTo("Linje 1<br/>Linje 2");
+        }
+
+        @Test
+        void skalEskapereHtmlMedDoubleStash() throws IOException {
+            var template = handlebars.compileInline("{{t \"medHtml\"}}");
+            var result = template.apply(kontekstMed(Map.of()));
+            assertThat(result).contains("&lt;br/&gt;");
+        }
+
+        @Test
+        void skalFeileNårMalNavnManglerIKontekst() throws IOException {
+            var template = handlebars.compileInline("{{t \"enkel\"}}");
+            var kontekstUtenMalNavn = Map.<String, Object>of("__språkKode", "nb");
+            assertThat(catchThrowable(() -> renderTemplate(template, kontekstUtenMalNavn)))
+                .isInstanceOf(com.github.jknack.handlebars.HandlebarsException.class)
+                .hasMessageContaining("__malNavn");
+        }
+
+        @Test
+        void skalFeileNårBundleResourceManglerForSpråkKode() throws IOException {
+            var template = handlebars.compileInline("{{t \"enkel\"}}");
+            var kontekstMedUkjentSpråk = Map.<String, Object>of(
+                "__malNavn", "test-i18n",
+                "__språkKode", "fr");
+            assertThat(catchThrowable(() -> renderTemplate(template, kontekstMedUkjentSpråk)))
+                .isInstanceOf(com.github.jknack.handlebars.HandlebarsException.class)
+                .hasMessageContaining("Missing i18n bundle");
+        }
+
+        @Test
+        void skalFeileNårI18nNøkkelManglerIBundle() throws IOException {
+            var template = handlebars.compileInline("{{t \"finnesIkke\"}}");
+            assertThat(catchThrowable(() -> renderTemplate(template, kontekstMed(Map.of()))))
+                .isInstanceOf(com.github.jknack.handlebars.HandlebarsException.class)
+                .hasMessageContaining("Missing i18n key 'finnesIkke'");
+        }
+
+        private String renderTemplate(com.github.jknack.handlebars.Template template, Map<String, Object> kontekst) throws IOException {
+            return template.apply(kontekst);
         }
     }
 
