@@ -143,6 +143,69 @@ class ForeldrepengerOpphørTest {
             "Du hadde ikke rett til foreldrepenger fordi du ikke var medlem i folketrygden på det tidspunktet barna dine ble født.\nVi har ikke opplysninger om at du jobbet eller hadde familie som forsørget deg i Norge. Det var derfor ikke dokumentert at du hadde rett til opphold etter EØS-avtalen.");
     }
 
+    @Test
+    void test_kode_søker_1020_medlem_annet_land() {
+        var testData = opprettTestData();
+        testData.remove("opphørDato");
+        opprettÅrsaker(testData, "1020");
+
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
+        assertThat(content).contains("Du var omfattet av trygdeordningen i et annet land.");
+    }
+
+    @Test
+    void test_kode_søker_1021_flyttet_fra_norge() {
+        var testData = opprettTestData();
+        testData.remove("opphørDato");
+        opprettÅrsaker(testData, "1021");
+
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
+        assertThat(content).contains("Ifølge folkeregisteret hadde du flyttet fra Norge.");
+    }
+
+    @Test
+    void test_kode_søker_1023_ingen_oppholdstillatelse() {
+        var testData = opprettTestData();
+        testData.remove("opphørDato");
+        opprettÅrsaker(testData, "1023");
+
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
+        assertThat(content).contains("Du hadde ikke oppholdstillatelse i Norge.");
+    }
+
+    @Test
+    void test_kode_søker_1025_mer_i_utlandet() {
+        var testData = opprettTestData();
+        testData.remove("opphørDato");
+        opprettÅrsaker(testData, "1025");
+
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
+        assertThat(content).contains("Du regnes ikke som medlem fordi du oppholdt deg mer i utlandet enn i Norge.");
+    }
+
+    @Test
+    void test_flere_årsaker_rendrer_alle_tekstene() {
+        var testData = opprettTestData();
+        testData.remove("opphørDato");
+        opprettÅrsaker(testData, "1020", "1021");
+
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
+        assertThat(content)
+            .contains("Du var omfattet av trygdeordningen i et annet land.")
+            .contains("Ifølge folkeregisteret hadde du flyttet fra Norge.");
+    }
+
+    @Test
+    void test_ukjent_kode_gir_ingen_avslagstekst() {
+        var testData = opprettTestData();
+        opprettÅrsaker(testData, "9999");
+
+        var content = compileContent(BREVMAL, Språk.BOKMÅL, testData);
+        assertThat(content)
+            .doesNotContain("Du var omfattet av trygdeordningen i et annet land.")
+            .doesNotContain("Du hadde ikke rett til foreldrepenger fordi du ikke var registrert");
+    }
+
     private void opprettÅrsaker(final Map<String, Object> testData, String... årsaker) {
         var årsakArray = JacksonUtil.JSON_MAPPER.createArrayNode();
         for (var årsak : årsaker) {
