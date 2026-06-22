@@ -401,37 +401,6 @@ class HandlebarsCustomHelpersTest {
     }
 
     @Nested
-    class TableHelperTest {
-
-        @Test
-        void skalLageTabellMedToKolonner() throws IOException {
-            var template = handlebars.compileInline("{{#table columns=2}}<td>A</td><td>B</td><td>C</td><td>D</td>{{/table}}");
-            var result = template.apply(null);
-            assertThat(result).contains("<table")
-                .contains("<tr>")
-                .contains("</tr>")
-                .contains("<td>A</td>")
-                .contains("<td>B</td>")
-                .contains("<td>C</td>")
-                .contains("<td>D</td>");
-        }
-
-        @Test
-        void skalFylleUtTommeCellerVedUjevntAntall() throws IOException {
-            var template = handlebars.compileInline("{{#table columns=2}}<td>A</td><td>B</td><td>C</td>{{/table}}");
-            var result = template.apply(null);
-            assertThat(result).contains("<td></td>");
-        }
-
-        @Test
-        void skalLeggesTilClassAttributt() throws IOException {
-            var template = handlebars.compileInline("{{#table columns=2 class=\"min-tabell\"}}<td>A</td>{{/table}}");
-            var result = template.apply(null);
-            assertThat(result).contains("class=min-tabell");
-        }
-    }
-
-    @Nested
     class InArrayHelperTest {
 
         @Test
@@ -474,6 +443,34 @@ class HandlebarsCustomHelpersTest {
                 """);
             var result = template.apply(java.util.Map.of("status", "INAKTIV"));
             assertThat(result.trim()).isEqualTo("Inaktiv bruker");
+        }
+
+        @Test
+        void skalMatcheCaseMotArrayAvKonstanter() throws IOException {
+            var template = handlebars.compileInline("""
+                {{#switch status}}
+                    {{#case (array "AKTIV" "PENDING")}}Treff{{/case}}
+                    {{#case "INAKTIV"}}Bom{{/case}}
+                {{/switch}}
+                """);
+            var result = template.apply(java.util.Map.of("status", "PENDING"));
+            assertThat(result.trim()).isEqualTo("Treff");
+        }
+
+
+        @Test
+        void skalStøtteNestedeHjelpereInniCase() throws IOException {
+            var template = handlebars.compileInline("""
+                {{#switch avslagsårsak}}
+                    {{#case (array "1027" "1029")}}
+                        {{#in-array (array "FARA" "MMOR") relasjonsRolleType}}
+                            Du er {{#eq relasjonsRolleType "MMOR"}}medmor{{/eq}}{{#eq relasjonsRolleType "FARA"}}far{{/eq}}
+                        {{/in-array}}
+                    {{/case}}
+                {{/switch}}
+                """);
+            var result = template.apply(java.util.Map.of("avslagsårsak", "1027", "relasjonsRolleType", "MMOR"));
+            assertThat(result).contains("Du er medmor");
         }
     }
 

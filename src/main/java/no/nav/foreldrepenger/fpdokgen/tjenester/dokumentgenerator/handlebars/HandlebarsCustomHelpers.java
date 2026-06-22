@@ -10,19 +10,26 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Objects;
 
 import com.github.jknack.handlebars.Context;
 import com.github.jknack.handlebars.Helper;
 import com.github.jknack.handlebars.Options;
 import com.neovisionaries.i18n.CountryCode;
 
+import tools.jackson.databind.JsonNode;
+
 /**
  * Custom Handlebars helpers for document generation.
  */
 final class HandlebarsCustomHelpers {
+
+    private static final String CONDITION_VARIABLE = "__condition_variable";
+    private static final String CONDITION_FULFILLED = "__condition_fulfilled";
 
     private HandlebarsCustomHelpers() {
         // Utility class
@@ -45,16 +52,13 @@ final class HandlebarsCustomHelpers {
 
         @Override
         public Object apply(Object variable, Options options) throws IOException {
-            List<String> variabelNavn = new ArrayList<>();
-            List<Object> variabelVerdier = new ArrayList<>();
-            variabelNavn.add("__condition_fulfilled");
-            variabelVerdier.add(0);
-            variabelNavn.add("__condition_variable");
-            variabelVerdier.add(options.hash.isEmpty() ? variable : options.hash);
-            var ctx = Context.newBlockParamContext(options.context, variabelNavn, variabelVerdier);
+            var switchState = new HashMap<String, Object>();
+            switchState.put(CONDITION_FULFILLED, 0);
+            switchState.put(CONDITION_VARIABLE, options.hash.isEmpty() ? variable : options.hash);
+            var ctx = Context.newBuilder(options.context, switchState).build();
             String resultat = options.fn.apply(ctx);
 
-            var antall = (Integer) ctx.get("__condition_fulfilled");
+            var antall = (Integer) switchState.get(CONDITION_FULFILLED);
             if (Integer.valueOf(1).equals(antall)) {
                 return resultat;
             }
@@ -66,74 +70,55 @@ final class HandlebarsCustomHelpers {
      * @see SwitchHelper
      */
     static class CaseHelper implements Helper<Object> {
-        private static final String CONDITION_VARIABLE = "__condition_variable";
-        private static final String CONDITION_FULFILLED = "__condition_fulfilled";
-
         @Override
         @SuppressWarnings("unchecked")
         public Object apply(Object caseKonstant, Options options) throws IOException {
             var konstant = options.hash.isEmpty() ? caseKonstant : options.hash;
-            var model = (Map<String, Object>) options.context.model();
+            if (!(options.context.model() instanceof Map<?, ?> rawModel)) {
+                return options.inverse();
+            }
+            var model = (Map<String, Object>) rawModel;
             var conditionVariable = model.get(CONDITION_VARIABLE);
 
-            if (caseKonstant instanceof Iterable<?> iterable) {
-                var list = (List<?>) iterable;
-                if (list.contains(conditionVariable)) {
-                    incrementConditionFulfilledCounter(model);
-                    return options.fn();
-                }
-            } else if (konstant.equals(conditionVariable)) {
+            if (matches(konstant, conditionVariable)) {
                 incrementConditionFulfilledCounter(model);
                 return options.fn();
             }
             return options.inverse();
         }
 
-        private void incrementConditionFulfilledCounter(Map<String, Object> model) {
-            var antall = (Integer) model.get(CONDITION_FULFILLED);
-            model.put(CONDITION_FULFILLED, antall + 1);
-        }
-    }
-
-    /**
-     * Allows to create a table with a set number of columns from only td cells.
-     * Useful if you have to render table cells but you don't know how many cells you will have.
-     * <p>
-     * Example:
-     * {{#table [columns=2] [class=""]]}}
-     * <td>This is one cell</td>
-     * <td>This is another cell</td>
-     * <td>This is a third cell</td>
-     * {{/table}}
-     * <p>
-     * will render a table with two tr rows with two cells in each
-     */
-    static class TableHelper implements Helper<Object> {
-
-        @Override
-        public Object apply(Object context, Options options) throws IOException {
-            int columnCount = options.hash("columns", 2);
-            var tableContents = options.fn(context).toString();
-            var cells = Arrays.stream(tableContents.trim().split("</td>")).filter(s -> !s.isEmpty()).map(s -> s + "</td>").toList();
-
-            var wrappedInRows = new StringBuilder("<tr>");
-            for (int index = 0; index < cells.size(); index++) {
-                if (index > 0 && index % columnCount == 0) {
-                    wrappedInRows.append("</tr><tr>");
+        private static boolean matches(Object konstant, Object conditionVariable) {
+            if (konstant instanceof Iterable<?> iterable) {
+                for (var candidate : iterable) {
+                    if (equalsValue(candidate, conditionVariable)) {
+                        return true;
+                    }
                 }
-                wrappedInRows.append(cells.get(index));
+                return false;
             }
+            return equalsValue(konstant, conditionVariable);
+        }
 
-            if (cells.size() % columnCount > 0) {
-                int missingCellsInLastRow = columnCount - (cells.size() % columnCount);
-                wrappedInRows.append("<td></td>".repeat(missingCellsInLastRow));
+        private static boolean equalsValue(Object left, Object right) {
+            if (Objects.equals(left, right)) {
+                return true;
             }
+            return Objects.equals(normalize(left), normalize(right));
+        }
 
-            wrappedInRows.append("</tr>");
+        private static Object normalize(Object value) {
+            if (value instanceof JsonNode jsonNode) {
+                return jsonNode.isValueNode() ? jsonNode.asString() : jsonNode.toString();
+            }
+            if (value instanceof CharSequence charSequence) {
+                return charSequence.toString();
+            }
+            return value;
+        }
 
-            String classParam = options.hash("class", "");
-            var classString = classParam.isEmpty() ? "" : "class=" + classParam;
-            return "<table %s>%s</table>".formatted(classString, wrappedInRows);
+        private void incrementConditionFulfilledCounter(Map<String, Object> model) {
+            var antall = (Integer) model.getOrDefault(CONDITION_FULFILLED, 0);
+            model.put(CONDITION_FULFILLED, antall + 1);
         }
     }
 

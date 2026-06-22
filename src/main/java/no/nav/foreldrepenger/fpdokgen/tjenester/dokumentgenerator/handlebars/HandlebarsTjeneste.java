@@ -46,7 +46,6 @@ public class HandlebarsTjeneste {
         handlebars.registerHelper("size", new HandlebarsCustomHelpers.SizeHelper());
         handlebars.registerHelper("switch", new HandlebarsCustomHelpers.SwitchHelper());
         handlebars.registerHelper("case", new HandlebarsCustomHelpers.CaseHelper());
-        handlebars.registerHelper("table", new HandlebarsCustomHelpers.TableHelper());
         handlebars.registerHelper("add", new HandlebarsCustomHelpers.AdditionHelper());
         handlebars.registerHelper("norwegian-date", new HandlebarsCustomHelpers.NorwegianDateHelper());
         handlebars.registerHelper("norwegian-datetime", new HandlebarsCustomHelpers.NorwegianDateTimeHelper());
