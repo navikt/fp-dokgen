@@ -13,7 +13,7 @@ jobs:
       pull-requests: write
       id-token: write
     steps:
-      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # ratchet:actions/checkout@v7.0.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # ratchet:actions/checkout@v7.0.1
       - uses: navikt/digestabot@3302a753e533ceb9ec216de7f78345436cd636e3 # ratchet:navikt/digestabot@v1.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
