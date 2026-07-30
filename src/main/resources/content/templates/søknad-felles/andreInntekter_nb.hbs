@@ -1,7 +1,7 @@
 {{#if andreInntekterSiste10Mnd}}
 <div class="no-page-break">
 
-## Andre inntekter siste 10 måneder
+## {{#if erSvp}}Arbeid i utlandet siste 4 uker{{else}}Andre inntekter siste 10 måneder{{/if}}
 
 {{#each andreInntekterSiste10Mnd}}
 <strong>{{~#switch type~}}

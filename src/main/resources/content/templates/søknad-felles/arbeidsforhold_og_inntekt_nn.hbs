@@ -18,8 +18,8 @@ Du er ikkje registrert med nokon arbeidsforhold.
 
 ## Andre inntektskjelder
 <ul>
-    <li>Har du jobba og hatt inntekt som frilansar dei siste 10 månadene? <strong>{{#if frilans}}Ja{{else}}Nei{{/if}}</strong></li>
-    <li>Har du jobba og hatt inntekt som sjølvstendig næringsdrivande dei siste 10 månadene? <strong>{{#if egenNæring}}Ja{{else}}Nei{{/if}}</strong></li>
-    <li>Har du hatt andre inntektskjelder dei siste 10 månadene? <strong>{{#if andreInntekterSiste10Mnd}}Ja{{else}}Nei{{/if}}</strong></li>
+    <li>Har du jobba og hatt inntekt som frilansar dei siste {{#if erSvp}}4 vekene{{else}}10 månadene{{/if}}? <strong>{{#if frilans}}Ja{{else}}Nei{{/if}}</strong></li>
+    <li>Har du jobba og hatt inntekt som sjølvstendig næringsdrivande dei siste {{#if erSvp}}4 vekene{{else}}10 månadene{{/if}}? <strong>{{#if egenNæring}}Ja{{else}}Nei{{/if}}</strong></li>
+    <li>{{#if erSvp}}Har du jobba i utlandet dei siste 4 vekene?{{else}}Har du hatt andre inntektskjelder dei siste 10 månadene?{{/if}} <strong>{{#if andreInntekterSiste10Mnd}}Ja{{else}}Nei{{/if}}</strong></li>
 </ul>
 </div>

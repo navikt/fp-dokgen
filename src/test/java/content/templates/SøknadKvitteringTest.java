@@ -33,6 +33,27 @@ class SøknadKvitteringTest {
     }
 
     @Test
+    void svp_frilans_næring_arbeid_i_utlandet_nb_test() {
+        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-frilans-næring-arbeid-i-utlandet");
+        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-frilans-næring-arbeid-i-utlandet-nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    void svp_frilans_næring_arbeid_i_utlandet_nn_test() {
+        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-frilans-næring-arbeid-i-utlandet");
+        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-frilans-næring-arbeid-i-utlandet-nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    void svp_frilans_næring_arbeid_i_utlandet_en_test() {
+        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-frilans-næring-arbeid-i-utlandet");
+        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-frilans-næring-arbeid-i-utlandet-en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     void engangsstønad_nb_test() {
         var content = compileContent(BrevMal.ENGANGSSTØNAD_SØKNAD, Språk.BOKMÅL, "es");
         var expected = getExpected(BrevMal.ENGANGSSTØNAD_SØKNAD, "es-nb.txt");
