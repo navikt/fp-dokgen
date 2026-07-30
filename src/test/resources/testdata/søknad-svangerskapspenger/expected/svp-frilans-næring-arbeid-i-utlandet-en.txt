@@ -1,0 +1,82 @@
+# Receipt of application for pregnancy benefit
+Received: 24.09.2025 10:15:30
+## Information about the applicant
+Name: Frida Frilans Utenlandsen<br/>
+National identity number: 987654321<br/>
+<div class="no-page-break">
+## Information about the child
+<ul>
+    <li></li>
+    <li>Due date: 24.12.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="no-page-break">
+## Information about stay abroad
+<ul>
+<li>During the last 12 months, you lived in Norway</li>
+<li>During the next 12 months, you will live in Norway</li>
+</ul>
+</div>
+<div class="no-page-break">
+## Employment
+Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application.
+### NAV Familie og Pensjonsytelser Oslo (987654321)
+<ul>
+    <li>Period: 11.01.2024 – Ongoing</li>
+    <li>Employment percentage: 44 %</li>
+</ul>
+</div>
+<div class="no-page-break">
+## Other sources of income
+<ul>
+    <li>Have you worked and earned income as a freelancer in the last 4 weeks? <strong>Yes</strong></li>
+    <li>Have you worked and earned income as self-employed in the last 4 weeks? <strong>Yes</strong></li>
+    <li>Have you worked abroad in the last 4 weeks? <strong>Yes</strong></li>
+</ul>
+</div>
+<div class="no-page-break">
+## Freelance
+<ul>
+    <li>Started: 01.09.2025</li>
+    <li>Still working as freelancer: <strong>Yes</strong></li>
+</ul>
+</div>
+<div class="no-page-break">
+## Self-employed business
+<ul>
+    <li></li>
+    <li></li>
+    <li>Registered in country: Sweden</li>
+    <li>Type of business: Fisher</li>
+    <li>You started as self-employed 01.10.2025 and ended 31.10.2025.</li><li>Permanent change in business or work situation over the last four years: <strong>No</strong></li>
+    <li>Business income: 329000</li><li>Business started: 01.11.2023</li>
+    <li>Have you started working during the last three completed years: <strong>Yes</strong></li>
+</ul>
+</div>
+<div class="no-page-break">
+## Work abroad in the last 4 weeks
+<strong>Job abroad</strong>
+<ul>
+    <li>Employer: Utenlandsk Arbeidsgiver AB</li>
+    <li>Period: 01.08.2025 – 01.09.2025</li>
+    <li>Country where the business is registered: Sweden</li>
+</ul>
+</div>
+<div class="no-page-break">
+## Work accommodation needs
+<div class="no-page-break">
+Work accommodation need at NAV Familie og Pensjonsytelser Oslo (987654321)
+<ul>
+    <li>I have accommodation needs from 24.09.2025</li><li>Employer can provide accommodation from 24.09.2025. I can work 40 per cent of my position.</li><li></li>
+    <li></li>
+</ul>
+</div>
+</div>

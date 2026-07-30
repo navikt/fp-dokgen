@@ -1,0 +1,64 @@
+{
+  "mottattdato": "2025-09-24T10:15:30+01:00",
+  "søkerinfo": {
+    "navn": {
+      "fornavn": "Frida",
+      "mellomnavn": "Frilans",
+      "etternavn": "Utenlandsen"
+    },
+    "fnr": "987654321",
+    "arbeidsforhold": [
+      {
+        "navn": "NAV Familie og Pensjonsytelser Oslo",
+        "orgnummer": "987654321",
+        "fom": "2024-01-11",
+        "stillingsprosent": 44.0
+      }
+    ]
+  },
+  "barn": {
+    "termindato": "2025-12-24"
+  },
+  "rolle": "MOR",
+  "språkkode": "NB",
+  "egenNæring": {
+    "næringstype": "FISKE",
+    "registrertILand": "SE",
+    "fom": "2025-10-01",
+    "næringsinntekt": "329000",
+    "harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene": true,
+    "tom": "2025-10-31",
+    "oppstartsdato": "2023-11-01"
+  },
+  "frilans": {
+    "oppstart": "2025-09-01",
+    "jobberFremdelesSomFrilans": true
+  },
+  "andreInntekterSiste10Mnd": [
+    {
+      "type": "JOBB_I_UTLANDET",
+      "arbeidsgiverNavn": "Utenlandsk Arbeidsgiver AB",
+      "land": "SE",
+      "fom": "2025-08-01",
+      "tom": "2025-09-01"
+    }
+  ],
+  "tilretteleggingsbehov": [
+    {
+      "arbeidsforhold": {
+        "type": "virksomhet",
+        "id": "987654321"
+      },
+      "behovForTilretteleggingFom": "2025-09-24",
+      "tilrettelegginger": [
+        {
+          "type": "delvis",
+          "fom": "2025-09-24",
+          "stillingsprosent": 40.0
+        }
+      ],
+      "risikofaktorerOgTilretteleggingtiltakSattForNæringFrilans": true
+    }
+  ],
+  "vedlegg": []
+}
