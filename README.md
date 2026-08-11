@@ -20,10 +20,7 @@ Maler og innhold for generering av brev for foreldrepenger, svangerskapspenger o
 https://github.com/navikt/dokgen
 
 # Henvendelser
-Spørsmål knyttet til koden eller prosjektet kan stilles til:
-
-* Anja Gøtesen Aalerud (anja.gotesen.aalerud@nav.no)
-* Michal Sladek (michal.sladek@nav.no)
+Spørsmål knyttet til koden eller prosjektet kan gjøres ved bruk av Issue her på GitHub.
 
 ## For Nav-ansatte
 Interne henvendelser kan stilles på Slack-kanalen #teamforeldrepenger
