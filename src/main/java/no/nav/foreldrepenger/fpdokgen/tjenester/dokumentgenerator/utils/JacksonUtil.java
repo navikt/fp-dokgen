@@ -2,13 +2,13 @@ package no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils;
 
 import java.util.Map;
 
-import no.nav.vedtak.mapper.json.DefaultJson3Mapper;
+import no.nav.vedtak.mapper.json.DefaultJsonMapper;
 import tools.jackson.core.JacksonException;
 import tools.jackson.databind.json.JsonMapper;
 
 public class JacksonUtil {
 
-    public static final JsonMapper JSON_MAPPER = DefaultJson3Mapper.getJsonMapper();
+    public static final JsonMapper JSON_MAPPER = DefaultJsonMapper.getJsonMapper();
 
     private JacksonUtil() {
         // Utility class.

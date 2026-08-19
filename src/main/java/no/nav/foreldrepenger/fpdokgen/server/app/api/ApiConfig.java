@@ -11,7 +11,7 @@ import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
 import no.nav.foreldrepenger.fpdokgen.tjenester.v1.DokumentGeneratorRestTjeneste;
 import no.nav.vedtak.server.rest.AuthenticationFilter;
-import no.nav.vedtak.server.rest.FpRestJackson3Feature;
+import no.nav.vedtak.server.rest.FpRestJacksonFeature;
 
 @ApplicationPath(ApiConfig.API_URI)
 public class ApiConfig extends Application {
@@ -23,7 +23,7 @@ public class ApiConfig extends Application {
         var classes = new HashSet<Class<?>>();
 
         classes.add(AuthenticationFilter.class);
-        classes.add(FpRestJackson3Feature.class);
+        classes.add(FpRestJacksonFeature.class);
         classes.add(AuthorizationFilter.class);
         classes.addAll(getApplicationClasses());
 
