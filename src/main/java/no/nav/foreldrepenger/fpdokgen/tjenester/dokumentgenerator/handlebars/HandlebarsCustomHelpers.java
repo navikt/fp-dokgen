@@ -287,7 +287,7 @@ final class HandlebarsCustomHelpers {
      * For example, both "NO" and "NOR" will return "Norge".
      * <p>
      * Optionally, you can specify a language using the `lang` parameter to get the country name in a different language.
-     * Example: {{countryCode "NO" lang="en"}} will return "Norway".
+     * Example: {{land-norsk "NO" lang="en"}} will return "Norway".
      */
     static class LandkodeHelper implements Helper<Object> {
         @Override
@@ -356,7 +356,7 @@ final class HandlebarsCustomHelpers {
             int count = 0;
             var date = from;
             while (!date.isAfter(to)) {
-                if (date.getDayOfWeek().compareTo(DayOfWeek.SATURDAY) < 0) {
+                if (date.getDayOfWeek() != DayOfWeek.SATURDAY && date.getDayOfWeek() != DayOfWeek.SUNDAY) {
                     count++;
                 }
                 date = date.plusDays(1);
