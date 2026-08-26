@@ -281,7 +281,7 @@ class HandlebarsCustomHelpersTest {
     }
 
     @Nested
-    class CountryCodeHelperTest {
+    class LandkodeHelperTest {
 
         @Test
         void skalKonvertereAlpha2TilNorskLandnavn() throws IOException {
