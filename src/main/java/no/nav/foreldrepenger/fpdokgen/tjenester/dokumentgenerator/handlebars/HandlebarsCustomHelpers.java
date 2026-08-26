@@ -30,6 +30,10 @@ final class HandlebarsCustomHelpers {
 
     private static final String CONDITION_VARIABLE = "__condition_variable";
     private static final String CONDITION_FULFILLED = "__condition_fulfilled";
+    // Kosovo-kodene er ikke offisielle ISO 3166-koder. Locale kan vise landnavnet
+    // for XK, men XXK finnes derfor ikke i LAND3_TIL_LAND2 og må mappes eksplisitt.
+    private static final String KOSOVO_ALPHA2 = "XK";
+    private static final String KOSOVO_ALPHA3 = "XXK";
 
     private static final Map<String, String> LAND3_TIL_LAND2 = Arrays.stream(Locale.getISOCountries())
         .collect(Collectors.toUnmodifiableMap(land2 -> Locale.of("", land2).getISO3Country(), land2 -> land2));
@@ -299,7 +303,7 @@ final class HandlebarsCustomHelpers {
 
             var alpha2 = switch (code.length()) {
                 case 2 -> code.toUpperCase();
-                case 3 -> LAND3_TIL_LAND2.get(code.toUpperCase());
+                case 3 -> KOSOVO_ALPHA3.equalsIgnoreCase(code) ? KOSOVO_ALPHA2 : LAND3_TIL_LAND2.get(code.toUpperCase());
                 default -> null;
             };
 
