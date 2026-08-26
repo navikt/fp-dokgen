@@ -15,11 +15,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 import com.github.jknack.handlebars.Context;
 import com.github.jknack.handlebars.Helper;
 import com.github.jknack.handlebars.Options;
-import com.neovisionaries.i18n.CountryCode;
 
 import tools.jackson.databind.JsonNode;
 
@@ -30,6 +30,9 @@ final class HandlebarsCustomHelpers {
 
     private static final String CONDITION_VARIABLE = "__condition_variable";
     private static final String CONDITION_FULFILLED = "__condition_fulfilled";
+
+    private static final Map<String, String> LAND3_TIL_LAND2 = Arrays.stream(Locale.getISOCountries())
+        .collect(Collectors.toUnmodifiableMap(land2 -> Locale.of("", land2).getISO3Country(), land2 -> land2));
 
     private HandlebarsCustomHelpers() {
         // Utility class
@@ -284,20 +287,23 @@ final class HandlebarsCustomHelpers {
      * For example, both "NO" and "NOR" will return "Norge".
      * <p>
      * Optionally, you can specify a language using the `lang` parameter to get the country name in a different language.
-     * Example: {{countryCode "NO" lang="en"}} will return "Norway".
+     * Example: {{land-norsk "NO" lang="en"}} will return "Norway".
      */
-    static class CountryCodeHelper implements Helper<Object> {
+    static class LandkodeHelper implements Helper<Object> {
         @Override
         public Object apply(Object landKode, Options options) {
             if (!(landKode instanceof String code) || code.isBlank()) {
                 return "";
             }
-            var langParam = options.hash.get("lang");
-            var lang = langParam != null ? langParam.toString() : "no";
-            return new Locale.Builder().setLanguage(lang)
-                .setRegion(CountryCode.getByCode(code).getAlpha2())
-                .build()
-                .getDisplayCountry(Locale.forLanguageTag(lang));
+            var displayLocale = Locale.forLanguageTag(Objects.toString(options.hash.get("lang"), "no"));
+
+            var alpha2 = switch (code.length()) {
+                case 2 -> code.toUpperCase();
+                case 3 -> LAND3_TIL_LAND2.get(code.toUpperCase());
+                default -> null;
+            };
+
+            return alpha2 == null ? "" : Locale.of("", alpha2).getDisplayCountry(displayLocale);
         }
     }
 
