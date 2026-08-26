@@ -298,6 +298,20 @@ class HandlebarsCustomHelpersTest {
         }
 
         @Test
+        void skalKonvertereKosovoAlpha2TilNorskLandnavn() throws IOException {
+            var template = handlebars.compileInline("{{land-norsk \"XK\"}}");
+            var result = template.apply(null);
+            assertThat(result).isEqualTo("Kosovo");
+        }
+
+        @Test
+        void skalKonvertereKosovoAlpha3TilNorskLandnavn() throws IOException {
+            var template = handlebars.compileInline("{{land-norsk \"XXK\"}}");
+            var result = template.apply(null);
+            assertThat(result).isEqualTo("Kosovo");
+        }
+
+        @Test
         void skalKonvertereTilEngelskNårSpesifisert() throws IOException {
             var template = handlebars.compileInline("{{land-norsk \"NO\" lang=\"en\"}}");
             var result = template.apply(null);
