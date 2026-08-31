@@ -1,0 +1,19 @@
+{{#if søkerinfo/selvstendigNæring}}
+<div class="no-page-break">
+
+## My businesses
+Information is retrieved from the Central Coordinating Register for Legal Entities (the Brønnøysund Register Centre). These were shown in the application.
+{{#each søkerinfo/selvstendigNæring}}
+### {{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}
+<ul>
+    <li>Type of business: {{#switch næringstype~}}
+            {{~#case "DAGMAMMA"~}}Daycare provider{{~/case~}}
+            {{~#case "FISKE"~}}Fisher{{~/case~}}
+            {{~#case "JORDBRUK_SKOGBRUK"~}}Agriculture/forestry{{~/case~}}
+            {{~#case "ANNEN"~}}Other{{~/case~}}
+        {{~/switch~}}
+    </li>
+</ul>
+{{/each}}
+</div>
+{{/if}}

@@ -1,3 +1,11 @@
+{{! Spørsmålet stilles fortsatt til bruker, i motsetning til frilans og næring som hentes fra register }}
+<div class="no-page-break">
+
+## Andre inntektskilder
+<ul>
+    <li>{{#if erSvp}}Har du jobbet i utlandet de siste 4 ukene?{{else}}Har du hatt andre inntektskilder de siste 10 månedene?{{/if}} <strong>{{#if andreInntekterSiste10Mnd}}Ja{{else}}Nei{{/if}}</strong></li>
+</ul>
+</div>
 {{#if andreInntekterSiste10Mnd}}
 <div class="no-page-break">
 

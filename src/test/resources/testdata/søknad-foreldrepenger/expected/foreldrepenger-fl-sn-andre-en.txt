@@ -41,11 +41,15 @@ Information is retrieved from the State Register of Employers and Employees (the
 </ul>
 </div>
 <div class="no-page-break">
-## Other sources of income
+## Freelance assignments
+Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application.
+### Kulturskolen i Bydel Sagene
 <ul>
-    <li>Have you worked and earned income as a freelancer in the last 10 months? <strong>Yes</strong></li>
-    <li>Have you worked and earned income as self-employed in the last 10 months? <strong>Yes</strong></li>
-    <li>Have you had other sources of income in the last 10 months? <strong>Yes</strong></li>
+    <li>Period: 15.01.2025 – 30.06.2025</li>
+</ul>
+### Ola Nordmann
+<ul>
+    <li>Period: 01.03.2025 – Ongoing</li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -53,6 +57,18 @@ Information is retrieved from the State Register of Employers and Employees (the
 <ul>
     <li>Started: 01.09.2025</li>
     <li>Still working as freelancer: <strong>Yes</strong></li>
+</ul>
+</div>
+<div class="no-page-break">
+## My businesses
+Information is retrieved from the Central Coordinating Register for Legal Entities (the Brønnøysund Register Centre). These were shown in the application.
+### Sagene Fiskeri (974760673)
+<ul>
+    <li>Type of business: Fisher</li>
+</ul>
+### Nordre Aker Gård (889640782)
+<ul>
+    <li>Type of business: Agriculture/forestry</li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -65,6 +81,12 @@ Information is retrieved from the State Register of Employers and Employees (the
     <li>You started as self-employed 01.10.2025 and ended 31.10.2025.</li><li>Permanent change in business or work situation over the last four years: <strong>No</strong></li>
     <li>Business income: 329000</li><li>Business started: 01.11.2023</li>
     <li>Have you started working during the last three completed years: <strong>Yes</strong></li>
+</ul>
+</div>
+<div class="no-page-break">
+## Other sources of income
+<ul>
+    <li>Have you had other sources of income in the last 10 months? <strong>Yes</strong></li>
 </ul>
 </div>
 <div class="no-page-break">

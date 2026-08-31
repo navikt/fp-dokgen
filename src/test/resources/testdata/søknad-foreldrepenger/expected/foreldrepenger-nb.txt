@@ -38,8 +38,6 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
 <div class="no-page-break">
 ## Andre inntektskilder
 <ul>
-    <li>Har du jobbet og hatt inntekt som frilanser de siste 10 månedene? <strong>Nei</strong></li>
-    <li>Har du jobbet og hatt inntekt som selvstendig næringsdrivende de siste 10 månedene? <strong>Nei</strong></li>
     <li>Har du hatt andre inntektskilder de siste 10 månedene? <strong>Nei</strong></li>
 </ul>
 </div>

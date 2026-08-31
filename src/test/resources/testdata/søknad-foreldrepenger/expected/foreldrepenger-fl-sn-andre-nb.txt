@@ -41,11 +41,15 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
 </ul>
 </div>
 <div class="no-page-break">
-## Andre inntektskilder
+## Mine frilansoppdrag
+Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden.
+### Kulturskolen i Bydel Sagene
 <ul>
-    <li>Har du jobbet og hatt inntekt som frilanser de siste 10 månedene? <strong>Ja</strong></li>
-    <li>Har du jobbet og hatt inntekt som selvstendig næringsdrivende de siste 10 månedene? <strong>Ja</strong></li>
-    <li>Har du hatt andre inntektskilder de siste 10 månedene? <strong>Ja</strong></li>
+    <li>Periode: 15.01.2025 – 30.06.2025</li>
+</ul>
+### Ola Nordmann
+<ul>
+    <li>Periode: 01.03.2025 – Pågående</li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -53,6 +57,18 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
 <ul>
     <li>Startet som frilanser: 01.09.2025</li>
     <li>Jobber fortsatt som frilanser: <strong>Ja</strong></li>
+</ul>
+</div>
+<div class="no-page-break">
+## Mine næringer
+Opplysningene er hentet fra Enhetsregisteret i Brønnøysundregistrene. Disse ble vist i søknaden.
+### Sagene Fiskeri (974760673)
+<ul>
+    <li>Virksomhetstype: Fisker</li>
+</ul>
+### Nordre Aker Gård (889640782)
+<ul>
+    <li>Virksomhetstype: Jord-/skogsbruk</li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -65,6 +81,12 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
     <li>Du startet som selvstendig næringsdrivende 01.10.2025 og sluttet 31.10.2025.</li><li>Varig endring i virksomheten eller arbeidssituasjonen min de siste fire årene: <strong>Nei</strong></li>
     <li>Næringsinntekt: 329000</li><li>Virksomheten ble startet: 01.11.2023</li>
     <li>Har du begynt å jobbe i løpet av de tre siste ferdigliknede årene: <strong>Ja</strong></li>
+</ul>
+</div>
+<div class="no-page-break">
+## Andre inntektskilder
+<ul>
+    <li>Har du hatt andre inntektskilder de siste 10 månedene? <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">

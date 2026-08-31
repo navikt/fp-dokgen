@@ -1,0 +1,19 @@
+{{#if søkerinfo/selvstendigNæring}}
+<div class="no-page-break">
+
+## Mine næringar
+Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
+{{#each søkerinfo/selvstendigNæring}}
+### {{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}
+<ul>
+    <li>Verksemdstype: {{#switch næringstype~}}
+            {{~#case "DAGMAMMA"~}}Dagmamma{{~/case~}}
+            {{~#case "FISKE"~}}Fiskar{{~/case~}}
+            {{~#case "JORDBRUK_SKOGBRUK"~}}Jord-/skogbruk{{~/case~}}
+            {{~#case "ANNEN"~}}Anna{{~/case~}}
+        {{~/switch~}}
+    </li>
+</ul>
+{{/each}}
+</div>
+{{/if}}

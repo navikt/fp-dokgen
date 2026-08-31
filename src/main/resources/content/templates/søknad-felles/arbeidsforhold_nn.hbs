@@ -1,0 +1,16 @@
+<div class="no-page-break">
+
+## Mine arbeidsforhold
+Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.{{#if hvisInfoIM}} Nav sjekkar AA-registeret igjen når arbeidsgivar kan sende inn inntektsmeldinga.{{/if}}
+{{#if søkerinfo/arbeidsforhold}}
+{{#each søkerinfo/arbeidsforhold}}
+### {{navn}} ({{orgnummer}})
+<ul>
+    <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågåande{{/if}}</li>
+    <li>Stillingsprosent: {{trim-decimal stillingsprosent}} %</li>
+</ul>
+{{/each}}
+{{else}}
+Du er ikkje registrert med nokon arbeidsforhold.
+{{/if}}
+</div>

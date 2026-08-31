@@ -14,6 +14,19 @@
         "fom": "2024-01-11",
         "stillingsprosent": 44.0
       }
+    ],
+    "frilansoppdrag": [
+      {
+        "navn": "Kulturskolen i Bydel Sagene",
+        "fom": "2025-06-01"
+      }
+    ],
+    "selvstendigNæring": [
+      {
+        "navn": "Sagene Fiskeri",
+        "organisasjonsnummer": "974760673",
+        "næringstype": "FISKE"
+      }
     ]
   },
   "barn": {
