@@ -76,8 +76,6 @@ Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse bl
 <ul>
     <li></li>
     <li></li>
-    <li>Registrert i land: Sverige</li>
-    <li>Verksemdstype: Fiskar</li>
     <li>Du starta som sjølvstendig næringsdrivande 01.10.2025 og slutta 31.10.2025.</li><li>Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Nei</strong></li>
     <li>Næringsinntekt: 329000</li><li>Verksemda blei starta: 01.11.2023</li>
     <li>Har du byrja å jobbe i løpet av dei tre siste ferdiglikna åra: <strong>Ja</strong></li>

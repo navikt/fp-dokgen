@@ -5,14 +5,6 @@
 <ul>
     <li>{{#if navnPåNæringen}}Navn på virksomheten: {{{navnPåNæringen}}}{{/if}}</li>
     <li>{{#if organisasjonsnummer}}Organisasjonsnummer: {{organisasjonsnummer}}{{/if}}</li>
-    <li>{{#if registrertINorge}}Registrert i land: Norge{{else if registrertILand}}Registrert i land: {{land-norsk registrertILand}}{{/if}}</li>
-    <li>Virksomhetstype: {{#switch næringstype~}}
-            {{~#case "DAGMAMMA"~}}Dagmamma{{~/case~}}
-            {{~#case "FISKE"~}}Fisker{{~/case~}}
-            {{~#case "JORDBRUK_SKOGBRUK"~}}Jord-/skogsbruk{{~/case~}}
-            {{~#case "ANNEN"~}}Annen{{~/case~}}
-        {{~/switch~}}
-    </li>
     <li>Du startet som selvstendig næringsdrivende {{norwegian-date fom}}{{#if tom}} og sluttet {{norwegian-date tom}}.{{else}} og jobber der fortsatt.{{/if}}</li>
     {{~#eq hattVarigEndringAvNæringsinntektSiste4Kalenderår true~}}
     <li>Varig endring i virksomheten eller arbeidssituasjonen min de siste fire årene: <strong>Ja</strong></li>
