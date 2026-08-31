@@ -5,7 +5,7 @@
 Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
 {{#each søkerinfo/selvstendigNæring}}
 ### {{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}
-<ul>
+{{#if næringstype}}<ul>
     <li>Verksemdstype: {{#switch næringstype~}}
             {{~#case "DAGMAMMA"~}}Dagmamma{{~/case~}}
             {{~#case "FISKE"~}}Fiskar{{~/case~}}
@@ -13,7 +13,7 @@ Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse bl
             {{~#case "ANNEN"~}}Anna{{~/case~}}
         {{~/switch~}}
     </li>
-</ul>
+</ul>{{/if}}
 {{/each}}
 </div>
 {{/if}}

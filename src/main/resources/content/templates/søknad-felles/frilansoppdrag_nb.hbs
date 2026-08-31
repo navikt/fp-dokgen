@@ -5,9 +5,9 @@
 Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden.
 {{#each søkerinfo/frilansoppdrag}}
 ### {{navn}}
-<ul>
+{{#if fom}}<ul>
     <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
-</ul>
+</ul>{{/if}}
 {{/each}}
 </div>
 {{/if}}

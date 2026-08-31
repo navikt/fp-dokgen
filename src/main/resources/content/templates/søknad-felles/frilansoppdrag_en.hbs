@@ -5,9 +5,9 @@
 Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application.
 {{#each søkerinfo/frilansoppdrag}}
 ### {{navn}}
-<ul>
+{{#if fom}}<ul>
     <li>Period: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}</li>
-</ul>
+</ul>{{/if}}
 {{/each}}
 </div>
 {{/if}}

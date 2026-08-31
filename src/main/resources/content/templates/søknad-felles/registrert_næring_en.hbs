@@ -5,7 +5,7 @@
 Information is retrieved from the Central Coordinating Register for Legal Entities (the Brønnøysund Register Centre). These were shown in the application.
 {{#each søkerinfo/selvstendigNæring}}
 ### {{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}
-<ul>
+{{#if næringstype}}<ul>
     <li>Type of business: {{#switch næringstype~}}
             {{~#case "DAGMAMMA"~}}Daycare provider{{~/case~}}
             {{~#case "FISKE"~}}Fisher{{~/case~}}
@@ -13,7 +13,7 @@ Information is retrieved from the Central Coordinating Register for Legal Entiti
             {{~#case "ANNEN"~}}Other{{~/case~}}
         {{~/switch~}}
     </li>
-</ul>
+</ul>{{/if}}
 {{/each}}
 </div>
 {{/if}}
