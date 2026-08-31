@@ -3,8 +3,8 @@
 
 ## Eige næringsverksemd
 <ul>
-    <li>{{#if navnPåNæringen}}Namn på verksemda: {{{navnPåNæringen}}}{{/if}}</li>
-    <li>{{#if organisasjonsnummer}}Organisasjonsnummer: {{organisasjonsnummer}}{{/if}}</li>
+    {{#if navnPåNæringen}}<li>Namn på verksemda: {{{navnPåNæringen}}}</li>{{/if}}
+    {{#if organisasjonsnummer}}<li>Organisasjonsnummer: {{organisasjonsnummer}}</li>{{/if}}
     <li>Du starta som sjølvstendig næringsdrivande {{norwegian-date fom}}{{#if tom}} og slutta {{norwegian-date tom}}.{{else}} og jobbar der framleis.{{/if}}</li>
     {{~#eq hattVarigEndringAvNæringsinntektSiste4Kalenderår true~}}
     <li>Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Ja</strong></li>
@@ -12,9 +12,9 @@
     <li>Årsak til varig endring: {{varigEndringBeskrivelse}}</li>
     {{~else~}}
     <li>Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Nei</strong></li>
-    <li>{{#if næringsinntekt}}Næringsinntekt: {{næringsinntekt}}{{/if}}</li>
+    {{#if næringsinntekt}}<li>Næringsinntekt: {{næringsinntekt}}</li>{{/if}}
     {{~/eq~}}
-    <li>{{#if oppstartsdato}}Verksemda blei starta: {{norwegian-date oppstartsdato}}{{/if}}</li>
+    {{#if oppstartsdato}}<li>Verksemda blei starta: {{norwegian-date oppstartsdato}}</li>{{/if}}
     <li>{{> utils/sporsmal-svar-ja-nei value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Har du byrja å jobbe i løpet av dei tre siste ferdiglikna åra"}}</li>
 </ul>
 </div>
