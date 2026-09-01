@@ -37,10 +37,7 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 <div class="no-page-break">
 ## Mine frilansoppdrag
 Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
-### Kulturskolen i Bydel Sagene
-<ul>
-    <li>Periode: 01.06.2025 – Pågåande</li>
-</ul>
+Du er ikkje registrert med nokon frilansoppdrag.
 </div>
 <div class="no-page-break">
 ## Informasjon om frilansoppdrag
@@ -52,14 +49,12 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 <div class="no-page-break">
 ## Mine næringar
 Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
-### Sagene Fiskeri (974760673)
-<ul>
-    <li>Verksemdstype: Fiskar</li>
-</ul>
+Du er ikkje registrert med nokon næringar.
 </div>
 <div class="no-page-break">
 ## Eige næringsverksemd
 <ul>
+    <li>Namn på verksemda: Utenlandsk Fiskeri AB</li>
     <li>Registrert i land: Sverige</li>
     <li>Verksemdstype: Fiskar</li>
     <li>Du starta som sjølvstendig næringsdrivande 01.10.2025 og slutta 31.10.2025.</li>

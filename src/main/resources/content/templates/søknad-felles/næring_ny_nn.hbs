@@ -1,0 +1,24 @@
+{{#with egenNæring}}
+<div class="no-page-break">
+
+## Eige næringsverksemd
+{{#punktliste}}
+{{#unless (næring-forelagt organisasjonsnummer ../søkerinfo.selvstendigNæring)}}
+{{#punkt}}{{#if navnPåNæringen}}Namn på verksemda: {{{navnPåNæringen}}}{{/if}}{{/punkt}}
+{{#punkt}}{{#if registrertINorge}}{{#if organisasjonsnummer}}Organisasjonsnummer: {{organisasjonsnummer}}{{/if}}{{else if registrertILand}}Registrert i land: {{land-norsk registrertILand lang="nn"}}{{/if}}{{/punkt}}
+{{#punkt}}{{#if næringstype}}Verksemdstype: {{#switch næringstype}}{{#case "DAGMAMMA"}}Dagmamma{{/case}}{{#case "FISKE"}}Fiskar{{/case}}{{#case "JORDBRUK_SKOGBRUK"}}Jord-/skogbruk{{/case}}{{#case "ANNEN"}}Anna{{/case}}{{/switch}}{{/if}}{{/punkt}}
+{{/unless}}
+{{#punkt}}Du starta som sjølvstendig næringsdrivande {{norwegian-date fom}}{{#if tom}} og slutta {{norwegian-date tom}}.{{else}} og jobbar der framleis.{{/if}}{{/punkt}}
+{{#eq hattVarigEndringAvNæringsinntektSiste4Kalenderår true}}
+{{#punkt}}Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Ja</strong>{{/punkt}}
+{{#punkt}}Frå {{norwegian-date varigEndringDato}} har du varig endring i næringsinntekta, der ny næringsinntekt er: {{varigEndringInntektEtterEndring}}.{{/punkt}}
+{{#punkt}}Årsak til varig endring: {{varigEndringBeskrivelse}}{{/punkt}}
+{{else}}
+{{#punkt}}Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Nei</strong>{{/punkt}}
+{{#punkt}}{{#if næringsinntekt}}Næringsinntekt: {{næringsinntekt}}{{/if}}{{/punkt}}
+{{/eq}}
+{{#punkt}}{{#if oppstartsdato}}Verksemda blei starta: {{norwegian-date oppstartsdato}}{{/if}}{{/punkt}}
+{{#punkt}}{{> utils/sporsmal-svar-ja-nei value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Har du byrja å jobbe i løpet av dei tre siste ferdiglikna åra"}}{{/punkt}}
+{{/punktliste}}
+</div>
+{{/with}}

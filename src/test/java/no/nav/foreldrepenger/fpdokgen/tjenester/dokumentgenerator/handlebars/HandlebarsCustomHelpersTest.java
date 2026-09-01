@@ -3,6 +3,7 @@ package no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.handlebars;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -501,6 +502,32 @@ class HandlebarsCustomHelpersTest {
     }
 
     @Nested
+    class NæringForelagtHelperTest {
+
+        @Test
+        void skalFinneNæringMedSammeOrganisasjonsnummer() throws IOException {
+            var template = handlebars.compileInline(
+                    "{{#if (næring-forelagt organisasjonsnummer næringer)}}forelagt{{else}}ikke forelagt{{/if}}");
+            var context = Map.of(
+                    "organisasjonsnummer", "999999999",
+                    "næringer", List.of(Map.of("organisasjonsnummer", "999999999")));
+
+            assertThat(template.apply(context)).isEqualTo("forelagt");
+        }
+
+        @Test
+        void skalIkkeMatcheEnAnnenNæring() throws IOException {
+            var template = handlebars.compileInline(
+                    "{{#if (næring-forelagt organisasjonsnummer næringer)}}forelagt{{else}}ikke forelagt{{/if}}");
+            var context = Map.of(
+                    "organisasjonsnummer", "999999999",
+                    "næringer", List.of(Map.of("organisasjonsnummer", "974760673")));
+
+            assertThat(template.apply(context)).isEqualTo("ikke forelagt");
+        }
+    }
+
+    @Nested
     class GtWithSizeHelperTest {
 
         @Test
@@ -527,5 +554,93 @@ class HandlebarsCustomHelpersTest {
         }
     }
 
+    @Nested
+    class FinnesHelperTest {
+
+        @Test
+        void skalVæreUsannNårFeltetMangler() throws IOException {
+            var template = handlebars.compileInline("{{#if (finnes søkerinfo.selvstendigNæring)}}ja{{else}}nei{{/if}}");
+            assertThat(template.apply(Map.of("søkerinfo", Map.of()))).isEqualTo("nei");
+        }
+
+        @Test
+        void skalVæreUsannForNullNode() throws IOException {
+            var template = handlebars.compileInline("{{#if (finnes felt)}}ja{{else}}nei{{/if}}");
+            var input = JSON_MAPPER.createObjectNode();
+            input.putNull("felt");
+            assertThat(template.apply(Map.of("felt", input.get("felt")))).isEqualTo("nei");
+        }
+
+        @Test
+        void skalVæreSannForTomListeSelvOmIfAleneVilleVærtUsann() throws IOException {
+            var template = handlebars.compileInline("{{#if (finnes felt)}}ja{{else}}nei{{/if}}|{{#if felt}}ja{{else}}nei{{/if}}");
+            assertThat(template.apply(Map.of("felt", List.of()))).isEqualTo("ja|nei");
+            var jsonInput = JSON_MAPPER.createObjectNode();
+            jsonInput.putArray("felt");
+            assertThat(template.apply(Map.of("felt", jsonInput.get("felt")))).isEqualTo("ja|nei");
+        }
+
+        @Test
+        void skalVæreSannForUtfyltListe() throws IOException {
+            var template = handlebars.compileInline("{{#if (finnes felt)}}ja{{else}}nei{{/if}}");
+            assertThat(template.apply(Map.of("felt", List.of("noe")))).isEqualTo("ja");
+        }
+    }
+
+    @Nested
+    class PunktlisteHelperTest {
+
+        @Test
+        void skalByggeVelformetListeOgDroppeTommePunkter() throws IOException {
+            var template = handlebars.compileInline("""
+                    {{#punktliste}}
+                    {{#punkt}}Første{{/punkt}}
+                    {{#punkt}}{{#if mangler}}Skal ikke vises{{/if}}{{/punkt}}
+                    {{#punkt}}Andre: {{verdi}}{{/punkt}}
+                    {{/punktliste}}""");
+            var result = template.apply(Map.of("verdi", 42));
+            assertThat(result).isEqualTo("<ul>\n    <li>Første</li>\n    <li>Andre: 42</li>\n</ul>");
+        }
+
+        @Test
+        void skalIkkeRendreListeNårAllePunkterErTomme() throws IOException {
+            var template = handlebars.compileInline("""
+                    {{#punktliste}}
+                    {{#punkt}}{{#if mangler}}Nei{{/if}}{{/punkt}}
+                    {{#punkt}}   {{/punkt}}
+                    {{/punktliste}}""");
+            assertThat(template.apply(Map.of())).isEmpty();
+        }
+
+        @Test
+        void skalVæreUpåvirketAvWhitespaceOgInaktiveGrener() throws IOException {
+            var kompakt = handlebars.compileInline("{{#punktliste}}{{#punkt}}Ett{{/punkt}}{{#punkt}}To{{/punkt}}{{/punktliste}}");
+            var luftig = handlebars.compileInline("""
+                    {{#punktliste}}
+
+                    {{#unless finnesIkke}}
+                    {{#punkt}}Ett{{/punkt}}
+
+                    {{/unless}}
+                    {{#punkt}}To{{/punkt}}
+
+                    {{/punktliste}}""");
+            assertThat(luftig.apply(Map.of())).isEqualTo(kompakt.apply(Map.of()));
+        }
+
+        @Test
+        void skalSamlePunkterFraEach() throws IOException {
+            var template = handlebars.compileInline("{{#punktliste}}{{#each navn}}{{#punkt}}Navn: {{this}}{{/punkt}}{{/each}}{{/punktliste}}");
+            var result = template.apply(Map.of("navn", List.of("Ola", "Kari")));
+            assertThat(result).isEqualTo("<ul>\n    <li>Navn: Ola</li>\n    <li>Navn: Kari</li>\n</ul>");
+        }
+
+        @Test
+        void skalEskapereHtmlIVerdierMenBevareMarkupFraMalen() throws IOException {
+            var template = handlebars.compileInline("{{#punktliste}}{{#punkt}}Svar: <strong>{{verdi}}</strong>{{/punkt}}{{/punktliste}}");
+            var result = template.apply(Map.of("verdi", "<script>"));
+            assertThat(result).isEqualTo("<ul>\n    <li>Svar: <strong>&lt;script&gt;</strong></li>\n</ul>");
+        }
+    }
 
 }

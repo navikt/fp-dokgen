@@ -54,6 +54,56 @@ class SøknadKvitteringTest {
     }
 
     @Test
+    void svp_næring_uten_forelagte_aktiviteter_bruker_legacy_mal_nb() {
+        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-næring-uten-forelagte-aktiviteter");
+        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-forelagte-aktiviteter-nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+        assertThat(content).doesNotContain("Mine frilansoppdrag").doesNotContain("Mine næringer");
+    }
+
+    @Test
+    void svp_næring_uten_forelagte_aktiviteter_bruker_legacy_mal_nn() {
+        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-næring-uten-forelagte-aktiviteter");
+        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-forelagte-aktiviteter-nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+        assertThat(content).doesNotContain("Mine frilansoppdrag").doesNotContain("Mine næringar");
+    }
+
+    @Test
+    void svp_næring_uten_forelagte_aktiviteter_bruker_legacy_mal_en() {
+        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-næring-uten-forelagte-aktiviteter");
+        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-forelagte-aktiviteter-en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+        assertThat(content).doesNotContain("Freelance assignments").doesNotContain("My businesses");
+    }
+
+    @Test
+    void svp_næring_uten_treff_i_registrene_bruker_ny_mal_nb() {
+        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-næring-uten-treff-i-registrene");
+        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-treff-i-registrene-nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+        assertThat(content).contains("Du er ikke registrert med noen frilansoppdrag.");
+        assertThat(content).contains("Du er ikke registrert med noen næringer.");
+        assertThat(content).contains("<ul>\n    <li>Navn på virksomheten: Utenlandsk Fiskeri AB</li>\n    <li>Registrert i land: Sverige</li>");
+    }
+
+    @Test
+    void svp_næring_uten_treff_i_registrene_bruker_ny_mal_nn() {
+        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-næring-uten-treff-i-registrene");
+        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-treff-i-registrene-nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+        assertThat(content).contains("<ul>\n    <li>Namn på verksemda: Utenlandsk Fiskeri AB</li>");
+    }
+
+    @Test
+    void svp_næring_uten_treff_i_registrene_bruker_ny_mal_en() {
+        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-næring-uten-treff-i-registrene");
+        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-treff-i-registrene-en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+        assertThat(content).contains("<ul>\n    <li>Business name: Utenlandsk Fiskeri AB</li>");
+    }
+
+    @Test
     void engangsstønad_nb_test() {
         var content = compileContent(BrevMal.ENGANGSSTØNAD_SØKNAD, Språk.BOKMÅL, "es");
         var expected = getExpected(BrevMal.ENGANGSSTØNAD_SØKNAD, "es-nb.txt");
@@ -79,6 +129,7 @@ class SøknadKvitteringTest {
         var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-termin-2af-frilans-næring-andre-inntekter");
         var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-fl-sn-andre-nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
+        assertThat(content).contains("<ul>\n    <li>Du startet som selvstendig næringsdrivende");
     }
 
     @Test
@@ -86,6 +137,7 @@ class SøknadKvitteringTest {
         var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.NYNORSK, "mor-termin-2af-frilans-næring-andre-inntekter");
         var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-fl-sn-andre-nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
+        assertThat(content).contains("<ul>\n    <li>Du starta som sjølvstendig næringsdrivande");
     }
 
     @Test
@@ -93,6 +145,7 @@ class SøknadKvitteringTest {
         var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.ENGELSK, "mor-termin-2af-frilans-næring-andre-inntekter");
         var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-fl-sn-andre-en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
+        assertThat(content).contains("<ul>\n    <li>You started as self-employed");
     }
 
     @Test

@@ -50,6 +50,8 @@
   },
   "egenNæring": {
     "næringstype": "FISKE",
+    "navnPåNæringen": "Sagene Fiskeri",
+    "organisasjonsnummer": "974760673",
     "registrertILand": "SE",
     "fom": "2025-10-01",
     "næringsinntekt": "329000",

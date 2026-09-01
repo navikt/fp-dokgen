@@ -1,0 +1,24 @@
+{{#with egenNæring}}
+<div class="no-page-break">
+
+## Self-employed business
+{{#punktliste}}
+{{#unless (næring-forelagt organisasjonsnummer ../søkerinfo.selvstendigNæring)}}
+{{#punkt}}{{#if navnPåNæringen}}Business name: {{{navnPåNæringen}}}{{/if}}{{/punkt}}
+{{#punkt}}{{#if registrertINorge}}{{#if organisasjonsnummer}}Organisation number: {{organisasjonsnummer}}{{/if}}{{else if registrertILand}}Registered in country: {{land-norsk registrertILand lang="en"}}{{/if}}{{/punkt}}
+{{#punkt}}{{#if næringstype}}Type of business: {{#switch næringstype}}{{#case "DAGMAMMA"}}Daycare provider{{/case}}{{#case "FISKE"}}Fisher{{/case}}{{#case "JORDBRUK_SKOGBRUK"}}Agriculture/forestry{{/case}}{{#case "ANNEN"}}Other{{/case}}{{/switch}}{{/if}}{{/punkt}}
+{{/unless}}
+{{#punkt}}You started as self-employed {{norwegian-date fom}}{{#if tom}} and ended {{norwegian-date tom}}.{{else}} and still work there.{{/if}}{{/punkt}}
+{{#eq hattVarigEndringAvNæringsinntektSiste4Kalenderår true}}
+{{#punkt}}Permanent change in business or work situation over the last four years: <strong>Yes</strong>{{/punkt}}
+{{#punkt}}From {{norwegian-date varigEndringDato}} you have a permanent change in business income, where the new income is: {{varigEndringInntektEtterEndring}}.{{/punkt}}
+{{#punkt}}Reason for permanent change: {{varigEndringBeskrivelse}}{{/punkt}}
+{{else}}
+{{#punkt}}Permanent change in business or work situation over the last four years: <strong>No</strong>{{/punkt}}
+{{#punkt}}{{#if næringsinntekt}}Business income: {{næringsinntekt}}{{/if}}{{/punkt}}
+{{/eq}}
+{{#punkt}}{{#if oppstartsdato}}Business started: {{norwegian-date oppstartsdato}}{{/if}}{{/punkt}}
+{{#punkt}}{{> utils/sporsmal-svar-yes-no value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Have you started working during the last three completed years"}}{{/punkt}}
+{{/punktliste}}
+</div>
+{{/with}}

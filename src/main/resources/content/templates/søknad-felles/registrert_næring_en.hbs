@@ -1,8 +1,9 @@
-{{#if søkerinfo/selvstendigNæring}}
+{{#if (finnes søkerinfo/selvstendigNæring)}}
 <div class="no-page-break">
 
 ## My businesses
 Information is retrieved from the Central Coordinating Register for Legal Entities (the Brønnøysund Register Centre). These were shown in the application.
+{{#if søkerinfo/selvstendigNæring}}
 {{#each søkerinfo/selvstendigNæring}}
 ### {{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}
 {{#if næringstype}}<ul>
@@ -15,5 +16,8 @@ Information is retrieved from the Central Coordinating Register for Legal Entiti
     </li>
 </ul>{{/if}}
 {{/each}}
+{{else}}
+You are not registered with any businesses.
+{{/if}}
 </div>
 {{/if}}

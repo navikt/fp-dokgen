@@ -1,8 +1,9 @@
-{{#if søkerinfo/selvstendigNæring}}
+{{#if (finnes søkerinfo/selvstendigNæring)}}
 <div class="no-page-break">
 
 ## Mine næringer
 Opplysningene er hentet fra Enhetsregisteret i Brønnøysundregistrene. Disse ble vist i søknaden.
+{{#if søkerinfo/selvstendigNæring}}
 {{#each søkerinfo/selvstendigNæring}}
 ### {{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}
 {{#if næringstype}}<ul>
@@ -15,5 +16,8 @@ Opplysningene er hentet fra Enhetsregisteret i Brønnøysundregistrene. Disse bl
     </li>
 </ul>{{/if}}
 {{/each}}
+{{else}}
+Du er ikke registrert med noen næringer.
+{{/if}}
 </div>
 {{/if}}

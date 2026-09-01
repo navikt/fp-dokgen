@@ -17,6 +17,7 @@ import java.util.Map;
 import java.util.Objects;
 
 import com.github.jknack.handlebars.Context;
+import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.Helper;
 import com.github.jknack.handlebars.Options;
 import com.neovisionaries.i18n.CountryCode;
@@ -30,6 +31,9 @@ final class HandlebarsCustomHelpers {
 
     private static final String CONDITION_VARIABLE = "__condition_variable";
     private static final String CONDITION_FULFILLED = "__condition_fulfilled";
+
+    private static final char PUNKT_START = '\u0001';
+    private static final char PUNKT_SLUTT = '\u0002';
 
     private HandlebarsCustomHelpers() {
         // Utility class
@@ -330,6 +334,103 @@ final class HandlebarsCustomHelpers {
             }
 
             return "(" + orgnummer + ")";
+        }
+    }
+
+    /**
+     * True dersom feltet finnes i input, også når verdien er en tom liste. Brukes for å skille mellom en søknad
+     * der opplysningen ikke ble forelagt i det hele tatt (feltet mangler) og en søknad der oppslaget ble gjort
+     * uten treff (tom liste). {@code {{#if}}} alene kan ikke brukes, fordi Handlebars behandler tom liste som usann.
+     * <p>
+     * Syntaks: {{#if (finnes søkerinfo.selvstendigNæring)}}...{{/if}}
+     */
+    static class FinnesHelper implements Helper<Object> {
+        @Override
+        public Object apply(Object context, Options options) {
+            if (context == null) {
+                return false;
+            }
+            if (context instanceof JsonNode jsonNode) {
+                return !jsonNode.isNull() && !jsonNode.isMissingNode();
+            }
+            return true;
+        }
+    }
+
+    /**
+     * Bygger en velformet punktliste av de punktene som faktisk har innhold. Tomme punkter droppes, og er alle
+     * punkter tomme rendres ingen liste i det hele tatt.
+     * <p>
+     * Whitespace i malen påvirker ikke resultatet, siden bare innholdet mellom punktmarkørene tas vare på. Det gjør
+     * malen robust mot at en inaktiv Handlebars-gren etterlater en blank linje som Markdown ellers ville tolket som
+     * nytt avsnitt, slik at li-taggene ble synlig tekst.
+     * <p>
+     * Syntaks:
+     * {{#punktliste}}
+     * {{#punkt}}Et punkt{{/punkt}}
+     * {{#punkt}}{{#if felt}}Et betinget punkt: {{felt}}{{/if}}{{/punkt}}
+     * {{/punktliste}}
+     */
+    static class PunktlisteHelper implements Helper<Object> {
+        @Override
+        public Object apply(Object context, Options options) throws IOException {
+            var innhold = options.fn().toString();
+            var punkter = new ArrayList<String>();
+            var fra = innhold.indexOf(PUNKT_START);
+            while (fra >= 0) {
+                var til = innhold.indexOf(PUNKT_SLUTT, fra + 1);
+                if (til < 0) {
+                    break;
+                }
+                var punkt = innhold.substring(fra + 1, til).trim();
+                if (!punkt.isEmpty()) {
+                    punkter.add(punkt);
+                }
+                fra = innhold.indexOf(PUNKT_START, til + 1);
+            }
+            if (punkter.isEmpty()) {
+                return new Handlebars.SafeString("");
+            }
+            var builder = new StringBuilder("<ul>");
+            for (var punkt : punkter) {
+                builder.append("\n    <li>").append(punkt).append("</li>");
+            }
+            return new Handlebars.SafeString(builder.append("\n</ul>").toString());
+        }
+    }
+
+    /**
+     * Markerer ett punkt inne i en {@link PunktlisteHelper}. Se dokumentasjonen der.
+     */
+    static class PunktHelper implements Helper<Object> {
+        @Override
+        public Object apply(Object context, Options options) throws IOException {
+            return new Handlebars.SafeString(PUNKT_START + options.fn().toString() + PUNKT_SLUTT);
+        }
+    }
+
+    static class NæringForelagtHelper implements Helper<Object> {
+        @Override
+        public Object apply(Object context, Options options) {
+            var organisasjonsnummer = stringValue(context);
+            var næringer = options.param(0, null);
+            if (organisasjonsnummer == null || !(næringer instanceof Iterable<?> iterable)) {
+                return false;
+            }
+            for (var næring : iterable) {
+                if (næring instanceof Map<?, ?> map
+                        && organisasjonsnummer.equals(stringValue(map.get("organisasjonsnummer")))) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private static String stringValue(Object value) {
+            if (value instanceof JsonNode jsonNode) {
+                return jsonNode.isValueNode() ? jsonNode.asString() : null;
+            }
+            return value == null ? null : value.toString();
         }
     }
 

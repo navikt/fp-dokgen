@@ -1,13 +1,17 @@
-{{#if søkerinfo/frilansoppdrag}}
+{{#if (finnes søkerinfo/frilansoppdrag)}}
 <div class="no-page-break">
 
 ## Mine frilansoppdrag
 Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden.
+{{#if søkerinfo/frilansoppdrag}}
 {{#each søkerinfo/frilansoppdrag}}
 ### {{navn}}
 {{#if fom}}<ul>
     <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
 </ul>{{/if}}
 {{/each}}
+{{else}}
+Du er ikke registrert med noen frilansoppdrag.
+{{/if}}
 </div>
 {{/if}}

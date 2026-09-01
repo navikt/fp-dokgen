@@ -35,14 +35,6 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 </ul>
 </div>
 <div class="no-page-break">
-## Mine frilansoppdrag
-Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
-### Kulturskolen i Bydel Sagene
-<ul>
-    <li>Periode: 01.06.2025 – Pågåande</li>
-</ul>
-</div>
-<div class="no-page-break">
 ## Informasjon om frilansoppdrag
 <ul>
     <li>Starta som frilansar: 01.09.2025</li>
@@ -50,22 +42,14 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 </ul>
 </div>
 <div class="no-page-break">
-## Mine næringar
-Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
-### Sagene Fiskeri (974760673)
-<ul>
-    <li>Verksemdstype: Fiskar</li>
-</ul>
-</div>
-<div class="no-page-break">
 ## Eige næringsverksemd
 <ul>
+    <li>Namn på verksemda: Utenlandsk Fiskeri AB</li>
+    <li></li>
     <li>Registrert i land: Sverige</li>
     <li>Verksemdstype: Fiskar</li>
-    <li>Du starta som sjølvstendig næringsdrivande 01.10.2025 og slutta 31.10.2025.</li>
-    <li>Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Nei</strong></li>
-    <li>Næringsinntekt: 329000</li>
-    <li>Verksemda blei starta: 01.11.2023</li>
+    <li>Du starta som sjølvstendig næringsdrivande 01.10.2025 og slutta 31.10.2025.</li><li>Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Nei</strong></li>
+    <li>Næringsinntekt: 329000</li><li>Verksemda blei starta: 01.11.2023</li>
     <li>Har du byrja å jobbe i løpet av dei tre siste ferdiglikna åra: <strong>Ja</strong></li>
 </ul>
 </div>
