@@ -6,16 +6,7 @@ National identity number: 987654321<br/>
 <div class="no-page-break">
 ## Information about the child
 <ul>
-    <li></li>
     <li>Due date: 24.12.2025</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -35,30 +26,30 @@ Information is retrieved from the State Register of Employers and Employees (the
 </ul>
 </div>
 <div class="no-page-break">
-## Freelance assignments
+## Freelance
 Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application.
-### Kulturskolen i Bydel Sagene
+<strong>Kulturskolen i Bydel Sagene</strong>
 <ul>
     <li>Period: 01.06.2025 – Ongoing</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Freelance
+### Your answers about freelance work
 <ul>
     <li>Started: 01.09.2025</li>
     <li>Still working as freelancer: <strong>Yes</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-## My businesses
+## Self-employed
 Information is retrieved from the Central Coordinating Register for Legal Entities (the Brønnøysund Register Centre). These were shown in the application.
-### Sagene Fiskeri (974760673)
+<strong>Sagene Fiskeri (974760673)</strong>
 <ul>
     <li>Type of business: Fisher</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Self-employed business
+### Your answers about the business
 <ul>
     <li>Registered in country: Sweden</li>
     <li>Type of business: Fisher</li>
@@ -67,12 +58,6 @@ Information is retrieved from the Central Coordinating Register for Legal Entiti
     <li>Business income: 329000</li>
     <li>Business started: 01.11.2023</li>
     <li>Have you started working during the last three completed years: <strong>Yes</strong></li>
-</ul>
-</div>
-<div class="no-page-break">
-## Other sources of income
-<ul>
-    <li>Have you worked abroad in the last 4 weeks? <strong>Yes</strong></li>
 </ul>
 </div>
 <div class="no-page-break">

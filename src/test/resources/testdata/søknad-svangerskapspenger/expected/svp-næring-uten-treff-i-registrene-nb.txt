@@ -6,16 +6,7 @@ Fødselsnummer: 987654321<br/>
 <div class="no-page-break">
 ## Opplysninger om barnet
 <ul>
-    <li></li>
     <li>Termindato: 24.12.2025</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -35,24 +26,24 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
 </ul>
 </div>
 <div class="no-page-break">
-## Mine frilansoppdrag
+## Frilans
 Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden.
 Du er ikke registrert med noen frilansoppdrag.
 </div>
 <div class="no-page-break">
-## Informasjon om frilansoppdrag
+### Dine svar om frilansarbeid
 <ul>
     <li>Startet som frilanser: 01.09.2025</li>
     <li>Jobber fortsatt som frilanser: <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-## Mine næringer
+## Selvstendig næringsdrivende
 Opplysningene er hentet fra Enhetsregisteret i Brønnøysundregistrene. Disse ble vist i søknaden.
 Du er ikke registrert med noen næringer.
 </div>
 <div class="no-page-break">
-## Egen næringsvirksomhet
+### Dine svar om næringsvirksomheten
 <ul>
     <li>Navn på virksomheten: Utenlandsk Fiskeri AB</li>
     <li>Registrert i land: Sverige</li>
@@ -62,12 +53,6 @@ Du er ikke registrert med noen næringer.
     <li>Næringsinntekt: 329000</li>
     <li>Virksomheten ble startet: 01.11.2023</li>
     <li>Har du begynt å jobbe i løpet av de tre siste ferdigliknede årene: <strong>Ja</strong></li>
-</ul>
-</div>
-<div class="no-page-break">
-## Andre inntektskilder
-<ul>
-    <li>Har du jobbet i utlandet de siste 4 ukene? <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">

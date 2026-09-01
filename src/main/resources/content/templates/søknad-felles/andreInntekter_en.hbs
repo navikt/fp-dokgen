@@ -1,4 +1,5 @@
-{{! The question is still asked, unlike freelance and self-employment which are retrieved from registers }}
+{{! Ja/nei-spørsmålet stilles ikke lenger. Det vises kun for søknader fra frontend som ikke forela aktivitetene. }}
+{{#unless (aktiviteter-forelagt søkerinfo)}}
 <div class="no-page-break">
 
 ## Other sources of income
@@ -6,6 +7,7 @@
     <li>{{#if erSvp}}Have you worked abroad in the last 4 weeks?{{else}}Have you had other sources of income in the last 10 months?{{/if}} <strong>{{#if andreInntekterSiste10Mnd}}Yes{{else}}No{{/if}}</strong></li>
 </ul>
 </div>
+{{/unless}}
 {{#if andreInntekterSiste10Mnd}}
 <div class="no-page-break">
 
@@ -17,17 +19,17 @@
 {{~#case "ETTERLØNN_ARBEIDSGIVER"~}}Severance pay from employer{{~/case~}}
 {{~#case "JOBB_I_UTLANDET"~}}Job abroad{{~/case~}}
 {{~#case "LØNN_UNDER_UTDANNING"~}}Salary during education{{~/case~}}
-{{~#case "MILITÆR_ELLER_SIVILTJENESTE"~}}Military or civilian service{{~/case~}}
+{{~#case "MILITÆR_ELLER_SIVILTJENESTE"~}}Military service{{~/case~}}
 {{~#case "SLUTTPAKKE"~}}Severance package{{~/case~}}
 {{~#case "VENTELØNN_VARTPENGER"~}}Waiting salary or severance benefits{{~/case~}}
 {{~#case "VENTELØNN"~}}Waiting salary{{~/case~}}
 {{~#case "VARTPENGER"~}}Severance benefits{{~/case~}}
 {{~/switch~}}</strong>
-<ul>
-    <li>{{#if arbeidsgiverNavn}}Employer: {{{arbeidsgiverNavn}}}{{/if}}</li>
-    <li>Period: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}</li>
-    <li>{{#if land}}Country where the business is registered: {{land-norsk land lang="en"}}{{/if}}</li>
-</ul>
+{{#punktliste}}
+{{#punkt}}{{#if arbeidsgiverNavn}}Employer: {{{arbeidsgiverNavn}}}{{/if}}{{/punkt}}
+{{#punkt}}Period: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}{{/punkt}}
+{{#punkt}}{{#if land}}Country where the business is registered: {{land-norsk land lang="en"}}{{/if}}{{/punkt}}
+{{/punktliste}}
 {{/each}}
 </div>
 {{/if}}

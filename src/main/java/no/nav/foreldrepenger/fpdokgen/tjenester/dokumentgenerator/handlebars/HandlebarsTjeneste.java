@@ -45,6 +45,7 @@ public class HandlebarsTjeneste {
         handlebars.registerHelper("arbeidsforhold-fra-orgnummer", new HandlebarsCustomHelpers.ArbeidsforholdLookupHelper());
         handlebars.registerHelper("næring-forelagt", new HandlebarsCustomHelpers.NæringForelagtHelper());
         handlebars.registerHelper("finnes", new HandlebarsCustomHelpers.FinnesHelper());
+        handlebars.registerHelper("aktiviteter-forelagt", new HandlebarsCustomHelpers.AktiviteterForelagtHelper());
         handlebars.registerHelper("punktliste", new HandlebarsCustomHelpers.PunktlisteHelper());
         handlebars.registerHelper("punkt", new HandlebarsCustomHelpers.PunktHelper());
         handlebars.registerHelper("size", new HandlebarsCustomHelpers.SizeHelper());

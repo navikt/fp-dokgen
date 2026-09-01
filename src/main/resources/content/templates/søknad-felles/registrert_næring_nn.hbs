@@ -1,11 +1,12 @@
 {{#if (finnes søkerinfo/selvstendigNæring)}}
 <div class="no-page-break">
 
-## Mine næringar
+## Sjølvstendig næringsdrivande
+
 Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
 {{#if søkerinfo/selvstendigNæring}}
 {{#each søkerinfo/selvstendigNæring}}
-### {{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}
+<strong>{{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}</strong>
 {{#if næringstype}}<ul>
     <li>Verksemdstype: {{#switch næringstype~}}
             {{~#case "DAGMAMMA"~}}Dagmamma{{~/case~}}

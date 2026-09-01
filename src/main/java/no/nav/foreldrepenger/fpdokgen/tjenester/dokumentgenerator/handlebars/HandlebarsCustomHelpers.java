@@ -338,6 +338,32 @@ final class HandlebarsCustomHelpers {
     }
 
     /**
+     * True dersom søknaden kommer fra en frontend som forela aktivitetene fra registrene. Signalet er at feltene finnes
+     * i det hele tatt, ikke at de har innhold — en søker uten registrerte aktiviteter får tomme lister.
+     * <p>
+     * Brukes til å velge mellom det gamle og det nye spørsmålssettet i kvitteringen, siden den samme frontend-versjonen
+     * som begynte å forelegge aktiviteter også sluttet å stille flere ja/nei-spørsmål.
+     * <p>
+     * Syntaks: {{#if (aktiviteter-forelagt søkerinfo)}}...{{/if}}
+     */
+    static class AktiviteterForelagtHelper implements Helper<Object> {
+        @Override
+        public Object apply(Object context, Options options) {
+            return finnesFelt(context, "selvstendigNæring") || finnesFelt(context, "frilansoppdrag");
+        }
+
+        private static boolean finnesFelt(Object søkerinfo, String felt) {
+            var verdi = switch (søkerinfo) {
+                case null -> null;
+                case JsonNode jsonNode -> jsonNode.get(felt);
+                case Map<?, ?> map -> map.get(felt);
+                default -> null;
+            };
+            return verdi != null && !(verdi instanceof JsonNode node && (node.isNull() || node.isMissingNode()));
+        }
+    }
+
+    /**
      * True dersom feltet finnes i input, også når verdien er en tom liste. Brukes for å skille mellom en søknad
      * der opplysningen ikke ble forelagt i det hele tatt (feltet mangler) og en søknad der oppslaget ble gjort
      * uten treff (tom liste). {@code {{#if}}} alene kan ikke brukes, fordi Handlebars behandler tom liste som usann.

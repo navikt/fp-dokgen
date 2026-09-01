@@ -1,11 +1,12 @@
 {{#if (finnes søkerinfo/selvstendigNæring)}}
 <div class="no-page-break">
 
-## My businesses
+## Self-employed
+
 Information is retrieved from the Central Coordinating Register for Legal Entities (the Brønnøysund Register Centre). These were shown in the application.
 {{#if søkerinfo/selvstendigNæring}}
 {{#each søkerinfo/selvstendigNæring}}
-### {{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}
+<strong>{{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}</strong>
 {{#if næringstype}}<ul>
     <li>Type of business: {{#switch næringstype~}}
             {{~#case "DAGMAMMA"~}}Daycare provider{{~/case~}}

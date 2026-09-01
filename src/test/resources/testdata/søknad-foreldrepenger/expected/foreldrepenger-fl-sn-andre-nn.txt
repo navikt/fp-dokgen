@@ -7,15 +7,8 @@ Kva søkjer du som: Mor
 <div class="no-page-break">
 ## Opplysningar om barnet
 <ul>
-    <li></li>
     <li>Termindato: 08.09.2025</li>
     <li>Terminbekrefting er datert: 08.08.2025</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
     <li>Tal på barn: 1</li>
 </ul>
 </div>
@@ -41,38 +34,38 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 </ul>
 </div>
 <div class="no-page-break">
-## Mine frilansoppdrag
+## Frilans
 Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
-### Kulturskolen i Bydel Sagene
+<strong>Kulturskolen i Bydel Sagene</strong>
 <ul>
     <li>Periode: 15.01.2025 – 30.06.2025</li>
 </ul>
-### Ola Nordmann
+<strong>Ola Nordmann</strong>
 <ul>
     <li>Periode: 01.03.2025 – Pågåande</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Informasjon om frilansoppdrag
+### Svara dine om frilansarbeid
 <ul>
     <li>Starta som frilansar: 01.09.2025</li>
     <li>Jobbar framleis som frilansar: <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-## Mine næringar
+## Sjølvstendig næringsdrivande
 Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
-### Sagene Fiskeri (974760673)
+<strong>Sagene Fiskeri (974760673)</strong>
 <ul>
     <li>Verksemdstype: Fiskar</li>
 </ul>
-### Nordre Aker Gård (889640782)
+<strong>Nordre Aker Gård (889640782)</strong>
 <ul>
     <li>Verksemdstype: Jord-/skogbruk</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Eige næringsverksemd
+### Svara dine om næringsverksemda
 <ul>
     <li>Du starta som sjølvstendig næringsdrivande 01.10.2025 og slutta 31.10.2025.</li>
     <li>Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Nei</strong></li>
@@ -82,18 +75,10 @@ Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse bl
 </ul>
 </div>
 <div class="no-page-break">
-## Andre inntektskjelder
-<ul>
-    <li>Har du hatt andre inntektskjelder dei siste 10 månadene? <strong>Ja</strong></li>
-</ul>
-</div>
-<div class="no-page-break">
 ## Andre inntekter siste 10 månader
 <strong>Etterlønn sluttpakke</strong>
 <ul>
-    <li></li>
     <li>Periode: 01.10.2025 – 01.11.2025</li>
-    <li></li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -101,13 +86,10 @@ Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse bl
 <ul>
     <li>Namn: Fornavn annenforelder Etternavn annenforelder</li>
     <li>Fødselsnummer: 04479417895</li>
-    <li></li>
-    <li></li><li>Er de saman om omsorga for barnet: <strong>Ja</strong></li>
+    <li>Er de saman om omsorga for barnet: <strong>Ja</strong></li>
     <li>Har den andre forelderen rett til foreldrepengar i Noreg: <strong>Ja</strong></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li></ul>
+    <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li>
+</ul>
 </div>
 <div class="no-page-break">
 ## Planen din

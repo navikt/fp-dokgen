@@ -1,4 +1,5 @@
-{{! Spørsmålet blir framleis stilt til brukar, i motsetnad til frilans og næring som blir henta frå register }}
+{{! Ja/nei-spørsmålet blir ikkje stilt lenger. Det blir berre vist for søknader frå frontend som ikkje forela aktivitetane. }}
+{{#unless (aktiviteter-forelagt søkerinfo)}}
 <div class="no-page-break">
 
 ## Andre inntektskjelder
@@ -6,6 +7,7 @@
     <li>{{#if erSvp}}Har du jobba i utlandet dei siste 4 vekene?{{else}}Har du hatt andre inntektskjelder dei siste 10 månadene?{{/if}} <strong>{{#if andreInntekterSiste10Mnd}}Ja{{else}}Nei{{/if}}</strong></li>
 </ul>
 </div>
+{{/unless}}
 {{#if andreInntekterSiste10Mnd}}
 <div class="no-page-break">
 
@@ -17,17 +19,17 @@
 {{~#case "ETTERLØNN_ARBEIDSGIVER"~}}Etterlønn arbeidsgivar{{~/case~}}
 {{~#case "JOBB_I_UTLANDET"~}}Jobb i utlandet{{~/case~}}
 {{~#case "LØNN_UNDER_UTDANNING"~}}Løn under utdanning{{~/case~}}
-{{~#case "MILITÆR_ELLER_SIVILTJENESTE"~}}Militær- eller siviltjeneste{{~/case~}}
+{{~#case "MILITÆR_ELLER_SIVILTJENESTE"~}}Førstegangsteneste{{~/case~}}
 {{~#case "SLUTTPAKKE"~}}Sluttpakke{{~/case~}}
 {{~#case "VENTELØNN_VARTPENGER"~}}Venteløn vartpengar{{~/case~}}
 {{~#case "VENTELØNN"~}}Venteløn{{~/case~}}
 {{~#case "VARTPENGER"~}}Vartpengar{{~/case~}}
 {{~/switch~}}</strong>
-<ul>
-    <li>{{#if arbeidsgiverNavn}}Arbeidsgivar: {{{arbeidsgiverNavn}}}{{/if}}</li>
-    <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågåande{{/if}}</li>
-    <li>{{#if land}}Landet verksemda er registrert i: {{land-norsk land lang="nn"}}{{/if}}</li>
-</ul>
+{{#punktliste}}
+{{#punkt}}{{#if arbeidsgiverNavn}}Arbeidsgivar: {{{arbeidsgiverNavn}}}{{/if}}{{/punkt}}
+{{#punkt}}Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågåande{{/if}}{{/punkt}}
+{{#punkt}}{{#if land}}Landet verksemda er registrert i: {{land-norsk land lang="nn"}}{{/if}}{{/punkt}}
+{{/punktliste}}
 {{/each}}
 </div>
 {{/if}}

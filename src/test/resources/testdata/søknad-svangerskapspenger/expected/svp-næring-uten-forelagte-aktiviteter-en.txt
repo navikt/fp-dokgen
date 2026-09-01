@@ -6,16 +6,7 @@ National identity number: 987654321<br/>
 <div class="no-page-break">
 ## Information about the child
 <ul>
-    <li></li>
     <li>Due date: 24.12.2025</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
 </ul>
 </div>
 <div class="no-page-break">

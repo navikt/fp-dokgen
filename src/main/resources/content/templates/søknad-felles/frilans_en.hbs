@@ -1,7 +1,7 @@
 {{#with frilans}}
 <div class="no-page-break">
 
-## Freelance
+{{#if (finnes ../søkerinfo/frilansoppdrag)}}### Your answers about freelance work{{else}}## Freelance{{/if}}
 <ul>
     <li>Started: {{norwegian-date oppstart}}</li>
     <li>{{> utils/sporsmal-svar-yes-no value=jobberFremdelesSomFrilans label="Still working as freelancer"}}</li>

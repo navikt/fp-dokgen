@@ -9,13 +9,6 @@ Fødselsnummer: 3456789<br/>
 <ul>
     <li>Fødselsdato: 29.08.2025</li>
     <li>Termindato: 29.08.2025</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
     <li>Tal på barn: 1</li>
 </ul>
 </div>

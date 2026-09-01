@@ -1,11 +1,12 @@
 {{#if (finnes søkerinfo/frilansoppdrag)}}
 <div class="no-page-break">
 
-## Freelance assignments
+## Freelance
+
 Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application.
 {{#if søkerinfo/frilansoppdrag}}
 {{#each søkerinfo/frilansoppdrag}}
-### {{navn}}
+<strong>{{navn}}</strong>
 {{#if fom}}<ul>
     <li>Period: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}</li>
 </ul>{{/if}}

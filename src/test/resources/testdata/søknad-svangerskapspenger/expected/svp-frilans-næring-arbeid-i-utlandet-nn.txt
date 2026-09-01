@@ -6,16 +6,7 @@ Fødselsnummer: 987654321<br/>
 <div class="no-page-break">
 ## Opplysningar om barnet
 <ul>
-    <li></li>
     <li>Termindato: 24.12.2025</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -35,30 +26,30 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 </ul>
 </div>
 <div class="no-page-break">
-## Mine frilansoppdrag
+## Frilans
 Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
-### Kulturskolen i Bydel Sagene
+<strong>Kulturskolen i Bydel Sagene</strong>
 <ul>
     <li>Periode: 01.06.2025 – Pågåande</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Informasjon om frilansoppdrag
+### Svara dine om frilansarbeid
 <ul>
     <li>Starta som frilansar: 01.09.2025</li>
     <li>Jobbar framleis som frilansar: <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-## Mine næringar
+## Sjølvstendig næringsdrivande
 Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
-### Sagene Fiskeri (974760673)
+<strong>Sagene Fiskeri (974760673)</strong>
 <ul>
     <li>Verksemdstype: Fiskar</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Eige næringsverksemd
+### Svara dine om næringsverksemda
 <ul>
     <li>Registrert i land: Sverige</li>
     <li>Verksemdstype: Fiskar</li>
@@ -67,12 +58,6 @@ Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse bl
     <li>Næringsinntekt: 329000</li>
     <li>Verksemda blei starta: 01.11.2023</li>
     <li>Har du byrja å jobbe i løpet av dei tre siste ferdiglikna åra: <strong>Ja</strong></li>
-</ul>
-</div>
-<div class="no-page-break">
-## Andre inntektskjelder
-<ul>
-    <li>Har du jobba i utlandet dei siste 4 vekene? <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">

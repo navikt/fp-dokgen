@@ -580,10 +580,56 @@ class HandlebarsCustomHelpersTest {
             assertThat(template.apply(Map.of("felt", jsonInput.get("felt")))).isEqualTo("ja|nei");
         }
 
+    }
+
+    @Nested
+    class AktiviteterForelagtHelperTest {
+
+        private static final String MAL = "{{#if (aktiviteter-forelagt søkerinfo)}}ny{{else}}legacy{{/if}}";
+
         @Test
-        void skalVæreSannForUtfyltListe() throws IOException {
-            var template = handlebars.compileInline("{{#if (finnes felt)}}ja{{else}}nei{{/if}}");
-            assertThat(template.apply(Map.of("felt", List.of("noe")))).isEqualTo("ja");
+        void skalVæreLegacyNårBeggeFelteneMangler() throws IOException {
+            var template = handlebars.compileInline(MAL);
+            assertThat(template.apply(Map.of("søkerinfo", Map.of("arbeidsforhold", List.of())))).isEqualTo("legacy");
+        }
+
+        @Test
+        void skalVæreLegacyNårSøkerinfoMangler() throws IOException {
+            var template = handlebars.compileInline(MAL);
+            assertThat(template.apply(Map.of())).isEqualTo("legacy");
+        }
+
+        @Test
+        void skalVæreLegacyForNullNode() throws IOException {
+            var template = handlebars.compileInline(MAL);
+            var søkerinfo = JSON_MAPPER.createObjectNode();
+            søkerinfo.putNull("selvstendigNæring");
+            søkerinfo.putNull("frilansoppdrag");
+            assertThat(template.apply(Map.of("søkerinfo", søkerinfo))).isEqualTo("legacy");
+        }
+
+        @Test
+        void skalVæreNyNårFelteneErTomme() throws IOException {
+            var template = handlebars.compileInline(MAL);
+            assertThat(template.apply(Map.of("søkerinfo", Map.of("selvstendigNæring", List.of(), "frilansoppdrag", List.of()))))
+                    .isEqualTo("ny");
+            var søkerinfo = JSON_MAPPER.createObjectNode();
+            søkerinfo.putArray("selvstendigNæring");
+            søkerinfo.putArray("frilansoppdrag");
+            assertThat(template.apply(Map.of("søkerinfo", søkerinfo))).isEqualTo("ny");
+        }
+
+        @Test
+        void skalVæreNyNårKunEttAvFelteneFinnes() throws IOException {
+            var template = handlebars.compileInline(MAL);
+            assertThat(template.apply(Map.of("søkerinfo", Map.of("frilansoppdrag", List.of())))).isEqualTo("ny");
+            assertThat(template.apply(Map.of("søkerinfo", Map.of("selvstendigNæring", List.of())))).isEqualTo("ny");
+        }
+
+        @Test
+        void skalVæreNyNårFelteneHarInnhold() throws IOException {
+            var template = handlebars.compileInline(MAL);
+            assertThat(template.apply(Map.of("søkerinfo", Map.of("selvstendigNæring", List.of(Map.of("navn", "Fiske")))))).isEqualTo("ny");
         }
     }
 

@@ -6,16 +6,7 @@ National identity number: 987654321<br/>
 <div class="no-page-break">
 ## Information about the child
 <ul>
-    <li></li>
     <li>Due date: 24.12.2025</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -35,24 +26,24 @@ Information is retrieved from the State Register of Employers and Employees (the
 </ul>
 </div>
 <div class="no-page-break">
-## Freelance assignments
+## Freelance
 Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application.
 You are not registered with any freelance assignments.
 </div>
 <div class="no-page-break">
-## Freelance
+### Your answers about freelance work
 <ul>
     <li>Started: 01.09.2025</li>
     <li>Still working as freelancer: <strong>Yes</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-## My businesses
+## Self-employed
 Information is retrieved from the Central Coordinating Register for Legal Entities (the Brønnøysund Register Centre). These were shown in the application.
 You are not registered with any businesses.
 </div>
 <div class="no-page-break">
-## Self-employed business
+### Your answers about the business
 <ul>
     <li>Business name: Utenlandsk Fiskeri AB</li>
     <li>Registered in country: Sweden</li>
@@ -62,12 +53,6 @@ You are not registered with any businesses.
     <li>Business income: 329000</li>
     <li>Business started: 01.11.2023</li>
     <li>Have you started working during the last three completed years: <strong>Yes</strong></li>
-</ul>
-</div>
-<div class="no-page-break">
-## Other sources of income
-<ul>
-    <li>Have you worked abroad in the last 4 weeks? <strong>Yes</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
