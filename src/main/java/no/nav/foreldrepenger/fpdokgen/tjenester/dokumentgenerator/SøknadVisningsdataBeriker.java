@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 public final class SøknadVisningsdataBeriker {
 
@@ -30,7 +33,8 @@ public final class SøknadVisningsdataBeriker {
         visningsdata.put("selvstendigNæringForelagt", selvstendigNæringForelagt);
         visningsdata.put("frilansoppdragForelagt", frilansoppdragForelagt);
         visningsdata.put("grupperteFrilansoppdrag", grupperFrilansoppdrag(liste(søkerinfo.get(FRILANSOPPDRAG))));
-        visningsdata.put("egenNæring", berikEgenNæring(data.get("egenNæring"), liste(søkerinfo.get(SELVSTENDIG_NÆRING))));
+        visningsdata.put("egenNæring",
+            berikEgenNæring(data.get("egenNæring"), liste(søkerinfo.get(SELVSTENDIG_NÆRING))).orElse(null));
 
         var beriketData = new HashMap<>(data);
         beriketData.put("_dokgen", visningsdata);
@@ -41,21 +45,21 @@ public final class SøknadVisningsdataBeriker {
         return data.containsKey(felt) && data.get(felt) != null;
     }
 
-    private static Map<String, Object> berikEgenNæring(Object egenNæring, List<?> registrerteNæringer) {
+    private static Optional<Map<String, Object>> berikEgenNæring(Object egenNæring, List<?> registrerteNæringer) {
         if (!(egenNæring instanceof Map<?, ?> næring) || næring.isEmpty()) {
-            return null;
+            return Optional.empty();
         }
 
         var organisasjonsnumre = registrerteNæringer.stream()
             .map(SøknadVisningsdataBeriker::map)
             .map(registrertNæring -> tekst(registrertNæring.get("organisasjonsnummer")))
-            .filter(organisasjonsnummer -> organisasjonsnummer != null)
-            .collect(java.util.stream.Collectors.toSet());
+            .filter(Objects::nonNull)
+            .collect(Collectors.toSet());
 
         var beriketNæring = new HashMap<String, Object>();
         næring.forEach((nøkkel, verdi) -> beriketNæring.put(nøkkel.toString(), verdi));
         beriketNæring.put("forelagt", organisasjonsnumre.contains(tekst(næring.get("organisasjonsnummer"))));
-        return beriketNæring;
+        return Optional.of(beriketNæring);
     }
 
     private static List<Map<String, Object>> grupperFrilansoppdrag(List<?> oppdrag) {
@@ -81,11 +85,6 @@ public final class SøknadVisningsdataBeriker {
         return verdi == null ? null : verdi.toString();
     }
 
-    private static LocalDate dato(Object verdi) {
-        var tekst = tekst(verdi);
-        return tekst == null || tekst.isBlank() ? null : LocalDate.parse(tekst);
-    }
-
     private static final class Frilansgruppe {
         private final String navn;
         private int antallOppdrag;
@@ -95,6 +94,11 @@ public final class SøknadVisningsdataBeriker {
 
         private Frilansgruppe(String navn) {
             this.navn = navn;
+        }
+
+        private static LocalDate dato(Object verdi) {
+            var tekst = tekst(verdi);
+            return tekst == null || tekst.isBlank() ? null : LocalDate.parse(tekst);
         }
 
         private void leggTil(Map<String, Object> oppdrag) {

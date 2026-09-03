@@ -3,7 +3,6 @@ package no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.handlebars;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.Map;
 
 import org.junit.jupiter.api.BeforeEach;
