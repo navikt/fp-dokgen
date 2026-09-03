@@ -3,10 +3,19 @@ Mottatt: {{norwegian-datetime mottattdato includeSeconds=true}}
 {{> søknad-felles/søker_nn}}
 {{> søknad-felles/barn_nn}}
 {{> søknad-felles/utenlandsopphold_nn}}
+{{#if _dokgen.nyAktivitetsflyt}}
+{{> søknad-felles/arbeidsforhold_nn erSvp=true}}
+{{> søknad-felles/frilansoppdrag_nn}}
+{{> søknad-felles/frilans_ny_nn}}
+{{> søknad-felles/registrert_næring_nn}}
+{{> søknad-felles/næring_ny_nn}}
+{{> søknad-felles/andreInntekter_ny_nn erSvp=true}}
+{{else}}
 {{> søknad-felles/arbeidsforhold_og_inntekt_nn erSvp=true}}
 {{> søknad-felles/frilans_nn}}
 {{> søknad-felles/næring_nn}}
 {{> søknad-felles/andreInntekter_nn erSvp=true}}
+{{/if}}
 {{> søknad-svangerskapspenger/tilrettelegging_nn}}
 {{> søknad-svangerskapspenger/avtalt_ferie_nn}}
 {{> søknad-felles/vedlegg_nn}}

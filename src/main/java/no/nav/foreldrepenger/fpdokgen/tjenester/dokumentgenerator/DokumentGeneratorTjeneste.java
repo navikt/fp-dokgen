@@ -99,7 +99,8 @@ public class DokumentGeneratorTjeneste {
     }
 
     private String kombinerMalMedData(DokumentMal dokumentMal, Map<String, Object> data) {
-        return handlebarsTjeneste.genererDokumentInnhold(dokumentMal.getInnhold(), data);
+        var visningsdata = SøknadVisningsdataBeriker.berik(dokumentMal.getNavn(), data);
+        return handlebarsTjeneste.genererDokumentInnhold(dokumentMal.getInnhold(), visningsdata);
     }
 
 }

@@ -35,37 +35,29 @@ Information is retrieved from the State Register of Employers and Employees (the
 </ul>
 </div>
 <div class="no-page-break">
-## Freelance
-Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application.
-Kulturskolen i Bydel Sagene
+## Other sources of income
 <ul>
-    <li>Period: 01.06.2025 – Ongoing</li>
+    <li>Have you worked and earned income as a freelancer in the last 4 weeks? <strong>Yes</strong></li>
+    <li>Have you worked and earned income as self-employed in the last 4 weeks? <strong>Yes</strong></li>
+    <li>Have you worked abroad in the last 4 weeks? <strong>Yes</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-### Your answers about freelance work
+## Freelance
 <ul>
     <li>Started: 01.09.2025</li>
-    <li>Are you still a freelancer: <strong>Yes</strong></li>
+    <li>Still working as freelancer: <strong>Yes</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-## Self-employed
-Information is retrieved from the Central Coordinating Register for Legal Entities (the Brønnøysund Register Centre). These were shown in the application.
-<strong>Sagene Fiskeri (974760673)</strong>
+## Self-employed business
 <ul>
-    <li>Type of business: Fisher</li>
-</ul>
-</div>
-<div class="no-page-break">
-### You have provided the following:
-<ul>
+    <li>Business name: Utenlandsk Fiskeri AB</li>
+    <li></li>
     <li>Registered in country: Sweden</li>
     <li>Type of business: Fisher</li>
-    <li>You started as self-employed 01.10.2025 and ended 31.10.2025.</li>
-    <li>Permanent change in business or work situation over the last four years: <strong>No</strong></li>
-    <li>Business income: 329000</li>
-    <li>Business started: 01.11.2023</li>
+    <li>You started as self-employed 01.10.2025 and ended 31.10.2025.</li><li>Permanent change in business or work situation over the last four years: <strong>No</strong></li>
+    <li>Business income: 329000</li><li>Business started: 01.11.2023</li>
     <li>Have you started working during the last three completed years: <strong>Yes</strong></li>
 </ul>
 </div>

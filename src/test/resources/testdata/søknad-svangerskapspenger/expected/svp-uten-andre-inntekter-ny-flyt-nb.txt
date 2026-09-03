@@ -37,10 +37,7 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
 <div class="no-page-break">
 ## Frilans
 Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden.
-Kulturskolen i Bydel Sagene
-<ul>
-    <li>Periode: 01.06.2025 – Pågående</li>
-</ul>
+Du er ikke registrert med noen frilansoppdrag.
 </div>
 <div class="no-page-break">
 ### Dine svar om frilansarbeid
@@ -52,30 +49,18 @@ Kulturskolen i Bydel Sagene
 <div class="no-page-break">
 ## Selvstendig næringsdrivende
 Opplysningene er hentet fra Enhetsregisteret i Brønnøysundregistrene. Disse ble vist i søknaden.
-<strong>Sagene Fiskeri (974760673)</strong>
-<ul>
-    <li>Virksomhetstype: Fisker</li>
-</ul>
+Du er ikke registrert med noen næringer i Brønnøysundregistrene.
 </div>
 <div class="no-page-break">
 ### Dette har du oppgitt:
 <ul>
+    <li>Navn på virksomheten: Utenlandsk Fiskeri AB</li>
     <li>Registrert i land: Sverige</li>
     <li>Virksomhetstype: Fisker</li>
     <li>Du startet som selvstendig næringsdrivende 01.10.2025 og sluttet 31.10.2025.</li>
-    <li>Varig endring i virksomheten eller arbeidssituasjonen min de siste fire årene: <strong>Nei</strong></li>
     <li>Næringsinntekt: 329000</li>
     <li>Virksomheten ble startet: 01.11.2023</li>
     <li>Har du begynt å jobbe i løpet av de tre siste ferdigliknede årene: <strong>Ja</strong></li>
-</ul>
-</div>
-<div class="no-page-break">
-## Arbeid i utlandet siste 4 uker
-<strong>Jobb i utlandet</strong>
-<ul>
-    <li>Arbeidsgiver: Utenlandsk Arbeidsgiver AB</li>
-    <li>Periode: 01.08.2025 – 01.09.2025</li>
-    <li>Landet virksomheten er registrert i: Sverige</li>
 </ul>
 </div>
 <div class="no-page-break">

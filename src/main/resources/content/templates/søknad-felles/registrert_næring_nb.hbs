@@ -1,0 +1,24 @@
+{{#if _dokgen.selvstendigNæringForelagt}}
+<div class="no-page-break">
+
+## Selvstendig næringsdrivende
+
+Opplysningene er hentet fra Enhetsregisteret i Brønnøysundregistrene. Disse ble vist i søknaden.
+{{#if _dokgen.registrerteNæringer}}
+{{#each _dokgen.registrerteNæringer}}
+<strong>{{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}</strong>
+{{#if næringstype}}<ul>
+    <li>Virksomhetstype: {{#switch næringstype~}}
+            {{~#case "DAGMAMMA"~}}Dagmamma{{~/case~}}
+            {{~#case "FISKE"~}}Fisker{{~/case~}}
+            {{~#case "JORDBRUK_SKOGBRUK"~}}Jord-/skogsbruk{{~/case~}}
+            {{~#case "ANNEN"~}}Annen{{~/case~}}
+        {{~/switch~}}
+    </li>
+</ul>{{/if}}
+{{/each}}
+{{else}}
+Du er ikke registrert med noen næringer i Brønnøysundregistrene.
+{{/if}}
+</div>
+{{/if}}
