@@ -4,8 +4,8 @@
 ## Self-employed
 
 Information is retrieved from the Central Coordinating Register for Legal Entities (the Brønnøysund Register Centre). These were shown in the application.
-{{#if søkerinfo/selvstendigNæring}}
-{{#each søkerinfo/selvstendigNæring}}
+{{#if _dokgen.registrerteNæringer}}
+{{#each _dokgen.registrerteNæringer}}
 <strong>{{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}</strong>
 {{#if næringstype}}<ul>
     <li>Type of business: {{#switch næringstype~}}

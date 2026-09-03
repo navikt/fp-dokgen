@@ -23,46 +23,20 @@
         "tom": "2025-03-07",
         "stillingsprosent": 13.0
       }
-    ],
-    "frilansoppdrag": [
-      {
-        "navn": "Kulturskolen i Bydel Sagene",
-        "fom": "2025-01-15",
-        "tom": "2025-06-30"
-      },
-      {
-        "navn": "Ola Nordmann",
-        "fom": "2025-03-01"
-      }
-    ],
-    "selvstendigNæring": [
-      {
-        "navn": "Sagene Fiskeri",
-        "organisasjonsnummer": "974760673",
-        "næringstype": "FISKE"
-      },
-      {
-        "navn": "Nordre Aker Gård",
-        "organisasjonsnummer": "889640782",
-        "næringstype": "JORDBRUK_SKOGBRUK"
-      }
     ]
   },
   "egenNæring": {
     "næringstype": "FISKE",
-    "navnPåNæringen": "Sagene Fiskeri",
-    "organisasjonsnummer": "974760673",
     "registrertILand": "SE",
     "fom": "2025-10-01",
     "næringsinntekt": "329000",
-    "hattVarigEndringAvNæringsinntektSiste4Kalenderår": false,
     "harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene": true,
     "tom": "2025-10-31",
     "oppstartsdato": "2023-11-01"
   },
   "frilans": {
     "oppstart": "2025-09-01",
-    "tom": null
+    "jobberFremdelesSomFrilans": true
   },
   "andreInntekterSiste10Mnd": [
     {

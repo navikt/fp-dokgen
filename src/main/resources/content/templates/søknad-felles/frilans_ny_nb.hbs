@@ -2,8 +2,8 @@
 <div class="no-page-break">
 
 ### Dine svar om frilansarbeid
-<ul>
-    <li>Startet som frilanser: {{norwegian-date oppstart}}</li>
+<ul>{{#if oppstart}}
+    <li>Startet som frilanser: {{norwegian-date oppstart}}</li>{{/if}}
     <li>Er du fortsatt frilanser: <strong>{{#if tom}}Nei{{else}}Ja{{/if}}</strong></li>
 </ul>
 

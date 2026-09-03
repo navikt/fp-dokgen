@@ -10,8 +10,8 @@
     <li>You started as self-employed {{norwegian-date fom}}{{#if tom}} and ended {{norwegian-date tom}}.{{else}} and still work there.{{/if}}</li>{{#eq hattVarigEndringAvNæringsinntektSiste4Kalenderår true}}
     <li>Permanent change in business or work situation over the last four years: <strong>Yes</strong></li>
     <li>From {{norwegian-date varigEndringDato}} you have a permanent change in business income, where the new income is: {{varigEndringInntektEtterEndring}}.</li>
-    <li>Reason for permanent change: {{varigEndringBeskrivelse}}</li>{{else}}
-    <li>Permanent change in business or work situation over the last four years: <strong>No</strong></li>{{#if næringsinntekt}}
+    <li>Reason for permanent change: {{varigEndringBeskrivelse}}</li>{{else}}{{#unless (eq hattVarigEndringAvNæringsinntektSiste4Kalenderår undefined)}}
+    <li>Permanent change in business or work situation over the last four years: <strong>No</strong></li>{{/unless}}{{#if næringsinntekt}}
     <li>Business income: {{næringsinntekt}}</li>{{/if}}{{/eq}}{{#if oppstartsdato}}
     <li>Business started: {{norwegian-date oppstartsdato}}</li>{{/if}}{{#unless (eq harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene undefined)}}
     <li>{{> utils/sporsmal-svar-yes-no value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Have you started working during the last three completed years"}}</li>{{/unless}}

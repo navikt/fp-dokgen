@@ -54,6 +54,27 @@ class SøknadKvitteringTest {
     }
 
     @Test
+    void foreldrepenger_frilans_og_næring_uten_registerdata_bruker_legacy_mal_nb() {
+        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-termin-frilans-næring-legacy");
+        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-frilans-næring-legacy-nb.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    void foreldrepenger_frilans_og_næring_uten_registerdata_bruker_legacy_mal_nn() {
+        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.NYNORSK, "mor-termin-frilans-næring-legacy");
+        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-frilans-næring-legacy-nn.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
+    void foreldrepenger_frilans_og_næring_uten_registerdata_bruker_legacy_mal_en() {
+        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.ENGELSK, "mor-termin-frilans-næring-legacy");
+        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-frilans-næring-legacy-en.txt");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
+    }
+
+    @Test
     void svp_næring_uten_forelagte_aktiviteter_bruker_legacy_mal_nb() {
         var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-næring-uten-forelagte-aktiviteter");
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-forelagte-aktiviteter-nb.txt");

@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import content.support.BrevMal;
 import content.support.Språk;
@@ -26,25 +28,12 @@ class SøknadForelagteAktiviteterTest {
     private static final String FRILANSOPPDRAG = "frilansoppdrag";
     private static final String REGISTRERT_NÆRING = "registrert_næring";
 
-    @Test
-    void frilansoppdrag_uten_fom_skal_rendre_navnet_uten_periode_nb() {
-        var content = compileContent(BREVMAL, FRILANSOPPDRAG, Språk.BOKMÅL, frilansoppdrag(null, null));
+    @ParameterizedTest
+    @CsvSource({"BOKMÅL,Periode", "NYNORSK,Periode", "ENGELSK,Period"})
+    void frilansoppdrag_uten_fom_skal_rendre_navnet_uten_periode(Språk språk, String periodeledetekst) {
+        var content = compileContent(BREVMAL, FRILANSOPPDRAG, språk, frilansoppdrag(null, null));
 
-        assertThat(content).contains("Kulturskolen").doesNotContain("Periode");
-    }
-
-    @Test
-    void frilansoppdrag_uten_fom_skal_rendre_navnet_uten_periode_nn() {
-        var content = compileContent(BREVMAL, FRILANSOPPDRAG, Språk.NYNORSK, frilansoppdrag(null, null));
-
-        assertThat(content).contains("Kulturskolen").doesNotContain("Periode");
-    }
-
-    @Test
-    void frilansoppdrag_uten_fom_skal_rendre_navnet_uten_periode_en() {
-        var content = compileContent(BREVMAL, FRILANSOPPDRAG, Språk.ENGELSK, frilansoppdrag(null, null));
-
-        assertThat(content).contains("Kulturskolen").doesNotContain("Period");
+        assertThat(content).contains("Kulturskolen").doesNotContain(periodeledetekst);
     }
 
     @Test
@@ -120,6 +109,15 @@ class SøknadForelagteAktiviteterTest {
     }
 
     @Test
+    void ubesvart_spørsmål_om_varig_endring_skal_ikke_besvares_med_nei() {
+        var egenNæring = Map.<String, Object>of("forelagt", true, "fom", "2021-09-03", "næringsinntekt", 350_000);
+
+        var content = compileContent(BREVMAL, "næring_ny", Språk.BOKMÅL, Map.of("_dokgen", Map.of("egenNæring", egenNæring)));
+
+        assertThat(content).contains("Næringsinntekt: 350000").doesNotContain("Varig endring");
+    }
+
+    @Test
     void forelagt_næring_skal_beholde_listeelementene_inne_i_html_listen() {
         var egenNæring = Map.<String, Object>of(
             "forelagt", true,
@@ -152,25 +150,12 @@ class SøknadForelagteAktiviteterTest {
             .doesNotContain("&lt;li&gt;");
     }
 
-    @Test
-    void næring_uten_næringstype_skal_rendre_navnet_uten_tomt_kulepunkt_nb() {
-        var content = compileContent(BREVMAL, REGISTRERT_NÆRING, Språk.BOKMÅL, selvstendigNæring(null));
+    @ParameterizedTest
+    @CsvSource({"BOKMÅL,Virksomhetstype", "NYNORSK,Verksemdstype", "ENGELSK,Type of business"})
+    void næring_uten_næringstype_skal_rendre_navnet_uten_tomt_kulepunkt(Språk språk, String typeledetekst) {
+        var content = compileContent(BREVMAL, REGISTRERT_NÆRING, språk, selvstendigNæring(null));
 
-        assertThat(content).contains("Sagene Fiskeri").doesNotContain("Virksomhetstype");
-    }
-
-    @Test
-    void næring_uten_næringstype_skal_rendre_navnet_uten_tomt_kulepunkt_nn() {
-        var content = compileContent(BREVMAL, REGISTRERT_NÆRING, Språk.NYNORSK, selvstendigNæring(null));
-
-        assertThat(content).contains("Sagene Fiskeri").doesNotContain("Verksemdstype");
-    }
-
-    @Test
-    void næring_uten_næringstype_skal_rendre_navnet_uten_tomt_kulepunkt_en() {
-        var content = compileContent(BREVMAL, REGISTRERT_NÆRING, Språk.ENGELSK, selvstendigNæring(null));
-
-        assertThat(content).contains("Sagene Fiskeri").doesNotContain("Type of business");
+        assertThat(content).contains("Sagene Fiskeri").doesNotContain(typeledetekst);
     }
 
     @Test
@@ -220,7 +205,7 @@ class SøknadForelagteAktiviteterTest {
         næring.put("organisasjonsnummer", "974760673");
         næring.put("næringstype", næringstype);
         return Map.of("_dokgen", Map.of(
-            "selvstendigNæringForelagt", true),
-            "søkerinfo", Map.of("selvstendigNæring", List.of(næring)));
+            "selvstendigNæringForelagt", true,
+            "registrerteNæringer", List.of(næring)));
     }
 }

@@ -34,6 +34,7 @@ public final class SøknadVisningsdataBeriker {
         visningsdata.put("selvstendigNæringForelagt", selvstendigNæringForelagt);
         visningsdata.put("frilansoppdragForelagt", frilansoppdragForelagt);
         visningsdata.put("grupperteFrilansoppdrag", grupperFrilansoppdrag(liste(søkerinfo.get(FRILANSOPPDRAG))));
+        visningsdata.put("registrerteNæringer", liste(søkerinfo.get(SELVSTENDIG_NÆRING)));
         visningsdata.put("egenNæring",
             berikEgenNæring(data.get("egenNæring"), liste(søkerinfo.get(SELVSTENDIG_NÆRING))).orElse(null));
 

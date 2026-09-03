@@ -4,8 +4,8 @@
 ## Sjølvstendig næringsdrivande
 
 Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
-{{#if søkerinfo/selvstendigNæring}}
-{{#each søkerinfo/selvstendigNæring}}
+{{#if _dokgen.registrerteNæringer}}
+{{#each _dokgen.registrerteNæringer}}
 <strong>{{navn}}{{#if organisasjonsnummer}} ({{organisasjonsnummer}}){{/if}}</strong>
 {{#if næringstype}}<ul>
     <li>Verksemdstype: {{#switch næringstype~}}
