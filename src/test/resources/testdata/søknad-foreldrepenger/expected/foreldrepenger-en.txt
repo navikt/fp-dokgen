@@ -9,6 +9,13 @@ Applying as: Co-mother
 <ul>
     <li>Date of birth: 01.06.2025</li>
     <li>Due date: 31.07.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
     <li>Number of children: 2</li>
 </ul>
 </div>
@@ -31,6 +38,8 @@ Information is retrieved from the State Register of Employers and Employees (the
 <div class="no-page-break">
 ## Other sources of income
 <ul>
+    <li>Have you worked and earned income as a freelancer in the last 10 months? <strong>No</strong></li>
+    <li>Have you worked and earned income as self-employed in the last 10 months? <strong>No</strong></li>
     <li>Have you had other sources of income in the last 10 months? <strong>No</strong></li>
 </ul>
 </div>
@@ -39,10 +48,13 @@ Information is retrieved from the State Register of Employers and Employees (the
 <ul>
     <li>Name: Smal Julepresang</li>
     <li>National identity number: 987654321</li>
-    <li>Are you sharing custody of the child: <strong>Yes</strong></li>
+    <li></li>
+    <li></li><li>Are you sharing custody of the child: <strong>Yes</strong></li>
     <li>Is the other parent entitled to parental benefit in Norway: <strong>Yes</strong></li>
-    <li>Has the other parent been informed about the application: <strong>Yes</strong></li>
-</ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>Has the other parent been informed about the application: <strong>Yes</strong></li></ul>
 </div>
 <div class="no-page-break">
 ## Your plan

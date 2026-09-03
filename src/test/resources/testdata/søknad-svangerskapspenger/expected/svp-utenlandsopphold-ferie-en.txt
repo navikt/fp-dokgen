@@ -6,7 +6,16 @@ National identity number: 987654321<br/>
 <div class="no-page-break">
 ## Information about the child
 <ul>
+    <li></li>
     <li>Due date: 24.12.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -32,6 +41,8 @@ Information is retrieved from the State Register of Employers and Employees (the
 <div class="no-page-break">
 ## Other sources of income
 <ul>
+    <li>Have you worked and earned income as a freelancer in the last 4 weeks? <strong>No</strong></li>
+    <li>Have you worked and earned income as self-employed in the last 4 weeks? <strong>No</strong></li>
     <li>Have you worked abroad in the last 4 weeks? <strong>No</strong></li>
 </ul>
 </div>

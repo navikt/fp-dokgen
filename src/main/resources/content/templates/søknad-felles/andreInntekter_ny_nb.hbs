@@ -9,17 +9,17 @@
 {{~#case "ETTERLØNN_ARBEIDSGIVER"~}}Etterlønn arbeidsgiver{{~/case~}}
 {{~#case "JOBB_I_UTLANDET"~}}Jobb i utlandet{{~/case~}}
 {{~#case "LØNN_UNDER_UTDANNING"~}}Lønn under utdanning{{~/case~}}
-{{~#case "MILITÆR_ELLER_SIVILTJENESTE"~}}Militær- eller siviltjeneste{{~/case~}}
+{{~#case "MILITÆR_ELLER_SIVILTJENESTE"~}}Førstegangstjeneste{{~/case~}}
 {{~#case "SLUTTPAKKE"~}}Sluttpakke{{~/case~}}
 {{~#case "VENTELØNN_VARTPENGER"~}}Ventelønn vartepenger{{~/case~}}
 {{~#case "VENTELØNN"~}}Ventelønn{{~/case~}}
 {{~#case "VARTPENGER"~}}Vartpenger{{~/case~}}
 {{~/switch~}}</strong>
-<ul>
-    <li>{{#if arbeidsgiverNavn}}Arbeidsgiver: {{{arbeidsgiverNavn}}}{{/if}}</li>
-    <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
-    <li>{{#if land}}Landet virksomheten er registrert i: {{land-norsk land}}{{/if}}</li>
-</ul>
+{{#punktliste}}
+{{#punkt}}{{#if arbeidsgiverNavn}}Arbeidsgiver: {{{arbeidsgiverNavn}}}{{/if}}{{/punkt}}
+{{#punkt}}Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}{{/punkt}}
+{{#punkt}}{{#if land}}Landet virksomheten er registrert i: {{land-norsk land}}{{/if}}{{/punkt}}
+{{/punktliste}}
 {{/each}}
 </div>
 {{/if}}

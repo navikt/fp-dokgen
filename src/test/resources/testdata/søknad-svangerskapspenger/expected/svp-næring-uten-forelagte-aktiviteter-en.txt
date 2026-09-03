@@ -6,7 +6,16 @@ National identity number: 987654321<br/>
 <div class="no-page-break">
 ## Information about the child
 <ul>
+    <li></li>
     <li>Due date: 24.12.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -26,6 +35,14 @@ Information is retrieved from the State Register of Employers and Employees (the
 </ul>
 </div>
 <div class="no-page-break">
+## Other sources of income
+<ul>
+    <li>Have you worked and earned income as a freelancer in the last 4 weeks? <strong>Yes</strong></li>
+    <li>Have you worked and earned income as self-employed in the last 4 weeks? <strong>Yes</strong></li>
+    <li>Have you worked abroad in the last 4 weeks? <strong>Yes</strong></li>
+</ul>
+</div>
+<div class="no-page-break">
 ## Freelance
 <ul>
     <li>Started: 01.09.2025</li>
@@ -42,12 +59,6 @@ Information is retrieved from the State Register of Employers and Employees (the
     <li>You started as self-employed 01.10.2025 and ended 31.10.2025.</li><li>Permanent change in business or work situation over the last four years: <strong>No</strong></li>
     <li>Business income: 329000</li><li>Business started: 01.11.2023</li>
     <li>Have you started working during the last three completed years: <strong>Yes</strong></li>
-</ul>
-</div>
-<div class="no-page-break">
-## Other sources of income
-<ul>
-    <li>Have you worked abroad in the last 4 weeks? <strong>Yes</strong></li>
 </ul>
 </div>
 <div class="no-page-break">

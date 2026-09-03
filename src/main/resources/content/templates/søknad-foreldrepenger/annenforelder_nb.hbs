@@ -3,20 +3,20 @@
 ## Informasjon om annen forelder
 {{#with annenForelder}}
 
-{{#punktliste}}
-{{#punkt}}Navn: {{> søknad-felles/navn fornavn=fornavn mellomnavn=mellomnavn etternavn=etternavn}}{{/punkt}}
-{{#punkt}}Fødselsnummer{{#eq type "utenlandsk"}} eller D-nummer{{/eq}}: {{fnr}}{{/punkt}}
-{{#punkt}}{{#if bostedsland}}Den andre forelderens fødselsnummer er ikke fra Norge{{/if}}{{/punkt}}
-{{#punkt}}{{#if bostedsland}}Hvor bor den andre forelderen: {{land-norsk bostedsland}}{{/if}}{{/punkt}}
+<ul>
+    <li>Navn: {{> søknad-felles/navn fornavn=fornavn mellomnavn=mellomnavn etternavn=etternavn}}</li>
+    <li>Fødselsnummer{{#eq type "utenlandsk"}} eller D-nummer{{/eq}}: {{fnr}}</li>
+    <li>{{#if bostedsland}}Den andre forelderens fødselsnummer er ikke fra Norge{{/if}}</li>
+    <li>{{#if bostedsland}}Hvor bor den andre forelderen: {{land-norsk bostedsland}}{{/if}}</li>
 {{~#with rettigheter~}}
-{{#punkt}}{{> utils/sporsmal-svar-ja-nei value=erAleneOmOmsorg label="Er dere sammen om omsorgen for barnet" altNei="Nei, jeg har aleneomsorg" reversed=true}}{{/punkt}}
-{{#punkt}}{{> utils/sporsmal-svar-ja-nei value=harRettPåForeldrepenger label="Har den andre forelderen rett til foreldrepenger i Norge"}}{{/punkt}}
-{{#punkt}}{{> utils/sporsmal-svar-ja-nei value=harAnnenForelderTilsvarendeRettEØS label="Har den andre forelderen rett til pengestøtte i et annet EØS-land som tilsvarer foreldrepenger i Norge"}}{{/punkt}}
-{{#punkt}}{{> utils/sporsmal-svar-ja-nei value=harAnnenForelderOppholdtSegIEØS label="Har den andre forelderen oppholdt seg fast i et annet EØS-land enn Norge ett år før barnet ble født"}}{{/punkt}}
-{{#punkt}}{{> utils/sporsmal-svar-ja-nei value=harMorUføretrygd label="Har mor uføretrygd"}}{{/punkt}}
-{{#punkt}}{{> utils/sporsmal-svar-ja-nei value=erInformertOmSøknaden label="Har orientert den andre forelderen om søknaden"}}{{/punkt}}
+    <li>{{> utils/sporsmal-svar-ja-nei value=erAleneOmOmsorg label="Er dere sammen om omsorgen for barnet" altNei="Nei, jeg har aleneomsorg" reversed=true}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=harRettPåForeldrepenger label="Har den andre forelderen rett til foreldrepenger i Norge"}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=harAnnenForelderTilsvarendeRettEØS label="Har den andre forelderen rett til pengestøtte i et annet EØS-land som tilsvarer foreldrepenger i Norge"}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=harAnnenForelderOppholdtSegIEØS label="Har den andre forelderen oppholdt seg fast i et annet EØS-land enn Norge ett år før barnet ble født"}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=harMorUføretrygd label="Har mor uføretrygd"}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=erInformertOmSøknaden label="Har orientert den andre forelderen om søknaden"}}</li>
 {{~/with~}}
-{{/punktliste}}
+</ul>
 {{else}}
 Jeg kan ikke oppgi den andre forelderen.
 {{/with}}

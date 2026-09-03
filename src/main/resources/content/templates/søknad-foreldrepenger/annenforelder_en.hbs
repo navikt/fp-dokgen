@@ -3,20 +3,20 @@
 ## Information about the other parent
 {{#with annenForelder}}
 
-{{#punktliste}}
-{{#punkt}}Name: {{> søknad-felles/navn fornavn=fornavn mellomnavn=mellomnavn etternavn=etternavn}}{{/punkt}}
-{{#punkt}}National identity number{{#eq type "utenlandsk"}} or D-number{{/eq}}: {{fnr}}{{/punkt}}
-{{#punkt}}{{#if bostedsland}}The other parent’s national ID number is not from Norway{{/if}}{{/punkt}}
-{{#punkt}}{{#if bostedsland}}Where the other parent lives: {{land-norsk bostedsland lang="en"}}{{/if}}{{/punkt}}
+<ul>
+    <li>Name: {{> søknad-felles/navn fornavn=fornavn mellomnavn=mellomnavn etternavn=etternavn}}</li>
+    <li>National identity number{{#eq type "utenlandsk"}} or D-number{{/eq}}: {{fnr}}</li>
+    <li>{{#if bostedsland}}The other parent’s national ID number is not from Norway{{/if}}</li>
+    <li>{{#if bostedsland}}Where the other parent lives: {{land-norsk bostedsland lang="en"}}{{/if}}</li>
 {{~#with rettigheter~}}
-{{#punkt}}{{> utils/sporsmal-svar-yes-no value=erAleneOmOmsorg label="Are you sharing custody of the child" altNei="No, I have sole custody" reversed=true}}{{/punkt}}
-{{#punkt}}{{> utils/sporsmal-svar-yes-no value=harRettPåForeldrepenger label="Is the other parent entitled to parental benefit in Norway"}}{{/punkt}}
-{{#punkt}}{{> utils/sporsmal-svar-yes-no value=harAnnenForelderTilsvarendeRettEØS label="Is the other parent entitled to similar benefit in another EEA country"}}{{/punkt}}
-{{#punkt}}{{> utils/sporsmal-svar-yes-no value=harAnnenForelderOppholdtSegIEØS label="Has the other parent resided in another EEA country than Norway for one year before the child was born"}}{{/punkt}}
-{{#punkt}}{{> utils/sporsmal-svar-yes-no value=harMorUføretrygd label="Does the mother receive disability benefits"}}{{/punkt}}
-{{#punkt}}{{> utils/sporsmal-svar-yes-no value=erInformertOmSøknaden label="Has the other parent been informed about the application"}}{{/punkt}}
+    <li>{{> utils/sporsmal-svar-yes-no value=erAleneOmOmsorg label="Are you sharing custody of the child" altNei="No, I have sole custody" reversed=true}}</li>
+    <li>{{> utils/sporsmal-svar-yes-no value=harRettPåForeldrepenger label="Is the other parent entitled to parental benefit in Norway"}}</li>
+    <li>{{> utils/sporsmal-svar-yes-no value=harAnnenForelderTilsvarendeRettEØS label="Is the other parent entitled to similar benefit in another EEA country"}}</li>
+    <li>{{> utils/sporsmal-svar-yes-no value=harAnnenForelderOppholdtSegIEØS label="Has the other parent resided in another EEA country than Norway for one year before the child was born"}}</li>
+    <li>{{> utils/sporsmal-svar-yes-no value=harMorUføretrygd label="Does the mother receive disability benefits"}}</li>
+    <li>{{> utils/sporsmal-svar-yes-no value=erInformertOmSøknaden label="Has the other parent been informed about the application"}}</li>
 {{~/with~}}
-{{/punktliste}}
+</ul>
 {{else}}
 I cannot provide information about the other parent.
 {{/with}}

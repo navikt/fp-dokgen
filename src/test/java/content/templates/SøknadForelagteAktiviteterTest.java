@@ -44,6 +44,13 @@ class SøknadForelagteAktiviteterTest {
     }
 
     @Test
+    void frilansoppdrag_med_tomme_datoer_skal_rendre_navnet_uten_periode() {
+        var content = compileContent(BREVMAL, FRILANSOPPDRAG, Språk.BOKMÅL, frilansoppdrag("", ""));
+
+        assertThat(content).contains("Kulturskolen").doesNotContain("Periode");
+    }
+
+    @Test
     void frilansoppdrag_med_fom_uten_tom_skal_vises_som_pågående() {
         assertThat(compileContent(BREVMAL, FRILANSOPPDRAG, Språk.BOKMÅL, frilansoppdrag("2025-03-01", null))).contains(
             "Periode: 01.03.2025 – Pågående");
@@ -82,13 +89,13 @@ class SøknadForelagteAktiviteterTest {
 
     @Test
     void nytt_frilanssvar_skal_utlede_om_søker_fortsatt_er_frilanser_fra_tom() {
-        assertThat(compileContent(BREVMAL, "frilans", Språk.BOKMÅL, frilanssvar(null)))
+        assertThat(compileContent(BREVMAL, "frilans_ny", Språk.BOKMÅL, frilanssvar(null)))
             .contains("Er du fortsatt frilanser: <strong>Ja</strong>");
-        assertThat(compileContent(BREVMAL, "frilans", Språk.BOKMÅL, frilanssvar("2025-09-20")))
+        assertThat(compileContent(BREVMAL, "frilans_ny", Språk.BOKMÅL, frilanssvar("2025-09-20")))
             .contains("Er du fortsatt frilanser: <strong>Nei</strong>");
-        assertThat(compileContent(BREVMAL, "frilans", Språk.NYNORSK, frilanssvar(null)))
+        assertThat(compileContent(BREVMAL, "frilans_ny", Språk.NYNORSK, frilanssvar(null)))
             .contains("Er du framleis frilansar: <strong>Ja</strong>");
-        assertThat(compileContent(BREVMAL, "frilans", Språk.ENGELSK, frilanssvar("2025-09-20")))
+        assertThat(compileContent(BREVMAL, "frilans_ny", Språk.ENGELSK, frilanssvar("2025-09-20")))
             .contains("Are you still a freelancer: <strong>No</strong>");
     }
 

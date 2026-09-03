@@ -6,7 +6,16 @@ Fødselsnummer: 987654321<br/>
 <div class="no-page-break">
 ## Opplysninger om barnet
 <ul>
+    <li></li>
     <li>Termindato: 24.12.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
 </ul>
 </div>
 <div class="no-page-break">

@@ -6,7 +6,16 @@ Fødselsnummer: 987654321<br/>
 <div class="no-page-break">
 ## Opplysningar om barnet
 <ul>
+    <li></li>
     <li>Termindato: 24.12.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -26,6 +35,14 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 </ul>
 </div>
 <div class="no-page-break">
+## Andre inntektskjelder
+<ul>
+    <li>Har du jobba og hatt inntekt som frilansar dei siste 4 vekene? <strong>Ja</strong></li>
+    <li>Har du jobba og hatt inntekt som sjølvstendig næringsdrivande dei siste 4 vekene? <strong>Ja</strong></li>
+    <li>Har du jobba i utlandet dei siste 4 vekene? <strong>Ja</strong></li>
+</ul>
+</div>
+<div class="no-page-break">
 ## Informasjon om frilansoppdrag
 <ul>
     <li>Starta som frilansar: 01.09.2025</li>
@@ -42,12 +59,6 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
     <li>Du starta som sjølvstendig næringsdrivande 01.10.2025 og slutta 31.10.2025.</li><li>Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Nei</strong></li>
     <li>Næringsinntekt: 329000</li><li>Verksemda blei starta: 01.11.2023</li>
     <li>Har du byrja å jobbe i løpet av dei tre siste ferdiglikna åra: <strong>Ja</strong></li>
-</ul>
-</div>
-<div class="no-page-break">
-## Andre inntektskjelder
-<ul>
-    <li>Har du jobba i utlandet dei siste 4 vekene? <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">

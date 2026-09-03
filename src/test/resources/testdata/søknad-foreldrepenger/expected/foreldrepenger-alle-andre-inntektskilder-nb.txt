@@ -7,8 +7,15 @@ Hva søker du som: Mor
 <div class="no-page-break">
 ## Opplysninger om barnet
 <ul>
+    <li></li>
     <li>Termindato: 08.09.2025</li>
     <li>Terminbekreftelse er datert: 08.08.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
     <li>Antall barn: 1</li>
 </ul>
 </div>
@@ -96,10 +103,13 @@ Opplysningene er hentet fra Enhetsregisteret i Brønnøysundregistrene. Disse bl
 <ul>
     <li>Navn: Fornavn annenforelder Etternavn annenforelder</li>
     <li>Fødselsnummer: 04479417895</li>
-    <li>Er dere sammen om omsorgen for barnet: <strong>Ja</strong></li>
+    <li></li>
+    <li></li><li>Er dere sammen om omsorgen for barnet: <strong>Ja</strong></li>
     <li>Har den andre forelderen rett til foreldrepenger i Norge: <strong>Ja</strong></li>
-    <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li>
-</ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li></ul>
 </div>
 <div class="no-page-break">
 ## Planen din

@@ -6,7 +6,16 @@ Fødselsnummer: 987654321<br/>
 <div class="no-page-break">
 ## Opplysningar om barnet
 <ul>
+    <li></li>
     <li>Termindato: 24.12.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -32,6 +41,8 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 <div class="no-page-break">
 ## Andre inntektskjelder
 <ul>
+    <li>Har du jobba og hatt inntekt som frilansar dei siste 4 vekene? <strong>Nei</strong></li>
+    <li>Har du jobba og hatt inntekt som sjølvstendig næringsdrivande dei siste 4 vekene? <strong>Nei</strong></li>
     <li>Har du jobba i utlandet dei siste 4 vekene? <strong>Nei</strong></li>
 </ul>
 </div>

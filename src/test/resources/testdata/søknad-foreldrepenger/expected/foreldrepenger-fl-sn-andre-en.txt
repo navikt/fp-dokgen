@@ -7,8 +7,15 @@ Applying as: Mother
 <div class="no-page-break">
 ## Information about the child
 <ul>
+    <li></li>
     <li>Due date: 08.09.2025</li>
     <li>Confirmation of due date is dated: 08.08.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
     <li>Number of children: 1</li>
 </ul>
 </div>
@@ -86,10 +93,13 @@ Information is retrieved from the Central Coordinating Register for Legal Entiti
 <ul>
     <li>Name: Fornavn annenforelder Etternavn annenforelder</li>
     <li>National identity number: 04479417895</li>
-    <li>Are you sharing custody of the child: <strong>Yes</strong></li>
+    <li></li>
+    <li></li><li>Are you sharing custody of the child: <strong>Yes</strong></li>
     <li>Is the other parent entitled to parental benefit in Norway: <strong>Yes</strong></li>
-    <li>Has the other parent been informed about the application: <strong>Yes</strong></li>
-</ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>Has the other parent been informed about the application: <strong>Yes</strong></li></ul>
 </div>
 <div class="no-page-break">
 ## Your plan

@@ -1,14 +1,10 @@
 {{#with frilans}}
 <div class="no-page-break">
 
-{{#if (finnes ../søkerinfo/frilansoppdrag)}}### Svara dine om frilansarbeid{{else}}## Informasjon om frilansoppdrag{{/if}}
+## Informasjon om frilansoppdrag
 <ul>
     <li>Starta som frilansar: {{norwegian-date oppstart}}</li>
-    {{#if (finnes ../søkerinfo/frilansoppdrag)}}
-    <li>Er du framleis frilansar: <strong>{{#if tom}}Nei{{else}}Ja{{/if}}</strong></li>
-    {{else}}
     <li>{{> utils/sporsmal-svar-ja-nei value=jobberFremdelesSomFrilans label="Jobbar framleis som frilansar"}}</li>
-    {{/if}}
 </ul>
 
 </div>

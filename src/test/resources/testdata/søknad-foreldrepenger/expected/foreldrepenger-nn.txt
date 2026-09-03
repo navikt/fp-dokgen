@@ -9,6 +9,13 @@ Kva søkjer du som: Medmor
 <ul>
     <li>Fødselsdato: 01.06.2025</li>
     <li>Termindato: 31.07.2025</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
     <li>Tal på barn: 2</li>
 </ul>
 </div>
@@ -31,6 +38,8 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 <div class="no-page-break">
 ## Andre inntektskjelder
 <ul>
+    <li>Har du jobba og hatt inntekt som frilansar dei siste 10 månadene? <strong>Nei</strong></li>
+    <li>Har du jobba og hatt inntekt som sjølvstendig næringsdrivande dei siste 10 månadene? <strong>Nei</strong></li>
     <li>Har du hatt andre inntektskjelder dei siste 10 månadene? <strong>Nei</strong></li>
 </ul>
 </div>
@@ -39,10 +48,13 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 <ul>
     <li>Namn: Smal Julepresang</li>
     <li>Fødselsnummer: 987654321</li>
-    <li>Er de saman om omsorga for barnet: <strong>Ja</strong></li>
+    <li></li>
+    <li></li><li>Er de saman om omsorga for barnet: <strong>Ja</strong></li>
     <li>Har den andre forelderen rett til foreldrepengar i Noreg: <strong>Ja</strong></li>
-    <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li>
-</ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li></ul>
 </div>
 <div class="no-page-break">
 ## Planen din

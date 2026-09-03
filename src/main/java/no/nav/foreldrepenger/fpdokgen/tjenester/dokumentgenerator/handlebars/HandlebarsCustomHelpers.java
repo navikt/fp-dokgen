@@ -439,7 +439,11 @@ final class HandlebarsCustomHelpers {
             if (verdi == null) {
                 return null;
             }
-            return verdi instanceof LocalDate dato ? dato : LocalDate.parse(verdi.toString());
+            if (verdi instanceof LocalDate dato) {
+                return dato;
+            }
+            var tekst = verdi.toString();
+            return tekst.isBlank() ? null : LocalDate.parse(tekst);
         }
 
         private static Object jsonVerdi(JsonNode node) {
