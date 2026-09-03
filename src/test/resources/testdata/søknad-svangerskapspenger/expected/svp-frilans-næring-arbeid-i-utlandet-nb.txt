@@ -28,7 +28,7 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
 <div class="no-page-break">
 ## Frilans
 Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden.
-<strong>Kulturskolen i Bydel Sagene</strong>
+Kulturskolen i Bydel Sagene
 <ul>
     <li>Periode: 01.06.2025 – Pågående</li>
 </ul>
@@ -37,7 +37,7 @@ Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-register
 ### Dine svar om frilansarbeid
 <ul>
     <li>Startet som frilanser: 01.09.2025</li>
-    <li>Jobber fortsatt som frilanser: <strong>Ja</strong></li>
+    <li>Er du fortsatt frilanser: <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -49,7 +49,7 @@ Opplysningene er hentet fra Enhetsregisteret i Brønnøysundregistrene. Disse bl
 </ul>
 </div>
 <div class="no-page-break">
-### Dine svar om næringsvirksomheten
+### Dette har du oppgitt:
 <ul>
     <li>Registrert i land: Sverige</li>
     <li>Virksomhetstype: Fisker</li>

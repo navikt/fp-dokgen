@@ -61,6 +61,38 @@ class SøknadForelagteAktiviteterTest {
     }
 
     @Test
+    void flere_frilansoppdrag_fra_samme_oppdragsgiver_skal_vises_med_antall_og_ytterperiode() {
+        var oppdrag = frilansoppdrag(
+            oppdrag("Kulturskolen", "2025-01-15", "2025-06-30"),
+            oppdrag("Kulturskolen", "2025-07-01", null),
+            oppdrag("Teaterlaget", "2025-03-01", "2025-03-31"));
+
+        assertThat(compileContent(BREVMAL, FRILANSOPPDRAG, Språk.BOKMÅL, oppdrag))
+            .containsOnlyOnce("Kulturskolen")
+            .containsOnlyOnce("Teaterlaget")
+            .doesNotContain("<strong>Kulturskolen</strong>", "<strong>Teaterlaget</strong>")
+            .contains("2 oppdrag: 15.01.2025 – Pågående")
+            .contains("Periode: 01.03.2025 – 31.03.2025")
+            .doesNotContain("30.06.2025", "01.07.2025");
+        assertThat(compileContent(BREVMAL, FRILANSOPPDRAG, Språk.NYNORSK, oppdrag))
+            .contains("2 oppdrag: 15.01.2025 – Pågåande");
+        assertThat(compileContent(BREVMAL, FRILANSOPPDRAG, Språk.ENGELSK, oppdrag))
+            .contains("2 assignments: 15.01.2025 – Ongoing");
+    }
+
+    @Test
+    void nytt_frilanssvar_skal_utlede_om_søker_fortsatt_er_frilanser_fra_tom() {
+        assertThat(compileContent(BREVMAL, "frilans", Språk.BOKMÅL, frilanssvar(null)))
+            .contains("Er du fortsatt frilanser: <strong>Ja</strong>");
+        assertThat(compileContent(BREVMAL, "frilans", Språk.BOKMÅL, frilanssvar("2025-09-20")))
+            .contains("Er du fortsatt frilanser: <strong>Nei</strong>");
+        assertThat(compileContent(BREVMAL, "frilans", Språk.NYNORSK, frilanssvar(null)))
+            .contains("Er du framleis frilansar: <strong>Ja</strong>");
+        assertThat(compileContent(BREVMAL, "frilans", Språk.ENGELSK, frilanssvar("2025-09-20")))
+            .contains("Are you still a freelancer: <strong>No</strong>");
+    }
+
+    @Test
     void næring_uten_næringstype_skal_rendre_navnet_uten_tomt_kulepunkt_nb() {
         var content = compileContent(BREVMAL, REGISTRERT_NÆRING, Språk.BOKMÅL, selvstendigNæring(null));
 
@@ -89,11 +121,29 @@ class SøknadForelagteAktiviteterTest {
     }
 
     private static Map<String, Object> frilansoppdrag(String fom, String tom) {
+        return frilansoppdrag(oppdrag("Kulturskolen", fom, tom));
+    }
+
+    @SafeVarargs
+    private static Map<String, Object> frilansoppdrag(Map<String, Object>... oppdrag) {
+        return Map.of("søkerinfo", Map.of("frilansoppdrag", List.of(oppdrag)));
+    }
+
+    private static Map<String, Object> oppdrag(String navn, String fom, String tom) {
         var oppdrag = new HashMap<String, Object>();
-        oppdrag.put("navn", "Kulturskolen");
+        oppdrag.put("navn", navn);
         oppdrag.put("fom", fom);
         oppdrag.put("tom", tom);
-        return Map.of("søkerinfo", Map.of("frilansoppdrag", List.of(oppdrag)));
+        return oppdrag;
+    }
+
+    private static Map<String, Object> frilanssvar(String tom) {
+        var frilans = new HashMap<String, Object>();
+        frilans.put("oppstart", "2025-09-01");
+        frilans.put("tom", tom);
+        return Map.of(
+            "søkerinfo", Map.of("frilansoppdrag", List.of()),
+            "frilans", frilans);
     }
 
     private static Map<String, Object> selvstendigNæring(String næringstype) {

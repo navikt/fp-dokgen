@@ -4,7 +4,11 @@
 {{#if (finnes ../søkerinfo/frilansoppdrag)}}### Your answers about freelance work{{else}}## Freelance{{/if}}
 <ul>
     <li>Started: {{norwegian-date oppstart}}</li>
+    {{#if (finnes ../søkerinfo/frilansoppdrag)}}
+    <li>Are you still a freelancer: <strong>{{#if tom}}No{{else}}Yes{{/if}}</strong></li>
+    {{else}}
     <li>{{> utils/sporsmal-svar-yes-no value=jobberFremdelesSomFrilans label="Still working as freelancer"}}</li>
+    {{/if}}
 </ul>
 
 </div>

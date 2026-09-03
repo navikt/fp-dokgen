@@ -56,15 +56,6 @@ Du er ikke registrert med noen næringer i Brønnøysundregistrene.
 </ul>
 </div>
 <div class="no-page-break">
-## Arbeid i utlandet siste 4 uker
-<strong>Jobb i utlandet</strong>
-<ul>
-    <li>Arbeidsgiver: Utenlandsk Arbeidsgiver AB</li>
-    <li>Periode: 01.08.2025 – 01.09.2025</li>
-    <li>Landet virksomheten er registrert i: Sverige</li>
-</ul>
-</div>
-<div class="no-page-break">
 ## Tilretteleggingsbehov
 <div class="no-page-break">
 Tilretteleggingsbehov hos NAV Familie og Pensjonsytelser Oslo (987654321)

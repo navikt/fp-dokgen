@@ -1,30 +1,30 @@
-# Kvittering på søknad om foreldrepengar
+# Kvittering på søknad om foreldrepenger
 Mottatt: 03.12.2011 10:15:30
-## Opplysningar om søkjar
-Namn: Per Sykelig Oppblåst<br/>
+## Opplysninger om søker
+Navn: Per Sykelig Oppblåst<br/>
 Fødselsnummer: 987654321<br/>
-Kva søkjer du som: Mor
+Hva søker du som: Mor
 <div class="no-page-break">
-## Opplysningar om barnet
+## Opplysninger om barnet
 <ul>
     <li>Termindato: 08.09.2025</li>
-    <li>Terminbekrefting er datert: 08.08.2025</li>
-    <li>Tal på barn: 1</li>
+    <li>Terminbekreftelse er datert: 08.08.2025</li>
+    <li>Antall barn: 1</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Informasjon om opphald i utlandet
+## Informasjon om opphold i utlandet
 <ul>
-<li>Dei siste 12 månadene budde du i Noreg</li>
-<li>Dei neste 12 månadene skal du bu i Noreg</li>
+<li>De siste 12 månedene bodde du i Norge</li>
+<li>De neste 12 månedene skal du bo i Norge</li>
 </ul>
 </div>
 <div class="no-page-break">
 ## Mine arbeidsforhold
-Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden. Nav sjekkar AA-registeret igjen når arbeidsgivar kan sende inn inntektsmeldinga.
+Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden. Nav sjekker AA-registeret igjen når arbeidsgiver kan sende inntektsmeldingen.
 ### NAV Familie og Pensjonsytelser Oslo (123456789)
 <ul>
-    <li>Periode: 11.01.2024 – Pågåande</li>
+    <li>Periode: 11.01.2024 – Pågående</li>
     <li>Stillingsprosent: 44 %</li>
 </ul>
 ### Kåre og Anne-Ma&#x27;s snekker og dryss AS (12312312)
@@ -35,68 +35,78 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 </div>
 <div class="no-page-break">
 ## Frilans
-Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
+Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden.
 Kulturskolen i Bydel Sagene
 <ul>
     <li>Periode: 15.01.2025 – 30.06.2025</li>
 </ul>
 Ola Nordmann
 <ul>
-    <li>Periode: 01.03.2025 – Pågåande</li>
+    <li>Periode: 01.03.2025 – Pågående</li>
 </ul>
 </div>
 <div class="no-page-break">
-### Svara dine om frilansarbeid
+### Dine svar om frilansarbeid
 <ul>
-    <li>Starta som frilansar: 01.09.2025</li>
-    <li>Er du framleis frilansar: <strong>Ja</strong></li>
+    <li>Startet som frilanser: 01.09.2025</li>
+    <li>Er du fortsatt frilanser: <strong>Nei</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-## Sjølvstendig næringsdrivande
-Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
+## Selvstendig næringsdrivende
+Opplysningene er hentet fra Enhetsregisteret i Brønnøysundregistrene. Disse ble vist i søknaden.
 <strong>Sagene Fiskeri (974760673)</strong>
 <ul>
-    <li>Verksemdstype: Fiskar</li>
+    <li>Virksomhetstype: Fisker</li>
 </ul>
 <strong>Nordre Aker Gård (889640782)</strong>
 <ul>
-    <li>Verksemdstype: Jord-/skogbruk</li>
+    <li>Virksomhetstype: Jord-/skogsbruk</li>
 </ul>
 </div>
 <div class="no-page-break">
 ### Dette har du oppgitt:
 <ul>
-    <li>Du starta som sjølvstendig næringsdrivande 01.10.2025 og slutta 31.10.2025.</li>
-    <li>Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Nei</strong></li>
+    <li>Du startet som selvstendig næringsdrivende 01.10.2025 og sluttet 31.10.2025.</li>
+    <li>Varig endring i virksomheten eller arbeidssituasjonen min de siste fire årene: <strong>Nei</strong></li>
     <li>Næringsinntekt: 329000</li>
-    <li>Verksemda blei starta: 01.11.2023</li>
-    <li>Har du byrja å jobbe i løpet av dei tre siste ferdiglikna åra: <strong>Ja</strong></li>
+    <li>Virksomheten ble startet: 01.11.2023</li>
+    <li>Har du begynt å jobbe i løpet av de tre siste ferdigliknede årene: <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-## Andre inntekter siste 10 månader
+## Andre inntekter siste 10 måneder
 <strong>Etterlønn sluttpakke</strong>
 <ul>
     <li>Periode: 01.10.2025 – 01.11.2025</li>
 </ul>
+<strong>Førstegangstjeneste</strong>
+<ul>
+    <li>Periode: 02.11.2025 – 31.01.2026</li>
+</ul>
+<strong>Jobb i utlandet</strong>
+<ul>
+    <li>Arbeidsgiver: Svensk Verkstad AB</li>
+    <li>Periode: 01.02.2026 – Pågående</li>
+    <li>Landet virksomheten er registrert i: Sverige</li>
+</ul>
 </div>
 <div class="no-page-break">
-## Informasjon om annan forelder
+## Informasjon om annen forelder
 <ul>
-    <li>Namn: Fornavn annenforelder Etternavn annenforelder</li>
+    <li>Navn: Fornavn annenforelder Etternavn annenforelder</li>
     <li>Fødselsnummer: 04479417895</li>
-    <li>Er de saman om omsorga for barnet: <strong>Ja</strong></li>
-    <li>Har den andre forelderen rett til foreldrepengar i Noreg: <strong>Ja</strong></li>
+    <li>Er dere sammen om omsorgen for barnet: <strong>Ja</strong></li>
+    <li>Har den andre forelderen rett til foreldrepenger i Norge: <strong>Ja</strong></li>
     <li>Har orientert den andre forelderen om søknaden: <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
 ## Planen din
-Du har søkt om endring frå og med 23.08.2025. Planen viser berre endringane du har søkt og ikkje det du er innvilga tidlegare.
+Du har søkt om endring fra og med 23.08.2025. Planen viser kun endringene du har søkt og ikke det du er innvilget tidligere.
 </div>
 <div class="no-page-break">
-<strong>Foreldrepengar før fødsel 23.08.2025 - 07.09.2025 (10 virkedager)</strong>
+<strong>Foreldrepenger før fødsel 23.08.2025 - 07.09.2025 (10 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
@@ -119,7 +129,7 @@ Du har søkt om endring frå og med 23.08.2025. Planen viser berre endringane du
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
-    <li>Moras aktivitet i perioden: Arbeid</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
@@ -134,7 +144,7 @@ Du har søkt om endring frå og med 23.08.2025. Planen viser berre endringane du
 </ul>
 </div>
 <div class="no-page-break">
-<strong>Periode utan uttak 01.09.2025 - 19.09.2025</strong>
+<strong>Periode uten uttak 01.09.2025 - 19.09.2025</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
@@ -158,11 +168,11 @@ Du har søkt om endring frå og med 23.08.2025. Planen viser berre endringane du
     <!-- Uttaksperiode spesifikke attributter -->
     <li></li>
     <li></li>
-    <li>Skal annan forelder ha foreldrepengar i same periode: <strong>Nei</strong></li>
+    <li>Skal annen forelder ha foreldrepenger i samme periode: <strong>Nei</strong></li>
     <li></li>
-    <li>Skal bruke fleirbarnsdager: <strong>Nei</strong></li>
+    <li>Skal bruke flerbarnsdager: <strong>Nei</strong></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengane med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -175,13 +185,13 @@ Du har søkt om endring frå og med 23.08.2025. Planen viser berre endringane du
 <strong>Fellesperiode 15.09.2025 - 26.09.2025 (10 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Kva del av foreldrepengane vert tatt ut: Fellesperiode med aktivitetskrav</li>
-    <li>Moras aktivitet i perioden: Arbeid</li>
+    <li>Hvilken del av foreldrepengene tas ut: Fellesperiode med aktivitetskrav</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengane med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -200,7 +210,7 @@ Du har søkt om endring frå og med 23.08.2025. Planen viser berre endringane du
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengane med arbeid: <strong>Nei</strong></li><!-- Overføring -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Nei</strong></li><!-- Overføring -->
     <li></li>
     <!-- Opphold -->
     <li></li>
@@ -213,14 +223,14 @@ Du har søkt om endring frå og med 23.08.2025. Planen viser berre endringane du
 <strong>Fellesperiode 26.09.2025 - 15.01.2026 (80 virkedager)</strong>
 <ul style="margin-top: -10px;">
     <!-- Uttaksperiode spesifikke attributter -->
-    <li>Kva del av foreldrepengane vert tatt ut: Fellesperiode med aktivitetskrav</li>
-    <li>Moras aktivitet i perioden: Arbeid</li>
+    <li>Hvilken del av foreldrepengene tas ut: Fellesperiode med aktivitetskrav</li>
+    <li>Mors aktivitet i perioden: Arbeid</li>
     <li></li>
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengane med arbeid: <strong>Ja</strong></li>
-    <li>Kor skal du jobbe: Kåre og Anne-Ma&#x27;s snekker og dryss AS (12312312)</li><!-- TODO: Alltid orgnumre.[0] også.. -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Ja</strong></li>
+    <li>Hvor skal du jobbe: Kåre og Anne-Ma&#x27;s snekker og dryss AS (12312312)</li><!-- TODO: Alltid orgnumre.[0] også.. -->
     <li></li>
     <li></li>
     <li>Oppgitt prosent i arbeid: 50</li>
@@ -243,8 +253,8 @@ Du har søkt om endring frå og med 23.08.2025. Planen viser berre endringane du
     <li></li>
     <li></li>
     <!-- Gradering -->
-    <li>Skal kombinere foreldrepengane med arbeid: <strong>Ja</strong></li>
-    <li>Kor skal du jobbe: (987654321)</li><!-- TODO: Alltid orgnumre.[0] også.. -->
+    <li>Skal kombinere foreldrepengene med arbeid: <strong>Ja</strong></li>
+    <li>Hvor skal du jobbe: (987654321)</li><!-- TODO: Alltid orgnumre.[0] også.. -->
     <li></li>
     <li></li>
     <li>Oppgitt prosent i arbeid: 50</li>

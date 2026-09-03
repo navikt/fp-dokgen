@@ -61,13 +61,25 @@
   },
   "frilans": {
     "oppstart": "2025-09-01",
-    "tom": null
+    "tom": "2025-09-20"
   },
   "andreInntekterSiste10Mnd": [
     {
       "type": "ETTERLØNN_SLUTTPAKKE",
       "fom": "2025-10-01",
       "tom": "2025-11-01"
+    },
+    {
+      "type": "MILITÆR_ELLER_SIVILTJENESTE",
+      "fom": "2025-11-02",
+      "tom": "2026-01-31"
+    },
+    {
+      "type": "JOBB_I_UTLANDET",
+      "fom": "2026-02-01",
+      "tom": null,
+      "land": "SE",
+      "arbeidsgiverNavn": "Svensk Verkstad AB"
     }
   ],
   "barn": {

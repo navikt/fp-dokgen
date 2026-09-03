@@ -4,7 +4,11 @@
 {{#if (finnes ../søkerinfo/frilansoppdrag)}}### Dine svar om frilansarbeid{{else}}## Informasjon om frilansoppdrag{{/if}}
 <ul>
     <li>Startet som frilanser: {{norwegian-date oppstart}}</li>
+    {{#if (finnes ../søkerinfo/frilansoppdrag)}}
+    <li>Er du fortsatt frilanser: <strong>{{#if tom}}Nei{{else}}Ja{{/if}}</strong></li>
+    {{else}}
     <li>{{> utils/sporsmal-svar-ja-nei value=jobberFremdelesSomFrilans label="Jobber fortsatt som frilanser"}}</li>
+    {{/if}}
 </ul>
 
 </div>

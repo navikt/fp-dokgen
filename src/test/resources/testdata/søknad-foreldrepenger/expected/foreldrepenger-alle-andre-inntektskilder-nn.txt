@@ -49,7 +49,7 @@ Ola Nordmann
 ### Svara dine om frilansarbeid
 <ul>
     <li>Starta som frilansar: 01.09.2025</li>
-    <li>Er du framleis frilansar: <strong>Ja</strong></li>
+    <li>Er du framleis frilansar: <strong>Nei</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
@@ -79,6 +79,16 @@ Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse bl
 <strong>Etterlønn sluttpakke</strong>
 <ul>
     <li>Periode: 01.10.2025 – 01.11.2025</li>
+</ul>
+<strong>Førstegangsteneste</strong>
+<ul>
+    <li>Periode: 02.11.2025 – 31.01.2026</li>
+</ul>
+<strong>Jobb i utlandet</strong>
+<ul>
+    <li>Arbeidsgivar: Svensk Verkstad AB</li>
+    <li>Periode: 01.02.2026 – Pågåande</li>
+    <li>Landet verksemda er registrert i: Sverige</li>
 </ul>
 </div>
 <div class="no-page-break">

@@ -11,6 +11,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -380,6 +381,95 @@ final class HandlebarsCustomHelpers {
                 return !jsonNode.isNull() && !jsonNode.isMissingNode();
             }
             return true;
+        }
+    }
+
+    /**
+     * Grupperer frilansoppdrag etter oppdragsgivernavn og beregner antall oppdrag og ytterperioden for hver gruppe.
+     * Syntaks: {{#each (grupper-frilansoppdrag søkerinfo/frilansoppdrag)}}.
+     */
+    static class GrupperFrilansoppdragHelper implements Helper<Object> {
+        @Override
+        public Object apply(Object context, Options options) {
+            if (!(context instanceof Iterable<?> oppdrag)) {
+                return List.of();
+            }
+
+            var grupper = new LinkedHashMap<String, Frilansgruppe>();
+            for (var periode : oppdrag) {
+                grupper.computeIfAbsent(navn(periode), Frilansgruppe::new).leggTil(periode);
+            }
+
+            return grupper.values().stream()
+                .map(Frilansgruppe::tilModell)
+                .toList();
+        }
+
+        private static String navn(Object oppdrag) {
+            var navn = switch (oppdrag) {
+                case JsonNode node -> node.get("navn");
+                case Map<?, ?> map -> map.get("navn");
+                default -> null;
+            };
+            if (navn instanceof JsonNode node) {
+                return node.isNull() || node.isMissingNode() ? "" : node.asString();
+            }
+            return navn == null ? "" : navn.toString();
+        }
+
+        private static Object felt(Object oppdrag, String feltnavn) {
+            return switch (oppdrag) {
+                case JsonNode node -> jsonVerdi(node.get(feltnavn));
+                case Map<?, ?> map -> map.get(feltnavn);
+                default -> null;
+            };
+        }
+
+        private static LocalDate dato(Object verdi) {
+            if (verdi == null) {
+                return null;
+            }
+            return verdi instanceof LocalDate dato ? dato : LocalDate.parse(verdi.toString());
+        }
+
+        private static Object jsonVerdi(JsonNode node) {
+            return node == null || node.isNull() || node.isMissingNode() ? null : node.asString();
+        }
+
+        private static final class Frilansgruppe {
+            private final String navn;
+            private int antallOppdrag;
+            private LocalDate tidligsteFom;
+            private LocalDate senesteTom;
+            private boolean pågående;
+
+            private Frilansgruppe(String navn) {
+                this.navn = navn;
+            }
+
+            private void leggTil(Object oppdrag) {
+                antallOppdrag++;
+                var fom = dato(felt(oppdrag, "fom"));
+                if (fom != null && (tidligsteFom == null || fom.isBefore(tidligsteFom))) {
+                    tidligsteFom = fom;
+                }
+
+                var tom = dato(felt(oppdrag, "tom"));
+                if (tom == null) {
+                    pågående = true;
+                } else if (senesteTom == null || tom.isAfter(senesteTom)) {
+                    senesteTom = tom;
+                }
+            }
+
+            private Map<String, Object> tilModell() {
+                var modell = new HashMap<String, Object>();
+                modell.put("navn", navn);
+                modell.put("antallOppdrag", antallOppdrag);
+                modell.put("fom", tidligsteFom == null ? null : tidligsteFom.toString());
+                modell.put("tom", pågående || senesteTom == null ? null : senesteTom.toString());
+                return modell;
+            }
         }
     }
 

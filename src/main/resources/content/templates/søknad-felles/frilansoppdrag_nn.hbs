@@ -5,11 +5,11 @@
 
 Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
 {{#if søkerinfo/frilansoppdrag}}
-{{#each søkerinfo/frilansoppdrag}}
-<strong>{{navn}}</strong>
-{{#if fom}}<ul>
-    <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågåande{{/if}}</li>
-</ul>{{/if}}
+{{#each (grupper-frilansoppdrag søkerinfo/frilansoppdrag)}}
+{{navn}}
+{{#punktliste}}
+{{#punkt}}{{#if (gt antallOppdrag 1)}}{{antallOppdrag}} oppdrag{{#if fom}}: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågåande{{/if}}{{/if}}{{else}}{{#if fom}}Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågåande{{/if}}{{/if}}{{/if}}{{/punkt}}
+{{/punktliste}}
 {{/each}}
 {{else}}
 Du er ikkje registrert med nokon frilansoppdrag.

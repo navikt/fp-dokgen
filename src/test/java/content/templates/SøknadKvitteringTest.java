@@ -87,10 +87,10 @@ class SøknadKvitteringTest {
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-treff-i-registrene-nb.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
         assertThat(content).contains("Du er ikke registrert med noen frilansoppdrag.");
-        assertThat(content).contains("Du er ikke registrert med noen næringer.");
+        assertThat(content).contains("Du er ikke registrert med noen næringer i Brønnøysundregistrene.");
         assertThat(content).contains("## Frilans")
                 .contains("## Selvstendig næringsdrivende")
-                .contains("### Dine svar om næringsvirksomheten");
+                .contains("### Dette har du oppgitt:");
         assertThat(content).contains("<ul>\n    <li>Navn på virksomheten: Utenlandsk Fiskeri AB</li>\n    <li>Registrert i land: Sverige</li>");
     }
 
@@ -99,6 +99,8 @@ class SøknadKvitteringTest {
         var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-næring-uten-treff-i-registrene");
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-treff-i-registrene-nn.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
+        assertThat(content).contains("Du er ikkje registrert med nokon næringar i Brønnøysundregistera.")
+                .contains("### Dette har du oppgitt:");
         assertThat(content).contains("<ul>\n    <li>Namn på verksemda: Utenlandsk Fiskeri AB</li>");
     }
 
@@ -107,6 +109,8 @@ class SøknadKvitteringTest {
         var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-næring-uten-treff-i-registrene");
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-treff-i-registrene-en.txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
+        assertThat(content).contains("You are not registered with any businesses in the Brønnøysund Register Centre.")
+                .contains("### You have provided the following:");
         assertThat(content).contains("<ul>\n    <li>Business name: Utenlandsk Fiskeri AB</li>");
     }
 

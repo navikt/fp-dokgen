@@ -634,6 +634,40 @@ class HandlebarsCustomHelpersTest {
     }
 
     @Nested
+    class GrupperFrilansoppdragHelperTest {
+
+        private static final String MAL = """
+            {{#each (grupper-frilansoppdrag oppdrag)}}
+            {{navn}}={{antallOppdrag}}:{{fom}}-{{tom}}
+            {{/each}}""";
+
+        @Test
+        void skalGrupperePåNavnOgBeregneYtterperioden() throws IOException {
+            var template = handlebars.compileInline(MAL);
+            var oppdrag = List.of(
+                Map.of("navn", "Kulturskolen", "fom", "2025-02-01", "tom", "2025-02-28"),
+                Map.of("navn", "Teaterlaget", "fom", "2025-04-01", "tom", "2025-04-30"),
+                Map.of("navn", "Kulturskolen", "fom", "2025-01-01", "tom", "2025-03-31"));
+
+            assertThat(template.apply(Map.of("oppdrag", oppdrag)))
+                .containsSubsequence(
+                    "Kulturskolen=2:2025-01-01-2025-03-31",
+                    "Teaterlaget=1:2025-04-01-2025-04-30");
+        }
+
+        @Test
+        void skalStøtteJsonInputOgViseGruppenSomPågåendeNårEnPeriodeErÅpen() throws IOException {
+            var template = handlebars.compileInline(MAL);
+            var oppdrag = JSON_MAPPER.createArrayNode();
+            oppdrag.addObject().put("navn", "Kulturskolen").put("fom", "2025-02-01").put("tom", "2025-02-28");
+            oppdrag.addObject().put("navn", "Kulturskolen").put("fom", "2025-01-01");
+
+            assertThat(template.apply(Map.of("oppdrag", oppdrag)))
+                .contains("Kulturskolen=2:2025-01-01-");
+        }
+    }
+
+    @Nested
     class PunktlisteHelperTest {
 
         @Test

@@ -46,6 +46,7 @@ public class HandlebarsTjeneste {
         handlebars.registerHelper("næring-forelagt", new HandlebarsCustomHelpers.NæringForelagtHelper());
         handlebars.registerHelper("finnes", new HandlebarsCustomHelpers.FinnesHelper());
         handlebars.registerHelper("aktiviteter-forelagt", new HandlebarsCustomHelpers.AktiviteterForelagtHelper());
+        handlebars.registerHelper("grupper-frilansoppdrag", new HandlebarsCustomHelpers.GrupperFrilansoppdragHelper());
         handlebars.registerHelper("punktliste", new HandlebarsCustomHelpers.PunktlisteHelper());
         handlebars.registerHelper("punkt", new HandlebarsCustomHelpers.PunktHelper());
         handlebars.registerHelper("size", new HandlebarsCustomHelpers.SizeHelper());
