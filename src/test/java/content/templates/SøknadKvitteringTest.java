@@ -4,242 +4,57 @@ import static content.support.TemplateTestUtil.compileContent;
 import static content.support.TemplateTestUtil.getExpected;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.jupiter.api.Test;
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
 import content.support.BrevMal;
 import content.support.Språk;
 
 class SøknadKvitteringTest {
 
-    @Test
-    void svp_utenalandsopphold_avtalt_ferie_nb_test() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-utenlandsopphold");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-utenlandsopphold-ferie-nb.txt");
+    @ParameterizedTest(name = "{0} [{1}]")
+    @MethodSource("goldenTester")
+    void søknad_skal_samsvare_med_golden(GoldenTest test, Språk språk) {
+        var content = compileContent(test.brevmal(), språk, test.testdata());
+        var expected = getExpected(test.brevmal(), test.forventetFilprefiks() + språk.getKode() + ".txt");
         assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
-    @Test
-    void svp_utenalandsopphold_avtalt_ferie_nn_test() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-utenlandsopphold");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-utenlandsopphold-ferie-nn.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
+    private static Stream<Arguments> goldenTester() {
+        return Stream.of(
+            new GoldenTest("SVP utenlandsopphold og avtalt ferie", BrevMal.SVANGESKAPSPENGER_SØKNAD,
+                "svp-utenlandsopphold", "svp-utenlandsopphold-ferie-"),
+            new GoldenTest("SVP med frilans, næring og arbeid i utlandet", BrevMal.SVANGESKAPSPENGER_SØKNAD,
+                "svp-frilans-næring-arbeid-i-utlandet", "svp-frilans-næring-arbeid-i-utlandet-"),
+            new GoldenTest("FP med frilans og næring i legacyflyt", BrevMal.FORELDREPENGER_SØKNAD,
+                "mor-termin-frilans-næring-legacy", "foreldrepenger-frilans-næring-legacy-"),
+            new GoldenTest("SVP med næring i legacyflyt", BrevMal.SVANGESKAPSPENGER_SØKNAD,
+                "svp-næring-uten-forelagte-aktiviteter", "svp-næring-uten-forelagte-aktiviteter-"),
+            new GoldenTest("SVP med næring uten registertreff", BrevMal.SVANGESKAPSPENGER_SØKNAD,
+                "svp-næring-uten-treff-i-registrene", "svp-næring-uten-treff-i-registrene-"),
+            new GoldenTest("FP med alle andre inntektskilder", BrevMal.FORELDREPENGER_SØKNAD,
+                "mor-termin-alle-andre-inntektskilder", "foreldrepenger-alle-andre-inntektskilder-"),
+            new GoldenTest("SVP uten andre inntekter i ny flyt", BrevMal.SVANGESKAPSPENGER_SØKNAD,
+                "svp-uten-andre-inntekter-ny-flyt", "svp-uten-andre-inntekter-ny-flyt-"),
+            new GoldenTest("Søknad om engangsstønad", BrevMal.ENGANGSSTØNAD_SØKNAD,
+                "es", "es-"),
+            new GoldenTest("FP med frilans, næring og andre inntekter", BrevMal.FORELDREPENGER_SØKNAD,
+                "mor-termin-2af-frilans-næring-andre-inntekter", "foreldrepenger-fl-sn-andre-"),
+            new GoldenTest("Søknad om foreldrepenger", BrevMal.FORELDREPENGER_SØKNAD,
+                "mor-1-AF-fødsel", "foreldrepenger-"),
+            new GoldenTest("Endringssøknad om foreldrepenger", BrevMal.FORELDREPNGER_ENDRING_SØKNAD,
+                "endring-bfhr", "foreldrepenger-")
+        ).flatMap(test -> Arrays.stream(Språk.values()).map(språk -> Arguments.of(test, språk)));
     }
 
-    @Test
-    void svp_utenalandsopphold_avtalt_ferie_en_test() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-utenlandsopphold");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-utenlandsopphold-ferie-en.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void svp_frilans_næring_arbeid_i_utlandet_nb_test() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-frilans-næring-arbeid-i-utlandet");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-frilans-næring-arbeid-i-utlandet-nb.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void svp_frilans_næring_arbeid_i_utlandet_nn_test() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-frilans-næring-arbeid-i-utlandet");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-frilans-næring-arbeid-i-utlandet-nn.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void svp_frilans_næring_arbeid_i_utlandet_en_test() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-frilans-næring-arbeid-i-utlandet");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-frilans-næring-arbeid-i-utlandet-en.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void foreldrepenger_frilans_og_næring_uten_registerdata_bruker_legacy_mal_nb() {
-        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-termin-frilans-næring-legacy");
-        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-frilans-næring-legacy-nb.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void foreldrepenger_frilans_og_næring_uten_registerdata_bruker_legacy_mal_nn() {
-        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.NYNORSK, "mor-termin-frilans-næring-legacy");
-        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-frilans-næring-legacy-nn.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void foreldrepenger_frilans_og_næring_uten_registerdata_bruker_legacy_mal_en() {
-        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.ENGELSK, "mor-termin-frilans-næring-legacy");
-        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-frilans-næring-legacy-en.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void svp_næring_uten_forelagte_aktiviteter_bruker_legacy_mal_nb() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-næring-uten-forelagte-aktiviteter");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-forelagte-aktiviteter-nb.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void svp_næring_uten_forelagte_aktiviteter_bruker_legacy_mal_nn() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-næring-uten-forelagte-aktiviteter");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-forelagte-aktiviteter-nn.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void svp_næring_uten_forelagte_aktiviteter_bruker_legacy_mal_en() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-næring-uten-forelagte-aktiviteter");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-forelagte-aktiviteter-en.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void svp_næring_uten_treff_i_registrene_bruker_ny_mal_nb() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-næring-uten-treff-i-registrene");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-treff-i-registrene-nb.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void svp_næring_uten_treff_i_registrene_bruker_ny_mal_nn() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-næring-uten-treff-i-registrene");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-treff-i-registrene-nn.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void svp_næring_uten_treff_i_registrene_bruker_ny_mal_en() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-næring-uten-treff-i-registrene");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-treff-i-registrene-en.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-
-    @Test
-    void alle_andre_inntektskilder_skal_vises_uten_tomme_punkter_nb() {
-        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-termin-alle-andre-inntektskilder");
-        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-alle-andre-inntektskilder-nb.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void alle_andre_inntektskilder_skal_vises_uten_tomme_punkter_nn() {
-        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.NYNORSK, "mor-termin-alle-andre-inntektskilder");
-        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-alle-andre-inntektskilder-nn.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void alle_andre_inntektskilder_skal_vises_uten_tomme_punkter_en() {
-        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.ENGELSK, "mor-termin-alle-andre-inntektskilder");
-        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-alle-andre-inntektskilder-en.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void ny_flyt_uten_andre_inntekter_skal_ikke_vise_seksjonen_nb() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-uten-andre-inntekter-ny-flyt");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-uten-andre-inntekter-ny-flyt-nb.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void ny_flyt_uten_andre_inntekter_skal_ikke_vise_seksjonen_nn() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-uten-andre-inntekter-ny-flyt");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-uten-andre-inntekter-ny-flyt-nn.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void ny_flyt_uten_andre_inntekter_skal_ikke_vise_seksjonen_en() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-uten-andre-inntekter-ny-flyt");
-        var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-uten-andre-inntekter-ny-flyt-en.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void engangsstønad_nb_test() {
-        var content = compileContent(BrevMal.ENGANGSSTØNAD_SØKNAD, Språk.BOKMÅL, "es");
-        var expected = getExpected(BrevMal.ENGANGSSTØNAD_SØKNAD, "es-nb.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void engangsstønad_nn_test() {
-        var content = compileContent(BrevMal.ENGANGSSTØNAD_SØKNAD, Språk.NYNORSK, "es");
-        var expected = getExpected(BrevMal.ENGANGSSTØNAD_SØKNAD, "es-nn.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void engangsstønad_en_test() {
-        var content = compileContent(BrevMal.ENGANGSSTØNAD_SØKNAD, Språk.ENGELSK, "es");
-        var expected = getExpected(BrevMal.ENGANGSSTØNAD_SØKNAD, "es-en.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void foreldrepenger_mor_2af_frilans_gradering_utsettelse_nb() {
-        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-termin-2af-frilans-næring-andre-inntekter");
-        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-fl-sn-andre-nb.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void foreldrepenger_mor_2af_frilans_gradering_utsettelse_nn() {
-        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.NYNORSK, "mor-termin-2af-frilans-næring-andre-inntekter");
-        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-fl-sn-andre-nn.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void foreldrepenger_mor_2af_frilans_gradering_utsettelse_en() {
-        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.ENGELSK, "mor-termin-2af-frilans-næring-andre-inntekter");
-        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-fl-sn-andre-en.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void foreldrepenger_mor_af_nb() {
-        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-1-AF-fødsel");
-        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-nb.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void foreldrepenger_mor_af_nn() {
-        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.NYNORSK, "mor-1-AF-fødsel");
-        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-nn.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void foreldrepenger_mor_af_en() {
-        var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.ENGELSK, "mor-1-AF-fødsel");
-        var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-en.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void endringsøsknad_bfhr_nb() {
-        var content = compileContent(BrevMal.FORELDREPNGER_ENDRING_SØKNAD, Språk.BOKMÅL, "endring-bfhr");
-        var expected = getExpected(BrevMal.FORELDREPNGER_ENDRING_SØKNAD, "foreldrepenger-nb.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void endringsøsknad_bfhr_nn() {
-        var content = compileContent(BrevMal.FORELDREPNGER_ENDRING_SØKNAD, Språk.NYNORSK, "endring-bfhr");
-        var expected = getExpected(BrevMal.FORELDREPNGER_ENDRING_SØKNAD, "foreldrepenger-nn.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
-    }
-
-    @Test
-    void endringsøsknad_bfhr_en() {
-        var content = compileContent(BrevMal.FORELDREPNGER_ENDRING_SØKNAD, Språk.ENGELSK, "endring-bfhr");
-        var expected = getExpected(BrevMal.FORELDREPNGER_ENDRING_SØKNAD, "foreldrepenger-en.txt");
-        assertThat(content).isEqualToIgnoringNewLines(expected);
+    private record GoldenTest(String navn, BrevMal brevmal, String testdata, String forventetFilprefiks) {
+        @Override
+        public String toString() {
+            return navn;
+        }
     }
 }

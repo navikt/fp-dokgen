@@ -105,7 +105,7 @@ public final class SøknadVisningsdataBeriker {
             }
             try {
                 return LocalDate.parse(tekst);
-            } catch (DateTimeParseException e) {
+            } catch (DateTimeParseException _) {
                 return null;
             }
         }
