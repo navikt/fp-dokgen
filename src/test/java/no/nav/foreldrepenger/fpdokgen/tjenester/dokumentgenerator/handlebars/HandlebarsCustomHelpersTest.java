@@ -282,7 +282,7 @@ class HandlebarsCustomHelpersTest {
     }
 
     @Nested
-    class CountryCodeHelperTest {
+    class LandkodeHelperTest {
 
         @Test
         void skalKonvertereAlpha2TilNorskLandnavn() throws IOException {
@@ -296,6 +296,20 @@ class HandlebarsCustomHelpersTest {
             var template = handlebars.compileInline("{{land-norsk \"NOR\"}}");
             var result = template.apply(null);
             assertThat(result).isEqualTo("Norge");
+        }
+
+        @Test
+        void skalKonvertereKosovoAlpha2TilNorskLandnavn() throws IOException {
+            var template = handlebars.compileInline("{{land-norsk \"XK\"}}");
+            var result = template.apply(null);
+            assertThat(result).isEqualTo("Kosovo");
+        }
+
+        @Test
+        void skalKonvertereKosovoAlpha3TilNorskLandnavn() throws IOException {
+            var template = handlebars.compileInline("{{land-norsk \"XXK\"}}");
+            var result = template.apply(null);
+            assertThat(result).isEqualTo("Kosovo");
         }
 
         @Test

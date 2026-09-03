@@ -61,7 +61,7 @@ public class HandlebarsTjeneste {
         handlebars.registerHelper("array", new HandlebarsCustomHelpers.ArrayHelper());
         handlebars.registerHelper("in-array", new HandlebarsCustomHelpers.InArrayHelper());
         handlebars.registerHelper("format-text", new HandlebarsCustomHelpers.FormatText());
-        handlebars.registerHelper("land-norsk", new HandlebarsCustomHelpers.CountryCodeHelper());
+        handlebars.registerHelper("land-norsk", new HandlebarsCustomHelpers.LandkodeHelper());
         handlebars.registerHelper("antall-virkedager", new HandlebarsCustomHelpers.AntallVirkedagerMellomToDatoer());
 
         // String helpers
