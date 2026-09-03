@@ -34,7 +34,16 @@ class SøknadVisningsdataBerikerTest {
             .containsEntry("nyAktivitetsflyt", true)
             .containsEntry("frilansoppdragForelagt", true)
             .containsEntry("selvstendigNæringForelagt", false)
-            .containsEntry("grupperteFrilansoppdrag", List.of());
+            .containsEntry("grupperteFrilansoppdrag", List.of())
+            .containsEntry("egenNæring", null);
+    }
+
+    @Test
+    void skalBehandleTomtEgenNæringObjektSomFraværende() {
+        var resultat = SøknadVisningsdataBeriker.berik("søknad-foreldrepenger",
+            Map.of("søkerinfo", Map.of("frilansoppdrag", List.of()), "egenNæring", Map.of()));
+
+        assertThat(visningsdata(resultat)).containsEntry("egenNæring", null);
     }
 
     @Test

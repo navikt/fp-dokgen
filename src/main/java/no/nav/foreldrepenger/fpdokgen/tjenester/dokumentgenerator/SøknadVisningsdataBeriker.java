@@ -42,8 +42,8 @@ public final class SøknadVisningsdataBeriker {
     }
 
     private static Map<String, Object> berikEgenNæring(Object egenNæring, List<?> registrerteNæringer) {
-        if (!(egenNæring instanceof Map<?, ?> næring)) {
-            return Map.of();
+        if (!(egenNæring instanceof Map<?, ?> næring) || næring.isEmpty()) {
+            return null;
         }
 
         var organisasjonsnumre = registrerteNæringer.stream()

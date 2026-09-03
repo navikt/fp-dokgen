@@ -3,6 +3,7 @@ package content.templates;
 import static content.support.TemplateTestUtil.compileContent;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -11,6 +12,9 @@ import org.junit.jupiter.api.Test;
 
 import content.support.BrevMal;
 import content.support.Språk;
+import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.handlebars.HandlebarsTjeneste;
+import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.ContentUtil;
+import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.MarkdownUtil;
 
 /**
  * Registerdataene som ble forelagt søker er ikke under vår kontroll, og en allerede journalført søknad skal aldri kunne bli
@@ -96,6 +100,47 @@ class SøknadForelagteAktiviteterTest {
             .contains("Er du framleis frilansar: <strong>Ja</strong>");
         assertThat(compileContent(BREVMAL, "frilans_ny", Språk.ENGELSK, frilanssvar("2025-09-20")))
             .contains("Are you still a freelancer: <strong>No</strong>");
+    }
+
+    @Test
+    void ny_flyt_uten_egen_næring_skal_ikke_rendre_næringsopplysninger() {
+        var dokgen = new HashMap<String, Object>();
+        dokgen.put("egenNæring", null);
+
+        assertThat(compileContent(BREVMAL, "næring_ny", Språk.BOKMÅL, Map.of("_dokgen", dokgen))).isEmpty();
+    }
+
+    @Test
+    void forelagt_næring_skal_beholde_listeelementene_inne_i_html_listen() {
+        var egenNæring = Map.<String, Object>of(
+            "forelagt", true,
+            "fom", "2021-09-03",
+            "hattVarigEndringAvNæringsinntektSiste4Kalenderår", false,
+            "næringsinntekt", 350_000,
+            "harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene", false);
+        var template = ContentUtil.lesRessursSomString(
+            Path.of("/content/templates/søknad-felles/næring_ny_nb.hbs"));
+        var markdown = new HandlebarsTjeneste().genererDokumentInnhold(
+            template, Map.of("_dokgen", Map.of("egenNæring", egenNæring)));
+
+        assertThat(MarkdownUtil.konverterTilHtml(markdown))
+            .contains("<ul>", "<li>Du startet som selvstendig næringsdrivende", "</li>", "</ul>")
+            .doesNotContain("&lt;li&gt;");
+    }
+
+    @Test
+    void annen_inntekt_uten_arbeidsgiver_og_land_skal_beholde_perioden_inne_i_html_listen() {
+        var template = ContentUtil.lesRessursSomString(
+            Path.of("/content/templates/søknad-felles/andreInntekter_ny_nb.hbs"));
+        var markdown = new HandlebarsTjeneste().genererDokumentInnhold(template,
+            Map.of("andreInntekterSiste10Mnd", List.of(Map.of(
+                "type", "MILITÆR_ELLER_SIVILTJENESTE",
+                "fom", "2025-10-01",
+                "tom", "2025-11-01"))));
+
+        assertThat(MarkdownUtil.konverterTilHtml(markdown))
+            .contains("<ul>", "<li>Periode: 01.10.2025 – 01.11.2025</li>", "</ul>")
+            .doesNotContain("&lt;li&gt;");
     }
 
     @Test
