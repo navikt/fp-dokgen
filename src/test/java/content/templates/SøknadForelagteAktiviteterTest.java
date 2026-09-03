@@ -70,9 +70,8 @@ class SøknadForelagteAktiviteterTest {
     @Test
     void flere_frilansoppdrag_fra_samme_oppdragsgiver_skal_vises_med_antall_og_ytterperiode() {
         var oppdrag = frilansoppdrag(
-            oppdrag("Kulturskolen", "2025-01-15", "2025-06-30"),
-            oppdrag("Kulturskolen", "2025-07-01", null),
-            oppdrag("Teaterlaget", "2025-03-01", "2025-03-31"));
+            gruppe("Kulturskolen", 2, "2025-01-15", null),
+            gruppe("Teaterlaget", 1, "2025-03-01", "2025-03-31"));
 
         assertThat(compileContent(BREVMAL, FRILANSOPPDRAG, Språk.BOKMÅL, oppdrag))
             .containsOnlyOnce("Kulturskolen")
@@ -133,15 +132,24 @@ class SøknadForelagteAktiviteterTest {
 
     @SafeVarargs
     private static Map<String, Object> frilansoppdrag(Map<String, Object>... oppdrag) {
-        return Map.of("søkerinfo", Map.of("frilansoppdrag", List.of(oppdrag)));
+        return Map.of("_dokgen", Map.of(
+            "frilansoppdragForelagt", true,
+            "grupperteFrilansoppdrag", List.of(oppdrag)));
     }
 
     private static Map<String, Object> oppdrag(String navn, String fom, String tom) {
         var oppdrag = new HashMap<String, Object>();
         oppdrag.put("navn", navn);
+        oppdrag.put("antallOppdrag", 1);
         oppdrag.put("fom", fom);
         oppdrag.put("tom", tom);
         return oppdrag;
+    }
+
+    private static Map<String, Object> gruppe(String navn, int antallOppdrag, String fom, String tom) {
+        var gruppe = oppdrag(navn, fom, tom);
+        gruppe.put("antallOppdrag", antallOppdrag);
+        return gruppe;
     }
 
     private static Map<String, Object> frilanssvar(String tom) {
@@ -149,7 +157,6 @@ class SøknadForelagteAktiviteterTest {
         frilans.put("oppstart", "2025-09-01");
         frilans.put("tom", tom);
         return Map.of(
-            "søkerinfo", Map.of("frilansoppdrag", List.of()),
             "frilans", frilans);
     }
 
@@ -158,6 +165,8 @@ class SøknadForelagteAktiviteterTest {
         næring.put("navn", "Sagene Fiskeri");
         næring.put("organisasjonsnummer", "974760673");
         næring.put("næringstype", næringstype);
-        return Map.of("søkerinfo", Map.of("selvstendigNæring", List.of(næring)));
+        return Map.of("_dokgen", Map.of(
+            "selvstendigNæringForelagt", true),
+            "søkerinfo", Map.of("selvstendigNæring", List.of(næring)));
     }
 }

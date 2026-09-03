@@ -15,11 +15,13 @@
 {{~#case "VENTELØNN"~}}Waiting salary{{~/case~}}
 {{~#case "VARTPENGER"~}}Severance benefits{{~/case~}}
 {{~/switch~}}</strong>
-{{#punktliste}}
-{{#punkt}}{{#if arbeidsgiverNavn}}Employer: {{{arbeidsgiverNavn}}}{{/if}}{{/punkt}}
-{{#punkt}}Period: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}{{/punkt}}
-{{#punkt}}{{#if land}}Country where the business is registered: {{land-norsk land lang="en"}}{{/if}}{{/punkt}}
-{{/punktliste}}
+<ul>
+{{#if arbeidsgiverNavn}}    <li>Employer: {{{arbeidsgiverNavn}}}</li>
+{{/if}}
+    <li>Period: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}</li>
+{{#if land}}    <li>Country where the business is registered: {{land-norsk land lang="en"}}</li>
+{{/if}}
+</ul>
 {{/each}}
 </div>
 {{/if}}

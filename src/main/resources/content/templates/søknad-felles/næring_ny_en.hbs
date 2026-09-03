@@ -1,24 +1,30 @@
-{{#with egenNæring}}
+{{#with _dokgen.egenNæring}}
 <div class="no-page-break">
 
 ### You have provided the following:
-{{#punktliste}}
-{{#unless (næring-forelagt organisasjonsnummer ../søkerinfo.selvstendigNæring)}}
-{{#punkt}}{{#if navnPåNæringen}}Business name: {{{navnPåNæringen}}}{{/if}}{{/punkt}}
-{{#punkt}}{{#if registrertINorge}}{{#if organisasjonsnummer}}Organisation number: {{organisasjonsnummer}}{{/if}}{{else if registrertILand}}Registered in country: {{land-norsk registrertILand lang="en"}}{{/if}}{{/punkt}}
-{{#punkt}}{{#if næringstype}}Type of business: {{#switch næringstype}}{{#case "DAGMAMMA"}}Daycare provider{{/case}}{{#case "FISKE"}}Fisher{{/case}}{{#case "JORDBRUK_SKOGBRUK"}}Agriculture/forestry{{/case}}{{#case "ANNEN"}}Other{{/case}}{{/switch}}{{/if}}{{/punkt}}
+<ul>
+{{#unless forelagt}}
+{{#if navnPåNæringen}}    <li>Business name: {{{navnPåNæringen}}}</li>
+{{/if}}
+{{#if registrertINorge}}{{#if organisasjonsnummer}}    <li>Organisation number: {{organisasjonsnummer}}</li>
+{{/if}}{{else if registrertILand}}    <li>Registered in country: {{land-norsk registrertILand lang="en"}}</li>
+{{/if}}
+{{#if næringstype}}    <li>Type of business: {{#switch næringstype}}{{#case "DAGMAMMA"}}Daycare provider{{/case}}{{#case "FISKE"}}Fisher{{/case}}{{#case "JORDBRUK_SKOGBRUK"}}Agriculture/forestry{{/case}}{{#case "ANNEN"}}Other{{/case}}{{/switch}}</li>
+{{/if}}
 {{/unless}}
-{{#punkt}}You started as self-employed {{norwegian-date fom}}{{#if tom}} and ended {{norwegian-date tom}}.{{else}} and still work there.{{/if}}{{/punkt}}
+    <li>You started as self-employed {{norwegian-date fom}}{{#if tom}} and ended {{norwegian-date tom}}.{{else}} and still work there.{{/if}}</li>
 {{#eq hattVarigEndringAvNæringsinntektSiste4Kalenderår true}}
-{{#punkt}}Permanent change in business or work situation over the last four years: <strong>Yes</strong>{{/punkt}}
-{{#punkt}}From {{norwegian-date varigEndringDato}} you have a permanent change in business income, where the new income is: {{varigEndringInntektEtterEndring}}.{{/punkt}}
-{{#punkt}}Reason for permanent change: {{varigEndringBeskrivelse}}{{/punkt}}
+    <li>Permanent change in business or work situation over the last four years: <strong>Yes</strong></li>
+    <li>From {{norwegian-date varigEndringDato}} you have a permanent change in business income, where the new income is: {{varigEndringInntektEtterEndring}}.</li>
+    <li>Reason for permanent change: {{varigEndringBeskrivelse}}</li>
 {{else}}
-{{#punkt}}Permanent change in business or work situation over the last four years: <strong>No</strong>{{/punkt}}
-{{#punkt}}{{#if næringsinntekt}}Business income: {{næringsinntekt}}{{/if}}{{/punkt}}
+    <li>Permanent change in business or work situation over the last four years: <strong>No</strong></li>
+{{#if næringsinntekt}}    <li>Business income: {{næringsinntekt}}</li>
+{{/if}}
 {{/eq}}
-{{#punkt}}{{#if oppstartsdato}}Business started: {{norwegian-date oppstartsdato}}{{/if}}{{/punkt}}
-{{#punkt}}{{> utils/sporsmal-svar-yes-no value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Have you started working during the last three completed years"}}{{/punkt}}
-{{/punktliste}}
+{{#if oppstartsdato}}    <li>Business started: {{norwegian-date oppstartsdato}}</li>
+{{/if}}
+    <li>{{> utils/sporsmal-svar-yes-no value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Have you started working during the last three completed years"}}</li>
+</ul>
 </div>
 {{/with}}

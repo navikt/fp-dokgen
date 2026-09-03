@@ -1,15 +1,15 @@
-{{#if (finnes søkerinfo/frilansoppdrag)}}
+{{#if _dokgen.frilansoppdragForelagt}}
 <div class="no-page-break">
 
 ## Freelance
 
 Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application.
-{{#if søkerinfo/frilansoppdrag}}
-{{#each (grupper-frilansoppdrag søkerinfo/frilansoppdrag)}}
+{{#if _dokgen.grupperteFrilansoppdrag}}
+{{#each _dokgen.grupperteFrilansoppdrag}}
 {{navn}}
-{{#punktliste}}
-{{#punkt}}{{#if (gt antallOppdrag 1)}}{{antallOppdrag}} assignments{{#if fom}}: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}{{/if}}{{else}}{{#if fom}}Period: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}{{/if}}{{/if}}{{/punkt}}
-{{/punktliste}}
+{{#if fom}}<ul>
+    <li>{{#if (gt antallOppdrag 1)}}{{antallOppdrag}} assignments: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}{{else}}Period: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}{{/if}}</li>
+</ul>{{/if}}
 {{/each}}
 {{else}}
 You are not registered with any freelance assignments.

@@ -3,7 +3,7 @@ Received: {{norwegian-datetime mottattdato includeSeconds=true}}
 {{> søknad-felles/søker_en inkluderRolle=true}}
 {{> søknad-felles/barn_en}}
 {{> søknad-felles/utenlandsopphold_en}}
-{{#if (aktiviteter-forelagt søkerinfo)}}
+{{#if _dokgen.nyAktivitetsflyt}}
 {{> søknad-felles/arbeidsforhold_en hvisInfoIM=true}}
 {{> søknad-felles/frilansoppdrag_en}}
 {{> søknad-felles/frilans_ny_en}}

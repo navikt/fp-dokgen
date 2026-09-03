@@ -1,15 +1,15 @@
-{{#if (finnes søkerinfo/frilansoppdrag)}}
+{{#if _dokgen.frilansoppdragForelagt}}
 <div class="no-page-break">
 
 ## Frilans
 
 Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
-{{#if søkerinfo/frilansoppdrag}}
-{{#each (grupper-frilansoppdrag søkerinfo/frilansoppdrag)}}
+{{#if _dokgen.grupperteFrilansoppdrag}}
+{{#each _dokgen.grupperteFrilansoppdrag}}
 {{navn}}
-{{#punktliste}}
-{{#punkt}}{{#if (gt antallOppdrag 1)}}{{antallOppdrag}} oppdrag{{#if fom}}: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågåande{{/if}}{{/if}}{{else}}{{#if fom}}Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågåande{{/if}}{{/if}}{{/if}}{{/punkt}}
-{{/punktliste}}
+{{#if fom}}<ul>
+    <li>{{#if (gt antallOppdrag 1)}}{{antallOppdrag}} oppdrag: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågåande{{/if}}{{else}}Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågåande{{/if}}{{/if}}</li>
+</ul>{{/if}}
 {{/each}}
 {{else}}
 Du er ikkje registrert med nokon frilansoppdrag.

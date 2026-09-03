@@ -15,11 +15,13 @@
 {{~#case "VENTELØNN"~}}Ventelønn{{~/case~}}
 {{~#case "VARTPENGER"~}}Vartpenger{{~/case~}}
 {{~/switch~}}</strong>
-{{#punktliste}}
-{{#punkt}}{{#if arbeidsgiverNavn}}Arbeidsgiver: {{{arbeidsgiverNavn}}}{{/if}}{{/punkt}}
-{{#punkt}}Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}{{/punkt}}
-{{#punkt}}{{#if land}}Landet virksomheten er registrert i: {{land-norsk land}}{{/if}}{{/punkt}}
-{{/punktliste}}
+<ul>
+{{#if arbeidsgiverNavn}}    <li>Arbeidsgiver: {{{arbeidsgiverNavn}}}</li>
+{{/if}}
+    <li>Periode: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Pågående{{/if}}</li>
+{{#if land}}    <li>Landet virksomheten er registrert i: {{land-norsk land}}</li>
+{{/if}}
+</ul>
 {{/each}}
 </div>
 {{/if}}
