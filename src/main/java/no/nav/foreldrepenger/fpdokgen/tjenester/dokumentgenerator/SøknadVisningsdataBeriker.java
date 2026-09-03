@@ -1,6 +1,7 @@
 package no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -98,7 +99,14 @@ public final class SøknadVisningsdataBeriker {
 
         private static LocalDate dato(Object verdi) {
             var tekst = tekst(verdi);
-            return tekst == null || tekst.isBlank() ? null : LocalDate.parse(tekst);
+            if (tekst == null || tekst.isBlank()) {
+                return null;
+            }
+            try {
+                return LocalDate.parse(tekst);
+            } catch (DateTimeParseException e) {
+                return null;
+            }
         }
 
         private void leggTil(Map<String, Object> oppdrag) {

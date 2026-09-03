@@ -13,8 +13,8 @@
     <li>Reason for permanent change: {{varigEndringBeskrivelse}}</li>{{else}}
     <li>Permanent change in business or work situation over the last four years: <strong>No</strong></li>{{#if næringsinntekt}}
     <li>Business income: {{næringsinntekt}}</li>{{/if}}{{/eq}}{{#if oppstartsdato}}
-    <li>Business started: {{norwegian-date oppstartsdato}}</li>{{/if}}
-    <li>{{> utils/sporsmal-svar-yes-no value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Have you started working during the last three completed years"}}</li>
+    <li>Business started: {{norwegian-date oppstartsdato}}</li>{{/if}}{{#unless (eq harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene undefined)}}
+    <li>{{> utils/sporsmal-svar-yes-no value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Have you started working during the last three completed years"}}</li>{{/unless}}
 </ul>
 </div>
 {{/with}}

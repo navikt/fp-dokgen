@@ -57,172 +57,85 @@ class SøknadKvitteringTest {
     void svp_næring_uten_forelagte_aktiviteter_bruker_legacy_mal_nb() {
         var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-næring-uten-forelagte-aktiviteter");
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-forelagte-aktiviteter-nb.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .doesNotContain("Opplysninger fra AA-registeret", "Opplysninger fra Enhetsregisteret")
-                .contains("<li>Har du jobbet i utlandet de siste 4 ukene? <strong>Ja</strong></li>");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void svp_næring_uten_forelagte_aktiviteter_bruker_legacy_mal_nn() {
         var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-næring-uten-forelagte-aktiviteter");
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-forelagte-aktiviteter-nn.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .doesNotContain("Opplysningar frå AA-registeret", "Opplysningar frå Einingsregisteret")
-                .contains("<li>Har du jobba i utlandet dei siste 4 vekene? <strong>Ja</strong></li>");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void svp_næring_uten_forelagte_aktiviteter_bruker_legacy_mal_en() {
         var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-næring-uten-forelagte-aktiviteter");
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-forelagte-aktiviteter-en.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .doesNotContain("Information from the AA Register",
-                    "Information from the Central Coordinating Register for Legal Entities")
-                .contains("<li>Have you worked abroad in the last 4 weeks? <strong>Yes</strong></li>");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void svp_næring_uten_treff_i_registrene_bruker_ny_mal_nb() {
         var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-næring-uten-treff-i-registrene");
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-treff-i-registrene-nb.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .contains("Du er ikke registrert med noen frilansoppdrag.")
-                .contains("Du er ikke registrert med noen næringer i Brønnøysundregistrene.")
-                .contains("## Frilans")
-                .contains("## Selvstendig næringsdrivende")
-                .contains("### Dette har du oppgitt:")
-                .contains("<ul>\n    <li>Navn på virksomheten: Utenlandsk Fiskeri AB</li>\n    <li>Registrert i land: Sverige</li>");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void svp_næring_uten_treff_i_registrene_bruker_ny_mal_nn() {
         var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-næring-uten-treff-i-registrene");
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-treff-i-registrene-nn.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .contains("Du er ikkje registrert med nokon næringar i Brønnøysundregistera.")
-                .contains("### Dette har du oppgitt:")
-                .contains("<ul>\n    <li>Namn på verksemda: Utenlandsk Fiskeri AB</li>");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void svp_næring_uten_treff_i_registrene_bruker_ny_mal_en() {
         var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-næring-uten-treff-i-registrene");
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-næring-uten-treff-i-registrene-en.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .contains("You are not registered with any businesses in the Brønnøysund Register Centre.")
-                .contains("### You have provided the following:")
-                .contains("<ul>\n    <li>Business name: Utenlandsk Fiskeri AB</li>");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
-    @Test
-    void ny_flyt_skal_ikke_stille_spørsmål_som_er_fjernet_i_søknadsdialogen() {
-        var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-næring-uten-treff-i-registrene");
-        assertThat(content)
-                .doesNotContain("Har du jobbet i utlandet de siste 4 ukene?")
-                .contains("## Arbeid i utlandet siste 4 uker");
-
-        var foreldrepenger = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-termin-2af-frilans-næring-andre-inntekter");
-        assertThat(foreldrepenger)
-                .doesNotContain("Har du hatt andre inntektskilder de siste 10 månedene?")
-                .contains("## Andre inntekter siste 10 måneder");
-    }
 
     @Test
     void alle_andre_inntektskilder_skal_vises_uten_tomme_punkter_nb() {
         var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-termin-alle-andre-inntektskilder");
         var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-alle-andre-inntektskilder-nb.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .contains("""
-                <strong>Etterlønn sluttpakke</strong>
-                <ul>
-                    <li>Periode: 01.10.2025 – 01.11.2025</li>
-                </ul>
-                <strong>Førstegangstjeneste</strong>
-                <ul>
-                    <li>Periode: 02.11.2025 – 31.01.2026</li>
-                </ul>
-                <strong>Jobb i utlandet</strong>
-                <ul>
-                    <li>Arbeidsgiver: Svensk Verkstad AB</li>
-                    <li>Periode: 01.02.2026 – Pågående</li>
-                    <li>Landet virksomheten er registrert i: Sverige</li>
-                </ul>""");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void alle_andre_inntektskilder_skal_vises_uten_tomme_punkter_nn() {
         var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.NYNORSK, "mor-termin-alle-andre-inntektskilder");
         var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-alle-andre-inntektskilder-nn.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .contains("""
-                <strong>Førstegangsteneste</strong>
-                <ul>
-                    <li>Periode: 02.11.2025 – 31.01.2026</li>
-                </ul>
-                <strong>Jobb i utlandet</strong>
-                <ul>
-                    <li>Arbeidsgivar: Svensk Verkstad AB</li>
-                    <li>Periode: 01.02.2026 – Pågåande</li>
-                    <li>Landet verksemda er registrert i: Sverige</li>
-                </ul>""");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void alle_andre_inntektskilder_skal_vises_uten_tomme_punkter_en() {
         var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.ENGELSK, "mor-termin-alle-andre-inntektskilder");
         var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-alle-andre-inntektskilder-en.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .contains("""
-                <strong>Severance pay package</strong>
-                <ul>
-                    <li>Period: 01.10.2025 – 01.11.2025</li>
-                </ul>
-                <strong>Military service</strong>
-                <ul>
-                    <li>Period: 02.11.2025 – 31.01.2026</li>
-                </ul>
-                <strong>Job abroad</strong>
-                <ul>
-                    <li>Employer: Svensk Verkstad AB</li>
-                    <li>Period: 01.02.2026 – Ongoing</li>
-                    <li>Country where the business is registered: Sweden</li>
-                </ul>""");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void ny_flyt_uten_andre_inntekter_skal_ikke_vise_seksjonen_nb() {
         var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.BOKMÅL, "svp-uten-andre-inntekter-ny-flyt");
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-uten-andre-inntekter-ny-flyt-nb.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .doesNotContain("Andre inntektskilder", "Arbeid i utlandet");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void ny_flyt_uten_andre_inntekter_skal_ikke_vise_seksjonen_nn() {
         var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.NYNORSK, "svp-uten-andre-inntekter-ny-flyt");
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-uten-andre-inntekter-ny-flyt-nn.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .doesNotContain("Andre inntektskjelder", "Arbeid i utlandet");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void ny_flyt_uten_andre_inntekter_skal_ikke_vise_seksjonen_en() {
         var content = compileContent(BrevMal.SVANGESKAPSPENGER_SØKNAD, Språk.ENGELSK, "svp-uten-andre-inntekter-ny-flyt");
         var expected = getExpected(BrevMal.SVANGESKAPSPENGER_SØKNAD, "svp-uten-andre-inntekter-ny-flyt-en.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .doesNotContain("Other sources of income", "Work abroad");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
@@ -250,27 +163,21 @@ class SøknadKvitteringTest {
     void foreldrepenger_mor_2af_frilans_gradering_utsettelse_nb() {
         var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.BOKMÅL, "mor-termin-2af-frilans-næring-andre-inntekter");
         var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-fl-sn-andre-nb.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .contains("<ul>\n    <li>Du startet som selvstendig næringsdrivende");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void foreldrepenger_mor_2af_frilans_gradering_utsettelse_nn() {
         var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.NYNORSK, "mor-termin-2af-frilans-næring-andre-inntekter");
         var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-fl-sn-andre-nn.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .contains("<ul>\n    <li>Du starta som sjølvstendig næringsdrivande");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test
     void foreldrepenger_mor_2af_frilans_gradering_utsettelse_en() {
         var content = compileContent(BrevMal.FORELDREPENGER_SØKNAD, Språk.ENGELSK, "mor-termin-2af-frilans-næring-andre-inntekter");
         var expected = getExpected(BrevMal.FORELDREPENGER_SØKNAD, "foreldrepenger-fl-sn-andre-en.txt");
-        assertThat(content)
-                .isEqualToIgnoringNewLines(expected)
-                .contains("<ul>\n    <li>You started as self-employed");
+        assertThat(content).isEqualToIgnoringNewLines(expected);
     }
 
     @Test

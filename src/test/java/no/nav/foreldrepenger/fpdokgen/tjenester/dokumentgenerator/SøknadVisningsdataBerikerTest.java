@@ -80,6 +80,15 @@ class SøknadVisningsdataBerikerTest {
     }
 
     @Test
+    void skalTåleUgyldigeDatoerFraRegistereneUtenÅFeile() {
+        var resultat = SøknadVisningsdataBeriker.berik("søknad-foreldrepenger",
+            Map.of("søkerinfo", Map.of("frilansoppdrag", List.of(oppdrag("Kulturskolen", "ikke-en-dato", "2025-02-28")))));
+
+        assertThat(grupperteFrilansoppdrag(resultat)).singleElement()
+            .satisfies(gruppe -> assertThat(gruppe).containsEntry("fom", null).containsEntry("tom", "2025-02-28"));
+    }
+
+    @Test
     void skalIkkeBerikeAndreDokumentmaler() {
         var input = Map.<String, Object>of("søkerinfo", Map.of("frilansoppdrag", List.of()));
 

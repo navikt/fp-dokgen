@@ -13,8 +13,8 @@
     <li>Årsak til varig endring: {{varigEndringBeskrivelse}}</li>{{else}}
     <li>Varig endring i virksomheten eller arbeidssituasjonen min de siste fire årene: <strong>Nei</strong></li>{{#if næringsinntekt}}
     <li>Næringsinntekt: {{næringsinntekt}}</li>{{/if}}{{/eq}}{{#if oppstartsdato}}
-    <li>Virksomheten ble startet: {{norwegian-date oppstartsdato}}</li>{{/if}}
-    <li>{{> utils/sporsmal-svar-ja-nei value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Har du begynt å jobbe i løpet av de tre siste ferdigliknede årene"}}</li>
+    <li>Virksomheten ble startet: {{norwegian-date oppstartsdato}}</li>{{/if}}{{#unless (eq harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene undefined)}}
+    <li>{{> utils/sporsmal-svar-ja-nei value=harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene label="Har du begynt å jobbe i løpet av de tre siste ferdigliknede årene"}}</li>{{/unless}}
 </ul>
 </div>
 {{/with}}

@@ -111,6 +111,15 @@ class SøknadForelagteAktiviteterTest {
     }
 
     @Test
+    void ubesvart_spørsmål_om_yrkesaktivitet_skal_ikke_gi_tomt_kulepunkt() {
+        var egenNæring = Map.<String, Object>of("forelagt", true, "fom", "2021-09-03");
+
+        var content = compileContent(BREVMAL, "næring_ny", Språk.BOKMÅL, Map.of("_dokgen", Map.of("egenNæring", egenNæring)));
+
+        assertThat(content).contains("Du startet som selvstendig næringsdrivende 03.09.2021").doesNotContain("<li></li>");
+    }
+
+    @Test
     void forelagt_næring_skal_beholde_listeelementene_inne_i_html_listen() {
         var egenNæring = Map.<String, Object>of(
             "forelagt", true,
