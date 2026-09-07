@@ -20,7 +20,7 @@ public final class SøknadVisningsdataBeriker {
     private SøknadVisningsdataBeriker() {
     }
 
-    public static Map<String, Object> berik(String malNavn, Map<String, Object> data) {
+    public static Map<String, Object> tilpassForVisning(String malNavn, Map<String, Object> data) {
         if (!SØKNAD_FORELDREPENGER.equals(malNavn) && !SØKNAD_SVANGERSKAPSPENGER.equals(malNavn)) {
             return data;
         }
@@ -36,7 +36,7 @@ public final class SøknadVisningsdataBeriker {
         visningsdata.put("grupperteFrilansoppdrag", grupperFrilansoppdrag(liste(søkerinfo.get(FRILANSOPPDRAG))));
         visningsdata.put("registrerteNæringer", liste(søkerinfo.get(SELVSTENDIG_NÆRING)));
         visningsdata.put("egenNæring",
-            berikEgenNæring(data.get("egenNæring"), liste(søkerinfo.get(SELVSTENDIG_NÆRING))).orElse(null));
+            tilpassEgenNæring(data.get("egenNæring"), liste(søkerinfo.get(SELVSTENDIG_NÆRING))).orElse(null));
 
         var beriketData = new HashMap<>(data);
         beriketData.put("_dokgen", visningsdata);
@@ -47,7 +47,7 @@ public final class SøknadVisningsdataBeriker {
         return data.containsKey(felt) && data.get(felt) != null;
     }
 
-    private static Optional<Map<String, Object>> berikEgenNæring(Object egenNæring, List<?> registrerteNæringer) {
+    private static Optional<Map<String, Object>> tilpassEgenNæring(Object egenNæring, List<?> registrerteNæringer) {
         if (!(egenNæring instanceof Map<?, ?> næring) || næring.isEmpty()) {
             return Optional.empty();
         }

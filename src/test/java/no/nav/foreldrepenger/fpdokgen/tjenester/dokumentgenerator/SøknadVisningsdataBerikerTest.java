@@ -16,7 +16,7 @@ class SøknadVisningsdataBerikerTest {
         søkerinfo.put("frilansoppdrag", null);
         var input = Map.<String, Object>of("søkerinfo", søkerinfo);
 
-        var resultat = SøknadVisningsdataBeriker.berik("søknad-foreldrepenger", input);
+        var resultat = SøknadVisningsdataBeriker.tilpassForVisning("søknad-foreldrepenger", input);
 
         assertThat(visningsdata(resultat))
             .containsEntry("nyAktivitetsflyt", false)
@@ -27,7 +27,7 @@ class SøknadVisningsdataBerikerTest {
 
     @Test
     void skalVelgeNyFlytNårEttRegisterfeltErEnTomListe() {
-        var resultat = SøknadVisningsdataBeriker.berik("søknad-svangerskapspenger",
+        var resultat = SøknadVisningsdataBeriker.tilpassForVisning("søknad-svangerskapspenger",
             Map.of("søkerinfo", Map.of("frilansoppdrag", List.of())));
 
         assertThat(visningsdata(resultat))
@@ -40,7 +40,7 @@ class SøknadVisningsdataBerikerTest {
 
     @Test
     void skalBehandleTomtEgenNæringObjektSomFraværende() {
-        var resultat = SøknadVisningsdataBeriker.berik("søknad-foreldrepenger",
+        var resultat = SøknadVisningsdataBeriker.tilpassForVisning("søknad-foreldrepenger",
             Map.of("søkerinfo", Map.of("frilansoppdrag", List.of()), "egenNæring", Map.of()));
 
         assertThat(visningsdata(resultat)).containsEntry("egenNæring", null);
@@ -52,7 +52,7 @@ class SøknadVisningsdataBerikerTest {
             oppdrag("Kulturskolen", "2025-02-01", "2025-02-28"),
             oppdrag("Teaterlaget", "2025-04-01", "2025-04-30"),
             oppdrag("Kulturskolen", "2025-01-01", ""));
-        var resultat = SøknadVisningsdataBeriker.berik("søknad-foreldrepenger",
+        var resultat = SøknadVisningsdataBeriker.tilpassForVisning("søknad-foreldrepenger",
             Map.of("søkerinfo", Map.of("frilansoppdrag", oppdrag)));
 
         assertThat(grupperteFrilansoppdrag(resultat))
@@ -73,7 +73,7 @@ class SøknadVisningsdataBerikerTest {
             "søkerinfo", Map.of("selvstendigNæring", List.of(Map.of("organisasjonsnummer", "999999999"))),
             "egenNæring", egenNæring);
 
-        var resultat = SøknadVisningsdataBeriker.berik("søknad-foreldrepenger", input);
+        var resultat = SøknadVisningsdataBeriker.tilpassForVisning("søknad-foreldrepenger", input);
 
         assertThat(egenNæring(resultat)).containsEntry("forelagt", true).containsEntry("navnPåNæringen", "Fisk AS");
         assertThat(egenNæring).doesNotContainKey("forelagt");
@@ -81,7 +81,7 @@ class SøknadVisningsdataBerikerTest {
 
     @Test
     void skalTåleUgyldigeDatoerFraRegistereneUtenÅFeile() {
-        var resultat = SøknadVisningsdataBeriker.berik("søknad-foreldrepenger",
+        var resultat = SøknadVisningsdataBeriker.tilpassForVisning("søknad-foreldrepenger",
             Map.of("søkerinfo", Map.of("frilansoppdrag", List.of(oppdrag("Kulturskolen", "ikke-en-dato", "2025-02-28")))));
 
         assertThat(grupperteFrilansoppdrag(resultat)).singleElement()
@@ -92,7 +92,7 @@ class SøknadVisningsdataBerikerTest {
     void skalIkkeBerikeAndreDokumentmaler() {
         var input = Map.<String, Object>of("søkerinfo", Map.of("frilansoppdrag", List.of()));
 
-        assertThat(SøknadVisningsdataBeriker.berik("annen-mal", input)).isSameAs(input);
+        assertThat(SøknadVisningsdataBeriker.tilpassForVisning("annen-mal", input)).isSameAs(input);
     }
 
     private static Map<String, Object> oppdrag(String navn, String fom, String tom) {

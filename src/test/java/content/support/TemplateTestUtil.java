@@ -38,13 +38,13 @@ public final class TemplateTestUtil {
             templateContent = readContent(ContentUtil.hentPathForMal(brevmal.getNavn(), språk.getKode()));
         }
         var mergeFieldsJsonString = readContent(TestContentUtil.getTestDataPath(brevmal, testDataFilename));
-        var mergeFields = SøknadVisningsdataBeriker.berik(brevmal.getNavn(), getJsonFromString(mergeFieldsJsonString));
+        var mergeFields = SøknadVisningsdataBeriker.tilpassForVisning(brevmal.getNavn(), getJsonFromString(mergeFieldsJsonString));
         return produceContent(mergeFields, templateContent);
     }
 
     public static String compileContent(BrevMal brevmal, Språk språk, Map<String, Object> testData) {
         var templateContent = readContent(ContentUtil.hentPathForMal(brevmal.getNavn(), språk.getKode()));
-        return produceContent(SøknadVisningsdataBeriker.berik(brevmal.getNavn(), testData), templateContent);
+        return produceContent(SøknadVisningsdataBeriker.tilpassForVisning(brevmal.getNavn(), testData), templateContent);
     }
 
     private static String produceContent(String mergeFieldsJsonString, String templateContent) {
