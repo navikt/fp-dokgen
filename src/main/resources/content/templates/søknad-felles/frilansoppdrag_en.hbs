@@ -1,0 +1,18 @@
+{{#if _dokgen.frilansoppdragForelagt}}
+<div class="no-page-break">
+
+## Freelance
+
+Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application.
+{{#if _dokgen.grupperteFrilansoppdrag}}
+{{#each _dokgen.grupperteFrilansoppdrag}}
+{{navn}}
+{{#if fom}}<ul>
+    <li>{{#if (gt antallOppdrag 1)}}{{antallOppdrag}} assignments: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}{{else}}Period: {{norwegian-date fom}} – {{#if tom}}{{norwegian-date tom}}{{else}}Ongoing{{/if}}{{/if}}</li>
+</ul>{{/if}}
+{{/each}}
+{{else}}
+You are not registered with any freelance assignments.
+{{/if}}
+</div>
+{{/if}}

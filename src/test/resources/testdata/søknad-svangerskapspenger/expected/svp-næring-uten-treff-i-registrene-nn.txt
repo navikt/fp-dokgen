@@ -37,10 +37,7 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 <div class="no-page-break">
 ## Frilans
 Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
-Kulturskolen i Bydel Sagene
-<ul>
-    <li>Periode: 01.06.2025 – Pågåande</li>
-</ul>
+Du er ikkje registrert med nokon frilansoppdrag.
 </div>
 <div class="no-page-break">
 ### Svara dine om frilansarbeid
@@ -52,14 +49,12 @@ Kulturskolen i Bydel Sagene
 <div class="no-page-break">
 ## Sjølvstendig næringsdrivande
 Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
-<strong>Sagene Fiskeri (974760673)</strong>
-<ul>
-    <li>Verksemdstype: Fiskar</li>
-</ul>
+Du er ikkje registrert med nokon næringar i Brønnøysundregistera.
 </div>
 <div class="no-page-break">
 ### Dette har du oppgitt:
 <ul>
+    <li>Namn på verksemda: Utenlandsk Fiskeri AB</li>
     <li>Registrert i land: Sverige</li>
     <li>Verksemdstype: Fiskar</li>
     <li>Du starta som sjølvstendig næringsdrivande 01.10.2025 og slutta 31.10.2025.</li>

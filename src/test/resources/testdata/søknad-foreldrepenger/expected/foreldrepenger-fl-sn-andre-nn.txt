@@ -41,29 +41,43 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 </ul>
 </div>
 <div class="no-page-break">
-## Andre inntektskjelder
+## Frilans
+Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
+Kulturskolen i Bydel Sagene
 <ul>
-    <li>Har du jobba og hatt inntekt som frilansar dei siste 10 månadene? <strong>Ja</strong></li>
-    <li>Har du jobba og hatt inntekt som sjølvstendig næringsdrivande dei siste 10 månadene? <strong>Ja</strong></li>
-    <li>Har du hatt andre inntektskjelder dei siste 10 månadene? <strong>Ja</strong></li>
+    <li>Periode: 15.01.2025 – 30.06.2025</li>
+</ul>
+Ola Nordmann
+<ul>
+    <li>Periode: 01.03.2025 – Pågåande</li>
 </ul>
 </div>
 <div class="no-page-break">
-## Informasjon om frilansoppdrag
+### Svara dine om frilansarbeid
 <ul>
     <li>Starta som frilansar: 01.09.2025</li>
-    <li>Jobbar framleis som frilansar: <strong>Ja</strong></li>
+    <li>Er du framleis frilansar: <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-## Eige næringsverksemd
+## Sjølvstendig næringsdrivande
+Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
+<strong>Sagene Fiskeri (974760673)</strong>
 <ul>
-    <li></li>
-    <li></li>
-    <li>Registrert i land: Sverige</li>
     <li>Verksemdstype: Fiskar</li>
-    <li>Du starta som sjølvstendig næringsdrivande 01.10.2025 og slutta 31.10.2025.</li><li>Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Nei</strong></li>
-    <li>Næringsinntekt: 329000</li><li>Verksemda blei starta: 01.11.2023</li>
+</ul>
+<strong>Nordre Aker Gård (889640782)</strong>
+<ul>
+    <li>Verksemdstype: Jord-/skogbruk</li>
+</ul>
+</div>
+<div class="no-page-break">
+### Dette har du oppgitt:
+<ul>
+    <li>Du starta som sjølvstendig næringsdrivande 01.10.2025 og slutta 31.10.2025.</li>
+    <li>Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Nei</strong></li>
+    <li>Næringsinntekt: 329000</li>
+    <li>Verksemda blei starta: 01.11.2023</li>
     <li>Har du byrja å jobbe i løpet av dei tre siste ferdiglikna åra: <strong>Ja</strong></li>
 </ul>
 </div>
@@ -71,9 +85,7 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 ## Andre inntekter siste 10 månader
 <strong>Etterlønn sluttpakke</strong>
 <ul>
-    <li></li>
     <li>Periode: 01.10.2025 – 01.11.2025</li>
-    <li></li>
 </ul>
 </div>
 <div class="no-page-break">

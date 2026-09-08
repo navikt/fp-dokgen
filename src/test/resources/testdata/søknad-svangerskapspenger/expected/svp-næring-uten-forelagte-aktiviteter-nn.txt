@@ -35,37 +35,29 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 </ul>
 </div>
 <div class="no-page-break">
-## Frilans
-Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
-Kulturskolen i Bydel Sagene
+## Andre inntektskjelder
 <ul>
-    <li>Periode: 01.06.2025 – Pågåande</li>
+    <li>Har du jobba og hatt inntekt som frilansar dei siste 4 vekene? <strong>Ja</strong></li>
+    <li>Har du jobba og hatt inntekt som sjølvstendig næringsdrivande dei siste 4 vekene? <strong>Ja</strong></li>
+    <li>Har du jobba i utlandet dei siste 4 vekene? <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-### Svara dine om frilansarbeid
+## Informasjon om frilansoppdrag
 <ul>
     <li>Starta som frilansar: 01.09.2025</li>
-    <li>Er du framleis frilansar: <strong>Ja</strong></li>
+    <li>Jobbar framleis som frilansar: <strong>Ja</strong></li>
 </ul>
 </div>
 <div class="no-page-break">
-## Sjølvstendig næringsdrivande
-Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
-<strong>Sagene Fiskeri (974760673)</strong>
+## Eige næringsverksemd
 <ul>
-    <li>Verksemdstype: Fiskar</li>
-</ul>
-</div>
-<div class="no-page-break">
-### Dette har du oppgitt:
-<ul>
+    <li>Namn på verksemda: Utenlandsk Fiskeri AB</li>
+    <li></li>
     <li>Registrert i land: Sverige</li>
     <li>Verksemdstype: Fiskar</li>
-    <li>Du starta som sjølvstendig næringsdrivande 01.10.2025 og slutta 31.10.2025.</li>
-    <li>Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Nei</strong></li>
-    <li>Næringsinntekt: 329000</li>
-    <li>Verksemda blei starta: 01.11.2023</li>
+    <li>Du starta som sjølvstendig næringsdrivande 01.10.2025 og slutta 31.10.2025.</li><li>Varig endring i verksemda eller arbeidssituasjonen min dei siste fire åra: <strong>Nei</strong></li>
+    <li>Næringsinntekt: 329000</li><li>Verksemda blei starta: 01.11.2023</li>
     <li>Har du byrja å jobbe i løpet av dei tre siste ferdiglikna åra: <strong>Ja</strong></li>
 </ul>
 </div>

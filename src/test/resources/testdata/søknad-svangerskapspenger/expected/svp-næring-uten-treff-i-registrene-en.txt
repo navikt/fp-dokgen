@@ -37,10 +37,7 @@ Information is retrieved from the State Register of Employers and Employees (the
 <div class="no-page-break">
 ## Freelance
 Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application.
-Kulturskolen i Bydel Sagene
-<ul>
-    <li>Period: 01.06.2025 – Ongoing</li>
-</ul>
+You are not registered with any freelance assignments.
 </div>
 <div class="no-page-break">
 ### Your answers about freelance work
@@ -52,14 +49,12 @@ Kulturskolen i Bydel Sagene
 <div class="no-page-break">
 ## Self-employed
 Information is retrieved from the Central Coordinating Register for Legal Entities (the Brønnøysund Register Centre). These were shown in the application.
-<strong>Sagene Fiskeri (974760673)</strong>
-<ul>
-    <li>Type of business: Fisher</li>
-</ul>
+You are not registered with any businesses in the Brønnøysund Register Centre.
 </div>
 <div class="no-page-break">
 ### You have provided the following:
 <ul>
+    <li>Business name: Utenlandsk Fiskeri AB</li>
     <li>Registered in country: Sweden</li>
     <li>Type of business: Fisher</li>
     <li>You started as self-employed 01.10.2025 and ended 31.10.2025.</li>

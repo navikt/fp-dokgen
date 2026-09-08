@@ -38,6 +38,7 @@ public enum BrevMal {
     FP_INNTEKTSMELDING_REFUSJONSKRAV("fpinntektsmelding-refusjonskrav"),
 
     // Søknader
+    SØKNAD_FELLES("søknad-felles"),
     ENGANGSSTØNAD_SØKNAD("søknad-engangsstønad"),
     SVANGESKAPSPENGER_SØKNAD("søknad-svangerskapspenger"),
     FORELDREPENGER_SØKNAD("søknad-foreldrepenger"),
