@@ -3,7 +3,7 @@ package content.support;
 import java.nio.file.Path;
 import java.util.Map;
 
-import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.SøknadVisningsdataBeriker;
+import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.SøknadVisningsdataTilpasser;
 import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.handlebars.HandlebarsTjeneste;
 import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.ContentUtil;
 import no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.utils.JacksonUtil;
@@ -38,13 +38,13 @@ public final class TemplateTestUtil {
             templateContent = readContent(ContentUtil.hentPathForMal(brevmal.getNavn(), språk.getKode()));
         }
         var mergeFieldsJsonString = readContent(TestContentUtil.getTestDataPath(brevmal, testDataFilename));
-        var mergeFields = SøknadVisningsdataBeriker.tilpassForVisning(brevmal.getNavn(), getJsonFromString(mergeFieldsJsonString));
+        var mergeFields = SøknadVisningsdataTilpasser.tilpassForVisning(brevmal.getNavn(), getJsonFromString(mergeFieldsJsonString));
         return produceContent(mergeFields, templateContent);
     }
 
     public static String compileContent(BrevMal brevmal, Språk språk, Map<String, Object> testData) {
         var templateContent = readContent(ContentUtil.hentPathForMal(brevmal.getNavn(), språk.getKode()));
-        return produceContent(SøknadVisningsdataBeriker.tilpassForVisning(brevmal.getNavn(), testData), templateContent);
+        return produceContent(SøknadVisningsdataTilpasser.tilpassForVisning(brevmal.getNavn(), testData), templateContent);
     }
 
     private static String produceContent(String mergeFieldsJsonString, String templateContent) {

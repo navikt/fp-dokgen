@@ -10,14 +10,14 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public final class SøknadVisningsdataBeriker {
+public final class SøknadVisningsdataTilpasser {
 
     private static final String SØKNAD_FORELDREPENGER = "søknad-foreldrepenger";
     private static final String SØKNAD_SVANGERSKAPSPENGER = "søknad-svangerskapspenger";
     private static final String SELVSTENDIG_NÆRING = "selvstendigNæring";
     private static final String FRILANSOPPDRAG = "frilansoppdrag";
 
-    private SøknadVisningsdataBeriker() {
+    private SøknadVisningsdataTilpasser() {
     }
 
     public static Map<String, Object> tilpassForVisning(String malNavn, Map<String, Object> data) {
@@ -38,9 +38,9 @@ public final class SøknadVisningsdataBeriker {
         visningsdata.put("egenNæring",
             tilpassEgenNæring(data.get("egenNæring"), liste(søkerinfo.get(SELVSTENDIG_NÆRING))).orElse(null));
 
-        var beriketData = new HashMap<>(data);
-        beriketData.put("_dokgen", visningsdata);
-        return beriketData;
+        var tilpassetData = new HashMap<>(data);
+        tilpassetData.put("_dokgen", visningsdata);
+        return tilpassetData;
     }
 
     private static boolean harVerdi(Map<String, Object> data, String felt) {
@@ -53,15 +53,15 @@ public final class SøknadVisningsdataBeriker {
         }
 
         var organisasjonsnumre = registrerteNæringer.stream()
-            .map(SøknadVisningsdataBeriker::map)
+            .map(SøknadVisningsdataTilpasser::map)
             .map(registrertNæring -> tekst(registrertNæring.get("organisasjonsnummer")))
             .filter(Objects::nonNull)
             .collect(Collectors.toSet());
 
-        var beriketNæring = new HashMap<String, Object>();
-        næring.forEach((nøkkel, verdi) -> beriketNæring.put(nøkkel.toString(), verdi));
-        beriketNæring.put("forelagt", organisasjonsnumre.contains(tekst(næring.get("organisasjonsnummer"))));
-        return Optional.of(beriketNæring);
+        var tilpassetNæring = new HashMap<String, Object>();
+        næring.forEach((nøkkel, verdi) -> tilpassetNæring.put(nøkkel.toString(), verdi));
+        tilpassetNæring.put("forelagt", organisasjonsnumre.contains(tekst(næring.get("organisasjonsnummer"))));
+        return Optional.of(tilpassetNæring);
     }
 
     private static List<Map<String, Object>> grupperFrilansoppdrag(List<?> oppdrag) {
