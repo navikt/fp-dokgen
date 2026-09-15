@@ -81,13 +81,13 @@ class SøknadForelagteAktiviteterTest {
 
     @Test
     void nytt_frilanssvar_skal_utlede_om_søker_fortsatt_er_frilanser_fra_tom() {
-        assertThat(compileContent(BREVMAL, "frilans_ny", Språk.BOKMÅL, frilanssvar(null)))
+        assertThat(compileContent(BREVMAL, "frilans", Språk.BOKMÅL, frilanssvar(null)))
             .contains("Er du fortsatt frilanser: <strong>Ja</strong>");
-        assertThat(compileContent(BREVMAL, "frilans_ny", Språk.BOKMÅL, frilanssvar("2025-09-20")))
+        assertThat(compileContent(BREVMAL, "frilans", Språk.BOKMÅL, frilanssvar("2025-09-20")))
             .contains("Er du fortsatt frilanser: <strong>Nei</strong>");
-        assertThat(compileContent(BREVMAL, "frilans_ny", Språk.NYNORSK, frilanssvar(null)))
+        assertThat(compileContent(BREVMAL, "frilans", Språk.NYNORSK, frilanssvar(null)))
             .contains("Er du framleis frilansar: <strong>Ja</strong>");
-        assertThat(compileContent(BREVMAL, "frilans_ny", Språk.ENGELSK, frilanssvar("2025-09-20")))
+        assertThat(compileContent(BREVMAL, "frilans", Språk.ENGELSK, frilanssvar("2025-09-20")))
             .contains("Are you still a freelancer: <strong>No</strong>");
     }
 
@@ -96,14 +96,14 @@ class SøknadForelagteAktiviteterTest {
         var dokgen = new HashMap<String, Object>();
         dokgen.put("egenNæring", null);
 
-        assertThat(compileContent(BREVMAL, "næring_ny", Språk.BOKMÅL, Map.of("_dokgen", dokgen))).isEmpty();
+        assertThat(compileContent(BREVMAL, "næring", Språk.BOKMÅL, Map.of("_dokgen", dokgen))).isEmpty();
     }
 
     @Test
     void ubesvart_spørsmål_om_yrkesaktivitet_skal_ikke_gi_tomt_kulepunkt() {
         var egenNæring = Map.<String, Object>of("forelagt", true, "fom", "2021-09-03");
 
-        var content = compileContent(BREVMAL, "næring_ny", Språk.BOKMÅL, Map.of("_dokgen", Map.of("egenNæring", egenNæring)));
+        var content = compileContent(BREVMAL, "næring", Språk.BOKMÅL, Map.of("_dokgen", Map.of("egenNæring", egenNæring)));
 
         assertThat(content).contains("Du startet som selvstendig næringsdrivende 03.09.2021").doesNotContain("<li></li>");
     }
@@ -112,7 +112,7 @@ class SøknadForelagteAktiviteterTest {
     void ubesvart_spørsmål_om_varig_endring_skal_ikke_besvares_med_nei() {
         var egenNæring = Map.<String, Object>of("forelagt", true, "fom", "2021-09-03", "næringsinntekt", 350_000);
 
-        var content = compileContent(BREVMAL, "næring_ny", Språk.BOKMÅL, Map.of("_dokgen", Map.of("egenNæring", egenNæring)));
+        var content = compileContent(BREVMAL, "næring", Språk.BOKMÅL, Map.of("_dokgen", Map.of("egenNæring", egenNæring)));
 
         assertThat(content).contains("Næringsinntekt: 350000").doesNotContain("Varig endring");
     }
@@ -126,7 +126,7 @@ class SøknadForelagteAktiviteterTest {
             "næringsinntekt", 350_000,
             "harBlittYrkesaktivILøpetAvDeTreSisteFerdigliknedeÅrene", false);
         var template = ContentUtil.lesRessursSomString(
-            Path.of("/content/templates/søknad-felles/næring_ny_nb.hbs"));
+            Path.of("/content/templates/søknad-felles/næring_nb.hbs"));
         var markdown = new HandlebarsTjeneste().genererDokumentInnhold(
             template, Map.of("_dokgen", Map.of("egenNæring", egenNæring)));
 
@@ -138,7 +138,7 @@ class SøknadForelagteAktiviteterTest {
     @Test
     void annen_inntekt_uten_arbeidsgiver_og_land_skal_beholde_perioden_inne_i_html_listen() {
         var template = ContentUtil.lesRessursSomString(
-            Path.of("/content/templates/søknad-felles/andreInntekter_ny_nb.hbs"));
+            Path.of("/content/templates/søknad-felles/andreInntekter_nb.hbs"));
         var markdown = new HandlebarsTjeneste().genererDokumentInnhold(template,
             Map.of("andreInntekterSiste10Mnd", List.of(Map.of(
                 "type", "MILITÆR_ELLER_SIVILTJENESTE",
