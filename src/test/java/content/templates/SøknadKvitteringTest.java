@@ -28,6 +28,8 @@ class SøknadKvitteringTest {
         return Stream.of(
             new GoldenTest("SVP utenlandsopphold og avtalt ferie", BrevMal.SVANGESKAPSPENGER_SØKNAD,
                 "svp-utenlandsopphold", "svp-utenlandsopphold-ferie-"),
+            new GoldenTest("SVP utenlandsopphold uten kjent sluttdato", BrevMal.SVANGESKAPSPENGER_SØKNAD,
+                "svp-utenlandsopphold-uten-tom", "svp-utenlandsopphold-uten-tom-"),
             new GoldenTest("SVP med frilans, næring og arbeid i utlandet", BrevMal.SVANGESKAPSPENGER_SØKNAD,
                 "svp-frilans-næring-arbeid-i-utlandet", "svp-frilans-næring-arbeid-i-utlandet-"),
             new GoldenTest("FP med frilans og næring i legacyflyt", BrevMal.FORELDREPENGER_SØKNAD,
