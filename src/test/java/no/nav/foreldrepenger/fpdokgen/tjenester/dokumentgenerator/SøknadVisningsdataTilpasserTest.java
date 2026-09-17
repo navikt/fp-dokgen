@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 class SøknadVisningsdataTilpasserTest {
 
     @Test
-    void skalBeholdeLegacyflytNårRegisterfelteneManglerEllerErNull() {
+    void skalIkkeMarkereNoeSomForelagtNårRegisterfelteneManglerEllerErNull() {
         var søkerinfo = new HashMap<String, Object>();
         søkerinfo.put("frilansoppdrag", null);
         var input = Map.<String, Object>of("søkerinfo", søkerinfo);
@@ -19,19 +19,17 @@ class SøknadVisningsdataTilpasserTest {
         var resultat = SøknadVisningsdataTilpasser.tilpassForVisning("søknad-foreldrepenger", input);
 
         assertThat(visningsdata(resultat))
-            .containsEntry("nyAktivitetsflyt", false)
             .containsEntry("frilansoppdragForelagt", false)
             .containsEntry("selvstendigNæringForelagt", false);
         assertThat(input).doesNotContainKey("_dokgen");
     }
 
     @Test
-    void skalVelgeNyFlytNårEttRegisterfeltErEnTomListe() {
+    void skalMarkereSomForelagtNårEttRegisterfeltErEnTomListe() {
         var resultat = SøknadVisningsdataTilpasser.tilpassForVisning("søknad-svangerskapspenger",
             Map.of("søkerinfo", Map.of("frilansoppdrag", List.of())));
 
         assertThat(visningsdata(resultat))
-            .containsEntry("nyAktivitetsflyt", true)
             .containsEntry("frilansoppdragForelagt", true)
             .containsEntry("selvstendigNæringForelagt", false)
             .containsEntry("grupperteFrilansoppdrag", List.of())
