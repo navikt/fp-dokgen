@@ -39,12 +39,14 @@ Information is retrieved from the State Register of Employers and Employees (the
 </ul>
 </div>
 <div class="no-page-break">
-## Other sources of income
-<ul>
-    <li>Have you worked and earned income as a freelancer in the last 4 weeks? <strong>No</strong></li>
-    <li>Have you worked and earned income as self-employed in the last 4 weeks? <strong>No</strong></li>
-    <li>Have you worked abroad in the last 4 weeks? <strong>No</strong></li>
-</ul>
+## Freelance
+Information is retrieved from the State Register of Employers and Employees (the Aa Register). These were shown in the application.
+You are not registered with any freelance assignments.
+</div>
+<div class="no-page-break">
+## Self-employed
+Information is retrieved from the Central Coordinating Register for Legal Entities (the Brønnøysund Register Centre). These were shown in the application.
+You are not registered with any businesses in the Brønnøysund Register Centre.
 </div>
 <div class="no-page-break">
 ## Work accommodation needs
