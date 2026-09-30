@@ -1,3 +1,6 @@
+{{#neq uttaksplan.perioder undefined}}
+{{> søknad-foreldrepenger/felles_uttaksplan_nn perioder=(søkerperioder uttaksplan.perioder)}}
+{{else}}
 <div class="no-page-break">
 
 ## Planen din
@@ -103,3 +106,4 @@ Du har søkt om endring frå og med {{norwegian-date uttaksplan.uttaksperioder.0
 </div>
 {{/each}}
 {{/with}}
+{{/neq}}

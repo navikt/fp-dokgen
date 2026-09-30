@@ -19,6 +19,13 @@ Maler og innhold for generering av brev for foreldrepenger, svangerskapspenger o
 # Bruker
 https://github.com/navikt/dokgen
 
+## Innføring av felles uttaksplan
+Deploy støtte for `uttaksplan.perioder` i fp-dokgen før fp-soknad sender den nye
+uttaksplanen uendret til kvitteringsgenerering. Førstegangs- og endringssøknader
+viser søkerens perioder direkte fra den nye modellen. Bare manglende eller
+`null` `perioder` bruker gammel `uttaksperioder`; en tom liste bruker ikke gammel plan.
+Endringssøknader viser de innsendte søkerperiodene uten filtrering på dato eller vedtatt resultat.
+
 # Henvendelser
 Spørsmål knyttet til koden eller prosjektet kan gjøres ved bruk av Issue her på GitHub.
 

@@ -42,6 +42,13 @@ final class HandlebarsCustomHelpers {
         // Utility class
     }
 
+    static class SøkerperioderHelper implements Helper<List<Map<String, Object>>> {
+        @Override
+        public Object apply(List<Map<String, Object>> perioder, Options options) {
+            return perioder.stream().filter(periode -> periode.get("søker") != null).toList();
+        }
+    }
+
     /**
      * Allows using switch/case in hbs templates
      * <p>

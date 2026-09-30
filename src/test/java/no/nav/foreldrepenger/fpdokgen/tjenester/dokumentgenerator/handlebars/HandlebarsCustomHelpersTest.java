@@ -3,6 +3,7 @@ package no.nav.foreldrepenger.fpdokgen.tjenester.dokumentgenerator.handlebars;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -23,6 +24,20 @@ class HandlebarsCustomHelpersTest {
     @BeforeEach
     void setUp() {
         handlebars = new HandlebarsTjeneste().getHandlebars();
+    }
+
+    @Test
+    void søkerperioder_beholder_originale_perioder_og_rekkefølge() {
+        var første = Map.<String, Object>of("søker", Map.of("utsettelseÅrsak", "FRI"));
+        var siste = Map.<String, Object>of("søker", Map.of("resultat", Map.of("innvilget", true)));
+        var perioder = List.of(første, Map.<String, Object>of("annenPart", Map.of()), siste);
+
+        var resultat = (List<?>) new HandlebarsCustomHelpers.SøkerperioderHelper().apply(perioder, null);
+
+        assertThat(resultat).hasSize(2);
+        assertThat(resultat.getFirst()).isSameAs(første);
+        assertThat(resultat.getLast()).isSameAs(siste);
+        assertThat(perioder).hasSize(3);
     }
 
     @Nested
