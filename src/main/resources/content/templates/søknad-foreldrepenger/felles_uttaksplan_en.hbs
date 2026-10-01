@@ -44,9 +44,9 @@ You applied for a change{{#if perioder.0.fom}} from {{norwegian-date perioder.0.
     <li>{{#if (and søker.kontoType søker.morsAktivitet)}}Which part of the parental benefit is taken out: {{> felles-konto}} {{#eq søker.morsAktivitet "IKKE_OPPGITT"}}without{{else}}with{{/eq}} activity requirement{{/if}}</li>
     <li>{{#if (and søker.morsAktivitet (neq søker.morsAktivitet "IKKE_OPPGITT"))}}Mother's activity during the period: {{> felles-mors-aktivitet}}{{/if}}</li>
     {{~#unless søker.utsettelseÅrsak~}}
-    <li>{{> utils/sporsmal-svar-yes-no value=(neq søker.samtidigUttak undefined) label="Should the other parent receive parental benefit in the same period"}}</li>
+    <li>{{#if (or @root.annenForelder.rettigheter.harRettPåForeldrepenger @root.annenForelder.rettigheter.harAnnenForelderTilsvarendeRettEØS)}}{{> utils/sporsmal-svar-yes-no value=(neq søker.samtidigUttak undefined) label="Should the other parent receive parental benefit in the same period"}}{{/if}}</li>
     <li>{{#neq søker.samtidigUttak undefined}}Your percentage of parental benefit: {{trim-decimal søker.samtidigUttak}}{{/neq}}</li>
-    <li>{{> utils/sporsmal-svar-yes-no value=søker.flerbarnsdager label="Should use multiple-child days"}}</li>
+    <li>{{#gt @root.barn.antallBarn 1}}{{> utils/sporsmal-svar-yes-no value=søker.flerbarnsdager label="Should use multiple-child days"}}{{/gt}}</li>
     <li>{{> utils/sporsmal-svar-yes-no value=(neq søker.gradering undefined) label="Should combine parental benefit with work"}}</li>
     {{~/unless~}}
     {{~#with søker.gradering~}}

@@ -66,6 +66,7 @@ class FellesUttaksplanKvitteringTest {
         data.put("uttaksplan", getJsonMapFromString(NY_PLAN));
         data.put("dekningsgrad", "80");
         data.put("endringstidspunkt", "2027-05-01");
+        settAntallBarnOgAnnenForeldersRett(data, 2, true);
         var original = JacksonUtil.JSON_MAPPER.writeValueAsString(data);
 
         var innhold = compileContent(mal, språk, data);
@@ -136,6 +137,29 @@ class FellesUttaksplanKvitteringTest {
         plan(data).put("perioder", List.of());
 
         assertThat(compileContent(mal, språk, data)).isEqualTo(annenForeldersPlan);
+    }
+
+    @ParameterizedTest
+    @MethodSource("søknader")
+    void samtidig_uttak_og_flerbarnsdager_vises_bare_ved_delt_uttak_og_flere_barn(BrevMal mal, Språk språk) {
+        var data = data(mal);
+        data.put("uttaksplan", getJsonMapFromString(NY_PLAN));
+        var samtidigUttak = switch (språk) {
+            case BOKMÅL -> "Skal annen forelder ha foreldrepenger i samme periode";
+            case NYNORSK -> "Skal annan forelder ha foreldrepengar i same periode";
+            case ENGELSK -> "Should the other parent receive parental benefit in the same period";
+        };
+        var flerbarnsdager = switch (språk) {
+            case BOKMÅL -> "Skal bruke flerbarnsdager";
+            case NYNORSK -> "Skal bruke fleirbarnsdagar";
+            case ENGELSK -> "Should use multiple-child days";
+        };
+
+        settAntallBarnOgAnnenForeldersRett(data, 1, false);
+        assertThat(compileContent(mal, språk, data)).doesNotContain(samtidigUttak, flerbarnsdager);
+
+        settAntallBarnOgAnnenForeldersRett(data, 2, true);
+        assertThat(compileContent(mal, språk, data)).contains(samtidigUttak, flerbarnsdager);
     }
 
     @ParameterizedTest
@@ -254,6 +278,18 @@ class FellesUttaksplanKvitteringTest {
     private static Map<String, Object> data(BrevMal mal) {
         return new HashMap<>(getTestDataJson(mal, "",
             mal == BrevMal.FORELDREPENGER_SØKNAD ? "mor-1-AF-fødsel" : "endring-bfhr"));
+    }
+
+    @SuppressWarnings("unchecked")
+    private static void settAntallBarnOgAnnenForeldersRett(Map<String, Object> data, int antallBarn, boolean harRett) {
+        var barn = new HashMap<>((Map<String, Object>) data.get("barn"));
+        barn.put("antallBarn", antallBarn);
+        data.put("barn", barn);
+        var annenForelder = new HashMap<>((Map<String, Object>) data.get("annenForelder"));
+        var rettigheter = new HashMap<>((Map<String, Object>) annenForelder.get("rettigheter"));
+        rettigheter.put("harRettPåForeldrepenger", harRett);
+        annenForelder.put("rettigheter", rettigheter);
+        data.put("annenForelder", annenForelder);
     }
 
     @SuppressWarnings("unchecked")
