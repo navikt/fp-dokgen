@@ -1,0 +1,76 @@
+{{~#*inline "felles-konto"~}}
+{{#switch søker.kontoType}}
+    {{~#case "FEDREKVOTE"~}}{{#eq @root.rolle "MEDMOR"}}Medmorkvote{{else}}Fedrekvote{{/eq}}{{~/case~}}
+    {{~#case "MØDREKVOTE"~}}Mødrekvote{{~/case~}}
+    {{~#case "FELLESPERIODE"~}}Fellesperiode{{~/case~}}
+    {{~#case "FORELDREPENGER_FØR_FØDSEL"~}}Foreldrepengar før fødsel{{~/case~}}
+    {{~#case "FORELDREPENGER"~}}Foreldrepengar{{~/case~}}
+{{/switch}}
+{{~/inline~}}
+{{~#*inline "felles-mors-aktivitet"~}}
+{{#switch søker.morsAktivitet}}
+    {{~#case "ARBEID"~}}Arbeid{{~/case~}}
+    {{~#case "UTDANNING"~}}Utdanning{{~/case~}}
+    {{~#case "KVALPROG"~}}Kvalifiseringsprogram{{~/case~}}
+    {{~#case "INTROPROG"~}}Introduksjonsprogram{{~/case~}}
+    {{~#case "TRENGER_HJELP"~}}Treng hjelp{{~/case~}}
+    {{~#case "INNLAGT"~}}Innlagt på helseinstitusjon{{~/case~}}
+    {{~#case "ARBEID_OG_UTDANNING"~}}Arbeid og utdanning{{~/case~}}
+    {{~#case "UFØRE"~}}uføretrygda{{~/case~}}
+    {{~#case "IKKE_OPPGITT"~}}Ikkje oppgitt{{~/case~}}
+{{/switch}}
+{{~/inline~}}
+<div class="no-page-break">
+
+## Planen din
+{{#if saksnummer~}}
+Du har søkt om endring{{#if perioder.0.fom}} frå og med {{norwegian-date perioder.0.fom}}{{/if}}{{#if dekningsgrad}} og har {{dekningsgrad}} prosent dekningsgrad{{/if}}. Planen viser berre endringane du har søkt og ikkje det du er innvilga tidlegare.
+{{~else~}}
+{{#if dekningsgrad}}Du har søkt om {{dekningsgrad}} prosent foreldrepengar.{{/if}}
+{{~/if}}
+{{#if uttaksplan.ønskerJustertUttakVedFødsel}}Perioden som startar på termin vert endra til å starte frå fødselsdato når barnet blir født: {{#eq uttaksplan.ønskerJustertUttakVedFødsel true}}Ja{{else}}Nei{{/eq}}{{/if}}
+</div>
+
+{{#each perioder}}
+<div class="no-page-break">
+{{#eq søker.utsettelseÅrsak "FRI"}}
+<strong>Periode utan uttak {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
+{{else if søker.utsettelseÅrsak}}
+<strong>Utsetjing {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
+{{else}}
+<strong>{{#if søker.overføringÅrsak}}Overføring av {{/if}}{{> felles-konto}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} verkedagar)</strong>
+{{/eq}}
+<ul style="margin-top: -10px;">
+    <li>{{#if (and søker.kontoType søker.morsAktivitet)}}Kva del av foreldrepengane vert tatt ut: {{> felles-konto}} {{#eq søker.morsAktivitet "IKKE_OPPGITT"}}utan{{else}}med{{/eq}} aktivitetskrav{{/if}}</li>
+    <li>{{#if (and søker.morsAktivitet (neq søker.morsAktivitet "IKKE_OPPGITT"))}}Moras aktivitet i perioden: {{> felles-mors-aktivitet}}{{/if}}</li>
+    {{~#unless søker.utsettelseÅrsak~}}
+    <li>{{#if (or @root.annenForelder.rettigheter.harRettPåForeldrepenger @root.annenForelder.rettigheter.harAnnenForelderTilsvarendeRettEØS)}}{{> utils/sporsmal-svar-ja-nei value=(neq søker.samtidigUttak undefined) label="Skal annan forelder ha foreldrepengar i same periode"}}{{/if}}</li>
+    <li>{{#neq søker.samtidigUttak undefined}}Din prosent med foreldrepengar: {{trim-decimal søker.samtidigUttak}}{{/neq}}</li>
+    <li>{{#gt @root.barn.antallBarn 1}}{{> utils/sporsmal-svar-ja-nei value=søker.flerbarnsdager label="Skal bruke fleirbarnsdagar"}}{{/gt}}</li>
+    <li>{{> utils/sporsmal-svar-ja-nei value=(neq søker.gradering undefined) label="Skal kombinere foreldrepengane med arbeid"}}</li>
+    {{~/unless~}}
+    {{~#with søker.gradering~}}
+    <li>{{#eq aktivitet.type "ORDINÆRT_ARBEID"}}Kor skal du jobbe: {{aktivitet.arbeidsgiverNavn}}{{#if aktivitet.arbeidsgiver.id}} ({{aktivitet.arbeidsgiver.id}}){{/if}}{{/eq}}</li>
+    <li>{{#eq aktivitet.type "FRILANS"}}Jobbar som: Frilansar{{/eq}}</li>
+    <li>{{#eq aktivitet.type "SELVSTENDIG_NÆRINGSDRIVENDE"}}Jobbar som: Sjølvstendig næringsdrivande{{/eq}}</li>
+    <li>{{#eq aktivitet.type "ANNET"}}Jobbar som: Anna{{/eq}}</li>
+    <li>Oppgitt prosent i arbeid: {{trim-decimal arbeidstidprosent}}</li>
+    {{~/with~}}
+    <li>{{#if søker.overføringÅrsak}}Årsak til overføring av kvote: {{#switch søker.overføringÅrsak}}
+        {{~#case "INSTITUSJONSOPPHOLD_ANNEN_FORELDER"~}}Annan forelder er innlagt på helseinstitusjon{{~/case~}}
+        {{~#case "SYKDOM_ANNEN_FORELDER"~}}Annan forelder er for sjuk til å ta seg av barnet{{~/case~}}
+        {{~#case "ALENEOMSORG"~}}Aleineomsorg{{~/case~}}
+        {{~#case "IKKE_RETT_ANNEN_FORELDER"~}}Annan forelder har ikkje rett til foreldrepengar{{~/case~}}
+    {{/switch}}{{/if}}</li>
+    <li>{{#if (and søker.utsettelseÅrsak (neq søker.utsettelseÅrsak "FRI"))}}Årsak til utsetjing: {{#switch søker.utsettelseÅrsak}}
+        {{~#case "ARBEID"~}}Arbeid{{~/case~}}
+        {{~#case "FERIE"~}}Ferie{{~/case~}}
+        {{~#case "SØKER_SYKDOM"~}}Eg er for sjuk til å ta meg av barnet{{~/case~}}
+        {{~#case "SØKER_INNLAGT"~}}Eg er innlagt på helseinstitusjon{{~/case~}}
+        {{~#case "BARN_INNLAGT"~}}Barnet er innlagt på helseinstitusjon{{~/case~}}
+        {{~#case "HV_ØVELSE"~}}Øving i Heimevernet{{~/case~}}
+        {{~#case "NAV_TILTAK"~}}Tiltakspengar Nav{{~/case~}}
+    {{/switch}}{{/if}}</li>
+</ul>
+</div>
+{{/each}}

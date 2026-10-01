@@ -1,0 +1,76 @@
+{{~#*inline "felles-konto"~}}
+{{#switch søker.kontoType}}
+    {{~#case "FEDREKVOTE"~}}{{#eq @root.rolle "MEDMOR"}}Co-mother quota{{else}}Paternal quota{{/eq}}{{~/case~}}
+    {{~#case "MØDREKVOTE"~}}Maternal quota{{~/case~}}
+    {{~#case "FELLESPERIODE"~}}Shared period{{~/case~}}
+    {{~#case "FORELDREPENGER_FØR_FØDSEL"~}}Parental benefit before birth{{~/case~}}
+    {{~#case "FORELDREPENGER"~}}Parental benefit{{~/case~}}
+{{/switch}}
+{{~/inline~}}
+{{~#*inline "felles-mors-aktivitet"~}}
+{{#switch søker.morsAktivitet}}
+    {{~#case "ARBEID"~}}Work{{~/case~}}
+    {{~#case "UTDANNING"~}}Education{{~/case~}}
+    {{~#case "KVALPROG"~}}Qualification programme{{~/case~}}
+    {{~#case "INTROPROG"~}}Introduction programme{{~/case~}}
+    {{~#case "TRENGER_HJELP"~}}Needs help{{~/case~}}
+    {{~#case "INNLAGT"~}}Admitted to healthcare institution{{~/case~}}
+    {{~#case "ARBEID_OG_UTDANNING"~}}Work and education{{~/case~}}
+    {{~#case "UFØRE"~}}Disability benefits{{~/case~}}
+    {{~#case "IKKE_OPPGITT"~}}Not specified{{~/case~}}
+{{/switch}}
+{{~/inline~}}
+<div class="no-page-break">
+
+## Your plan
+{{#if saksnummer~}}
+You applied for a change{{#if perioder.0.fom}} from {{norwegian-date perioder.0.fom}}{{/if}}{{#if dekningsgrad}} with {{dekningsgrad}} per cent coverage{{/if}}. The plan shows only the changes you have applied for and not what you were previously granted.
+{{~else~}}
+{{#if dekningsgrad}}You applied for {{dekningsgrad}} per cent parental benefit.{{/if}}
+{{~/if}}
+{{#if uttaksplan.ønskerJustertUttakVedFødsel}}The period starting at the due date will be changed to start from the birth date when the child is born: {{#eq uttaksplan.ønskerJustertUttakVedFødsel true}}Yes{{else}}No{{/eq}}{{/if}}
+</div>
+
+{{#each perioder}}
+<div class="no-page-break">
+{{#eq søker.utsettelseÅrsak "FRI"}}
+<strong>Period without withdrawal {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
+{{else if søker.utsettelseÅrsak}}
+<strong>Postponement {{norwegian-date fom}} - {{norwegian-date tom}}</strong>
+{{else}}
+<strong>{{#if søker.overføringÅrsak}}Transfer of {{/if}}{{> felles-konto}} {{norwegian-date fom}} - {{norwegian-date tom}} ({{antall-virkedager fom tom}} business days)</strong>
+{{/eq}}
+<ul style="margin-top: -10px;">
+    <li>{{#if (and søker.kontoType søker.morsAktivitet)}}Which part of the parental benefit is taken out: {{> felles-konto}} {{#eq søker.morsAktivitet "IKKE_OPPGITT"}}without{{else}}with{{/eq}} activity requirement{{/if}}</li>
+    <li>{{#if (and søker.morsAktivitet (neq søker.morsAktivitet "IKKE_OPPGITT"))}}Mother's activity during the period: {{> felles-mors-aktivitet}}{{/if}}</li>
+    {{~#unless søker.utsettelseÅrsak~}}
+    <li>{{#if (or @root.annenForelder.rettigheter.harRettPåForeldrepenger @root.annenForelder.rettigheter.harAnnenForelderTilsvarendeRettEØS)}}{{> utils/sporsmal-svar-yes-no value=(neq søker.samtidigUttak undefined) label="Should the other parent receive parental benefit in the same period"}}{{/if}}</li>
+    <li>{{#neq søker.samtidigUttak undefined}}Your percentage of parental benefit: {{trim-decimal søker.samtidigUttak}}{{/neq}}</li>
+    <li>{{#gt @root.barn.antallBarn 1}}{{> utils/sporsmal-svar-yes-no value=søker.flerbarnsdager label="Should use multiple-child days"}}{{/gt}}</li>
+    <li>{{> utils/sporsmal-svar-yes-no value=(neq søker.gradering undefined) label="Should combine parental benefit with work"}}</li>
+    {{~/unless~}}
+    {{~#with søker.gradering~}}
+    <li>{{#eq aktivitet.type "ORDINÆRT_ARBEID"}}Where you will work: {{aktivitet.arbeidsgiverNavn}}{{#if aktivitet.arbeidsgiver.id}} ({{aktivitet.arbeidsgiver.id}}){{/if}}{{/eq}}</li>
+    <li>{{#eq aktivitet.type "FRILANS"}}Working as: Freelancer{{/eq}}</li>
+    <li>{{#eq aktivitet.type "SELVSTENDIG_NÆRINGSDRIVENDE"}}Working as: Self-employed{{/eq}}</li>
+    <li>{{#eq aktivitet.type "ANNET"}}Working as: Other{{/eq}}</li>
+    <li>Specified employment percentage: {{trim-decimal arbeidstidprosent}}</li>
+    {{~/with~}}
+    <li>{{#if søker.overføringÅrsak}}Reason for quota transfer: {{#switch søker.overføringÅrsak}}
+        {{~#case "INSTITUSJONSOPPHOLD_ANNEN_FORELDER"~}}Other parent is admitted to a healthcare institution{{~/case~}}
+        {{~#case "SYKDOM_ANNEN_FORELDER"~}}Other parent is too sick to take care of the child{{~/case~}}
+        {{~#case "ALENEOMSORG"~}}Sole custody{{~/case~}}
+        {{~#case "IKKE_RETT_ANNEN_FORELDER"~}}Other parent is not entitled to parental benefit{{~/case~}}
+    {{/switch}}{{/if}}</li>
+    <li>{{#if (and søker.utsettelseÅrsak (neq søker.utsettelseÅrsak "FRI"))}}Reason for postponement: {{#switch søker.utsettelseÅrsak}}
+        {{~#case "ARBEID"~}}Work{{~/case~}}
+        {{~#case "FERIE"~}}Holiday{{~/case~}}
+        {{~#case "SØKER_SYKDOM"~}}I am too sick to take care of the child{{~/case~}}
+        {{~#case "SØKER_INNLAGT"~}}I am admitted to a healthcare institution{{~/case~}}
+        {{~#case "BARN_INNLAGT"~}}The child is admitted to a healthcare institution{{~/case~}}
+        {{~#case "HV_ØVELSE"~}}Exercise in the Home Guard{{~/case~}}
+        {{~#case "NAV_TILTAK"~}}Allowance from Nav{{~/case~}}
+    {{/switch}}{{/if}}</li>
+</ul>
+</div>
+{{/each}}

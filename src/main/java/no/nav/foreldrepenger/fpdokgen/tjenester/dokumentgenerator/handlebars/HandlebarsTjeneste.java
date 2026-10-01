@@ -42,6 +42,7 @@ public class HandlebarsTjeneste {
         handlebars.registerHelper("not", ConditionalHelpers.not);
 
         // Custom helpers
+        handlebars.registerHelper("søkerperioder", new HandlebarsCustomHelpers.SøkerperioderHelper());
         handlebars.registerHelper("arbeidsforhold-fra-orgnummer", new HandlebarsCustomHelpers.ArbeidsforholdLookupHelper());
         handlebars.registerHelper("size", new HandlebarsCustomHelpers.SizeHelper());
         handlebars.registerHelper("switch", new HandlebarsCustomHelpers.SwitchHelper());
