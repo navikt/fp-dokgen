@@ -43,19 +43,19 @@ Du har søkt om endring{{#if perioder.0.fom}} fra og med {{norwegian-date period
 <ul style="margin-top: -10px;">
     <li>{{#if (and søker.kontoType søker.morsAktivitet)}}Hvilken del av foreldrepengene tas ut: {{> felles-konto}} {{#eq søker.morsAktivitet "IKKE_OPPGITT"}}uten{{else}}med{{/eq}} aktivitetskrav{{/if}}</li>
     <li>{{#if (and søker.morsAktivitet (neq søker.morsAktivitet "IKKE_OPPGITT"))}}Mors aktivitet i perioden: {{> felles-mors-aktivitet}}{{/if}}</li>
-    {{#unless søker.utsettelseÅrsak}}
+    {{~#unless søker.utsettelseÅrsak~}}
     <li>{{> utils/sporsmal-svar-ja-nei value=(neq søker.samtidigUttak undefined) label="Skal annen forelder ha foreldrepenger i samme periode"}}</li>
     <li>{{#neq søker.samtidigUttak undefined}}Din prosent med foreldrepenger: {{trim-decimal søker.samtidigUttak}}{{/neq}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=søker.flerbarnsdager label="Skal bruke flerbarnsdager"}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=(neq søker.gradering undefined) label="Skal kombinere foreldrepengene med arbeid"}}</li>
-    {{/unless}}
-    {{#with søker.gradering}}
+    {{~/unless~}}
+    {{~#with søker.gradering~}}
     <li>{{#eq aktivitet.type "ORDINÆRT_ARBEID"}}Hvor skal du jobbe: {{aktivitet.arbeidsgiverNavn}}{{#if aktivitet.arbeidsgiver.id}} ({{aktivitet.arbeidsgiver.id}}){{/if}}{{/eq}}</li>
     <li>{{#eq aktivitet.type "FRILANS"}}Jobber som: Frilanser{{/eq}}</li>
     <li>{{#eq aktivitet.type "SELVSTENDIG_NÆRINGSDRIVENDE"}}Jobber som: Selvstendig næringsdrivende{{/eq}}</li>
     <li>{{#eq aktivitet.type "ANNET"}}Jobber som: Annet{{/eq}}</li>
     <li>Oppgitt prosent i arbeid: {{trim-decimal arbeidstidprosent}}</li>
-    {{/with}}
+    {{~/with~}}
     <li>{{#if søker.overføringÅrsak}}Årsak til overføring av kvote: {{#switch søker.overføringÅrsak}}
         {{~#case "INSTITUSJONSOPPHOLD_ANNEN_FORELDER"~}}Annen forelder er innlagt på helseinstitusjon{{~/case~}}
         {{~#case "SYKDOM_ANNEN_FORELDER"~}}Annen forelder er for syk til å ta seg av barnet{{~/case~}}

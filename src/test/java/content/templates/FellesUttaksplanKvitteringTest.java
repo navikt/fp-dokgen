@@ -204,7 +204,7 @@ class FellesUttaksplanKvitteringTest {
                 assertThat(innhold)
                     .contains("01.03.2027", "01.04.2027", "01.05.2027", "01.06.2027", "Testbedrift", "25.5", "50.5")
                     .contains(dekningsgrad + (språk == Språk.ENGELSK ? " per cent" : " prosent"))
-                    .doesNotContain("01.01.2027", "01.02.2027");
+                    .doesNotContain("01.01.2027", "01.02.2027", "<li>", "</li>");
                 var justeringstekst = switch (språk) {
                     case BOKMÅL -> "Perioden som starter på termin blir endret til å starte fra fødselsdato når barnet blir født: Ja";
                     case NYNORSK -> "Perioden som startar på termin vert endra til å starte frå fødselsdato når barnet blir født: Ja";

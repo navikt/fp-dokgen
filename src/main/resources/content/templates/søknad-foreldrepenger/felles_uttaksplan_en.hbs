@@ -43,19 +43,19 @@ You applied for a change{{#if perioder.0.fom}} from {{norwegian-date perioder.0.
 <ul style="margin-top: -10px;">
     <li>{{#if (and søker.kontoType søker.morsAktivitet)}}Which part of the parental benefit is taken out: {{> felles-konto}} {{#eq søker.morsAktivitet "IKKE_OPPGITT"}}without{{else}}with{{/eq}} activity requirement{{/if}}</li>
     <li>{{#if (and søker.morsAktivitet (neq søker.morsAktivitet "IKKE_OPPGITT"))}}Mother's activity during the period: {{> felles-mors-aktivitet}}{{/if}}</li>
-    {{#unless søker.utsettelseÅrsak}}
+    {{~#unless søker.utsettelseÅrsak~}}
     <li>{{> utils/sporsmal-svar-yes-no value=(neq søker.samtidigUttak undefined) label="Should the other parent receive parental benefit in the same period"}}</li>
     <li>{{#neq søker.samtidigUttak undefined}}Your percentage of parental benefit: {{trim-decimal søker.samtidigUttak}}{{/neq}}</li>
     <li>{{> utils/sporsmal-svar-yes-no value=søker.flerbarnsdager label="Should use multiple-child days"}}</li>
     <li>{{> utils/sporsmal-svar-yes-no value=(neq søker.gradering undefined) label="Should combine parental benefit with work"}}</li>
-    {{/unless}}
-    {{#with søker.gradering}}
+    {{~/unless~}}
+    {{~#with søker.gradering~}}
     <li>{{#eq aktivitet.type "ORDINÆRT_ARBEID"}}Where you will work: {{aktivitet.arbeidsgiverNavn}}{{#if aktivitet.arbeidsgiver.id}} ({{aktivitet.arbeidsgiver.id}}){{/if}}{{/eq}}</li>
     <li>{{#eq aktivitet.type "FRILANS"}}Working as: Freelancer{{/eq}}</li>
     <li>{{#eq aktivitet.type "SELVSTENDIG_NÆRINGSDRIVENDE"}}Working as: Self-employed{{/eq}}</li>
     <li>{{#eq aktivitet.type "ANNET"}}Working as: Other{{/eq}}</li>
     <li>Specified employment percentage: {{trim-decimal arbeidstidprosent}}</li>
-    {{/with}}
+    {{~/with~}}
     <li>{{#if søker.overføringÅrsak}}Reason for quota transfer: {{#switch søker.overføringÅrsak}}
         {{~#case "INSTITUSJONSOPPHOLD_ANNEN_FORELDER"~}}Other parent is admitted to a healthcare institution{{~/case~}}
         {{~#case "SYKDOM_ANNEN_FORELDER"~}}Other parent is too sick to take care of the child{{~/case~}}

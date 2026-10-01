@@ -43,19 +43,19 @@ Du har søkt om endring{{#if perioder.0.fom}} frå og med {{norwegian-date perio
 <ul style="margin-top: -10px;">
     <li>{{#if (and søker.kontoType søker.morsAktivitet)}}Kva del av foreldrepengane vert tatt ut: {{> felles-konto}} {{#eq søker.morsAktivitet "IKKE_OPPGITT"}}utan{{else}}med{{/eq}} aktivitetskrav{{/if}}</li>
     <li>{{#if (and søker.morsAktivitet (neq søker.morsAktivitet "IKKE_OPPGITT"))}}Moras aktivitet i perioden: {{> felles-mors-aktivitet}}{{/if}}</li>
-    {{#unless søker.utsettelseÅrsak}}
+    {{~#unless søker.utsettelseÅrsak~}}
     <li>{{> utils/sporsmal-svar-ja-nei value=(neq søker.samtidigUttak undefined) label="Skal annan forelder ha foreldrepengar i same periode"}}</li>
     <li>{{#neq søker.samtidigUttak undefined}}Din prosent med foreldrepengar: {{trim-decimal søker.samtidigUttak}}{{/neq}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=søker.flerbarnsdager label="Skal bruke fleirbarnsdagar"}}</li>
     <li>{{> utils/sporsmal-svar-ja-nei value=(neq søker.gradering undefined) label="Skal kombinere foreldrepengane med arbeid"}}</li>
-    {{/unless}}
-    {{#with søker.gradering}}
+    {{~/unless~}}
+    {{~#with søker.gradering~}}
     <li>{{#eq aktivitet.type "ORDINÆRT_ARBEID"}}Kor skal du jobbe: {{aktivitet.arbeidsgiverNavn}}{{#if aktivitet.arbeidsgiver.id}} ({{aktivitet.arbeidsgiver.id}}){{/if}}{{/eq}}</li>
     <li>{{#eq aktivitet.type "FRILANS"}}Jobbar som: Frilansar{{/eq}}</li>
     <li>{{#eq aktivitet.type "SELVSTENDIG_NÆRINGSDRIVENDE"}}Jobbar som: Sjølvstendig næringsdrivande{{/eq}}</li>
     <li>{{#eq aktivitet.type "ANNET"}}Jobbar som: Anna{{/eq}}</li>
     <li>Oppgitt prosent i arbeid: {{trim-decimal arbeidstidprosent}}</li>
-    {{/with}}
+    {{~/with~}}
     <li>{{#if søker.overføringÅrsak}}Årsak til overføring av kvote: {{#switch søker.overføringÅrsak}}
         {{~#case "INSTITUSJONSOPPHOLD_ANNEN_FORELDER"~}}Annan forelder er innlagt på helseinstitusjon{{~/case~}}
         {{~#case "SYKDOM_ANNEN_FORELDER"~}}Annan forelder er for sjuk til å ta seg av barnet{{~/case~}}
