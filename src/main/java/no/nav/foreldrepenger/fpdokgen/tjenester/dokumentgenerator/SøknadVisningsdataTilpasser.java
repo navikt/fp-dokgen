@@ -30,7 +30,6 @@ public final class SøknadVisningsdataTilpasser {
         var frilansoppdragForelagt = harVerdi(søkerinfo, FRILANSOPPDRAG);
 
         var visningsdata = new HashMap<String, Object>();
-        visningsdata.put("nyAktivitetsflyt", selvstendigNæringForelagt || frilansoppdragForelagt);
         visningsdata.put("selvstendigNæringForelagt", selvstendigNæringForelagt);
         visningsdata.put("frilansoppdragForelagt", frilansoppdragForelagt);
         visningsdata.put("grupperteFrilansoppdrag", grupperFrilansoppdrag(liste(søkerinfo.get(FRILANSOPPDRAG))));

@@ -36,12 +36,14 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 </ul>
 </div>
 <div class="no-page-break">
-## Andre inntektskjelder
-<ul>
-    <li>Har du jobba og hatt inntekt som frilansar dei siste 10 månadene? <strong>Nei</strong></li>
-    <li>Har du jobba og hatt inntekt som sjølvstendig næringsdrivande dei siste 10 månadene? <strong>Nei</strong></li>
-    <li>Har du hatt andre inntektskjelder dei siste 10 månadene? <strong>Nei</strong></li>
-</ul>
+## Frilans
+Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
+Du er ikkje registrert med nokon frilansoppdrag.
+</div>
+<div class="no-page-break">
+## Sjølvstendig næringsdrivande
+Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
+Du er ikkje registrert med nokon næringar i Brønnøysundregistera.
 </div>
 <div class="no-page-break">
 ## Informasjon om annan forelder

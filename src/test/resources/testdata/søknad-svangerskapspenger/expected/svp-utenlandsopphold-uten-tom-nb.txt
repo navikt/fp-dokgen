@@ -1,10 +1,10 @@
-# Kvittering på søknad om svangerskapspengar
+# Kvittering på søknad om svangerskapspenger
 Mottatt: 24.09.2025 10:15:30
-## Opplysningar om søkjar
-Namn: Per Sykelig Oppblåst<br/>
+## Opplysninger om søker
+Navn: Per Sykelig Oppblåst<br/>
 Fødselsnummer: 987654321<br/>
 <div class="no-page-break">
-## Opplysningar om barnet
+## Opplysninger om barnet
 <ul>
     <li></li>
     <li>Termindato: 24.12.2025</li>
@@ -19,17 +19,17 @@ Fødselsnummer: 987654321<br/>
 </ul>
 </div>
 <div class="no-page-break">
-## Informasjon om opphald i utlandet
+## Informasjon om opphold i utlandet
 <ul>
-<li>Venezuela: 01.02.2024 - 07.03.2025</li>
+<li>Venezuela: 01.02.2024 - 07.03.2025</li><li>USA: 15.01.2026 - ikke oppgitt</li>
 </ul>
 </div>
 <div class="no-page-break">
 ## Mine arbeidsforhold
-Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
+Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden.
 ### NAV Familie og Pensjonsytelser Oslo (987654321)
 <ul>
-    <li>Periode: 11.01.2024 – Pågåande</li>
+    <li>Periode: 11.01.2024 – Pågående</li>
     <li>Stillingsprosent: 44 %</li>
 </ul>
 ### Kåre og Anne-Ma&#x27;s snekker og dryss AS (12312312)
@@ -40,20 +40,20 @@ Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-register
 </div>
 <div class="no-page-break">
 ## Frilans
-Opplysningane er henta frå Arbeidsgivar- og arbeidstakarregisteret (AA-registeret). Desse blei vist i søknaden.
-Du er ikkje registrert med nokon frilansoppdrag.
+Opplysningene er hentet fra Arbeidsgiver- og arbeidstakerregisteret (AA-registeret). Disse ble vist i søknaden.
+Du er ikke registrert med noen frilansoppdrag.
 </div>
 <div class="no-page-break">
-## Sjølvstendig næringsdrivande
-Opplysningane er henta frå Einingsregisteret i Brønnøysundregistera. Desse blei vist i søknaden.
-Du er ikkje registrert med nokon næringar i Brønnøysundregistera.
+## Selvstendig næringsdrivende
+Opplysningene er hentet fra Enhetsregisteret i Brønnøysundregistrene. Disse ble vist i søknaden.
+Du er ikke registrert med noen næringer i Brønnøysundregistrene.
 </div>
 <div class="no-page-break">
 ## Tilretteleggingsbehov
 <div class="no-page-break">
 Tilretteleggingsbehov hos NAV Familie og Pensjonsytelser Oslo (987654321)
 <ul>
-    <li>Eg har behov for tilrettelegging frå og med 24.09.2025</li><li>Arbeidsgjevar kan tilretteleggje frå 24.09.2025. Eg kan jobbe i 40 prosent stilling.</li><li></li>
+    <li>Jeg har behov for tilrettelegging fra og med 24.09.2025</li><li>Arbeidsgiver kan tilrettelegge fra 24.09.2025. Jeg kan jobbe i 40 prosent stilling.</li><li></li>
     <li></li>
 </ul>
 </div>
@@ -62,7 +62,7 @@ Tilretteleggingsbehov hos NAV Familie og Pensjonsytelser Oslo (987654321)
 ## Informasjon om ferie
 <ul>
     <li>
-        Eg har avtalt ferie hos
+        Jeg har avtalt ferie hos
         NAV Familie og Pensjonsytelser Oslo (987654321)
          i perioden 24.11.2025 - 01.12.2025
     </li>
@@ -71,6 +71,6 @@ Tilretteleggingsbehov hos NAV Familie og Pensjonsytelser Oslo (987654321)
 <div class="no-page-break">
 ## Dokumentasjon
 <ul>
-<li>Skjema for tilrettelegging og omplassering ved graviditet hos NAV Familie og Pensjonsytelser Oslo (987654321) (lasta opp)</li>
+<li>Skjema for tilrettelegging og omplassering ved graviditet hos NAV Familie og Pensjonsytelser Oslo (987654321) (lastet opp)</li>
 </ul>
 </div>

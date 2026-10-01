@@ -21,7 +21,7 @@ Fødselsnummer: 987654321<br/>
 <div class="no-page-break">
 ## Informasjon om opphald i utlandet
 <ul>
-<li>Venezuela: 01.02.2024 - 07.03.2025</li>
+<li>Venezuela: 01.02.2024 - 07.03.2025</li><li>USA: 15.01.2026 - ikkje oppgitt</li>
 </ul>
 </div>
 <div class="no-page-break">

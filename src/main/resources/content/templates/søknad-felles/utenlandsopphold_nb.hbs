@@ -4,7 +4,7 @@
 <ul>
 {{#if utenlandsopphold}}
 {{~#each utenlandsopphold~}}
-<li>{{land-norsk landkode}}: {{norwegian-date fom}} - {{norwegian-date tom}}</li>
+<li>{{land-norsk landkode}}: {{norwegian-date fom}} - {{#if tom}}{{norwegian-date tom}}{{else}}ikke oppgitt{{/if}}</li>
 {{~/each~}}
 {{~else~}}
 <li>De siste 12 månedene bodde du i Norge</li>
