@@ -141,25 +141,27 @@ class FellesUttaksplanKvitteringTest {
 
     @ParameterizedTest
     @MethodSource("søknader")
-    void samtidig_uttak_og_flerbarnsdager_vises_bare_ved_delt_uttak_og_flere_barn(BrevMal mal, Språk språk) {
+    void samtidig_uttak_vises_bare_når_oppgitt_og_flerbarnsdager_vises_bare_når_valgt(BrevMal mal, Språk språk) {
         var data = data(mal);
         data.put("uttaksplan", getJsonMapFromString(NY_PLAN));
         var samtidigUttak = switch (språk) {
-            case BOKMÅL -> "Skal annen forelder ha foreldrepenger i samme periode";
-            case NYNORSK -> "Skal annan forelder ha foreldrepengar i same periode";
-            case ENGELSK -> "Should the other parent receive parental benefit in the same period";
+            case BOKMÅL -> "Skal annen forelder ha foreldrepenger i samme periode: <strong>Ja</strong>";
+            case NYNORSK -> "Skal annan forelder ha foreldrepengar i same periode: <strong>Ja</strong>";
+            case ENGELSK -> "Should the other parent receive parental benefit in the same period: <strong>Yes</strong>";
         };
+        var samtidigUttakNei = samtidigUttak.replaceAll("<strong>(Ja|Yes)</strong>", språk == Språk.ENGELSK ? "<strong>No</strong>" : "<strong>Nei</strong>");
         var flerbarnsdager = switch (språk) {
             case BOKMÅL -> "Skal bruke flerbarnsdager";
             case NYNORSK -> "Skal bruke fleirbarnsdagar";
             case ENGELSK -> "Should use multiple-child days";
         };
 
-        settAntallBarnOgAnnenForeldersRett(data, 1, false);
-        assertThat(compileContent(mal, språk, data)).doesNotContain(samtidigUttak, flerbarnsdager);
-
-        settAntallBarnOgAnnenForeldersRett(data, 2, true);
-        assertThat(compileContent(mal, språk, data)).contains(samtidigUttak, flerbarnsdager);
+        for (var antallBarn : new int[] {1, 2}) {
+            settAntallBarnOgAnnenForeldersRett(data, antallBarn, true);
+            var innhold = compileContent(mal, språk, data);
+            assertThat(innhold).contains(flerbarnsdager);
+            assertThat(innhold).contains(samtidigUttak).doesNotContain(samtidigUttakNei);
+        }
     }
 
     @ParameterizedTest
