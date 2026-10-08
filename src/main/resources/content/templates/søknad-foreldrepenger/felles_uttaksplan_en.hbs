@@ -50,7 +50,7 @@ You applied for a change{{#if perioder.0.fom}} from {{norwegian-date perioder.0.
     <li>{{> utils/sporsmal-svar-yes-no value=(neq søker.gradering undefined) label="Should combine parental benefit with work"}}</li>
     {{~/unless~}}
     {{~#with søker.gradering~}}
-    <li>{{#eq aktivitet.type "ORDINÆRT_ARBEID"}}Where you will work: {{aktivitet.arbeidsgiverNavn}}{{#if aktivitet.arbeidsgiver.id}} ({{aktivitet.arbeidsgiver.id}}){{/if}}{{/eq}}</li>
+    <li>{{#eq aktivitet.type "ORDINÆRT_ARBEID"}}Where you will work: {{#if aktivitet.arbeidsgiverNavn}}{{aktivitet.arbeidsgiverNavn}}{{#if aktivitet.arbeidsgiver.id}} ({{aktivitet.arbeidsgiver.id}}){{/if}}{{else}}{{#arbeidsforhold-fra-orgnummer aktivitet.arbeidsgiver.id @root.søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{/if}}{{/eq}}</li>
     <li>{{#eq aktivitet.type "FRILANS"}}Working as: Freelancer{{/eq}}</li>
     <li>{{#eq aktivitet.type "SELVSTENDIG_NÆRINGSDRIVENDE"}}Working as: Self-employed{{/eq}}</li>
     <li>{{#eq aktivitet.type "ANNET"}}Working as: Other{{/eq}}</li>

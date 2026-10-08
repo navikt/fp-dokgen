@@ -141,6 +141,23 @@ class FellesUttaksplanKvitteringTest {
 
     @ParameterizedTest
     @MethodSource("søknader")
+    @SuppressWarnings("unchecked")
+    void arbeidsgivernavn_hentes_fra_søkerinfo_når_det_ikke_er_oppgitt_på_aktiviteten(BrevMal mal, Språk språk) {
+        var data = data(mal);
+        var uttaksplan = getJsonMapFromString(NY_PLAN.replace("\"arbeidsgiverNavn\": \"Testbedrift\",", ""));
+        data.put("uttaksplan", uttaksplan);
+        var søkerinfo = new HashMap<>((Map<String, Object>) data.get("søkerinfo"));
+        søkerinfo.put("arbeidsforhold", List.of(Map.of("navn", "Oppslagsbedrift", "orgnummer", "999999999", "fom", "2024-01-01")));
+        data.put("søkerinfo", søkerinfo);
+
+        assertThat(compileContent(mal, språk, data)).contains("Oppslagsbedrift (999999999)").doesNotContain("Testbedrift");
+
+        søkerinfo.put("arbeidsforhold", List.of());
+        assertThat(compileContent(mal, språk, data)).contains("(999999999)").doesNotContain("Oppslagsbedrift");
+    }
+
+    @ParameterizedTest
+    @MethodSource("søknader")
     void samtidig_uttak_vises_bare_når_oppgitt_og_flerbarnsdager_vises_bare_når_valgt(BrevMal mal, Språk språk) {
         var data = data(mal);
         data.put("uttaksplan", getJsonMapFromString(NY_PLAN));
