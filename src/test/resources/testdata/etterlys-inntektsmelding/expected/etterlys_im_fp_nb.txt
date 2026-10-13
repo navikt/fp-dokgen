@@ -21,12 +21,12 @@
 # Vi har bedt om opplysninger fra arbeidsgiverne dine
 Vi fikk søknaden din om foreldrepenger 1. april 2020, men mangler opplysninger for å behandle den.
 Vi har bedt disse arbeidsgiverne om å sende inntektsmelding:
-* Andeby Bank AS med organisasjonsnummer 123456789 i stillingen du jobber 80 prosent.
-* Andeby Vask AS med organisasjonsnummer 99999999 i stillingen du jobber 10 prosent.
+* Andeby Bank AS med organisasjonsnummer 123456789.
+* Andeby Vask AS med organisasjonsnummer 99999999.
 Hvis arbeidsgiver allerede har sendt inntektsmelding, kan du se bort fra denne henvendelsen.
 Vi har mottatt inntektsmelding fra:
-* Andeby Vaktmester AS med organisasjonsnummer 99999998 i stillingen du jobber 5 prosent.
-* Andeby Service AS med organisasjonsnummer 99999997 i stillingen du jobber 5 prosent.
+* Andeby Vaktmester AS med organisasjonsnummer 99999998.
+* Andeby Service AS med organisasjonsnummer 99999997.
 Vi kan ikke behandle søknaden din om foreldrepenger før vi har mottatt inntektsmelding fra arbeidsgiverne dine.
 Arbeidsgiverne dine kan logge seg på [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) og sende inntektsmelding derfra.
 ## Du har rett til innsyn

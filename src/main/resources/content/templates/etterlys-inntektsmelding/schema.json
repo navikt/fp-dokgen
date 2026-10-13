@@ -16,7 +16,6 @@
       "required": [
         "arbeidsgiverIdent",
         "arbeidsgiverNavn",
-        "stillingsprosent",
         "erInntektsmeldingMottatt"
       ],
       "properties": {
@@ -25,9 +24,6 @@
         },
         "arbeidsgiverNavn": {
           "type": "string"
-        },
-        "stillingsprosent": {
-          "type": "number"
         },
         "erInntektsmeldingMottatt": {
           "type": "boolean"

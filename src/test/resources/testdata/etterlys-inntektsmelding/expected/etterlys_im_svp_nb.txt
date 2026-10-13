@@ -21,10 +21,10 @@
 # Vi har bedt om opplysninger fra arbeidsgiveren din
 Vi fikk søknaden din om svangerskapspenger 1. april 2020, men mangler opplysninger for å behandle den.
 Vi har bedt denne arbeidsgiveren om å sende inntektsmelding:
-* Andeby Bank AS med organisasjonsnummer 123456789 i stillingen du jobber 80 prosent.
+* Andeby Bank AS med organisasjonsnummer 123456789.
 Hvis arbeidsgiver allerede har sendt inntektsmelding, kan du se bort fra denne henvendelsen.
 Vi har mottatt inntektsmelding fra:
-* Andeby Vaktmester AS med organisasjonsnummer 99999998 i stillingen du jobber 20 prosent.
+* Andeby Vaktmester AS med organisasjonsnummer 99999998.
 Vi kan ikke behandle søknaden din om svangerskapspenger før vi har mottatt inntektsmelding fra arbeidsgiveren din.
 Arbeidsgiveren din kan logge seg på [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) og sende inntektsmelding derfra.
 ## Du har rett til innsyn

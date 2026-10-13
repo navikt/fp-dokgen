@@ -21,10 +21,10 @@
 # We have requested your employer to submit an income report to Nav
 We have received your application for pregnancy benefit 1. april 2020, but we have not yet received all the information we need to process it.
 We have requested this employer to submit an income report to Nav:
-* Andeby Bank AS with organisation number 123456789, where you work 80 percent.
+* Andeby Bank AS with organisation number 123456789.
 If the employer has already submitted the income report, you can disregard this letter.
 We have received an income report from:
-* Andeby Vaktmester AS with organisation number 99999998, where you work 20 percent.
+* Andeby Vaktmester AS with organisation number 99999998.
 We cannot process your application for pregnancy benefit until we have received an income report from your employer.
 Your employer can log in to [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) and submit the income report there.
 ## You have right of access
