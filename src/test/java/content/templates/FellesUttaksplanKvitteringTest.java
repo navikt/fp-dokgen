@@ -165,6 +165,23 @@ class FellesUttaksplanKvitteringTest {
     }
 
     @ParameterizedTest
+    @MethodSource("søknader")
+    @SuppressWarnings("unchecked")
+    void arbeidsgivernavn_hentes_fra_søkerinfo_når_det_ikke_er_oppgitt_på_aktiviteten(BrevMal mal, Språk språk) {
+        var data = data(mal);
+        var uttaksplan = getJsonMapFromString(NY_PLAN.replace("\"arbeidsgiverNavn\": \"Testbedrift\",", ""));
+        data.put("uttaksplan", uttaksplan);
+        var søkerinfo = new HashMap<>((Map<String, Object>) data.get("søkerinfo"));
+        søkerinfo.put("arbeidsforhold", List.of(Map.of("navn", "Oppslagsbedrift", "orgnummer", "999999999", "fom", "2024-01-01")));
+        data.put("søkerinfo", søkerinfo);
+
+        assertThat(compileContent(mal, språk, data)).contains("Oppslagsbedrift (999999999)").doesNotContain("Testbedrift");
+
+        søkerinfo.put("arbeidsforhold", List.of());
+        assertThat(compileContent(mal, språk, data)).contains("(999999999)").doesNotContain("Oppslagsbedrift");
+    }
+
+    @ParameterizedTest
     @MethodSource("utsettelser")
     void alle_utsettelsesårsaker_vises(BrevMal mal, Språk språk, String årsak, String forventet) {
         var data = data(mal);

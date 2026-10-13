@@ -50,7 +50,7 @@ Du har søkt om endring{{#if perioder.0.fom}} fra og med {{norwegian-date period
     <li>{{> utils/sporsmal-svar-ja-nei value=(neq søker.gradering undefined) label="Skal kombinere foreldrepengene med arbeid"}}</li>
     {{~/unless~}}
     {{~#with søker.gradering~}}
-    <li>{{#eq aktivitet.type "ORDINÆRT_ARBEID"}}Hvor skal du jobbe: {{aktivitet.arbeidsgiverNavn}}{{#if aktivitet.arbeidsgiver.id}} ({{aktivitet.arbeidsgiver.id}}){{/if}}{{/eq}}</li>
+    <li>{{#eq aktivitet.type "ORDINÆRT_ARBEID"}}Hvor skal du jobbe: {{#if aktivitet.arbeidsgiverNavn}}{{aktivitet.arbeidsgiverNavn}}{{#if aktivitet.arbeidsgiver.id}} ({{aktivitet.arbeidsgiver.id}}){{/if}}{{else}}{{#arbeidsforhold-fra-orgnummer aktivitet.arbeidsgiver.id @root.søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{/if}}{{/eq}}</li>
     <li>{{#eq aktivitet.type "FRILANS"}}Jobber som: Frilanser{{/eq}}</li>
     <li>{{#eq aktivitet.type "SELVSTENDIG_NÆRINGSDRIVENDE"}}Jobber som: Selvstendig næringsdrivende{{/eq}}</li>
     <li>{{#eq aktivitet.type "ANNET"}}Jobber som: Annet{{/eq}}</li>
