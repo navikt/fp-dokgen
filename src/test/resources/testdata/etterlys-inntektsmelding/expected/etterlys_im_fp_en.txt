@@ -21,12 +21,12 @@
 # We have requested your employers to submit an income report to Nav
 We have received your application for parental benefit 1. april 2020, but we have not yet received all the information we need to process it.
 We have requested these employers to submit an income report to Nav:
-* Andeby Bank AS with organisation number 123456789, where you work 80 percent.
-* Andeby Vask AS with organisation number 99999999, where you work 10 percent.
+* Andeby Bank AS with organisation number 123456789.
+* Andeby Vask AS with organisation number 99999999.
 If the employer has already submitted the income report, you can disregard this letter.
 We have received an income report from:
-* Andeby Vaktmester AS with organisation number 99999998, where you work 5 percent.
-* Andeby Service AS with organisation number 99999997, where you work 5 percent.
+* Andeby Vaktmester AS with organisation number 99999998.
+* Andeby Service AS with organisation number 99999997.
 We cannot process your application for parental benefit until we have received an income report from your employers.
 Your employers can log in to [nav.no/arbeidsgiver](https://nav.no/arbeidsgiver) and submit the income report there.
 ## You have right of access

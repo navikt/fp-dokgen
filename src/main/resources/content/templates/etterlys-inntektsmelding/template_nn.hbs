@@ -7,7 +7,7 @@ Vi fekk søknaden din om {{>ytelse_navn_nn}} {{søknadDato}}, men manglar opplys
 {{#gt antallIkkeMottattIM 0}}Vi har bedt {{#gt antallIkkeMottattIM 1}}desse arbeidsgivarane{{else}}denne arbeidsgivaren{{/gt}} om å senda inntektsmelding:{{/gt}}
 {{#each inntektsmeldingerStatus}}
 {{#eq erInntektsmeldingMottatt false}}
-* {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} i stillinga du jobbar {{trim-decimal stillingsprosent}} prosent.
+* {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}}.
 {{/eq}}
 {{/each}}
 
@@ -16,7 +16,7 @@ Dersom arbeidsgivar allereie har sendt inntektsmelding, kan du sjå bort frå de
 {{#gt antallMottattIM 0}}Vi har fått inntektsmelding frå:{{/gt}}
 {{#each inntektsmeldingerStatus}}
 {{#eq erInntektsmeldingMottatt true}}
-* {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}} i stillinga du jobbar {{trim-decimal stillingsprosent}} prosent.
+* {{arbeidsgiverNavn}} med organisasjonsnummer {{arbeidsgiverIdent}}.
 {{/eq}}
 {{/each}}
 
