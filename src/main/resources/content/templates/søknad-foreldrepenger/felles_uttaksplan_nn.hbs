@@ -53,7 +53,6 @@ Du har søkt om endring{{#if perioder.0.fom}} frå og med {{norwegian-date perio
     <li>{{#eq aktivitet.type "ORDINÆRT_ARBEID"}}Kor skal du jobbe: {{#if aktivitet.arbeidsgiverNavn}}{{aktivitet.arbeidsgiverNavn}}{{#if aktivitet.arbeidsgiver.id}} ({{aktivitet.arbeidsgiver.id}}){{/if}}{{else}}{{#arbeidsforhold-fra-orgnummer aktivitet.arbeidsgiver.id @root.søkerinfo.arbeidsforhold}}{{navn}} ({{orgnummer}}){{/arbeidsforhold-fra-orgnummer}}{{/if}}{{/eq}}</li>
     <li>{{#eq aktivitet.type "FRILANS"}}Jobbar som: Frilansar{{/eq}}</li>
     <li>{{#eq aktivitet.type "SELVSTENDIG_NÆRINGSDRIVENDE"}}Jobbar som: Sjølvstendig næringsdrivande{{/eq}}</li>
-    <li>{{#eq aktivitet.type "ANNET"}}Jobbar som: Anna{{/eq}}</li>
     <li>Oppgitt prosent i arbeid: {{trim-decimal arbeidstidprosent}}</li>
     {{~/with~}}
     <li>{{#if søker.overføringÅrsak}}Årsak til overføring av kvote: {{#switch søker.overføringÅrsak}}
