@@ -209,7 +209,7 @@ class FellesUttaksplanKvitteringTest {
               {"fom": "2027-09-01", "tom": "2027-09-30",
                "søker": {"forelder": "FAR_MEDMOR", "kontoType": "FORELDREPENGER", "flerbarnsdager": false,
                  "morsAktivitet": "IKKE_OPPGITT", "samtidigUttak": null,
-                 "gradering": {"arbeidstidprosent": 0, "aktivitet": {"type": "ANNET"}}}}
+                 "gradering": {"arbeidstidprosent": 0, "aktivitet": null}}}
             ]}
             """));
 
@@ -217,15 +217,18 @@ class FellesUttaksplanKvitteringTest {
 
         switch (språk) {
             case BOKMÅL -> assertThat(innhold).contains("100 prosent", "Medmorkvote", "Jobber som: Frilanser",
-                "Jobber som: Selvstendig næringsdrivende", "Jobber som: Annet", "Overføring av Mødrekvote",
-                "Annen forelder er for syk til å ta seg av barnet", "Foreldrepenger uten aktivitetskrav", "Oppgitt prosent i arbeid: 0");
+                "Jobber som: Selvstendig næringsdrivende", "Overføring av Mødrekvote",
+                "Annen forelder er for syk til å ta seg av barnet", "Foreldrepenger uten aktivitetskrav", "Oppgitt prosent i arbeid: 0")
+                .doesNotContain("Jobber som: Annet");
             case NYNORSK -> assertThat(innhold).contains("100 prosent", "Medmorkvote", "Jobbar som: Frilansar",
-                "Jobbar som: Sjølvstendig næringsdrivande", "Jobbar som: Anna", "Overføring av Mødrekvote",
-                "Annan forelder er for sjuk til å ta seg av barnet", "Foreldrepengar utan aktivitetskrav", "Oppgitt prosent i arbeid: 0");
+                "Jobbar som: Sjølvstendig næringsdrivande", "Overføring av Mødrekvote",
+                "Annan forelder er for sjuk til å ta seg av barnet", "Foreldrepengar utan aktivitetskrav", "Oppgitt prosent i arbeid: 0")
+                .doesNotContain("Jobbar som: Anna");
             case ENGELSK -> assertThat(innhold).contains("100 per cent", "Co-mother quota", "Working as: Freelancer",
-                "Working as: Self-employed", "Working as: Other", "Transfer of Maternal quota",
+                "Working as: Self-employed", "Transfer of Maternal quota",
                 "Other parent is too sick to take care of the child", "Parental benefit without activity requirement",
-                "Specified employment percentage: 0");
+                "Specified employment percentage: 0")
+                .doesNotContain("Working as: Other");
         }
     }
 
