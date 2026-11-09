@@ -21,10 +21,10 @@
 
         <felles.version>7.9.6</felles.version>
 
-        <openhtmltopdf.version>1.1.103</openhtmltopdf.version>
-        <commonmark.version>0.31.0</commonmark.version>
+        <openhtmltopdf.version>1.1.108</openhtmltopdf.version>
+        <commonmark.version>0.32.0</commonmark.version>
 
-        <handlebar.version>4.5.7</handlebar.version>
+        <handlebar.version>4.5.8</handlebar.version>
     </properties>
 
     <dependencies>
