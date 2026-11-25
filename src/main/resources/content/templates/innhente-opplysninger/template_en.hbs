@@ -31,7 +31,7 @@ We received your complaint concerning {{> ytelse_navn_en}} {{søknadDato}}, but 
 ## You have to send us
 {{felles.fritekst}}
 
-## Your application can be turned down
+{{#if klage}}## Your complaint can be turned down{{else}}## Your application can be turned down{{/if}}
 {{#if førstegangsbehandling}}If you do not send us the requested documentation before {{fristDato}}, your application can be turned down.
 {{else}}If you do not send us the requested documentation before {{fristDato}}, we will process your case with the information that we have.
 {{/if}}
