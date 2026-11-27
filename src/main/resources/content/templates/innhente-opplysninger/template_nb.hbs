@@ -30,8 +30,9 @@ Vi fikk klagen din på {{> ytelse_navn_nb}} {{søknadDato}}, men mangler opplysn
 ## Du må sende oss
 {{felles.fritekst}}
 
-## Søknaden kan bli avslått
-{{#if førstegangsbehandling}}Hvis vi ikke får opplysningene innen {{fristDato}}, kan søknaden bli avslått.
+{{#unless klage}}## Søknaden kan bli avslått
+{{/unless}}{{#if førstegangsbehandling}}Hvis vi ikke får opplysningene innen {{fristDato}}, kan søknaden bli avslått.
+{{else if klage}}Hvis du ikke sender oss dette innen {{fristDato}}, behandler vi klagen med de opplysningene vi har.
 {{else}}Hvis du ikke sender oss dette innen {{fristDato}}, behandler vi saken med de opplysningene vi har.
 {{/if}}
 Dette går fram av folketrygdloven § 21-3.
